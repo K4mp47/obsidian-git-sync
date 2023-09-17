@@ -1,0 +1,168 @@
+{
+  "main": {
+    "id": "468fe14b7016391c",
+    "type": "split",
+    "children": [
+      {
+        "id": "9142e89cadef930d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "19f62e8ae69a74df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes-main/Programmazione/List container.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "90aeeda6d98d985d",
+    "type": "split",
+    "children": [
+      {
+        "id": "98309e5baaff4f98",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "676356614d8bc787",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "dd3f5587c8fdd0fd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "313a11dd7bf807e6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9cf4d1525f8d4e32",
+    "type": "split",
+    "children": [
+      {
+        "id": "6c89e6687f0b156f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "41dc71b730dfb0f2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Notes-main/Programmazione/List container.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7f37a21e6f59afb2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Notes-main/Programmazione/List container.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "881b68a7f9267ff0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c1bc1ec7a4c3b947",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Notes-main/Programmazione/List container.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "676356614d8bc787",
+  "lastOpenFiles": [
+    "Notes-main/testing/7.txt",
+    "Notes-main/testing/7.cpp",
+    "Notes-main/testing/7",
+    "Notes-main/testing/6_exe.txt",
+    "Notes-main/testing/6_exe.cpp",
+    "Notes-main/testing/6_exe",
+    "Notes-main/testing/5.txt",
+    "Notes-main/testing/5.cpp",
+    "Notes-main/testing/5",
+    "Notes-main/testing",
+    "Notes-main/Notes",
+    "Notes-main/Programmazione/TO DO Iterators and containers.md",
+    "Notes-main/Programmazione/Template.md",
+    "Notes-main/Programmazione/Progetto PEL.md",
+    "Notes-main/Algebra/Esercizi Algebra pre test.md",
+    "Notes-main/Fuck Life.md"
+  ]
+}
