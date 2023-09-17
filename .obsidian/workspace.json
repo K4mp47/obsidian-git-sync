@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes-main/Algebra/Untitled.md",
+                "file": "Notes-main/Algebra/Testing sync with github.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes-main/Algebra/Untitled.md",
+                "file": "Notes-main/Algebra/Testing sync with github.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes-main/Algebra/Untitled.md",
+                "file": "Notes-main/Algebra/Testing sync with github.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes-main/Algebra/Untitled.md"
+                "file": "Notes-main/Algebra/Testing sync with github.md"
               }
             }
           }
@@ -155,9 +155,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "33b893d9f5c64f99",
+  "active": "6d0fe1d236d65080",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
-    "Notes-main/Algebra/Untitled.md"
+    "Notes-main/Algebra/Testing sync with github.md"
   ]
 }
