@@ -20,31 +20,19 @@
             }
           },
           {
-            "id": "f0d7ab10729ccc99",
+            "id": "63fcd7bd1033fe03",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes-main/Algebra/Testing sync with github.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1daf08839c5089a2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "testing second time that shit man.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "testing second time that shit man.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "testing second time that shit man.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "testing second time that shit man.md"
               }
             }
           }
@@ -172,12 +160,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1daf08839c5089a2",
+  "active": "63fcd7bd1033fe03",
   "lastOpenFiles": [
+    "Notes-main/Programmazione/List container.md",
+    "testing second time that shit man.md",
     "Notes-main/Algebra/Testing sync with github.md",
     "conflict-files-obsidian-git.md",
-    "testing second time.md",
-    "Notes-main/Programmazione/List container.md",
     "Notes-main/testing/7.txt",
     "Notes-main/testing/7.cpp",
     "Notes-main/testing/7",
