@@ -30,21 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "1daf08839c5089a2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Notes-main/Algebra/Testing sync with github.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Notes-main/Algebra/Testing sync with github.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "Notes-main/Algebra/Testing sync with github.md"
               }
             }
           }
@@ -172,10 +160,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1daf08839c5089a2",
+  "active": "f0d7ab10729ccc99",
   "lastOpenFiles": [
-    "Notes-main/Algebra/Testing sync with github.md",
     "conflict-files-obsidian-git.md",
+    "Notes-main/Algebra/Testing sync with github.md",
     "testing second time.md",
     "Notes-main/Programmazione/List container.md",
     "Notes-main/testing/7.txt",
