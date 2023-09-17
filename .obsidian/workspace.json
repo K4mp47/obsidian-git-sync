@@ -30,9 +30,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c752f04b12043b07",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.13"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -160,7 +170,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f0d7ab10729ccc99",
+  "active": "c752f04b12043b07",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "Notes-main/Algebra/Testing sync with github.md",
