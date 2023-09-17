@@ -14,8 +14,21 @@
               "type": "graph",
               "state": {}
             }
+          },
+          {
+            "id": "2aba2f09da35b617",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/Basi di Dati/Vediamo cosa si fará.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo Anno/Basi di Dati/Vediamo cosa si fará.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo Anno/Basi di Dati/Vediamo cosa si fará.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo Anno/Basi di Dati/Vediamo cosa si fará.md"
+              }
             }
           }
         ],
@@ -139,8 +156,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "12963e85e1fb8fb1",
+  "active": "2aba2f09da35b617",
   "lastOpenFiles": [
+    "Secondo Anno/Basi di Dati",
+    "Secondo Anno/Basi di Dati/Vediamo cosa si fará.md",
+    "Secondo Anno",
     "Untitled.canvas",
     "Notes-main/Programmazione/List container.md",
     "testing second time that shit man.md",
@@ -155,7 +175,6 @@
     "Notes-main/testing/5.txt",
     "Notes-main/testing/5.cpp",
     "Notes-main/testing/5",
-    "Notes-main/testing",
     "Notes-main/Programmazione/TO DO Iterators and containers.md",
     "Notes-main/Programmazione/Template.md",
     "Notes-main/Programmazione/Progetto PEL.md",
