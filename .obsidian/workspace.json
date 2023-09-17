@@ -11,12 +11,8 @@
             "id": "12963e85e1fb8fb1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes-main/Programmazione/List container.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes-main/Programmazione/List container.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes-main/Programmazione/List container.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Notes-main/Programmazione/List container.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -149,8 +141,9 @@
   },
   "active": "12963e85e1fb8fb1",
   "lastOpenFiles": [
-    "testing second time that shit man.md",
+    "Untitled.canvas",
     "Notes-main/Programmazione/List container.md",
+    "testing second time that shit man.md",
     "Notes-main/Algebra/Testing sync with github.md",
     "conflict-files-obsidian-git.md",
     "Notes-main/testing/7.txt",
