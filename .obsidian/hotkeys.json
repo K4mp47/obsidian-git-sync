@@ -16,6 +16,7 @@
       ],
       "key": "P"
     }
+<<<<<<< HEAD
   ],
   "obsidian-git:pull": [
     {
@@ -25,5 +26,7 @@
       ],
       "key": "U"
     }
+=======
+>>>>>>> origin/main
   ]
 }

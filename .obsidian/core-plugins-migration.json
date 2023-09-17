@@ -7,6 +7,10 @@
   "canvas": true,
   "outgoing-link": true,
   "tag-pane": true,
+<<<<<<< HEAD
+=======
+  "properties": false,
+>>>>>>> origin/main
   "page-preview": true,
   "daily-notes": true,
   "templates": true,
