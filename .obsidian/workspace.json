@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "f0d7ab10729ccc99",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes-main/Algebra/Testing sync with github.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes-main/Algebra/Testing sync with github.md",
+                "file": "Notes-main/Programmazione/List container.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes-main/Algebra/Testing sync with github.md",
+                "file": "Notes-main/Programmazione/List container.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes-main/Algebra/Testing sync with github.md"
+                "file": "Notes-main/Programmazione/List container.md"
               }
             }
           }
@@ -160,13 +147,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f0d7ab10729ccc99",
+  "active": "12963e85e1fb8fb1",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "Notes-main/Algebra/Testing sync with github.md",
     "testing second time that shit man.md",
-    "testing second time.md",
     "Notes-main/Programmazione/List container.md",
+    "Notes-main/Algebra/Testing sync with github.md",
+    "conflict-files-obsidian-git.md",
     "Notes-main/testing/7.txt",
     "Notes-main/testing/7.cpp",
     "Notes-main/testing/7",
