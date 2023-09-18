@@ -8,15 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "12963e85e1fb8fb1",
+            "id": "2aba2f09da35b617",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Basi di Dati/1.SistemiAle.pdf"
+              }
             }
           },
           {
-            "id": "2aba2f09da35b617",
+            "id": "4244d0662eb76997",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -156,10 +158,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "676356614d8bc787",
+  "active": "4244d0662eb76997",
   "lastOpenFiles": [
-    "Secondo Anno/Basi di Dati",
+    "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
     "Secondo Anno/Basi di Dati/Lezione 1.md",
+    "Secondo Anno/Basi di Dati/Unconfirmed 506959.crdownload",
+    "Secondo Anno/Basi di Dati",
     "Secondo Anno",
     "Untitled.canvas",
     "Notes-main/Programmazione/List container.md",
@@ -172,9 +176,6 @@
     "Notes-main/testing/6_exe.txt",
     "Notes-main/testing/6_exe.cpp",
     "Notes-main/testing/6_exe",
-    "Notes-main/testing/5.txt",
-    "Notes-main/testing/5.cpp",
-    "Notes-main/testing/5",
     "Notes-main/Programmazione/TO DO Iterators and containers.md",
     "Notes-main/Programmazione/Template.md",
     "Notes-main/Programmazione/Progetto PEL.md",
