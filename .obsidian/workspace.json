@@ -8,14 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6c692909b03f7fb7",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "60961868b793de4c",
             "type": "leaf",
             "state": {
@@ -27,8 +19,23 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "4dcf7d57f45a79d6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69009e9227243e97",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -78,7 +85,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -156,10 +164,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "676356614d8bc787",
+  "active": "60961868b793de4c",
   "lastOpenFiles": [
-    "Pasted image 20230918143850.png",
+    "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf",
     "Secondo Anno/Probab. e stat./Lezione 1, modulo 1.md",
+    "Secondo Anno/Probab. e stat./Unconfirmed 74554.crdownload",
+    "Pasted image 20230918143850.png",
     "Pasted image 20230918152521.png",
     "README.md",
     "Secondo Anno/Basi di Dati/Lezione 1, modulo 1.md",
@@ -182,8 +192,6 @@
     "Notes-main/testing/7.txt",
     "Notes-main/testing/7.cpp",
     "Notes-main/testing/7",
-    "Notes-main/testing/6_exe.txt",
-    "Notes-main/testing/6_exe.cpp",
     "Notes-main/Programmazione/TO DO Iterators and containers.md",
     "Notes-main/Programmazione/Template.md",
     "Notes-main/Programmazione/Progetto PEL.md",
