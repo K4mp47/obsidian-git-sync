@@ -96,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -176,6 +177,7 @@
   },
   "active": "4244d0662eb76997",
   "lastOpenFiles": [
+    "Pasted image 20230918143850.png",
     "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
     "Secondo Anno/Basi di Dati/Lezione 1, modulo 1.md",
     "Secondo Anno/Basi di Dati/Unconfirmed 506959.crdownload",
