@@ -21,11 +21,9 @@
             "id": "4244d0662eb76997",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Lezione 1, modulo 1.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted image 20230918143850.png"
               }
             }
           }
@@ -96,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -113,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Lezione 1, modulo 1.md",
+                "file": "Pasted image 20230918143850.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Lezione 1, modulo 1.md",
+                "file": "Pasted image 20230918143850.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Lezione 1, modulo 1.md"
+                "file": "Pasted image 20230918143850.png"
               }
             }
           }
@@ -177,9 +174,11 @@
   },
   "active": "4244d0662eb76997",
   "lastOpenFiles": [
-    "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
-    "Secondo Anno/Basi di Dati/Lezione 1, modulo 1.md",
     "Pasted image 20230918152521.png",
+    "README.md",
+    "Secondo Anno/Basi di Dati/Lezione 1, modulo 1.md",
+    "Secondo Anno/Probab. e stat.",
+    "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
     "Pasted image 20230918152201.png",
     "Pasted image 20230918151329.png",
     "Pasted image 20230918151044.png",
@@ -200,7 +199,6 @@
     "Notes-main/testing/7",
     "Notes-main/testing/6_exe.txt",
     "Notes-main/testing/6_exe.cpp",
-    "Notes-main/testing/6_exe",
     "Notes-main/Programmazione/TO DO Iterators and containers.md",
     "Notes-main/Programmazione/Template.md",
     "Notes-main/Programmazione/Progetto PEL.md",
