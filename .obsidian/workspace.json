@@ -20,33 +20,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "37cf698bd68f285e",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "1008f82d331bb2e6",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Probab. e stat./0_Introduzione.pdf"
-              }
-            }
-          },
-          {
-            "id": "9685b7bdfd8906dc",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf"
-              }
-            }
-          }
-        ],
-        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -177,10 +149,10 @@
   },
   "active": "60961868b793de4c",
   "lastOpenFiles": [
-    "Secondo Anno/Basi di Dati/Lezione 1, modulo 1.md",
-    "Secondo Anno/Probab. e stat./Lezione 1, modulo 1.md",
-    "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf",
     "Secondo Anno/Probab. e stat./0_Introduzione.pdf",
+    "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf",
+    "Secondo Anno/Probab. e stat./Lezione 1, modulo 1.md",
+    "Secondo Anno/Basi di Dati/Lezione 1, modulo 1.md",
     "Secondo Anno/Probab. e stat./Unconfirmed 577567.crdownload",
     "Secondo Anno/Probab. e stat./Unconfirmed 74554.crdownload",
     "Pasted image 20230918143850.png",
