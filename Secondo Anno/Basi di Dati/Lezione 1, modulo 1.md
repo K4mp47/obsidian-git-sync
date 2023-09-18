@@ -57,4 +57,11 @@
 >- Uso principale dei DBMS 
 >![[Pasted image 20230918151329.png]]
 >## **Sistemi informatici direzionali**
->
+>- La direzione intermedia e alta necessitano di:
+>	- analisi storiche dell'andamento degli affari
+>	- produzione interattiva (non programmata) di rapporti di sintesi
+>- Le basi di dati operative risultano inadeguate:
+>	- contengono solo dati recenti
+>	- le operazioni coinvolgono grandi quantitá di dati o sono molto complesse
+>- Dati organizzati in **Data Warehouse (DW)**: raccolta di dati orientata ,al soggetto, variabile e non volatile, di supporto ai processi decisionali
+>- Gestiti da un opportuno sistem
