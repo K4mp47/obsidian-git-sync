@@ -34,8 +34,19 @@
                 "file": "Secondo Anno/Probab. e stat./0_Introduzione.pdf"
               }
             }
+          },
+          {
+            "id": "9685b7bdfd8906dc",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -101,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./Lezione 1, modulo 1.md",
+                "file": "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./Lezione 1, modulo 1.md",
+                "file": "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./Lezione 1, modulo 1.md"
+                "file": "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf"
               }
             }
           }
@@ -163,10 +174,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "60961868b793de4c",
+  "active": "9685b7bdfd8906dc",
   "lastOpenFiles": [
-    "Secondo Anno/Probab. e stat./0_Introduzione.pdf",
     "Secondo Anno/Probab. e stat./Lezione 1, modulo 1.md",
+    "Secondo Anno/Probab. e stat./0_Introduzione.pdf",
     "Secondo Anno/Probab. e stat./Unconfirmed 577567.crdownload",
     "Secondo Anno/Basi di Dati/Lezione 1, modulo 1.md",
     "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf",
