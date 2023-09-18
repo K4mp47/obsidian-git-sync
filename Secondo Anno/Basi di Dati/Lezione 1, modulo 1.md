@@ -43,9 +43,18 @@
 >
 >Due diversi sistemi informatici:
 >![[Pasted image 20230918150901.png]]
->**Sistemi informatici direzionali**
->**Sistemi informatici operativi**
+>## **Sistemi informatici operativi**
 >- Organizzati in DB
 >- Applicazioni usate per le classiche attivitá strutturate e ripetitive(calcolo paghe, emissione fatture)
 >- Terminologia anglosassone
+>- ![[Pasted image 20230918151044.png]]
+>
+>#### Elaborazione DB: OLTP
+>- Tradizionale elaborazione di transazioni
+>	- Operazioni coinvolge pochi dati
+>	- Operazioni predefinite
+>	- Dati di dettaglio, aggiornati
+>- Uso principale dei DBMS 
+>![[Pasted image 20230918151329.png]]
+>## **Sistemi informatici direzionali**
 >
