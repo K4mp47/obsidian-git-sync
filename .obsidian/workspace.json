@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Secondo Anno/Probab. e stat./Lezione 1, modulo 1.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -96,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
