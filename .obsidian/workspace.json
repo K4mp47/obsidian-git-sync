@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Lezione 1, modulo 1.md",
+                "file": "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Lezione 1, modulo 1.md",
+                "file": "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Lezione 1, modulo 1.md"
+                "file": "Secondo Anno/Basi di Dati/1.SistemiAle.pdf"
               }
             }
           }
@@ -175,12 +175,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4244d0662eb76997",
+  "active": "6e20788ae116ee62",
   "lastOpenFiles": [
+    "Secondo Anno/Basi di Dati/Lezione 1, modulo 1.md",
+    "Pasted image 20230918145726.png",
     "Pasted image 20230918145435.png",
     "Pasted image 20230918143850.png",
     "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
-    "Secondo Anno/Basi di Dati/Lezione 1, modulo 1.md",
     "Secondo Anno/Basi di Dati/Unconfirmed 506959.crdownload",
     "Secondo Anno/Basi di Dati",
     "Secondo Anno",

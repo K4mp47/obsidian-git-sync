@@ -14,4 +14,11 @@
 >
 >![[Pasted image 20230918145435.png]]
 > - **definizione di sistema informatico**:
-> 
+> 	- insiem di tecnologie e della comunicazione a supporto delle attivitá di un'organizzazione
+> - **definizione sistema informatico automatizzato**:
+> 	- parte del sistema informativo in cui le informazioni sono raccolte, elaborate, archiviate e scambiate usando un sistema informatico
+>
+>## SIstema informatico nelle Organizzazioni
+>![[Pasted image 20230918145726.png]]
+>
+>
