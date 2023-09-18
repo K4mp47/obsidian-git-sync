@@ -4,47 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "204291c85a9a9637",
+        "id": "cc0ee2261765b2ad",
         "type": "tabs",
         "children": [
           {
-            "id": "2aba2f09da35b617",
+            "id": "6c692909b03f7fb7",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Basi di Dati/1.SistemiAle.pdf"
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
-            "id": "4244d0662eb76997",
+            "id": "60961868b793de4c",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20230918143850.png"
+                "file": "Secondo Anno/Probab. e stat./Lezione 1, modulo 1.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "5a6e754e1ffc0d93",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6e20788ae116ee62",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Basi di Dati/1.SistemiAle.pdf"
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pasted image 20230918143850.png",
+                "file": "Secondo Anno/Probab. e stat./Lezione 1, modulo 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pasted image 20230918143850.png",
+                "file": "Secondo Anno/Probab. e stat./Lezione 1, modulo 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20230918143850.png"
+                "file": "Secondo Anno/Probab. e stat./Lezione 1, modulo 1.md"
               }
             }
           }
@@ -172,8 +156,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4244d0662eb76997",
+  "active": "676356614d8bc787",
   "lastOpenFiles": [
+    "Pasted image 20230918143850.png",
+    "Secondo Anno/Probab. e stat./Lezione 1, modulo 1.md",
     "Pasted image 20230918152521.png",
     "README.md",
     "Secondo Anno/Basi di Dati/Lezione 1, modulo 1.md",
@@ -185,7 +171,6 @@
     "Pasted image 20230918150901.png",
     "Pasted image 20230918145726.png",
     "Pasted image 20230918145435.png",
-    "Pasted image 20230918143850.png",
     "Secondo Anno/Basi di Dati/Unconfirmed 506959.crdownload",
     "Secondo Anno/Basi di Dati",
     "Secondo Anno",
