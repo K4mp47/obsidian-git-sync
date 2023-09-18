@@ -72,6 +72,12 @@
 >	- Management Information Systems (MIS) 
 >	- Decision support systems (DSS), data or model based 
 >	- Executive Information System (EIS)
+>## **OLAP: Acronimo di On-Line Analytical Processing** 
+>- Uso principale dei data warehouse 
+>- Caratteristiche Operazioni complesse e casuali 
+>- Ogni operazione può coinvolgere moltissimi dati I dati sono letti, ma non modificati 
+>- Dati aggregati, storici, anche non attualissimi
 >
 >![[Pasted image 20230918152201.png]]
 >![[Pasted image 20230918152521.png]]
+>
