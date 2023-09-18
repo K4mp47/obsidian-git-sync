@@ -21,8 +21,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Vediamo cosa si fará.md",
-                "mode": "preview",
+                "file": "Secondo Anno/Basi di Dati/Lezione 1.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Vediamo cosa si fará.md",
+                "file": "Secondo Anno/Basi di Dati/Lezione 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Vediamo cosa si fará.md",
+                "file": "Secondo Anno/Basi di Dati/Lezione 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Vediamo cosa si fará.md"
+                "file": "Secondo Anno/Basi di Dati/Lezione 1.md"
               }
             }
           }
@@ -156,10 +156,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2aba2f09da35b617",
+  "active": "676356614d8bc787",
   "lastOpenFiles": [
     "Secondo Anno/Basi di Dati",
-    "Secondo Anno/Basi di Dati/Vediamo cosa si fará.md",
+    "Secondo Anno/Basi di Dati/Lezione 1.md",
     "Secondo Anno",
     "Untitled.canvas",
     "Notes-main/Programmazione/List container.md",
