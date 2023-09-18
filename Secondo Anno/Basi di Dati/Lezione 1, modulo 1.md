@@ -47,6 +47,9 @@
 >- Organizzati in DB
 >- Applicazioni usate per le classiche attivitá strutturate e ripetitive(calcolo paghe, emissione fatture)
 >- Terminologia anglosassone
+>	- Data processing (DP), Electronic Data processing (EDP) 
+>	- Transaction Processing Systems (TPS) 
+>	- Enterprise Resource Planning (ERP)
 >- ![[Pasted image 20230918151044.png]]
 >
 >#### Elaborazione DB: OLTP
@@ -64,4 +67,11 @@
 >	- contengono solo dati recenti
 >	- le operazioni coinvolgono grandi quantitá di dati o sono molto complesse
 >- Dati organizzati in **Data Warehouse (DW)**: raccolta di dati orientata ,al soggetto, variabile e non volatile, di supporto ai processi decisionali
->- Gestiti da un opportuno sistem
+>- Gestiti da un opportuno sistema per analisi interattive dei dati
+>- Terminologia anglosassone:
+>	- Management Information Systems (MIS) 
+>	- Decision support systems (DSS), data or model based 
+>	- Executive Information System (EIS)
+>
+>![[Pasted image 20230918152201.png]]
+>![[Pasted image 20230918152521.png]]
