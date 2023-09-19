@@ -9,6 +9,7 @@
 >- macchina astratta
 >- gestore di risorse
 >	- bisogna ottimizzare la gestione delle risorse per migliorare le performance della macchina
+
 ```
 utenti(applicazioni)
 ------------
@@ -17,10 +18,25 @@ SO (macchina astratta, astrazione della macchina reale per l'utente)
 ------------
 HW(componenti fisici, HDD, SSD, RAM, I/O, ecc.)
 ```
-
 ## Struttura del sistema operativo:
 >- Monolitica
 >- a livelli
 >- MicroKernel
 
 #### Definizione di SO: software che controlla l'HW
+> SO funziona da interfaccia tra utente/applicazioni ed HW, inoltre si occupa di gestire le risorse della macchina
+
+```
+Software:
+[
+	User mode:
+	[
+		User Interface,
+		Other programs(web browser ecc.)
+	]
+	Kernel mode:
+	[
+		Operating System
+	]
+]
+```
