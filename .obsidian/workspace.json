@@ -6,7 +6,6 @@
       {
         "id": "cc0ee2261765b2ad",
         "type": "tabs",
-        "dimension": 56.97969543147208,
         "children": [
           {
             "id": "60961868b793de4c",
@@ -17,23 +16,6 @@
                 "file": "Secondo Anno/Sistemi Operativi/Indice.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "e80ed53245615b36",
-        "type": "tabs",
-        "dimension": 43.02030456852792,
-        "children": [
-          {
-            "id": "d8ca45435d617f82",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Sistemi Operativi/404110697-I-moderni-sistemi-operativi-pdf.pdf"
               }
             }
           }
@@ -103,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/404110697-I-moderni-sistemi-operativi-pdf.pdf",
+                "file": "Secondo Anno/Sistemi Operativi/Indice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/404110697-I-moderni-sistemi-operativi-pdf.pdf",
+                "file": "Secondo Anno/Sistemi Operativi/Indice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/404110697-I-moderni-sistemi-operativi-pdf.pdf"
+                "file": "Secondo Anno/Sistemi Operativi/Indice.md"
               }
             }
           }
@@ -165,12 +147,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d8ca45435d617f82",
+  "active": "60961868b793de4c",
   "lastOpenFiles": [
+    "Secondo Anno/Sistemi Operativi/book-co.pdf",
+    "Secondo Anno/Sistemi Operativi/Unconfirmed 493354.crdownload",
     "Secondo Anno/Sistemi Operativi/SO.O.pdf",
+    "Secondo Anno/Sistemi Operativi/Indice.md",
+    "Secondo Anno/Sistemi Operativi/book.pdf",
+    "Secondo Anno/Sistemi Operativi/Unconfirmed 263210.crdownload",
     "Secondo Anno/Sistemi Operativi/404110697-I-moderni-sistemi-operativi-pdf.pdf",
     "Secondo Anno/Sistemi Operativi/Unconfirmed 701139.crdownload",
-    "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Sistemi Operativi/Unconfirmed 21460.crdownload",
     "Secondo Anno/Basi di Dati/Indice.md",
     "Secondo Anno/Probab. e stat./Indice.md",
@@ -178,10 +164,6 @@
     "Secondo Anno/Algoritmi & strutture dati/Indice.md",
     "Secondo Anno/Algoritmi & strutture dati",
     "Secondo Anno/Sistemi Operativi",
-    "Secondo Anno/Probab. e stat./0_Introduzione.pdf",
-    "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf",
-    "Secondo Anno/Probab. e stat./Unconfirmed 577567.crdownload",
-    "Secondo Anno/Probab. e stat./Unconfirmed 74554.crdownload",
     "Pasted image 20230918143850.png",
     "Pasted image 20230918152521.png",
     "README.md",
