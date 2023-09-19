@@ -13,38 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./Indice.md",
+                "file": "Secondo Anno/Basi di Dati/Indice.md",
                 "mode": "preview",
                 "source": false
               }
             }
-          },
-          {
-            "id": "a4ccc55f3f0a0953",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Indice.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ab965e7ec6dbd58e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Probab. e stat./Indice.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./Indice.md",
+                "file": "Secondo Anno/Basi di Dati/Indice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./Indice.md",
+                "file": "Secondo Anno/Basi di Dati/Indice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./Indice.md"
+                "file": "Secondo Anno/Basi di Dati/Indice.md"
               }
             }
           }
@@ -172,12 +147,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ab965e7ec6dbd58e",
+  "active": "60961868b793de4c",
   "lastOpenFiles": [
-    "Secondo Anno/Basi di Dati/Indice.md",
-    "Secondo Anno/Algoritmi & strutture dati/Indice.md",
-    "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Probab. e stat./Indice.md",
+    "Secondo Anno/Sistemi Operativi/Indice.md",
+    "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
+    "Secondo Anno/Algoritmi & strutture dati/Indice.md",
+    "Secondo Anno/Basi di Dati/Indice.md",
     "Secondo Anno/Algoritmi & strutture dati",
     "Secondo Anno/Sistemi Operativi",
     "Secondo Anno/Probab. e stat./0_Introduzione.pdf",
@@ -188,7 +164,6 @@
     "Pasted image 20230918152521.png",
     "README.md",
     "Secondo Anno/Probab. e stat.",
-    "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
     "Pasted image 20230918152201.png",
     "Pasted image 20230918151329.png",
     "Pasted image 20230918151044.png",
