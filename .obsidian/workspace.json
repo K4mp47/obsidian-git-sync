@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "26c7b60c23f58bb7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/Extra/Personal Todo Project.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Indice.md",
+                "file": "Secondo Anno/Extra/Personal Todo Project.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Indice.md",
+                "file": "Secondo Anno/Extra/Personal Todo Project.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Indice.md"
+                "file": "Secondo Anno/Extra/Personal Todo Project.md"
               }
             }
           }
@@ -147,8 +160,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "60961868b793de4c",
+  "active": "26c7b60c23f58bb7",
   "lastOpenFiles": [
+    "Secondo Anno/Algoritmi & strutture dati/Indice.md",
+    "Secondo Anno/Extra/Personal Todo Project.md",
+    "Secondo Anno/Extra",
     "Secondo Anno/Sistemi Operativi/Indice.md",
     "Pasted image 20230919150355.png",
     "Pasted image 20230919145526.png",
@@ -162,10 +178,8 @@
     "Secondo Anno/Sistemi Operativi/Unconfirmed 263210.crdownload",
     "Secondo Anno/Sistemi Operativi/404110697-I-moderni-sistemi-operativi-pdf.pdf",
     "Secondo Anno/Sistemi Operativi/Unconfirmed 701139.crdownload",
-    "Secondo Anno/Sistemi Operativi/Unconfirmed 21460.crdownload",
     "Secondo Anno/Basi di Dati/Indice.md",
     "Secondo Anno/Probab. e stat./Indice.md",
-    "Secondo Anno/Algoritmi & strutture dati/Indice.md",
     "Pasted image 20230918143850.png",
     "Pasted image 20230918152521.png",
     "README.md",
