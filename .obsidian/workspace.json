@@ -20,6 +20,22 @@
             }
           }
         ]
+      },
+      {
+        "id": "451e590b7af194e4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5bc750ef281ffd6a",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Sistemi Operativi/SO1.1.pdf"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -149,8 +165,12 @@
   },
   "active": "60961868b793de4c",
   "lastOpenFiles": [
-    "Secondo Anno/Sistemi Operativi/book-co.pdf",
+    "Pasted image 20230919145526.png",
+    "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
     "Secondo Anno/Sistemi Operativi/Indice.md",
+    "Pasted image 20230919145405.png",
+    "Secondo Anno/Sistemi Operativi/Unconfirmed 349534.crdownload",
+    "Secondo Anno/Sistemi Operativi/book-co.pdf",
     "Secondo Anno/Sistemi Operativi/Unconfirmed 493354.crdownload",
     "Secondo Anno/Sistemi Operativi/SO.O.pdf",
     "Secondo Anno/Sistemi Operativi/book.pdf",
@@ -160,9 +180,7 @@
     "Secondo Anno/Sistemi Operativi/Unconfirmed 21460.crdownload",
     "Secondo Anno/Basi di Dati/Indice.md",
     "Secondo Anno/Probab. e stat./Indice.md",
-    "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
     "Secondo Anno/Algoritmi & strutture dati/Indice.md",
-    "Secondo Anno/Algoritmi & strutture dati",
     "Pasted image 20230918143850.png",
     "Pasted image 20230918152521.png",
     "README.md",

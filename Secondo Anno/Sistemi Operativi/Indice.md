@@ -26,6 +26,8 @@ HW(componenti fisici, HDD, SSD, RAM, I/O, ecc.)
 #### Definizione di SO: software che controlla l'HW
 > SO funziona da interfaccia tra utente/applicazioni ed HW, inoltre si occupa di gestire le risorse della macchina
 
+![[Pasted image 20230919145405.png]]
+
 ```
 Software:
 [
@@ -39,4 +41,10 @@ Software:
 		Operating System
 	]
 ]
+HW:[]
 ```
+
+>SO: principalmente usa i sistemi in modalitá nucleo (Kernel), le applicazioni invece sono invece principalmente in modalitá kernel
+
+![[Pasted image 20230919145526.png]]
+> Con il termine *programmi di sistema* ci riferiamo a quei programmi usati per
