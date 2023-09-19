@@ -18,3 +18,7 @@ root
 > 	- NextJs come framework sopra di esso
 > - Flask(per il backend)
 > - API(ancora da scegliere, pensavo di rimanere su python, quindi sempre flask)
+## Idea progetto astratta
+![[Pasted image 20230919225844.png]]
+## To do list effettiva: 
+![[Pasted image 20230919225945.png]]
