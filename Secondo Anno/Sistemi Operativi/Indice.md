@@ -47,4 +47,8 @@ HW:[]
 >SO: principalmente usa i sistemi in modalitá nucleo (Kernel), le applicazioni invece sono invece principalmente in modalitá kernel
 
 ![[Pasted image 20230919145526.png]]
-> Con il termine *programmi di sistema* ci riferiamo a quei programmi usati per
+> Con il termine *programmi di sistema* ci riferiamo a quei programmi usati per eseguire le operazioni (Compilatori, editor, ecc.)
+
+> I'OS é una macchina estesa che:
+> - Nasconde i dettagli delle operazioni eseguite (MASCHERAMENTO)
+> - Presenta all'utente il sistema con un interfaccia semplice da usare (TRASPARENZA)
