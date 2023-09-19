@@ -13,25 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Indice.md",
-                "mode": "preview",
+                "file": "Secondo Anno/Algoritmi & strutture dati/Indice.md",
+                "mode": "source",
                 "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "451e590b7af194e4",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "5bc750ef281ffd6a",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Sistemi Operativi/SO1.1.pdf"
               }
             }
           }
@@ -101,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Indice.md",
+                "file": "Secondo Anno/Algoritmi & strutture dati/Indice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Indice.md",
+                "file": "Secondo Anno/Algoritmi & strutture dati/Indice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Indice.md"
+                "file": "Secondo Anno/Algoritmi & strutture dati/Indice.md"
               }
             }
           }
@@ -165,10 +149,10 @@
   },
   "active": "60961868b793de4c",
   "lastOpenFiles": [
+    "Secondo Anno/Sistemi Operativi/Indice.md",
     "Pasted image 20230919150355.png",
     "Pasted image 20230919145526.png",
     "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
-    "Secondo Anno/Sistemi Operativi/Indice.md",
     "Pasted image 20230919145405.png",
     "Secondo Anno/Sistemi Operativi/Unconfirmed 349534.crdownload",
     "Secondo Anno/Sistemi Operativi/book-co.pdf",
@@ -190,7 +174,6 @@
     "Pasted image 20230918151044.png",
     "Pasted image 20230918150901.png",
     "Pasted image 20230918145726.png",
-    "Pasted image 20230918145435.png",
     "Untitled.canvas",
     "Notes-main/Programmazione/List container.md",
     "testing second time that shit man.md",
