@@ -20,6 +20,22 @@
             }
           }
         ]
+      },
+      {
+        "id": "e80ed53245615b36",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d8ca45435d617f82",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Sistemi Operativi/SO.O.pdf"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -85,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Indice.md",
+                "file": "Secondo Anno/Sistemi Operativi/SO.O.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Indice.md",
+                "file": "Secondo Anno/Sistemi Operativi/SO.O.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Indice.md"
+                "file": "Secondo Anno/Sistemi Operativi/SO.O.pdf"
               }
             }
           }
@@ -147,12 +163,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "60961868b793de4c",
+  "active": "d8ca45435d617f82",
   "lastOpenFiles": [
+    "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Sistemi Operativi/SO.O.pdf",
     "Secondo Anno/Sistemi Operativi/Unconfirmed 21460.crdownload",
     "Secondo Anno/Basi di Dati/Indice.md",
-    "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Probab. e stat./Indice.md",
     "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
     "Secondo Anno/Algoritmi & strutture dati/Indice.md",
@@ -172,7 +188,6 @@
     "Pasted image 20230918150901.png",
     "Pasted image 20230918145726.png",
     "Pasted image 20230918145435.png",
-    "Secondo Anno/Basi di Dati/Unconfirmed 506959.crdownload",
     "Untitled.canvas",
     "Notes-main/Programmazione/List container.md",
     "testing second time that shit man.md",
