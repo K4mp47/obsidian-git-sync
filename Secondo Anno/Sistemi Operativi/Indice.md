@@ -125,3 +125,23 @@ HW:[]
 > 	- Reusable Code
 > 	- Multithreading
 > 	- Astrazione linguaggi di programmazione
+
+> #### Cenni sulla storia di internet e del WWW
+> - Advanced Research Projects Agency (ARPA)
+> 	- Dipartimento della difesa
+> 	- fine anni '60, implementa ARPAnet
+> 		- Predecessore di Internet
+> 		- Capace di comunicazione quasi istantanea(email)
+> 		- Progettata per operare senza un controllo centralizzato
+>
+>- TCP/IP
+>	- Insieme di regole per comunicare in ARPAnet
+>	- gestisce la comunicazione tra applicazioni
+>	- Si assicura che i messaggi siano instradati correttamente dal mittente al destinatario
+>	- Usato poi a livello commerciale
+>
+>- WWW
+>	- Individuare e visualizzare documenti multimediali su qualsiasi argomento
+>	- Primi sviluppi nel 1989
+>	- La tecnologia per la condivisione di informazioni
+>		- Hypertext Trasfer Protocol
