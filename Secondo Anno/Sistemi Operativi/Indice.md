@@ -69,3 +69,6 @@ HW:[]
 # 20 settembre 2023: scheduling
 
 > lo scheduler sceglie quali programmi dare in pasto alla CPU, tramite algoritmi di scheduling
+> 
+> ![[Pasted image 20230920105428.png]]
+> - [x] si parla nell'immagine ancora di sistemi batch e non multiprogrammati
