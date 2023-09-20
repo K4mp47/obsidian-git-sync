@@ -140,8 +140,11 @@ HW:[]
 >	- Si assicura che i messaggi siano instradati correttamente dal mittente al destinatario
 >	- Usato poi a livello commerciale
 >
->- WWW
+>- WWW (World Wide Web)
 >	- Individuare e visualizzare documenti multimediali su qualsiasi argomento
 >	- Primi sviluppi nel 1989
 >	- La tecnologia per la condivisione di informazioni
->		- Hypertext Trasfer Protocol
+>		- Hypertext Transfer Protocol (HTTP)
+>			- Protocollo di comunicazione
+>		- Hypertext Markup Language (HTML)
+>			- Definizione del formato dei documenti del WWW
