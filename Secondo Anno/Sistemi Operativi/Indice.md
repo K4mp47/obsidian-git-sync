@@ -72,3 +72,15 @@ HW:[]
 > 
 > ![[Pasted image 20230920105428.png]]
 > - [x] si parla nell'immagine ancora di sistemi batch e non multiprogrammati
+> 
+> I sistemi di terza generazione invece:
+> - Scompare l'operatore
+> - Linguaggi di alto livello
+> - Editor testuali
+> - Accesso da terminale
+> - *Multiprogrammazione*
+> - Protezione
+> - Scheduling
+> - Allocazione risorse I/O
+> - SPOOL
+
