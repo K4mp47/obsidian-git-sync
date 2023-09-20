@@ -82,5 +82,7 @@ HW:[]
 > - Protezione
 > - Scheduling
 > - Allocazione risorse I/O
-> - SPOOL
+> - SPOOL (Simultaneous Peripheral Operation On Line)
+> 	- Operazioni concorrenti, esecuzione di job parallela ad operazioni I/O
+> 	- Trasferimento dati
 
