@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/OOP/Object oriented programming (6).pdf",
+                "file": "Secondo Anno/OOP/Indice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/OOP/Object oriented programming (6).pdf",
+                "file": "Secondo Anno/OOP/Indice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/OOP/Object oriented programming (6).pdf"
+                "file": "Secondo Anno/OOP/Indice.md"
               }
             }
           }
@@ -176,8 +176,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5eb30e41610c5700",
+  "active": "4fca2e746602fbb1",
   "lastOpenFiles": [
+    "Secondo Anno/OOP/Object oriented programming (6).pdf",
     "Secondo Anno/OOP/Indice.md",
     "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Extra/Personal Todo Project.md",
