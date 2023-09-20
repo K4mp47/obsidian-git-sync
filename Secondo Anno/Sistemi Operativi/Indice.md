@@ -55,5 +55,13 @@ HW:[]
 > - Gestisce le risorse, perché:
 > 	- Ogni programma richiede tempo e spazio per le risorse
 
-> Schedulatore si occup
+>**SISTEMI BATCH**:
+>- I programmi e i dati caricati in sequenza su un nastro
+>- Spostati sul computer ed eseguiti a lotti (batch)
+>- Output stampato su nastro
+>- Altri computer piú piccoli per lettura/scrittura da/verso nastro
+>- ![[Pasted image 20230920104702.png]]
+
+> Schedulatore si occupa nei sistemi multiprogrammati si occupa di gestire l'ordine di esecuzione dei processi
+> **MULTIPROGRAMMAZIONE**: un job puó usare il processore, mentre altri job usano le unitá periferiche. Partizione della memoria, assegnando le parti ai diversi job.
 # 20 settembre 2023:
