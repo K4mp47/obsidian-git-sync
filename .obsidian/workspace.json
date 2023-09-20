@@ -18,33 +18,20 @@
                 "source": false
               }
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "586a187a2d4f0d81",
+        "type": "tabs",
+        "children": [
           {
             "id": "4fca2e746602fbb1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/OOP/Indice.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "9add7a3c96f908eb",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "5eb30e41610c5700",
-            "type": "leaf",
-            "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/OOP/Object oriented programming (6).pdf"
+                "file": "Secondo Anno/Sistemi Operativi/SO1.1.pdf"
               }
             }
           }
@@ -114,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/OOP/Indice.md",
+                "file": "Secondo Anno/Sistemi Operativi/Indice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/OOP/Indice.md",
+                "file": "Secondo Anno/Sistemi Operativi/Indice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/OOP/Indice.md"
+                "file": "Secondo Anno/Sistemi Operativi/Indice.md"
               }
             }
           }
@@ -176,11 +163,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4fca2e746602fbb1",
+  "active": "1cd6999cd83dd4b5",
   "lastOpenFiles": [
-    "Secondo Anno/OOP/Object oriented programming (6).pdf",
-    "Secondo Anno/OOP/Indice.md",
+    "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
     "Secondo Anno/Sistemi Operativi/Indice.md",
+    "Secondo Anno/OOP/Indice.md",
+    "Secondo Anno/OOP/Object oriented programming (6).pdf",
     "Secondo Anno/Extra/Personal Todo Project.md",
     "Pasted image 20230919225945.png",
     "Pasted image 20230919225844.png",
@@ -190,14 +178,12 @@
     "Secondo Anno/Extra",
     "Pasted image 20230919150355.png",
     "Pasted image 20230919145526.png",
-    "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
     "Pasted image 20230919145405.png",
     "Secondo Anno/Sistemi Operativi/Unconfirmed 349534.crdownload",
     "Secondo Anno/Sistemi Operativi/book-co.pdf",
     "Secondo Anno/Sistemi Operativi/Unconfirmed 493354.crdownload",
     "Secondo Anno/Sistemi Operativi/SO.O.pdf",
     "Secondo Anno/Sistemi Operativi/book.pdf",
-    "Secondo Anno/Sistemi Operativi/Unconfirmed 263210.crdownload",
     "Secondo Anno/Basi di Dati/Indice.md",
     "Secondo Anno/Probab. e stat./Indice.md",
     "Pasted image 20230918143850.png",

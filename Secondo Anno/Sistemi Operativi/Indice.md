@@ -55,3 +55,5 @@ HW:[]
 > - Gestisce le risorse, perché:
 > 	- Ogni programma richiede tempo e spazio per le risorse
 
+> Schedulatore si occup
+# 20 settembre 2023:
