@@ -96,5 +96,14 @@ HW:[]
 >	- Gestione del processore
 >	- Gestione della memoria
 >	- Protezione delle risorse
+>
+>Sistemi real-time:
 >- Hard real-time e soft real-time
 
+>Le generazioni successive di sistemi invece(anni '70):
+>- Supportano l'elaborazione di applicazioni batch, timesharing e in tempo reale
+>- Sistemi come:
+>	- Unix
+>- Sviluppo di primi semplici personal computer
+>- Sviluppo di Internet, sviluppo protocollo TCP/IP
+>	- protocollo di comin
