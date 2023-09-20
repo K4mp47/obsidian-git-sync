@@ -85,4 +85,16 @@ HW:[]
 > - SPOOL (Simultaneous Peripheral Operation On Line)
 > 	- Operazioni concorrenti, esecuzione di job parallela ad operazioni I/O
 > 	- Trasferimento dati
+>
+>Sistemi timesharing:
+>- Variante dei multiprogrammati, sviluppata per supportare molti utenti interattivi simultanei
+>- Tempo di CPI diviso in quanti di tempo
+>- Al termine del quanto il job viene interrotto e se ne assegna uno nuovo alla CPU
+>- Memorie virtuali
+>- Tempo di risposta ridotto a minuti o secondi
+>- Progettazione dei sistemi timesharing:
+>	- Gestione del processore
+>	- Gestione della memoria
+>	- Protezione delle risorse
+>
 
