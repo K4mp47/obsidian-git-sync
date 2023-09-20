@@ -106,4 +106,22 @@ HW:[]
 >	- Unix
 >- Sviluppo di primi semplici personal computer
 >- Sviluppo di Internet, sviluppo protocollo TCP/IP
->	- protocollo di comin
+>	- Protocollo di comunicazione standard
+>	- Usato soprattutto in ambito militare
+>	- Problemi di sicurezza 
+
+>Negli anni successivi invece:
+>- Decenni dello sviluppo dei personal computer e workstation
+>- PC per singoli utenti
+>- Elaborazine distribuita ai siti in cui é richiesta
+>- I personal computer diventano relativamente facili da imparare e da usare
+>	- Sviluppo di interfacce grafiche
+>- trasferimento dati internet/computer diventa molto piú economico e a portata di tutti
+
+
+> Generazione anni 80:
+> - Diffusione modello client/server
+> - Sviluppo ed evoluzione dell'area dell'ingegneria del software
+> 	- Reusable Code
+> 	- Multithreading
+> 	- Astrazione linguaggi di programmazione
