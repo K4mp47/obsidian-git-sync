@@ -96,5 +96,5 @@ HW:[]
 >	- Gestione del processore
 >	- Gestione della memoria
 >	- Protezione delle risorse
->
+>- Hard real-time e soft real-time
 
