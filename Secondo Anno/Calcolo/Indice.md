@@ -6,7 +6,8 @@
 	- Plus: due esercitazioni a settimana
 	- 2 esercitazioni per massimo 3 punti extra, da aggiungere solo in caso di esito di esame positivo
 
-## Ele
+# Elenco argomenti trattati: legenda
+
 - [ ] Proprietá dei numeri reali
 - [ ] Successioni
 - [ ] Limiti e continuitá
@@ -14,3 +15,4 @@
 - [ ] Studio di funzione
 - [ ] Integrali
 # 21 settembre 2023:
+## Insiemistica
