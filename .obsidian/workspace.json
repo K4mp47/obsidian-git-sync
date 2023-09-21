@@ -16,8 +16,21 @@
                 "file": "Secondo Anno/Sistemi Operativi/SO1.1.pdf"
               }
             }
+          },
+          {
+            "id": "3bf051439b8cfeee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/Calcolo/Indice.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
+                "file": "Secondo Anno/Calcolo/Indice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
+                "file": "Secondo Anno/Calcolo/Indice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/SO1.1.pdf"
+                "file": "Secondo Anno/Calcolo/Indice.md"
               }
             }
           }
@@ -145,10 +158,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1cd6999cd83dd4b5",
+  "active": "3bf051439b8cfeee",
   "lastOpenFiles": [
-    "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
+    "Secondo Anno/Calcolo/Indice.md",
+    "Secondo Anno/Calcolo",
+    "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Extra/Personal Todo Project.md",
     "Pasted image 20230920105428.png",
     "Pasted image 20230920104702.png",
@@ -167,7 +182,6 @@
     "Secondo Anno/Sistemi Operativi/book-co.pdf",
     "Secondo Anno/Sistemi Operativi/Unconfirmed 493354.crdownload",
     "Secondo Anno/Sistemi Operativi/SO.O.pdf",
-    "Secondo Anno/Sistemi Operativi/book.pdf",
     "Secondo Anno/Basi di Dati/Indice.md",
     "Secondo Anno/Probab. e stat./Indice.md",
     "Pasted image 20230918143850.png",
