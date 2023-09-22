@@ -1,6 +1,6 @@
 # Introduzione
 
-## 20 settembre: introduzione a OOP
+# 20 settembre: introduzione a OOP
 > Spiegazione in breve dei linguaggi di programmazione ad oggetti, storia di essi nel corso degl'anni.
 > Linguaggi piú usati in OOP oggi:
 > - Java
@@ -8,3 +8,6 @@
 > - Javascript
 > - C#
 
+
+
+# 22 settembre:

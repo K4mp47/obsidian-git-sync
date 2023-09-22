@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Indice.md",
-                "mode": "preview",
+                "file": "Secondo Anno/OOP/Indice.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Indice.md",
+                "file": "Secondo Anno/OOP/Indice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Indice.md",
+                "file": "Secondo Anno/OOP/Indice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Indice.md"
+                "file": "Secondo Anno/OOP/Indice.md"
               }
             }
           }
@@ -165,8 +165,9 @@
   },
   "active": "3bf051439b8cfeee",
   "lastOpenFiles": [
-    "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
     "Secondo Anno/Basi di Dati/Indice.md",
+    "Secondo Anno/OOP/Indice.md",
+    "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
     "Pasted image 20230922093933.png",
     "Pasted image 20230922093727.png",
     "Pasted image 20230922093413.png",
@@ -190,7 +191,6 @@
     "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Extra/Personal Todo Project.md",
     "Pasted image 20230920105428.png",
-    "Secondo Anno/OOP/Indice.md",
     "Secondo Anno/Probab. e stat./Indice.md",
     "README.md",
     "Untitled.canvas",
