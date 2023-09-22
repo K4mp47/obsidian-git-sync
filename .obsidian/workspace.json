@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Indice.md",
+                "file": "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Indice.md",
+                "file": "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Indice.md"
+                "file": "Secondo Anno/Basi di Dati/1.SistemiAle.pdf"
               }
             }
           }
@@ -163,12 +163,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3bf051439b8cfeee",
+  "active": "1cd6999cd83dd4b5",
   "lastOpenFiles": [
+    "Secondo Anno/Basi di Dati/Indice.md",
     "Pasted image 20230922093933.png",
     "Pasted image 20230922093727.png",
     "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
-    "Secondo Anno/Basi di Dati/Indice.md",
     "Pasted image 20230922093413.png",
     "Pasted image 20230922093247.png",
     "Pasted image 20230922092818.png",
@@ -190,7 +190,6 @@
     "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Extra/Personal Todo Project.md",
     "Pasted image 20230920105428.png",
-    "Pasted image 20230920104702.png",
     "Secondo Anno/OOP/Indice.md",
     "Secondo Anno/Probab. e stat./Indice.md",
     "README.md",
