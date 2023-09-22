@@ -168,9 +168,26 @@ Matricola 71523
 > ## Schema logico: 
 > - Descrive la struttura degli insiemi di dati e delle relazioni fra questi, secondo un certo modello dei dati, senza nessun riferimento alla loro organizzazione fisica nella memoria permanente.
 > - Esempio:
+> 
 > ![[Pasted image 20230922092818.png]]
 > 
 > ## Livello fisico:
 > - Descrive lo schema fisico o interno:
-> 	- come vanno organizzati fisicamente
-
+> 	- Come vanno organizzati fisicamente i dati nelle memorie permanenti
+> 	- Strutture dati ausiliarie per l'uso (es. indici)
+> - Esempio:
+> 
+> ![[Pasted image 20230922093247.png]]
+>
+>## Livello vista logica:
+>- Descrive come deve apparire la struttura della base di dati ad una certa applicazione (schema esterno o vista)
+>- Esempio:
+>
+>![[Pasted image 20230922093413.png]]
+>
+>## Indipendenza logica e fisica
+>- Indipendenza fisica: i programmi applicativi non devono essere modificati in seguito a modifiche dell'organizzazione fisica dei dati
+>	- strutture ausiliarie
+>	- modifica della distribuzione
+>- 
+>  
