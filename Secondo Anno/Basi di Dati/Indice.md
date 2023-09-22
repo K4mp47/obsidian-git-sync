@@ -121,6 +121,7 @@
 >	- Vincolo chiave primaria, con essa non possono esistere due elementi con lo stesso valore scelto come chiave primaria (nella tabella é Matricola)
 
 Definizione schema:
+![[Pasted image 20230922091556.png]]
 ```sql
 CREATE DATABASE EsempioEsami;
 
@@ -141,6 +142,19 @@ CREATE TABLE ProveEsami (
 	PRIMARY KEY (Materia,Matricola) 
 );
 
+# inserizione dati
+
+INSERT INTO ProveEsami 
+VALUES ('BD', 71523,'28.12.06',30, 'S');
+
+# interrogazione dati
+
+SELECT Matricola 
+FROM ProveEsami 
+WHERE Materia = ‘BD’ AND Voto = 30; 
+
+Matricola 71523
 ```
 
-Chiave: individua in maniera univoco in uno schema minimale
+Chiave: individua in maniera univoco in uno schema minimale(meno attributi di quelli scelti non permetto la distinzione univoca degli elementi)
+Super chiave: insieme di attributi che identificano in maniera univoca un elemento
