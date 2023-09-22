@@ -164,4 +164,13 @@ Matricola 71523
 > - Meccanismi per il controllo dei dati
 > - Studenti per il responsabile della base di dati
 > - Strumenti per lo sviluppo delle applicazioni
+> ![[Pasted image 20230922092715.png]]
+> ## Schema logico: 
+> - Descrive la struttura degli insiemi di dati e delle relazioni fra questi, secondo un certo modello dei dati, senza nessun riferimento alla loro organizzazione fisica nella memoria permanente.
+> - Esempio:
+> ![[Pasted image 20230922092818.png]]
+> 
+> ## Livello fisico:
+> - Descrive lo schema fisico o interno:
+> 	- come vanno organizzati fisicamente
 
