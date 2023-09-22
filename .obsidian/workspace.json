@@ -23,8 +23,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Indice.md",
-                "mode": "preview",
+                "file": "Secondo Anno/Basi di Dati/Indice.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Indice.md",
+                "file": "Secondo Anno/Basi di Dati/Indice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Indice.md",
+                "file": "Secondo Anno/Basi di Dati/Indice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Indice.md"
+                "file": "Secondo Anno/Basi di Dati/Indice.md"
               }
             }
           }
@@ -160,6 +160,7 @@
   },
   "active": "3bf051439b8cfeee",
   "lastOpenFiles": [
+    "Secondo Anno/Algoritmi & strutture dati/Indice.md",
     "Secondo Anno/Calcolo/Indice.md",
     "Secondo Anno/Probab. e stat./2023-09-21-Note-13-59-statistica.xopp~",
     "Secondo Anno/Probab. e stat./2023-09-21-Note-13-59-statistica.xopp",
@@ -176,7 +177,6 @@
     "Secondo Anno/OOP/Object oriented programming (6).pdf",
     "Pasted image 20230919225945.png",
     "Pasted image 20230919225844.png",
-    "Secondo Anno/Algoritmi & strutture dati/Indice.md",
     "Secondo Anno/Extra/Personal Todo Project.md.xopp~",
     "Secondo Anno/Extra/Personal Todo Project.md.xopp",
     "Pasted image 20230919150355.png",

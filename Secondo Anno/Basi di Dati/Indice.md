@@ -80,4 +80,19 @@
 >
 >![[Pasted image 20230918152201.png]]
 >![[Pasted image 20230918152521.png]]
->
+
+
+
+# 22 settembre: definizione DBMS e basi di dati
+
+## basi di dati
+- in generale una qualsiasi raccolta di dati permanenti gestiti tramite un elaboratore elettronico, ma per noi
+	- é una raccolta di dati permanenti divisi in due categorie:
+		- Metadati: definiscono lo schema della BD, che descrive:
+			- Struttura dei dati [e le operazioni eseguibili]
+			- estrizioni sui valori ammissibili (viincoli di integritá)
+			- Utenti autorizzati, ecc.
+		- Dati: le rappresentazioni di certi fatti conformi alle definizioni dello schema, con le seguenti caratteristiche:
+			- Organizzati in insiemi omogenei, fra i quali sono definite delle relazioni. La struttura dei dati e le relazioni sono descritte nello schema usando i meccanismi di astrazione del modello dei dati adottato
+			- Sono molti, in assoluto e rispetto ai metadati, e non possono essere gestiti in memoria temporanea
+			- 
