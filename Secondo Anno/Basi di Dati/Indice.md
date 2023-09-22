@@ -189,5 +189,15 @@ Matricola 71523
 >- Indipendenza fisica: i programmi applicativi non devono essere modificati in seguito a modifiche dell'organizzazione fisica dei dati
 >	- strutture ausiliarie
 >	- modifica della distribuzione
->- 
+>- Esempio:
+> 
+> ![[Pasted image 20230922093727.png]]
+> 
+> - Indipendenza logica: i programmi applicativi non devono essere modificati in seguito a modifiche dello schema logico
+> 	- difficile da ottenere
+> 	- richiederá la ridefinizione dello schema esterno
+> 
+>- Esempio: per suddividere la collezione degli studenti in part-time e full-time
+> 	  
+>![[Pasted image 20230922093933.png]]
 >  
