@@ -149,9 +149,9 @@ VALUES ('BD', 71523,'28.12.06',30, 'S');
 
 # interrogazione dati
 
-SELECT Matricola 
-FROM ProveEsami 
-WHERE Materia = ‘BD’ AND Voto = 30; 
+SELECT Matricola # campo da estrapolare
+FROM ProveEsami # da quale tabella estraggo il dato
+WHERE Materia = ‘BD’ AND Voto = 30;  # condizioni extra
 
 Matricola 71523
 ```
