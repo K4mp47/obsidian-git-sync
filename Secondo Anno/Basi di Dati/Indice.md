@@ -156,5 +156,12 @@ WHERE Materia = ‘BD’ AND Voto = 30;  # condizioni extra
 Matricola 71523
 ```
 
-Chiave: individua in maniera univoco in uno schema minimale(meno attributi di quelli scelti non permetto la distinzione univoca degli elementi)
-Super chiave: insieme di attributi che identificano in maniera univoca un elemento
+>Chiave: individua in maniera univoco in uno schema minimale(meno attributi di quelli scelti non permetto la distinzione univoca degli elementi)
+>Super chiave: insieme di attributi che identificano in maniera univoca un elemento
+
+> - Linguaggio per la definizione della base di dati (DDL)
+> - Linguaggi per l'uso dei dati (DML)
+> - Meccanismi per il controllo dei dati
+> - Studenti per il responsabile della base di dati
+> - Strumenti per lo sviluppo delle applicazioni
+
