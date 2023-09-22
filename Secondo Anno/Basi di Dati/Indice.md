@@ -97,3 +97,12 @@
 			- Sono molti, in assoluto e rispetto ai metadati, e non possono essere gestiti in memoria temporanea
 			- Sono permanenti, continuano ad esistere finché non sono rimossi esplicitamente 
 			- Sono utilizzabili contemporaneamente da utenti diversi
+			- Sono protetti da accesso da parte di utenti non autorizzati, sia da corruzioni dovuta  a malfunzionamenti hardware e software
+
+- DBMS: é un sistema centralizzato o distribuito che offre strumenti per:
+	- Definire lo schema della BD(definito prima di creare dati)
+		- definito usando il modello dei dati adottato del DBMS
+		- interrogabile con le stesse modalitá previste per i dati
+	- Scegliere le strutture dati per la memorizzazione dei dati
+	- memorizzare i dati rispettando i vincoli definiti nello schema
+	- recuperare e modificare i dati interattivamente (linguaggio query) o da altri programmi
