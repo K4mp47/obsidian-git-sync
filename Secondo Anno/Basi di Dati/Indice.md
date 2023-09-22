@@ -106,3 +106,15 @@
 	- Scegliere le strutture dati per la memorizzazione dei dati
 	- memorizzare i dati rispettando i vincoli definiti nello schema
 	- recuperare e modificare i dati interattivamente (linguaggio query) o da altri programmi
+
+## Architettura dei DBMS Centralizzati
+
+![[Pasted image 20230922090332.png]]
+
+### Modello relazionale (modello piú diffuso ancora oggi)
+>Il meccanismo di astazione fondamentale é la relazione (tabella) con campi di tipo elementari (stringhe, caratteri, interi, ore, invece di liste o oggetti)
+>
+>![[Pasted image 20230922090610.png]]
+>Lo schema specifica le tabelle
+>	- nome
+>	- struttura degli elementi (nome e tipo di attributi)
