@@ -118,3 +118,29 @@
 >Lo schema specifica le tabelle
 >	- nome
 >	- struttura degli elementi (nome e tipo di attributi)
+>	- Vincolo chiave primaria, con essa non possono esistere due elementi con lo stesso valore scelto come chiave primaria (nella tabella é Matricola)
+
+Definizione schema:
+```sql
+CREATE DATABASE EsempioEsami;
+
+CREATE TABLE Studenti (
+	Nome char(8), 
+	Matricola int NOT NULL, 
+	Citta char(10), 
+	AnnoNascita int, 
+	PRIMARY KEY (Matricola)
+);
+
+CREATE TABLE ProveEsami ( 
+	Materia char(5), 
+	Matricola int, 
+	Data char(6), 
+	Voto int, 
+	Lode char(1), 
+	PRIMARY KEY (Materia,Matricola) 
+);
+
+```
+
+Chiave: individua in maniera univoco in uno schema minimale
