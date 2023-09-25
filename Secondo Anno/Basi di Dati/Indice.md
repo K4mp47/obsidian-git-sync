@@ -200,4 +200,19 @@ Matricola 71523
 >- Esempio: per suddividere la collezione degli studenti in part-time e full-time
 > 	  
 >![[Pasted image 20230922093933.png]]
->  
+
+
+# 25 settembre: DBMS(parte 2)
+
+> Strumenti per l'amministrazione della base di dati
+> 	- Linguaggio per la definizione e la modifica degli schemi della base di dati
+> 		- Logico, esterno e fisico
+> 	- Strumenti per il controllo e messa a punto del funzionamento del sistema
+> 	- Strumenti per stabilire i diritti di accesso ai dati
+> 	- Strumenti per ripristinare la base di dati in caso malfunzionamenti di sistemi o disastri
+> 
+> - Riepilogo vantaggi DBMS
+> 	- Indipendenza fisica e logica
+> 	- Gestione efficiente dei dati
+> 	- Integritá e sicurezza dei dati
+> 	- Accessi interattivi, concorre
