@@ -248,3 +248,15 @@ Matricola 71523
 >  ![[Pasted image 20230925142014.png]]
 >  Ogni fase é centrata sulla modellazione.
 >  La modellazione verrá discussa quindi con riferimento alla problematica della progettazione delle basi di dati
+>  ## Modellazione concettuale, aspetti del problema
+>  - Quale conoscenza del dominio del discorso si rappresenta? (ontologico)
+>  - Con quali meccanismi di astrazione si modella? (logico)
+>  - Con quale linguaggio formale si definisce il modello? (linguistico)
+>  - Come si procede per costruire un modello? (pragmatico)
+>  **Cosa si modella?**
+>  - I fatti
+>  - Struttura e vincoli sulla conoscenza concreta
+>  - Le operazioni di base
+>  - Le operazioni degli utenti
+>  - Come si comunicherá con il sistema informatico
+>  - 
