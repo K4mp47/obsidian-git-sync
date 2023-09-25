@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
+                "file": "Secondo Anno/Basi di Dati/Indice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
+                "file": "Secondo Anno/Basi di Dati/Indice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/2.ModelliAle.pdf"
+                "file": "Secondo Anno/Basi di Dati/Indice.md"
               }
             }
           }
@@ -163,8 +163,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1cd6999cd83dd4b5",
+  "active": "3bf051439b8cfeee",
   "lastOpenFiles": [
+    "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
     "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
     "Secondo Anno/Basi di Dati/Indice.md",
     "Secondo Anno/OOP/Indice.md",
@@ -177,7 +178,6 @@
     "Pasted image 20230922091556.png",
     "Pasted image 20230922090610.png",
     "Pasted image 20230922090332.png",
-    "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
     "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
     "Secondo Anno/Basi di Dati/Unconfirmed 424654.crdownload",
     "Secondo Anno/Algoritmi & strutture dati/Indice.md",

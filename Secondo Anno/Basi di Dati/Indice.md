@@ -226,3 +226,12 @@ Matricola 71523
 > 
 > 	MA
 > 	- La riduzione dei costi della tecnologia e i possibili di DBMS disponibili sul mercato facilitano la loro diffusione
+> 	  
+
+# 25 settembre: Progettazione di una BD
+> - Progettare una BD significa
+> 	- progettare la struttura dei dati
+> 	- progettare le applicazioni
+> - Progettazione di un modello
+> 	- cosa significa definire un modello
+> 	- Cosa si modella
