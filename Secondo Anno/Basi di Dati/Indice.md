@@ -215,4 +215,14 @@ Matricola 71523
 > 	- Indipendenza fisica e logica
 > 	- Gestione efficiente dei dati
 > 	- Integritá e sicurezza dei dati
-> 	- Accessi interattivi, concorre
+> 	- Accessi interattivi, concorrenti e protetti dai malfunzionamenti
+> 	- Amministrazione dei dati
+> 	- Riduzione dei tempi di sviluppo delle applicazioni
+> 
+> - Svantaggi 
+> 	- Possono essere costosi e complessi da installare e mantenere in esercizio
+> 	- RIchiedono personale qualificato
+> 	- Le applicazioni sviluppate possono essere trasferite con difficoltá su sistemi diversi se vengono usati linguaggi troppo "legati" al DBMS usato
+> 
+> 	MA
+> 	- La riduzione dei costi della tecnologia e i possibili di DBMS disponibili sul mercato facilitano la loro diffusione

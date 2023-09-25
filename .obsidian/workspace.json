@@ -31,7 +31,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/1.SistemiAle.pdf"
+                "file": "Secondo Anno/Basi di Dati/2.ModelliAle.pdf"
               }
             }
           }
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Indice.md",
+                "file": "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Indice.md",
+                "file": "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Indice.md"
+                "file": "Secondo Anno/Basi di Dati/2.ModelliAle.pdf"
               }
             }
           }
@@ -163,11 +163,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3bf051439b8cfeee",
+  "active": "1cd6999cd83dd4b5",
   "lastOpenFiles": [
-    "Secondo Anno/OOP/Indice.md",
-    "Secondo Anno/Basi di Dati/Indice.md",
     "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
+    "Secondo Anno/Basi di Dati/Indice.md",
+    "Secondo Anno/OOP/Indice.md",
     "Pasted image 20230922093933.png",
     "Pasted image 20230922093727.png",
     "Pasted image 20230922093413.png",
