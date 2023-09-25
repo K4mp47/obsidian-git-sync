@@ -246,4 +246,5 @@ Matricola 71523
 > - La rappresentazione é data con un linguaggio formale
 > - Il modello é il risultato di un processo di interpretazione, guidato dalle idee e conoscenze possedute dal soggetto che interpreta
 >  ![[Pasted image 20230925142014.png]]
->  Ogni fase 
+>  Ogni fase é centrata sulla modellazione.
+>  La modellazione verrá discussa quindi con riferimento alla problematica della progettazione delle basi di dati
