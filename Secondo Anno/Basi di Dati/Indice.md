@@ -230,8 +230,20 @@ Matricola 71523
 
 # 25 settembre: Progettazione di una BD
 > - Progettare una BD significa
-> 	- progettare la struttura dei dati
-> 	- progettare le applicazioni
+> 	- Progettare la struttura dei dati
+> 	- Progettare le applicazioni
 > - Progettazione di un modello
-> 	- cosa significa definire un modello
+> 	- Cosa significa definire un modello
 > 	- Cosa si modella
+> 	- Come si modella
+> 	- Come si procede nella costruzione del modello
+>
+>
+>**Modello astratto**=> rappresentazione formale di idee e conoscenze relative a un fenomeno 
+> ## Modelli Informatici
+> Aspetti di un modello:
+> - Il modello é una rappresentazione di certi fatti
+> - La rappresentazione é data con un linguaggio formale
+> - Il modello é il risultato di un processo di interpretazione, guidato dalle idee e conoscenze possedute dal soggetto che interpreta
+>  ![[Pasted image 20230925142014.png]]
+>  Ogni fase 
