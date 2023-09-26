@@ -259,4 +259,3 @@ Matricola 71523
 >  - Le operazioni di base
 >  - Le operazioni degli utenti
 >  - Come si comunicherá con il sistema informatico
->  - 

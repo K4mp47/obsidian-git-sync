@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Indice.md",
+                "file": "Secondo Anno/Sistemi Operativi/Indice.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +31,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/2.ModelliAle.pdf"
+                "file": "Secondo Anno/Sistemi Operativi/SO1.1.pdf"
               }
             }
           }
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Indice.md",
+                "file": "Secondo Anno/Sistemi Operativi/Indice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Indice.md",
+                "file": "Secondo Anno/Sistemi Operativi/Indice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Indice.md"
+                "file": "Secondo Anno/Sistemi Operativi/Indice.md"
               }
             }
           }
@@ -165,7 +165,9 @@
   },
   "active": "3bf051439b8cfeee",
   "lastOpenFiles": [
+    "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
     "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
+    "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Basi di Dati/Indice.md",
     "Pasted image 20230925142014.png",
     "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
@@ -179,7 +181,6 @@
     "Pasted image 20230922091556.png",
     "Pasted image 20230922090610.png",
     "Pasted image 20230922090332.png",
-    "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
     "Secondo Anno/Basi di Dati/Unconfirmed 424654.crdownload",
     "Secondo Anno/Algoritmi & strutture dati/Indice.md",
     "Secondo Anno/Calcolo/Indice.md",
@@ -189,7 +190,6 @@
     "Secondo Anno/Calcolo/2023-09-21-Note-11-25-insiemi.xopp~",
     "Secondo Anno/Calcolo/2023-09-21-Note-11-25-insiemi.xopp",
     "Secondo Anno/Calcolo",
-    "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Extra/Personal Todo Project.md",
     "Secondo Anno/Probab. e stat./Indice.md",
     "README.md",
