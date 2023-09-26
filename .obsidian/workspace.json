@@ -85,7 +85,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5110321044922
+    "width": 368.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -101,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Indice.md",
+                "file": "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Indice.md",
+                "file": "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Indice.md"
+                "file": "Secondo Anno/Sistemi Operativi/SO1.1.pdf"
               }
             }
           }
@@ -163,11 +164,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3bf051439b8cfeee",
+  "active": "1cd6999cd83dd4b5",
   "lastOpenFiles": [
+    "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
     "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
-    "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Basi di Dati/Indice.md",
     "Pasted image 20230925142014.png",
     "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
