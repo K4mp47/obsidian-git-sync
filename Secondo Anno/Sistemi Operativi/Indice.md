@@ -3,6 +3,11 @@
 > - Modulo 2: solo se modulo 1 é stato passato
 > - 
 
+
+# Esercizi
+>- Tre differenze tra personal computer e mainframe
+>- Differenza modalitá utente e modalitá nucleo
+>- Perché due modalitá rendono la creazione dell'OS piú semplice
 # 19 settembre 2023: introduzione a sistemi operativi
 
 ## Cos'é un sistema operativo:
@@ -152,5 +157,4 @@ HW:[]
 
 
 # 26 settembre 2023:
->
 >
