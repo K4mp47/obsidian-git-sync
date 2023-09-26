@@ -156,5 +156,12 @@ HW:[]
 
 
 
-# 26 settembre 2023:
->
+# 26 settembre 2023: Componenti HD
+> Registri visibili sia al programmatore:
+> - PC
+> - Stack Pointer
+> - Program Status Word
+> 
+> Chiamata di sistema
+> - TRAP => istruzione che cambia la modalitá da utente a kernel
+> 
