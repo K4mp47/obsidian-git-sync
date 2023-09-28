@@ -20,22 +20,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "05aa7d1e79151e99",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "1cd6999cd83dd4b5",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Sistemi Operativi/SO1.1.pdf"
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
