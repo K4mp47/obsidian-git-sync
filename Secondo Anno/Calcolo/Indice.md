@@ -8,11 +8,16 @@
 
 # Elenco argomenti trattati: legenda
 
+- [ ] Derivate
+- [ ] Limiti e continuitá
+- [ ] Studio di funzione
 - [ ] Proprietá dei numeri reali
 - [ ] Successioni
-- [ ] Limiti e continuitá
-- [ ] Derivate
-- [ ] Studio di funzione
 - [ ] Integrali
 # 21 settembre 2023:
 ## Insiemistica
+> Nulla di troppo ecclatante, si sopravvive anche senza, in teoria non é chiesto all'esame.
+> ### Inclusione
+> - un elemento dell'insieme di destra é un elemento anche di quello di destra.
+> - $$
+> A *(B- unito- C) $$
