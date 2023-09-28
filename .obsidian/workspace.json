@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Risposte domande.md",
-                "mode": "source",
+                "file": "Secondo Anno/cheatsheet_lat/cheatsheet.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -124,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Risposte domande.md",
+                "file": "Secondo Anno/cheatsheet_lat/cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Risposte domande.md",
+                "file": "Secondo Anno/cheatsheet_lat/cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Risposte domande.md"
+                "file": "Secondo Anno/cheatsheet_lat/cheatsheet.md"
               }
             }
           }
@@ -188,9 +188,9 @@
   },
   "active": "6582b4951f9047bd",
   "lastOpenFiles": [
+    "Secondo Anno/Sistemi Operativi/Risposte domande.md",
     "Secondo Anno/Probab. e stat./2023-09-21-Note-13-59-statistica.xopp~",
     "Secondo Anno/Sistemi Operativi/SO1.2.pdf",
-    "Secondo Anno/Sistemi Operativi/Risposte domande.md",
     "Secondo Anno/Sistemi Operativi/Esercizi.SO1.pdf",
     "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
     "Secondo Anno/Sistemi Operativi/Unconfirmed 418727.crdownload",
