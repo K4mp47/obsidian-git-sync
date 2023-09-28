@@ -44,11 +44,22 @@
             "state": {
               "type": "pdf",
               "state": {
+                "file": "Secondo Anno/Sistemi Operativi/SO1.2.pdf"
+              }
+            }
+          },
+          {
+            "id": "5ec5d36782e89820",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
                 "file": "Secondo Anno/Sistemi Operativi/Esercizi.SO1.pdf"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -114,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Risposte domande.md",
+                "file": "Secondo Anno/Sistemi Operativi/Esercizi.SO1.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Risposte domande.md",
+                "file": "Secondo Anno/Sistemi Operativi/Esercizi.SO1.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Risposte domande.md"
+                "file": "Secondo Anno/Sistemi Operativi/Esercizi.SO1.pdf"
               }
             }
           }
@@ -176,12 +187,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6582b4951f9047bd",
+  "active": "5ec5d36782e89820",
   "lastOpenFiles": [
+    "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
+    "Secondo Anno/Sistemi Operativi/SO1.2.pdf",
     "Secondo Anno/Sistemi Operativi/Esercizi.SO1.pdf",
+    "Secondo Anno/Sistemi Operativi/Unconfirmed 418727.crdownload",
+    "Secondo Anno/Sistemi Operativi/SO.O.pdf",
     "Secondo Anno/Sistemi Operativi/Risposte domande.md",
     "Secondo Anno/Sistemi Operativi/Indice.md",
-    "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
     "Secondo Anno/Sistemi Operativi/Unconfirmed 722163.crdownload",
     "Secondo Anno/Calcolo/Indice.md",
     "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
@@ -202,8 +216,6 @@
     "Secondo Anno/Algoritmi & strutture dati/Indice.md",
     "Secondo Anno/Probab. e stat./2023-09-21-Note-13-59-statistica.xopp~",
     "Secondo Anno/Probab. e stat./2023-09-21-Note-13-59-statistica.xopp",
-    "Secondo Anno/Basi di Dati/2023-09-21-Note-13-59-basi di dati.xopp",
-    "Secondo Anno/Calcolo/2023-09-21-Note-11-25-insiemi.xopp~",
     "Secondo Anno/Extra/Personal Todo Project.md",
     "Secondo Anno/Probab. e stat./Indice.md",
     "README.md",
