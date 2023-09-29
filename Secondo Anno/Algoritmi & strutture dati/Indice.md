@@ -24,4 +24,8 @@ $\Theta-notation$ La "teta notation" dice invece che la funzione cresce *precisa
 
 Vediamo ora come lavorare con la notazione asintotica analizzando l'algoritmo di *insertion sort*
 
+### Insertion sort
+Esempio reale:
+- Mano sinistra vuota, mano destra con un mazzo di carte,
+
 
