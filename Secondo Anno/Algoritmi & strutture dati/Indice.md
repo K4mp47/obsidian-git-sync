@@ -26,6 +26,8 @@ Vediamo ora come lavorare con la notazione asintotica analizzando l'algoritmo di
 
 ### Insertion sort
 Esempio reale:
-- Mano sinistra vuota, mano destra con un mazzo di carte,
+- Mano sinistra vuota, mano destra con un mazzo di carte, prendo una carta alla volta e la metto al suo posto nella mano sinistra in modo che sia ordinata, una alla volta, partendo dalla prima del mazzo fino all'ultima:
+- ![[Pasted image 20230929075755.png]]
+- 
 
 

@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Indice.md",
+                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Indice.md",
+                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Indice.md"
+                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf"
               }
             }
           }
@@ -189,10 +189,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3bf051439b8cfeee",
+  "active": "968c407292d2c723",
   "lastOpenFiles": [
-    "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
     "Secondo Anno/Algoritmi & strutture dati/Indice.md",
+    "Pasted image 20230929075755.png",
+    "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
     "Secondo Anno/Basi di Dati/Indice.md",
     "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
@@ -217,7 +218,6 @@
     "Pasted image 20230922092715.png",
     "Pasted image 20230922091556.png",
     "Pasted image 20230922090610.png",
-    "Pasted image 20230922090332.png",
     "Secondo Anno/Extra/Personal Todo Project.md",
     "Secondo Anno/Probab. e stat./Indice.md",
     "README.md",
