@@ -13,16 +13,19 @@ void insertion_sort(int a[], int n) {
 }
 
 int main() {
-  int a[7];
+  int a[7] = { 4, 3, 5, 2, 7, 6, 1 };
 
   for(int i=0; i < 7; i++) {
-    cin >> a[i];
+    cout << a[i] << " ";
   }
-
+  
+  cout << endl;
   insertion_sort(a, 7);
   
   for (int i = 0; i < 7; i++) {
     cout << a[i] << " ";
   }
+
+  cout << endl;
   return 0;
 }
