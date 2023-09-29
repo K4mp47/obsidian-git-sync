@@ -68,4 +68,5 @@ int main() {
 }
 ```
 
+Osservando l'algoritmo, notiamo come il ciclo *for* viene eseguito $n-1$ volte, indifferentemente dalla lunghezza dell'array da ordinare. Il loop *while* annidato invece, varia a seconda di come sono gli elementi nell'array. Il loop inizia da $i-1$ e si decrementa di 1 ogni iterazione,
 
