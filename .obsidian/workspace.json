@@ -10,7 +10,7 @@
           {
             "id": "cc0ee2261765b2ad",
             "type": "tabs",
-            "dimension": 33.67768595041322,
+            "dimension": 53.40909090909091,
             "children": [
               {
                 "id": "3bf051439b8cfeee",
@@ -29,7 +29,7 @@
           {
             "id": "3daad9af096dd12c",
             "type": "tabs",
-            "dimension": 66.32231404958677,
+            "dimension": 46.590909090909086,
             "children": [
               {
                 "id": "6582b4951f9047bd",
@@ -74,8 +74,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "52b6ba7b5e3daabe",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -125,7 +136,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5110321044922
+    "width": 368.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -141,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Indice.md",
+                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Indice.md",
+                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,7 +193,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Indice.md"
+                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf"
               }
             }
           }
@@ -203,15 +215,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "968c407292d2c723",
+  "active": "52b6ba7b5e3daabe",
   "lastOpenFiles": [
+    "Secondo Anno/Algoritmi & strutture dati/insertion_sort.cpp",
+    "Secondo Anno/Basi di Dati/Indice.md",
     "Pasted image 20230929090654.png",
     "Pasted image 20230929090535.png",
     "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
     "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
     "Secondo Anno/Calcolo/Esame del 2021-01-12.pdf",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
-    "Secondo Anno/Basi di Dati/Indice.md",
     "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
     "Secondo Anno/Algoritmi & strutture dati/Indice.md",
     "Pasted image 20230929075755.png",
@@ -232,7 +245,6 @@
     "Pasted image 20230922093247.png",
     "Pasted image 20230922092818.png",
     "Pasted image 20230922092715.png",
-    "Pasted image 20230922091556.png",
     "Secondo Anno/Extra/Personal Todo Project.md",
     "Secondo Anno/Probab. e stat./Indice.md",
     "README.md",
