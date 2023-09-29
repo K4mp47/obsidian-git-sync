@@ -259,3 +259,12 @@ Matricola 71523
 >  - Le operazioni di base
 >  - Le operazioni degli utenti
 >  - Come si comunicherá con il sistema informatico
+
+
+# 29 settembre: Oggetti del DB
+> - Ad ogni entitá del dominio corrisponde un oggetto del modello informatico
+> - Un oggetto é un'entitá software con stato, comportamento ed identitá
+> 	- stato: modellato da un insieme di costanti o variabili
+> 	- comportamento: modellato da un insieme di procedure chiamate metodi
+> 	- identitá: associazione fatta con l'oggetto dalla creazione e non viene modificata da aggiornamenti dello stato
+> - Il primo passo nela costruzione di un modello é  la definizione dei tipi di oggetti per classi
