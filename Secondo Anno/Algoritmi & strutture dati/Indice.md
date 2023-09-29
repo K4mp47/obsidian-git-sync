@@ -22,6 +22,6 @@ $\Omega-notation$ La "Omega notation" ci serve invece per trovare la soglia di c
 
 $\Theta-notation$ La "teta notation" dice invece che la funzione cresce *precisamente* in un certo raggio, basato sempre sul termine di ordine maggiore. Sostanzialmente, se in una funzione puoi trovare sia la zero notation che la omega, stai dimostrando che la funzione é $\Theta(f(n))$.
 
-Vediamo ora come lavorare con la notazione asin
+Vediamo ora come lavorare con la notazione asintotica analizzando l'algoritmo di *insertion sort*
 
 
