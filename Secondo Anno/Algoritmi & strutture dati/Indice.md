@@ -20,5 +20,8 @@ In questa funzione il termine di ordine maggiore é $n^3$, quindi diciamo che qu
 
 $\Omega-notation$ La "Omega notation" ci serve invece per trovare la soglia di crescita piú bassa che l'algoritmo puó raggiungere, anch'essa si basa sul termine di ordine maggiore, quindi é corretto scrivere $\Omega(n^3)$, o piú in generale $\Omega(n^c) \mid c \leq 3$.
 
+$\Theta-notation$ La "teta notation" dice invece che la funzione cresce *precisamente* in un certo raggio, basato sempre sul termine di ordine maggiore. Sostanzialmente, se in una funzione puoi trovare sia la zero notation che la omega, stai dimostrando che la funzione é $\Theta(f(n))$.
+
+Vediamo ora come lavorare con la notazione asin
 
 
