@@ -267,4 +267,13 @@ Matricola 71523
 > 	- stato: modellato da un insieme di costanti o variabili
 > 	- comportamento: modellato da un insieme di procedure chiamate metodi
 > 	- identitá: associazione fatta con l'oggetto dalla creazione e non viene modificata da aggiornamenti dello stato
-> - Il primo passo nela costruzione di un modello é  la definizione dei tipi di oggetti per classi
+> - Il primo passo nela costruzione di un modello é  la definizione dei tipi di oggetti per classificare le entitá del dominio. Il tipo definisce:
+> 	- componenti dello stato
+> 	- metodi
+> ![[Pasted image 20230929090535.png]]
+> i tipi di attributi:
+> - primitivi (int, bool, real, date, ecc.)
+> - non primitivi
+> 	- ottenuto applicando anche degli operatori come:
+> 	 ![[Pasted image 20230929090654.png]]
+> 	- 
