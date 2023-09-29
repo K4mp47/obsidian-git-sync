@@ -14,6 +14,11 @@ Mettiamo in $\Theta-notation$ la funzione, quindi $\Theta(n^2)$. Noi usiamo ques
 
 Andiamo nello specifico:
 $0-notation$: la "zero notation" ci serve per calcolare la velocitá massima di crescita che un algoritmo puó raggiungere, basato nel termine di ordine maggiore all'interno dell'algoritmo.
-Per fare un esem
+Per fare un esempio:
+$$7n^3 + 100n^2 + 6$$
+In questa funzione il termine di ordine maggiore é $n^3$, quindi diciamo che questa funzione ha un ordine di grandezza di $n^3$. Dato che questa funzione non cresce piú veloce di $n^3$, possiamo scrivere $0(n^3)$ .
+
+$\Omega-notation$ La "Omega notation" ci serve invece per trovare la soglia di crescita piú bassa che l'algoritmo puó raggiungere, anch'essa si basa sul termine di ordine maggiore, quindi é corretto scrivere $\Omega(n^3)$, o piú in generale $\Omega(n^c) \mid c \leq 3$.
+
 
 
