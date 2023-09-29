@@ -28,6 +28,44 @@ Vediamo ora come lavorare con la notazione asintotica analizzando l'algoritmo di
 Esempio reale:
 - Mano sinistra vuota, mano destra con un mazzo di carte, prendo una carta alla volta e la metto al suo posto nella mano sinistra in modo che sia ordinata, una alla volta, partendo dalla prima del mazzo fino all'ultima:
 - ![[Pasted image 20230929075755.png]]
-- 
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+// esempio di insertion_sort in cpp
+void insertion_sort(int a[], int n) {
+  // ovviamente devo modificare gli indici rispetto allo pseudocodice
+  for (int i = 1; i < n; i++) { 
+	int key = a[i];
+    int j = i - 1;
+    while (j >= 0 && a[j] > key){ 
+      a[j + 1] = a[j]; 
+      j -= 1;
+    }
+
+    a[j + 1] = key;
+  }
+}
+
+int main() {
+  int a[7] = { 4, 3, 5, 2, 7, 6, 1 };
+
+  for(int i=0; i < 7; i++) {
+    cout << a[i] << " ";
+  }
+  
+  cout << endl;
+  insertion_sort(a, 7);
+  
+  for (int i = 0; i < 7; i++) {
+    cout << a[i] << " ";
+  }
+
+  cout << endl;
+  return 0;
+}
+```
 
 
