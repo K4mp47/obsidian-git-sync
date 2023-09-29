@@ -153,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Indice.md",
+                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Indice.md",
+                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,7 +193,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Indice.md"
+                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf"
               }
             }
           }
@@ -215,8 +215,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3bf051439b8cfeee",
+  "active": "52b6ba7b5e3daabe",
   "lastOpenFiles": [
+    "Secondo Anno/Algoritmi & strutture dati/Indice.md",
     "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
     "Secondo Anno/Algoritmi & strutture dati/insertion_sort",
     "Secondo Anno/Algoritmi & strutture dati/insertion_sort.cpp",
@@ -227,7 +228,6 @@
     "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
     "Secondo Anno/Calcolo/Esame del 2021-01-12.pdf",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
-    "Secondo Anno/Algoritmi & strutture dati/Indice.md",
     "Pasted image 20230929075755.png",
     "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Sistemi Operativi/Risposte domande.md",
@@ -235,7 +235,6 @@
     "Secondo Anno/Sistemi Operativi/SO1.2.pdf",
     "Secondo Anno/Sistemi Operativi/Esercizi.SO1.pdf",
     "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
-    "Secondo Anno/Sistemi Operativi/Unconfirmed 418727.crdownload",
     "Secondo Anno/Calcolo/Indice.md",
     "Pasted image 20230925142014.png",
     "Secondo Anno/OOP/Indice.md",
