@@ -17,17 +17,17 @@ Input             | Rendered        |
 
 Special characters / Symbols
 ============================
-###Latin:
-#####No dot:  
+### Latin:
+##### No dot:  
 `\imath` $\rightarrow$ $\imath$,
 `\jmath` $\rightarrow$ $\jmath$
 
-#####Hat:  
+##### Hat:  
 `\hat{\imath}`  $\rightarrow$ $\hat{\imath}$,
 `\hat{\jmath}`  $\rightarrow$ $\hat{\jmath}$
 
-###Greek Letters:
-#####Capital:
+### Greek Letters:
+##### Capital:
 LaTex      |   | LaTex    |   |
 ----------:|--:|---------:|--:|
 `\Gamma`   | Γ | `\Delta` | ∆ |
@@ -37,7 +37,7 @@ LaTex      |   | LaTex    |   |
 `\Upsilon` | Υ | `\Xi`    | Ξ |
 `\Omega`   | Ω |          |   |
 
-#####Lowercase:
+##### Lowercase:
 LaTex      |   | LaTex     |   |
 ----------:|--:|----------:|--:|
 `\alpha`   | α | `\nu`     | ν |
@@ -53,7 +53,7 @@ LaTex      |   | LaTex     |   |
 `\chi`     | χ | `\psi`    | ψ |
 `\omega`   | ω |           |   |
 
-#####Other:
+##### Other:
 LaTex       |   | LaTex       |   |
 -----------:|---|------------:|--:|
 `\digamma`  | ϝ | `varepsilon`| ε       |
@@ -63,8 +63,8 @@ LaTex       |   | LaTex       |   |
 `\eth`      | ð | `\hbar`     | $\hbar$ |
 
 
-###Other:
-####Other Symbols
+### Other:
+#### Other Symbols
 LaTex         |   | LaTex            |   |
 -------------:|---|-----------------:|--:|
 `\partial`    | ∂ | `\infty`         | ∞ |
@@ -76,7 +76,7 @@ LaTex         |   | LaTex            |   |
 `\surd`       | √ | `\forall`        | ∀ |
 `\exists`     | ∃ | `\nexists`       | ∄ |
 
-####Relational Symbols
+#### Relational Symbols
 LaTex             |   | LaTex              |          |
 -----------------:|---|-------------------:|---------:|
 `\hookrightarrow` | ↪      | `\Rightarrow`     | ⇒         |
@@ -91,13 +91,13 @@ LaTex             |   | LaTex              |          |
 `\perp`            | ⊥     | ` \parallel`     | ∥          |
 `\vartriangle`     | $\vartriangle$
 
-####Binary operators
+#### Binary operators
 LaTex        |   | LaTex  |   |
 ------------:|---|-------:|--:|
 `\wedge`     | ∧ | `\vee` | ∨ |
 `\neg``\not` | ¬ |        |   |
 
-####Cumulative operators
+#### Cumulative operators
 LaTex     |           | LaTex       |             |
 ---------:|-----------|------------:|------------:|
 `\int`    | ∫         | `\iint`     | $\iint$     |
@@ -105,7 +105,7 @@ LaTex     |           | LaTex       |             |
 `\prod`   | $\prod$   | `\sum`      | $\sum$      |
 `\bigcup` | $\bigcup$ | `\bigcap`   | $\bigcap$   |
 
-####Named operators
+#### Named operators
 $\arccos$,
 $\arcsin$,
 $\arctan$,

@@ -18,7 +18,7 @@
                   "type": "markdown",
                   "state": {
                     "file": "Secondo Anno/Algoritmi & strutture dati/Indice.md",
-                    "mode": "source",
+                    "mode": "preview",
                     "source": false
                   }
                 }
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
+                "file": "Secondo Anno/cheatsheet_lat/cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
+                "file": "Secondo Anno/cheatsheet_lat/cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf"
+                "file": "Secondo Anno/cheatsheet_lat/cheatsheet.md"
               }
             }
           }
@@ -189,11 +189,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "968c407292d2c723",
+  "active": "6582b4951f9047bd",
   "lastOpenFiles": [
     "Secondo Anno/Algoritmi & strutture dati/Indice.md",
-    "Pasted image 20230929075755.png",
     "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
+    "Pasted image 20230929075755.png",
     "Secondo Anno/Basi di Dati/Indice.md",
     "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
