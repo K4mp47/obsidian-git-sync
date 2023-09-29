@@ -7,7 +7,8 @@
 
 - $\Theta-notation$ 
 Immaginiamo ora la seguente funzione da analizzare:
-$$(\frac{c_2}{2}+\frac{c_6}{2}+\frac{c_7}{2})n^2+(c_1+c_2+c_4+\frac{c_5}{2}-\frac{c_6}{2}-\frac{c_7}{2}+c_8)n-c$$
-
-
+$$(\frac{c_2}{2}+\frac{c_6}{2}+\frac{c_7}{2})n^2+(c_1+c_2+c_4+\frac{c_5}{2}-\frac{c_6}{2}-\frac{c_7}{2}+c_8)n-(c_2+c_4+c_5+c_8)$$
+Dobbiamo scartare tutti gli elementi di ordine minore $(c_1 + c_2 + c_4 + c_5/2 - c_6/2 - c_7/2 + c_8)n$
+ed anche $c_2 + c_4 +c_5 +c_8$ ed ignoriamo il coefficiente davanti ad $n^2$.
+Mettiamo in $\Theta-notation$ la funzione, quindi $\Theta(n^2)$. Noi usiamo questo stile per caratterizzare il tempo di esecuzione degli algoritmi: usiamo la notazione che si concentra nella velocitá di crescita di un
 
