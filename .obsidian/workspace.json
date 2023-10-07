@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5081395f8ca8e137",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes-main/Programmazione/List container.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes-main/Programmazione/List container.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes-main/Programmazione/List container.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -147,23 +160,42 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "12963e85e1fb8fb1",
+  "active": "5081395f8ca8e137",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "Notes-main/Programmazione/List container.md",
+    "conflict-files-obsidian-git.md",
+    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
+    "Secondo Anno/cheatsheet_lat",
+    "Secondo Anno/Sistemi Operativi/book-co.pdf",
+    "Secondo Anno/Sistemi Operativi/SO1.2.pdf",
+    "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
+    "Secondo Anno/Sistemi Operativi/SO.O.pdf",
+    "Secondo Anno/Sistemi Operativi/Risposte domande.md",
+    "Secondo Anno/Sistemi Operativi/Indice.md",
+    "Secondo Anno/Sistemi Operativi/Esercizi.SO1.pdf",
+    "Secondo Anno/Sistemi Operativi",
+    "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf",
+    "Secondo Anno/Probab. e stat./Indice.md",
+    "Secondo Anno/Probab. e stat./2023-09-21-Note-13-59-statistica.xopp",
+    "Secondo Anno/Probab. e stat./0_Introduzione.pdf",
+    "Secondo Anno/OOP/Indice.md",
+    "Secondo Anno/Extra/Personal Todo Project.md",
+    "Secondo Anno/Calcolo/Indice.md",
+    "Secondo Anno/Basi di Dati/Indice.md",
+    "Secondo Anno/Algoritmi & strutture dati/Indice.md",
+    "Pasted image 20230929090654.png",
+    "Pasted image 20230929090535.png",
+    "Pasted image 20230929075755.png",
+    "Pasted image 20230925142014.png",
+    "Pasted image 20230922093933.png",
+    "Pasted image 20230922093727.png",
+    "Pasted image 20230922093413.png",
+    "Pasted image 20230922093247.png",
+    "Pasted image 20230922092818.png",
+    "Pasted image 20230922092715.png",
     "Notes-main/Algebra/Testing sync with github.md",
     "testing second time that shit man.md",
     "testing second time.md",
-    "Notes-main/testing/7.txt",
-    "Notes-main/testing/7.cpp",
-    "Notes-main/testing/7",
-    "Notes-main/testing/6_exe.txt",
-    "Notes-main/testing/6_exe.cpp",
-    "Notes-main/testing/6_exe",
-    "Notes-main/testing/5.txt",
-    "Notes-main/testing/5.cpp",
-    "Notes-main/testing/5",
-    "Notes-main/testing",
     "Notes-main/Programmazione/TO DO Iterators and containers.md",
     "Notes-main/Programmazione/Template.md",
     "Notes-main/Programmazione/Progetto PEL.md",
