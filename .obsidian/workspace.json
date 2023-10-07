@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "5081395f8ca8e137",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "conflict-files-obsidian-git.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Notes-main/Programmazione/List container.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "Notes-main/Programmazione/List container.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "Notes-main/Programmazione/List container.md"
               }
             }
           }
@@ -160,10 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5081395f8ca8e137",
+  "active": "12963e85e1fb8fb1",
   "lastOpenFiles": [
-    "Notes-main/Programmazione/List container.md",
     "conflict-files-obsidian-git.md",
+    "Notes-main/Programmazione/List container.md",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/cheatsheet_lat",
     "Secondo Anno/Sistemi Operativi/book-co.pdf",
