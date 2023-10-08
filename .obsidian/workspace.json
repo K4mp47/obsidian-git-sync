@@ -30,7 +30,7 @@
           {
             "id": "3c01c0ee621900eb",
             "type": "tabs",
-            "dimension": 23.492723492723496,
+            "dimension": 20.79002079002079,
             "children": [
               {
                 "id": "12963e85e1fb8fb1",
@@ -47,7 +47,7 @@
           {
             "id": "7fc888093c7ea7da",
             "type": "tabs",
-            "dimension": 76.50727650727652,
+            "dimension": 79.20997920997921,
             "children": [
               {
                 "id": "1edcc22af1f0af83",
@@ -55,7 +55,7 @@
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Secondo Anno/Sistemi Operativi/SO1.1.pdf"
+                    "file": "Secondo Anno/Sistemi Operativi/SO1.2.pdf"
                   }
                 }
               }
@@ -112,8 +112,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -129,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
+                "file": "Secondo Anno/Sistemi Operativi/SO1.2.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
+                "file": "Secondo Anno/Sistemi Operativi/SO1.2.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/SO1.1.pdf"
+                "file": "Secondo Anno/Sistemi Operativi/SO1.2.pdf"
               }
             }
           }
@@ -193,8 +192,8 @@
   },
   "active": "1edcc22af1f0af83",
   "lastOpenFiles": [
-    "Secondo Anno/Sistemi Operativi/Risposte domande.md",
     "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
+    "Secondo Anno/Sistemi Operativi/Risposte domande.md",
     "2023-10-08.md",
     "Secondo Anno/Sistemi Operativi/Esercizi.SO1.pdf",
     "Secondo Anno/Sistemi Operativi/SO1.2.pdf",
