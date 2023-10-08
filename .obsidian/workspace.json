@@ -4,65 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "204291c85a9a9637",
+        "id": "aea2f772abda131c",
         "type": "tabs",
-        "dimension": 37.8992628992629,
         "children": [
           {
-            "id": "160ee51ab6b8026b",
+            "id": "0364e6d814c2cac3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Risposte domande.md",
-                "mode": "preview",
-                "source": false
+                "file": "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf"
               }
             }
           }
         ]
-      },
-      {
-        "id": "1f553c51988ab1c6",
-        "type": "split",
-        "dimension": 62.1007371007371,
-        "children": [
-          {
-            "id": "3c01c0ee621900eb",
-            "type": "tabs",
-            "dimension": 40.53763440860215,
-            "children": [
-              {
-                "id": "12963e85e1fb8fb1",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Secondo Anno/Sistemi Operativi/Esercizi.SO1.pdf"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "id": "7fc888093c7ea7da",
-            "type": "tabs",
-            "dimension": 59.46236559139785,
-            "children": [
-              {
-                "id": "1edcc22af1f0af83",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Secondo Anno/Sistemi Operativi/SO1.1.pdf"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -112,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -129,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Risposte domande.md",
+                "file": "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Risposte domande.md",
+                "file": "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Risposte domande.md"
+                "file": "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf"
               }
             }
           }
@@ -191,15 +145,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "160ee51ab6b8026b",
+  "active": "0364e6d814c2cac3",
   "lastOpenFiles": [
-    "Secondo Anno/Sistemi Operativi/Esercizi.SO1.pdf",
+    "Secondo Anno/Probab. e stat./Indice.md",
+    "Secondo Anno/Probab. e stat./0_Introduzione.pdf",
     "Secondo Anno/Sistemi Operativi/Risposte domande.md",
+    "Secondo Anno/Sistemi Operativi/Esercizi.SO1.pdf",
     "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
     "Secondo Anno/Sistemi Operativi/SO1.2.pdf",
     "2023-10-08.md",
     "Secondo Anno/Sistemi Operativi/Indice.md",
-    "Secondo Anno/Probab. e stat./0_Introduzione.pdf",
     "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf",
     "Notes-main/Programmazione/List container.md",
     "conflict-files-obsidian-git.md",
@@ -208,7 +163,6 @@
     "Secondo Anno/Sistemi Operativi/book-co.pdf",
     "Secondo Anno/Sistemi Operativi/SO.O.pdf",
     "Secondo Anno/Sistemi Operativi",
-    "Secondo Anno/Probab. e stat./Indice.md",
     "Secondo Anno/Probab. e stat./2023-09-21-Note-13-59-statistica.xopp",
     "Secondo Anno/OOP/Indice.md",
     "Secondo Anno/Extra/Personal Todo Project.md",
