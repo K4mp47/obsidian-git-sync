@@ -16,4 +16,4 @@
 >	- sensori
 
 > - In cosa differiscono i sistemi timesharing e i sistemi multiprogrammazione?
-> 	- I sistemi multiprogrammazione 
+> 		- I sistemi multiprogrammazione 
