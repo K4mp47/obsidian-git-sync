@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Esercizi.SO1.pdf",
+                "file": "Secondo Anno/Sistemi Operativi/Risposte domande.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Esercizi.SO1.pdf",
+                "file": "Secondo Anno/Sistemi Operativi/Risposte domande.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Esercizi.SO1.pdf"
+                "file": "Secondo Anno/Sistemi Operativi/Risposte domande.md"
               }
             }
           }
@@ -191,12 +191,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "12963e85e1fb8fb1",
+  "active": "160ee51ab6b8026b",
   "lastOpenFiles": [
+    "2023-10-08.md",
     "Secondo Anno/Sistemi Operativi/Risposte domande.md",
+    "Secondo Anno/Sistemi Operativi/Esercizi.SO1.pdf",
     "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
     "Secondo Anno/Sistemi Operativi/SO1.2.pdf",
-    "Secondo Anno/Sistemi Operativi/Esercizi.SO1.pdf",
     "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Probab. e stat./0_Introduzione.pdf",
     "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf",
