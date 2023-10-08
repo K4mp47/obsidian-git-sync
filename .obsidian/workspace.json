@@ -6,7 +6,7 @@
       {
         "id": "204291c85a9a9637",
         "type": "tabs",
-        "dimension": 30.036855036855037,
+        "dimension": 37.8992628992629,
         "children": [
           {
             "id": "160ee51ab6b8026b",
@@ -25,7 +25,7 @@
       {
         "id": "1f553c51988ab1c6",
         "type": "split",
-        "dimension": 69.96314496314497,
+        "dimension": 62.1007371007371,
         "children": [
           {
             "id": "3c01c0ee621900eb",
@@ -112,7 +112,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -128,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/SO1.2.pdf",
+                "file": "Secondo Anno/Sistemi Operativi/Risposte domande.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/SO1.2.pdf",
+                "file": "Secondo Anno/Sistemi Operativi/Risposte domande.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/SO1.2.pdf"
+                "file": "Secondo Anno/Sistemi Operativi/Risposte domande.md"
               }
             }
           }
@@ -190,13 +191,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1edcc22af1f0af83",
+  "active": "160ee51ab6b8026b",
   "lastOpenFiles": [
+    "Secondo Anno/Sistemi Operativi/Esercizi.SO1.pdf",
+    "Secondo Anno/Sistemi Operativi/SO1.2.pdf",
     "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
     "Secondo Anno/Sistemi Operativi/Risposte domande.md",
     "2023-10-08.md",
-    "Secondo Anno/Sistemi Operativi/Esercizi.SO1.pdf",
-    "Secondo Anno/Sistemi Operativi/SO1.2.pdf",
     "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Probab. e stat./0_Introduzione.pdf",
     "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf",
