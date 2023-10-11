@@ -1,0 +1,154 @@
+{
+  "main": {
+    "id": "81f39b45916c450d",
+    "type": "split",
+    "children": [
+      {
+        "id": "71ce05f8bc56c64b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "06d8495e0b77454a",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8c311d32de8ad0d7",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "fd2308873f7dacf8",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "4445cc81cbf01b42",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "f87d8571d0f107b7",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "5a42e77e9fa01323",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "f797d2595246e2fc",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "72bdc9bc3ea9af22",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "9c4ca6580402b6f5",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "3bdeec6a06a9706f",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "06d8495e0b77454a",
+  "lastOpenFiles": [
+    "Secondo Anno/Probab. e stat./Giummole (2019) Introduzione ad R.pdf",
+    "Secondo Anno/Basi di Dati/Vediamo cosa si fará.md",
+    "Secondo Anno/Probab. e stat./Lezione 1, modulo 1.md",
+    "Secondo Anno/Probab. e stat./Informazioni_Generali.pdf",
+    "Secondo Anno/Probab. e stat./0_Introduzione.pdf",
+    "Secondo Anno/Probab. e stat.",
+    "Secondo Anno/Basi di Dati/Lezione 1, modulo 1.md",
+    "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
+    "Pasted image 20230918152521.png",
+    "Pasted image 20230918152201.png",
+    "Pasted image 20230918151329.png",
+    "Pasted image 20230918151044.png",
+    "Pasted image 20230918150901.png",
+    "Pasted image 20230918145726.png",
+    "Pasted image 20230918145435.png",
+    "Pasted image 20230918143850.png",
+    "Notes-main/Algebra/Esercizi Algebra pre test.md",
+    "Secondo Anno/Basi di Dati",
+    "Secondo Anno"
+  ]
+}
