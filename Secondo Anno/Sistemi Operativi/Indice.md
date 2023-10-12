@@ -164,4 +164,3 @@ HW:[]
 > 
 > Chiamata di sistema
 > - TRAP => istruzione che cambia la modalitá da utente a kernel
-> 
