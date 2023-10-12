@@ -4,48 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "2759dc2c1e14ee2d",
+        "id": "bfbb37d35eab13e0",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a91eebe40b79a3",
+            "id": "59cdf9677dbb9e6d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Indice.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8816f0bc01b23460",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Sistemi Operativi/SO2.1.pdf"
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "61eb4b9de921f1e5",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "76e0f662bee0e52f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Indice.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -114,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Indice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Indice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Secondo Anno/Sistemi Operativi/Indice.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -176,20 +139,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "76e0f662bee0e52f",
+  "active": "59cdf9677dbb9e6d",
   "lastOpenFiles": [
+    "Secondo Anno/Basi di Dati/background_pdf/EsercitazioneModConcettuale.pdf",
+    "Secondo Anno/Basi di Dati/background_pdf/2.ModelliAle.pdf",
+    "Secondo Anno/Basi di Dati/background_pdf/1.SistemiAle.pdf",
+    "Secondo Anno/Basi di Dati/background_pdf/3.Progettazione.pdf",
+    "Secondo Anno/Basi di Dati/background_pdf/Unconfirmed 45609.crdownload",
+    "Secondo Anno/Basi di Dati/background_pdf",
+    "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Sistemi Operativi/SO2.1.pdf",
     "Secondo Anno/Sistemi Operativi/background_pdf/SO2.1.pdf",
     "Secondo Anno/Sistemi Operativi/Bibbia.pdf",
     "Secondo Anno/Sistemi Operativi/SO.O.pdf",
-    "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Sistemi Operativi/background_pdf/SO.O.pdf",
-    "Secondo Anno/Sistemi Operativi/background_pdf/SO1.2.pdf",
-    "Secondo Anno/Sistemi Operativi/background_pdf/SO1.1.pdf",
-    "Secondo Anno/Sistemi Operativi/background_pdf/Esercizi.SO1.pdf",
-    "Secondo Anno/Sistemi Operativi/background_pdf",
-    "Secondo Anno/Sistemi Operativi/SO1.2.pdf",
-    "Secondo Anno/Sistemi Operativi/SO1.1.pdf",
     "Secondo Anno/Extra/Personal Todo Project.md",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Basi di Dati/Indice.md",
