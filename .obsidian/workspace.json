@@ -13,7 +13,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf"
+                "file": "Secondo Anno/Probab. e stat./1_Probabilita_Elementare.pdf"
               }
             }
           }
@@ -67,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5110321044922,
-    "collapsed": true
+    "width": 368.5110321044922
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -84,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
+                "file": "Secondo Anno/Probab. e stat./1_Probabilita_Elementare.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
+                "file": "Secondo Anno/Probab. e stat./1_Probabilita_Elementare.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf"
+                "file": "Secondo Anno/Probab. e stat./1_Probabilita_Elementare.pdf"
               }
             }
           }
@@ -146,8 +145,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "676356614d8bc787",
+  "active": "fdd74678faf3f555",
   "lastOpenFiles": [
+    "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
     "Secondo Anno/Algoritmi & strutture dati/2023-10-10-Note-16-34-algoritmi.xopp~",
     "Secondo Anno/Probab. e stat./1_Probabilita_Elementare.pdf",
     "Secondo Anno/Probab. e stat./2023-09-21-Note-13-59-statistica.xopp~",
@@ -159,7 +159,6 @@
     "Secondo Anno/Basi di Dati/background_pdf/3.Progettazione.xopp~",
     "Secondo Anno/Basi di Dati/3.Progettazione.pdf",
     "Secondo Anno/Basi di Dati/background_pdf/3.Progettazione.xopp",
-    "Secondo Anno/Basi di Dati/background_pdf/EsercitazioneModConcettuale.pdf",
     "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Extra/Personal Todo Project.md",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
