@@ -164,3 +164,6 @@ HW:[]
 > 
 > Chiamata di sistema
 > - TRAP => istruzione che cambia la modalitá da utente a kernel
+
+
+# Ho iniziato a prendere appunti direttamente sulle slide della prof!!
