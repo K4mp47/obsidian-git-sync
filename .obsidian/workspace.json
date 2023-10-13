@@ -23,7 +23,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/background_pdf/3.Progettazione.pdf"
+                "file": "Secondo Anno/Basi di Dati/3.Progettazione.pdf"
               }
             }
           }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/background_pdf/3.Progettazione.pdf",
+                "file": "Secondo Anno/Basi di Dati/3.Progettazione.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/background_pdf/3.Progettazione.pdf",
+                "file": "Secondo Anno/Basi di Dati/3.Progettazione.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/background_pdf/3.Progettazione.pdf"
+                "file": "Secondo Anno/Basi di Dati/3.Progettazione.pdf"
               }
             }
           }
@@ -156,8 +156,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "676356614d8bc787",
+  "active": "fd3498eccd219abb",
   "lastOpenFiles": [
+    "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
+    "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle.xopp~",
+    "Secondo Anno/Basi di Dati/background_pdf/3.Progettazione.pdf",
+    "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle.xopp",
     "Secondo Anno/Basi di Dati/background_pdf/4.ModelloRelazionaleAle.pdf",
     "Secondo Anno/Basi di Dati/background_pdf/Unconfirmed 863933.crdownload",
     "Secondo Anno/Basi di Dati/background_pdf/2.ModelliAle.pdf",
@@ -166,10 +170,6 @@
     "Secondo Anno/Algoritmi & strutture dati/2023-10-10-Note-16-34-algoritmi.xopp~",
     "Secondo Anno/Probab. e stat./2023-09-21-Note-13-59-statistica.xopp~",
     "Secondo Anno/Probab. e stat./R/L6-Markdown_Intro_e_Sample.knit.md",
-    "Secondo Anno/Probab. e stat./R/L6-Markdown_Intro_e_Sample.html",
-    "Secondo Anno/Probab. e stat./R/L6-Markdown_Intro_e_Sample.Rmd",
-    "Secondo Anno/Probab. e stat./R/Unconfirmed 404439.crdownload",
-    "Secondo Anno/Probab. e stat./2_CondizionataIndipendenza.pdf",
     "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Extra/Personal Todo Project.md",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
