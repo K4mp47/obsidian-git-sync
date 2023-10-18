@@ -167,3 +167,22 @@ HW:[]
 
 
 # Ho iniziato a prendere appunti direttamente sulle slide della prof!!
+
+# Come prepararsi per il parziale di NOVEMBRE
+Iscrizione alla Prima Prova intermedia - 
+Sistemi Operativi Modulo 1
+
+data prevista mercoledì 8 novembre 2023
+Orario  10.30 - Aula 1 e Aula 2
+
+Si chiede agli interessati di iscriversi in tempi rapidi.
+Iscriversi solo se intenzionati a sostenere la prova.
+
+Per partecipare alla prova è necessario iscriversi via moodle 
+****** --->>>  L'iscrizione sarà accettata via moodle fino al 27/10/2022 <<<--- ******
+
+Argomenti della prima prova:
+Cap. 1-2-3: Introduzione, Processi, thread e scheduling, gestione della memoria centrale (esclusa memoria virtuale)
+Per la prima prova intermedia si fa riferimento ai capitoli dei testi: 
+- Tanenbaum-Bos cap. 1, 2 (sezioni 1 processi, 2 thread e 5 scheduling) e 3 (sezioni 1 e 2).
+- Stallings cap. 1, 2, 3, 4, 7 (sezioni 1 e 2) e 9.
