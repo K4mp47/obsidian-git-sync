@@ -4,11 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "1961f6e1256fa735",
+        "id": "f06351abc9346e76",
         "type": "tabs",
         "children": [
           {
-            "id": "e326b86f13e60f0e",
+            "id": "fdd74678faf3f555",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Probab. e stat./1_Probabilita_Elementare.pdf"
+              }
+            }
+          },
+          {
+            "id": "fd3498eccd219abb",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Basi di Dati/3.Progettazione.pdf"
+              }
+            }
+          },
+          {
+            "id": "66c39f07cc31def9",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Basi di Dati/background_pdf/EsercitazioneTrasformazione.pdf"
+              }
+            }
+          },
+          {
+            "id": "3b1f12eae0868485",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -17,7 +47,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -84,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./1_Combinatoria.pdf",
+                "file": "Secondo Anno/Basi di Dati/background_pdf/EsercitazioneTrasformazione.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./1_Combinatoria.pdf",
+                "file": "Secondo Anno/Basi di Dati/background_pdf/EsercitazioneTrasformazione.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./1_Combinatoria.pdf"
+                "file": "Secondo Anno/Basi di Dati/background_pdf/EsercitazioneTrasformazione.pdf"
               }
             }
           }
@@ -146,27 +177,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e326b86f13e60f0e",
+  "active": "66c39f07cc31def9",
   "lastOpenFiles": [
-    "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
+    "Secondo Anno/Basi di Dati/2023-10-06-Note-08-basi-di-dati.xopp~",
+    "Secondo Anno/Basi di Dati/background_pdf/EsercitazioneModConcettuale.pdf",
+    "Secondo Anno/Basi di Dati/background_pdf/EsercitazioneTrasformazione.pdf",
+    "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
+    "Secondo Anno/Basi di Dati/3.Progettazione.pdf",
+    "Secondo Anno/Basi di Dati/background_pdf/3.Progettazione.pdf",
+    "Secondo Anno/Sistemi Operativi/Indice.md",
+    "Secondo Anno/Probab. e stat./2_Prob_Elementare_Sol.pdf",
+    "Secondo Anno/Probab. e stat./1_Combinatoria.pdf",
+    "Secondo Anno/Probab. e stat./1_Probabilita_Elementare.pdf",
+    "Secondo Anno/Probab. e stat./2_CondizionataIndipendenza.pdf",
+    "Secondo Anno/Basi di Dati/background_pdf/Unconfirmed 114083.crdownload",
+    "Secondo Anno/Probab. e stat./R/L6-Markdown_Intro_e_Sample.knit.md",
+    "Secondo Anno/Extra/Personal Todo Project.md",
+    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Basi di Dati/Indice.md",
     "Secondo Anno/Algoritmi & strutture dati/Indice.md",
     "key-value.md",
-    "Secondo Anno/Probab. e stat./L4-Esercizio combinatoria.R",
-    "Secondo Anno/Probab. e stat./Giummole (2019) Introduzione ad R.pdf",
-    "Secondo Anno/Probab. e stat./2_CondizionataIndipendenza.pdf",
-    "Secondo Anno/Probab. e stat./1_Probabilita_Elementare.pdf",
-    "Secondo Anno/Probab. e stat./1_Combinatoria.pdf",
     "2023-10-08.md",
-    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
-    "Secondo Anno/Algoritmi & strutture dati/insertion_sort",
-    "Secondo Anno/Algoritmi & strutture dati/insertion_sort.cpp",
     "Pasted image 20230929090654.png",
     "Pasted image 20230929090535.png",
-    "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
-    "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
     "Pasted image 20230929075755.png",
-    "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Sistemi Operativi/Risposte domande.md",
     "Secondo Anno/Calcolo/Indice.md",
     "Pasted image 20230925142014.png",
@@ -177,7 +211,6 @@
     "Pasted image 20230922093247.png",
     "Pasted image 20230922092818.png",
     "Pasted image 20230922092715.png",
-    "Secondo Anno/Extra/Personal Todo Project.md",
     "Secondo Anno/Probab. e stat./Indice.md",
     "README.md",
     "Untitled.canvas",

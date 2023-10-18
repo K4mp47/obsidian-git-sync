@@ -1,0 +1,86 @@
+---
+title: "La funzione sample in R"
+date: "05/10/2020"
+output: html_document
+---
+<!-- Un sistema di packages estende le funzionalità di base di R. Alcuni di questi sono automaticamente caricati in ogni sessione di lavoro e sono pronti per l'uso. Altri devono essere prima installati (una sola volta) e poi caricati (ad ogni sessione di lavoro).
+Per installare un package si utilizza il tasto Install dell'etichetta Packages della finestra in basso a destra di RStudio, e si seguono le istruzioni.
+
+Per caricare un package per la sessione di lavoro, si usa il comando library() o require():
+
+RMarkdown è un package che serve per generare report di
+alta qualità mescolando insieme parti di testo e parti di codice che vengono eseguite da R. Un documento RMarkdown ha estensione .Rmd e viene compilato in RStudio usando il tasto Knit della finestra in alto a sinistra. Il risultato è un documento HTML, Word o PDF (formato specificato dal uttente), in cui sono presenti le parti di testo e i risultati delle parti di codice compilate in R. La prima volta, deve essere installato, usando il tasto Install oppure il commando
+  install.packages("rmarkdown")
+ma non è necessario caricarlo.
+
+Per questo esercizio, avremmo bisogno di un'altro package, chiamato "mosaic", che dovremmo installare e caricare
+  install.packages("mosaic")
+-->
+
+# Campionamento
+Dal documento: *Introduzione ad R per il corso di Probabilità e Statistica*, Federica Giummolè, Anno Accademico 2019-2020, disponibile su Moodle
+
+# Campionamento
+Un aspetto molto interessante dell'uso del computer consiste nella possibilità di ricreare artificialmente alcune situazioni che nella realtà risultano difficili da replicare, costose o dispendiose in termini di tempo. Ecco qui alcuni primi semplici esempi di simulazione.
+
+Il comando **sample()** permette di estrarre (con o senza reinserimento) un certo numero di valori da un insieme prefissato. 
+
+```{r eval=FALSE}
+?sample
+```
+
+Una permutazione dei primi 12 numeri naturali si ottiene da
+
+```{r}
+x <- 1:12
+sample(x)
+```
+
+E con ripetizioni:
+
+```{r}
+sample(x, replace=TRUE)
+```
+
+Per generare i possibili
+risultati di 10 lanci di un dado equilibrato, possiamo fare così:
+
+```{r}
+sample(1:6, 10, replace=T)
+```
+
+I risultati sono diversi ogni volta: un generatore casuale sta lavorando dentro \R!
+
+Lanciamo ora il dado tantissime volte e registriamo i risultati in un vettore:
+
+```{r}
+y <- sample(1:6, 10000, replace=T)
+table(y)/10000
+```
+
+Le frequenze relative dei diversi risultati sono molto vicine alle probabilità teoriche dei risultati possibili del lancio di un dado. In effetti, se il numero di simulazioni è abbastanza elevato, le frequenze relative si possono usare come approssimazioni delle vere probabilità. Si tratta di una legge importante del calcolo delle probabilità, su cui torneremo più avanti. 
+
+Possiamo anche lanciare un dado truccato, con probabilità 0.5 che esca il numero 1:
+
+
+```{r}
+z <- sample(1:6, 10000, replace=T, prob=c(0.5,rep(0.1,5)))
+table(z)/10000
+```
+
+Ancora le frequenze relative approssimano le rispettive probabilità.
+
+Adesso giochiamo a carte! Immaginiamo di avere un classico mazzo da 52 carte, con 4 semi (C, Q, F, P) e 13 carte per ogni seme (A, 2, ...,10, J, Q, K). 
+Il nostro gioco consiste nell'estrazione di 10 carte dal mazzo con reinserimento e nel conteggio del numero di carte rosse. Dato che ci interessa solo il colore, possiamo facilmente costruire il nostro mazzo,
+```{r}
+mazzo <- c(rep("R", times=26), rep("N", times=26))
+```
+
+estrarre dal mazzo le 10 carte e contare il numero di carte rosse estratte:
+```{r}
+k <- sample(mazzo, 10, replace=T)
+sum(k=="R")
+```
+
+Quante carte rosse abbiamo estratto? Quante ci aspettavamo di estrarne?
+Se ripetiamo la procedura ci accorgiamo che il risultato ha una certa variabilità. 
