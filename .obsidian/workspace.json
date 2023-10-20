@@ -31,9 +31,11 @@
             "id": "66c39f07cc31def9",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/background_pdf/EsercitazioneTrasformazione.pdf"
+                "file": "key-value.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -98,8 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5110321044922,
-    "collapsed": true
+    "width": 368.5110321044922
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -115,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/background_pdf/EsercitazioneTrasformazione.pdf",
+                "file": "key-value.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/background_pdf/EsercitazioneTrasformazione.pdf",
+                "file": "key-value.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/background_pdf/EsercitazioneTrasformazione.pdf"
+                "file": "key-value.md"
               }
             }
           }
@@ -179,9 +180,9 @@
   },
   "active": "66c39f07cc31def9",
   "lastOpenFiles": [
+    "Secondo Anno/Basi di Dati/background_pdf/EsercitazioneTrasformazione.pdf",
     "Secondo Anno/Basi di Dati/2023-10-06-Note-08-basi-di-dati.xopp~",
     "Secondo Anno/Basi di Dati/background_pdf/EsercitazioneModConcettuale.pdf",
-    "Secondo Anno/Basi di Dati/background_pdf/EsercitazioneTrasformazione.pdf",
     "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
     "Secondo Anno/Basi di Dati/3.Progettazione.pdf",
     "Secondo Anno/Basi di Dati/background_pdf/3.Progettazione.pdf",
