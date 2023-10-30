@@ -1,1 +1,1 @@
-$()(\frac{m}{N})$
+$\choose{n} (\frac{m}{N})^k(1-\frac{m}{N})^{n-k}$
