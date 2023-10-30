@@ -4,44 +4,61 @@
     "type": "split",
     "children": [
       {
-        "id": "e43bdbe3b2eb3434",
-        "type": "split",
+        "id": "e8f22792d05cb5cc",
+        "type": "tabs",
         "dimension": 48.05333333333333,
         "children": [
           {
-            "id": "e8f22792d05cb5cc",
+            "id": "f05fa181a57efb80",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Probab. e stat./2_CondizionataIndipendenza.pdf"
+              }
+            }
+          },
+          {
+            "id": "8182b98d8dc358f0",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Probab. e stat./1_Probabilita_Elementare.pdf"
+              }
+            }
+          },
+          {
+            "id": "322650eef6a39b93",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/cheatsheet_lat/cheatsheet.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "743d675705e552ac",
+        "type": "split",
+        "dimension": 51.94666666666667,
+        "children": [
+          {
+            "id": "7c6cc65d6b326d5b",
             "type": "tabs",
-            "dimension": 65.12096774193549,
             "children": [
               {
-                "id": "f05fa181a57efb80",
+                "id": "dcab1364996bdee4",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
                   "state": {
-                    "file": "Secondo Anno/Probab. e stat./2_CondizionataIndipendenza.pdf"
-                  }
-                }
-              },
-              {
-                "id": "8182b98d8dc358f0",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Secondo Anno/Probab. e stat./1_Probabilita_Elementare.pdf"
-                  }
-                }
-              },
-              {
-                "id": "d19880d246840f59",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md",
-                    "mode": "source",
-                    "source": false
+                    "file": "Secondo Anno/Probab. e stat./3_CondizionataIndipendenza_Sol.pdf"
                   }
                 }
               },
@@ -56,21 +73,20 @@
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 1
           },
           {
-            "id": "434eee1b561051c7",
+            "id": "07ae8a9167c98ad7",
             "type": "tabs",
-            "dimension": 34.87903225806452,
             "children": [
               {
-                "id": "322650eef6a39b93",
+                "id": "d19880d246840f59",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Secondo Anno/cheatsheet_lat/cheatsheet.md",
-                    "mode": "preview",
+                    "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md",
+                    "mode": "source",
                     "source": false
                   }
                 }
@@ -79,23 +95,6 @@
           }
         ],
         "direction": "horizontal"
-      },
-      {
-        "id": "7c6cc65d6b326d5b",
-        "type": "tabs",
-        "dimension": 51.94666666666667,
-        "children": [
-          {
-            "id": "dcab1364996bdee4",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Probab. e stat./3_CondizionataIndipendenza_Sol.pdf"
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -145,7 +144,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5110321044922
+    "width": 368.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -161,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./2_CondizionataIndipendenza.pdf",
+                "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./2_CondizionataIndipendenza.pdf",
+                "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./2_CondizionataIndipendenza.pdf"
+                "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md"
               }
             }
           }
@@ -223,11 +223,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "99d5cc6cafe95991",
+  "active": "d19880d246840f59",
   "lastOpenFiles": [
+    "Secondo Anno/Probab. e stat./2_CondizionataIndipendenza.pdf",
     "Secondo Anno/Probab. e stat./Formulario Per PES.md",
     "Secondo Anno/Probab. e stat./1_Probabilita_Elementare.pdf",
-    "Secondo Anno/Probab. e stat./2_CondizionataIndipendenza.pdf",
     "Secondo Anno/Probab. e stat./2_Prob_Elementare_Sol.pdf",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "2023-10-08.md",
