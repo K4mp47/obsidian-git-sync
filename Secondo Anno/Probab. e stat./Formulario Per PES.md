@@ -3,4 +3,5 @@
 
 ### senza $$\frac{\binom{m}{k}\binom{N - m}{n - k}}{\binom{N}{n}}$$
 ### probabilitá condizionata $$P[A\mid B] = \frac{P[A \cap B]}{P[B]}$$
-### probabilitá di un'intersezione $$P[A\mid B] = P[A\cap B]P[B]$$
+### probabilitá di un'intersezione $$P[A\cap B] = P[A\mid B]P[B]$$
+### eventi indipendenti $$P[A\cap B] = P[A]P[B]$$
