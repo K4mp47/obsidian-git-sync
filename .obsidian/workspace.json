@@ -47,9 +47,19 @@
               "type": "empty",
               "state": {}
             }
+          },
+          {
+            "id": "dcab1364996bdee4",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Probab. e stat./3_CondizionataIndipendenza_Sol.pdf"
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       },
       {
         "id": "743d675705e552ac",
@@ -61,16 +71,6 @@
             "type": "tabs",
             "children": [
               {
-                "id": "dcab1364996bdee4",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Secondo Anno/Probab. e stat./3_CondizionataIndipendenza_Sol.pdf"
-                  }
-                }
-              },
-              {
                 "id": "99d5cc6cafe95991",
                 "type": "leaf",
                 "state": {
@@ -80,8 +80,7 @@
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "07ae8a9167c98ad7",
@@ -168,6 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo Anno/Probab. e stat./3_CondizionataIndipendenza_Sol.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,6 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo Anno/Probab. e stat./3_CondizionataIndipendenza_Sol.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -205,7 +206,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo Anno/Probab. e stat./3_CondizionataIndipendenza_Sol.pdf"
+              }
             }
           }
         ],
@@ -226,7 +229,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9715535959b95686",
+  "active": "dcab1364996bdee4",
   "lastOpenFiles": [
     "Secondo Anno/Probab. e stat./2_CondizionataIndipendenza.pdf",
     "Secondo Anno/Probab. e stat./Formulario Per PES.md",
