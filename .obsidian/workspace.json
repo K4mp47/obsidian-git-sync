@@ -6,7 +6,6 @@
       {
         "id": "e8f22792d05cb5cc",
         "type": "tabs",
-        "dimension": 48.05333333333333,
         "children": [
           {
             "id": "f05fa181a57efb80",
@@ -57,51 +56,31 @@
                 "file": "Secondo Anno/Probab. e stat./3_CondizionataIndipendenza_Sol.pdf"
               }
             }
-          }
-        ],
-        "currentTab": 4
-      },
-      {
-        "id": "743d675705e552ac",
-        "type": "split",
-        "dimension": 51.94666666666667,
-        "children": [
-          {
-            "id": "7c6cc65d6b326d5b",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "99d5cc6cafe95991",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Secondo Anno/Probab. e stat./2_CondizionataIndipendenza.pdf"
-                  }
-                }
-              }
-            ]
           },
           {
-            "id": "07ae8a9167c98ad7",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "d19880d246840f59",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
+            "id": "99d5cc6cafe95991",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Probab. e stat./2_CondizionataIndipendenza.pdf"
               }
-            ]
+            }
+          },
+          {
+            "id": "d19880d246840f59",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "direction": "horizontal"
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
