@@ -63,7 +63,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/background_pdf/Esercizi.SO1.pdf"
+                "file": "Secondo Anno/Sistemi Operativi/SISTEMI OPERATIVI-80-PAGINE.pdf"
               }
             }
           },
@@ -130,7 +130,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5110321044922
+    "width": 368.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -146,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/background_pdf/Esercizi.SO1.pdf",
+                "file": "Secondo Anno/Sistemi Operativi/SISTEMI OPERATIVI-80-PAGINE.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/background_pdf/Esercizi.SO1.pdf",
+                "file": "Secondo Anno/Sistemi Operativi/SISTEMI OPERATIVI-80-PAGINE.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/background_pdf/Esercizi.SO1.pdf"
+                "file": "Secondo Anno/Sistemi Operativi/SISTEMI OPERATIVI-80-PAGINE.pdf"
               }
             }
           }
@@ -210,6 +211,7 @@
   },
   "active": "99d5cc6cafe95991",
   "lastOpenFiles": [
+    "Secondo Anno/Sistemi Operativi/background_pdf/Esercizi.SO1.pdf",
     "Secondo Anno/Probab. e stat./2_CondizionataIndipendenza.pdf",
     "Secondo Anno/Sistemi Operativi/SISTEMI OPERATIVI-80-PAGINE.pdf",
     "Secondo Anno/Probab. e stat./3_CondizionataIndipendenza_Sol.pdf",
@@ -224,7 +226,6 @@
     "Secondo Anno/Sistemi Operativi/Bibbia_annotated_1.pdf",
     "Secondo Anno/Sistemi Operativi/Bibbia_annotated.xopp",
     "Secondo Anno/Probab. e stat./Unconfirmed 770808.crdownload",
-    "Secondo Anno/Sistemi Operativi/background_pdf/Bibbia.xopp",
     "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Probab. e stat./R/L6-Markdown_Intro_e_Sample.knit.md",
     "Secondo Anno/Extra/Personal Todo Project.md",
