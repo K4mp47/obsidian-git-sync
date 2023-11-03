@@ -4,54 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8f5b8763848b912d",
-        "type": "split",
-        "dimension": 54.09535452322738,
-        "children": [
-          {
-            "id": "f06351abc9346e76",
-            "type": "tabs",
-            "dimension": 60.515463917525764,
-            "children": [
-              {
-                "id": "66c39f07cc31def9",
-                "type": "leaf",
-                "state": {
-                  "type": "empty",
-                  "state": {}
-                }
-              }
-            ]
-          },
-          {
-            "id": "e8c6e60b8ebb8f18",
-            "type": "tabs",
-            "dimension": 39.48453608247423,
-            "children": [
-              {
-                "id": "d6a89d96d3cac015",
-                "type": "leaf",
-                "state": {
-                  "type": "empty",
-                  "state": {}
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "horizontal"
-      },
-      {
-        "id": "c51bf6392ebcd5f6",
+        "id": "f06351abc9346e76",
         "type": "tabs",
-        "dimension": 45.904645476772615,
         "children": [
           {
-            "id": "b647be65691c6568",
+            "id": "66c39f07cc31def9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Sistemi Operativi/SISTEMI OPERATIVI-80-PAGINE.pdf"
+              }
             }
           }
         ]
@@ -120,6 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo Anno/Sistemi Operativi/SISTEMI OPERATIVI-80-PAGINE.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,6 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo Anno/Sistemi Operativi/SISTEMI OPERATIVI-80-PAGINE.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +122,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo Anno/Sistemi Operativi/SISTEMI OPERATIVI-80-PAGINE.pdf"
+              }
             }
           }
         ],
@@ -178,7 +145,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "676356614d8bc787",
+  "active": "66c39f07cc31def9",
   "lastOpenFiles": [
     "Secondo Anno/Sistemi Operativi/book-co.pdf",
     "Secondo Anno/Sistemi Operativi/background_pdf/SO1.1.pdf",
