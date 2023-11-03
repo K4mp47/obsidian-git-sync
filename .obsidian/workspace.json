@@ -4,31 +4,79 @@
     "type": "split",
     "children": [
       {
-        "id": "f06351abc9346e76",
-        "type": "tabs",
+        "id": "82f2592410a5de41",
+        "type": "split",
         "children": [
           {
-            "id": "66c39f07cc31def9",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Sistemi Operativi/SISTEMI OPERATIVI-80-PAGINE.pdf"
+            "id": "86869f2ac8eede68",
+            "type": "split",
+            "children": [
+              {
+                "id": "f06351abc9346e76",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "66c39f07cc31def9",
+                    "type": "leaf",
+                    "state": {
+                      "type": "pdf",
+                      "state": {
+                        "file": "Secondo Anno/Sistemi Operativi/SISTEMI OPERATIVI-80-PAGINE.pdf"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "4ad3fb57d9dac572",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "e077c371857e04a7",
+                    "type": "leaf",
+                    "state": {
+                      "type": "pdf",
+                      "state": {
+                        "file": "Secondo Anno/Sistemi Operativi/background_pdf/SO1.1.pdf"
+                      }
+                    }
+                  },
+                  {
+                    "id": "488f482f4eb6582e",
+                    "type": "leaf",
+                    "state": {
+                      "type": "pdf",
+                      "state": {
+                        "file": "Secondo Anno/Sistemi Operativi/background_pdf/SO1.2.pdf"
+                      }
+                    }
+                  }
+                ],
+                "currentTab": 1
               }
-            }
+            ],
+            "direction": "horizontal"
           },
           {
-            "id": "e077c371857e04a7",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Sistemi Operativi/background_pdf/SO2.1.pdf"
+            "id": "f9c26e883faee9fd",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "2da9662b23de676f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Secondo Anno/Sistemi Operativi/OS_1_EXAM.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
-            }
+            ]
           }
         ],
-        "currentTab": 1
+        "direction": "vertical"
       }
     ],
     "direction": "vertical"
@@ -78,7 +126,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 530.5
+    "width": 530.5,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -94,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/background_pdf/SO2.1.pdf",
+                "file": "Secondo Anno/Sistemi Operativi/OS_1_EXAM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/background_pdf/SO2.1.pdf",
+                "file": "Secondo Anno/Sistemi Operativi/OS_1_EXAM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/background_pdf/SO2.1.pdf"
+                "file": "Secondo Anno/Sistemi Operativi/OS_1_EXAM.md"
               }
             }
           }
@@ -156,20 +205,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e077c371857e04a7",
+  "active": "2da9662b23de676f",
   "lastOpenFiles": [
-    "Secondo Anno/Sistemi Operativi/background_pdf/SO.O.pdf",
     "Secondo Anno/Sistemi Operativi/SISTEMI OPERATIVI-80-PAGINE.pdf",
-    "Secondo Anno/Sistemi Operativi/book-co.pdf",
-    "Secondo Anno/Sistemi Operativi/background_pdf/SO1.1.pdf",
+    "Secondo Anno/Sistemi Operativi/OS_1_EXAM.md",
     "Secondo Anno/Sistemi Operativi/background_pdf/SO1.2.pdf",
+    "Secondo Anno/Sistemi Operativi/background_pdf/SO1.1.pdf",
+    "Untitled.canvas",
+    "Secondo Anno/Sistemi Operativi/background_pdf/SO.O.pdf",
     "Secondo Anno/Sistemi Operativi/background_pdf/SO2.1.pdf",
+    "Secondo Anno/Sistemi Operativi/book-co.pdf",
     "Secondo Anno/Sistemi Operativi/background_pdf/Esercizi.SO1.pdf",
     "Secondo Anno/Sistemi Operativi/Bibbia.pdf",
     "Secondo Anno/Basi di Dati/3.Progettazione.pdf",
     "key-value.md",
     "Secondo Anno/Basi di Dati/background_pdf/EsercitazioneTrasformazione.pdf",
-    "Secondo Anno/Basi di Dati/2023-10-06-Note-08-basi-di-dati.xopp~",
     "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Probab. e stat./R/L6-Markdown_Intro_e_Sample.knit.md",
     "Secondo Anno/Extra/Personal Todo Project.md",
@@ -192,7 +242,6 @@
     "Pasted image 20230922092715.png",
     "Secondo Anno/Probab. e stat./Indice.md",
     "README.md",
-    "Untitled.canvas",
     "Notes-main/Programmazione/List container.md",
     "testing second time that shit man.md",
     "Notes-main/Algebra/Testing sync with github.md",
