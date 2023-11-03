@@ -2,7 +2,6 @@
 ### Definizione di sistema operativo:
 > Un sistema operativo é il software che permette alle applicazioni di interagire con l'hardware. il software che ne contiene i componenti principali é chiamato kernel.
 > I sistemi operativi sono principalmente gestori di risorse. Gestiscono le risorse hardware come processori e memorie, ma anche le applicazioni ed altri astrattismi software fisicamente in realtá inesistenti.
-
 ### Storia dei sistemi operativi:
 
 - -> Anni '40
@@ -61,9 +60,6 @@
 ### Storia di Internet e del World Wide Web
 > Verso la fine degli anni '60 l'ARPA mise a punto un progetto per collegare in rete i sistemi di elaborazione di una dozzina di universitá e centri di ricerca da essi finanziati. Realizzó in poco tempo la "nonna di Internet" ovvero ARPAnet. Forniva principalmente e-mail come forma di comunicazione. ARPAnet funzionava senza un controllo centralizzato, in modo che se una parte della rete fosse divenuta non funzionante, il resto della rete sarebbe comunque rimasto in grado di scambiare i dati.
 > Il WWW nasce dalla fusione del funzionamento della ARPAnet con la tecnologia sviluppata da Tim Berners-Lee del CERN, la quale permetteva di condividere documenti testuali con collegamenti ipertestuali all'interno. Per permettere questa tecnologia egli inventó HTML e il protocollo HTTP, gettando le basi per quello che oggi é conosciuto come WWW
-
-
-
 ### Componenti SO
 >I sistemi operativi si sono evoluti negli anni per gestire al meglio il reparto hardware, con conseguente ottimizzazione delle prestazioni delle varie componenti. 
 >Il software che contiene i componenti principali del SO é detto kernel. I tipici componenti di un SO sono:
@@ -84,7 +80,25 @@
 	- Fornisce solo un piccolo numero di servizi nel tentativo di mantenere il kernel piccolo e scalabile. Questi servizi riguardano in genere la gestione a basso livello del sistema, IPC e cooperazione tra processi. La maggior parte dei componenti del SO, come per esempio lo scheduler, sono eseguiti al di fuori dello spazio del kernel. Risulta essere molto scalabile, portatile ed espandibile, ma data la comunicazione che deve essere presente tra i moduli abbiamo un calo di prestazioni del sistema
 - Architettura di rete e distribuiti
 	- SO che permette di accedere a risorse presenti su altri computer in rete. In questa architettura bisogna prestare molta attenzione alle problematiche di gestione dei dati e delle comunicazioni tra computer. Un sistema distribuito é un singolo SO in grado di gestire risorse distribuite su piú sistemi di elaborazione. Sono molto difficili da realizzare e richiedono algoritmi complessi per condivisione e comunicazione dei dati tra processi
-
 ### Componenti HW/SW
+#### Schede Madri:
+- Per permettere ai dispositivi indipendenti di comunicare tra loro, i PC sono dotati di una o piú schede a circuito stampato o PCB. Essa fornisce alcuni slot per connetterci altri componenti come la memoria centrale o la cpu. In genere dispongono di un circuito integrato chiamato BIOS che memorizza le istruzioni di base per l'inizializzazione e gestione dell'hardware. Dispongono spesso di altri chip che fungono da controller, per le cose piú disparate, dalla gestione del sistema RAID a quella del trasferimento di dati tramite bus.
+##### CPU: 
+- Cervello del PC, esegue un flusso di istruzioni in linguaggio macchina. I processori dei computer possono essere di diverso tipo. Le istruzioni che esso esegue sono definite all'interno di un istruction set, differente in base al processore. Le istruzioni hanno una dimensione che puó anch'essa differire in base all'architettura. Da essa dipende anche la quantitá di dati elaborabile contemporaneamente. Alcuni componenti sono comuni a tutti i processori moderni, come l'unitá di caricamento delle istruzioni, il revisore dei salti, i registri, le memorie cache, ecc.
+- Cache L1,L2  contenute all'interno della cpu, permettendo un rapido accesso alle istruzioni piú usate
+- I registri invece sono memorie ad alta velocitá situate nel processore che contengono dati per utilizzo immediato. I dati vanno memorizzati nei registri prima che un processore possa operare su di loro. Memorizzare le istruzioni in un qualunque tipo di memoria piú lenta sarebbe inefficiente, in quanto il processore rimarrebbe inutilizzato durante l'attesa dei dati. Esistono registri dedicati all'esecuzione dei programmi. Questi di solito vengono chiamati general-purpose. Altri tipi di registri, chiamati di controllo, memorizzano specifiche informazioni sul sistema, come il contatore del programma in esecuzione, o program counter, utilizzato per sapere l'indirizzo di memoria della prossima istruzione da eseguire. Alcuni registri sono poi visibili al programmatore come il program counter, lo stack pointer o il Program status word. Se ci troviamo nel momento in cui un operazione viene fatta in modalitá utente ma necessita dei permessi che solo la mod. nucleo offre, viene attivata la cosiddetta chiamata di sistema, dove un istruzione TRAP cambia la modalitá da utente a nucleo.
+- Il tempo nei calcolatori é spesso misurato in cicli, chiamati clock. Essi fungono da direttori all'interno dell'intero sistema, determinando la frequenza con cui le operazioni vengono fatte.
+#### Gerarchie di memoria:
+- Le memorie, in base alla loro grandezza e velocitá di accesso, vengono inserite in una gerarchia, che é organizzata come segue"
+	- Registri (1ns, <1kB)
+	- Cache (2ns, 4MB)
+	- Memoria centrale (10ns, 1-8GB)
+	- Disco magnetico (10ms, 1-4TB)
+#### Memoria Centrale:
+- Consiste in memoria ad accesso casuale volatile, nota come RAM. Essa poi si divide in due sottocategorie, la DRAM e la SRAM, la prima dove é presente un circuito di refresh che periodicamente rilegge i dati che altrimenti andrebbero persi(invia un impulso), la seconda che invece non necessitá di refresh. Esistono altri tipi di memoria, anche non volatile, come le ROM, EEPROM (una ROM peró riprogrammabile) e la CMOS.
+#### Memoria Secondaria:
+- Le memorie principali non sono adatte alla memorizzazione di grandi quantitá di dati, essendo dalla capacitá limitata e volatili. Gli elaboratori usano quindi dispositivi di memorizzazione secondari, capaci di mantenere salvato il dato anche in assenza di alimentazione. Sono comunque decisamente piú lente per quanto riguarda l'accesso al dato, motivo per cui non possono essere utilizzate come memorie principali. Oggigiorno le tecnologie piú diffuse di memoria secondaria sono i HDD SSD.
+#### Accesso diretto alla memoria (DMA):
+- Tipo di accesso alla memoria fatto dal I/O in memoria, che permette di trasferire interi blocchi di dati mentre il processore continua ad eseguire istruzioni software. Un canale DMA utilizza un controller I/O per gestire il trasferimento. Per comunicare al processore l'avvenuto trasferimento invia un segnale d'interruzione al termine dell'operazione. La tecnica descritta é compatibile con diverse architetture di bus.
 
 
