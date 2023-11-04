@@ -10,10 +10,12 @@
           {
             "id": "86869f2ac8eede68",
             "type": "split",
+            "dimension": 58.76543209876544,
             "children": [
               {
                 "id": "f06351abc9346e76",
                 "type": "tabs",
+                "dimension": 47.1057884231537,
                 "children": [
                   {
                     "id": "66c39f07cc31def9",
@@ -24,12 +26,24 @@
                         "file": "Secondo Anno/Sistemi Operativi/SISTEMI OPERATIVI-80-PAGINE.pdf"
                       }
                     }
+                  },
+                  {
+                    "id": "7f98ccfe6126dc89",
+                    "type": "leaf",
+                    "state": {
+                      "type": "pdf",
+                      "state": {
+                        "file": "Secondo Anno/Sistemi Operativi/Bibbia.pdf"
+                      }
+                    }
                   }
-                ]
+                ],
+                "currentTab": 1
               },
               {
                 "id": "4ad3fb57d9dac572",
                 "type": "tabs",
+                "dimension": 52.8942115768463,
                 "children": [
                   {
                     "id": "e077c371857e04a7",
@@ -70,6 +84,7 @@
           {
             "id": "f9c26e883faee9fd",
             "type": "tabs",
+            "dimension": 41.23456790123457,
             "children": [
               {
                 "id": "2da9662b23de676f",
@@ -218,15 +233,15 @@
   "active": "2da9662b23de676f",
   "lastOpenFiles": [
     "Secondo Anno/Sistemi Operativi/background_pdf/SO2.1.pdf",
-    "Secondo Anno/Sistemi Operativi/background_pdf/SO1.2.pdf",
-    "Secondo Anno/Sistemi Operativi/background_pdf/SO1.1.pdf",
     "Secondo Anno/Sistemi Operativi/OS_1_EXAM.md",
+    "Secondo Anno/Sistemi Operativi/Bibbia.pdf",
+    "Secondo Anno/Sistemi Operativi/background_pdf/SO1.2.pdf",
     "Secondo Anno/Sistemi Operativi/SISTEMI OPERATIVI-80-PAGINE.pdf",
+    "Secondo Anno/Sistemi Operativi/background_pdf/SO1.1.pdf",
     "Untitled.canvas",
     "Secondo Anno/Sistemi Operativi/background_pdf/SO.O.pdf",
     "Secondo Anno/Sistemi Operativi/book-co.pdf",
     "Secondo Anno/Sistemi Operativi/background_pdf/Esercizi.SO1.pdf",
-    "Secondo Anno/Sistemi Operativi/Bibbia.pdf",
     "Secondo Anno/Basi di Dati/3.Progettazione.pdf",
     "key-value.md",
     "Secondo Anno/Basi di Dati/background_pdf/EsercitazioneTrasformazione.pdf",
