@@ -234,7 +234,7 @@
 - Abilitano il software a rispondere ai segnali hardware. Puó essere inizializzato da un processo in esecuzione tramite la *trap*. In questo caso sono sincrone con le operazioni del processo. Possono anche essere avviate da qualche evento che non per forza é correlato a qualche processo. In questo caso sono asincroni con le operazioni del processo. Si ha un basso overhead. Si potrebbe anche usare il Polling, ma risulta molto meno efficiente, avendo un alto overhead in base alla complessitá.
 - Vengono gestiti in maniera semplice dalla CPU. Appena riceve un interrupt, conclude l'esecuzione dell'istruzione corrente per poi interrompere il processo, esegue la funzione di interrupt di gestione del kernel, il gestore di interrupt determina come dovrebbe rispondere (i gestori sono salvati in un array di puntatori chiamato interrupt vector), per poi al termine della chiamata, ritornare all'esecuzione del processo.
 - Esistono sia gli interrupts che le eccezioni. quest'ultime al contrario degli interrupts indicano che si é verificato un errore, sia hardware che come risultato di un'istruzione software
-- Gli interrupts si dividono in:
+- Gli interrupt si dividono in:
 	- I/O
 	- Timer
 	- Interruzione per comunicazione interprocessor
