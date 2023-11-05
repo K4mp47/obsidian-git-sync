@@ -2,10 +2,6 @@
 ### Definizione di sistema operativo:
 > Un sistema operativo é il software che permette alle applicazioni di interagire con l'hardware. il software che ne contiene i componenti principali é chiamato kernel.
 > I sistemi operativi sono principalmente gestori di risorse. Gestiscono le risorse hardware come processori e memorie, ma anche le applicazioni ed altri astrattismi software fisicamente in realtá inesistenti.
-
-
-
-
 ### Storia dei sistemi operativi:
 
 - -> Anni '40
@@ -50,7 +46,6 @@
 	- Sistemi distribuiti e **cloud computing**
 	- Nascita dei **middleware** per collegare due diverse applicazioni
 	- Parallelismo spinto, piú processori sulla stessa macchina per eseguire piú operazioni in contemporanea
-
 #### Qualche nozione in piú
 - ---> in piú: Piattaforme:
 	- general-purpose
@@ -61,16 +56,9 @@
 	- mission-critical
 	- business-critical
 	- virtual machine
-
-
-
 ### Storia di Internet e del World Wide Web
 > Verso la fine degli anni '60 l'ARPA mise a punto un progetto per collegare in rete i sistemi di elaborazione di una dozzina di universitá e centri di ricerca da essi finanziati. Realizzó in poco tempo la "nonna di Internet" ovvero ARPAnet. Forniva principalmente e-mail come forma di comunicazione. ARPAnet funzionava senza un controllo centralizzato, in modo che se una parte della rete fosse divenuta non funzionante, il resto della rete sarebbe comunque rimasto in grado di scambiare i dati.
 > Il WWW nasce dalla fusione del funzionamento della ARPAnet con la tecnologia sviluppata da Tim Berners-Lee del CERN, la quale permetteva di condividere documenti testuali con collegamenti ipertestuali all'interno. Per permettere questa tecnologia egli inventó HTML e il protocollo HTTP, gettando le basi per quello che oggi é conosciuto come WWW
-
-
-
-
 ### Componenti SO
 >I sistemi operativi si sono evoluti negli anni per gestire al meglio il reparto hardware, con conseguente ottimizzazione delle prestazioni delle varie componenti. 
 >Il software che contiene i componenti principali del SO é detto kernel. I tipici componenti di un SO sono:
@@ -91,9 +79,6 @@
 	- Fornisce solo un piccolo numero di servizi nel tentativo di mantenere il kernel piccolo e scalabile. Questi servizi riguardano in genere la gestione a basso livello del sistema, IPC e cooperazione tra processi. La maggior parte dei componenti del SO, come per esempio lo scheduler, sono eseguiti al di fuori dello spazio del kernel. Risulta essere molto scalabile, portatile ed espandibile, ma data la comunicazione che deve essere presente tra i moduli abbiamo un calo di prestazioni del sistema
 - Architettura di rete e distribuiti
 	- SO che permette di accedere a risorse presenti su altri computer in rete. In questa architettura bisogna prestare molta attenzione alle problematiche di gestione dei dati e delle comunicazioni tra computer. Un sistema distribuito é un singolo SO in grado di gestire risorse distribuite su piú sistemi di elaborazione. Sono molto difficili da realizzare e richiedono algoritmi complessi per condivisione e comunicazione dei dati tra processi
-
-
-
 ### Componenti HW/SW
 
 > Le componenti hardware per essere chiamate da un processo dispongono di un componente software chiamato driver che si occupa di gestire le varie chiamate. Il driver avendo forti dipendenze in base al dispositivo HW chiamato, deve essere prima installato sulla macchina. Per inserire un driver nel SO ci sono diversi metodi, il piú utilizzato oggi é noto come plug-and-play che permette di installare il driver senza riavviare la macchina.
@@ -157,12 +142,6 @@
 	- Transazionali (es. operazioni brevi, banche dati) 
 	- Per dispositivi mobili (es. smartphone, PDA, tablet) 
 	- Embedded (integrati, elettrodomestici, automazione
-
-
-
-
-
-
 ### Processi
 #### Modello
 - Immaginiamo una macchina che sta eseguendo 4 programmi contemporaneamente. Questi 4 processi agiscono indipendenti uno dall'altro (concetto di multiprogrammazione), ovviamente é peró presente solo un vero e proprio program counter, quindi quando un processo é in esecuzione, il suo program counter logico viene caricato in quello reale. Da qui si puó poi accedere al vero indirizzo di memoria.
@@ -215,6 +194,31 @@
 		- Processo pronto per l'esecuzione
 	- Stato Blocked
 		- Processo in attesa di qualche evento prima di poter proseguire
+	- Stato Sospeso
+		- Processo rimosso dalla contesa per il tempo sul processore senza distruggerlo, utile per rilevare problemi alla sicurezza
+```mermaid
+graph TD
+
+%% Top Nodes
+id1(Ready)
+id2(Running)
+id3(Blocked)
+
+%% Suspended Nodes
+id4.1(SuspendedReady)
+id4.2(SuspendedBlocked)
+
+id1 --> id2
+id2 --> id1
+id1 --> id4.1
+id4.2 --> id1
+id4.2 --> id4.1
+id4.1 --> id1
+id3 --> id1
+id2 --> id3
+id4.2 --> id3
+id3 --> id4.2
+```
 #### PCB
 - Process Control Blocks, descrive un processo. Tipicamente contiene informazioni come:
 	- PID
@@ -233,14 +237,234 @@
 #### Interrupt
 - Abilitano il software a rispondere ai segnali hardware. Puó essere inizializzato da un processo in esecuzione tramite la *trap*. In questo caso sono sincrone con le operazioni del processo. Possono anche essere avviate da qualche evento che non per forza é correlato a qualche processo. In questo caso sono asincroni con le operazioni del processo. Si ha un basso overhead. Si potrebbe anche usare il Polling, ma risulta molto meno efficiente, avendo un alto overhead in base alla complessitá.
 - Vengono gestiti in maniera semplice dalla CPU. Appena riceve un interrupt, conclude l'esecuzione dell'istruzione corrente per poi interrompere il processo, esegue la funzione di interrupt di gestione del kernel, il gestore di interrupt determina come dovrebbe rispondere (i gestori sono salvati in un array di puntatori chiamato interrupt vector), per poi al termine della chiamata, ritornare all'esecuzione del processo.
-- Esistono sia gli interrupts che le eccezioni. quest'ultime al contrario degli interrupts indicano che si é verificato un errore, sia hardware che come risultato di un'istruzione software
+- Esistono sia gli interrupts che le eccezioni. quest'ultime al contrario degli interrupts indicano che si é verificato un errore, sia hardware che come risultato di un'istruzione software, non un evento o il cambiamento di stato di dispositivo esterno(cosa che invece fa l'interrupt).
 - Gli interrupt si dividono in:
-	- I/O
-	- Timer
-	- Interruzione per comunicazione interprocessor
+	- I/O(Variazione di stato hw)
+	- Timer(interrupt ad intervalli periodici, usati per gestire tempo o monitorare prestazioni)
+	- Interruzione per comunicazione interprocessor(processo deve inviare messaggio ad altri processi)
 	
 	Mentre le eccezioni si dividono in:
-	- Fault
-	- Trap
-	- Abort
+	- Fault(durante esecuzione codice macchina, varie casistiche come la divisione per zero)
+	- Trap(eccezioni come overflow o breakpoint)
+	- Abort(quando viene identificato un errore che non permette di recuperare l'esecuzione del processo)
 
+#### Segnali
+- Inviati al processo per avvisarlo dell'occorrenza di un evento
+	- Esso puó ricevere, ignorare o mascherare il segnale
+
+#### Message Passing
+- Interprocess communication basata su scambi di messaggi
+	- I messaggi possono essere trasferiti in una direzione alla volta
+	- Lo scambio puó essere bidirezionale
+	- I messaggi possono essere bloccanti o non bloccanti (invia di conferma del messaggio o meno)
+	- L'implementazione comune é la pipe (regione di memoria protetta dal SO, buffer usato per lo scambio di dati)
+- Nei sistemi distribuiti, i messaggi hanno bisogno di conferma dal destinatario, ci sono routine di timeout con ritrasmissione dei messaggi, i messaggi sono passati tra sistemi tramite porte numerate che permettono di denominare il riferimento del messaggio(capire che protocollo si sta usando), ed infine bisogna garantire l'autenticazione tra i due dispositivi comunicanti, grosso problema della sicurezza
+
+#### Chiamate di sistema
+- Usate dai processi per interagire con il SO
+	- fork (creazione di un processo figlio)
+	- exec (caricamento da file delle istruzioni e dati di un processo)
+	- wait (attesa di terminazione del processo figlio)
+	- signal (specifica un gestore di segnalazione per un dato segnale)
+	- exit (termina il processo chiamante)
+	- nice (modifica la prioritá)
+### Thread
+- Creati per semplificare il modello dei processi, per poter scambiare finalmente dati tra entitá parallele, per avere un aumento delle prestazioni, una maggiore semplicitá nel creare e distruggere dei processi figli, miglior adattamento ai sistemi multiprocessore.
+- I thread condividono con il proprio processo spazio di indirizzamento, file aperti ed altre informazioni, con invece registri, stack, maschere dei segnali locali per ognuno di essi
+- Si chiamano anche lightweight processes
+- Quando creato, il thread non richiede al SO di inizializzare le risorse condivise, riducendo l'overhead di creazione e terminazione dei thread
+- Come i processi, essi si muovono tra stati discreti
+- A differenza dei processi, non viene creata una copia delle risorse a partire dal processo padre, inoltre non necessitano di sicurezza, essendo tutti provenienti dallo stesso processo e di conseguenza dallo stesso utente, il quale ha presumibilmente creato i thread per cooperare e non concorrere uno con l'altro. Inoltre, essi condividono dati/file globali, cosa che i processi figli non possono fare.
+
+#### Stati di un thread
+- Analoghi per alcuni a quelli del processo: Ready, Running, Blocked.
+- Altri stati dei thread:
+	- [ ] Born
+	- [x] Ready
+	- [x] Running
+	- [ ] Dead (quando il processo viene completato)
+	- [x] Blocked (bloccato da un evento I/O)
+	- [ ] Waiting (bloccato da un altro thread)
+	- [ ] Sleeping (bloccato per un tempo prefissato)
+```mermaid
+graph TD
+
+%% Top Node
+id1(Born)
+
+%% ready
+id1.1(Ready)
+
+%% running
+id2(Running)
+
+%% other node
+id2.1(Waiting)
+id2.2(Sleeping)
+id2.3(Blocked)
+id2.4(Dead)
+
+
+
+id1 -- Start --> id1.1 --> id2 --> id2.1 & id2.2 & id2.3
+id2 -- Terminate --> id2.4
+id2 --> id1.1
+id2.3 --> id1.1
+id2.2 -- Stop sleeping --> id1.1
+id2.1 -- Stop waiting thread --> id1.1
+```
+- Possiamo quindi dire che thread e processi hanno operazioni in comune:
+	- Creazione
+	- Exit
+	- Sospensione
+	- Recupero
+	- Sleep
+	- Risveglio
+
+#### Standard e Modelli di Thread
+- Per poter creare thread ad alta portabilità, IEEE ha stabilito uno standard per essi, il 1003.1c. Il pacchetto si chiama Pthread. Esso è in prevalenza usato su Unix, e lo standard definisce oltre 60 chiamate di sistema. È possibile dividere i thread in due modelli, quello utente e quello kernel, senza dimenticare che però esistono anche gli ibridi.
+- Modello livello utente (Mapping molti-a-uno, SO associa tutti i threads di un processo ad un unico contesto)
+	- Vantaggio di poter essere implementato senza che il sistema supporti effettivamente i threads, essendo il pacchetto installato solo ad user-level
+	- Svantaggio di non essere visto come processo multi-thread ma solo come un singolo thread da parte del nucleo, oltre a poter presentare un calo di prestazioni se un thread ha problemi di I/O
+	- Non può essere schedulato su più processori in una sola volta
+	- Ogni thread dispone della propria tabella, analoga a quella dei processi kernel, con la differenza che dentro ci sono solo le pre-thread information, come stack pointer, program counter, register, state.
+	- Cambio di contesto molto veloce
+- Modello livello kernel (Mapping uno-a-uno, ogni thread ha il proprio contesto)
+	- Vantaggio di scalabilità, interattività tra processi
+	- Svantaggio di overhead dovuti al cambio di contesto e ridotta portabilità dovuta alle API specifici per il SO in uso
+	- Grazie allo scheduler ora è possibile fermare il thread senza per forza dover bloccare l'intero processo
+	- Il kernel dispone sia della tabella dei thread che di quella dei processi
+- Modello ibrido (Mapping molti-a-molti)
+	- Tramite il pooling dei thread, si riduce l'overhead. Ogni nuovo thread viene eseguito da un thread worker. Tutto ciò permette maggiori prestazioni in ambienti dove i thread sono spesso creati/distrutti
+	- Con questa tecnica, il kernel si deve preoccupare solo dei thread a livello kernel, e quindi li schedula. Alcuni kernel thread avranno collegati degli user thread, creati distrutti e schedulati come nel modello utente.
+- Un problema molto importante nei thread è collegato al fatto che le variabili globali, essendo accessibili a tutti i thread, possono generare errori all'interno del codice. Per risolvere questa problematica esistono due approcci: o si vieta l'utilizzo delle variabili globali, o se ne crea una copia per ogni thread
+- I sistemi UNIX utilizzano lo stesso tipo di descrittore per processi e thread. Per poter distinguere chi viene chiamato, i processi figli vengono fatti usando la **fork** mentre i thread usando la **clone**, funzione che accetta argomenti per specificare quali risorse condividere
+```mermaid
+graph TD
+
+%% Top Node
+id1(Creation)
+
+%% ready
+id1.1(Active)
+
+%% running
+id2(Running)
+
+%% other node
+id2.1(Expired)
+id2.2(Sleeping)
+id2.3(Stopped)
+id2.4(Zombie)
+id2.5(Dead)
+
+id1 -- Insert into run queue --> id1.1 -- Dispatched --> id2 -- Time slice expired --> id2.1
+id2 --> id2.2
+id2 --> id1.1
+id2.1 --> id1.1
+id2.2 --> id1.1
+id2.3 --> id1.1
+id2 --> id2.3
+id2 -- Receive kill or exit signal --> id2.4
+id2.4 -- Task exit system --> id2.5
+```
+- I sistemi Windows contengono i programmi, gli handle e i thread con cui condividono risorse. Il thread esegue un pezzo di codice del processo nel contesto del processo, utilizzando le risorse del processo, esso contiene il runtime stack, lo stato dei registri, attributi vari utili al processo. Si parla di PEB (Process Environment Block) e TEB (Thread Environment Block). Windows raggruppa i processi in job per una migliore gestione delle risorse per tutti i thread. I thread possono essere anche dei **fiber**, un particolare tipo di thread utente leggero di Windows. Esso viene eseguito nel contesto del thread che lo crea, e viene creato a livello utente, quindi non ci sarà organizzazione da parte dello scheduler per esso, essa è responsabilità del programma utente. I thread possono diventare fiber, ed i fiber possono essere creati indipendentemente dai thread. Si parla di una relazione molti-a-molti, ma di regola un thread è associabile ad un insieme di fiber. Windows fornisce ad ogni processo un pool di thread che si compongono di un numero di thread worker, che sono thread livello kernel che eseguono funzioni previste dal thread utente. È prevista la Thread pool in Windows grazie a Win32, una coda di task da eseguire. I thread pool appena liberi prendono un task da eseguire dalla coda. Tutto ciò evita overhead di creazione/distruzione dei thread. Se si bloccano i thread non possono essere riassegnati ad un altro task.
+```mermaid
+graph TD
+
+%% Top Node
+id1(Inizialized)
+
+%% ready
+id1.1(Ready)
+
+%% running
+id2(Stanby)
+
+%% other node
+id2.1(Running)
+id2.2(Waiting)
+id2.3(Transition)
+id2.4(Terminated)
+id2.5(Unknown)
+
+id1 --> id1.1 --> id2 --> id2.1 --> id2.4
+id2 --> id1.1
+id2.1 --> id1.1
+id2.1 --> id2.2
+id2.2 --> id1.1
+id2.2 -- Wait completion but \n memory unavailable --> id2.3
+id2.3 -- Memory made available --> id1.1
+
+```
+
+### Scheduling dei processi
+- Lo scheduling ha lo scopo di migliorare le prestazioni del dispositivo, impostando delle regole su come gestire i processi da eseguire. Queste regole sono chiamate Politica di scheduling. Essa decide quale processo viene eseguito in un dato istante. Diverse sono le politiche in base agli obbiettivi del SO:
+	- Massimizzare il throughput
+	- Minimizzare turnaround
+	- Prevenire starvation
+	- Massimizzare uso del processore
+- Tre obbiettivi comuni in tutti gli scheduler:
+	- Equità (CPU in modo equo a tutti)
+	- Predicibilità (la politica dichiarata deve essere attuata)
+	- Bilanciamento (impegnare tutte le parti del sistema)
+Diversi obbiettivi per 
+- Sistemi Batch 
+	- **Throughput** massimizzare il numero di processi serviti per unità di tempo 
+	- **Tempo di turnaround** minimizzare il tempo totale di residenza nel sistema 
+	- **Utilizzo della CPU** massimizzare l’uso del processore 
+- Sistemi Interattivi 
+	- **Tempo di risposta** minimizzare 
+	- **Adeguatezza** alle richieste e aspettative degli utenti 
+- Sistemi Real-time 
+	- **Scadenze** rispettarle 
+	- **Prevedibilità** mantenere la qualità del servizio
+- Si parla poi di nonpreemptive o preemptive (**PRELAZIONE IN ITALIANO**) se il sistema di scheduling può o meno togliere dal processore un processo in esecuzione, fondamentale nei sistemi interattivi, dato che poterlo fare comporta un miglioramento del tempo di risposta
+#### Priorità
+- Statica
+	- La priorità di un processo non cambia, facile da implementare ma non reattiva a variazioni dell'ambiente
+- Dinamica
+	- Reattiva ai cambiamenti, Richiede maggior overhead, ma favorisce una certa interattività
+#### Livelli di Scheduling
+- Alto livello
+	- Determina quale job può competere per le risorse, opera a livello di multiprogrammazione
+- Livello intermedio
+	- Determina quali processi possono competere per l'uso del processore, risponde alle fluttuazioni di carico del sistema
+- Basso Livello
+	- Assegna le priorità, ed i processori ai processi
+#### Algoritmi di scheduling
+- Decidono quando e quanto porre in esecuzione ogni processo
+- Fa scelte basandosi su:
+	- Prelazione
+	- Priorità
+	- Tempo di esecuzione
+	- Tempo al completamento
+	- Equità
+- **SCHEDULING FIRST IN FIRST OUT**
+	- Il più semplice
+	- Processi gestiti per tempo di arrivo
+	- Raramente usato
+- **SHORTEST JOB FIRST**
+	- Seleziona il processo con il minor tempo di esecuzione
+	- Possibile varianza del tempo di attesa
+	- Basandosi sulla stima del tempo per completare l'esecuzione, non è ottimale
+	- Non sempre adatto ai moderni sistemi interattivi
+- **SHORTEST REMAINING TIME FIRST**
+	- Versione con prelazione di SJF
+	- Varianza del tempo di risposta molto grande
+	- Teoricamente ottimo per il tempo medio di attesa, in pratica non sempre ottimale, overhead di cambio di contesto può diventare significativo, e alcuni processi non concludersi subito per via della prelazione
+- **ROUND ROBIN**
+	- Basato su FIFO, con prelazione, esegue i processi per un tempo limitato, quanto di tempo
+	- Richiede di tenere molti processi in memoria per diminuire l'overhead
+	- Spesso utilizzato come parte di algoritmi più complessi
+	- Facile da implementare
+	- #### Dimensione del quanto 
+		- Determina il tempo di risposta alle richieste interattive 
+		- Dimensione del quanto molto grande 
+			- Processi eseguiti per lungo tempo 
+			- Degenera nella FIFO 
+		- Dimensione del quanto molto piccola 
+			- Il sistema passa più tempo nel cambio di contesto che nell’esecuzione di processi 
+		- Dimensione del quanto media 
+			- Abbastanza a lungo per processi interattivi per fare richieste I/O 
+			- I processi batch ancora ottengono maggior la parte del tempo del processore
