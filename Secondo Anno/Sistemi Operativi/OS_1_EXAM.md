@@ -1,7 +1,7 @@
 
 ### Definizione di sistema operativo:
 > Un sistema operativo é il software che permette alle applicazioni di interagire con l'hardware. il software che ne contiene i componenti principali é chiamato kernel.
-> I sistemi operativi sono principalmente gestori di risorse. Gestiscono le risorse hardware come processori e memorie, ma anche le applicazioni ed altri astrattismi software fisicamente in realtá inesistenti.
+> I sistemi operativi sono principalmente gestori di risorse. Gestiscono le risorse hardware come processori e memorie, ma anche le applicazioni ed altri astrattismi software fisicamente in realtá inesistenti. Funge anche da macchina astratta, semplificando a livello di interfaccia utente le azioni eseguite dalla macchina.
 ### Storia dei sistemi operativi:
 
 - -> Anni '40
@@ -468,3 +468,83 @@ Diversi obbiettivi per
 		- Dimensione del quanto media 
 			- Abbastanza a lungo per processi interattivi per fare richieste I/O 
 			- I processi batch ancora ottengono maggior la parte del tempo del processore
+- #### A Priorità
+	- I processi di classi a maggiore priorità sono eseguiti prima. La priorità può essere fissa o variabile, ovvero dinamica, basata sui tempi o astratta. 
+	- Esiste una versione mescolata al RR, dove si esegue RR all'interno di classe con priorità , ma si ha una potenziale attesa infinita
+- #### Selfish RR
+	- Aumenta la priorità con l'età di processo
+	- Due code, processi in attesa e processi attivo
+	- Un processo entra nella coda di attesa, invecchiando e aumentando di priorità. Quando raggiunge la stessa priorità dei processi pronti, si sposta nella coda degli attivi e viene applicato il RR 
+	- Si evitano ritardi irragionevoli dei processi
+- #### Highest Response Ratio Next (HRRN)
+	- Migliora lo scheduling SJF
+	- Senza prelazione
+	- Tiene conto di quanto un processo rimane in attesa, in modo da evitare un attesa infinita
+- #### Multiple Queues with Feedback
+	- Diversi processi con diverse priorità
+	- I processi che arrivano entrano nella lista con il più alto livello e sono eseguiti con priorità maggiore  rispetto ai processi nelle code inferiori
+	- I processi lunghi scendo a livelli più bassi più volte, fornendo magggiore priorità ai processi brevi e I/O bound
+	- I processi in ogni coda sono serviti utilizzando FIFO o RR. Quando un processo entra in una coda più alta forza la prelazione sui processi in esecuzione
+- #### Scheduling Fair Share (FSS)
+	- Controlla l'accesso degli utenti alle risorse, dando importanze diverse tra gruppi di utenti, e dividendo i processi da eseguire per gli utenti nella macchina.
+	- Equità tra gruppi di utenti
+	- Risorse distribuite secondo la proporzione delle risorse già assegnata ad ogni gruppo
+	- I gruppi che non soddisfano gli obiettivi della utlizzazione delle risorse ottengono priorità maggiore
+- #### Scheduling a scadenza
+	- Processi completati entro un tempo stabilito. Usato quando i risulati dei processi sarebbero inutili se non consegnati in tempo
+	- Difficile da implementare, necessita di conoscere i requisiti delle risorse in anticipo, comporta un notevole overhead, ed il servizio ad altri processi possono degradare
+- #### Real-time scheduling
+	- Statico
+		- Basso overhead
+		- Adatto ai sistemi hard
+		- Scheduling Rate-monotonic (RM)
+			- Priorità del processo aumenta in maniera monotica
+			- RR, con prelazione e priorità
+			- Favorisce i processi eseguiti spesso
+	- Dinamico
+		- Overhead maggiore
+		- Adatto ai sistemi soft
+		- Sceduling EDF con prelazione + Minimum-laxity-first (rapporto tempo rimanente di esecuzione e tempo di scadenza del processo)
+### Gerarchie di memoria
+#### Strategie di gestione della memoria
+- Strategie di fetch
+	- A richiesta o a previsione
+	- Decide quando spostare la prossima sezione di programma e dati
+- Strategie di posizionamento
+	- Decide dove inserire i dati e programmi in memoria centrale
+	- Best-fit, first-fit, worst-fit
+- Strategie di sostituzione
+	- Decide quali dati o programmi da rimuovere dalla memoria principale per creare spazio quando necessario
+#### Allocazione di memoria contigua vs non contigua
+- Contigua
+	- Un programma deve essere memorizzato come un unico blocco di indirizzi contigui
+	- Può essere impossibile trovare un blocco abbastanza grande
+	- basso overhead
+- Non contigua
+	- Il programma è diviso in blocchi chiamati segmenti
+	- Ogni segmento può essere allocato in diverse parti della memoria
+	- Piú overhead, più processi in contemporanea in memoria, più semplice trovare buchi per inserire il segmento di codice
+#### Allocazione mono utente
+- L'utente ha il controllo dell'intero sistema
+- Assenza di modello di astrazione della memoria
+- Le risorse non hanno bisogno di essere condivise 
+- Il programmatore scrive il codice per gestione di risorse
+- Hanno inventato IOCS, Input Output Control System
+
+#### Overlay
+- Tecnica di programmazione per superare i limiti di allocazione contigua
+	- Il programma è diviso in sezioni logiche
+	- Si memorizzano soltanto le sezioni attive al momento
+	- Difficile organizzazione 
+	- Complica la modifica ai programmi
+#### Multiprogrammazione a partizioni fisse
+- Le richieste I/O possono vincolare per lungo tempo la CPU, la multiprogrammazione risulta una soluzione ad essa
+	- Richiede più processi in memoria contemporaneamente
+	- Il processo che non usa attivamente la CPU dovrebbe rilasciarla ad altri
+- ###### Partizione fissa
+	- Ogni processo attivo riceve un blocco di memoria fissa della memoria
+	- Illusione di simultaneità
+	- Maggior richiesta di memoria
+	- Svantaggio di un maggior overhead, una volta anche si presentavano problemi di rilocazione, risolti con compilatori rilocanti
+- ###### Partizione variabile
+	- Ogni processo attivo viene inserito in memoria dove può essere contenuto
