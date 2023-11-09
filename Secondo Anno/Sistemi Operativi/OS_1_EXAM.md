@@ -69,7 +69,15 @@
 >- gestore del file system: organizza raccolte di dati e fornisce interfaccia per accedervi
 >
 >Quasi tutti i SO oggi offrono supporto ad un ambiente multiprogrammato in cui piú applicazioni sono eseguibili concorrentemente.
->
+>Carattestitiche
+>- Efficienza
+>- Robustezza
+>- Sicurezza e protezione
+>- Estensibilità
+>- Scalabilità
+>- Portabilità
+>- Interattività
+>- Usabilità
 #### Architettura di un SO
 - Architettura monolitica
 	- Piú vecchia e comune. Ogni componente fa parte del kernel, permettendo la comunicazione diretta tra di essi. Ció rende il sistema molto efficiente, ma risulta spesso difficile isolare fonti di errore, oltre che essere molto piú esposti a danni derivanti da codice errato o dannoso, essendo tutti i componenti raggruppati nel kernel
@@ -79,7 +87,7 @@
 	- Fornisce solo un piccolo numero di servizi nel tentativo di mantenere il kernel piccolo e scalabile. Questi servizi riguardano in genere la gestione a basso livello del sistema, IPC e cooperazione tra processi. La maggior parte dei componenti del SO, come per esempio lo scheduler, sono eseguiti al di fuori dello spazio del kernel. Risulta essere molto scalabile, portatile ed espandibile, ma data la comunicazione che deve essere presente tra i moduli abbiamo un calo di prestazioni del sistema
 - Architettura di rete e distribuiti
 	- SO che permette di accedere a risorse presenti su altri computer in rete. In questa architettura bisogna prestare molta attenzione alle problematiche di gestione dei dati e delle comunicazioni tra computer. Un sistema distribuito é un singolo SO in grado di gestire risorse distribuite su piú sistemi di elaborazione. Sono molto difficili da realizzare e richiedono algoritmi complessi per condivisione e comunicazione dei dati tra processi
-### Componenti HW/SW
+### Componenti HW
 
 > Le componenti hardware per essere chiamate da un processo dispongono di un componente software chiamato driver che si occupa di gestire le varie chiamate. Il driver avendo forti dipendenze in base al dispositivo HW chiamato, deve essere prima installato sulla macchina. Per inserire un driver nel SO ci sono diversi metodi, il piú utilizzato oggi é noto come plug-and-play che permette di installare il driver senza riavviare la macchina.
 #### Schede Madri:
@@ -99,7 +107,7 @@
 	- Memoria centrale (10ns, 1-8GB)
 	- Disco magnetico (10ms, 1-4TB)
 #### Memoria Centrale:
-- Consiste in memoria ad accesso casuale volatile, nota come RAM. Essa poi si divide in due sottocategorie, la DRAM e la SRAM, la prima dove é presente un circuito di refresh che periodicamente rilegge i dati che altrimenti andrebbero persi(invia un impulso), la seconda che invece non necessitá di refresh. Esistono altri tipi di memoria, anche non volatile, come le ROM, EEPROM (una ROM peró riprogrammabile) e la CMOS.
+- Consiste in memoria ad accesso casuale volatile, nota come RAM. Essa poi si divide in due sottocategorie, la DRAM e la SRAM, la prima dove é presente un circuito di refresh che periodicamente rilegge i dati che altrimenti andrebbero persi(invia un impulso), la seconda che invece non necessita di refresh. Esistono altri tipi di memoria, anche non volatile, come le ROM, EEPROM (una ROM peró riprogrammabile) e la CMOS.
 #### Memoria Secondaria:
 - Le memorie principali non sono adatte alla memorizzazione di grandi quantitá di dati, essendo dalla capacitá limitata e volatili. Gli elaboratori usano quindi dispositivi di memorizzazione secondari, capaci di mantenere salvato il dato anche in assenza di alimentazione. Sono comunque decisamente piú lente per quanto riguarda l'accesso al dato, motivo per cui non possono essere utilizzate come memorie principali. Oggigiorno le tecnologie piú diffuse di memoria secondaria sono i HDD SSD. Altre unitá secondarie rimovibili come i DVD, CD, memorie flash, permettono di facilitare operazioni come il backup e il trasferimento di dati
 #### Accesso diretto alla memoria (DMA):
@@ -141,7 +149,7 @@
 	- Multimedia (es. video on demand) 
 	- Transazionali (es. operazioni brevi, banche dati) 
 	- Per dispositivi mobili (es. smartphone, PDA, tablet) 
-	- Embedded (integrati, elettrodomestici, automazione
+	- Embedded (integrati, elettrodomestici, automazione)
 ### Processi
 #### Modello
 - Immaginiamo una macchina che sta eseguendo 4 programmi contemporaneamente. Questi 4 processi agiscono indipendenti uno dall'altro (concetto di multiprogrammazione), ovviamente é peró presente solo un vero e proprio program counter, quindi quando un processo é in esecuzione, il suo program counter logico viene caricato in quello reale. Da qui si puó poi accedere al vero indirizzo di memoria.
@@ -545,6 +553,14 @@ Diversi obbiettivi per
 	- Ogni processo attivo riceve un blocco di memoria fissa della memoria
 	- Illusione di simultaneità
 	- Maggior richiesta di memoria
-	- Svantaggio di un maggior overhead, una volta anche si presentavano problemi di rilocazione, risolti con compilatori rilocanti
+	- Svantaggio di un maggior overhead, una volta anche si presentavano problemi di rilocazione, risolti con compilatori rilocanti, frammentazione interna
+	- Protezione avviene tra SO e processo/processo e altri processi (boundary registers)
 - ###### Partizione variabile
 	- Ogni processo attivo viene inserito in memoria dove può essere contenuto
+	- Impossibile si verifichi la frammentazione interna, ma possibile frammentazione esterna, risolvibile tramite coalescenza (blocchi liberi adiacenti combinati in uno) o compattazione (memoria libera riorganizzata in un unico blocco contiguo, overhead significativo)
+- ###### Strategie di posizionamento in memoria
+	- First-fit (inserimento nel primo posto libero), variante next-fit
+	- Worst-fit (allocazione in modo da lasciare il maggior spazio inutilizzato possibile)
+	- Best-fit (allocazione che lascia il minimo spazio inutilizzato, comporta un maggior overhead)
+- ###### Swapping di memoria
+	- Solo il processo in esecuzione è in memoria principale, gli altri vengono caricati temporaneamente in memoria secondaria, questo permette di avere tutta la memoria disponibile ma comporta un altissimo overhead al cambio di contesto. Soluzione migliore se si caricano più processi in memoria primaria assieme.
