@@ -4,99 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "b88568173fca13f4",
-        "type": "split",
-        "dimension": 54.32098765432099,
+        "id": "e3251006e1b180ae",
+        "type": "tabs",
         "children": [
           {
-            "id": "e3251006e1b180ae",
-            "type": "tabs",
-            "dimension": 80.03992015968063,
-            "children": [
-              {
-                "id": "f89568b82cf85108",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Secondo Anno/Basi di Dati/1.SistemiAle.pdf"
-                  }
-                }
-              },
-              {
-                "id": "f31ecdc023068dd9",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Secondo Anno/Basi di Dati/2.ModelliAle.pdf"
-                  }
-                }
-              },
-              {
-                "id": "d80abe9595059252",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Secondo Anno/Probab. e stat./3_VariabiliCasuali.pdf"
-                  }
-                }
-              },
-              {
-                "id": "29f6926a2b289298",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Secondo Anno/Probab. e stat./4_VariabiliAleatorie-1_Sol.pdf"
-                  }
-                }
-              },
-              {
-                "id": "9d923094ba950961",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
+            "id": "29f6926a2b289298",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Probab. e stat./4_VariabiliAleatorie-1_Sol.pdf"
               }
-            ],
-            "currentTab": 3
+            }
           },
           {
-            "id": "fa7a8f81692dddb6",
-            "type": "tabs",
-            "dimension": 19.96007984031936,
-            "children": [
-              {
-                "id": "18d76718cdc1b09e",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Secondo Anno/cheatsheet_lat/cheatsheet.md",
-                    "mode": "preview",
-                    "source": false
-                  }
-                }
+            "id": "f89568b82cf85108",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Probab. e stat./5_Costanti_Caratteristiche_tutorato.pdf"
               }
-            ]
-          }
-        ],
-        "direction": "horizontal"
-      },
-      {
-        "id": "3381096b99815c50",
-        "type": "tabs",
-        "dimension": 45.67901234567901,
-        "children": [
+            }
+          },
           {
-            "id": "5e7ac9ebc959c569",
+            "id": "abd3bfa21dd4c2d9",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -106,38 +38,19 @@
             }
           },
           {
-            "id": "7aee35416b126050",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "9105371da520ee08",
+            "id": "12fd20103506883b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basi di Dati.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b29ee854c38bc4c7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Sistemi Operativi/OS_1_EXAM.md",
+                "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -203,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./4_VariabiliAleatorie-1_Sol.pdf",
+                "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -220,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./4_VariabiliAleatorie-1_Sol.pdf",
+                "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -243,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./4_VariabiliAleatorie-1_Sol.pdf"
+                "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md"
               }
             }
           }
@@ -265,25 +178,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "29f6926a2b289298",
+  "active": "12fd20103506883b",
   "lastOpenFiles": [
-    "Secondo Anno/Basi di Dati/4_VariabiliDiscrete.pdf",
-    "Secondo Anno/Basi di Dati/Unconfirmed 850321.crdownload",
-    "Secondo Anno/Probab. e stat./Formulario Per PES.md",
+    "Secondo Anno/Probab. e stat./6_Quantili_e_Discrete_Sol.pdf",
+    "Secondo Anno/Probab. e stat./Unconfirmed 999162.crdownload",
+    "Secondo Anno/Probab. e stat./5_Costanti_Caratteristiche_Sol.pdf",
+    "Secondo Anno/Probab. e stat./Unconfirmed 388969.crdownload",
+    "Secondo Anno/Probab. e stat./2023-09-21-Note-13-59-statistica.xopp~",
     "Secondo Anno/Probab. e stat./3_VariabiliCasuali.pdf",
-    "Secondo Anno/Basi di Dati/5_Costanti_Caratteristiche_tutorato.pdf",
-    "Secondo Anno/Basi di Dati/Unconfirmed 939808.crdownload",
-    "Secondo Anno/Probab. e stat./4_VariabiliAleatorie-1_Sol.pdf",
-    "Secondo Anno/Basi di Dati/4_Variabili_Aleatorie_tutorato.pdf",
-    "Secondo Anno/Basi di Dati/Unconfirmed 756743.crdownload",
-    "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
-    "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
-    "Secondo Anno/Probab. e stat./4_VariabiliAleatorie-1_NoSol.pdf",
+    "Secondo Anno/Algoritmi & strutture dati/code/esercitazione1/main.cpp",
+    "Secondo Anno/Algoritmi & strutture dati/code/esercitazione1",
+    "Secondo Anno/Algoritmi & strutture dati/code",
+    "Secondo Anno/Probab. e stat./5_Costanti_Caratteristiche_tutorato.pdf",
+    "Secondo Anno/Probab. e stat./Formulario Per PES.md",
+    "Secondo Anno/Probab. e stat./2_Prob_Elementare_Sol.pdf",
     "Basi di Dati.md",
-    "Secondo Anno/Sistemi Operativi/OS_1_EXAM.md",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Sistemi Operativi/Risposte domande.md",
+    "Secondo Anno/Sistemi Operativi/OS_1_EXAM.md",
     "Untitled.md",
     "Secondo Anno/Probab. e stat./R/L14-Costanti_Caratteristiche.knit.md",
     "Secondo Anno/Probab. e stat./R/L14-Costanti_Caratteristiche_files/figure-html/unnamed-chunk-14-1.png",
