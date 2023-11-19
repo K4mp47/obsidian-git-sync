@@ -103,6 +103,31 @@ id1 --> id2 --> id3 --> id4
 ![[Pasted image 20231119105512.png]]![[Pasted image 20231119105521.png]]![[Pasted image 20231119105538.png]]![[Pasted image 20231119105635.png]]![[Pasted image 20231119105549.png]]![[Pasted image 20231119105656.png]]
 #### EXTRA
 ![[Pasted image 20231119105825.png]]
+### Progettazione Logica
+- Collezioni come relazioni
+- Associazioni tramite chiavi
+- Vincoli di integrità
+	- Chiavi
+		- Superchiave (sottoinsieme di attributi)
+		- Chiave (superchiave minimale)
+		- Chiave primaria (una delle chiavi, lunghezza minima)
+			- Relazioni a classi radice ==> attributo univoco o artificiale
+			- Relazioni a sottoclassi ==> chiave della superclasse
+			- Relazioni per associazioni N:M ==> concatenazione delle chiavi esterne
+		- Indicate con <\<CK>>, valori non nulli
+	- Chiavi esterne
+		- Può essere nulla solo in caso di associazione parziale
+	- Valori non nulli
+		- Si possono imporre
+### Schemi a oggetti -> Schemi relazionali
+- Trasformazione per passi:
+	- Associazioni molti a uno/uno a uno
+	- Associazioni molti a molti
+	- Gerarchie di inclusione
+	- Identificazione chiavi primarie
+	- Attributi multivalore
+	- Attributi composti
+![[Pasted image 20231119154238.png]]![[Pasted image 20231119154300.png]]![[Pasted image 20231119154313.png]]![[Pasted image 20231119154326.png]]![[Pasted image 20231119154400.png]]![[Pasted image 20231119154418.png]]![[Pasted image 20231119154432.png]]![[Pasted image 20231119154444.png]]![[Pasted image 20231119154514.png]]
 ### Operatori insiemistici ed espressioni regolari
 - Prestare molta attenzione al tipo, se le operazioni vengono fatte tra tipi diversi, esse non sono possibili
 - Operazioni:
@@ -124,3 +149,4 @@ id1 --> id2 --> id3 --> id4
 		- A = lettera iniziale
 		- **LIKE** = operatore per eseguire il controllo a stringa
 	- **SELECT** Nome, Cognome, Matricola **FROM** Studenti **WHERE** Nome **LIKE** 'A_%' **SELECT** Nome, Cognome, Matricola **FROM** Studenti **WHERE** Nome **LIKE** 'A%i' **OR** Nome **LIKE** 'A%a'
+	- 

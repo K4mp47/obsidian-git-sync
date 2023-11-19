@@ -41,24 +41,6 @@
           }
         ],
         "currentTab": 2
-      },
-      {
-        "id": "9d4178954d9d4d14",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "e76867e92aec8602",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5110321044922
+    "width": 368.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -124,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md",
+                "file": "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md",
+                "file": "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md"
+                "file": "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf"
               }
             }
           }
@@ -186,22 +169,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e76867e92aec8602",
+  "active": "0c6e0e9561461604",
   "lastOpenFiles": [
-    "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
     "Secondo Anno/Basi di Dati/LinguaggiRelazionali.pdf",
-    "Secondo Anno/Basi di Dati/Unconfirmed 227998.crdownload",
     "Secondo Anno/Basi di Dati/Basi di Dati.md",
+    "Pasted image 20231119154514.png",
+    "Pasted image 20231119154444.png",
+    "Pasted image 20231119154432.png",
+    "Pasted image 20231119154418.png",
+    "Pasted image 20231119154400.png",
+    "Pasted image 20231119154326.png",
+    "Pasted image 20231119154313.png",
+    "Pasted image 20231119154300.png",
+    "Pasted image 20231119154238.png",
+    "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
+    "Secondo Anno/Basi di Dati/Unconfirmed 227998.crdownload",
     "Pasted image 20231119105825.png",
-    "Pasted image 20231119105656.png",
-    "Pasted image 20231119105635.png",
-    "Pasted image 20231119105549.png",
-    "Pasted image 20231119105538.png",
-    "Pasted image 20231119105521.png",
-    "Pasted image 20231119105512.png",
-    "Pasted image 20231119105338.png",
-    "Pasted image 20231119105325.png",
-    "Pasted image 20231119104858.png",
     "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
     "Secondo Anno/Basi di Dati/3.Progettazione.pdf",
     "Secondo Anno/Basi di Dati/3.Progettazione (1).pdf",
@@ -212,7 +195,6 @@
     "Untitled 1.md",
     "Secondo Anno/Probab. e stat./5_Costanti_Caratteristiche_Sol.pdf",
     "Secondo Anno/Probab. e stat./5_Costanti_Caratteristiche_tutorato.pdf",
-    "Secondo Anno/Probab. e stat./6_Quantili_e_Discrete_Sol.pdf",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Sistemi Operativi/Risposte domande.md",
