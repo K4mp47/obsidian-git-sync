@@ -18,28 +18,6 @@
             }
           },
           {
-            "id": "f89568b82cf85108",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Basi di Dati/Appunti extra.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "abd3bfa21dd4c2d9",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Probab. e stat./3_VariabiliCasuali.pdf"
-              }
-            }
-          },
-          {
             "id": "12fd20103506883b",
             "type": "leaf",
             "state": {
@@ -50,9 +28,37 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0c6e0e9561461604",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
+      },
+      {
+        "id": "9d4178954d9d4d14",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e76867e92aec8602",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,8 +108,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5110321044922,
-    "collapsed": true
+    "width": 368.5110321044922
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -119,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Appunti extra.md",
+                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Appunti extra.md",
+                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Appunti extra.md"
+                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md"
               }
             }
           }
@@ -181,30 +186,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f89568b82cf85108",
+  "active": "e76867e92aec8602",
   "lastOpenFiles": [
-    "Secondo Anno/Probab. e stat./Formulario Per PES.md",
+    "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
+    "Secondo Anno/Basi di Dati/LinguaggiRelazionali.pdf",
+    "Secondo Anno/Basi di Dati/Unconfirmed 227998.crdownload",
+    "Secondo Anno/Basi di Dati/Basi di Dati.md",
+    "Pasted image 20231119105825.png",
+    "Pasted image 20231119105656.png",
+    "Pasted image 20231119105635.png",
+    "Pasted image 20231119105549.png",
+    "Pasted image 20231119105538.png",
+    "Pasted image 20231119105521.png",
+    "Pasted image 20231119105512.png",
+    "Pasted image 20231119105338.png",
+    "Pasted image 20231119105325.png",
+    "Pasted image 20231119104858.png",
+    "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
+    "Secondo Anno/Basi di Dati/3.Progettazione.pdf",
+    "Secondo Anno/Basi di Dati/3.Progettazione (1).pdf",
+    "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
+    "Secondo Anno/Probab. e stat./3_VariabiliCasuali.pdf",
     "Secondo Anno/Basi di Dati/Appunti extra.md",
+    "Secondo Anno/Probab. e stat./Formulario Per PES.md",
     "Untitled 1.md",
     "Secondo Anno/Probab. e stat./5_Costanti_Caratteristiche_Sol.pdf",
     "Secondo Anno/Probab. e stat./5_Costanti_Caratteristiche_tutorato.pdf",
     "Secondo Anno/Probab. e stat./6_Quantili_e_Discrete_Sol.pdf",
-    "Secondo Anno/Probab. e stat./Unconfirmed 999162.crdownload",
-    "Secondo Anno/Probab. e stat./Unconfirmed 388969.crdownload",
-    "Secondo Anno/Probab. e stat./2023-09-21-Note-13-59-statistica.xopp~",
-    "Secondo Anno/Probab. e stat./3_VariabiliCasuali.pdf",
-    "Secondo Anno/Algoritmi & strutture dati/code/esercitazione1/main.cpp",
-    "Secondo Anno/Algoritmi & strutture dati/code/esercitazione1",
-    "Secondo Anno/Algoritmi & strutture dati/code",
-    "Basi di Dati.md",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Sistemi Operativi/Risposte domande.md",
     "Secondo Anno/Sistemi Operativi/OS_1_EXAM.md",
     "Untitled.md",
     "Secondo Anno/Probab. e stat./R/L14-Costanti_Caratteristiche.knit.md",
-    "Secondo Anno/Probab. e stat./R/L14-Costanti_Caratteristiche_files/figure-html/unnamed-chunk-14-1.png",
-    "Secondo Anno/Probab. e stat./R/L14-Costanti_Caratteristiche_files/figure-html/unnamed-chunk-13-1.png",
     "Untitled.canvas",
     "2023-10-08.md",
     "key-value.md",
@@ -212,23 +226,14 @@
     "Secondo Anno/Extra/Personal Todo Project.md",
     "Secondo Anno/Basi di Dati/Indice.md",
     "Secondo Anno/Algoritmi & strutture dati/Indice.md",
-    "Pasted image 20230929090654.png",
-    "Pasted image 20230929090535.png",
-    "Pasted image 20230929075755.png",
     "Secondo Anno/Calcolo/Indice.md",
-    "Pasted image 20230925142014.png",
     "Secondo Anno/OOP/Indice.md",
-    "Pasted image 20230922093933.png",
-    "Pasted image 20230922093727.png",
-    "Pasted image 20230922093413.png",
-    "Pasted image 20230922093247.png",
     "Secondo Anno/Probab. e stat./Indice.md",
     "README.md",
     "Notes-main/Programmazione/List container.md",
     "testing second time that shit man.md",
     "Notes-main/Algebra/Testing sync with github.md",
     "conflict-files-obsidian-git.md",
-    "Notes-main/Programmazione/TO DO Iterators and containers.md",
-    "Notes-main/Programmazione/Template.md"
+    "Notes-main/Programmazione/TO DO Iterators and containers.md"
   ]
 }
