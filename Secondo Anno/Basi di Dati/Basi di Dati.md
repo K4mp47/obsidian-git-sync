@@ -128,6 +128,10 @@ id1 --> id2 --> id3 --> id4
 	- Attributi multivalore
 	- Attributi composti
 ![[Pasted image 20231119154238.png]]![[Pasted image 20231119154300.png]]![[Pasted image 20231119154313.png]]![[Pasted image 20231119154326.png]]![[Pasted image 20231119154400.png]]![[Pasted image 20231119154418.png]]![[Pasted image 20231119154432.png]]![[Pasted image 20231119154444.png]]![[Pasted image 20231119154514.png]]
+### Algebra Relazionale
+
+
+
 ### Operatori insiemistici ed espressioni regolari
 - Prestare molta attenzione al tipo, se le operazioni vengono fatte tra tipi diversi, esse non sono possibili
 - Operazioni:

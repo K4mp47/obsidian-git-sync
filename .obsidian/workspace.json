@@ -35,12 +35,30 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf"
+                "file": "Secondo Anno/Basi di Dati/LinguaggiRelazionali.pdf"
               }
             }
           }
         ],
         "currentTab": 2
+      },
+      {
+        "id": "7266ae87c87130e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fa7ec9641ca145e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,8 +108,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5110321044922,
-    "collapsed": true
+    "width": 368.5110321044922
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -107,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
+                "file": "Secondo Anno/Basi di Dati/LinguaggiRelazionali.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
+                "file": "Secondo Anno/Basi di Dati/LinguaggiRelazionali.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf"
+                "file": "Secondo Anno/Basi di Dati/LinguaggiRelazionali.pdf"
               }
             }
           }
@@ -171,8 +188,9 @@
   },
   "active": "0c6e0e9561461604",
   "lastOpenFiles": [
-    "Secondo Anno/Basi di Dati/LinguaggiRelazionali.pdf",
     "Secondo Anno/Basi di Dati/Basi di Dati.md",
+    "Secondo Anno/Basi di Dati/LinguaggiRelazionali.pdf",
+    "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
     "Pasted image 20231119154514.png",
     "Pasted image 20231119154444.png",
     "Pasted image 20231119154432.png",
@@ -182,7 +200,6 @@
     "Pasted image 20231119154313.png",
     "Pasted image 20231119154300.png",
     "Pasted image 20231119154238.png",
-    "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
     "Secondo Anno/Basi di Dati/Unconfirmed 227998.crdownload",
     "Pasted image 20231119105825.png",
     "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
