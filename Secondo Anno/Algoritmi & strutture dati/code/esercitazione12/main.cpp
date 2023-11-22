@@ -17,6 +17,7 @@ struct Node {
 
 typedef Node* Pnode;
 
+bool inNonDecAux(Pnode u);
 bool inNonDec(Pnode u);
 
 class BinaryTree {
@@ -121,13 +122,24 @@ int main (int argc, char *argv[]) {
   tree.insert(15);
   tree.insert(16);
   std::cout << std::endl;
+  Pnode u = tree.getRoot();
+  u->left->right->right->right->key = 100;
   tree.printInOrder();
   bool t = inNonDec(tree.getRoot());
   std::cout << t << std::endl;
   return 0;
 }
 
+// Possible solution
+
+bool inNonDecAux(Pnode u) {
+  if(u->right) return u->key < u->right->key;
+  return true; 
+}
+
 bool inNonDec(Pnode u) {
   if(u == nullptr) return true;
-  return inNonDec(u->left) && inNonDec(u->right) && (u->right)? u->key < u->right->key : true; 
+  bool x = inNonDecAux(u);
+  if(!x) return false;
+  return inNonDec(u->left) && inNonDec(u->right); 
 }
