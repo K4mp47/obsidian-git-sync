@@ -6,45 +6,35 @@
       {
         "id": "e3251006e1b180ae",
         "type": "tabs",
+        "dimension": 49.264235444657714,
         "children": [
           {
-            "id": "29f6926a2b289298",
+            "id": "8815275dd0e4ac67",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./4_VariabiliAleatorie-1_Sol.pdf"
+                "file": "Secondo Anno/Probab. e stat./5_Costanti_Caratteristiche_Sol.pdf"
               }
             }
           },
           {
-            "id": "12fd20103506883b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0c6e0e9561461604",
+            "id": "baf689bc2b5deed1",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/LinguaggiRelazionali.pdf"
+                "file": "Secondo Anno/Probab. e stat./4_VariabiliDiscrete.pdf"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "7266ae87c87130e1",
         "type": "tabs",
+        "dimension": 50.735764555342286,
         "children": [
           {
             "id": "fa7ec9641ca145e5",
@@ -57,8 +47,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "347e77bd1af4d34f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/Sistemi Operativi/EXAM.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f21128c79aae0b76",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -108,7 +123,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5110321044922
+    "width": 368.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -124,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/LinguaggiRelazionali.pdf",
+                "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/LinguaggiRelazionali.pdf",
+                "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/LinguaggiRelazionali.pdf"
+                "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md"
               }
             }
           }
@@ -186,11 +202,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0c6e0e9561461604",
+  "active": "f21128c79aae0b76",
   "lastOpenFiles": [
+    "Secondo Anno/Probab. e stat./4_VariabiliDiscrete.pdf",
+    "Secondo Anno/Probab. e stat./Formulario Per PES.md",
+    "Secondo Anno/Probab. e stat./5_VariabiliContinue.pdf",
+    "Secondo Anno/Probab. e stat./5_Costanti_Caratteristiche_Sol.pdf",
+    "Secondo Anno/Probab. e stat./5_Costanti_Caratteristiche_tutorato.pdf",
+    "Secondo Anno/Probab. e stat./6_Quantili_e_Discrete_Sol.pdf",
+    "Secondo Anno/Probab. e stat./Unconfirmed 158922.crdownload",
+    "Secondo Anno/Probab. e stat./L17.pdf",
+    "Secondo Anno/Probab. e stat./Unconfirmed 577358.crdownload",
+    "Secondo Anno/Probab. e stat./L15.pdf",
+    "Secondo Anno/Probab. e stat./Unconfirmed 192148.crdownload",
+    "Secondo Anno/Sistemi Operativi/EXAM.md",
     "Secondo Anno/Basi di Dati/Basi di Dati.md",
-    "Secondo Anno/Basi di Dati/LinguaggiRelazionali.pdf",
-    "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
     "Pasted image 20231119154514.png",
     "Pasted image 20231119154444.png",
     "Pasted image 20231119154432.png",
@@ -200,22 +226,12 @@
     "Pasted image 20231119154313.png",
     "Pasted image 20231119154300.png",
     "Pasted image 20231119154238.png",
-    "Secondo Anno/Basi di Dati/Unconfirmed 227998.crdownload",
     "Pasted image 20231119105825.png",
-    "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
-    "Secondo Anno/Basi di Dati/3.Progettazione.pdf",
-    "Secondo Anno/Basi di Dati/3.Progettazione (1).pdf",
-    "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
-    "Secondo Anno/Probab. e stat./3_VariabiliCasuali.pdf",
     "Secondo Anno/Basi di Dati/Appunti extra.md",
-    "Secondo Anno/Probab. e stat./Formulario Per PES.md",
     "Untitled 1.md",
-    "Secondo Anno/Probab. e stat./5_Costanti_Caratteristiche_Sol.pdf",
-    "Secondo Anno/Probab. e stat./5_Costanti_Caratteristiche_tutorato.pdf",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Sistemi Operativi/Risposte domande.md",
-    "Secondo Anno/Sistemi Operativi/OS_1_EXAM.md",
     "Untitled.md",
     "Secondo Anno/Probab. e stat./R/L14-Costanti_Caratteristiche.knit.md",
     "Untitled.canvas",

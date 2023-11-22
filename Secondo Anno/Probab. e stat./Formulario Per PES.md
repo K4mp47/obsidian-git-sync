@@ -18,3 +18,8 @@
 
 #### valore atteso o media + varianza v.a. discreta $$E[X]=\sum_{i}x_ip_i=x_1p_1+x_2p_2+.....$$ $$Var[X]=\sum_{i}x_i^2p_i-[E[X]]^2$$
 #### valore atteso o media + varianza v.a. continua $$E[X]=\int_{R}xf(x)dx$$ $$Var[X]=\int_{R}x^2f(x)dx-[E[X]]^2$$
+#### Distribuzione ipergeometrica$$P(X = x)\frac{\binom{K}{k}\binom{N - K}{n - k}}{\binom{N}{n}}$$
+```R
+Probabilita <- dhyper(k, K, N - K, n)
+```
+#### Distribuzione di Bernoulli$$$$
