@@ -8,6 +8,11 @@
 // valore di ritorno viene salvato nella variabile reference t.
 //
 // Algoritmo: usa una funzione ausiliaria
+//
+// Campagnolo Alberto, 897569
+// Esercizio 2
+//
+// Complessità {da inserire} dovuto al fatto che l'algoritmo passa per tutti i nodi presenti nel peggiore dei casi.
 
 struct Node {
   int key;
