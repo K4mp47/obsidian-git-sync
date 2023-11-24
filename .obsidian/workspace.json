@@ -6,7 +6,6 @@
       {
         "id": "e3251006e1b180ae",
         "type": "tabs",
-        "dimension": 58.157389635316704,
         "children": [
           {
             "id": "8815275dd0e4ac67",
@@ -39,29 +38,13 @@
             }
           },
           {
-            "id": "0547848a7b6207f4",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "7266ae87c87130e1",
-        "type": "tabs",
-        "dimension": 41.8426103646833,
-        "children": [
-          {
-            "id": "fa7ec9641ca145e5",
+            "id": "f21128c79aae0b76",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md",
-                "mode": "source",
+                "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -79,19 +62,31 @@
             }
           },
           {
-            "id": "f21128c79aae0b76",
+            "id": "fa7ec9641ca145e5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md",
+                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7427e8a50826fa97",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/cheatsheet_lat/cheatsheet.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -158,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./5_VariabiliContinue.pdf",
+                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./5_VariabiliContinue.pdf",
+                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +193,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./5_VariabiliContinue.pdf"
+                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md"
               }
             }
           }
@@ -220,10 +215,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7ea33f968dd78055",
+  "active": "fa7ec9641ca145e5",
   "lastOpenFiles": [
-    "5.txt",
+    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
+    "Secondo Anno/Basi di Dati/Basi di Dati.md",
+    "Secondo Anno/Algoritmi & strutture dati/code/esercitazione12/tree.png",
+    "Secondo Anno/Algoritmi & strutture dati/code/esercitazione12/tree.dot",
     "Secondo Anno/Probab. e stat./5_VariabiliContinue.pdf",
+    "Secondo Anno/Sistemi Operativi/EXAM.md",
+    "5.txt",
     "Secondo Anno/Algoritmi & strutture dati/2023-10-10-Note-16-34-algoritmi.xopp~",
     "Secondo Anno/Probab. e stat./Formulario Per PES.md",
     "Secondo Anno/Probab. e stat./4_VariabiliDiscrete.pdf",
@@ -233,10 +233,6 @@
     "Secondo Anno/Probab. e stat./5_Costanti_Caratteristiche_tutorato.pdf",
     "Secondo Anno/Probab. e stat./6_Quantili_e_Discrete_Sol.pdf",
     "Secondo Anno/Probab. e stat./Unconfirmed 158922.crdownload",
-    "Secondo Anno/Probab. e stat./L17.pdf",
-    "Secondo Anno/Probab. e stat./Unconfirmed 577358.crdownload",
-    "Secondo Anno/Sistemi Operativi/EXAM.md",
-    "Secondo Anno/Basi di Dati/Basi di Dati.md",
     "Pasted image 20231119154514.png",
     "Pasted image 20231119154444.png",
     "Pasted image 20231119154432.png",
@@ -245,10 +241,8 @@
     "Pasted image 20231119154326.png",
     "Pasted image 20231119154313.png",
     "Pasted image 20231119154300.png",
-    "Pasted image 20231119154238.png",
     "Secondo Anno/Basi di Dati/Appunti extra.md",
     "Untitled 1.md",
-    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Sistemi Operativi/Risposte domande.md",
     "Untitled.md",

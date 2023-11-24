@@ -153,4 +153,91 @@ id1 --> id2 --> id3 --> id4
 		- A = lettera iniziale
 		- **LIKE** = operatore per eseguire il controllo a stringa
 	- **SELECT** Nome, Cognome, Matricola **FROM** Studenti **WHERE** Nome **LIKE** 'A_%' **SELECT** Nome, Cognome, Matricola **FROM** Studenti **WHERE** Nome **LIKE** 'A%i' **OR** Nome **LIKE** 'A%a'
-	- 
+
+- Esempi di query
+	- Studenti che vivono nella stessa provincia dello studente con matricola 71346, escluso lo studente stesso
+```sql
+SELECT * 
+FROM Studenti 
+WHERE Provincia = (SELECT Provincia 
+					FROM Studenti 
+					WHERE** Matricola='71346') 
+	AND** Matricola <> '71346'
+```
+
+```sql
+SELECT altri.* 
+FROM Studenti s JOIN Studenti altri USING(Provincia) 
+WHERE s.Matricola = 71346 AND
+	altri.Matricola <> '71346'
+```
+
+- Query studenti con almeno un voto > 27
+```sql
+SELECT *
+FROM Studenti s
+WHERE EXISTS(SELECT 
+			FROM Esami e
+			WHERE e.voto > 27 AND e.Candidato = s.Matricola)
+```
+
+```sql
+SELECT DISTINCT s.* --  distinct necessario per evitare ripetizioni
+FROM Studenti s JOIN Esami e ON s.Matricola = e.Candidato
+WHERE e.voto > 27
+```
+
+```sql
+Exp Comp ANY (SottoSelect)
+-- True quando un valore v restituito dalla sottoselect è in relazioni Comp con Exp
+-- False se tutti i valori sono != NULL e non esiste un valore v tale che Exp Comp v sia vera
+-- In particolare è false se sottoselect è vuota
+-- È UNKNOWN se nella sottoselect ci sono valori NULL e per tutti i valori diversi da NULL e per tutti i valori v != NULL ExpComp è false
+
+Exp Comp ALL (SottoSelect)
+-- È true se tutti i valori della sottoselect sono != NULL e per ogni v del risultato della sottoselect Exp Comp v è vera
+-- Se la sottoselect è vuota Exmp Comp rispetto ad essa è vera
+-- È false se esiste un v risultato della sottoselect tale che Exp Comp v è false
+-- È UNKNOWN se nella sottoselect ci sono valori NULL e per tutti i valori v != NULL Exp Comp v è true
+```
+
+- Gli Studenti che hanno preso solo 30 == Studenti dove non esiste un voto diverso da 30
+```sql
+SELECT *
+FROM Studenti s
+WHERE NOT EXISTS (SELECT *
+				 FROM Esami e
+				 WHERE e.Candidato = s.Matricola AND e.voto <> 30) -- diverso 30
+
+-- Posso sostituire EXISTS con =ANY
+
+SELECT *
+FROM Studenti s
+WHERE NOT(s.Matricola =ANY (SELECT *
+				 FROM Esami e
+				 WHERE e.voto <> 30)) -- diverso 30
+
+SELECT *
+FROM Studenti s
+WHERE Matricola <> ALL(SELECT Candidato
+					   FROM Esami 
+					   WHERE voti <> 30)
+
+```
+
+- GROUP BY
+```sql
+SELECT s.Matricola
+FROM Studenti s JOIN Esami e ON s.Matricola = e.Candidato
+GROUP BY s.Matricola
+HAVING MIN(e.Voto) = 30
+```
+
+- Per ogni materia, trovare il nome della materia e il voto medio degli esami in quella materia
+```sql
+SELECT
+FROM Esami
+GROUP BY Materia
+HAVING Count(*) > 3
+```
+

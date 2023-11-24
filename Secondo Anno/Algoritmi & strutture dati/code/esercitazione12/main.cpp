@@ -1,6 +1,6 @@
 #include <iostream>
 #include <iomanip>
-
+#include <fstream>
 // Campagnolo Alberto, 897569
 // Esercizio 1
 //
@@ -24,7 +24,8 @@ typedef Node* Pnode;
 
 bool inNonDecAux(Pnode u);
 bool inNonDec(Pnode u);
-
+void printDotFile(Node* u, std::ostream& out);
+ 
 class BinaryTree {
 public:
   BinaryTree() : root(nullptr) {}
@@ -115,6 +116,14 @@ private:
 int main (int argc, char *argv[]) {
   BinaryTree tree;
   tree.insert(30);
+  tree.insert(40);
+  tree.insert(35);
+  tree.insert(32);
+  tree.insert(33);
+  tree.insert(31);
+  tree.insert(34);
+  tree.insert(45);
+  tree.insert(42);
   tree.insert(20);
   tree.insert(22);
   tree.insert(24);
@@ -132,7 +141,21 @@ int main (int argc, char *argv[]) {
   tree.printInOrder();
   bool t = inNonDec(tree.getRoot());
   std::cout << t << std::endl;
-  return 0;
+  std::ofstream dotFile("tree.dot");
+    if (dotFile.is_open()) {
+        dotFile << "digraph BinaryTree {" << std::endl;
+        printDotFile(tree.getRoot(), dotFile);
+        dotFile << "}" << std::endl;
+        dotFile.close();
+
+        // Run Graphviz to convert DOT to PNG (you need to have Graphviz installed)
+        system("dot -Tpng tree.dot -o tree.png");
+        std::cout << "Graphical representation saved as tree.png" << std::endl;
+    } else {
+        std::cerr << "Unable to open DOT file for writing." << std::endl;
+    }
+
+    return 0;
 }
 
 // Possible solution
@@ -147,4 +170,17 @@ bool inNonDec(Pnode u) {
   bool x = inNonDecAux(u);
   if(!x) return false;
   return inNonDec(u->left) && inNonDec(u->right); 
+}
+
+void printDotFile(Node* u, std::ostream& out) {
+    if (u != nullptr) {
+        if (u->left != nullptr) {
+            out << u->key << " -> " << u->left->key << " [label=\"L\"];" << std::endl;
+            printDotFile(u->left, out);
+        }
+        if (u->right != nullptr) {
+            out << u->key << " -> " << u->right->key << " [label=\"R\"];" << std::endl;
+            printDotFile(u->right, out);
+        }
+    }
 }
