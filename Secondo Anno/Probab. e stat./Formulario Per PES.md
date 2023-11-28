@@ -71,3 +71,29 @@ lambda <- 10
 probabilita <- dpois(k, lambda)
 print(probabilita)
 ```
+
+#### Distribuzione gamma {ancora da scrivere}
+$$\int_0^\infty \frac{\lambda^\alpha}{\Gamma(\alpha)}x^{\alpha-1}e^{-\lambda x}dx
+$$
+- Posso semplificare
+$$\int_0^\infty \frac{\lambda^\alpha}{\Gamma(\alpha)}x^{(\alpha+1)-1}e^{-\lambda x}dx$$
+- Per Poi
+$$\frac{\lambda^\alpha}{\Gamma(\alpha)}\int_0^\infty x^{(\alpha+1)-1} e^{-\lambda x}dx=\int_0^\infty\frac{\lambda^{\alpha+1}}{\Gamma(\alpha+1)}x^{(\alpha+1)-1} e^{-\lambda x}dx$$
+```r
+# Definire i parametri della distribuzione gamma
+k <- 2
+theta <- 3
+
+# Calcolare la probabilità di aspettare più di 10 minuti
+probabilita <- 1 - pgamma(10, shape = k, scale = theta)
+print(probabilita)
+```
+#### Distribuzione esponenziale $$f(x;\lambda) = \lambda e^{-\lambda x}$$$$P(X > 10) = \int_0^\infty f(x;\lambda) dx$$ $$ E[X] = \frac{1}{\lambda}, Var[X] = \frac{1}{\lambda^2}$$
+```r
+# Definire il parametro di tasso della distribuzione esponenziale
+lambda <- 0.2
+
+# Calcolare la probabilità di aspettare più di 10 minuti
+probabilita <- 1 - pexp(10, rate = lambda)
+print(probabilita)
+```

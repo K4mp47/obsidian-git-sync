@@ -241,3 +241,123 @@ GROUP BY Materia
 HAVING Count(*) > 3
 ```
 
+```sql
+SELECT s.Cognome, AVG(e.Voto)
+FROM Studenti s JOIn Esami e ON s.Matricola = e.Candidato
+GROUP BY s.Matricola, s.Cognome
+HAVING YEAR(Data) > 2006; -- non è possibile, Data non fa parte del group by
+						  -- dove invece dovrebbe essere stata salvata
+```
+
+```sql
+SELECT COALESCE(Tutor, "Non ha tutor"), COUNT(*)
+FROM Studenti 
+GROUP BY Tutor
+```
+
+```sql
+CASE -- Un'espressione condizionale che può essere usata in qualsiasi contesto deve un'espressione è valida.
+
+CASE WHEN condizione THEN risultato
+	[WHEN ...]
+	[ELSE risultatoDefault]
+END
+
+condizione che restituisce un booleano
+```
+
+##### Modifica dei dati
+```sql 
+INSERT INTO Tabella
+VALUES (valoreA1, ..., valireAn),
+	   (valoreB1, ..., valireBn),
+	   ...
+
+-- m può essere <del numero di attributi n (le restanti colonne o prendono il valore di default o NULL)
+
+INSERT INTO StNomeCognome AS 
+	   SELECT Nome, COgnome, FROM Studenti
+```
+
+```sql
+DELETE FROM Tabella
+WHERE Condizione
+
+-- Esempio
+DELETE FROM Studenti
+WHERE Matricola NOT IN (SELECT Candidato
+					   FROM Esami)
+```
+
+```sql
+UPDATE Esami
+SET voto = voto + 1
+WHERE voto > 23 AND voto < 30
+```
+
+```sql
+/*
+1) Trovare il numero di voli internazionali che partono giovedì da Napoli
+2) Cancellare gli aeroporti di cui non si conosce il numero di piste e i voli che hanno partenze o arrivi da questi aeroporti
+3) Restituire le città francesi da cui partono più di venti voli alla settimana diretti in Italia
+4) Restituire gli aeroporti italiani che hanno solo voli interni
+	i) operatori insiemistici
+	ii) sottoselect
+*/
+
+Aeroporti ( _Citt_, 
+		   Nazioni, 
+		   NumPiste)
+
+Voli (_CodVolo_, 
+	  _GiornoSett_, 
+	  CittPart*, 
+	  OraPart, 
+	  CittArr*, 
+	  OraArr, 
+	  TipoAereo*) 
+	  CittPart FK(Aeroporti) CittArr FK(Aeroporti) TipoAereoFK(Aerei)
+
+Aerei (_TipoAereo_, 
+	   NumPass, 
+	   QtaMerci)
+
+-- 1
+SELECT COUNT(*)
+FROM Voli v JOIN Aeroporti a ON v.CittArr = a.Citt
+WHERE v.CittPArt = 'Napoli' 
+	AND a.Nazione <> 'Italia' 
+	AND v.GiornoSett = 'giovedì'
+
+-- 2
+-- Prima cancello voli, poi aeroporti, per evitare errori
+DELETE FROM Voli
+WHERE CittPart IN (SELECT Citt
+				  FROM Aeroporti
+				  WHERE NumPiste IS NULL)
+	  OR CittArr IN (SELECT Citt
+				  FROM Aeroporti
+				  WHERE NumPiste IS NULL)
+
+DELETE FROM Aeroporti
+WHERE NumPiste IS NULL
+
+-- 3
+SELECT v.Citt
+FROM Voli v JOIN Aeroporti p ON v.CittPart = p.Citt JOIN Aeroporti a ON v.CittArr = a.Citt
+WHERE p.Nazione = 'Francia' AND a.Nazione = 'Italia'
+GROUP BY v.CittPart HAVING COUNT(*) > 20
+
+-- 4.i
+SELECT Citt
+FROM Aeroporti
+WHERE Nazione = 'Italia'
+EXCEPT
+SELECT v.CittPart AS Citt -- altrimenti errore! RINOMINARE!!
+FROM Voli v JOIN Aeroporti a ON v.CittArr = a.Citt
+WHERE a.Nazione <> 'Italia'
+
+-- 4.i
+```
+
+$$1)\gamma COUNT(*) (\sigma_{cittPart='Napoli \wedge GiornoSett=Giovedi--CittArr=Citt}(Voli) \bigcup \sigma_{Nazione<>'Italia'}(Aeroporti))$$
