@@ -191,3 +191,96 @@ static { // Constructor statico
 
 // Abstract
 ```
+- Modifier on encapsulation
+```java
+// Access modifiers like public protected private
+// Concurrency modifiers like volatile and synchronized
+// static, final, abstract methods for classes
+
+package it.unive.dais.po1.car; // package concept with import
+import it.unive.dais.po1.fuel.*; 
+
+class Car { 
+	protected double speed; // this could be see from the package or the subclasses, but not from external class!! 
+	private FuelType fuelType; 
+	private double fuel; // just from the sameclass
+	
+	public void setSpeed(double s) { 
+		this.speed = s;
+	} 
+	
+	public void setSpeed(double s) { // everywhere
+		if(s<0) this.speed=0 
+		else this.speed = s; 
+	}
+}
+```
+![[Pasted image 20231205150826.png]]
+- Classes and Contracts
+>In Java, the term "contract" typically refers to the set of rules and obligations that a class or method must adhere to. These rules define the behavior and responsibilities of the class or method. By following the contract, developers ensure that their code can be used correctly and reliably by other parts of the program. Contracts are often enforced through the use of interfaces, where classes that implement an interface must adhere to the contract defined by that interface.
+
+- Interface
+```java
+public interface Shape {
+    double calculateArea();
+}
+```
+
+```java
+public class Circle implements Shape {
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public double calculateArea() {
+        return Math.PI * radius * radius;
+    }
+}
+```
+
+- Abstract class
+```java
+public abstract class Shape { 
+	public abstract double calculateArea(); 
+	public abstract double calculatePerimeter(); 
+}
+```
+
+```java
+public class Rectangle extends Shape {
+    private double width;
+    private double height;
+
+    public Rectangle(double width, double height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    @Override
+    public double calculateArea() {
+        return width * height;
+    }
+
+    @Override
+    public double calculatePerimeter() {
+        return 2 * (width + height);
+    }
+}
+```
+While both abstract classes and interfaces can define contracts and enforce behavior, there are some key differences between them:
+
+1. **Multiple Inheritance**: A class can only extend one abstract class, but it can implement multiple interfaces. This means that interfaces provide a way to achieve multiple inheritance in Java, allowing a class to inherit behavior from multiple sources.
+    
+2. **Constructor**: An abstract class can have constructors, while interfaces cannot. This allows abstract classes to have instance variables and initialize them through constructors.
+    
+3. **Default Method**: An interface can have default methods, which provide a default implementation for a method. This allows interfaces to provide a default behavior that implementing classes inherit. In contrast, abstract classes can provide concrete implementations for all their methods.
+    
+4. **Implementation**: An abstract class can have both abstract and non-abstract methods, whereas an interface can only have abstract methods. This means that implementing classes of an interface must provide an implementation for all methods, while implementing classes of an abstract class have the flexibility to override only the necessary methods.
+    
+5. **Usage**: Abstract classes are generally used when there is a need for common behavior and state among related classes, while interfaces are used when there is a need for a contract that unrelated classes can adhere to. Abstract classes are often used to provide a base implementation for subclasses, while interfaces are used to define a common behavior that different classes can implement.
+    
+
+In summary, interfaces are used to define contracts and provide a way to achieve multiple inheritance, while abstract classes are used to provide a base implementation and common behavior for related classes. The choice between using an abstract class or an interface depends on the specific requirements and design of your application.
