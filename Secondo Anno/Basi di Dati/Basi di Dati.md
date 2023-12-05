@@ -361,3 +361,24 @@ WHERE a.Nazione <> 'Italia'
 ```
 
 $$1)\gamma COUNT(*) (\sigma_{cittPart='Napoli \wedge GiornoSett=Giovedi--CittArr=Citt}(Voli) \bigcup \sigma_{Nazione<>'Italia'}(Aeroporti))$$
+
+### DDL 
+
+- SQL non è solo un linguaggio di interrogazione , ma anche un linguaggio per la definizione di basi di dati
+	- Creazione della BD e della struttura logica delle tabelle
+		- **CREATE SCHEMA** Nome **AUTHORIZATION** Utente
+		- **CREATE TABLE/ VIEW**, con vincoli
+	- vincoli di integrità
+- Uno schema può essere creato con:
+	- ![[Pasted image 20231204140714.png]]
+- Uno schema può contenere varie tabelle delle quali esistono più tipi:
+	- Tabelle base
+		- I metadati appartengono allo schema
+		- I dati sono fisicamente memorizzati
+	- Viste
+		- I metadati sono presenti nello schema
+		- I dati non sono fisicamente memorizzati
+- #### Creazione di una tabella
+- ![[Pasted image 20231204141255.png]]
+- Tipi di dati atomici:
+- ![[Pasted image 20231204142004.png]]
