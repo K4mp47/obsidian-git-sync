@@ -382,3 +382,65 @@ $$1)\gamma COUNT(*) (\sigma_{cittPart='Napoli \wedge GiornoSett=Giovedi--CittArr
 - ![[Pasted image 20231204141255.png]]
 - Tipi di dati atomici:
 - ![[Pasted image 20231204142004.png]]
+
+
+### Viste ed Interrogazioni difficili
+- 
+- ![[Pasted image 20231211160647.png]]
+```mermaid
+graph TD
+
+id1(Nonno)
+
+id2(Nonna)
+
+id3(Nonno) 
+
+id4(Nonna)
+
+id5(Papà)
+
+id6(Mamma)
+
+id7(Cane)
+
+id1 --> id5 
+id2 --> id5
+id3 --> id6
+id4 --> id6
+id5 --> id7
+id6 --> id7
+```
+
+```sql
+create view StessaRazza (Idf, Padre, Madre, Razza)
+as select f.Cod, p.Cod, m.Cod, f.Razza
+	from Cani f join Cani m on f.Madre = m.Cod join Cani p on f.Padre = p.Cod
+	where f.Razza = m.Razza and f.Razza = p.Razza 
+
+-- devo estrapolare il nome dalla lista sopra creata
+select 
+from StessaRazza c join StessaRazza m on c.Madre = m.Idf join StessaRazza p on c.Padre = p.Idf join Cani ca on c.Idf = ca.Cod
+```
+- ![[Pasted image 20231211161712.png]]
+- ![[Pasted image 20231211163207.png]]
+- Facendo il maggiore, salvo solo una delle due coppie
+
+## Esercizi fatti a lezione, query
+```sql
+-- trovare ordini, pizze e nome cliente senza ripetizioni in ordine descrescente
+select o.nomecliente, count(*) as numeroordini, count(distinct o.codpizza) as numeroPizze  
+    from ordini o  
+group by o.nomecliente  
+order by numeroordini desc
+```
+
+```sql
+select pi.codpizza, pi.nome, pi.tempoprep  
+    from pizze pi natural join ricette r  
+where not exists(select *  
+                     from ricette r1 natural join ingredienti i  
+                     where i.nome like 'Funghi%' and pi.codpizza = r1.codpizza)  
+group by pi.codpizza, pi.nome, pi.tempoprep  
+having count(*) >= 4
+```
