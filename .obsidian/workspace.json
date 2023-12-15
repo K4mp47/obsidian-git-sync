@@ -4,112 +4,43 @@
     "type": "split",
     "children": [
       {
-        "id": "e3251006e1b180ae",
+        "id": "d1c2cda076b1c1f0",
         "type": "tabs",
-        "dimension": 49.58960328317373,
         "children": [
           {
-            "id": "f21128c79aae0b76",
+            "id": "e2a80a313a93703a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./Formulario Per PES.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7427e8a50826fa97",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Probab. e stat./Formulario_PES_PROF.pdf"
-              }
-            }
-          },
-          {
-            "id": "bf9dcde9d24b62c6",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/OOP/Lecture10_GenericTypes.pdf"
-              }
-            }
-          },
-          {
-            "id": "6f83d34540332f76",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md",
+                "file": "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2013_01_28 soluzione.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7bda0e436d526197",
+            "id": "43abfd807d707fb9",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./8_DiscreteContinue_Sol.pdf"
+                "file": "Secondo Anno/Algoritmi & strutture dati/20130128 parziale 1.pdf"
               }
             }
           },
           {
-            "id": "66320ae7ac0252fc",
+            "id": "2a424ce2d1a05901",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./8_DiscreteContinue_tutorato.pdf"
+                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf"
               }
             }
           }
         ],
-        "currentTab": 5
-      },
-      {
-        "id": "d1c2cda076b1c1f0",
-        "type": "tabs",
-        "dimension": 50.41039671682627,
-        "children": [
-          {
-            "id": "3fbab3de47dd28c3",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Basi di Dati/7.SQL2Ale.pdf"
-              }
-            }
-          },
-          {
-            "id": "4a9ac3a665fb6125",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Probab. e stat./Formulario_PES.pdf"
-              }
-            }
-          },
-          {
-            "id": "e2a80a313a93703a",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          }
-        ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -159,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5110321044922
+    "width": 368.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -175,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./Formulario_PES.pdf",
+                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -192,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./Formulario_PES.pdf",
+                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./Formulario_PES.pdf"
+                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf"
               }
             }
           }
@@ -237,34 +169,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4a9ac3a665fb6125",
+  "active": "2a424ce2d1a05901",
   "lastOpenFiles": [
-    "Secondo Anno/Algoritmi & strutture dati/2023-10-10-Note-16-34-algoritmi.xopp~",
-    "Secondo Anno/Probab. e stat./8_DiscreteContinue_tutorato.pdf",
-    "Secondo Anno/Probab. e stat./Formulario_PES.pdf",
-    "Secondo Anno/Probab. e stat./8_DiscreteContinue_Sol.pdf",
-    "Secondo Anno/Probab. e stat./Unconfirmed 505306.crdownload",
+    "Secondo Anno/Algoritmi & strutture dati/20130128 parziale 1.pdf",
+    "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2013_01_28 soluzione.md",
+    "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
     "Secondo Anno/Basi di Dati/Basi di Dati.md",
-    "Secondo Anno/Probab. e stat./Unconfirmed 382839.crdownload",
-    "Secondo Anno/Probab. e stat./9_Bivariate_NoSol.pdf",
-    "Secondo Anno/Probab. e stat./Unconfirmed 8771.crdownload",
+    "Secondo Anno/Basi di Dati/Indice.md",
+    "Pasted image 20231215123209.png",
+    "Pasted image 20231215123203.png",
+    "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2013_01_28 soluzione.pdf",
+    "Secondo Anno/Algoritmi & strutture dati/code/esercitazione11/test1",
+    "Secondo Anno/Algoritmi & strutture dati/code/esercitazione11/test.cpp~",
+    "Secondo Anno/Algoritmi & strutture dati/code/esercitazione11/test.cpp",
+    "Pasted image 20231215104555.png",
+    "Secondo Anno/Basi di Dati/7.SQL2Ale.pdf",
+    "Secondo Anno/Probab. e stat./9_Bivariate_tutorato.pdf",
     "Secondo Anno/Probab. e stat./9_Bivariate_Sol.pdf",
-    "Secondo Anno/Probab. e stat./Unconfirmed 971066.crdownload",
+    "Secondo Anno/Probab. e stat./8_DiscreteContinue_tutorato.pdf",
+    "Secondo Anno/Probab. e stat./Formulario Per PES.md",
     "Pasted image 20231211163207.png",
     "Pasted image 20231211161712.png",
-    "Secondo Anno/Basi di Dati/7.SQL2Ale.pdf",
     "Pasted image 20231211160647.png",
     "Secondo Anno/OOP/Appunti OOP.md",
     "Pasted image 20231205150826.png",
-    "Secondo Anno/Probab. e stat./Formulario Per PES.md",
     "Secondo Anno/Sistemi Operativi/EXAM.md",
     "Pasted image 20231204142004.png",
     "Pasted image 20231204141255.png",
     "Pasted image 20231204140714.png",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
-    "Secondo Anno/Algoritmi & strutture dati/code/esercitazione12/tree.png",
-    "Secondo Anno/Algoritmi & strutture dati/code/esercitazione12/Screenshot from 2023-11-22 16-40-21.png",
-    "Pasted image 20231119154514.png",
     "Secondo Anno/Basi di Dati/Appunti extra.md",
     "Untitled 1.md",
     "Secondo Anno/Sistemi Operativi/Indice.md",
@@ -276,7 +209,6 @@
     "key-value.md",
     "Secondo Anno/Probab. e stat./R/L6-Markdown_Intro_e_Sample.knit.md",
     "Secondo Anno/Extra/Personal Todo Project.md",
-    "Secondo Anno/Basi di Dati/Indice.md",
     "Secondo Anno/Algoritmi & strutture dati/Indice.md",
     "Secondo Anno/Calcolo/Indice.md",
     "Secondo Anno/Probab. e stat./Indice.md",
@@ -284,7 +216,6 @@
     "Notes-main/Programmazione/List container.md",
     "testing second time that shit man.md",
     "Notes-main/Algebra/Testing sync with github.md",
-    "conflict-files-obsidian-git.md",
-    "Notes-main/Programmazione/TO DO Iterators and containers.md"
+    "conflict-files-obsidian-git.md"
   ]
 }
