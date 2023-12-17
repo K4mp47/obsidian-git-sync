@@ -25,7 +25,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/20130128 parziale 1.pdf"
+                "file": "Secondo Anno/Algoritmi & strutture dati/20150128 parziale 1.pdf"
               }
             }
           },
@@ -38,9 +38,17 @@
                 "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf"
               }
             }
+          },
+          {
+            "id": "059d6b07f9dd2607",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -107,7 +115,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +131,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,9 +152,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf"
-              }
+              "state": {}
             }
           }
         ],
@@ -169,24 +173,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2a424ce2d1a05901",
+  "active": "059d6b07f9dd2607",
   "lastOpenFiles": [
+    "Secondo Anno/Algoritmi & strutture dati/20150128 parziale 1.pdf",
+    "Secondo Anno/Algoritmi & strutture dati/20160120 parziale 1.pdf",
+    "Secondo Anno/Algoritmi & strutture dati/20140123 parziale 1.pdf",
     "Secondo Anno/Algoritmi & strutture dati/20130128 parziale 1.pdf",
-    "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2013_01_28 soluzione.md",
     "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
+    "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2013_01_28 soluzione.pdf",
+    "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2013_01_28 soluzione.md",
+    "Secondo Anno/Algoritmi & strutture dati/Prova_sparziale 2013_01_28 soluzione.pdf",
+    "Pasted image 20231217102413.png",
     "Secondo Anno/Basi di Dati/Basi di Dati.md",
     "Secondo Anno/Basi di Dati/Indice.md",
     "Pasted image 20231215123209.png",
     "Pasted image 20231215123203.png",
-    "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2013_01_28 soluzione.pdf",
     "Secondo Anno/Algoritmi & strutture dati/code/esercitazione11/test1",
     "Secondo Anno/Algoritmi & strutture dati/code/esercitazione11/test.cpp~",
     "Secondo Anno/Algoritmi & strutture dati/code/esercitazione11/test.cpp",
     "Pasted image 20231215104555.png",
     "Secondo Anno/Basi di Dati/7.SQL2Ale.pdf",
-    "Secondo Anno/Probab. e stat./9_Bivariate_tutorato.pdf",
-    "Secondo Anno/Probab. e stat./9_Bivariate_Sol.pdf",
-    "Secondo Anno/Probab. e stat./8_DiscreteContinue_tutorato.pdf",
     "Secondo Anno/Probab. e stat./Formulario Per PES.md",
     "Pasted image 20231211163207.png",
     "Pasted image 20231211161712.png",
@@ -196,7 +202,6 @@
     "Secondo Anno/Sistemi Operativi/EXAM.md",
     "Pasted image 20231204142004.png",
     "Pasted image 20231204141255.png",
-    "Pasted image 20231204140714.png",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Basi di Dati/Appunti extra.md",
     "Untitled 1.md",

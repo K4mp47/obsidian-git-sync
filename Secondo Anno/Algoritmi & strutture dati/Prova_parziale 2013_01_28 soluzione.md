@@ -101,5 +101,15 @@ n1 -- dx --> n4
 n4 --> n3 
 
 ```
-
 questo è un esempio
+![[Pasted image 20231217102413.png]]
+- Per la prima funzione $T(n) = 4T(n/2)+n$ :
+	- $T(n) = 4T(n/2)+n$ con $a=4$ e $b=2$ ed $f(n) = n$ 
+	- $n^{log_b a}=n^{log_24}=n^2$ 
+	- Vedendo che $f(n) < n^2$ e quindi $f(n)$ non influenza la complessità, $T(n) = \theta(n^2)$ 
+- Per la seconda funzione $T(n) = 4T(n/2)+n^2$ :
+	- Basandoci sui calcoli del punto precedente, abbiamo che $f(n) = (n^2 lg^k n)$ e sostituendo a $k$ il numero $0$ la funzione risulta essere $f(n) = n^2$. 
+	- Vedendo che $f(n) = n^2$, allora $T(n) = \theta(n^2lgn)$ 
+- Per la terza funzione $T(n) = 4T(n/2)+n^3$
+	- Basandoci sui calcoli del primo punto abbiamo che $f(n) = (n^{2+1})$ dove $\epsilon=1$, quindi siamo all'interno della terza casistica del master teorem dove troviamo la funzione funzione di $\omega(n^{log_ba+\epsilon})=f(n)$ e la regular condition è rispettata perchè $4(n^3/2) \leq cn^3$ per $c=\frac{4}{2}$. 
+	- Essendo verificata la regular condition la soluzione è $T(n) = \theta(n^3)$ 
