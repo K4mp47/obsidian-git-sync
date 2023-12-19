@@ -29,7 +29,7 @@ Special characters / Symbols
 ### Greek Letters:
 ##### Capital:
 LaTex      |   | LaTex    |   |
-----------:|--:|---------:|--:|
+----------:|:--|---------:|--:|
 `\Gamma`   | Γ | `\Delta` | ∆ |
 `\Lambda`  | Λ | `\Phi`   | Φ |
 `\Pi`      | Π | `\Psi`   | Ψ |

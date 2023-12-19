@@ -43,8 +43,24 @@
             "id": "059d6b07f9dd2607",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/Sistemi Operativi/EXAM.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a2751a5b1f2e492b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/cheatsheet_lat/cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -115,6 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Secondo Anno/Sistemi Operativi/EXAM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,6 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Secondo Anno/Sistemi Operativi/EXAM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +170,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Secondo Anno/Sistemi Operativi/EXAM.md"
+              }
             }
           }
         ],
@@ -175,13 +195,15 @@
   },
   "active": "059d6b07f9dd2607",
   "lastOpenFiles": [
+    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
+    "Secondo Anno/Sistemi Operativi/EXAM.md",
+    "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
     "Secondo Anno/Algoritmi & strutture dati/20150128 parziale 1.pdf",
+    "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2013_01_28 soluzione.md",
     "Secondo Anno/Algoritmi & strutture dati/20160120 parziale 1.pdf",
     "Secondo Anno/Algoritmi & strutture dati/20140123 parziale 1.pdf",
     "Secondo Anno/Algoritmi & strutture dati/20130128 parziale 1.pdf",
-    "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
     "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2013_01_28 soluzione.pdf",
-    "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2013_01_28 soluzione.md",
     "Secondo Anno/Algoritmi & strutture dati/Prova_sparziale 2013_01_28 soluzione.pdf",
     "Pasted image 20231217102413.png",
     "Secondo Anno/Basi di Dati/Basi di Dati.md",
@@ -192,17 +214,14 @@
     "Secondo Anno/Algoritmi & strutture dati/code/esercitazione11/test.cpp~",
     "Secondo Anno/Algoritmi & strutture dati/code/esercitazione11/test.cpp",
     "Pasted image 20231215104555.png",
-    "Secondo Anno/Basi di Dati/7.SQL2Ale.pdf",
     "Secondo Anno/Probab. e stat./Formulario Per PES.md",
     "Pasted image 20231211163207.png",
     "Pasted image 20231211161712.png",
     "Pasted image 20231211160647.png",
     "Secondo Anno/OOP/Appunti OOP.md",
     "Pasted image 20231205150826.png",
-    "Secondo Anno/Sistemi Operativi/EXAM.md",
     "Pasted image 20231204142004.png",
     "Pasted image 20231204141255.png",
-    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Basi di Dati/Appunti extra.md",
     "Untitled 1.md",
     "Secondo Anno/Sistemi Operativi/Indice.md",

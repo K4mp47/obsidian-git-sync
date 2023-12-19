@@ -1,4 +1,4 @@
-
+TODO: finire memoria virtuale + andare avanti col resto!!
 ### Definizione di sistema operativo:
 > Un sistema operativo é il software che permette alle applicazioni di interagire con l'hardware. il software che ne contiene i componenti principali é chiamato kernel.
 > I sistemi operativi sono principalmente gestori di risorse. Gestiscono le risorse hardware come processori e memorie, ma anche le applicazioni ed altri astrattismi software fisicamente in realtá inesistenti. Funge anche da macchina astratta, semplificando a livello di interfaccia utente le azioni eseguite dalla macchina.
@@ -514,6 +514,17 @@ Diversi obbiettivi per
 		- Adatto ai sistemi soft
 		- Sceduling EDF con prelazione + Minimum-laxity-first (rapporto tempo rimanente di esecuzione e tempo di scadenza del processo)
 ### Gerarchie di memoria
+>La memoria può essere organizzata in modi diversi: il processo usa tutto lo spazio di memoria o ogni processo tiene una propria partizione di memoria, allocata in maniera statica o dinamica.
+
+#### Gerarchie di memoria effettive
+- Memoria principale
+	- Dovrebbe memorizzare solo i programmi e dati necessari al momento
+- Memoria secondaria
+	- Memorizza dati e programmi che non sono necessari al momento
+- Memoria cache
+	- Molto veloce
+	- I dati più usati sono copiati al suo interno per fornirne un accesso più veloce
+	- Utili per migliorare le prestazioni
 #### Strategie di gestione della memoria
 - Strategie di fetch
 	- A richiesta o a previsione
@@ -538,13 +549,21 @@ Diversi obbiettivi per
 - Le risorse non hanno bisogno di essere condivise 
 - Il programmatore scrive il codice per gestione di risorse
 - Hanno inventato IOCS, Input Output Control System
-
 #### Overlay
 - Tecnica di programmazione per superare i limiti di allocazione contigua
 	- Il programma è diviso in sezioni logiche
 	- Si memorizzano soltanto le sezioni attive al momento
 	- Difficile organizzazione 
 	- Complica la modifica ai programmi
+- L'overlay fornisce protezione a livello utente impedendo la sovrascrittura in memoria dell'OS
+	- Per farlo usa dei registri limite (boundary) che contiene l'indirizzo dove inizia lo spazio di memoria del programma
+	- Ogni accesso oltre al registro limite è vietato
+	- Può essere impostato questo tipo di registro solo da istruzioni privilegiate
+	- Rilocazione dinamica
+- I primi sistemi richiedevano un tempo di setup rilevante con un conseguente spreco di risorse e di tempo. Automatizzare setup e teardown porta ad una miglior efficienza
+- Batch processing
+	- Processore con flusso di job stream letti in job control language
+		- Definisce ogni job e come configurarlo
 #### Multiprogrammazione a partizioni fisse
 - Le richieste I/O possono vincolare per lungo tempo la CPU, la multiprogrammazione risulta una soluzione ad essa
 	- Richiede più processi in memoria contemporaneamente
@@ -564,7 +583,115 @@ Diversi obbiettivi per
 	- Best-fit (allocazione che lascia il minimo spazio inutilizzato, comporta un maggior overhead)
 - ###### Swapping di memoria
 	- Solo il processo in esecuzione è in memoria principale, gli altri vengono caricati temporaneamente in memoria secondaria, questo permette di avere tutta la memoria disponibile ma comporta un altissimo overhead al cambio di contesto. Soluzione migliore se si caricano più processi in memoria primaria assieme.
+- ###### Gestione della memoria libera
+	- L'allocazione dinamica della memoria richiede la gestione della memoria libera, che avviene tramite la mappa di bit(la memoria viene organizzata in unità, ognuna corrispondente ad un bit nella mappa) o  con le liste collegate(la memoria viene divisa in segmenti, salvati in una lista, ognuno dei quali o è libero o allocato ad un processo. Ogni elemento della lista indica se il segmento a cui si riferisce è vuoto o allocato, dove inizia, la lunghezza e il puntatore al successivo segmento)
 
+
+### Memoria virtuale
+> Risolve problemi di spazio di memoria limitato, creando l'illusione che esista più memoria di quella disponibile. I sistemi a memoria virtuale hanno due tipi di indirizzi, fisici e virtuali, in base agli indirizzi di memoria a cui ci si sta riferendo. La MMU(Memory Management Unit) è la componente hw dedicata alla traduzione da indirizzo virtuale a fisico.
+> 
+> 
+> ###### Concetti di base
+> Spazio di indirizzamento reale R ==> Intervallo di indirizzi fisici disponibili
+> Spazio di indirizzamento virtuale V ==> Intervallo di indirizzi virtuali ai quali il processo può fare riferimento(sono solo i processi ad usare gli indirizzi virtuali)
+> Spesso gli indirizzi virtuali sono più grandi di quelli fisici presenti nella macchina, quindi SO deve memorizzare parti di V per ogni processo al di fuori della memoria principale
+> Il SO usa un sistema di memoria a due livelli, permettendo scambi di porzioni di V tra memoria principale e secondaria
+
+#### Mapping dei blocchi
+- La mappa indica quali regioni dello spazio di indirizzamento virtuale di un processo sono attualmente in memoria principale e dove si trovano in essa
+- Le informazioni sono organizzate in blocchi
+- La dimensione dei blocchi può essere variabile o fissa e può portare a:
+	- Frammentazione interna
+	- Differente tempo per il trasferimento dei blocchi
+- Si verifica il problema della contiguità, non è detto che gli indirizzi virtuali contigui corrispondano agli stessi indirizzi fisici contigui. Il programmatore vede solo quelli virtuali
+- Il mapping avviene usando due tecniche:
+	- Paginazione
+		- I blocchi sono a dimensione fissa
+	- Segmentazione
+		- I blocchi sono a dimensione variabile
+
+ll blocco virtuale è formato come sotto
+
+| | |
+|:--|--:|
+|Numero di blocco b| Spostamento d|
+
+- Dato un indirizzo v= (b, d) si traduce in indirizzo reale r
+	- Tabella dei blocchi per ogni processo
+	- Una riga per ogni blocco del processo, ordinate
+	- Indirizzo reale a della tabella del nuovo processo da caricare
+	- Registro origine della tabella della mappa dei blocchi
+- Traduzione avviene
+	- Si aggiunge ad a il numero di blocco b, per individuare la riga nella tabella di mappa dei blocchi
+	- da qui si ha l'indirizzo b', inizio del blocco b nella memoria principale
+	- Si aggiunge lo spostamento d a b' per formare l'indirizzo reale r
+#### Paginazione
+- Usa il mapping di blocchi a dimensione fissa
+- L'indirizzo virtuale nel sistema di paginazione è una coppia ordinata
+
+| | |
+|:--|--:|
+|Numero di pagina b| Spostamento d|
+
+- La memoria principale viene divisa in page frame di grandezza fissa, ed il SO può posizionare le pagine in qualunque posizione libera 
+- Non tutte le pagine risiedono in memoria libera, ma anche nella PTE(Page Table Entry)
+	- L'indirizzo virtuale contiene un bit di *residenza*, per identificare se si trova in memoria secondaria (0) o principale (1)
+- ##### Mapping diretto
+	- Traduzione degli indirizzi da virtuali a fisici con paginazione 
+	- La tabella delle pagine contiene una riga per ogni pagina dello spazio virtuale
+	- Richiede l'accesso alla memoria per ogni mapping
+	- L'indirizzo virtuale contiene sempre il numero della pagina e lo spostamento da effettuare v = (p,d)
+	- Si aggiunge p all'indirizzo di base b per trovare la pagina, chiamata p', a cui verrà poi sommato lo spostamento d per trovare l'indirizzo reale r
+- ##### Mapping associativo
+	- L'intera tabella delle pagine viene posizionata nella memoria associativa con indirizzamento per contenuto, permettendo di cercare la page frame contemporaneamente in tutte le posizioni, permettendo una traduzione dinamica più veloce degli indirizzi. Questo metodo aumenta le prestazioni ma aumenta i costi di memoria in confronto al mapping diretto
+- ##### Mapping diretto/associativo
+	- Misto delle due tecniche precedenti, nella memoria associativa, o TLB(Translation Lookaside Buffer) vengono salvate e aggiornate le PTE più utilizzate, mentre le altre rimangono in memoria RAM. Altissime prestazioni con un TLB relativamente piccolo, per via del principio di località spaziale
+- ##### Mapping multilivello
+	- Questo tipo di mapping permette di memorizzare locazioni di memoria non contigue che il processo sta utilizzando
+	- Riducendo il numero di righe della tabella in memoria, si ha una riduzione dell'overhead
+	- Si crea una gerarchia a livelli della pagina, ogni livello contiene una tabella a sua volta con i puntatori alle tabelle di livello inferiore. I livelli più bassi hanno le traduzioni degli indirizzi al loro interno
+	- Richiede ulteriori accessi alla memoria, limitabili per località o con la TLB
+- ##### Mapping a tabella inversa
+	- La tabella multilivello riduce il numero di righe della tabella in memoria, ma questo è utile solo se il processo non una tutto lo spazio di indirizzamento
+	- La tabella inversa salva un PTE per ogni page frame del sistema, ed il numero dipende dal numero di page frame (memoria fisica)
+	- Come rappresentato nella tabella sotto riportata, la tabella abbina il frame virtuale a quello fisico e non viceversa, in questo modo, quando ci troviamo di fronte ad un indirizzo virtuale, quello che verrà fatto sarà:
+		- Si prende la parte b dell'indirizzo virtuale e la si va a cercare nella IPT(Inverted Page Table), per esempio 0x008000
+		- Si cerca la corrispondenza all'interno della IPT, da cui si prende "l'index" del corrispondente frame fisico
+		- Si aggiunge il displacement d, e si trova l'indirizzo fisico corrispondente
+	- Da notare che nella tabella l'indirizzo viene mappato tramite funzioni di hashing! Ed esso può causare collisioni!! (più virtuali possono comunque puntare allo stesso frame fisico)
+		- Esse vengono gestite tramite la Hash Anchor Table (HAT), che aggiunge una tabella, o livello, per ridurre il numero di collisioni
+		- Essa è molto difficile da implementare, dato che bisogna bilanciare la frammentazione della tabella, l'overhead e le prestazioni
+
+|frame fisico      | indirizzo virtuale|
+|:--------:|:-----:|
+|0x1000|0x00400000|
+|0x2000|0x00800000|
+|0x3000|0x00C00000|
+|....|....|
+- ##### Condivisione
+	-  Avviene nei sistemi multiprogrammati
+	- Riduce la memoria consumata dai programmi che utilizzano dati e/o istruzioni in comune
+	- Ogni pagina deve essere riconosciuta come condivisibile o non
+	- Esempio banale quello della fork() nei sistemi unix, dove solo quando il processo figlio apporta una modifica allora viene creata una copia dei dati, ovvero delle page table, fino ad allora è condivisa
+- ##### Sostituzione
+	- Fatto da un sistema per selezionare le pagine da sostituire, serve per determinare dove caricare una pagina in memoria principale
+	- Avviene quando si ha un *page fault*, ed il gestore della memoria deve
+		- Individuare la pagina in memoria secondaria corrispondente
+		- Caricarla nella memoria principale
+		- Aggiornare la riga nella tabella delle pagine del processo
+	- Esistono vari tipi di Sostituzione
+		- RAND
+		- FIFO
+		- LRU
+		- NFU
+- ##### Fetch
+	- Determina quando la pagina/segmento deve essere caricato nella memoria principale
+	- Strategia **a richiesta**
+		- Quando un processo inizia l'esecuzione, il sistema carica in memoria principale la pagina che contiene la sua prima istruzione, un'altra pagina viene caricata solo quando il processo vi fa esplicito riferimento
+		- Vengono quindi caricate una alla volta
+	- Strategia **a previsione**
+		- Il SO cerca di prevedere di quali pagine il processo avrà bisogno e pre-carica queste pagine quando vi è spazio in memoria principale
+		- Difficile progettazione, bisogna prestare attenzione a quanta memoria pre-allocare, quante pagine pre-caricare e a quali politiche bisogna affidarsi
 ### File System
 - Il più alto livello di gerarchia dei dati è un file system (insieme di file) o un db (insieme di dati)
 - Volume ==> un'unità di memorizzazione dei dati
