@@ -57,7 +57,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/OOP/PO.pdf"
+                "file": "Secondo Anno/OOP/Object oriented programming (6).pdf"
               }
             }
           }
@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/OOP/PO.pdf",
+                "file": "Secondo Anno/OOP/Object oriented programming (6).pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/OOP/PO.pdf",
+                "file": "Secondo Anno/OOP/Object oriented programming (6).pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/OOP/PO.pdf"
+                "file": "Secondo Anno/OOP/Object oriented programming (6).pdf"
               }
             }
           }
@@ -193,17 +193,17 @@
   },
   "active": "82d9ce130c411a4d",
   "lastOpenFiles": [
-    "Secondo Anno/OOP/exams/crocette-po1.pdf",
-    "Secondo Anno/OOP/PO.pdf",
-    "Secondo Anno/OOP/exams/PO.pdf.crdownload",
-    "Secondo Anno/OOP/exams/2022-01-14.pdf",
-    "Secondo Anno/OOP/exams/Teoria_TestoEsame (1).pdf",
-    "Secondo Anno/OOP/exams/Teoria_TestoEsame.pdf",
-    "Secondo Anno/OOP/exams/Programmazione_TestoEsame.pdf",
-    "Secondo Anno/OOP/exams/MasterSolution_Studenti.pdf",
-    "Secondo Anno/OOP/exams/MasterSolution.pdf",
-    "Secondo Anno/OOP/exams/Lecture18_EsameDiEsempio.pdf",
-    "Secondo Anno/OOP/exams/Lecture18_EsameDiEsempio_MasterSolution.pdf",
+    "Secondo Anno/OOP/code/test1/src/Races/Race.java~",
+    "Secondo Anno/OOP/code/test1/src/test1/Main.java~",
+    "Secondo Anno/OOP/code/out/production/test1/vehicles/Car.class",
+    "Secondo Anno/OOP/code/out/production/test1/Fuels/FuelTank.class",
+    "Secondo Anno/OOP/code/out/production/test1/test1/Main.class",
+    "Secondo Anno/OOP/code/out/production/test1/test1",
+    "Secondo Anno/OOP/code/out/production/test1/Races/Race.class",
+    "Secondo Anno/OOP/code/out/production/test1/Races",
+    "Secondo Anno/OOP/code/out/production/test1/vehicles/Vehicle.class",
+    "Secondo Anno/OOP/code/test1/src/vehicles/Vehicle.java~",
+    "Secondo Anno/OOP/code/test1/src/vehicles/Car.java~",
     "Prova_parziale 2014_01_28 soluzione.md",
     "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2013_01_28 soluzione.md",
     "Pasted image 20231220100651.png",
