@@ -6,38 +6,15 @@
       {
         "id": "d1c2cda076b1c1f0",
         "type": "tabs",
+        "dimension": 43.30199764982374,
         "children": [
-          {
-            "id": "e2a80a313a93703a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2013_01_28 soluzione.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1db3f9283fc2d124",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Prova_parziale 2014_01_28 soluzione.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
           {
             "id": "43abfd807d707fb9",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Algoritmi & strutture dati/20140123 parziale 1.pdf"
+                "file": "Secondo Anno/Algoritmi & strutture dati/20210118 parziale 1.pdf"
               }
             }
           },
@@ -75,9 +52,11 @@
             "id": "08f4b1589e26392a",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Secondo Anno/OOP/exams/exam1/Teoria_TestoEsame.pdf"
+                "file": "Secondo Anno/OOP/Risposte OOP.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -91,8 +70,74 @@
               }
             }
           }
-        ],
-        "currentTab": 7
+        ]
+      },
+      {
+        "id": "1ace571b4e5cae38",
+        "type": "tabs",
+        "dimension": 56.69800235017627,
+        "children": [
+          {
+            "id": "3eff7b7d88018052",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Prova_parziale 2021_01_18 soluzione.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e2a80a313a93703a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2013_01_28 soluzione.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "599a51e10b1a3950",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2015_01_18 soluzione.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "03a5768af07172bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2016_01_20 soluzione.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "599839fd8fcba3af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2016_01_20 soluzione.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -142,7 +187,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5110321044922
+    "width": 368.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -158,7 +204,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/OOP/exams/exam2/Teoria_TestoEsame (1).pdf",
+                "file": "Prova_parziale 2021_01_18 soluzione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +221,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/OOP/exams/exam2/Teoria_TestoEsame (1).pdf",
+                "file": "Prova_parziale 2021_01_18 soluzione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +244,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/OOP/exams/exam2/Teoria_TestoEsame (1).pdf"
+                "file": "Prova_parziale 2021_01_18 soluzione.md"
               }
             }
           }
@@ -220,21 +266,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "676356614d8bc787",
+  "active": "3eff7b7d88018052",
   "lastOpenFiles": [
-    "Secondo Anno/OOP/exams/exam4/Teoria_TestoEsame.pdf",
-    "Secondo Anno/OOP/exams/exam4/Teoria_TestoEsame.pdf.crdownload",
-    "Secondo Anno/OOP/exams/exam4/Programmazione_TestoEsame.pdf",
-    "Secondo Anno/OOP/exams/exam4/MasterSolution_Studenti.pdf",
-    "Secondo Anno/OOP/exams/exam4/MasterSolution_Studenti.pdf.crdownload",
-    "Secondo Anno/OOP/exams/exam4",
-    "Secondo Anno/OOP/exams/exam3/MasterSolution.pdf",
-    "Secondo Anno/OOP/exams/exam3/MasterSolution.pdf.crdownload",
-    "Secondo Anno/OOP/exams/exam3/Programmazione_TestoEsame.pdf",
-    "Secondo Anno/OOP/exams/exam3/Programmazione_TestoEsame.pdf.crdownload",
-    "Secondo Anno/OOP/exams/exam3/Teoria_TestoEsame.pdf",
-    "Prova_parziale 2014_01_28 soluzione.md",
+    "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2016_01_20 soluzione.md",
+    "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2013_01_28 soluzione.pdf",
     "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2013_01_28 soluzione.md",
+    "Prova_parziale 2021_01_18 soluzione.md",
+    "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2016_01_20 soluzione.pdf",
+    "Pasted image 20240102174840.png",
+    "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2015_01_18 soluzione.md",
+    "Secondo Anno/Algoritmi & strutture dati/20210118 parziale 1.pdf",
+    "Secondo Anno/Algoritmi & strutture dati/20190125 parziale 1.pdf",
+    "Secondo Anno/Algoritmi & strutture dati/20210118 parziale 1.pdf.crdownload",
+    "Secondo Anno/Algoritmi & strutture dati/20200113 parziale 1.pdf",
+    "Secondo Anno/Algoritmi & strutture dati/20200113 parziale 1.pdf.crdownload",
+    "Untitled.md",
+    "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2014_01_28 soluzione.md",
+    "Secondo Anno/Algoritmi & strutture dati/20160120 parziale 1.pdf",
+    "Secondo Anno/Algoritmi & strutture dati/20190125 parziale 1.pdf.crdownload",
+    "Secondo Anno/Algoritmi & strutture dati/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
+    "Pasted image 20240102151759.png",
+    "Pasted image 20240102143944.png",
+    "Pasted image 20240102133608.png",
+    "Untitled 1.md",
+    "Pasted image 20231231171638.png",
+    "Pasted image 20231231164726.png",
+    "Pasted image 20231230171440.png",
+    "Secondo Anno/OOP/Risposte OOP.md",
+    "README.md",
     "Pasted image 20231220100651.png",
     "Secondo Anno/Probab. e stat./Indice.md",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
@@ -243,20 +302,10 @@
     "Secondo Anno/Basi di Dati/Basi di Dati.md",
     "Secondo Anno/Basi di Dati/Indice.md",
     "Pasted image 20231215123209.png",
-    "Pasted image 20231215123203.png",
-    "Pasted image 20231215104555.png",
     "Secondo Anno/Probab. e stat./Formulario Per PES.md",
-    "Pasted image 20231211163207.png",
-    "Pasted image 20231211161712.png",
-    "Pasted image 20231211160647.png",
-    "Secondo Anno/OOP/Appunti OOP.md",
-    "Pasted image 20231205150826.png",
-    "Pasted image 20231204142004.png",
     "Secondo Anno/Basi di Dati/Appunti extra.md",
-    "Untitled 1.md",
     "Secondo Anno/Sistemi Operativi/Indice.md",
     "Secondo Anno/Sistemi Operativi/Risposte domande.md",
-    "Untitled.md",
     "Secondo Anno/Probab. e stat./R/L14-Costanti_Caratteristiche.knit.md",
     "Untitled.canvas",
     "2023-10-08.md",
@@ -264,10 +313,6 @@
     "Secondo Anno/Probab. e stat./R/L6-Markdown_Intro_e_Sample.knit.md",
     "Secondo Anno/Extra/Personal Todo Project.md",
     "Secondo Anno/Algoritmi & strutture dati/Indice.md",
-    "Secondo Anno/Calcolo/Indice.md",
-    "README.md",
-    "Notes-main/Programmazione/List container.md",
-    "testing second time that shit man.md",
-    "Notes-main/Algebra/Testing sync with github.md"
+    "Secondo Anno/Calcolo/Indice.md"
   ]
 }
