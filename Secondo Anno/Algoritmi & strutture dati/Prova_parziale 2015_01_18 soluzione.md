@@ -50,11 +50,11 @@ In that case the code have complexity $\theta(n)$, 'cause it always run n time, 
 using namespace std;
 
 int checkSequenceAux(char* p1, char* p2){
-	if(*p2 == '\0') return 0;
+	if(*p2 == '\0') return 0; // O(1)
 	if(*p1 == 'a' && *p2 == 'r') {
-    return 1 + checkSequenceAux(++p1, ++p2);
+	    return 1 + checkSequenceAux(++p1, ++p2);
   } else { 
-    return 0 + checkSequenceAux(++p1, ++p2);
+	    return 0 + checkSequenceAux(++p1, ++p2);
   }
 }
 
@@ -73,7 +73,8 @@ int main(){
 }
 ```
 
-# MANCA ANALISI COMPLESSITÀ SOPRA
+- La complessità dell'algoritmo sopra è:
+	- Essendoci una sola chiamata ricorsiva per volta, e dovendo richiamare tante volte quanti sono gli elementi dell'array, la complessità risulta essere O(n).
 
 ![[Pasted image 20231231171638.png]]
 

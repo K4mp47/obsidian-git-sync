@@ -8,7 +8,7 @@
 */
 
 
-#include <iostream>
+#include <iostream>java: unreported exception exam13_01_2023.SoccerTournamentException; must be caught or declared to be thrown
 using namespace std;
 
 // struttura del nodo
