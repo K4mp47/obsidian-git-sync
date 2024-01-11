@@ -1,0 +1,41 @@
+- File contenenti i nomi e le posizioni degli altri file nel file system, con lo scopo di organizzare e individuare i file rapidamente
+- Gli elementi della directory memorizzano informazioni quali:
+	- File name
+	- Location
+	- Dimensione 
+	- Tipo
+	- Tempo di ultimo accesso
+	- Tempo di creazione
+- Tipi di organizzazione:
+	- A singolo livello, piatto
+		- Più semplice, tutti i file in un' unica directory
+		- Non ci possono essere file con lo stesso nome
+		- Ricerca di file di tipo lineare
+		- ![[Pasted image 20240111221724.png]]
+	- Gerarchico
+		- Una root indica dove sul dispositivo di archiviazione inizia la directory principale. Punta alle varie directory, ognuna delle quali contiene una riga per ciascuno dei suoi file
+		- I nomi dei file possono ripetersi tra directory diverse
+		- Il nome di un file è di solito formato dalla pathname (percorso da directory radice al file singolo)
+		- ![[Pasted image 20240111221713.png]]
+- Working directory
+	- Semplifica la navigazione usando pathnames
+	- Permette agli utenti di specificare un pathname che non inizia nella directory radice
+	- Cammino assoluto ==> working dir + cammino relativo
+- Link
+	- Una entry di directory che fa riferimento a un file di dati o una directory situata in una directory diversa
+	- Facilita la condivisione dei dati e può rendere più facile agli utenti accedere ai file situati in tutta la struttura delle directory di un file system
+	- soft link: entry che contiene il pathname per un altro file
+		- Salvataggio della posizione logica, non occorre aggiornare in caso di spostamento dei file in un altra cartella
+	- hard link: entry che specifica la posizione del file sul dispositivo fisico di memoria
+		- Salvataggio della posizione fisica, occorre aggiornare in caso di spostamento in memoria 
+- Operazioni
+	- Create
+	- Delete
+	- Opendir
+	- Closedir
+	- Readdir
+	- Rename
+	- Link
+	- Unlink
+
+[[Secondo Anno/Sistemi Operativi/3.1-4/utils/Metadata|Metadata]]

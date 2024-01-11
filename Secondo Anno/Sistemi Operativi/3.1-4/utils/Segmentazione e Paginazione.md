@@ -1,0 +1,28 @@
+- Ci sono sistemi che utilizzano entrambe queste tecniche contemporaneamente
+	- I segmenti occupano una o più pagine e non tutte le pagine dei segmenti devono trovarsi in memoria principale contemporaneamente
+	- Le pagine contigue della memoria virtuale non devono essere contigue nella memoria principale
+	- Indirizzo di memoria virtuale è implementato come una tripla ordinata v = (s, p, d) 
+		- s è il numero del segmento 
+		- p è il numero di pagina all'interno del segmento 
+		- d è lo spostamento all' interno della pagina in cui trova l' elemento desiderato
+- Come funziona
+- Riferimenti del processo agli indirizzi di memoria virtuale v = (s, p, d) 
+	- TLB tabella delle pagine più usate nella memoria associativa 
+	- Si cerca in TLB la pagina (s, p) 
+		- Se si trova si ottiene il page frame p’ che concatenato a d forma l’indirizzo reale r 
+		- Se non si trova si applica la mappatura diretta: 
+	- DAT aggiunge l'indirizzo di base della tabella dei segmenti, b, al numero di segmento di riferimento, s 
+	- b + s costituisce l'indirizzo di memoria della riga della tabella dei segmenti per il segmento s 
+	- La riga della tabella dei segmenti memorizza l’indirizzo base della tabella delle pagine, s ´ 
+	- Il numero di pagina, p, è aggiunto all’indirizzo base s ´ per individuare la PTE (riga) per la pagina p, che memorizza il numero di page frame p ´ 
+	- Si concatena p ´ con lo spostamento, d, a formare indirizzo reale r 
+	- La traduzione è caricata in TLB
+	- ![[Pasted image 20240111214151.png]]
+- Protezione?
+	- Sistemi di paginazione e segmentazione in due processi condividono la stessa memoria quando ogni processo ha una riga della tabella di mappa dei segmenti che punta alla stessa tabella delle pagine 
+		- La condivisione è facilitata dalla paginazione 
+		- Controllo degli accessi come da segmentazione 
+	- La condivisione richiede una gestione attenta da parte del sistema operativo 
+		- Diversi processi possono condividere le pagine e in caso di modifica devono essere aggiornate le tabelle 
+		- Uso di liste di PTE che mappano una pagina condivisa per facilitare l’aggiornamento in caso di modifica
+	- ![[Pasted image 20240111214552.png]]
