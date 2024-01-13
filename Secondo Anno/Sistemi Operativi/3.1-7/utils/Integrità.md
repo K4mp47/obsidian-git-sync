@@ -37,6 +37,7 @@
 	- Controllo centralizzato
 	- Server può diventare collo di bottiglia
 		- Si risolve usando un approccio distribuito, File System distribuiti, i computer comunicano tra loro separatamente
+
 - I file spesso contengono dati sensibili, per cui
 	- Matrice di controllo di accesso ai file
 		- Matrice bidimensionale
@@ -52,3 +53,71 @@
 		- Dati per il controllo di accesso 
 			- Possono essere memorizzato come parte del blocco di controllo di file (File Control Block) 
 			- Spesso richiedono poco spazio
+- Accesso ai dati
+- I moderni SO forniscono molti metodi di accesso
+	- Metodi di accesso a coda
+		- Migliori prestazioni
+		- Utilizzato quando la sequenza di accesso ai record può essere prevista
+	- Metodi di accesso di base
+		- Utilizzato quando non è prevedibile la sequenza di accesso ai record
+	- File mappati in memoria
+		- I dati dei file sono mappati in uno spazio di indirizzamento virtuale e non nella cache del file system
+		- Il gestore della memoria può sostiuire le pagine, basandosi sullo specifico processo
+- I moderni SO devono controllare gli accessi contro un uso improprio e dannoso delle risorse del sistema, oltre a proteggere i servizi e le informazioni sensibili fornite da esso
+	- Diritti di accesso
+		- Proteggere le risorse ed i servizi da utenti potenzialmente pericolosi
+		- Limitare azioni sulle risorse
+- Tutto viene fatto con
+	- Liste di controllo di accesso
+	- Liste di capacità
+- I diritti di accesso più comuni
+	- Lettura
+	- Scrittura
+	- Esecuzione
+- Modello di sicurezza
+	- Definisce oggetti, privilegi di un sistema
+		- Classi utente
+		- Controllo basato sui ruoli
+	- Discretionary Access Control (DAC) (a discrezione) 
+		- Il proprietario del file controlla i permessi 
+	- Mandatory Access Control (MAC) (obbligatorio)
+		- Predefinire un sistema di autorizzazione centrale
+	- Politica di sicurezza
+		- Solitamente specificato dall'utente o dall’amministratore di sistema 
+		- Definisce quali privilegi agli oggetti vengono assegnati ai soggetti 
+		- La maggior parte incorporano il principio del privilegio minimo 
+			- Al soggetto viene concesso l'accesso solo agli oggetti di cui ha bisogno per svolgere i suoi compiti
+- Meccanismo di sicurezza, ovvero il metodo con cui il sistema implementa la politica di sicurezza
+	- Matrici di controllo degli accessi(Vedi sopra)
+		- Associa a soggetti e oggetti i diritti di accesso
+		- Semplice da implementare
+		- Solo autorizzazioni esplicite
+		- Può diventare inefficiente
+		- ![[Pasted image 20240113103303.png]]
+	- Lista di controllo degli accessi
+		- Stesse informazioni della matrice, ma solo per diritti esplicitamente attribuiti 
+		- O sulle righe (soggetti) o sulle colonne (oggetti) 
+		- Possibili elenchi lunghi, ricerca non sempre efficiente 
+		- Minor spazio di memoria per matrici sparse
+		- ![[Pasted image 20240113103340.png]]
+	- Lista di capability 
+		- Deriva dal principio del minimo privilegio
+		- Capability
+			- Puntatore o token che garantisce l'accesso ad un soggetto che lo possiede
+			- Con un identificatore
+			- Creato per un oggetto
+			- Replicabile
+			- Controllo della propagazione
+		- Dominio di protezione ==> insieme di capabilities di un soggetto
+		- Spesso sono metodi efficienti e flessibili di gestione dei diritti di accesso
+- Tutto ciò rallenta le prestazioni del sistema per l'accesso alle risorse in memoria secondaria
+	- Ottimizzazione possibile tramite:
+		- Uso della cache
+		- Read ahead
+			- Anticipare la lettura dei blocchi successivi
+		- Riduzione dei tempi di accesso
+			- Scegliendo blocchi vicini
+		- Ottimizzazione delle memorie stesse
+			- deframmentazione della memoria
+
+[[Ottimizzazione IO]]

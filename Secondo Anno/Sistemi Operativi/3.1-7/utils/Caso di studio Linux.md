@@ -1,0 +1,211 @@
+- Linux kernel
+	- Nucleo open-source più diffuso, gratuito e completo
+	- codice sorgente di Linux disponibile a tutti per installazione, studio e modifica
+	- Supporta caratteristiche avanzate
+		- Symmetric Multiprocessing
+		- Accesso alla memoria non uniforme (NUMA)
+		- Accesso ai file di diversi sistemi hardware
+	- Creato nel 1991 come evoluzione di Unix, da Linus Torvalds dal quale deriva il nome
+	- Usa come punto di partenza il codice sorgente libero del SO Minix e tende a migliorarlo
+	- Gli sviluppatori hanno poi continuato a sostenere il concetto di un nuovo SO libero
+	- Reso interoperativo per rimanere conforme agli standard POSIX(Portable Operating System Interface) per Unix
+	- Dal 1994 implementa
+		- Multiprogrammazione
+		- Memoria virtuale
+		- Supporto TCP/IP
+		- Caricamento a richiesta
+#### Distribuzioni
+- Le varie distribuzioni di Linux
+	- Includono
+		- Nucleo Linux
+		- Applicazioni di sistema
+		- Applicazioni utente
+		- Strumenti
+	-  Molte distribuzioni modificano il nucleo per aggiungere altri driver o caratteristiche specifiche
+	- ![[Pasted image 20240113151448.png]]
+	- ![[Pasted image 20240113151502.png]]
+	- ![[Pasted image 20240113151519.png]]
+	- Esistono oltre 300 distribuzioni disponibili
+	- Solitamente organizzate in packages, ciascuno con un solo servizio o applicazione
+	- Alcune tra le più diffuse
+		- Debian
+		- Ubuntu
+		- Arch Linux
+		- CentOS
+		- Linux Mint
+		- Fedora
+		- Red Hat
+		- Zorin OS
+		- Tails
+		- 
+- Gestione delle versioni
+- Numeri di versione incrementato a discrezione da Torvalds per ogni versione del nucleo che contiene un set di funzionalità significativamente diverso da quello della precedente 
+- numero di versione minore (cifra dopo il primo punto) 
+	- Fino alla versione 2.6 il numero pari indica una versione stabile 
+	- Numero dispari indica una versione minore, es. 2.6.1, indica una versione in fase di sviluppo
+	- Le cifre che seguono il secondo punto decimale sono incrementate per ogni aggiornamento minore del nucleo 
+	- Esempi 
+		- Linux 2.0 (1996), 2.2 (1999 con SMP), 2.4 (2001, supporto di diversi hw, migliori prestazioni e scalabilità), 2.6 (dal 2003), 3 (2011), 4 (2015)…
+- I sistemi Linux includono interfacce utente e altre applicazioni oltre al nucleo
+- Eredita da UNIX il modello a livelli
+- Accesso tramite interfaccia utente
+- Per le chiamate di sistema
+- Il SO contiene thread del nucleo per eseguire i servizi
+	- Implementati come daemon, dormienti e risvegliabili da un componente del nucleo
+- Sistema multiutente
+	- Diritti di accesso
+	- Sincronizzazione
+	- Limita l'accesso alle operazioni importanti per gli utenti con privilegi da superutente(root)
+
+#### Interfaccia
+- Si può accedere al nuclo tramite terminale emulato, tramite riga di comando di una shell come bash, zsh ecc.
+- La maggior parte delle GUI invece, sono a livelli
+	- X Window System
+		- Livello più basso
+		- Fornisce ai livelli GUI più altri meccanismi per creare e manipolare componenti grafiche
+	- Window Manager
+		- Costruito sopra X Window per controllare gli attributi della finestra come dimensione, aspetto ecc.
+	- Ambiente Desktop
+		- Fornisce agli utenti interfacce per applicazioni e servizi
+#### Standard
+- Linux è conforme agli standard POSIX
+	- SUS (Single Unix Specification)
+		- Suite di standard che definiscono le interfacce utente per la programmazione delle applicazioni e degli utenti per S.O, le shell e le utilities
+	- LSB (Linux Standard Base)
+		- Progetto che mira a standardizzare Linux in modo che le applicazioni scritte per una distribuzione conforme a LSB compilino e si comportino come su qualsiasi altra distribuzione conforme
+#### Kernel Architecture
+- Nucleo monolitico che contiene componenti modulari
+- Sei principali sottoinsiemi
+	- Gestione dei processi
+	- Interprocess communication
+	- Gestione della memoria
+	- Gestione del File System
+	- Gestione I/O
+	- Gestione della rete
+- ![[Pasted image 20240113153135.png]]
+- Multipiattaforma Hardware
+- Porting
+	- Processo di modifica del nucleo per supportare una nuova piattaforma 
+	- Il codice specifico per il porting è separato dal nucleo e si trova in /arch
+- Source tree
+	- Organizza il nucleo in componenti separati in directory
+	- Nelle directory in /arch vi sono i codici per ogni architettura
+- User-Mode Linux (UML)
+	- Strumento importante per lo sviluppo del nucleo, Eseguito in modalità utente su dispositivi virtuali
+- Alternativamente alla modifica del nucleo monolitico per estenderlo si usano moduli caricabili per integrare le funzionalità del nucleo
+- Modulo kernel: contiene il codice oggetto che, una volta caricato, è collegato dinamicamente al nucleo in esecuzione
+- Eseguiti in modalità nucleo, sono un pericolo per la sicurezza del sistema
+- Consentono il caricamento a richiesta di codice, riducendo l'occupazione di memoria del nucleo
+- I moduli scritti per versione del nucleo diverse da quello in uso possono portare problemi di funzionamento
+- Kmod
+	- Sottosistema del nucleo che gestisce i moduli senza l'intervento dell'utente (abitabile)
+	- Determina le dipendenze dei moduli e licarica su richiesta
+#### Gestione dei processi
+- Avviene tramite lo scheduler
+	- Responsabile di assegnare i processori ai processi
+	- Spedisce anche i segnali
+	- Carica i moduli del nucleo
+	- Riceve gli interrupt
+	- Obbiettivi dello scheduler
+		- Eseguire tutte le attività entro un ragionevole lasso di tempo
+		- Rispettare le priorità delle task
+		- Mantenere un elevato utilizzo delle risorse
+		- Alto throughput
+		- Ridurre l'overhead di operazioni di scheduling
+		- Scalabilità
+- Processi e thread sono chiamati task
+	- task_struct per rappresentarli
+- Il gestore di procesi mantiene i riferimenti a tutti i task tramite
+	- Una lista circolare doppia 
+	- Una tabella hash
+- Creazione di una task: il gestore assegna un PID usato per determinare con una funzione hash la posizione nella tabella dei processi
+- ![[Pasted image 20240113160737.png]]
+- La task_struct contiene informazioni su
+	- Scheduling
+	- Memoria
+	- Segnali
+	- Registri
+	- Stato della chiamata di sistema
+	- Tabella dei descrittori di file
+	- Accounting
+	- Stack del nucleo
+	- PID e altri attributi
+- *Init*
+	- Processo iniziale che usa il nucleo per creare tutti gli altri task
+		- La chiamata di sistema clone crea nuovi task
+		- La chiamata fork crea task che inizialmente condividono lo spazio di indirizzi con i genitori copy-on-write, la scrittura provoca la copia
+	- Quando un processo fa una chiamata clone può specificare quali strutture codivide con il padre
+		- Se lo spazio di indirizzi è condiviso, crea un thread tradizionale
+		- Se chiamato da un processo nucleo, crea un thread del nucleo che condivide lo spazio di indirizzamento del nucleo
+	- Anche se meno portatili di Pthread, i thread Linux possono facilitare la programmazione e migliorare l'efficienza delle applicazioni sfruttando la divisione di risorse fra task
+	- ![[Pasted image 20240113161212.png]]
+	- ![[Pasted image 20240113161220.png]]
+	- Tre tipi di thread: 
+		- Real-time FIFO, massima priorità
+		- Real-time RR,  con quanto di tempo
+		- Time-sharing priorità in [100,139]
+	- i real-time non hanno scadente associate, priorità in [0,99]
+
+- Scheduler a prelazione
+	- Ogni task è eseguito fino
+		- Allo scadere del quanto
+		- A quando un altro processo con priorità maggiore non diventa eseguibile
+		- A quando si blocca
+	- Task sono nella coda RUN, simile alle code multilivello con feedback
+	- Il vettore di priorità mantiene un puntatore a ogni livello della coda run
+		- priorità *i* == *i*-esima posizione nella lista
+	- Lo scheduler avvia il task in testa alla lista nel livello più alto del vettore di priorità
+		- Lista gestita con RR
+		- Se il task non può essere eseguito (block, sleeping, waiting, o altro) viene tolto dalla coda run
+	- ![[Pasted image 20240113161957.png]]
+	- Per evitare l'attesa infinita, ogni task nella coda run è eseguito almeno una volta all'interno di un periodo detto epoca (epoch)
+	- EPOCH è definita da un limite di massima infinita, derivato empiricamente
+	- Lo Scheduler organizza i task in due liste, con stati active e expired
+		- Quando viene raggiunto il limite di attesa infinita, ogni task quando scade il suo quanto è spostato dallo stato active e inserito nella lista expired
+		- Sospende temporaneamente i task ad alta priorità
+		- Quando tutti sono nello stato expired sposta tutti i task da inattivi ad attivi e inizia una nuova epoca
+	- Priorità
+		- Ad ogni task creato è assegnato un valore interpretabile come priorità statica
+			- Modificabile con chiamata nice(value)
+			- 40 livelli in [-20,19]
+			- Valori bassi
+		- Obbiettivo di avere alta interattività
+		- I task sono schedulati in base alla loro effettiva priorità
+			- I task IO ricevono alta priorità
+			- Gli altri sono penalizzati avendola più bassa
+		- Il task può cambiare dinamicamente la propria priorità
+		- ![[Pasted image 20240113163436.png]]
+- Scheduler O(1)
+	- Esecuzione a tempo costante
+	- Runqueue divisa in due code(active e expired)
+	- Ogni campo punta ad un vettore di 140 liste di priorità
+	- La testa della lista punta ad una lista doppia di processi di quella priorità
+	- Lo scheduler seleziona un task fra quelli con la priorità più alta
+	- Se scade il quanto, il task si sposta nella lista expired
+	- Quando un processo expired torna active, si tiene conto del tempo percorso nella lista expired
+	- Quando terminano i task attivi i puntatori delle due liste sono scambiati (expired == active e viceversa)
+	- Tempi di quanto diversi in base alla priorità
+	- ![[Pasted image 20240113164221.png]]
+- Scheduling per sistemi multiprocessore 
+	- Una coda di task indipendente per ogni processore
+	- Località della cache 
+	- Scheduler esegue il bilanciamento dinamico del carico 
+	- Cerca di ridurre lo sbilanciamento del carico, non bilanciare perfettamente le code run 
+	- Cerca di migrare solo i task cache-cold 
+		- la cache non contiene molti dei suoi dati 
+- Scheduling real-time 
+	- Scheduler soft real-time 
+		- I task RT possono usare una politica di scheduling round-robin, FIFO o di default 
+		- I task RT sono sempre rischedulati alla fine del quanto di tempo
+		- I task RT possono essere creati solo da utenti con privilegi di root
+#### Sviluppo del codice
+- Torvalds controlla tutte le modifiche al nucleo
+- Usa un gruppo composto da un ventina di sviluppatori fidati per la gestione del miglioramento del nucleo
+- Quando un nucleo si avvicina al completamento
+	- Congelamento delle caratteristiche(feature-freeze)
+		- Non si aggiungono altre feature, si fanno solo correzioni per ottimizzare le prestazioni
+	- Congelamento del codice (code-freeze) 
+		- Vengono accettate solo le modifiche al codice per risolvere bug importanti
+- Molte aziende sostengono lo sviluppo
+- Linux distribuito secondo la GNU Public License (GPL)
+- Linux è gratuito, il software interno protetto da copyright

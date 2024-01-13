@@ -17,4 +17,4 @@
 - Non possono gli utenti creare hard links tra i file systems
 - ![[Pasted image 20240111222817.png]]
 
-[[Organizzazione ed Allocazione dei file]]
+[[Organizzazione e Allocazione dei file]]

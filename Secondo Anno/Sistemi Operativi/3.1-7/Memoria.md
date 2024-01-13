@@ -12,7 +12,12 @@
 [[Gerarchia dei dati]]
 [[Files e File Systems]]
 [[Directories]]
-[[Secondo Anno/Sistemi Operativi/3.1-4/utils/Metadata|Metadata]]
+[[Secondo Anno/Sistemi Operativi/3.1-7/utils/Metadata|Metadata]]
 [[Organizzazione e Allocazione dei file]]
-
-
+[[Backup e Ripristino]]
+[[Integrità]]
+[[Ottimizzazione IO]]
+[[Memoria secondaria e RAID]] !! Da vedere i livelli
+[[Software IO]]
+[[Caso di studio Linux]]
+[[Caso di studio Windows]] !! Forse non serve !!
