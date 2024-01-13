@@ -16,3 +16,5 @@
 - Gli utenti possono creare così soft link ai file nei file system montati
 - Non possono gli utenti creare hard links tra i file systems
 - ![[Pasted image 20240111222817.png]]
+
+[[Organizzazione ed Allocazione dei file]]

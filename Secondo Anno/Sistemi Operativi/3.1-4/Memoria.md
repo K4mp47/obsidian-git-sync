@@ -13,5 +13,6 @@
 [[Files e File Systems]]
 [[Directories]]
 [[Secondo Anno/Sistemi Operativi/3.1-4/utils/Metadata|Metadata]]
+[[Organizzazione e Allocazione dei file]]
 
 

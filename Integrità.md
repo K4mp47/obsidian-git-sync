@@ -1,0 +1,54 @@
+- Come controllare l'integrità del dato? (anche quando si fa una modifica, se essa ritorna un errore, potrebbe lasciare il sistema in uno stato incoerente, cosa che noi non vogliamo)
+	- Tecnologia RAID
+	- Registrazione delle transazioni (logging)
+		- Riducono la perdita di dati utilizzando le transazioni atomiche 
+		- Eseguono un gruppo di operazioni in tutto o niente 
+		- Se si verifica un errore che impedisce il completamento di una transazione, il sistema viene ripristinato riportandolo all’ultimo stato precedente dell'inizio dell'operazione 
+		- rollback
+		- Transazioni atomiche 
+			- Implementabile registrando il risultato di ogni operazione in un file di log invece di modificare dati esistenti 
+			- Una volta che la transazione è stata completata, è committed (confermata) registrando un valore sentinella nel log 
+		- Checkpoints 
+			- Per ridurre il tempo per le operazioni di ri-esecuzioni nel log, la maggior parte dei sistemi basati su transazioni mantengono checkpoints che puntano l'ultima transazione che è stata trasferita nella memoria permanente 
+			- Se il sistema si blocca, è sufficiente esaminare solo le transazioni dopo il checkpoint 
+		- La paginazione shadow (ombra) implementa transazioni atomiche scrivendo dati modificati ad un blocco libero al posto del blocco originale 
+			- Terminata la transazione i metadati sono aggiornati al nuovo blocco liberando il vecchio 
+			- Se la transazione viene annullata, si annulla l’aggiornamento liberando il nuovo blocco.
+	- Log-structured file systems (LFS) 
+	- Chiamato anche journaling file system 
+		- Esegue tutte le operazioni di file system come transazioni registrate per garantire che non lascino il sistema in uno stato incoerente 
+		- L'intero disco serve come un file di log 
+		- Registra le transazioni 
+		- I nuovi dati sono scritti in sequenza nello spazio libero del file di log 
+		- Esempi: NTFS Journaling File System di Microsoft, ext3 di Red Hat per Linux
+		- ![[Pasted image 20240112123623.png]]
+		- I dati sono scritti nel registro sequenzialmente 
+		- Ogni scrittura LFS richiede una sola ricerca mentre c'è ancora spazio su disco 
+			- Quando il registro si riempie, è probabile che lo spazio libero del file system sia frammentato 
+			- Questo può portare a scarse prestazioni in lettura e scrittura 
+			- Per risolvere questo problema, un LFS può creare spazio libero contiguo nel log copiando i dati validi in una regione contigua alla fine del log
+- I dati sono scritti nel registro sequenzialmente 
+	- Ogni scrittura LFS richiede una sola ricerca mentre c'è ancora spazio su disco 
+- Quando il registro si riempie, è probabile che lo spazio libero del file system sia frammentato 
+- Questo può portare a scarse prestazioni in lettura e scrittura 
+- Per risolvere questo problema, un LFS può creare spazio libero contiguo nel log copiando i dati validi in una regione contigua alla fine del log
+- Un modo per gestire riferimenti ai file non locali una rete di calcolatori è di instradare le richieste a un file server
+	- Un sistema dedicato alla risoluzione di riferimenti ai file fra sistemi 
+	- Controllo centralizzato
+	- Server può diventare collo di bottiglia
+		- Si risolve usando un approccio distribuito, File System distribuiti, i computer comunicano tra loro separatamente
+- I file spesso contengono dati sensibili, per cui
+	- Matrice di controllo di accesso ai file
+		- Matrice bidimensionale
+		- valore = 1, utente autorizzato, 0 altrimenti
+	- Controllo di accesso per classi di utenti
+		- Una tecnica che richiede molto meno spazio è controllare l'accesso alle varie classi di utenti 
+		- Le classi di utenti possono includere: 
+			- Proprietario del file può cambiare i permessi 
+			- Un particolare utente 
+			- Gruppo 
+			- Progetto 
+			- Pubblico solitamente sola lettura 
+		- Dati per il controllo di accesso 
+			- Possono essere memorizzato come parte del blocco di controllo di file (File Control Block) 
+			- Spesso richiedono poco spazio

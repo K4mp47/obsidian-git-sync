@@ -6,7 +6,7 @@
       {
         "id": "d1c2cda076b1c1f0",
         "type": "tabs",
-        "dimension": 30.233853006681517,
+        "dimension": 34.521158129175944,
         "children": [
           {
             "id": "17b0809c70a52c1e",
@@ -50,7 +50,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/3.1-4/utils/Metadata.md",
+                "file": "Integrità.md",
                 "mode": "source",
                 "source": false
               }
@@ -62,7 +62,7 @@
       {
         "id": "4273d44895804182",
         "type": "tabs",
-        "dimension": 69.76614699331849,
+        "dimension": 65.47884187082406,
         "children": [
           {
             "id": "b82783ccd6a342ee",
@@ -141,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/3.1-4/utils/Metadata.md",
+                "file": "Secondo Anno/Sistemi Operativi/background_pdf/SO4.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/3.1-4/utils/Metadata.md",
+                "file": "Secondo Anno/Sistemi Operativi/background_pdf/SO4.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/3.1-4/utils/Metadata.md"
+                "file": "Secondo Anno/Sistemi Operativi/background_pdf/SO4.pdf"
               }
             }
           }
@@ -203,19 +203,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e75ed9a37fd54dcd",
+  "active": "b82783ccd6a342ee",
   "lastOpenFiles": [
-    "Pasted image 20240111222817.png",
-    "Secondo Anno/Sistemi Operativi/3.1-4/Memoria.md",
+    "Integrità.md",
     "Secondo Anno/Sistemi Operativi/background_pdf/SO4.pdf",
+    "Secondo Anno/Sistemi Operativi/3.1-4/utils/Backup e Ripristino.md",
+    "Secondo Anno/Sistemi Operativi/EXAM.md",
+    "Pasted image 20240112123623.png",
+    "Pasted image 20240112122446.png",
+    "Pasted image 20240112122438.png",
+    "Pasted image 20240112122413.png",
+    "Secondo Anno/Sistemi Operativi/3.1-4/utils/Organizzazione e Allocazione dei file.md",
+    "Pasted image 20240112122200.png",
+    "Pasted image 20240112122108.png",
+    "Secondo Anno/Sistemi Operativi/background_pdf/SO7.pdf",
+    "Secondo Anno/Sistemi Operativi/background_pdf/SO7.pdf.crdownload",
+    "Secondo Anno/Sistemi Operativi/background_pdf/SO6.pdf",
+    "Secondo Anno/Sistemi Operativi/background_pdf/SO6.pdf.crdownload",
+    "Secondo Anno/Sistemi Operativi/background_pdf/SO5.pdf",
+    "Secondo Anno/Sistemi Operativi/background_pdf/SO5.pdf.crdownload",
+    "Pasted image 20240112121552.png",
+    "Pasted image 20240112120903.png",
+    "Pasted image 20240112120042.png",
+    "Pasted image 20240112115736.png",
+    "Secondo Anno/Sistemi Operativi/3.1-4/Memoria.md",
+    "Secondo Anno/Sistemi Operativi/3.1-4/utils/Metadata.md",
     "Secondo Anno/Sistemi Operativi/3.1-4/utils/Multiprogrammazione.md",
     "Secondo Anno/Sistemi Operativi/3.1-4/utils/Gerarchia dei dati.md",
     "Secondo Anno/Sistemi Operativi/3.1-4/utils/Files e File Systems.md",
     "Secondo Anno/Sistemi Operativi/3.1-4/utils/Directories.md",
-    "Secondo Anno/Sistemi Operativi/3.1-4/utils/Metadata.md",
-    "Secondo Anno/Sistemi Operativi/EXAM.md",
-    "Pasted image 20240111221724.png",
-    "Pasted image 20240111221713.png",
     "Secondo Anno/Sistemi Operativi/3.1-4/utils/Overlay.md",
     "Secondo Anno/Sistemi Operativi/3.1-4/utils/Gestione e Gerarchie della memoria.md",
     "Secondo Anno/Sistemi Operativi/3.1-4/utils/Paginazione.md",
@@ -224,33 +240,16 @@
     "Secondo Anno/Sistemi Operativi/3.1-4/utils/Segmentazione e Paginazione.md",
     "Secondo Anno/Sistemi Operativi/3.1-4/utils/Memoria virtuale.md",
     "Secondo Anno/Sistemi Operativi/background_pdf/SO3.2.pdf",
-    "Pasted image 20240111214552.png",
-    "Pasted image 20240111214151.png",
     "Segmentazione/Paginazione.md",
     "Segmentazione",
-    "Pasted image 20240111213013.png",
-    "Pasted image 20240111212649.png",
     "Secondo Anno/Sistemi Operativi/3.1-4/utils/Strategie di Memoria e allocazione.md",
     "Secondo Anno/Sistemi Operativi/3.1-4/utils/Intro.md",
     "Secondo Anno/Sistemi Operativi/3.1-4/utils/Sostituzione di pagina.md",
-    "Pasted image 20240111190728.png",
-    "Pasted image 20240111190423.png",
-    "Pasted image 20240111190414.png",
-    "Pasted image 20240111190130.png",
     "Secondo Anno/Sistemi Operativi/background_pdf/SO3.1.pdf",
-    "Secondo Anno/Sistemi Operativi/3.1-4/utils",
-    "Secondo Anno/Sistemi Operativi/3.1-4",
-    "Secondo Anno/Sistemi Operativi/background_pdf/SO2.3.pdf",
-    "Secondo Anno/Algoritmi & strutture dati/20230110 parziale 1.pdf",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
-    "Secondo Anno/OOP/exams/exam2/Teoria_TestoEsame (1).pdf",
-    "Secondo Anno/OOP/exams/exam2/Programmazione_TestoEsame.pdf",
     "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2023_01_10 soluzione.md",
     "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2014_01_28 soluzione.md",
     "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2016_01_20 soluzione.md",
-    "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2015_01_18 soluzione.md",
-    "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2013_01_28 soluzione.md",
-    "Secondo Anno/Algoritmi & strutture dati/Prova_parziale 2021_01_18 soluzione.md",
     "Untitled.canvas"
   ]
 }
