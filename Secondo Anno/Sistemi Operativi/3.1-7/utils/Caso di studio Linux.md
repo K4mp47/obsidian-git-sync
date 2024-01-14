@@ -198,6 +198,241 @@
 		- I task RT possono usare una politica di scheduling round-robin, FIFO o di default 
 		- I task RT sono sempre rischedulati alla fine del quanto di tempo
 		- I task RT possono essere creati solo da utenti con privilegi di root
+#### Gestione della memoria
+- Il gestore supporta sia indirizzi a 32 che a 64 bit
+- Supporta anche NUMA
+- Memoria divisa in tre segmenti: testo, dati e stack
+- Il segmento dati contiene dati inizializzati e non
+- Solitamente usa un page frame fisso 
+- Gestione memoria virtuale
+	- Linux usa principalmente la paginazione
+	- Spesso con dimensione di pagina fissa
+		- 32 bit: nucleo con 4 GB di dati
+		- 64 bit: nucleo con 2 Petabyte di dati
+	- Tre o quattro tabelle di pagina
+		- Directory globale
+		- Directory Alta
+		- Directory Intermedia
+		- Tabelle delle pagine
+		- (Sui sistemi che supportano solo due livelli di tabelle di pagine, la Directory Intermedia ha solo una riga)
+	- Lo spazio di indirizzamento virtuale è organizzato in aree di memoria virtuale per raggruppare le informazioni con stesse autorizzazioni
+	- ![[Pasted image 20240114155223.png]]
+	- ![[Pasted image 20240114155231.png]]
+	- Linux IA-32
+		-  Il nucleo cerca di ridurre l’overhead dovuto al cambiamento di contesto, per lo svuotamento (flushing) della memoria associativa TLB (Translation Lookaside Buffer) contenente le righe delle tabelle delle pagine usate più di recente (Page Table Entries) 
+		- Ogni spazio di indirizzamento di 4GB è diviso in una regione con 
+			- I primi 3GB per dati e istruzioni del processo e 
+			- 1GB per lo spazio di indirizzamento per dati e istruzioni del nucleo (non visibile in modalità utente) 
+		- L’invocazione del nucleo da parte di un processo non provoca lo svuotamento della TLB: migliori prestazioni 
+		- La maggior parte dello spazio di indirizzamento del nucleo è mappata direttamente in memoria principale in modo che possa accedere alle informazioni appartenenti a qualsiasi processo
+#### Gestione memoria fisica
+- Tre zone di memoria fisica 
+	- Memoria DMA: i primi 16MB di memoria principale 
+		- Il nucleo tenta di rendere la memoria disponibile in questa regione per l'hardware legacy 
+	- Memoria normale: tra i 16 MB e 896MB sull'architettura IA-32 
+		- Memorizza i dati utente e la maggior parte dei dati del nucleo 
+	- Memoria alta : > 896MB sull'architettura IA-32 
+		- Contiene la memoria che il nucleo non mappa in modo permanente al suo spazio di indirizzamento, e memoria per processi utente 
+- (Bounce buffer) buffer di rimbalzo 
+	- Per dispositivi che non possono indirizzare la memoria alta: alloca una piccola parte di memoria temporanea nella zona DMA per I/O 
+	- I dati vengono "rimbalzati” alla memoria alta (copiati) dopo che l’operazione di I/O è completata
+- ![[Pasted image 20240114155517.png]]
+- Allocatore di Zona 
+	- Alloca ai processi page frame di memoria alta, se disponibile
+		- Altrimenti, alloca dalla memoria normale, se disponibile 
+		- Alloca dalla memoria bassa, se non c’è altra memoria disponibile 
+	- Usa il vettore free_area di ogni zona 
+		- liste libere e maschera di bit per blocchi di memoria contigui 
+		- Blocchi di dimensione 2n n=0,1,2,… 
+	- Algoritmo binary buddy per trovare i blocchi di page frame contigui di dimensioni adatte al processo nel vettore free_area 
+		- Cerca un blocco di dimensioni corrette, se non esiste inizia da un blocco più grande e progressivamente lo dimezza e itera - nella deallocazione riunisce i liberi vicini 
+- Allocatore di Slab (lastre)
+	- Alloca la memoria per strutture più piccole di una pagina 
+	- Slab cache: formata da un insieme di oggetti slab - struttura per contenere strutture dati multiple (dello stesso tipo) più piccole di una pagina 
+- Memory pool 
+	- Regione della memoria che il nucleo garantisce come disponibile per thread del nucleo o driver di periferica, indipendentemente dal carico di memoria, per evitare page fault critici 
+- ![[Pasted image 20240114155657.png]]
+- Sostituire le pagine
+	- Caratteristiche generali 
+		- Possono essere sostituite solo le pagine degli utenti 
+	- Paginazione a richiesta 
+	- Come le pagine vengono lette in memoria, il nucleo le inserisce nella cache delle pagine 
+		- Le pagine sporche sono scaricate su disco con cache write-back 
+		- Pagine cache associate ad un dispositivo di memoria secondaria dove scaricarle (swap out) e se di un file ad un i-node (posizione in memoria secondaria) 
+		- file swap di sistema – Regione di memoria secondaria per scaricare e memorizzare le pagine (non collegate a file) dei dati e procedure di programmi
+	- La sostituzione di pagina è eseguita indipendentemente per ogni zona 
+	- L’algoritmo è una variante dell'algoritmo di sostituzione di pagina a orologio 
+		- Due liste collegate per ogni zona (contenenti le strutture page) 
+			- La Lista attiva: pagine che sono state riferite di recente (working set) 
+			- La Lista Inattiva: pagine che sono state utilizzate meno di recente 
+	- Una pagina entra nel sistema in testa alla lista inattiva, con il bit di riferimento on 
+	- Se la pagina è attiva o inattiva e il suo bit di riferimento è off, il bit è attivato 
+		- Assicura che le pagine alle quali è stato fatto riferimento di recente non siano selezionate per la sostituzione 
+	- Se la pagina è inattiva ed è stato fatto riferimento per la seconda volta (bit di riferimento è on), la pagina viene spostata in testa alla lista attiva, e il bit di riferimento è azzerato 
+		- Permette al nucleo di distinguere tra le pagine di riferimento che sono state riferite una volta e quelle che sono stati riferite più di una volta di recente 
+		- Queste ultime sono inserite nella lista attiva in modo che non siano selezionate per la sostituzione
+- ![[Pasted image 20240114155905.png]]
+- ![[Pasted image 20240114155913.png]]
+- Swapping della memoria
+	- kswapd (il demone swap del nucleo) 
+		- Libera periodicamente page frame tramite scaricamento di pagine sporche su disco (swap out)
+		- Scambia pagine dalla coda della lista inattiva 
+			- Prima determina se la pagina ha una riga valida nella cache di swap (righe della tabella delle pagine per cui esiste un file swap) 
+				- Consente di liberare immediatamente le pagine non modificate 
+			- Non può liberare pagine libere se 
+				- La pagina è condivisa 
+					- kswapd deve eliminare il mapping di riferimenti multipli alla pagina 
+					- La mappatura inversa (contiene le righe della tabella che riferiscono la pagina) migliora l'efficienza
+				- La pagina è modificata (dirty) 
+					- kswapd deve scaricarla su disco 
+					- Eseguita in modo asincrono da pdflush 
+				- La pagina è locked (es.: attualmente in fase di I /O) 
+					- kswapd deve aspettare finché la pagina è sbloccata
+#### File System, Virtual File System
+- Ogni particolare file system determina come memorizzare e accedere ai suoi dati 
+	- Un file si riferisce ad un insieme di bit in memoria secondaria ed è un punto di accesso ai dati
+		- che possono trovarsi su un disco locale, in rete, o anche generati dal nucleo stesso 
+	- Consente al nucleo di accedere utilizzando una singola interfaccia di sistema di file generici a
+		- dispositivi hardware 
+		- meccanismi di comunicazione tra processi, 
+		- dati memorizzati su disco 
+		- diverse altre fonti di dati 
+	- Il nucleo supporta numerosi file system caricabili come moduli – Es. in Linux 2.6 oltre 40 file systems integrabili – Es. ext2, FAT, UFD, NFS, Coda, procf…
+- VFS – Strato per supportare diversi file systems 
+	- Astrazione dai dettagli di accesso ai file, consentendo agli utenti di visualizzare tutti i file e le directory nel sistema in un unico albero di directory 
+	- Tutte le richieste relative ai file vengono inizialmente inviati al livello VFS, che fornisce un'interfaccia per l'accesso dati dei file su qualsiasi file di sistema disponibile 
+	- I processi effettuano chiamate di sistema come read, write e open, che vengono passate al file system virtuale 
+		- VFS determina il file system al quale corrisponde la richiesta e 
+		- Richiama la routine corrispondente nel driver del file system, che esegue le operazioni richieste 
+	- Trasparenza, flessibilità, espandibilità
+	- ![[Pasted image 20240114160239.png]]
+	- ![[Pasted image 20240114160252.png]]
+	##### Montaggio File System 
+- VFS inode 
+	- Descrive la locazione di ogni file, directory o un link all'interno di ogni file system disponibile 
+	- Riferimento ad ogni file da un numero di inode e numero di file system 
+- Descrittore di file – contiene: 
+	- Informazioni sul inode a cui si accede 
+	- Informazioni sulla posizione del file a cui si accede 
+	- Flag che descrivono come accedere ai dati (es.: lettura/scrittura, append-only) 
+- Dentry (Directory entry - riga o voce di directory) 
+	- Mappa i descrittori di file negli inode
+	- Contiene il nome del file o directory che un inode rappresenta 
+	- Puntatori alle Dentry dei genitori e figli
+	- ![[Pasted image 20240114160354.png]]
+	- ![[Pasted image 20240114160405.png]]
+	- ![[Pasted image 20240114160414.png]]
+##### Montaggio File System
+- Superblocco VFS 
+	- Contiene informazioni su un file system montato, p.es.: 
+		- Il tipo di file system 
+		- La posizione del suo inode radice sul disco 
+		- Informazioni che proteggono l'integrità del file system 
+	- Memorizzato solo in memoria principale, creato quando FS è montato 
+- Il VFS definisce le operazioni generiche del file system 
+	- Richiede che ogni file system fornisca un'implementazione per ogni operazione che supporta 
+	- Ad esempio, il VFS definisce una funzione read , ma non la implementa
+- ![[Pasted image 20240114160623.png]]
+#### Secondo File System esteso (ext2fs)
+- caratteristiche di Ext2 
+	- Obbiettivo: elevate prestazioni, file system robusto con il supporto alle funzioni avanzate 
+	- Tipiche dimensioni dei blocchi: 1.024, 2.048, 4.096 o 8.192 byte 
+	- Per default, 5% dei blocchi sono riservati esclusivamente agli utenti con privilegi di root quando il disco è formattato 
+		- previsto un meccanismo di sicurezza per consentire ai processi di root di continuare l’esecuzione se un processo utente malintenzionato o in errore consuma tutti gli altri blocchi disponibili nel file system
+- ext2 i-node
+	- Rappresenta file e directory in un file system ext2 
+	- Memorizza le informazioni rilevanti per un singolo file o directory, es: data e ora, autorizzazioni, identità del proprietario e puntatori ai blocchi di dati 
+		- I primi 12 puntatori individuano direttamente i primi 12 blocchi di dati 
+		- 13° puntatore è un puntatore indiretto che individua un blocco che contiene i puntatori ai blocchi di dati 
+		- 14° è un puntatore doppiamente indiretto e individua un blocco di puntatori indiretti 
+		- 15° puntatore è un puntatore a triplo indirizzamento indiretto individua un blocco di puntatori doppiamente indiretti 
+	- Fornisce un accesso rapido ai file piccoli, pur supportando file di dimensioni maggiori
+	- ![[Pasted image 20240114160838.png]]
+- Gruppi di blocchi
+	- Clusters di blocchi contigui 
+	- Il F.S. tenta di memorizzare i dati correlati nello stesso gruppo di blocchi 
+	- Riduce il tempo di ricerca per l'accesso ai grandi gruppi di dati correlati 
+	- Contiene 
+		- il superblocco 
+			- Le informazioni critiche circa l'intero FS, non solo un particolare gruppo di blocchi 
+				- Include il n. totale di blocchi e inode nel file system, la dimensione dei gruppi di blocchi, il tempo in cui il file system è stato montato e altri dati 
+				- Una copia ridondante del superblocco è mantenuta in alcuni gruppi di blocchi 
+			- Tabella degli inode 
+				- Contiene una riga per ogni inode nel gruppo di blocco 
+			- allocazione bitmap degli Inode 
+				- Traccia l’uso degli inode all'interno di un gruppo di blocchi
+		- ![[Pasted image 20240114160953.png]]
+		- Bitmap di allocazione del blocco 
+			- Traccia l’uso dei blocchi di ogni gruppo •
+		- Descrittore di Gruppo 
+			- Contiene i numeri di blocco corrispondenti alla posizione della bitmap di allocazione di i-node, bitmap di allocazione di blocco e i-node, informazioni di accounting
+		- I blocchi rimanenti in ogni gruppo di blocchi memorizzano i dati di file/directory 
+			- Le informazioni delle directory sono memorizzate in righe della directory 
+				- Ogni riga della directory è composta da un numero di i- node, dalla lunghezza della riga della directory, lunghezza del nome del file, tipo di file e il nome del file •
+	- Sicurezza del File 
+		- Permessi del File 
+			- Specificano i privilegi read, write execute per le tre categorie di utente: Owner, group, other 
+		- Attributi del File 
+			- Controllo di come si può modificare il file 
+			- P.es.: append-only
+#### Proc File System
+- Procfs 
+	- Creato per fornire informazioni in tempo reale sullo stato del nucleo e i processi di sistema 
+	- Consente agli utenti di ottenere informazioni dettagliate che descrivono il sistema, dalle informazioni di stato hardware per i dati che descrivono il traffico di rete 
+	- Esiste solo nella memoria principale 
+		- I dati del file proc sono creati su richiesta 
+		- Le chiamate procfs read e write possono accedere ai dati del nucleo 
+			- Permette agli utenti di inviare i dati al nucleo
+#### Network File System - NFS
+- Network File System – NFS 
+	- Introdotto da Sun Microsystem 
+	- diverse versioni 
+		- NFS 3 1994 - diffusa 
+		- NFS4 2000 
+	- Caratteristiche 
+		- Architettura client server 
+		- Protocollo 
+		- Implementazione 
+	- Directory esportabili /etc/export 
+	- mount di directory remote
+- ![[Pasted image 20240114161430.png]]
+- ![[Pasted image 20240114161441.png]]
+#### Gestione IO
+- I nucleo fornisce una interfaccia comune per le chiamate di sistema di I/O 
+- Le periferiche sono raggruppate in classi 
+	- I membri di ciascuna classe di dispositivi svolgono funzioni simili 
+	- Permette al nucleo di soddisfare le esigenze di prestazioni di alcuni dispositivi (o classi di dispositivi) singolarmente
+- Device driver: interfaccia sw tra chiamate di sistema e un dispositivo hardware 
+	- La maggior parte sono stati scritti da sviluppatori indipendenti 
+	- In genere implementato come moduli caricabili del nucleo 
+- File speciali di dispositivo 
+	- La maggior parte dei dispositivi sono rappresentati da file speciali di dispositivo 
+	- Le righe della directory /dev forniscono l'accesso ai dispositivi 
+	- La lista dei dispositivi del sistema può essere ottenuta leggendo il contenuto di /proc/devices
+- Classi di dispositivi 
+	- Gruppi di dispositivi che eseguono funzioni simili 
+- Numeri di identificazione principali e secondari 
+	- Usati dai driver di periferica per identificare i loro dispositivi 
+	- I dispositivi assegnati lo stesso numero di identificazione principali sono controllati dallo stesso driver 
+	- Numeri di identificazione secondari consentono al sistema di distinguere tra i dispositivi della stessa classe
+- File speciali di dispositivi sono accessibili tramite il virtual file system 
+	- Le chiamate di sistema passano al VFS, che a sua volta chiama il driver di periferica 
+	- La maggior parte dei driver implementano operazioni di file comuni, come read, write e seek 
+	- Per sostenere le attività come ad esempio l'espulsione di un CD-ROM o il recupero di informazioni sullo stato di una stampante, Linux fornisce la chiamata di sistema ioctl
+- ![[Pasted image 20240114162143.png]]
+- Network I/O 
+	- Si può accedere all’interfaccia di rete Network solo indirettamente da un processo utente attraverso IPC e l’interfaccia socket 
+- Il traffico di rete può arrivare in qualsiasi momento 
+	- Le operazioni read e write di un file speciale di dispositivo non sono sufficienti per accedere ai dati da dispositivi di rete 
+	- Il nucleo usa strutture net_device per descrivere i dispositivi di rete 
+	- Nessuna struttura file_operations 
+- Elaborazione dei Pacchetti 
+	- Una volta che il nucleo ha preparato pacchetti da trasmettere a un altro host, li passa al driver di periferica per la appropriata scheda di interfaccia di rete (NIC)
+- Il nucleo esamina una tabella di routing interna per abbinare l'indirizzo di destinazione del pacchetto all'interfaccia appropriata nella tabella di routing 
+- Poi il nucleo passa il pacchetto al driver di periferica 
+	- Ciascun driver elabora pacchetti secondo una disciplina di accodamento, che specifica l'ordine sul suo dispositivo 
+- Il nucleo si sveglia il dispositivo per inviare i pacchetti 
+	- Quando i pacchetti arrivano, il dispositivo di rete lancia un interr
 #### Sviluppo del codice
 - Torvalds controlla tutte le modifiche al nucleo
 - Usa un gruppo composto da un ventina di sviluppatori fidati per la gestione del miglioramento del nucleo

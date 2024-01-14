@@ -1,7 +1,7 @@
 - I computer necessitano di Strategie per ottimizzare le prestazioni della memoria
 - Domande da porsi
 	- Quale processo rimane in memoria?
-	- A quanta memoria ogni processo a accesso?
+	- A quanta memoria ogni processo ha accesso?
 	- Dove posizionare in memoria i processi?
 
 # Gerarchie

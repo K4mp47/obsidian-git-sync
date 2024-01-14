@@ -61,7 +61,6 @@
     - Ogni pagina deve essere riconosciuta come condivisibile o non
     - Esempio banale quello della fork() nei sistemi unix, dove solo quando il processo figlio apporta una modifica allora viene creata una copia dei dati, ovvero delle page table, fino ad allora è condivisa
 - ##### Sostituzione
-    
     - Fatto da un sistema per selezionare le pagine da sostituire, serve per determinare dove caricare una pagina in memoria principale
     - Avviene quando si ha un _page fault_, ed il gestore della memoria deve
         - Individuare la pagina in memoria secondaria corrispondente
@@ -72,8 +71,8 @@
         - FIFO
         - LRU
         - NFU
-- ##### Fetch
-    - Determina quando la pagina/segmento deve essere caricato nella memoria principale
+#### Fetch
+ -  Determina quando la pagina/segmento deve essere caricato nella memoria principale
     - Strategia **a richiesta**
         - Quando un processo inizia l'esecuzione, il sistema carica in memoria principale la pagina che contiene la sua prima istruzione, un'altra pagina viene caricata solo quando il processo vi fa esplicito riferimento
         - Vengono quindi caricate una alla volta

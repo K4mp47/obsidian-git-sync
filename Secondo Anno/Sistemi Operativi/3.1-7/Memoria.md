@@ -20,4 +20,4 @@
 [[Memoria secondaria e RAID]] !! Da vedere i livelli
 [[Software IO]]
 [[Caso di studio Linux]]
-[[Caso di studio Windows]] !! Forse non serve !!
+[[Caso di studio Windows]] [SO7]

@@ -6,7 +6,6 @@
       {
         "id": "d1c2cda076b1c1f0",
         "type": "tabs",
-        "dimension": 38.154027042915935,
         "children": [
           {
             "id": "17b0809c70a52c1e",
@@ -14,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/EXAM.md",
+                "file": "Secondo Anno/Sistemi Operativi/3.1-7/utils/Sostituzione di pagina.md",
                 "mode": "preview",
                 "source": false
               }
@@ -24,11 +23,9 @@
             "id": "a0674a41b9302987",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/3.1-7/utils/Overlay.md",
-                "mode": "source",
-                "source": false
+                "file": "Secondo Anno/Sistemi Operativi/background_pdf/SO3.2.pdf"
               }
             }
           },
@@ -41,93 +38,6 @@
                 "file": "Secondo Anno/Sistemi Operativi/3.1-7/utils/Segmentazione e Paginazione.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "e75ed9a37fd54dcd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Sistemi Operativi/3.1-7/utils/Caso di studio Windows.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "23345fa237c71c7b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Sistemi Operativi/3.1-7/Memoria.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 4
-      },
-      {
-        "id": "4273d44895804182",
-        "type": "tabs",
-        "dimension": 61.84597295708407,
-        "children": [
-          {
-            "id": "b82783ccd6a342ee",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Sistemi Operativi/background_pdf/SO6.pdf"
-              }
-            }
-          },
-          {
-            "id": "188e76ed7d7e2741",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Sistemi Operativi/background_pdf/SO7.pdf"
-              }
-            }
-          },
-          {
-            "id": "3bcedfa618299ff4",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "Secondo Anno/Sistemi Operativi/3.1-7/Memoria.md",
-                "options": {
-                  "collapse-filter": false,
-                  "search": "",
-                  "localJumps": 5,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": false,
-                  "showArrow": true,
-                  "textFadeMultiplier": -3,
-                  "nodeSizeMultiplier": 1.14436363636364,
-                  "lineSizeMultiplier": 1.21381818181818,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1,
-                  "close": true
-                }
               }
             }
           }
@@ -198,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/3.1-7/Memoria.md",
+                "file": "Secondo Anno/Sistemi Operativi/3.1-7/utils/Sostituzione di pagina.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -215,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/3.1-7/Memoria.md",
+                "file": "Secondo Anno/Sistemi Operativi/3.1-7/utils/Sostituzione di pagina.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -238,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/3.1-7/Memoria.md"
+                "file": "Secondo Anno/Sistemi Operativi/3.1-7/utils/Sostituzione di pagina.md"
               }
             }
           }
@@ -260,25 +170,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "23345fa237c71c7b",
+  "active": "17b0809c70a52c1e",
   "lastOpenFiles": [
+    "Secondo Anno/Sistemi Operativi/3.1-7/Memoria.md",
+    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Sostituzione di pagina.md",
+    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Paginazione.md",
+    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Segmentazione.md",
+    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Memoria virtuale.md",
+    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Segmentazione e Paginazione.md",
+    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Overlay.md",
+    "Secondo Anno/Sistemi Operativi/background_pdf/SO3.2.pdf",
+    "Secondo Anno/Sistemi Operativi/background_pdf/SO3.1.pdf",
+    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Strategie di Memoria e allocazione.md",
+    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Intro.md",
+    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Gestione e Gerarchie della memoria.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Caso di studio Linux.md",
     "Secondo Anno/Sistemi Operativi/background_pdf/SO6.pdf",
-    "Pasted image 20240113164221.png",
+    "Pasted image 20240114162143.png",
     "Secondo Anno/Sistemi Operativi/EXAM.md",
-    "Pasted image 20240113163436.png",
-    "Secondo Anno/Sistemi Operativi/3.1-7/Memoria.md",
+    "Pasted image 20240114161441.png",
+    "Pasted image 20240114161430.png",
+    "Pasted image 20240114160953.png",
+    "Pasted image 20240114160838.png",
+    "Pasted image 20240114160623.png",
+    "Pasted image 20240114160414.png",
+    "Pasted image 20240114160405.png",
+    "Pasted image 20240114160354.png",
+    "Pasted image 20240114160252.png",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Caso di studio Windows.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Metadata.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Organizzazione e Allocazione dei file.md",
-    "Pasted image 20240113161957.png",
-    "Pasted image 20240113161220.png",
-    "Pasted image 20240113161212.png",
-    "Pasted image 20240113160737.png",
-    "Pasted image 20240113153135.png",
-    "Pasted image 20240113151519.png",
-    "Pasted image 20240113151502.png",
-    "Pasted image 20240113151448.png",
     "Organizzazione ed Allocazione dei file.md",
     "Secondo Anno/Sistemi Operativi/background_pdf/SO4.pdf",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Software IO.md",
@@ -286,27 +207,16 @@
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Ottimizzazione IO.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Integrità.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Backup e Ripristino.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Segmentazione e Paginazione.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Segmentazione.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Gerarchia dei dati.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Files e File Systems.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Directories.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Sostituzione di pagina.md",
     "Secondo Anno/Sistemi Operativi/background_pdf/Esercizi.SO1.pdf",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Paginazione.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Modello Working Set.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Memoria virtuale.md",
     "Secondo Anno/Sistemi Operativi/background_pdf/SO7.pdf",
     "Secondo Anno/Sistemi Operativi/background_pdf/SO5.pdf",
-    "Segmentazione/Paginazione.md",
     "Secondo Anno/Sistemi Operativi/background_pdf/SO7.pdf.crdownload",
     "Secondo Anno/Sistemi Operativi/background_pdf/SO6.pdf.crdownload",
     "Secondo Anno/Sistemi Operativi/background_pdf/SO5.pdf.crdownload",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Multiprogrammazione.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Overlay.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Gestione e Gerarchie della memoria.md",
-    "Secondo Anno/Sistemi Operativi/background_pdf/SO3.2.pdf",
-    "Segmentazione",
     "Untitled.canvas"
   ]
 }
