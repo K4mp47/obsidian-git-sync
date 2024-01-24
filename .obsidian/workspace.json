@@ -8,40 +8,57 @@
         "type": "tabs",
         "children": [
           {
-            "id": "17b0809c70a52c1e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Sistemi Operativi/3.1-7/Memoria.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a0674a41b9302987",
+            "id": "332820e855142b39",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/background_pdf/SO3.2.pdf"
+                "file": "Secondo Anno/Probab. e stat./4_VariabiliDiscrete.pdf"
               }
             }
           },
           {
-            "id": "cd808ce03138af38",
+            "id": "05dbbce4a1a22745",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/3.1-7/utils/Segmentazione e Paginazione.md",
-                "mode": "source",
-                "source": false
+                "file": "Secondo Anno/Probab. e stat./7_DiscreteContinue_tutorato.pdf"
+              }
+            }
+          },
+          {
+            "id": "9062ba35060c822b",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Probab. e stat./Formulario_PES_PROF.pdf"
+              }
+            }
+          },
+          {
+            "id": "fd17b4392407be77",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Probab. e stat./tabint.pdf"
+              }
+            }
+          },
+          {
+            "id": "b6fab7b7f7fc5d31",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Probab. e stat./8_DiscreteContinue_tutorato.pdf"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -108,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/3.1-7/Memoria.md",
+                "file": "Secondo Anno/Probab. e stat./4_VariabiliDiscrete.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/3.1-7/Memoria.md",
+                "file": "Secondo Anno/Probab. e stat./4_VariabiliDiscrete.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/3.1-7/Memoria.md"
+                "file": "Secondo Anno/Probab. e stat./4_VariabiliDiscrete.pdf"
               }
             }
           }
@@ -170,22 +187,32 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "17b0809c70a52c1e",
+  "active": "676356614d8bc787",
   "lastOpenFiles": [
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Multiprogrammazione.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/Memoria.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Segmentazione.md",
+    "Secondo Anno/Probab. e stat./esami/Facsimile_Soluzioni.pdf",
+    "Secondo Anno/Probab. e stat./esami/Facsimile_Soluzioni.pdf.crdownload",
+    "Secondo Anno/Probab. e stat./esami/A4-20220915_soluzioni.pdf",
+    "Secondo Anno/Probab. e stat./esami/A4-20220915_soluzioni.pdf.crdownload",
+    "Secondo Anno/Probab. e stat./esami/A3-20220607_Soluzioni.pdf",
+    "Secondo Anno/Probab. e stat./esami/A3-20220607_Soluzioni.pdf.crdownload",
+    "Secondo Anno/Probab. e stat./esami/A2-20220204_Soluzioni.pdf",
+    "Secondo Anno/Probab. e stat./esami/A2-20220204_Soluzioni.pdf.crdownload",
+    "Secondo Anno/Probab. e stat./esami/A1-20220121_Soluzioni.pdf",
+    "Secondo Anno/Probab. e stat./esami/A1-20220121_Soluzioni.pdf.crdownload",
+    "Secondo Anno/Probab. e stat./esami/2021-01-20 esame_pes.pdf",
+    "Secondo Anno/Probab. e stat./Formulario Per PES.md",
+    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Segmentazione e Paginazione.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Sostituzione di pagina.md",
-    "Blender/blender_manual_v300_en.html/video_editing/sequencer/strips/effects/transform.html",
-    "Blender/blender_manual_v300_en.html/video_editing/sequencer/strips/effects/subtract.html",
-    "Blender/blender_manual_v300_en.html/video_editing/sequencer/strips/effects/speed_control.html",
-    "Blender/blender_manual_v300_en.html/video_editing/sequencer/strips/effects/multiply.html",
-    "Blender/blender_manual_v300_en.html/video_editing/sequencer/strips/effects/multicam.html",
-    "Blender/blender_manual_v300_en.html/video_editing/sequencer/strips/effects/index.html",
-    "Blender/blender_manual_v300_en.html/video_editing/sequencer/strips/effects/glow.html",
-    "Blender/blender_manual_v300_en.html/video_editing/sequencer/strips/effects/color_mix.html",
-    "Blender/blender_manual_v300_en.html/video_editing/sequencer/strips/effects/blur.html",
-    "Blender/blender_manual_v300_en.html/video_editing/sequencer/strips/effects/alpha_over_under_overdrop.html",
+    "Secondo Anno/Sistemi Operativi/3.1-7/Memoria.md",
+    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Paginazione.md",
+    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Segmentazione.md",
+    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Backup e Ripristino.md",
+    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Gerarchia dei dati.md",
+    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Files e File Systems.md",
+    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Directories.md",
+    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Metadata.md",
+    "Secondo Anno/Basi di Dati/Basi di Dati.md",
+    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Multiprogrammazione.md",
     "Blender/blender_manual_v300_en.html/_static/css/fonts/fontawesome-webfont.svg",
     "Blender/blender_manual_v300_en.html/_static/plus.png",
     "Blender/blender_manual_v300_en.html/_static/minus.png",
@@ -196,9 +223,7 @@
     "Blender/blender_manual_v300_en.html/_images/video-editing_sequencer_strips_transitions_cross_example.png",
     "Blender/blender_manual_v300_en.html/_images/video-editing_sequencer_strips_text_example.png",
     "Blender/blender_manual_v300_en.html/_images/video-editing_sequencer_strips_sound_editing.png",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Paginazione.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Memoria virtuale.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Segmentazione e Paginazione.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Overlay.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Strategie di Memoria e allocazione.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Intro.md",
@@ -206,18 +231,10 @@
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Caso di studio Linux.md",
     "Secondo Anno/Sistemi Operativi/EXAM.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Caso di studio Windows.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Metadata.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Organizzazione e Allocazione dei file.md",
     "Organizzazione ed Allocazione dei file.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Software IO.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Memoria secondaria e RAID.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Ottimizzazione IO.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Integrità.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Backup e Ripristino.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Gerarchia dei dati.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Files e File Systems.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Directories.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Modello Working Set.md",
     "Untitled.canvas"
   ]
 }

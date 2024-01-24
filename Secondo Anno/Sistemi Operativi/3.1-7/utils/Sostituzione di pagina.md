@@ -23,7 +23,7 @@
 			- Esamina il bit di riferimento della pagina più vecchia. Se è off (0) la strategia seleziona la pagina per la sostituzione. Se è on (1) la strategia azzera il bit e sposta la pagina in coda FIFO e si considera come un nuovo arrivo. Assicura che le pagine attive siano quelle con minor probabilità di essere sostituite
 			- ![[Pasted image 20240111190414.png]]
 		- Strategia di Sostituzione ad orologio
-			- Simile a second chance, ma organizza le pagine in una lista circolare invece della lista lineare Puntatore che scorre la lista ad ogni page fault; se bit ref =0 si scorre (simula FIFO
+			- Simile a second chance, ma organizza le pagine in una lista circolare invece della lista lineare Puntatore che scorre la lista ad ogni page fault; se bit ref =0 si scorre (simula FIFO)
 			- ![[Pasted image 20240111190423.png]]
 - Strategia LRU(Least Recently Used)
 	- Sostituisce la pagina che da più tempo non è riferita
@@ -39,7 +39,7 @@
 		- bit di modifica = 0 se la pagina non è stata modificata 1 altrimenti
 	- ![[Pasted image 20240111190130.png]]
 - Strategia Far
-	- Crea un grafo di accesso che rappresenta il modello dei riferimenti di un processo
-	- Sostituisce la pagina non referenziata che è più lontana nel grafo di accesso da qualsiasi pagina riferita
+	- Creprocesso
+	- Sostituisce la pagina non referenziata che è più lontana nel g un grafo di accesso che rappresenta il modello dei riferimenti di un rafo di accesso da qualsiasi pagina riferita
 	- Prestazioni ottimali
 	- ![[Pasted image 20240111190728.png]]

@@ -6,7 +6,7 @@
     - Copy
     - Rename
     - List
-- I file sono spesso nominati con un estensione, al fine di distringuerne il tipo di utilizzo
+- I file sono spesso nominati con un estensione, al fine di distinguerne il tipo di utilizzo
 - Struttura di un file
 	- Sequenza di byte
 	- Sequenza di record

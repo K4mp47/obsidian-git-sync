@@ -1,4 +1,4 @@
-- Informazione che protegge l'integrità dei file system
+ - Informazione che protegge l'integrità dei file system
 - Non possono essere modificate direttamente dagli utenti
 - Molti File System creano un super-blocco per memorizzare le informazioni critiche che proteggono l'integrità del file system. Un super blocco può contenere
     - L'identificatore di sistema di file
