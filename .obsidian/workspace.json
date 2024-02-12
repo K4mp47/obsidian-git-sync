@@ -4,111 +4,43 @@
     "type": "split",
     "children": [
       {
-        "id": "d1c2cda076b1c1f0",
+        "id": "2cb7269c34374a6b",
         "type": "tabs",
         "children": [
           {
-            "id": "332820e855142b39",
+            "id": "62f91d3d4d8f3556",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./6_Congiunte.pdf"
+                "file": "Secondo Anno/Basi di Dati/background_pdf/1.SistemiAle.pdf"
               }
             }
           },
           {
-            "id": "9cf75127115ccc47",
+            "id": "9345b7118085210a",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./7_CateneMarkov.pdf"
+                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
           {
-            "id": "9062ba35060c822b",
+            "id": "ada08835883b6485",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./Formulario_PES_PROF.pdf"
-              }
-            }
-          },
-          {
-            "id": "b6fab7b7f7fc5d31",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Probab. e stat./8_DiscreteContinue_tutorato.pdf"
-              }
-            }
-          },
-          {
-            "id": "dcc6901e73163ef5",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Probab. e stat./esami/A3-20220607_Soluzioni.pdf"
-              }
-            }
-          },
-          {
-            "id": "909edb16bc8b3525",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Probab. e stat./A2-20230210-A_domande.pdf"
-              }
-            }
-          },
-          {
-            "id": "930cc4e7536f11f9",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Probab. e stat./esami/A1-20220121_Soluzioni.pdf"
-              }
-            }
-          },
-          {
-            "id": "05dbbce4a1a22745",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Probab. e stat./A1-20240112-A_Domande.pdf"
-              }
-            }
-          },
-          {
-            "id": "b656fbc0ea47926f",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Probab. e stat./A1-20240112-A_Soluzioni.pdf"
-              }
-            }
-          },
-          {
-            "id": "1e651cf19cb5cdb2",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Probab. e stat./Tavola_Normale.pdf"
+                "file": "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf"
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -174,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./esami/A1-20220121_Soluzioni.pdf",
+                "file": "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -191,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./esami/A1-20220121_Soluzioni.pdf",
+                "file": "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -214,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Probab. e stat./esami/A1-20220121_Soluzioni.pdf"
+                "file": "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf"
               }
             }
           }
@@ -236,23 +168,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "930cc4e7536f11f9",
+  "active": "ada08835883b6485",
   "lastOpenFiles": [
-    "Secondo Anno/Probab. e stat./A1-20240112-A_Domande.pdf",
-    "Secondo Anno/Probab. e stat./esami/A1-20220121_Soluzioni.pdf",
-    "Secondo Anno/Probab. e stat./A1-20240112-A_Soluzioni.pdf",
-    "Secondo Anno/Probab. e stat./Tavola_Normale.pdf",
-    "Secondo Anno/Probab. e stat./7_DiscreteContinue_tutorato.pdf",
-    "Secondo Anno/Probab. e stat./A1-20240112-A_Soluzioni.pdf.crdownload",
-    "Secondo Anno/Probab. e stat./A1-20240112-A_Domande.pdf.crdownload",
-    "Secondo Anno/Probab. e stat./Formulario-final.pdf",
-    "Secondo Anno/Probab. e stat./Formulario-final.pdf.crdownload",
-    "Secondo Anno/Probab. e stat./A2-20230210-A_soluzioni.pdf",
-    "Secondo Anno/Probab. e stat./A3-20230606_domande.pdf",
+    "Secondo Anno/Basi di Dati/esami/2023_02Finale.pdf",
+    "Secondo Anno/Basi di Dati/esami/2023_01.pdf",
+    "Secondo Anno/Basi di Dati/background_pdf/1.SistemiAle.pdf",
+    "Secondo Anno/Basi di Dati/esami/IprovaIntermedia.pdf",
+    "Secondo Anno/Basi di Dati/esami/IprovaIntermedia.pdf.crdownload",
+    "Secondo Anno/Basi di Dati/esami/2023_01.pdf.crdownload",
+    "Secondo Anno/Basi di Dati/esami/2023_02Finale.pdf.crdownload",
+    "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf",
+    "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf.crdownload",
+    "Secondo Anno/Basi di Dati/esami",
+    "Secondo Anno/Basi di Dati/Basi di Dati.md",
+    "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
+    "Secondo Anno/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
+    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
+    "Secondo Anno/Basi di dati 2/Normalizzazione.md",
+    "Pasted image 20240212101350.png",
+    "Pasted image 20240212101329.png",
+    "Pasted image 20240212100955.png",
+    "Pasted image 20240212100745.png",
+    "Pasted image 20240212100028.png",
+    "Pasted image 20240212095241.png",
+    "Pasted image 20240212095053.png",
+    "Pasted image 20240212093053.png",
+    "Pasted image 20240212092826.png",
+    "Pasted image 20240212092510.png",
+    "Secondo Anno/Basi di dati 2/Index.md",
+    "Secondo Anno/Basi di Dati/Indice.md",
+    "Secondo Anno/Sistemi Operativi/3.1-7/Memoria.md",
     "Secondo Anno/Probab. e stat./Formulario Per PES.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Segmentazione e Paginazione.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Sostituzione di pagina.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/Memoria.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Paginazione.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Segmentazione.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Backup e Ripristino.md",
@@ -260,18 +208,7 @@
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Files e File Systems.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Directories.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Metadata.md",
-    "Secondo Anno/Basi di Dati/Basi di Dati.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Multiprogrammazione.md",
-    "Blender/blender_manual_v300_en.html/_static/css/fonts/fontawesome-webfont.svg",
-    "Blender/blender_manual_v300_en.html/_static/plus.png",
-    "Blender/blender_manual_v300_en.html/_static/minus.png",
-    "Blender/blender_manual_v300_en.html/_static/file.png",
-    "Blender/blender_manual_v300_en.html/_static/cover.png",
-    "Blender/blender_manual_v300_en.html/_static/blender-logo.svg",
-    "Blender/blender_manual_v300_en.html/_images/video-editing_sequencer_strips_transitions_wipe_example.png",
-    "Blender/blender_manual_v300_en.html/_images/video-editing_sequencer_strips_transitions_cross_example.png",
-    "Blender/blender_manual_v300_en.html/_images/video-editing_sequencer_strips_text_example.png",
-    "Blender/blender_manual_v300_en.html/_images/video-editing_sequencer_strips_sound_editing.png",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Memoria virtuale.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Overlay.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Strategie di Memoria e allocazione.md",
@@ -279,11 +216,6 @@
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Gestione e Gerarchie della memoria.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Caso di studio Linux.md",
     "Secondo Anno/Sistemi Operativi/EXAM.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Caso di studio Windows.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Organizzazione e Allocazione dei file.md",
-    "Organizzazione ed Allocazione dei file.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Software IO.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Memoria secondaria e RAID.md",
     "Untitled.canvas"
   ]
 }

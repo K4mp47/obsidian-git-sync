@@ -6,6 +6,7 @@ is necessary when using an international layout (like [swiss] german).
 
 Further Reference and source: ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf
 
+Diagram in markdown: https://support.typora.io/Draw-Diagrams-With-Markdown/
 Example expressions / functions
 ============================
 

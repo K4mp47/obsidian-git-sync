@@ -1,6 +1,5 @@
 ### Modelli informatici
 > Un **modello astratto** è la rappresentazione formale di idee e conoscenze a un fenomeno
-
 - Aspetti di un modello
 	- Il modello rappresenta certi fatti
 	- Rappresentazione data con un linguaggio formale
