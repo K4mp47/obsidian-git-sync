@@ -1,3 +1,117 @@
+### Definizione Basi di dati
+[[Secondo Anno/Basi di Dati/1.SistemiAle.pdf|1.SistemiAle]]
+Una base di dati è un insieme di dati permanenti, gestiti da un elaboratore,  suddivisi in metadati che ne definiscono la struttura,scheda del DB e i dati effettivi conformi alla struttura
+### Definizione DBMS
+Sistema  centralizzato o distribuito che offre linguaggi per:
+- definire lo schema
+- scegliere le strutture dati
+- memorizzare, recuperare e modificare il dato
+#### Esempi definizione DB
+- Schema vuoto
+```sql
+CREATE DATABASE EsempioEsami;
+```
+- Definizione schema:
+```sql
+CREATE TABLE Studenti (
+	Nome char(8),
+	Matricola int NOT NULL,
+	Città char(10),
+	AnnoNascita int,
+	PRIMARY KEY (Matricola)
+);
+
+CREATE TABLE ProveEsami (
+	Materia char(5),
+	Matricola int,
+	Data char(8),
+	Voto int,
+	Lode char(1),
+	PRIMARY KEY (Materia, Matricola)
+);
+
+ecc...
+```
+- Inserzione di dati
+```sql
+INSERT INTO ProveEsami VALUES ('BD', 71523, '28.12.06', 30, 'S');
+```
+- Interrogazione
+```sql
+SELECT Matricola
+FROM ProveEsami
+WHERE Materia = 'BD' AND Voto = 30;
+```
+
+### DDL
+Tre diversi livelli di descrizione dei dati (schemi):
+- Vista logica
+- Logico
+- Fisico
+```mermaid
+graph TD
+
+id1(Vista_1)
+
+id5(Vista_n)
+
+id2(Schema logico)
+
+id3(Schema fisico) 
+
+id4(Dati)
+
+id1 --> id2 --> id3 --> id4
+id5 --> id2
+```
+#### Livello Vista logica
+Descrive come deve apparire la struttura della base di dati ad una certa applicazione (schema esterno o vista)
+Esempio:
+- InfCorsi(IdeC char(8), Titolo char(20), NumEsami int) 
+```sql
+CREATE VIEW InfCorsi (IdeC, Titolo, NumEsami) AS 
+		SELECT IdeC, 
+			  Titolo, 
+			  COUNT(*) 
+		FROM Corsi NATURAL JOIN Esami 
+		GROUP BY IdeC, Titolo;
+```
+#### Livello Logico
+Descrive la struttura degli insiemi di dati e delle relazioni
+Esempio:
+- Studenti(Matricola int, Nome char(20), Login char(8), AnnoNascita int, Reddito real ) 
+- Corsi(IdeC char(8), Titolo char(20), Credito int ) 
+- Esami(Matricola int, IdeC char(8), Voto int )
+#### Livello fisico
+Descrive lo schema fisico, ovvero come vanno organizzati fisicamente i dati e definisce strutture dati ausiliare per l'uso (es. indici)
+- Studenti organizzata in modo sequenziale con indice
+```sql
+CREATE INDEX Indice ON Studenti(Matricola);
+```
+### DML
+- Utenti non programmatori
+	- Interfaccia grafica per accedere ai dati
+	- Linguaggio di interrogazione
+- Utenti programmatori
+	- Linguaggio convenzionale + librerie predefinite
+	- Linguaggio esteso per marcare i comandi SQL, necessita di un pre-compilatore per interpretare le query
+	- Linguaggio integrato disegnato ad-hoc per usare SQL, con comandi controllati staticamente dal traduttore ed eseguiti dal DBMS
+### DBMS: controllo dei dati
+- Meccanismi offerti per garantire 
+	- Integrità
+	- Sicurezza
+		- Restrizione dell'accesso ai soli utenti autorizzati
+		- Limitazione delle operazioni eseguibili
+	- Affidabilità
+		- Protezione da interferenze dovuto ad accessi concorrenti
+		- Malfunzionamenti hw e sw
+### DBMS: transazioni
+Una transazione è una sequenza di azioni di lettura e scrittura in memoria permanente e di elaborazioni di dati in memoria temporaneam con le seguenti proprietà:
+- Atomicità ovvero terminando prematuramente vengono trattate come non fossero mai iniziate
+- Serializzabilità se vengono eseguite concorrentemente più transazioni, l'effetto è quello di un'esecuzione seriale
+- Persistenza Le modifiche al DB di una transazione terminata sono permanenti, non alterabili da eventuali malfunzionamenti
+### DBMS: controllo dei dati
+Protezione da interferenze indesiderate tra accessi concorrenti ai dati e da malfunzionamenti hw o sw, questi ultimi gestiti con journal e copie di sicurezza
 ### Modelli informatici
 > Un **modello astratto** è la rappresentazione formale di idee e conoscenze a un fenomeno
 - Aspetti di un modello

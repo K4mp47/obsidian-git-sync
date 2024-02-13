@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "62f91d3d4d8f3556",
+            "id": "9345b7118085210a",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/background_pdf/1.SistemiAle.pdf"
-              }
-            }
-          },
-          {
-            "id": "9345b7118085210a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md",
-                "mode": "source",
-                "source": false
+                "file": "Secondo Anno/Basi di Dati/1.SistemiAle.pdf"
               }
             }
           },
@@ -38,9 +26,34 @@
                 "file": "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf"
               }
             }
+          },
+          {
+            "id": "925c218c186b9273",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
-        ],
-        "currentTab": 2
+        ]
+      },
+      {
+        "id": "0317796b2758e788",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "109dff9a6f73ae64",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,7 +103,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5110321044922
+    "width": 368.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -106,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf",
+                "file": "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf",
+                "file": "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf"
+                "file": "Secondo Anno/Basi di Dati/1.SistemiAle.pdf"
               }
             }
           }
@@ -168,20 +182,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ada08835883b6485",
+  "active": "9345b7118085210a",
   "lastOpenFiles": [
+    "Secondo Anno/Basi di Dati/Basi di Dati.md",
+    "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
+    "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf",
+    "Secondo Anno/Basi di Dati/background_pdf/1.SistemiAle.pdf",
     "Secondo Anno/Basi di Dati/esami/2023_02Finale.pdf",
     "Secondo Anno/Basi di Dati/esami/2023_01.pdf",
-    "Secondo Anno/Basi di Dati/background_pdf/1.SistemiAle.pdf",
     "Secondo Anno/Basi di Dati/esami/IprovaIntermedia.pdf",
     "Secondo Anno/Basi di Dati/esami/IprovaIntermedia.pdf.crdownload",
     "Secondo Anno/Basi di Dati/esami/2023_01.pdf.crdownload",
     "Secondo Anno/Basi di Dati/esami/2023_02Finale.pdf.crdownload",
-    "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf",
     "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf.crdownload",
-    "Secondo Anno/Basi di Dati/esami",
-    "Secondo Anno/Basi di Dati/Basi di Dati.md",
-    "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
     "Secondo Anno/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Basi di dati 2/Normalizzazione.md",
