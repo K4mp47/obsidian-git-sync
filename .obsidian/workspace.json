@@ -4,40 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "2cb7269c34374a6b",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "9345b7118085210a",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Basi di Dati/1.SistemiAle.pdf"
-              }
-            }
-          },
-          {
-            "id": "ada08835883b6485",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf"
-              }
-            }
-          },
-          {
-            "id": "925c218c186b9273",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          }
-        ]
-      },
-      {
         "id": "0317796b2758e788",
         "type": "tabs",
         "children": [
@@ -48,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Secondo Anno/Basi di Dati/Basi di Dati.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -120,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
+                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
+                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/1.SistemiAle.pdf"
+                "file": "Secondo Anno/Basi di Dati/Basi di Dati.md"
               }
             }
           }
@@ -182,19 +148,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9345b7118085210a",
+  "active": "109dff9a6f73ae64",
   "lastOpenFiles": [
-    "Secondo Anno/Basi di Dati/Basi di Dati.md",
-    "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
+    "Secondo Anno/Basi di Dati/Basi di Dati.pdf",
     "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf",
+    "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
+    "Secondo Anno/Algebra Lineare/Guide.md",
+    "Secondo Anno/Algebra Lineare/excercise.pdf",
+    "Secondo Anno/Algebra Lineare/excercise.pdf.crdownload",
+    "Secondo Anno/Basi di Dati/Basi di Dati.md",
     "Secondo Anno/Basi di Dati/background_pdf/1.SistemiAle.pdf",
     "Secondo Anno/Basi di Dati/esami/2023_02Finale.pdf",
     "Secondo Anno/Basi di Dati/esami/2023_01.pdf",
     "Secondo Anno/Basi di Dati/esami/IprovaIntermedia.pdf",
     "Secondo Anno/Basi di Dati/esami/IprovaIntermedia.pdf.crdownload",
     "Secondo Anno/Basi di Dati/esami/2023_01.pdf.crdownload",
-    "Secondo Anno/Basi di Dati/esami/2023_02Finale.pdf.crdownload",
-    "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf.crdownload",
     "Secondo Anno/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Basi di dati 2/Normalizzazione.md",
@@ -228,7 +196,6 @@
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Intro.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Gestione e Gerarchie della memoria.md",
     "Secondo Anno/Sistemi Operativi/3.1-7/utils/Caso di studio Linux.md",
-    "Secondo Anno/Sistemi Operativi/EXAM.md",
     "Untitled.canvas"
   ]
 }
