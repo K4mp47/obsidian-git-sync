@@ -11,11 +11,19 @@
             "id": "05235663b1203685",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Analisi dei dati/Indice analisi di dati.md",
-                "mode": "source",
-                "source": false
+                "file": "Secondo Anno/Algebra Lineare/Algebra Lineare appunti_annotated.pdf"
+              }
+            }
+          },
+          {
+            "id": "1b961a1eeb546117",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Basi di Dati/background_pdf/2.ModelliAle.pdf"
               }
             }
           }
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Analisi dei dati/Indice analisi di dati.md",
+                "file": "Secondo Anno/Algebra Lineare/Algebra Lineare appunti_annotated.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Analisi dei dati/Indice analisi di dati.md",
+                "file": "Secondo Anno/Algebra Lineare/Algebra Lineare appunti_annotated.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Analisi dei dati/Indice analisi di dati.md"
+                "file": "Secondo Anno/Algebra Lineare/Algebra Lineare appunti_annotated.pdf"
               }
             }
           }
@@ -147,23 +155,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "05235663b1203685",
+  "active": "676356614d8bc787",
   "lastOpenFiles": [
+    "Secondo Anno/Algebra Lineare/Algebra Lineare appunti.xopp~",
+    "Secondo Anno/Algebra Lineare/ALGEBRA_1606_AAA (2).pdf",
+    "Secondo Anno/Basi di Dati/Basi di Dati.md",
+    "Secondo Anno/Algebra Lineare/Algebra Lineare appunti_annotated.pdf",
+    "Secondo Anno/Algebra Lineare/Algebra Lineare appunti.xopp",
+    "Secondo Anno/Basi di Dati/background_pdf/2.ModelliAle.pdf",
+    "Secondo Anno/Basi di dati 2/Normalizzazione1_dipendenze_funzionali.pdf",
+    "Secondo Anno/Analisi dei dati/Indice analisi di dati.md",
     "Secondo Anno/Analisi dei dati/analisi.xopp~",
     "Secondo Anno/Analisi dei dati/analisi.xopp",
     "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
-    "Secondo Anno/Analisi dei dati/Indice analisi di dati.md",
     "Secondo Anno/Analisi dei dati",
     "Secondo Anno/OOP/modulo 1",
     "Secondo Anno/OOP/modulo 2",
-    "Secondo Anno/Basi di Dati/Basi di Dati.md",
-    "Secondo Anno/Basi di Dati/Basi di Dati.pdf",
-    "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf",
-    "Secondo Anno/Basi di Dati/1.SistemiAle.pdf",
     "Secondo Anno/Algebra Lineare/Guide.md",
-    "Secondo Anno/Algebra Lineare/excercise.pdf",
-    "Secondo Anno/Algebra Lineare/excercise.pdf.crdownload",
-    "Secondo Anno/Basi di Dati/background_pdf/1.SistemiAle.pdf",
     "Secondo Anno/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Basi di dati 2/Normalizzazione.md",
