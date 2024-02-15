@@ -4,26 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "0317796b2758e788",
+        "id": "5f60550350fbc7c6",
         "type": "tabs",
         "children": [
           {
-            "id": "05235663b1203685",
+            "id": "f0a30efd72b5201e",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/Algebra Lineare appunti_annotated.pdf"
-              }
-            }
-          },
-          {
-            "id": "1b961a1eeb546117",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Basi di Dati/background_pdf/2.ModelliAle.pdf"
+                "file": "Secondo Anno/Sistemi Operativi/modulo 2/Modulo 2.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -93,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/Algebra Lineare appunti_annotated.pdf",
+                "file": "Secondo Anno/Sistemi Operativi/modulo 2/Modulo 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/Algebra Lineare appunti_annotated.pdf",
+                "file": "Secondo Anno/Sistemi Operativi/modulo 2/Modulo 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/Algebra Lineare appunti_annotated.pdf"
+                "file": "Secondo Anno/Sistemi Operativi/modulo 2/Modulo 2.md"
               }
             }
           }
@@ -155,54 +147,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "676356614d8bc787",
+  "active": "f0a30efd72b5201e",
   "lastOpenFiles": [
-    "Secondo Anno/Algebra Lineare/Algebra Lineare appunti.xopp~",
-    "Secondo Anno/Algebra Lineare/ALGEBRA_1606_AAA (2).pdf",
-    "Secondo Anno/Basi di Dati/Basi di Dati.md",
-    "Secondo Anno/Algebra Lineare/Algebra Lineare appunti_annotated.pdf",
-    "Secondo Anno/Algebra Lineare/Algebra Lineare appunti.xopp",
-    "Secondo Anno/Basi di Dati/background_pdf/2.ModelliAle.pdf",
-    "Secondo Anno/Basi di dati 2/Normalizzazione1_dipendenze_funzionali.pdf",
-    "Secondo Anno/Analisi dei dati/Indice analisi di dati.md",
-    "Secondo Anno/Analisi dei dati/analisi.xopp~",
-    "Secondo Anno/Analisi dei dati/analisi.xopp",
+    "Secondo Anno/Sistemi Operativi/modulo 2/Modulo 2.md",
+    "Secondo Anno/Sistemi Operativi/modulo 2",
+    "Secondo Anno/Sistemi Operativi/modulo 1",
     "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
-    "Secondo Anno/Analisi dei dati",
-    "Secondo Anno/OOP/modulo 1",
-    "Secondo Anno/OOP/modulo 2",
+    "Pasted image 20240215110810.png",
+    "Pasted image 20240215110633.png",
+    "Pasted image 20240215110616.png",
+    "Pasted image 20240215110506.png",
+    "Secondo Anno/Analisi dei dati/Analisi dei Dati Piazz.md",
+    "Secondo Anno/Analisi dei dati/Analisi dei Dati Piazz.pdf",
+    "Secondo Anno/OOP/modulo 2/Indice modulo 2.pdf",
+    "Secondo Anno/Analisi dei dati/AD2324-unita1-base.pdf",
+    "Secondo Anno/Analisi dei dati/Bibbia.pdf",
+    "Secondo Anno/Analisi dei dati/Analisi di dati.md",
+    "Secondo Anno/Analisi dei dati/Bibbia.pdf.crdownload",
+    "Pasted image 20240215101159.png",
+    "Pasted image 20240215101136.png",
+    "Pasted image 20240215100825.png",
+    "Pasted image 20240215100416.png",
+    "Pasted image 20240215100140.png",
+    "Pasted image 20240215095015.png",
+    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
+    "Secondo Anno/Analisi dei dati/AD2324-unita0-intro.pdf",
+    "Secondo Anno/Basi di Dati/background_pdf/2.ModelliAle.pdf",
+    "Secondo Anno/Analisi dei dati/AD2324-unita5-dipendenza.pdf",
+    "Secondo Anno/Basi di Dati/Basi di Dati.md",
     "Secondo Anno/Algebra Lineare/Guide.md",
     "Secondo Anno/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
-    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Basi di dati 2/Normalizzazione.md",
-    "Pasted image 20240212101350.png",
-    "Pasted image 20240212101329.png",
-    "Pasted image 20240212100955.png",
-    "Pasted image 20240212100745.png",
-    "Pasted image 20240212100028.png",
-    "Pasted image 20240212095241.png",
-    "Pasted image 20240212095053.png",
-    "Pasted image 20240212093053.png",
-    "Pasted image 20240212092826.png",
-    "Pasted image 20240212092510.png",
     "Secondo Anno/Basi di dati 2/Index.md",
     "Secondo Anno/Basi di Dati/Indice.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/Memoria.md",
+    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/Memoria.md",
     "Secondo Anno/Probab. e stat./Formulario Per PES.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Segmentazione e Paginazione.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Sostituzione di pagina.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Paginazione.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Segmentazione.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Backup e Ripristino.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Gerarchia dei dati.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Files e File Systems.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Directories.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Metadata.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Multiprogrammazione.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Memoria virtuale.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Overlay.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Strategie di Memoria e allocazione.md",
-    "Secondo Anno/Sistemi Operativi/3.1-7/utils/Intro.md",
+    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Segmentazione e Paginazione.md",
+    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Sostituzione di pagina.md",
+    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Paginazione.md",
+    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Segmentazione.md",
+    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Backup e Ripristino.md",
+    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Gerarchia dei dati.md",
+    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Files e File Systems.md",
+    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Directories.md",
+    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Metadata.md",
+    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Multiprogrammazione.md",
+    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Memoria virtuale.md",
+    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Overlay.md",
+    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Strategie di Memoria e allocazione.md",
     "Untitled.canvas"
   ]
 }

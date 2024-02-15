@@ -1,0 +1,91 @@
+- Schemi di organizzazione dei file includono:
+	- Sequenziale
+	- Diretto
+	- Indicizzato non sequenziale
+	- Partizionato
+- Allocazione dei file
+	- Il problema di come allocare e liberare spazio nella memoria secondaria porta a pensare diversi approcci
+	- Località spaziale
+	- I sistemi di allocazione contigui sono stati generalmente sostituiti da quelli non contigui
+- Allocazione contigua
+	- Allocazione fatta usando indirizzi contigui
+	- Semplice 
+	- Conviene in caso di memoria statica come DVD o CD
+	- Fisicamente adiacenti tra loro i record salvati
+	- Frammentazione esterna
+	- Se i file crescono o si riducono nel tempo, calo di prestazioni
+	- ![[Pasted image 20240112114059.png]]
+- Allocazione non contigua con liste collegate
+	- Basata su settore e liste collegate
+	- Una riga della directory punta al primo settore di un file
+		- La porzione puntata contiene sia dati sia il puntatore alla porzione successiva 
+		- I settori/porzioni di uno stesso file formano una lista collegata
+	- Possibile frammentazione interna all'ultimo blocco
+	- Se i settori sono contigui, questo comporta una maggiore efficienza, altrimenti i blocchi dispersi in memoria può comportare una riduzione di prestazioni nelle operazioni come la ricerca
+	- La dimensione dei settori
+		- Grande, minori operazioni I/O ma maggiore frammentazione interna 
+		- Piccola, dispersione dei dati e molte operazioni da eseguire
+	- ![[Pasted image 20240112114703.png]]
+- Allocazione non contigua e tabellare
+	- Usa tabelle che salvano i puntatori ai blocchi dei file, riducendo il numero di ricerche lunghe
+	- La riga della directory indica il primo blocco di un file
+		- Questa viene utilizzata come indice nella tabella, per ritrovare tutti i puntatori del file
+	- ![[Pasted image 20240112115054.png]]
+	- La tabella può essere salvata in cache per velocizzare i tempi di accesso
+	- La tabella di allocazione potrebbe diventare molto lunga e ridurre così le prestazioni
+	- Esempio di questo tipo di allocazione è il file system FAT nel SO MS-DOS 1.0 e Windows
+- Allocazione non contigua e indicizzata
+- Ogni file ha un blocco  indice o più
+	- Contengono un elenco di puntatori che puntano ai blocchi di dati del file
+	- Le directory puntano a i blocchi indice dei file
+	- I blocchi indice si possono concatenare inserendo nei blocchi altri blocchi indice
+	- Solitamente i blocchi indice vengono collocati vicino ai blocchi di dati a cui fanno riferimento per una maggiore velocità di accesso
+	- I blocchi indice contengono in questo caso gli attributi del file(come data di creazione, proprietario, dimensione ecc.)
+	- Nell'immagine sotto vediamo come alla fine del blocco di indice ci siano altri indirizzi a blocchi indice
+	- ![[Pasted image 20240112120042.png]]
+	- ![[Pasted image 20240112115736.png]]
+	- Sono chiamati i-node i blocchi indice in ambito UNIX
+	- Usati anche su Windows XP
+- Le directory salvano i loro attributi o direttamente nelle righe della directory, oppure a loro volta usano dei puntatori
+	- La lunghezza dei nomi dei file invece viene salvata
+		- Selezionando una lunghezza massima fissa, rischiando di perdere memoria utile
+		- Selezionando una lunghezza variabile, con un numero intero nell' header che ne identifica la lunghezza
+- Condivisione dei file
+	- File condivisi da diversi directory tramite link Il file system diventa un grafo aciclico orientato (Direct Acyclic Graph – DAG)
+	- ![[Pasted image 20240112120903.png]]
+	- Se la directory ha l’indirizzo del disco, per un file collegato si copia l’indirizzo nella directory (es. in B). Se al file viene fatta una append solo l’utente che lo ha fatto potrà vedere la modifica, non più condivisa Soluzioni: 
+		- Uso di una struttura dati ad hoc per il file alla quale puntano le directories (es. Unix) 
+		- Creazione da parte del sistema di un file di tipo LINK (link simbolico) per condividere i file con il pathname. Con contatore di uso. Creare un link non modifica la proprietà del file
+- Gestione spazio occupato
+	-  Dimensione dei blocchi solitamente costante 
+	- Non occorre che blocchi di un file siano contigui quando sono memorizzati su disco
+	- Quale dimensione scegliere per il blocco?
+		- Disco: settore, traccia, cilindro 
+		- Memoria: se con paginazione, dimensione della pagina 
+		- Blocchi grandi 
+			- Possibile spreco di spazio 
+		- Blocchi piccoli 
+			- Uso di molti blocchi, possibile spreco di tempo 
+	- Es. lettura da un disco con tracce da 1 MB, tempo di rotazione R ms, tempo medio di seek S ms, allora il tempo per leggere un blocco di k byte è S + R/2 + (k \*10 -6) \*R  
+- Gestione spazio libero
+	-  Alcuni sistemi utilizzano una lista libera di gestire lo spazio libero del dispositivo di memoria 
+	- Lista libera: Linked list di blocchi contenenti le posizioni dei blocchi liberi 
+	- I blocchi vengono assegnati a partire dall'inizio della lista libera 
+	- I blocchi appena liberati sono aggiunti alla fine della lista 
+	- Puntatori alla testa e alla coda della lista 
+		- Basso overhead per eseguire le operazioni di manutenzione lista libera 
+		- Frammentazione 
+		- Per evitare l’allocazione sparsa si può forzare il f.s. ad allocare file possibilmente in blocchi contigui 
+		- Aumenta il tempo di accesso ai file
+	- ![[Pasted image 20240112121552.png]]
+	- Si potrebbe anche usa una bitmap (mappa di bit) contenente un bit per ogni blocco in memoria 
+		- i-esimo bit corrisponde al blocco i-esimo sul dispositivo di memoria 
+		- Bit 1 se il blocco è in uso 0 se libero 
+		- Vantaggio della bitmap sulle liste libere 
+			- Velocità: il f.s. può determinare rapidamente se blocchi contigui sono disponibili in determinate posizioni in memoria secondaria 
+		- Svantaggio della bitmap 
+			- Overhead: per trovare un blocco libero il f.s. potrebbe dover cercare l'intera bitmap, con sostanziale aumento dell’overhead di esecuzione
+- Gestione file system
+	- ![[Pasted image 20240112122200.png]]
+
+[[Backup e Ripristino]]
