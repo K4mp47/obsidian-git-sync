@@ -53,3 +53,26 @@ invece come posso dimostrare la seguente formula: $F|- X \rightarrow Y$?
 ![[Pasted image 20240212101329.png]]
 **Regola derivata: Indebolimento**
 ![[Pasted image 20240212101350.png]]
+**Problema dell'implicazione**
+Le dipendenze funzionali che ci interessano veramente sono tutte quelle che possiamo derivare (e quindi implicare logicamente)
+![[Pasted image 20240216122011.png]]
+Notiamo che calcolare $F^+$ applicando gli assiomi di Amstrong ha costo **esponenziale**.
+Calcolarlo quindi è algoritmicamente inefficiente per risolvere l'implicazione.
+![[Pasted image 20240216122148.png]]
+Tutto ciò permette di calcolare $X \rightarrow Y \in F^+$ controllando se $Y \subseteq X^+_F$ che vedremo essere calcolabile in tempo **polinomiale**, risolvendo l'implicazione in modo efficiente!!
+
+esiste una dipendenza funzionale in $F$ che ha nella parte sinistra un sottoinsieme degli attributi di $X$? Calcoliamo allora $X^+_F$
+> Vediamo un esempio con 
+> $X = AB$     ($X$ contiene gli attributi $A$ e $B$)  
+> $F = {A → C , AC → D, E → F }$    (Dipendenze funzionali, esempio $C$ dipende da $A$ ecc):
+>![[Pasted image 20240216124610.png]]
+> Iniziamo supponendo
+> 1. $X^+_0 = AB$
+> 2. Cerchiamo nelle dipendenze funzionali una che abbia alla sinistra un sottoinsieme degli attributi di $X^+_0$ ( $X^+_1 = AB \cup C = ABC$)
+> 3. Ripetiamo e troviamo  $X^+_2 = ABC \cup D= ABCD$ 
+> 4. Non ci sono altre dipendenze funzionali con a sinistra un sottoinsieme degli attributi di $X^+_2$ quindi ci si ferma
+> ![[Pasted image 20240216125718.png]]
+
+![[Pasted image 20240216125833.png]]
+
+
