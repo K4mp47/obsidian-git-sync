@@ -91,7 +91,7 @@ LaTex             |   | LaTex              |          |
 `\mid`            | $\mid$ | `\propto`        | ∝          |
 `\perp`            | ⊥     | ` \parallel`     | ∥          |
 `\vartriangle`     | $\vartriangle$
-
+`\vdash`  | $\vdash$
 #### Binary operators
 LaTex        |   | LaTex  |   |
 ------------:|---|-------:|--:|

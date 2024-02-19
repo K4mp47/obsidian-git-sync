@@ -41,7 +41,12 @@ Dato R(T , F ), il problema di verificare se un attributo A ∈ T è primo ha co
 È utile portare l'insieme delle dipendenze funzionali in **forma canonica**
 ![[Pasted image 20240216144732.png]]
 ![[Pasted image 20240216144802.png]]
+- importanti le dipendenze (descritte qua sopra)
+- ricordiamo che la forma canonica non è univoca, ne esistono diverse
 ![[Pasted image 20240216144810.png]]
+![[Pasted image 20240219085848.png]]
 ![[Pasted image 20240216144816.png]]
 ![[Pasted image 20240216144832.png]]
+- al punto tre, vedendo che  togliendo $A \rightarrow C$, otteniamo comunque la $C$ con le altre dipendenze, essa può essere tolta!!
+- $\leftarrow$ è un operazione di assegnamento, si può leggere come 'diventa' 
 ![[Pasted image 20240216144848.png]]

@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f0a30efd72b5201e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Basi di dati 2/Coperture Canoniche.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "fb9dc720976a70a3",
             "type": "leaf",
             "state": {
@@ -27,6 +15,35 @@
               "state": {
                 "file": "Secondo Anno/cheatsheet_lat/cheatsheet.md",
                 "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "067a68b306541ea1",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Basi di dati 2/Flask/Flask Web Development_ Developing Web Applications with Python ( PDFDrive ).pdf"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "2cde77d65eca37d2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55009eda7414ee90",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/Basi di dati 2/Flask/Book extract.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -98,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di dati 2/Coperture Canoniche.md",
+                "file": "Secondo Anno/Basi di dati 2/Flask/Book extract.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di dati 2/Coperture Canoniche.md",
+                "file": "Secondo Anno/Basi di dati 2/Flask/Book extract.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di dati 2/Coperture Canoniche.md"
+                "file": "Secondo Anno/Basi di dati 2/Flask/Book extract.md"
               }
             }
           }
@@ -160,40 +177,42 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f0a30efd72b5201e",
+  "active": "55009eda7414ee90",
   "lastOpenFiles": [
+    "Secondo Anno/Basi di dati 2/Flask/Flask Web Development_ Developing Web Applications with Python ( PDFDrive ).pdf",
+    "Secondo Anno/Basi di dati 2/Flask/Book extract.md",
+    "Pasted image 20240219130909.png",
+    "Untitled.md",
+    "Secondo Anno/Basi di dati 2/Flask",
+    "Secondo Anno/Algebra Lineare/Foglio1_num_comples.pdf",
+    "Secondo Anno/Algebra Lineare/esercizi svolti.xopp~",
+    "Secondo Anno/Algebra Lineare/Tavola funzioni goniometriche-2-3.pdf",
+    "Secondo Anno/Algebra Lineare/Algebra Lineare appunti_annotated.pdf",
+    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
+    "Secondo Anno/Algebra Lineare/Formulario.pdf",
+    "Secondo Anno/Algebra Lineare/excercise.pdf",
+    "Secondo Anno/Algebra Lineare/2.pdf",
+    "Secondo Anno/Algebra Lineare/1.pdf",
+    "Secondo Anno/Algebra Lineare/Guide.md",
+    "Secondo Anno/Basi di dati 2/Esercizi Dipendenze Funzionali.md",
+    "Pasted image 20240219094323.png",
+    "Pasted image 20240219093453.png",
+    "Pasted image 20240219093438.png",
+    "Secondo Anno/Basi di dati 2/Index.md",
+    "Secondo Anno/Basi di dati 2/Coperture Canoniche.md",
+    "Pasted image 20240219085848.png",
     "Pasted image 20240216144848.png",
     "Pasted image 20240216144832.png",
-    "Secondo Anno/Basi di dati 2/chiavi.pdf",
-    "Secondo Anno/Basi di dati 2/Coperture Canoniche.md",
     "Pasted image 20240216144816.png",
     "Pasted image 20240216144810.png",
     "Pasted image 20240216144802.png",
-    "Pasted image 20240216144732.png",
-    "Pasted image 20240216144448.png",
-    "Pasted image 20240216144437.png",
-    "Pasted image 20240216144426.png",
-    "Pasted image 20240216144408.png",
-    "Pasted image 20240216144401.png",
-    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
-    "Secondo Anno/Basi di dati 2/Index.md",
-    "Secondo Anno/Basi di dati 2/Normalizzazione1_dipendenze_funzionali.pdf",
     "Secondo Anno/Basi di dati 2/Normalizzazione.md",
     "Secondo Anno/Basi di Dati/Indice.md",
     "Secondo Anno/Basi di Dati/Basi di Dati.md",
-    "Secondo Anno/Basi di Dati/LinguaggiRelazionali.pdf",
     "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
     "Secondo Anno/Sistemi Operativi/modulo 2/Modulo 2.md",
-    "Secondo Anno/Sistemi Operativi/modulo 2",
-    "Secondo Anno/Sistemi Operativi/modulo 1",
     "Secondo Anno/Analisi dei dati/Analisi dei Dati Piazz.md",
-    "Secondo Anno/Analisi dei dati/Analisi dei Dati Piazz.pdf",
-    "Secondo Anno/OOP/modulo 2/Indice modulo 2.pdf",
-    "Secondo Anno/Analisi dei dati/AD2324-unita1-base.pdf",
-    "Secondo Anno/Analisi dei dati/Bibbia.pdf",
     "Secondo Anno/Analisi dei dati/Analisi di dati.md",
-    "Secondo Anno/Analisi dei dati/Bibbia.pdf.crdownload",
-    "Secondo Anno/Algebra Lineare/Guide.md",
     "Secondo Anno/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/Memoria.md",
     "Secondo Anno/Probab. e stat./Formulario Per PES.md",
@@ -205,9 +224,6 @@
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Gerarchia dei dati.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Files e File Systems.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Directories.md",
-    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Metadata.md",
-    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Multiprogrammazione.md",
-    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Memoria virtuale.md",
     "Untitled.canvas"
   ]
 }
