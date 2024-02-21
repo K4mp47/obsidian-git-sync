@@ -90,8 +90,9 @@ LaTex             |   | LaTex              |          |
 `\in`             | ∈      | `\notin`         | ∉          |
 `\mid`            | $\mid$ | `\propto`        | ∝          |
 `\perp`            | ⊥     | ` \parallel`     | ∥          |
-`\vartriangle`     | $\vartriangle$
-`\vdash`  | $\vdash$
+`\vartriangle`     | $\vartriangle$    | `\vdash`  | $\vdash$      |
+`\bar`  | $\bar{X}$ | `\overline`  | $\overline{X}$      | 
+
 #### Binary operators
 LaTex        |   | LaTex  |   |
 ------------:|---|-------:|--:|

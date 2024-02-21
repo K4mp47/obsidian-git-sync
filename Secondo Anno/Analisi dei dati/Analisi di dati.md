@@ -36,6 +36,11 @@ Esempio: campione casuale dei tempi di elaborazione (CPU) di 30 processi (jobs) 
 ![[Pasted image 20240215091138.png]]
 L’obiettivo è usare i dati campionari per ricostruire alcuni parametri della popolazione
 
+$(x_1,...,x_n)$
+$\vartheta=E(x_1)$ 
+$\hat{\vartheta}=\bar{X}\rightarrow$ Stimatore
+Voglio stimare il tempo medio di un processo, per farlo lancio il processo 30 volte $n=30$ e poi effettuo l'analisi per arrivare alle *realizzazioni delle variabili casuali* (ogni volta che faccio l'analisi avrò diversi campioni come risultato)
+
 ##### Statistiche campionarie
 Statistiche che misurano la posizione:
 - Media campionaria
@@ -104,7 +109,51 @@ La media ha il difetto di essere sensibile alle osservazioni estreme (Non è rob
 La mediana campionaria stima la mediana di popolazione, è una misura di posizione molto meno sensibile alle osservazioni estreme rispetto alla media.
 Essa suddivide la distribuzione della variabile casuale $X$ in due parti uguali, ovvero
 ![[Pasted image 20240215100825.png]]
-La mediana campionaria $\hat{M}$ è
+La mediana campionaria $\bar{M}$ è
 - Inferiore al più a metà dei dati campionari
 - Superiore al più a metà dei dati campionari
 ![[Pasted image 20240215101159.png]]
+**Calcolo della media campionaria**
+1. Si ordinano le ordinazioni dalla più piccola alla più grande
+	1. Se n è dispari allora $\hat{M}$ è l'osservazione del campione ordinato di posizione $(n + 1)/2$
+	2. Se n è dispari allora $\hat{M}$ è un qualsiasi valore nell'intervallo fra le osservazioni di posizione $n/2$ e $(n + 2)/2$ 
+
+**Quantili percentili e quartili**
+Il *quantile di ordine p* è tale che:
+![[Pasted image 20240220110341.png]]
+Il *quantile di ordine p campionario* invece è:
+- maggiore al più del $100p\%$ delle osservazioni
+- minore al più del $100(1-p)\%$ delle osservazioni
+
+il *percentile di ordine $\gamma$* corrisponde al quartile di ordine 0.01$\gamma$ 
+Primo Secondo e Terzo quartile corrispondo al 25-esimo 50-esimo e 75-esimo percentile
+
+	secondo quartile <==> mediana
+
+quanto la media è precisa? Lo si calcola con la 
+**Varianza e deviazione standard campionarie**
+La varianza è definita come:
+![[Pasted image 20240220111207.png]]
+![[Pasted image 20240220111625.png]]
+
+Varianza ancora più sensibile per via dei casi anomali, si preferisce di solito usare il valore assoluto al posto del quadrato
+
+La deviazione standard campionaria invece è definita come:
+![[Pasted image 20240220111235.png]]
+
+Meglio usare la deviazione standard avendo dei valori preferibili (ricordiamo che la varianza è al quadrato, nell'esempio sopra dei processi meglio $\underline{secondi}$  o secondi$^2$??)
+
+![[Pasted image 20240220111207.png]]
+$\uparrow$ Notiamo $1/n-1$ per proprio $n-1$? Per assicurare la non distorsione con campioni piccoli, altrimenti si può dividere per $n$.
+![[Pasted image 20240220113607.png]]
+![[Pasted image 20240220113748.png]]
+![[Pasted image 20240220115315.png]]
+![[Pasted image 20240220115812.png]]
+![[Pasted image 20240220115822.png]]
+**Precisione e Accuratezza**
+
+- Accuratezza: stimatore è poco distorto
+- Preciso: stimatore è poco variabile
+
+Entrambe sono combinate nell'errore quadratico medio
+![[Pasted image 20240220115738.png]]

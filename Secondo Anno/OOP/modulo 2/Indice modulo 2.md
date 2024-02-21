@@ -1,3 +1,4 @@
+___
 ```java
 public class Main {
 	
@@ -84,7 +85,6 @@ public class Main {
 	}
 }
 ```
-
 Implementare == Estendere
 ### Documentazione di Java
 Link per la documentazione: https://docs.oracle.com/en/java/javase/17/docs/api/
@@ -99,7 +99,6 @@ Descrizione funzioni:
 ![[Pasted image 20240215110810.png]]
 A cosa serve la keyword default?
 - Implementazione di default, disponibile da java 11
-
 ```java
 public class Misc1 {
 	// Interfaccia ==  Classe astratta
@@ -142,10 +141,10 @@ Interfaccia valida? Si
 ```mermaid
 graph TD
 
-n1(Iterable)
-n2(Collection)
-n3(List)
-n4(ArrayList)
+n1[/Iterable/]
+n2[/Collection/]
+n3[/List/]
+n4[ArrayList]
 
 n5(iterator function return Iterator)
 n6(Iterator Class)
@@ -198,4 +197,122 @@ public class Misc2 {
 		m.add(456);	
 	}
 }
+```
+- type parameter
+	- void f(int n) { ... }
+- type argument
+	- f(7)
+
+```java
+// Iterable.java
+
+package tinyjdk;
+
+// ogni file contiene una sola classe
+// al massimo sono nested una dentro l'altra
+public interface Iterable<T> { // <T> = parameter
+	Iterator<T> iterator();
+}
+```
+
+```java
+// Iterator.java
+
+package tinyjdk;
+
+public interface Iterator<T> {
+	boolean hasNext();
+	T next(); // ritorna un oggetto generico
+}
+```
+
+- Ipotizzando di non voler usare i *Generics* all'interno di Collection.java, dovremmo programmare usando la classe *Object*, ed essa permette si di poter aggiungere tramite la add qualunque cosa che prende in input, elevando tutto ciò che riceve appunto, ad *Object*, ma il problema si pone quando bisogna gettare, facendo un subcast della classe e rischiando errori dovuti ad esso. Per questo, si usano i *Generics*, che bloccano ad un certo type  
+
+```java
+// Collection.java
+
+package tinyjdk;
+
+// ogni file contiene una sola classe
+// al massimo sono nested una dentro l'altra
+public interface Collection<T> extends Iterable<T>{
+	
+	void add(T x);
+	
+	default void addAll(Collection<T> c){ 
+		Iterator<T> it = c.iterator();
+		while (it.hasNext()){
+			add(it.next())
+		}
+	}
+	
+	void clear();
+	
+	boolean contains(T x);
+	
+	boolean isEmpty();
+	
+	void remove(T x);
+	
+	int size();
+}
+```
+
+```java
+//List.java
+
+package tinyjdk;
+
+public interface List<T> extends Collection<T> {
+	T get(int i);
+	
+	T set(int i, T x);
+	
+	void add(int i, T x);
+	
+	T remove(int i);
+}
+```
+
+```java
+// ArrayList.java
+
+package tinyjdk;
+
+public class ArrayList<T> implements List<T> {
+	private Object[] a;
+	private int sz;
+	
+	public ArrayList(){
+		this.a = new Object[10];
+		sz = 0;
+	}
+	
+	public ArrayList(int i){
+	
+	}
+	
+	@Override
+	public void add(T x){
+		if(sz >= a.length){
+			Object[] old = a;
+			a = new Object[a.length * 2];
+			for(int i=0; i < old.length; i++){
+				a[i] = old[i];
+			}
+		}
+		a[sz++] = x;
+	}
+	
+	@Override
+	public void clear(){
+		sz = 0; // non disalloco, tanto non mi interessa
+	}
+	
+	@Override
+	public T get(int i){
+		return (T) a[i];
+	}
+}
+
 ```

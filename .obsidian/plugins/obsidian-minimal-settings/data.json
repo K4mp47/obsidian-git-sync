@@ -20,7 +20,7 @@
   "colorfulHeadings": false,
   "colorfulFrame": true,
   "colorfulActiveStates": false,
-  "trimNames": true,
+  "trimNames": false,
   "labeledNav": false,
   "fullWidthMedia": true,
   "bordersToggle": true,
