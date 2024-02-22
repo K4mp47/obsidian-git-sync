@@ -4,18 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "363fbbd769589c50",
+        "id": "de1981230bba3dcf",
         "type": "tabs",
+        "dimension": 27.073301230604603,
         "children": [
           {
-            "id": "259cbfdbe7d121c9",
+            "id": "9a6a396821476d15",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Analisi dei dati/AD2324-unita1-base.pdf"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "363fbbd769589c50",
+        "type": "tabs",
+        "dimension": 37.667201712145534,
+        "children": [
+          {
+            "id": "61980a1b70cff1b6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
+                "file": "Secondo Anno/Analisi dei dati/Analisi di dati.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "172f8bdd2ccd2779",
+        "type": "tabs",
+        "dimension": 35.25949705724987,
+        "children": [
+          {
+            "id": "9c779829c0eec970",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Analisi dei dati/Bibbia.pdf"
               }
             }
           }
@@ -69,7 +104,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5110321044922
+    "width": 368.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -85,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
+                "file": "Secondo Anno/Analisi dei dati/Analisi di dati.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
+                "file": "Secondo Anno/Analisi dei dati/Analisi di dati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 2/Indice modulo 2.md"
+                "file": "Secondo Anno/Analisi dei dati/Analisi di dati.md"
               }
             }
           }
@@ -147,10 +183,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "259cbfdbe7d121c9",
+  "active": "61980a1b70cff1b6",
   "lastOpenFiles": [
-    "Secondo Anno/Analisi dei dati/AD2324-unita1-base.pdf",
+    "Secondo Anno/Analisi dei dati/Bibbia.pdf",
     "Secondo Anno/Analisi dei dati/Analisi di dati.md",
+    "Secondo Anno/Analisi dei dati/AD2324-unita1-base.pdf",
+    "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Pasted image 20240222100518.png",
     "Pasted image 20240222095525.png",
@@ -159,8 +197,6 @@
     "Pasted image 20240222095025.png",
     "Pasted image 20240222094832.png",
     "Secondo Anno/Sistemi Operativi/modulo 2/Modulo 2.md",
-    "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
-    "Secondo Anno/Analisi dei dati/Bibbia.pdf",
     "Pasted image 20240220115822.png",
     "Pasted image 20240220115812.png",
     "Pasted image 20240220115738.png",

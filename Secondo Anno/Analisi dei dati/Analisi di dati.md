@@ -5,18 +5,18 @@ Legenda argomenti:
 - Verifica d'ipotesi
 - Dipendenza
 	- Come usare informazioni di una variabile per prevederne un'altra
-
 - Popolazione: tutte le unità (statistiche) di interesse 
 - Parametro: una caratteristica numerica della popolazione di interesse θ 
 - Censimento: osservazione di tutte le unità della popolazione per valutare θ 
 - Campione: sottoinsieme delle popolazione utilizzato per stimare θ quando il censimento non è opportuno 
 - Statistica: una qualsiasi funzione dei dati censuari o campionari 
-- Stimatore: statistica ˆθ utilizzata per ricostruire θ 
+- Stimatore: statistica $\hat{θ}$ utilizzata per ricostruire θ 
 - Stima: valore dello stimatore corrispondente al particolare campione osservato
+
 Tipi di Errori 
 - Errori campionari: inevitabili 
 	- dovuti al fatto che osserviamo solo un campione dei dati 
-	- diminuiscono al crescere della dimensione campionaria se lo stimatore ˆθ  è ‘ragionevole’ 
+	- diminuiscono al crescere della dimensione campionaria se lo stimatore $\hat{θ}$  è ‘ragionevole’ 
 - Errori non campionari: evitabili 
 	- dovuti ad una sbagliata costruzione del campione o all’utilizzo di uno stimatore non appropriato 
 	- possono non diminuire al crescere della dimensione campionaria
