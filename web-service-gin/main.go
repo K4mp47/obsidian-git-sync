@@ -66,6 +66,10 @@ var users = []user{
   {ID: "3", Dr_rm: 3, Total_pay: 0},
 }
 
+func getUsers(c *gin.Context){
+  c.IndentedJSON(http.StatusOK, users)
+}
+
 func getUserByID(c *gin.Context) {
   id := c.Param("id")
 
@@ -120,7 +124,8 @@ func main() {
   router.GET("/albums/:id", getAlbumsByID)
   router.POST("/albums", postAlbums)
 
-  router.GET("users/:id", getUserByID)
-  router.GET("user/:id/:name", addPrizeToUser)
+  router.GET("/users", getUsers)
+  router.GET("/users/:id", getUserByID)
+  router.GET("/user/:id/:name", addPrizeToUser)
   router.Run("localhost:8080")
 }
