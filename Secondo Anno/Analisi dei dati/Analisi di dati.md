@@ -16,7 +16,7 @@ Legenda argomenti:
 Tipi di Errori 
 - Errori campionari: inevitabili 
 	- dovuti al fatto che osserviamo solo un campione dei dati 
-	- diminuiscono al crescere della dimensione campionaria se lo stimatore ˆθ  è ‘ragionevole’ \
+	- diminuiscono al crescere della dimensione campionaria se lo stimatore ˆθ  è ‘ragionevole’ 
 - Errori non campionari: evitabili 
 	- dovuti ad una sbagliata costruzione del campione o all’utilizzo di uno stimatore non appropriato 
 	- possono non diminuire al crescere della dimensione campionaria
@@ -157,3 +157,82 @@ $\uparrow$ Notiamo $1/n-1$ per proprio $n-1$? Per assicurare la non distorsione 
 
 Entrambe sono combinate nell'errore quadratico medio
 ![[Pasted image 20240220115738.png]]
+
+**Valori anomali**
+Una regola empirica suggerisce che i valori anomali sono osservazioni:
+1. Inferiori a $\hat{\mathcal{Q_1}} - 1.5\hat{\mathcal{IQR}}$
+2. Superiori a $\hat{\mathcal{Q_3}} + 1.5\hat{\mathcal{IQR}}$
+
+Questi limiti vengono utilizzati perché se i dati fossero normalmente distribuiti allora meno dell'$1\%$ delle osservazioni possono essere così ESTREME da non rispettarli
+
+Cosa fare dei valori anomali?
+
+1. Capire cosa lo rende così estremo (potrebbe essere utile per trovare un errore)
+2. Rimuoverlo del dataset se
+	1. Corrispondono ad errori
+	2. Corrispondono ad osservazioni che provengono da un'altra popolazione
+
+### Sintesi Grafiche
+L'utilizzo di grafici per visualizzare i dati, fondamentale nelle applicazioni della Statistica
+
+I grafici vengono usati per individuare:
+- Un modello probabilistico per descrivere i dati 
+- Un metodo statistico per analizzare i dati 
+- Osservazioni anomale (outliers) 
+- Fonti di eterogeneità 
+- Particolari andamenti (patterns) o tendenze (trend) 
+- Relazioni fra due o più variabili
+
+Nel corso ci soffermiamo su tre tipi di grafici:
+- Istogrammi
+- Grafici a scatola
+- Grafici a dispersione
+
+#### Istogrammi
+Gli istogrammi servono per visualizzare la **forma di distribuzione**
+
+- Costituiti da rettangoli adiacenti 
+- Considereremo istogrammi formati da intervalli della stessa ampiezza
+	- **Istogrammi di frequenza**
+	- **Istogrammi di frequenza relativa**
+****
+Se le osservazioni provengono da variabili continue al cresce della dimensione campionaria gli istogrammi covergeranno alla funzione di densità della variabile
+![[Pasted image 20240222094832.png]]
+******
+![[Pasted image 20240222095025.png]]
+****
+```mermaid
+xychart-beta
+    title "Sales Revenue"
+    x-axis [jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec]
+    y-axis "Revenue (in $)" 0 --> 3
+    bar [2, 6, 7, 0.7, 0.5, 1, 2.9, 2.1, 0.2, 1.3, 1, 6] 
+```
+****
+**Importante la scelta degli intervalli, aspetto critico nella costruzione di un istrogramma**. Una cattiva scelta degli intervalli non permette di apprendere nulla circa la distribuzione dei dati
+
+
+![[Pasted image 20240222095151.png]]
+#### Grafici a scatola (con i baffi!)
+Esempio di grafico a scatola
+![[Pasted image 20240222095249.png]]
+
+Noto anche come **boxplot** è probabilmente la più efficace rappresentazione grafica di un insieme di dati numerici
+
+costruito con:
+- Minimo
+- Primo quartile
+- Mediana
+- Terzo Quartile
+- Massimo
+
+I 'Baffi' si estendono
+- Dalla scatola al minimo
+- Dalla scatola al massimo
+
+Sempre che massimo e minimo non siano anomalmente distanti dal centro della distribuzione.
+
+![[Pasted image 20240222095525.png]]
+
+#### Grafici a dispersione
+![[Pasted image 20240222100518.png]]

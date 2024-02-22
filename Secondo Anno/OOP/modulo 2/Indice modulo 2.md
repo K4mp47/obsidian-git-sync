@@ -1,4 +1,4 @@
-___
+]
 ```java
 public class Main {
 	
@@ -264,7 +264,11 @@ public interface Collection<T> extends Iterable<T>{
 package tinyjdk;
 
 public interface List<T> extends Collection<T> {
-	T get(int i);
+	// serve throws o da errore in ArrayList
+	// se voglio farla checked, anche se in
+	// questa funzione, non serve
+	// T get(int i) throws IndexOutOfBoundException;
+	T get(int i); 
 	
 	T set(int i, T x);
 	
@@ -279,7 +283,7 @@ public interface List<T> extends Collection<T> {
 
 package tinyjdk;
 
-public class ArrayList<T> implements List<T> {
+public class ArrayLilst<T> implements List<T> {
 	private Object[] a;
 	private int sz;
 	
@@ -292,6 +296,22 @@ public class ArrayList<T> implements List<T> {
 	
 	}
 	
+	private class MyIterator implements Iterator<T> {
+		
+		private int pos = 0;
+		
+		@Override
+		public boolean hasNext() { 
+			return pos < ArrayList.this.size(); 
+		}
+		@Override
+		public T next() { return get(pos++); }
+		
+	}
+	@Override
+	public Iterator<T> iterator(){
+		return new MyIterator();
+	}
 	@Override
 	public void add(T x){
 		if(sz >= a.length){
@@ -311,8 +331,58 @@ public class ArrayList<T> implements List<T> {
 	
 	@Override
 	public T get(int i){
-		return (T) a[i];
+		if(i < sz)
+			return (T) a[i];
+		throw new RuntimeException(
+			String.format(
+				"ArrayList.get(): index %d out of bounds %d",
+				i,
+				sz
+			)
+		);
+	}
+	
+	@Override
+	public T set(int i, T x){
+		if(i < sz){
+			T old = get(i);
+			
+			a[i] = x;
+			return old;
+		}
+		throw new RuntimeException(
+			String.format(
+				"ArrayList.get(): index %d out of bounds %d",
+				i,
+				sz
+			)
+		);
+	}
+	
+	public boolean isEmpty(){
+		return sz == 0;
 	}
 }
-
 ```
+
+- Annotazione **@Override**: utile solo al programmatore per avvertirlo in caso essa non sia effettivamente una override
+
+```java
+// Main.java
+
+package tinyjdk;
+
+public class Main {
+	public static void main(String[] args){
+		List<Integer> l = new ArrayList<>();
+		f(l);
+	}
+}
+```
+
+- Eccezione, Checked o Unchecked?
+	- Checked, se l'esito con errore è molto probabile, come fosse una seconda scelta della funzione
+	- Unchecked, quando accade di rado
+- Nel caso della get(), meglio unchecked
+- Meglio creare comunque anche se con padre diverso una classe specifica per il nostro errore?
+	- Non è necessario, servono più in fase di debug, ma non è un suggerimento di stile
