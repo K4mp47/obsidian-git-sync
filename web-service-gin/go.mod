@@ -2,7 +2,10 @@ module web-service-gin
 
 go 1.18
 
-require github.com/gin-gonic/gin v1.9.1
+require (
+	github.com/aws/aws-lambda-go v1.46.0
+	github.com/gin-gonic/gin v1.9.1
+)
 
 require (
 	github.com/bytedance/sonic v1.9.1 // indirect
