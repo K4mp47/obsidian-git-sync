@@ -248,7 +248,15 @@ public interface Collection<T> extends Iterable<T>{
 	
 	void clear();
 	
-	boolean contains(T x);
+	default boolean contains(T x){
+		Iterator<T> it = iterator();
+		while(it.hasNext()){
+			T e = it.next();
+			if(e.equals(x))
+				return true;
+		}
+		return false;
+	}
 	
 	boolean isEmpty();
 	
@@ -297,7 +305,6 @@ public class ArrayLilst<T> implements List<T> {
 	}
 	
 	private class MyIterator implements Iterator<T> {
-		
 		private int pos = 0;
 		
 		@Override
@@ -386,3 +393,130 @@ public class Main {
 - Nel caso della get(), meglio unchecked
 - Meglio creare comunque anche se con padre diverso una classe specifica per il nostro errore?
 	- Non è necessario, servono più in fase di debug, ma non è un suggerimento di stile
+
+```java
+
+@override
+public T get(int i){
+	// meglio trovare un alternativa? No
+	// ottima mantenibilità del codice
+	if(i < 0 || i >= sz)
+		throws new RuntimeException(String.format("Errore, nella .get, out of bound"));
+	Node n = head;
+	// se aggiungo la guardia n != null, n.data da
+	// warning per un possibile null pointer, perché?
+	for(; i > 0; --i) 
+		n = n.next;
+	return n.data;
+}
+
+public T set(int i, T x){
+	if(i < 0 || i >= sz)
+		throws new RuntimeException(String.format("Errore, nella .get, out of bound"));
+	Node n = head;
+	// se aggiungo la guardia n != null, n.data da
+	// warning per un possibile null pointer, perché?
+	for(; i > 0; --i) 
+		n = n.next;
+	T old = n.data;
+	n.data = x;
+	return old;
+}
+```
+
+il codice è doppio, usiamo le funzioni!!
+
+```java
+
+// privata, nessuno deve sapere come tratto il dato
+// meglio mettere la classe node protected, anche la testa.
+// La testa, se private, 
+
+protected Node head;
+
+// se vogliamo essere 'aperti al mondo', anche sz va 
+// messo protected, per possibili estensioni future,
+// come un aggiunta in coda
+
+// private non si usa spesso, perché potrebbe 
+// rovinare il principio dell'ereditarietà.
+
+// private int sz;
+protected int sz; 
+
+@override
+public Iterator<T> iterator(){
+	return new  Iterator<T>() {
+		private Node n = head;
+		
+		@override
+		public boolean hasNext(){
+			return n != null;
+		}
+		
+		@override
+		public T next(){
+			T r = n.data;
+			n = n.next;
+			return r;
+		}
+	}
+}
+
+private Node getNode(int i){
+	if(i < 0 || i >= sz)
+		throws new RuntimeException(String.format("Errore, nella .get, out of bound"));
+	Node n = head;
+	for(; i > 0; --i) 
+		n = n.next;
+	return n;
+}
+
+@override
+public T get(int i){
+	return getNode(i).data;
+}
+
+public T set(int i, T x){
+	if(i < 0 || i >= sz)
+		throws new RuntimeException(String.format("Errore, nella .get, out of bound"));
+	Node n = getNode(i);
+	// se aggiungo la guardia n != null, n.data da
+	// warning per un possibile null pointer, perché?
+	for(; i > 0; --i) 
+		n = n.next;
+	T old = n.data;
+	n.data = x;
+	return old;
+}
+
+// questa funzione non include campi specifici e 
+// chiama metodi che hanno tutte le collection
+// quindi posso inserirla nella interfaccia
+// (se guardo è identica a quella in ArrayList)
+// public boolean contains(T x){
+//	Iterator<T> it = iterator();
+//	while(it.hasNext()){
+//		T e = it.next();
+//		if(e.equals(x))
+//			return true;
+//	}
+//	return false;
+//  }
+
+public void remove(T x){
+	Node n = head;
+	if(head != null){
+		if(n.data.equals(x)){
+			n = n.next;
+		} else {
+			while(n.next != null){
+				if(n.next.data.equals(x)){
+					n.next = n.next.next;
+					return;
+				}
+			}
+		}
+	}
+}
+```

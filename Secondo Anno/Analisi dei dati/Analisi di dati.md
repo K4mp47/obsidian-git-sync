@@ -236,3 +236,4 @@ Sempre che massimo e minimo non siano anomalmente distanti dal centro della dist
 
 #### Grafici a dispersione
 ![[Pasted image 20240222100518.png]]
+

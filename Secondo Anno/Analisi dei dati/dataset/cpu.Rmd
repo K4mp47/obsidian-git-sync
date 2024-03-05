@@ -1,0 +1,18 @@
+cpu <- scan("/home/albertocampagnolo/Desktop/obsidian-git-sync/Secondo Anno/Analisi dei dati/dataset/cpu.txt")
+cpu
+mean(cpu)
+quantile(cpu, probs=0.25, type=2)
+quantile(cpu, probs=0.50, type=2)
+quantile(cpu, probs=0.75, type=2)
+sd(cpu)
+IQR(cpu, type=2)
+isto <- hist(cpu, main="Example", xlab="Tempo", ylab="frequenze", col="steelblue")
+isto
+names(isto)
+isto <- hist(cpu, freq=FALSE, breaks=6, main="Example", xlab="Tempo", ylab="frequenze", col="steelblue") 
+## densità, freq, indica quanti dati cadono in un particolare insieme di valori,
+## densità = frequenza / ampiezza
+## meglio descritta come:
+freqrel <- isto$counts / sum(isto$counts)
+freqrel / 20
+
