@@ -296,14 +296,38 @@ public class ArrayLilst<T> implements List<T> {
 	private int sz;
 	
 	public ArrayList(){
+		// limitazione del linguaggio, non posso
+		// scrivere T[10], ritorna errore
 		this.a = new Object[10];
 		sz = 0;
 	}
 	
 	public ArrayList(int i){
-	
+		// non implementato
 	}
 	
+	
+	// static nested iterator --> non entra in virtual table
+	private static class StaticMyIterator<T> implements Iterator<T>{
+		private int pos = 0;
+		private ArrayList<T> enclosing;
+		
+		public StaticMyIterator(ArrayList<T> a){
+			this.enclosing = a;
+		}
+		
+		@Override
+		public boolean hasNext(){
+			return this.pos < enclosing.size();
+		}
+		
+		@Override
+		public T next(){
+			return enclosing.get(pos++);
+		}
+	}
+	
+	// non static nested iterator
 	private class MyIterator implements Iterator<T> {
 		private int pos = 0;
 		
@@ -312,12 +336,20 @@ public class ArrayLilst<T> implements List<T> {
 			return pos < ArrayList.this.size(); 
 		}
 		@Override
-		public T next() { return get(pos++); }
-		
+		public T next() { return get(pos++); }	
 	}
+	
 	@Override
 	public Iterator<T> iterator(){
-		return new MyIterator();
+		
+		//anonymous class
+		return new MyIterator<T>(){
+			private int pos = 0;
+			
+			public boolean hasNext(){ return pos < size; }
+			
+			public T next(){ return get(pos++); }
+		};
 	}
 	@Override
 	public void add(T x){
@@ -336,10 +368,16 @@ public class ArrayLilst<T> implements List<T> {
 		sz = 0; // non disalloco, tanto non mi interessa
 	}
 	
+	
+	public int size(){
+		return sz;
+	}
 	@Override
 	public T get(int i){
 		if(i < sz)
 			return (T) a[i];
+		
+		// Eccezione unchecked
 		throw new RuntimeException(
 			String.format(
 				"ArrayList.get(): index %d out of bounds %d",
@@ -347,6 +385,12 @@ public class ArrayLilst<T> implements List<T> {
 				sz
 			)
 		);
+		
+		// Eccezione checked
+		throw new IndexOutOfBoundsException(String.format
+		                                ("Arraylist.get():
+		                                 index %d out of
+		                                 bound %d" i, sz));
 	}
 	
 	@Override
@@ -357,6 +401,8 @@ public class ArrayLilst<T> implements List<T> {
 			a[i] = x;
 			return old;
 		}
+		
+		// unchecked exception
 		throw new RuntimeException(
 			String.format(
 				"ArrayList.get(): index %d out of bounds %d",
@@ -366,8 +412,37 @@ public class ArrayLilst<T> implements List<T> {
 		);
 	}
 	
+	@Override
 	public boolean isEmpty(){
 		return sz == 0;
+	}
+	
+	public void add(int i, T x){
+	
+	}
+	
+	public void add(T x){
+	
+	}
+	
+	boolean equals(Object o){
+		if(o instanceof ArrayList){
+			//...
+		}
+		
+		return false;
+	}
+	
+	public void remove(T x){
+		for(int i = 0; i < size(); ++i){
+			T o = get(i);
+			if(o.equals(x)){
+				for(int j = i; j <size() - 1; ++j ){
+					set(j, get(j + 1));
+				}
+				--sz;
+			}
+		}
 	}
 }
 ```
@@ -427,96 +502,294 @@ public T set(int i, T x){
 il codice è doppio, usiamo le funzioni!!
 
 ```java
+package tinyjdk;
 
-// privata, nessuno deve sapere come tratto il dato
-// meglio mettere la classe node protected, anche la testa.
-// La testa, se private, 
-
-protected Node head;
-
-// se vogliamo essere 'aperti al mondo', anche sz va 
-// messo protected, per possibili estensioni future,
-// come un aggiunta in coda
-
-// private non si usa spesso, perché potrebbe 
-// rovinare il principio dell'ereditarietà.
-
-// private int sz;
-protected int sz; 
-
-@override
-public Iterator<T> iterator(){
-	return new  Iterator<T>() {
-		private Node n = head;
+public class LinkedList<T> implements List<T>{
+	
+	protected class Node{
+		public T data;
+		public Node next;
 		
-		@override
-		public boolean hasNext(){
-			return n != null;
-		}
-		
-		@override
-		public T next(){
-			T r = n.data;
-			n = n.next;
-			return r;
+		public Node(T data, Node next){
+			this.data = data;
+			this.next = next;
 		}
 	}
-}
-
-private Node getNode(int i){
-	if(i < 0 || i >= sz)
-		throws new RuntimeException(String.format("Errore, nella .get, out of bound"));
-	Node n = head;
-	for(; i > 0; --i) 
-		n = n.next;
-	return n;
-}
-
-@override
-public T get(int i){
-	return getNode(i).data;
-}
-
-public T set(int i, T x){
-	if(i < 0 || i >= sz)
-		throws new RuntimeException(String.format("Errore, nella .get, out of bound"));
-	Node n = getNode(i);
-	// se aggiungo la guardia n != null, n.data da
-	// warning per un possibile null pointer, perché?
-	for(; i > 0; --i) 
-		n = n.next;
-	T old = n.data;
-	n.data = x;
-	return old;
-}
-
-// questa funzione non include campi specifici e 
-// chiama metodi che hanno tutte le collection
-// quindi posso inserirla nella interfaccia
-// (se guardo è identica a quella in ArrayList)
-// public boolean contains(T x){
-//	Iterator<T> it = iterator();
-//	while(it.hasNext()){
-//		T e = it.next();
-//		if(e.equals(x))
-//			return true;
-//	}
-//	return false;
-//  }
-
-public void remove(T x){
-	Node n = head;
-	if(head != null){
-		if(n.data.equals(x)){
-			n = n.next;
+	// privata, nessuno deve sapere come tratto il dato
+	// meglio mettere la classe node protected, anche la testa.
+	// La testa, se private, 
+	
+	protected Node head;
+	
+	// se vogliamo essere 'aperti al mondo', anche sz va 
+	// messo protected, per possibili estensioni future,
+	// come un aggiunta in coda
+	
+	// private non si usa spesso, perché potrebbe 
+	// rovinare il principio dell'ereditarietà.
+	
+	// private int sz;
+	protected int sz; 
+	
+	public LinkedList(){
+		this.head = null;
+		sz = 0;
+	}
+	
+	public void add(T x){
+		if(head == null){
+			head = new Node(x, null);
 		} else {
+			Node n = head;
 			while(n.next != null){
-				if(n.next.data.equals(x)){
-					n.next = n.next.next;
-					return;
+				n = n.next;
+			}
+			n.next = new Node(x, null);
+		}
+		sz++;
+	}
+	
+	public void clear(){
+		head = null;
+		sz = 0;
+		/*
+			garbage collector si prende tutto
+			perché gli elementi in coda hanno ancora
+			reference type.
+			
+			sarebbe meglio però mettere tutto a null.
+		*/
+	}
+	
+	public void size(){
+		return sz;
+	}
+	
+	@override
+	public Iterator<T> iterator(){
+		return new  Iterator<T>() {
+			private Node n = head;
+			
+			@override
+			public boolean hasNext(){
+				return n != null;
+			}
+			
+			@override
+			public T next(){
+				T r = n.data;
+				n = n.next;
+				return r;
+			}
+		}
+	}
+	
+	protected Node getNode(int i){
+		if(i < 0 || i >= sz)
+			throws new RuntimeException(String.format("Errore, nella .get, out of bound"));
+		Node n = head;
+		for(; i > 0; --i) 
+			n = n.next;
+		return n;
+	}
+	
+	@override
+	public T get(int i){
+		return getNode(i).data;
+	}
+	
+	public T set(int i, T x){
+	/*
+		if(i < 0 || i >= sz)
+			throws new RuntimeException(String.format("Errore, nella .get, out of bound"));
+		Node n = getNode(i);
+		// se aggiungo la guardia n != null, n.data da
+		// warning per un possibile null pointer, perché?
+		for(; i > 0; --i) 
+			n = n.next;
+		T old = n.data;
+		n.data = x;
+		return old;
+	*/
+		// Il codice sopra è brutto molto meglio così
+		Node n = getNode(i);
+		T old = n.data;
+		n.data = x;
+		return old;
+	}
+	
+	// questa funzione non include campi specifici e 
+	// chiama metodi che hanno tutte le collection
+	// quindi posso inserirla nella interfaccia
+	// (se guardo è identica a quella in ArrayList)
+	// public boolean contains(T x){
+	//	Iterator<T> it = iterator();
+	//	while(it.hasNext()){
+	//		T e = it.next();
+	//		if(e.equals(x))
+	//			return true;
+	//	}
+	//	return false;
+	//  }
+	
+	public void remove(T x){
+		Node n = head;
+		if(head != null){
+			if(n.data.equals(x)){
+				n = n.next;
+			} else {
+				while(n.next != null){
+					if(n.next.data.equals(x)){
+						n.next = n.next.next;
+						return;
+					}
 				}
 			}
 		}
 	}
 }
 ```
+
+```java
+package tinyjdk
+
+public interface Set<T> extends Collection<T>{
+	
+}
+```
+
+```java
+package tinyjdk
+
+public class StructuralSet<T> implements Set<T> {
+	
+	//sostanzialmente uno stub per Arraylist
+	
+	private List<T> l = new ArrayList<>();
+	
+	@Override
+	public void add(T x){
+		if(!l.contains(x))
+			l.add(x);
+	}
+	
+	@Override
+	public void clear(){
+		l.clear();
+	}
+	
+	public boolean isEmpty(){
+		return l.isEmpty();
+	}
+}
+```
+
+```java
+package tinyjdk
+
+public static class IndexOutOfBoundsException extends Exception{
+		public IndexOutOfBoundsException(string msg){
+			super(msg);
+		}
+	}
+```
+
+```java
+package tinyjdk
+//Metodo globale -> non preferibile
+public class ArrayListIterator<T> implements Iterator<T> {
+        
+        private int pos = 0;
+        private ArrayList<T> enclosing;
+        
+        public ArrayListIterator(ArrayList<T> a) {
+            this.enclosing = a;
+        }
+        @Override
+        public boolean hasNext() {
+            return this.pos < enclosing.size();
+        }
+        @Override
+        public T next() {
+            return enclosing.get(pos++);
+        }
+
+}
+```
+## Eccezioni Checked e Unchecked
+* Le eccezioni **unchecked** non hanno bisogno della keyword `throws`ne del costrutto `try{...}catch{...}`,  tuttavia potrebbero non essere raccolte.
+* Al contrario le eccezioni **checked** ne hanno bisogno e devono essere propagate gerarchicamente.
+* Se l'anomalia *non è frequente* meglio scegliere un'**eccezione unchecked**.
+* Se l'anomalia *è frequente* ed è ritenuta un *secondo possibile esito del codice* megio scegliere un **eccezione checked**.
+## Virtual Table e Dynamic Dispatching
+Alla creazione di un campo in Java  (prima della chiamata al costruttore), questo viene inizializzato a  `NULL`, se è un **reference type**, a 0 se è un **int**.
+Di conseguenza quando viene chiamato il costruttore, c'è già della memoria allocata (8 Byte per i pointer, 4 per gli int), il compilatore sa quanto allocare sulla base della sommatoria dei campi della classe.
+Viene inoltre creata una tabella, detta **Virtual Table**, che contiene pointer ai metodi della classe, i quali puntano alla prima istruzione dei corrispondenti metodi. Ciò avviene perché quando una classe istanziata viene passata a qualcos'altro si crea **subsumpion**, e di conseguenza alla chiamata di un metodo della classe si può recuperare quest'ultimo dalla virtual table della stessa. Grazie all'uso delle virtual table Java implementa il **Dynamic Dispatching**. Quando viene creato un oggetto, viene prima allocato lo spazio necessario per i campi ed in seguito la virtual table, che contiene anche i metodi sottoposti ad **Override**.
+
+## Anonymous Class
+
+```java
+(...)new Iterator<T>() {
+		
+		private int pos = 0;	
+		
+		@Override
+		public boolean hasNext(){
+			return pos < size;
+		}
+		
+		@Override
+		public T next(){
+			return get(pos++);
+		}
+	}
+```
+
+Un codice è formato da:  
+* **statement**: porzioni di codice formate da una o più righe e delimitati dalle graffe.  $\to$ (inizializzazioni, dichiarazioni, `return`, `if`, `do`, `for`, `throw` ...).
+* **espressioni**: computano qualcosa, come fra le tonde dell'`if`  $\to$ (`(n < 8)`, `(n - 8)`...).
+
+Il codice riportato è una **classe anonima**, ovvero un' **espressione**. La classe anonima permette di istanziare al momento un nuovo oggetto. La keyword `new` viene riutilizzata, in quanto quello che lancia non è un costruttore. Il nome anonymous class è sbagliato perché quello che abbiamo davanti è un **anonymous object**. Il nuovo oggetto viene subsunto ad `Iterator`, pertanto, nel caso in cui venga creato un nuovo metodo nella classe anonima, questo non può essere utilizzato. Dalla classe anonima si può accedere ai campi istanziati nello scope del metodo che la chiama (cioè *la classe porta con sé lo scope in cui è stata definita* $\to$ **chiusura**):
+
+Esempio di class anonima realistico:
+
+```java
+new Thread(new Runnable() {
+    @Override
+    public void run() {
+        System.out.println("Sono un nuovo thread!");
+    }
+}).start();
+```
+
+In questo esempio, la classe anonima estende l'interfaccia `Runnable` e sovrascrive il metodo `run` per definire il comportamento del thread. Poiché la classe è necessaria solo per questo thread specifico, viene dichiarata e istanziata anonimamente all'interno dell'argomento del costruttore Thread.
+
+In generale le anonymous class:
+- *Possono estendere una classe esistente o implementare un'interfaccia.*
+- *Vengono tipicamente utilizzate per oggetti di breve durata*
+- *Possono accedere a variabili locali finali o effettivamente finali dall'ambito di inclusione*
+- *Non possono accedere a variabili locali non finali dall'ambito di inclusione.*
+
+```java
+public Iterator<T> iterator(){
+	
+	int pos = 0;
+	
+	return new Iterator<T>() {
+		
+		@Override
+		public boolean hasNext(){
+			return pos < size;
+		}
+		
+		@Override
+		public T next(){
+			return get(pos++);
+		}
+	};
+}
+```
+
+## Metodi == e equals
+* `==`: se i due elementi sono **reference type** controlla i puntatori, se **value type** fa un vero confronto, è **polimorfo** e **omogeneo** (funziona con due oggetti dello stesso tipo),
+* `equals`: è un metodo della classe `Object` reso standard, è **polimorfo per subtype** ed è **eterogeneo**. In genere si usa `equals` per fare una deep copy. $\to$ *è un semplice metodo*.
