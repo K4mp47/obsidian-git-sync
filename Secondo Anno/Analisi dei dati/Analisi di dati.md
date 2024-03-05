@@ -237,3 +237,33 @@ Sempre che massimo e minimo non siano anomalmente distanti dal centro della dist
 #### Grafici a dispersione
 ![[Pasted image 20240222100518.png]]
 
+## Stima
+supponiamo che i dati vengano da una variabile casuale la cui distribuzione dipende da un parametro ignoto $\theta$ 
+Terminologia: i dati sono generati da un modello statistico indicizzato da un parametro $\theta$ ignoto appartenente allo spazio parametrico Θ ⊂ $R^k$
+il modello statistico è:
+- Caso discreto, una classe di funzione di probabilità $Pr(x;\theta)$
+- Nel caso continuo una classe di densità $f(x;\theta)$
+(esempio di discrete continue assieme, la pioggia. discreta: quando piove, continua: quanto piove)
+
+> in POISSON, la media campionaria e la varianza sono sia uguali che stimatori consistenti e non distorti per la funzione di POISSON.
+
+##### Come decidere la stima: metodo dei momenti
+Consiste nel confrontare **momenti di popolazione** con i **momenti campionari**
+momenti: 
+- ![[Pasted image 20240305112648.png]]
+$\hat{\mu_k}=M_k$ 
+momenti centrali: 
+- ![[Pasted image 20240305112901.png]]
+$\mu'_1=E(x-\mu)=0$
+$\mu'_1=E(x-\mu)^2=\sigma^2$
+![[Pasted image 20240305113338.png]]
+![[Pasted image 20240305113650.png]]
+![[Pasted image 20240305114025.png]]
+##### Come decidere la stima: metodo della massima verosimiglianza
+Lo stimatore di massima verosimiglianza è quel valore del parametro $\theta$ che massimizza la funzione di verosimiglianza ('likelihood')
+
+La funzione è proporzionale alla probabilità di osservare ciò che è stato effettivamente osservato:
+- Nel caso discreto la funzione è proporzionale alla funzione di probabilità congiunta dei dati
+	- ![[Pasted image 20240305114232.png]]
+	- Che in un campione casuale semplice diventa
+		- ![[Pasted image 20240305114302.png]]

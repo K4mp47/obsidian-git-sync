@@ -40,19 +40,45 @@
             }
           },
           {
-            "id": "98cebb7835b0478c",
+            "id": "39f1a34751fda499",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
-                "mode": "source",
+                "file": "Secondo Anno/cheatsheet_lat/cheatsheet.md",
+                "mode": "preview",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "4a9c9e8bfc487978",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf"
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
+      },
+      {
+        "id": "e24f3c6c2a8c2391",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0f4e6e7c9dfa67bc",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Basi di Dati/3.Progettazione.pdf"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -119,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
+                "file": "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
+                "file": "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 2/Indice modulo 2.md"
+                "file": "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf"
               }
             }
           }
@@ -181,31 +207,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "98cebb7835b0478c",
+  "active": "4a9c9e8bfc487978",
   "lastOpenFiles": [
+    "Secondo Anno/OOP/recupero appunti.md",
+    "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
+    "Secondo Anno/Basi di Dati/3.Progettazione.pdf",
+    "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
+    "Secondo Anno/Basi di Dati/LinguaggiRelazionali.pdf",
+    "Secondo Anno/Basi di Dati/esami/2023_01.pdf",
+    "Secondo Anno/Basi di Dati/esami/2023_02Finale.pdf",
+    "Secondo Anno/Analisi dei dati/AD2324-unita2-stima.pdf",
+    "Secondo Anno/Analisi dei dati/Analisi di dati.md",
+    "Secondo Anno/Analisi dei dati/esercizi.xopp~",
+    "Pasted image 20240305114302.png",
+    "Pasted image 20240305114232.png",
+    "Pasted image 20240305114025.png",
+    "Pasted image 20240305113650.png",
+    "Pasted image 20240305113338.png",
+    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
+    "Pasted image 20240305112901.png",
+    "Pasted image 20240305112648.png",
+    "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
     "Secondo Anno/Analisi dei dati/Bibbia.pdf",
     "Secondo Anno/Basi di dati 2/slide prof/BOLLETTE DAL 2023.xlsx",
-    "Secondo Anno/Analisi dei dati/dataset/cpu.Rmd",
-    "Secondo Anno/Analisi dei dati/dataset/cpu.txt",
-    "Secondo Anno/Analisi dei dati/dataset",
-    "Secondo Anno/Analisi dei dati/AD2324-lab2.html",
-    "Secondo Anno/Analisi dei dati/Analisi di dati.md",
-    "Secondo Anno/Basi di Dati/esami/IprovaIntermedia.pdf",
-    "Secondo Anno/Basi di Dati/esami/2023_02Finale.pdf",
-    "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf",
-    "Secondo Anno/Basi di dati 2/esercizi/Es_dipendenze_funzionali.pdf",
     "Secondo Anno/Basi di dati 2/Forma Normale.md",
     "Pasted image 20240304165843.png",
     "Pasted image 20240304165824.png",
     "Pasted image 20240304165403.png",
-    "Secondo Anno/Basi di dati 2/slide prof/forme_normali.pdf",
-    "Pasted image 20240304165146.png",
-    "Pasted image 20240304164954.png",
-    "Pasted image 20240304164908.png",
-    "Pasted image 20240304164758.png",
-    "Pasted image 20240304164736.png",
-    "Pasted image 20240304164639.png",
-    "Pasted image 20240304164546.png",
     "Secondo Anno/Basi di dati 2/Index.md",
     "Secondo Anno/Basi di dati 2/Decomposizione.md",
     "Secondo Anno/Basi di dati 2/Normalizzazione.md",
@@ -213,9 +241,7 @@
     "Secondo Anno/Basi di dati 2/Esercizi Dipendenze Funzionali.md",
     "Secondo Anno/Analisi dei dati/exercise/Esercizi.md",
     "Secondo Anno/Analisi dei dati/lab1.md",
-    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Analisi dei dati/Laboratorio.md",
-    "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
     "Secondo Anno/Sistemi Operativi/modulo 2/Modulo 2.md",
     "README.md",
     "2023-10-08.md",
@@ -228,7 +254,6 @@
     "Secondo Anno/Analisi dei dati/Analisi dei Dati Piazz.md",
     "Secondo Anno/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/Memoria.md",
-    "Secondo Anno/Probab. e stat./Formulario Per PES.md",
     "Untitled.canvas"
   ]
 }
