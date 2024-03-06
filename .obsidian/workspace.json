@@ -60,14 +60,7 @@
                 "file": "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf"
               }
             }
-          }
-        ],
-        "currentTab": 4
-      },
-      {
-        "id": "e24f3c6c2a8c2391",
-        "type": "tabs",
-        "children": [
+          },
           {
             "id": "0f4e6e7c9dfa67bc",
             "type": "leaf",
@@ -79,19 +72,35 @@
             }
           },
           {
-            "id": "bc1dabba8e277c90",
+            "id": "520257e15a74fcb4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
+                "file": "Secondo Anno/Basi di dati 2/Vincoli ed integrità.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 6
+      },
+      {
+        "id": "70132551ace5cd9b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a484d4b870e774ce",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Basi di dati 2/slide prof/vincoli.pdf"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -141,7 +150,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5110321044922
+    "width": 368.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -157,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
+                "file": "Secondo Anno/Basi di dati 2/slide prof/vincoli.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +184,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
+                "file": "Secondo Anno/Basi di dati 2/slide prof/vincoli.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,7 +207,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf"
+                "file": "Secondo Anno/Basi di dati 2/slide prof/vincoli.pdf"
               }
             }
           }
@@ -219,12 +229,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4a9c9e8bfc487978",
+  "active": "a484d4b870e774ce",
   "lastOpenFiles": [
+    "Secondo Anno/Basi di dati 2/Vincoli ed integrità.md",
+    "Pasted image 20240306112643.png",
+    "Pasted image 20240306112632.png",
+    "Secondo Anno/Basi di dati 2/slide prof/vincoli.pdf",
+    "Secondo Anno/Basi di dati 2/slide prof/vincoli.pdf.crdownload",
+    "Secondo Anno/Basi di dati 2/slide prof/Normalizzazione1_dipendenze_funzionali.pdf",
+    "Secondo Anno/Basi di dati 2/Index.md",
+    "Secondo Anno/Basi di dati 2/Forma Normale.md",
+    "Secondo Anno/Basi di dati 2/Normalizzazione.md",
+    "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
     "Secondo Anno/OOP/recupero appunti.md",
     "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
     "Untitled.md",
-    "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
     "Secondo Anno/Basi di Dati/3.Progettazione.pdf",
     "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
     "Secondo Anno/Basi di Dati/LinguaggiRelazionali.pdf",
@@ -232,7 +251,6 @@
     "Secondo Anno/Basi di Dati/esami/2023_02Finale.pdf",
     "Secondo Anno/Analisi dei dati/AD2324-unita2-stima.pdf",
     "Secondo Anno/Analisi dei dati/Analisi di dati.md",
-    "Secondo Anno/Analisi dei dati/esercizi.xopp~",
     "Pasted image 20240305114302.png",
     "Pasted image 20240305114232.png",
     "Pasted image 20240305114025.png",
@@ -241,15 +259,8 @@
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Pasted image 20240305112901.png",
     "Pasted image 20240305112648.png",
-    "Secondo Anno/Analisi dei dati/Bibbia.pdf",
-    "Secondo Anno/Basi di dati 2/slide prof/BOLLETTE DAL 2023.xlsx",
-    "Secondo Anno/Basi di dati 2/Forma Normale.md",
     "Pasted image 20240304165843.png",
-    "Pasted image 20240304165824.png",
-    "Pasted image 20240304165403.png",
-    "Secondo Anno/Basi di dati 2/Index.md",
     "Secondo Anno/Basi di dati 2/Decomposizione.md",
-    "Secondo Anno/Basi di dati 2/Normalizzazione.md",
     "Secondo Anno/Basi di dati 2/Coperture Canoniche.md",
     "Secondo Anno/Basi di dati 2/Esercizi Dipendenze Funzionali.md",
     "Secondo Anno/Analisi dei dati/exercise/Esercizi.md",
@@ -265,7 +276,6 @@
     "Secondo Anno/Basi di Dati/Basi di Dati.md",
     "Secondo Anno/Analisi dei dati/Analisi dei Dati Piazz.md",
     "Secondo Anno/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
-    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/Memoria.md",
     "Untitled.canvas"
   ]
 }
