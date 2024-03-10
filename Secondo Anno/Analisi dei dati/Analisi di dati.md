@@ -267,3 +267,18 @@ La funzione è proporzionale alla probabilità di osservare ciò che è stato ef
 	- ![[Pasted image 20240305114232.png]]
 	- Che in un campione casuale semplice diventa
 		- ![[Pasted image 20240305114302.png]]
+- log-verosimiglianza
+		$l(\lambda)=\sum_i(lg(e)^{-\lambda}+lg(\lambda)^{x_i}$ 
+		= $-n\lambda+\sum_ix_ilg(\lambda)$ 
+		= $-n\lambda+\sum_ix_i\lambda^{x_i}$
+		= $-n\lambda+\sum_ix_i$
+		= $-\frac{1}{\lambda^2}\sum_ix_i$
+		ovvero
+		![[Pasted image 20240307094856.png]]
+		![[Pasted image 20240307094131.png]]
+Nel caso continuo, la probabilità di osservare esattamente un certo valore $x$ è $Pr(X = x) = 0$ Per un valore ‘piccolo’ h abbiamo che:
+![[Pasted image 20240307094226.png]]
+![[Pasted image 20240307094239.png]]
+Nel caso continuo, il metodo della massima verosimiglianza massimizza la probabilità di osservare dei valori vicini ciò che è stato effettivamente osservato 
+$$L(θ) ∝ f (x1, . . . , xn ; θ)$$ Nel caso di un campione casuale abbiamo
+$$L(θ) ∝ \Pi^n_{i=1} f (xi ; θ)$$

@@ -681,6 +681,14 @@ public class StructuralSet<T> implements Set<T> {
 	public boolean isEmpty(){
 		return l.isEmpty();
 	}
+	
+	public void remove(T x){
+		l.remove(x);
+	}
+	
+	public Iterator<T> iterator(){
+		
+	}
 }
 ```
 
@@ -793,3 +801,14 @@ public Iterator<T> iterator(){
 ## Metodi == e equals
 * `==`: se i due elementi sono **reference type** controlla i puntatori, se **value type** fa un vero confronto, è **polimorfo** e **omogeneo** (funziona con due oggetti dello stesso tipo),
 * `equals`: è un metodo della classe `Object` reso standard, è **polimorfo per subtype** ed è **eterogeneo**. In genere si usa `equals` per fare una deep copy. $\to$ *è un semplice metodo*.
+
+```java
+// ARRAYLIST2
+
+package tinyjdk;
+
+public class ArraList2<T> extends AbstractCollection<T> implements List<T>{
+	// implementa remove, add, ecc dalle altre classi,
+	// ma sz non funziona, deve essere messo private!!
+}
+```
