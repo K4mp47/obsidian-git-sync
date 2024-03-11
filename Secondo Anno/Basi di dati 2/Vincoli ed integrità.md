@@ -104,3 +104,87 @@ Molto spesso i dati salvati all'interno di un database devono soddisfare determi
 	```
 	![[Pasted image 20240306112632.png]]
 	![[Pasted image 20240306112643.png]]
+
+## Limitazioni dei vincoli
+Si considerino questi schemi, dove `president` è chiave esterna per `code`:
+```
+MovieExec(name, address, code, netWorth) 
+Studio(name, address, president)
+```
+
+![[Pasted image 20240311085343.png]]
+
+```sql
+CHECK (100000 <= ALL(SELECT netWorth 
+					 FROM Studio, 
+					 MovieExec WHERE president = code)
+```
+
+## Asserzioni
+Le asserzioni esprimono **invarianti globali** sull'intero schema relazionale:
+```
+CREATE ASSERTION <name> CHECK (<condition>)
+```
+
+La condizione deve essere vera quando l'asserzione è creata e continuare a rimanere tale dopo ogni modifica del database.
+Le asserzioni sono strettamente più potenti dei CHECK, ma molto più complicate da implementare efficientemente.
+Inoltre sono inefficienti!
+
+
+Esempio: 
+Nessuno può essere un presidente di uno studio senza avere un reddito di almeno 100.000:
+```sql
+CREATE ASSERTION RichPresident CHECK( 
+	NOT EXISTS( 
+		SELECT Studio.name 
+		FROM Studio, MovieExec 
+		WHERE Studio.president = MovieExec.code AND 
+			MovieExec.netWorth < 100000 
+	) 
+);
+```
+
+La durata complessiva dei film prodotti da ogni studio deve essere di almeno 500 minuti:
+```sql
+CREATE ASSERTION SumLength CHECK( 
+	500 <= ALL( 
+		SELECT SUM(length) 
+		FROM Movies 
+		GROUP BY studio 
+	) 
+);
+```
+
+Altro esempio:
+Partendo da questi oggetti:
+```sql
+Product(maker, model, type) 
+PC(model*, speed, ram, hd, price) 
+Laptop(model*, speed, ram, hd, screen, price) 
+Printer(model*, color, type, price)
+```
+
+Se un Laptop ha più ram di un PC allora deve anche costare di più di tale PC
+
+```sql
+CREATE ASSERTION NoCheapLaptop CHECK (NOT EXISTS( 
+	SELECT * 
+	FROM Laptop, PC 
+	WHERE Laptop.ram > PC.ram AND 
+		Laptop.price <= PC.price 
+	) 
+);
+```
+
+Nessun produttore di PC può produrre anche Laptop:
+
+```sql
+CREATE ASSERTION NoPCLaptop CHECK (NOT EXISTS( 
+	SELECT * 
+	FROM Product p1, Product p2 
+	WHERE p1.type = ’PC’ AND p2.type = ’Laptop’ 
+		AND p1.maker = p2.maker 
+	) 
+);
+```
+

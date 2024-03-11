@@ -60,18 +60,6 @@
             }
           },
           {
-            "id": "520257e15a74fcb4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Basi di dati 2/Vincoli ed integrità.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "5583f3efcfb2f99a",
             "type": "leaf",
             "state": {
@@ -80,9 +68,31 @@
                 "file": "Secondo Anno/Basi di Dati/2.ModelliAle.pdf"
               }
             }
+          },
+          {
+            "id": "520257e15a74fcb4",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Basi di dati 2/slide prof/trigger.pdf"
+              }
+            }
+          },
+          {
+            "id": "860c99a839bdcc9e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Trigger.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -213,19 +223,23 @@
   },
   "active": "5583f3efcfb2f99a",
   "lastOpenFiles": [
+    "Secondo Anno/Sistemi Operativi/modulo 2/calcolatrice/a.out",
+    "Secondo Anno/Sistemi Operativi/modulo 2/calcolatrice/calcolatrice.c",
+    "Secondo Anno/Sistemi Operativi/modulo 2/calcolatrice/calcolatrice",
+    "Secondo Anno/Sistemi Operativi/modulo 2/calcolatrice/calcPipe",
+    "Secondo Anno/Sistemi Operativi/modulo 2/calcolatrice/test.txt",
+    "Secondo Anno/Sistemi Operativi/modulo 2/calcolatrice",
+    "Secondo Anno/Basi di dati 2/slide prof/trigger.pdf",
+    "Trigger.md",
+    "Secondo Anno/Basi di dati 2/Vincoli ed integrità.md",
+    "Secondo Anno/Basi di dati 2/Index.md",
+    "Secondo Anno/Basi di dati 2/slide prof/trigger.pdf.crdownload",
+    "Secondo Anno/Basi di dati 2/slide prof/vincoli.pdf",
+    "Pasted image 20240311085343.png",
+    "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
     "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
     "Secondo Anno/Analisi dei dati/Analisi di dati.md",
-    "Secondo Anno/Basi di dati 2/slide prof/vincoli.pdf",
-    "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
     "Secondo Anno/Basi di Dati/3.Progettazione.pdf",
-    "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
-    "Secondo Anno/Basi di dati 2/Vincoli ed integrità.md",
-    "Secondo Anno/Sistemi Operativi/modulo 2/crypto-archive/decrypt",
-    "Secondo Anno/Sistemi Operativi/modulo 2/crypto-archive/decrypt.c",
-    "Secondo Anno/Sistemi Operativi/modulo 2/crypto-archive/crypto2",
-    "Secondo Anno/Sistemi Operativi/modulo 2/crypto-archive/crypto.c",
-    "Secondo Anno/Sistemi Operativi/modulo 2/crypto-archive/crypto-macOS",
-    "Secondo Anno/Sistemi Operativi/modulo 2/crypto-archive/crypto",
     "Pasted image 20240307094856.png",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Pasted image 20240307094239.png",
@@ -233,7 +247,6 @@
     "Pasted image 20240307094131.png",
     "Pasted image 20240306112643.png",
     "Pasted image 20240306112632.png",
-    "Secondo Anno/Basi di dati 2/Index.md",
     "Secondo Anno/Basi di dati 2/Forma Normale.md",
     "Secondo Anno/Basi di dati 2/Normalizzazione.md",
     "Secondo Anno/OOP/recupero appunti.md",
@@ -241,7 +254,6 @@
     "Pasted image 20240305114302.png",
     "Pasted image 20240305114232.png",
     "Pasted image 20240305114025.png",
-    "Pasted image 20240305113650.png",
     "Secondo Anno/Basi di dati 2/Decomposizione.md",
     "Secondo Anno/Basi di dati 2/Coperture Canoniche.md",
     "Secondo Anno/Basi di dati 2/Esercizi Dipendenze Funzionali.md",
@@ -257,7 +269,6 @@
     "Secondo Anno/Basi di Dati/Indice.md",
     "Secondo Anno/Basi di Dati/Basi di Dati.md",
     "Secondo Anno/Analisi dei dati/Analisi dei Dati Piazz.md",
-    "Secondo Anno/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
     "Untitled.canvas"
   ]
 }

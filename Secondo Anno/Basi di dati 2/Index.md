@@ -3,3 +3,4 @@
 - [[Decomposizione]] 
 - [[Forma Normale]]
 - [[Vincoli ed integrità]]
+- [[Trigger]]
