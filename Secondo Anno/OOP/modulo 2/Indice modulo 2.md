@@ -812,3 +812,81 @@ public class ArraList2<T> extends AbstractCollection<T> implements List<T>{
 	// ma sz non funziona, deve essere messo private!!
 }
 ```
+
+```java
+// Set.java
+
+package tinyjdk;
+
+public interface Set<T> extends Collection<T>{
+	T first();
+	T last();
+
+	boolean lessThan();
+}
+```
+
+```java
+// SortedSet.java
+
+package tinyjdk;
+
+public interface Set<T extends Comparable<T>> extends Collection<T>{
+	T first();
+	T last();
+}
+```
+
+```java
+// Comparable.java
+
+package tinyjdk;
+
+
+// generico per capire con cosa mi confronto
+public interface Comparable<T> {
+	boolean lessThan(T <){
+	
+	}
+}
+```
+
+```java
+// StructuralSet.java
+
+package tinyjdk;
+
+
+// generico per capire con cosa mi confronto
+public interface StructuralSet<T> {
+	boolean lessThan(T x){
+	
+	}
+}
+```
+
+```java
+// StructuralSortedSet.java
+
+package tinyjdk;
+
+
+// generico per capire con cosa mi confronto
+public interface StructuralSortedSet<T> extends StructuralSet<T> implements SortedSet<T>{
+	
+	@Override
+	public void add(T x){
+		super.add(x);
+	}
+	
+	@Override
+	public T first(){
+	
+	}
+
+	@Override
+	public T last(){
+	
+	}
+}
+```

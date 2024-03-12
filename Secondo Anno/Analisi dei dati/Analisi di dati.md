@@ -282,3 +282,50 @@ Nel caso continuo, la probabilità di osservare esattamente un certo valore $x$ 
 Nel caso continuo, il metodo della massima verosimiglianza massimizza la probabilità di osservare dei valori vicini ciò che è stato effettivamente osservato 
 $$L(θ) ∝ f (x1, . . . , xn ; θ)$$ Nel caso di un campione casuale abbiamo
 $$L(θ) ∝ \Pi^n_{i=1} f (xi ; θ)$$
+##### Problemi regolari di stima
+Lo stimatore di massima verosimiglianza gode di importanti proprietà che valgono sotto delle 'opportune assunzioni di regolarità'.
+## TO do problemi di stima
+
+
+##### Errori standard
+Niente meno della sd dello stimatore.
+Servono a misurare la precisione degli stimatori.
+- accuratezza opposto di distorsione
+- precisione opposto di variabilità
+
+sotto **assunzioni** lo stimatore di massima verosimiglianza è
+- **asintoticamente non distorto** E(ˆθ) → θ, per n → ∞
+- consistente  $\hat{θ} \rightarrow^p θ$, per n → ∞
+- **asintoticamente normale** con distribuzione limite $\hat{θ} ≈ N {θ, I(θ)^{−1}},$ per n ‘sufficientemente grande’ dove I(θ) è l’informazione attesa di Fisher
+
+##### Informazione attesa di Fisher
+![[Pasted image 20240312105211.png]]
+Nel caso di un campione casuale semplice (così si ha che l'informazione del campione è pari a n volte l'informazione contenuta in una singola osservazione) abbiamo
+![[Pasted image 20240312105231.png]]
+
+##### Attesa osservata
+![[Pasted image 20240312105447.png]]
+
+##### Errore standard dello stimatore di massima verosimiglianza
+![[Pasted image 20240312110035.png]]
+### Efficienza
+Lo stimatore di massima verosimiglianza gode di una importante proprietà di ottimalità
+
+diseguaglianza di Cramer identifica il limite inferiore della varianza di uno stimatore $\hat{\theta}$ non distorto di $\theta$
+![[Pasted image 20240312110347.png]]
+
+
+
+Consideriamo un campione casuale semplice da una variabile casuale di Poisson di parametro $\lambda$
+lo stimatore $\hat{\lambda}=\bar{X}$ è uno stimatore efficiente di $\lambda$
+Infatti la varianza di $\hat{\lambda}$ è:
+![[Pasted image 20240312110236.png]]
+questo calcolo, è vero? Bisogna controllare
+- Log verosimiglianza
+	- ![[Pasted image 20240312110514.png]]
+	- le due derivate risultanti sono
+		- ![[Pasted image 20240312110532.png]]
+	- trovo l'informazione attesa
+		- ![[Pasted image 20240312110601.png]]
+	- la cui inversa risulta essere la varianza, appunto, di $\hat{\lambda}$
+
