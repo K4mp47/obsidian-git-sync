@@ -892,9 +892,8 @@ public interface StructuralSortedSet<T> extends StructuralSet<T> implements Sort
 	
 	private void sort(){
 		T[] src = (T[]) a;
-		T[] tmp = Arrays.copyOf(src, size());
 		
-		Arrays.sort(tmp, new Comparator<T> {
+		Arrays.sort(erc, 0, size(), new Comparator<T> {
 			@Override
 			public int compare(T o1, T o2){
 				return o1.compareTo(o2);
