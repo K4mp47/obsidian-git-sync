@@ -4,90 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6ae0b3b1163af639",
+        "id": "8d90d135158c5f67",
         "type": "tabs",
-        "dimension": 38.96774193548387,
         "children": [
           {
-            "id": "4a9c9e8bfc487978",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf"
-              }
-            }
-          },
-          {
-            "id": "0f4e6e7c9dfa67bc",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Basi di Dati/3.Progettazione.pdf"
-              }
-            }
-          },
-          {
-            "id": "5583f3efcfb2f99a",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Basi di Dati/2.ModelliAle.pdf"
-              }
-            }
-          },
-          {
-            "id": "520257e15a74fcb4",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Basi di dati 2/slide prof/trigger.pdf"
-              }
-            }
-          },
-          {
-            "id": "860c99a839bdcc9e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Trigger.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "16a3377c08bea7a8",
+            "id": "fa15c7f8ed318620",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
                 "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "3396a67c1c5d898c",
-        "type": "tabs",
-        "dimension": 61.03225806451613,
-        "children": [
-          {
-            "id": "b438976513c4eeee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Basi di Dati/studio per esame/Test di scrittura del modello concettuale.md",
-                "mode": "preview",
                 "source": false
               }
             }
@@ -159,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/studio per esame/Test di scrittura del modello concettuale.md",
+                "file": "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/studio per esame/Test di scrittura del modello concettuale.md",
+                "file": "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -199,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/studio per esame/Test di scrittura del modello concettuale.md"
+                "file": "Secondo Anno/OOP/modulo 2/Indice modulo 2.md"
               }
             }
           }
@@ -221,38 +148,42 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b438976513c4eeee",
+  "active": "fa15c7f8ed318620",
   "lastOpenFiles": [
-    "Secondo Anno/Basi di Dati/3.Progettazione.pdf",
-    "Secondo Anno/Basi di Dati/studio per esame/Test di scrittura del modello concettuale.md",
-    "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
-    "Secondo Anno/Basi di Dati/2.ModelliAle.pdf",
-    "Secondo Anno/Basi di Dati/studio per esame/Test di scrittura del modello concettuale.pdf",
-    "Secondo Anno/Basi di Dati/studio per esame",
-    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
-    "Secondo Anno/Analisi dei dati/AD2324-lab2.html",
-    "Secondo Anno/Analisi dei dati/AD2324-unita2-stima.pdf",
+    "Secondo Anno/OOP/modulo 2/PO2/soluzione appelli/Scritto PO2 20 6 19/out/production/Scritto PO2 20 6 19/META-INF/Scritto PO2 20 6 19.kotlin_module",
+    "Secondo Anno/OOP/modulo 2/PO2/soluzione appelli/Scritto PO2 20 6 19/out/production/Scritto PO2 20 6 19/META-INF",
+    "Secondo Anno/OOP/modulo 2/PO2/soluzione appelli/Scritto PO2 1 7 22/java/Appello_1_7_22/src/Es2.java",
+    "Secondo Anno/OOP/modulo 2/PO2/soluzione appelli/Scritto PO2 1 7 22/java/Appello_1_7_22/src/Es1.java",
+    "Secondo Anno/OOP/modulo 2/PO2/soluzione appelli/Scritto PO2 30 6 23/java/src/Es1.java",
+    "Secondo Anno/OOP/modulo 2/PO2/soluzione appelli/Scritto PO2 3 6 22/java/src/Appello_3_6_22.java",
+    "Secondo Anno/OOP/modulo 2/PO2/soluzione appelli/Scritto PO2 3 6 22/cpp/Appello_3_6_22/Appello_3_6_22.vcxproj.user",
+    "Secondo Anno/OOP/modulo 2/PO2/soluzione appelli/Scritto PO2 3 6 22/cpp/Appello_3_6_22/Appello_3_6_22.vcxproj.filters",
+    "Secondo Anno/OOP/modulo 2/PO2/soluzione appelli/Scritto PO2 3 6 22/cpp/Appello_3_6_22/Appello_3_6_22.vcxproj",
+    "Secondo Anno/OOP/modulo 2/PO2/soluzione appelli/Scritto PO2 3 6 22/cpp/Appello_3_6_22/Appello_3_6_22.sln",
+    "Secondo Anno/OOP/modulo 2/PO2/soluzione appelli/Scritto PO2 3 6 22/cpp/Appello_3_6_22/Appello_3_6_22.cpp",
+    "Secondo Anno/OOP/modulo 2/PO2/README.md",
     "Secondo Anno/Analisi dei dati/Analisi di dati.md",
-    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-0930/soluzione",
-    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-0930/soluzione.c",
-    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-0930/source.c",
+    "Pasted image 20240314095234.png",
+    "Pasted image 20240314095217.png",
+    "Pasted image 20240314095025.png",
+    "Pasted image 20240314094946.png",
+    "Pasted image 20240314094847.png",
+    "Pasted image 20240314094828.png",
+    "Pasted image 20240314094550.png",
+    "Pasted image 20240314093114.png",
+    "Pasted image 20240314093104.png",
+    "Pasted image 20240314093055.png",
+    "Secondo Anno/Calcolo/Indice.md",
+    "Secondo Anno/Algebra Lineare/Guide.md",
+    "Trigger.md",
+    "Secondo Anno/Basi di Dati/studio per esame/Test di scrittura del modello concettuale.md",
+    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Sistemi Operativi/modulo 2/andrei-work/README.md",
     "Secondo Anno/Sistemi Operativi/modulo 2/adrei-work/README.md",
     "Secondo Anno/Sistemi Operativi/modulo 2/OS-playground/README.md",
-    "Pasted image 20240312110601.png",
-    "Pasted image 20240312110532.png",
-    "Pasted image 20240312110514.png",
-    "Pasted image 20240312110347.png",
-    "Pasted image 20240312110236.png",
-    "Pasted image 20240312110035.png",
-    "Pasted image 20240312105447.png",
-    "Pasted image 20240312105231.png",
-    "Pasted image 20240312105211.png",
     "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
-    "Trigger.md",
     "Secondo Anno/Basi di dati 2/Vincoli ed integrità.md",
     "Secondo Anno/Basi di dati 2/Index.md",
-    "Pasted image 20240311085343.png",
     "Secondo Anno/Basi di dati 2/Forma Normale.md",
     "Secondo Anno/Basi di dati 2/Normalizzazione.md",
     "Secondo Anno/OOP/recupero appunti.md",
@@ -265,9 +196,6 @@
     "Secondo Anno/Analisi dei dati/Laboratorio.md",
     "Secondo Anno/Sistemi Operativi/modulo 2/Modulo 2.md",
     "README.md",
-    "2023-10-08.md",
-    "key-value.md",
-    "Secondo Anno/Basi di dati 2/Flask/Book extract.md",
     "Untitled.canvas"
   ]
 }

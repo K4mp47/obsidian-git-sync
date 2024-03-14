@@ -329,3 +329,47 @@ questo calcolo, è vero? Bisogna controllare
 		- ![[Pasted image 20240312110601.png]]
 	- la cui inversa risulta essere la varianza, appunto, di $\hat{\lambda}$
 
+
+Esempio
+![[Pasted image 20240314093047.png]]
+![[Pasted image 20240314093055.png]]
+![[Pasted image 20240314093104.png]]
+$\uparrow$ in questa slide possiamo anche scrivere la seconda riga come
+
+$$\frac{1}{p^2}np+\frac{1}{(1-p)^2}(n-np)$$
+$$\frac{np}{p^2}+\frac{(n-np)}{(1-p)^2}$$
+$$\frac{n}{p}+\frac{n}{(1-p)}$$
+$$\frac{n}{p(1-p)}$$
+
+![[Pasted image 20240314093114.png]]
+
+### Invarianza
+proprietà dello stimatore:
+![[Pasted image 20240314094550.png]]
+
+Supponiamo che il numero di utenti che si collegano ad un server in un istante di tempo si distribuisca come una variabile di Poisson di parametro $\lambda$
+
+La stima di massima verosimiglianza di $\lambda$ è $\hat{\lambda}=\bar{X}$
+
+CI interessa stimare la probabilità che il numero di utenti superi un certo livello critico $c$
+
+Quindi il nostro **parametro di interesse** è
+- ![[Pasted image 20240314094828.png]]
+
+![[Pasted image 20240314094847.png]]
+
+Immaginiamo che la soglia critica sia c=75 utenti contemporanei
+
+In un campione casuale di 25 istanti la media campionaria di utenti contemporanei è ![[Pasted image 20240314094946.png]]
+
+La stima di massima verosimiglianza è $\hat{\lambda}=62.7$
+![[Pasted image 20240314095025.png]]
+in R:
+```r
+> 1 - ppois(75, lambda = 62.7)
+```
+
+
+Nella gran parte delle applicazioni di interesse la dimensione del parametro è maggiore di uno:
+![[Pasted image 20240314095217.png]]
+![[Pasted image 20240314095234.png]]
