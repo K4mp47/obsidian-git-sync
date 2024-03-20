@@ -3,6 +3,7 @@ package tinyjdk;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.NoSuchElementException;
 
 public class StructuralSortedSet<T extends Comparable<T>>
         extends StructuralSet<T>
@@ -17,7 +18,7 @@ public class StructuralSortedSet<T extends Comparable<T>>
     // static <T extends Comparable<T>> void sort(List<T> l);
     //static <T> void sort(T[] a, Comparator<? super T> c) {}
     //I love your mama
-    private void sort__() {
+    private void sort() {
         T[] src = (T[]) a;
         Arrays.sort(src, 0, size(), new Comparator<T>() {
             @Override
@@ -29,11 +30,13 @@ public class StructuralSortedSet<T extends Comparable<T>>
 
     @Override
     public T first() {
-        return null;
+        if (size() == 0) throw new NoSuchElementException();
+        return (T) a[0];
     }
 
     @Override
     public T last() {
-        return null;
+        if(isEmpty()) throw new NoSuchElementException();
+        return (T) a[size() - 1];
     }
 }

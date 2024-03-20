@@ -1,0 +1,34 @@
+drop function if exists my_concat;
+drop function if exists prices;
+
+CREATE FUNCTION my_concat(a text, b text, uppercase boolean = false) RETURNS text AS $$
+BEGIN 
+	IF uppercase THEN 
+		RETURN UPPER(a || ' ' || b);
+END IF;
+RETURN LOWER(a || ' ' || b);
+END; $$ LANGUAGE plpgsql;
+
+
+CREATE FUNCTION prices(pr int) RETURNS text AS $$
+BEGIN
+	DECLARE n text := null;
+	DECLARE x int := pr;
+
+	DECLARE r RECORD;
+	FOR r IN SELECT model, price FROM lab.pc LOOP
+		IF r.price > pr THEN
+			pr := pr - r.price
+		ELSE
+			pr := r.price - pr
+		ENDIF;
+		IF x > pr THEN
+			x := pr
+			n := r.model
+		ENDIF;
+	END LOOP;
+	RETURN n;
+END; $$ LANGUAGE plpgsql;
+
+SELECT my_concat('Hello', 'Mama', true);
+SELECT prices(1000)
