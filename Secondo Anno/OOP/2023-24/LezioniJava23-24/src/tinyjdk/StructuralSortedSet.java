@@ -15,9 +15,18 @@ public class StructuralSortedSet<T extends Comparable<T>>
         sort();
     }
 
-    // static <T extends Comparable<T>> void sort(List<T> l);
-    //static <T> void sort(T[] a, Comparator<? super T> c) {}
-    //I love your mama
+/*    private void sort() {
+        T[] a = (T[]) this.a;
+        while (...) {
+            int i = 0;
+            if (a[i].compareTo(a[i + 1]) > 0) {
+                T tmp = a[i];
+                a[i] = a[i + 1];
+                a[i + 1] = tmp;
+            }
+        }
+    }*/
+
     private void sort() {
         T[] src = (T[]) a;
         Arrays.sort(src, 0, size(), new Comparator<T>() {
@@ -30,13 +39,13 @@ public class StructuralSortedSet<T extends Comparable<T>>
 
     @Override
     public T first() {
-        if (size() == 0) throw new NoSuchElementException();
+        if (isEmpty()) throw new NoSuchElementException();
         return (T) a[0];
     }
 
     @Override
     public T last() {
-        if(isEmpty()) throw new NoSuchElementException();
+        if (isEmpty()) throw new NoSuchElementException();
         return (T) a[size() - 1];
     }
 }
