@@ -1,3 +1,27 @@
+Ecco una tabella con alcune derivate prime comuni:
+
+$$
+\begin{array}{|c|c|}
+\hline
+\text{Funzione} & \text{Derivata Prima} \\
+\hline
+f(x) = k & f'(x) = 0 \\
+f(x) = x^n & f'(x) = nx^{n-1} \\
+f(x) = e^x & f'(x) = e^x \\
+f(x) = \ln(x) & f'(x) = \frac{1}{x} \\
+f(x) = \sin(x) & f'(x) = \cos(x) \\
+f(x) = \cos(x) & f'(x) = -\sin(x) \\
+f(x) = \tan(x) & f'(x) = \sec^2(x) \\
+f(x) = \sec(x) & f'(x) = \sec(x)\tan(x) \\
+f(x) = \csc(x) & f'(x) = -\csc(x)\cot(x) \\
+f(x) = \cot(x) & f'(x) = -\csc^2(x) \\
+f(x) = \sqrt{x} & f'(x) = \frac{1}{2\sqrt{x}} \\
+\hline
+\end{array}
+\$$
+
+
+Questa è solo una selezione di derivate prime comuni. Esistono molte altre funzioni e regole di derivazione, ma queste sono tra le più utilizzate.
 Legenda argomenti:
 - Concetti di base
 - Stima puntuale
