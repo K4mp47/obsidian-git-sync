@@ -6,7 +6,7 @@
       {
         "id": "8d90d135158c5f67",
         "type": "tabs",
-        "dimension": 37.65853658536585,
+        "dimension": 48.92682926829268,
         "children": [
           {
             "id": "b313eeec4154bd9b",
@@ -51,16 +51,6 @@
             }
           },
           {
-            "id": "3ca02671963d7cc6",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Analisi dei dati/AD2324-unita1-base.pdf"
-              }
-            }
-          },
-          {
             "id": "a39e431c37dd23ed",
             "type": "leaf",
             "state": {
@@ -71,14 +61,56 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "606a2af35578be9f",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Analisi dei dati/exercise/AD2324-formulario.pdf"
+              }
+            }
+          },
+          {
+            "id": "3ca02671963d7cc6",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Analisi dei dati/AD2324-unita1-base.pdf"
+              }
+            }
+          },
+          {
+            "id": "633cec33e67c9c94",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Analisi dei dati/AD2324-unita2-stima.pdf"
+              }
+            }
+          },
+          {
+            "id": "cdefe4110a57b074",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/cheatsheet_lat/cheatsheet.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       },
       {
         "id": "95b5f4332320cbc7",
         "type": "tabs",
-        "dimension": 62.34146341463415,
+        "dimension": 51.07317073170732,
         "children": [
           {
             "id": "cc55b9e15726543a",
@@ -102,8 +134,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -170,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/modulo 2/Modulo 2.md",
+                "file": "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita1-soluzioni.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +218,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/modulo 2/Modulo 2.md",
+                "file": "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita1-soluzioni.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +241,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Sistemi Operativi/modulo 2/Modulo 2.md"
+                "file": "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita1-soluzioni.pdf"
               }
             }
           }
@@ -232,20 +263,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cfdbd6428f8dbefa",
+  "active": "cc55b9e15726543a",
   "lastOpenFiles": [
-    "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita1-soluzioni.pdf",
-    "Secondo Anno/Analisi dei dati/Analisi di dati.md",
     "Secondo Anno/Analisi dei dati/AD2324-unita1-base.pdf",
+    "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita1-soluzioni.pdf",
+    "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita1-soluzioni.pdf.crdownload",
+    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
+    "Secondo Anno/Analisi dei dati/exercise/AD2324-formulario.pdf",
+    "Secondo Anno/Analisi dei dati/Analisi di dati.md",
+    "Secondo Anno/Analisi dei dati/AD2324-unita2-stima.pdf",
+    "Secondo Anno/Sistemi Operativi/modulo 2/Modulo 2.md",
     "Secondo Anno/Algebra Lineare/Lezione 10.pdf",
     "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita1.pdf",
     "Secondo Anno/Algebra Lineare/Lezione 9.pdf",
-    "Secondo Anno/Analisi dei dati/AD2324-unita2-stima.pdf",
-    "Secondo Anno/Sistemi Operativi/modulo 2/Modulo 2.md",
     "Secondo Anno/Algebra Lineare/Lezione 8.pdf",
     "Secondo Anno/Algebra Lineare/Lezione 11.pdf",
     "Secondo Anno/Algebra Lineare/Lezione 8.pdf.crdownload",
-    "Secondo Anno/Algebra Lineare/Lezione 10.pdf.crdownload",
     "Secondo Anno/Basi di dati 2/Sicurezza.md",
     "Pasted image 20240320113029.png",
     "Pasted image 20240320112316.png",
@@ -273,7 +306,6 @@
     "Secondo Anno/Calcolo/Indice.md",
     "Secondo Anno/Algebra Lineare/Guide.md",
     "Trigger.md",
-    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Sistemi Operativi/modulo 2/andrei-work/README.md",
     "Secondo Anno/Sistemi Operativi/modulo 2/adrei-work/README.md",
     "Secondo Anno/Sistemi Operativi/modulo 2/OS-playground/README.md",
