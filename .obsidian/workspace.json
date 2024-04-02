@@ -4,137 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "8d90d135158c5f67",
+        "id": "95b5f4332320cbc7",
         "type": "tabs",
-        "dimension": 48.92682926829268,
         "children": [
           {
-            "id": "b313eeec4154bd9b",
+            "id": "c1d652df13112e54",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf"
+                "file": "Secondo Anno/Basi di Dati/esami/2023_02Finale.pdf"
               }
             }
           },
           {
-            "id": "f5391860b6080807",
+            "id": "8931b7c73b007dac",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Analisi dei dati/Bibbia.pdf"
-              }
-            }
-          },
-          {
-            "id": "85e53a5735ca9be7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Basi di dati 2/Sicurezza.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "053cbd0be1ad3d89",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Algebra Lineare/Lezione 10.pdf"
-              }
-            }
-          },
-          {
-            "id": "a39e431c37dd23ed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Analisi dei dati/Analisi di dati.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "606a2af35578be9f",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Analisi dei dati/exercise/AD2324-formulario.pdf"
-              }
-            }
-          },
-          {
-            "id": "3ca02671963d7cc6",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Analisi dei dati/AD2324-unita1-base.pdf"
-              }
-            }
-          },
-          {
-            "id": "633cec33e67c9c94",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Analisi dei dati/AD2324-unita2-stima.pdf"
-              }
-            }
-          },
-          {
-            "id": "cdefe4110a57b074",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/cheatsheet_lat/cheatsheet.md",
-                "mode": "preview",
-                "source": false
+                "file": "Secondo Anno/Basi di Dati/studio per esame/01 - Modellazione.pdf"
               }
             }
           }
         ],
-        "currentTab": 6
-      },
-      {
-        "id": "95b5f4332320cbc7",
-        "type": "tabs",
-        "dimension": 51.07317073170732,
-        "children": [
-          {
-            "id": "cc55b9e15726543a",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita1-soluzioni.pdf"
-              }
-            }
-          },
-          {
-            "id": "cfdbd6428f8dbefa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Sistemi Operativi/modulo 2/Modulo 2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -201,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita1-soluzioni.pdf",
+                "file": "Secondo Anno/Basi di Dati/studio per esame/01 - Modellazione.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -218,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita1-soluzioni.pdf",
+                "file": "Secondo Anno/Basi di Dati/studio per esame/01 - Modellazione.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -241,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita1-soluzioni.pdf"
+                "file": "Secondo Anno/Basi di Dati/studio per esame/01 - Modellazione.pdf"
               }
             }
           }
@@ -263,22 +157,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cc55b9e15726543a",
+  "active": "8931b7c73b007dac",
   "lastOpenFiles": [
-    "Secondo Anno/Analisi dei dati/AD2324-unita1-base.pdf",
+    "Secondo Anno/Basi di Dati/studio per esame/03 - Algebra relazionale.pdf",
+    "Secondo Anno/Basi di Dati/studio per esame/02 - SQL.pdf",
+    "Secondo Anno/Basi di Dati/studio per esame/02 - SQL.pdf.crdownload",
+    "Secondo Anno/Basi di Dati/studio per esame/Test di scrittura del modello concettuale.md",
+    "Secondo Anno/Basi di Dati/studio per esame/Test di scrittura del modello concettuale.pdf",
+    "Secondo Anno/Basi di Dati/studio per esame/01 - Modellazione.pdf",
+    "Secondo Anno/Basi di Dati/esami/2023_02Finale.pdf",
+    "Secondo Anno/Basi di Dati/studio per esame/esame1.py",
     "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita1-soluzioni.pdf",
-    "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita1-soluzioni.pdf.crdownload",
-    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
-    "Secondo Anno/Analisi dei dati/exercise/AD2324-formulario.pdf",
+    "Secondo Anno/Analisi dei dati/AD2324-unita1-base.pdf",
     "Secondo Anno/Analisi dei dati/Analisi di dati.md",
     "Secondo Anno/Analisi dei dati/AD2324-unita2-stima.pdf",
+    "Pasted image 20240402110013.png",
+    "Secondo Anno/Analisi dei dati/AD2324-unita3-stima-intervallare.pdf",
     "Secondo Anno/Sistemi Operativi/modulo 2/Modulo 2.md",
-    "Secondo Anno/Algebra Lineare/Lezione 10.pdf",
-    "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita1.pdf",
-    "Secondo Anno/Algebra Lineare/Lezione 9.pdf",
-    "Secondo Anno/Algebra Lineare/Lezione 8.pdf",
-    "Secondo Anno/Algebra Lineare/Lezione 11.pdf",
-    "Secondo Anno/Algebra Lineare/Lezione 8.pdf.crdownload",
+    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Basi di dati 2/Sicurezza.md",
     "Pasted image 20240320113029.png",
     "Pasted image 20240320112316.png",
@@ -293,7 +189,6 @@
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Intro.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/EXAM.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/Indice.md",
-    "Secondo Anno/Basi di Dati/studio per esame/Test di scrittura del modello concettuale.md",
     "Secondo Anno/Algebra Lineare/exercise/pierpaolo.md",
     "Secondo Anno/Analisi dei dati/exercise/Esercizi.md",
     "Secondo Anno/Basi di Dati/Basi di Dati.md",
@@ -302,7 +197,6 @@
     "Secondo Anno/OOP/modulo 2/PO2/README.md",
     "Pasted image 20240314095234.png",
     "Pasted image 20240314095217.png",
-    "Pasted image 20240314095025.png",
     "Secondo Anno/Calcolo/Indice.md",
     "Secondo Anno/Algebra Lineare/Guide.md",
     "Trigger.md",

@@ -18,7 +18,8 @@ f(x) = \cot(x) & f'(x) = -\csc^2(x) \\
 f(x) = \sqrt{x} & f'(x) = \frac{1}{2\sqrt{x}} \\
 \hline
 \end{array}
-\$$
+\
+$$
 
 
 Questa è solo una selezione di derivate prime comuni. Esistono molte altre funzioni e regole di derivazione, ma queste sono tra le più utilizzate.
@@ -397,3 +398,12 @@ in R:
 Nella gran parte delle applicazioni di interesse la dimensione del parametro è maggiore di uno:
 ![[Pasted image 20240314095217.png]]
 ![[Pasted image 20240314095234.png]]
+
+## Unità 3
+- Stima intervallare vista nella lezione che ho perso
+	- Intervallo di confidenza
+
+### Livelli di confidenza approssimati
+#### Campioni di grandi dimensioni
+- ![[Pasted image 20240402110013.png]]
+#### 
