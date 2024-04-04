@@ -26,9 +26,59 @@
                 "file": "Secondo Anno/Basi di Dati/studio per esame/01 - Modellazione.pdf"
               }
             }
+          },
+          {
+            "id": "822e63b527344ba9",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Analisi dei dati/AD2324-unita2-stima.pdf"
+              }
+            }
+          },
+          {
+            "id": "4112e6b0e8468eaa",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Analisi dei dati/AD2324-unita1-base.pdf"
+              }
+            }
+          },
+          {
+            "id": "6a0e694c02beb6c4",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita1-soluzioni.pdf"
+              }
+            }
+          },
+          {
+            "id": "ea9fe6c0455f3b17",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita2-soluzioni.pdf"
+              }
+            }
+          },
+          {
+            "id": "2edc54c1dbd07a4e",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/OOP/modulo 2/Scritto_PO2__31_1_20_.pdf"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -78,8 +128,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 342.01103591918945,
-    "collapsed": true
+    "width": 342.01103591918945
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -95,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/studio per esame/01 - Modellazione.pdf",
+                "file": "Secondo Anno/OOP/modulo 2/Scritto_PO2__31_1_20_.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/studio per esame/01 - Modellazione.pdf",
+                "file": "Secondo Anno/OOP/modulo 2/Scritto_PO2__31_1_20_.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/studio per esame/01 - Modellazione.pdf"
+                "file": "Secondo Anno/OOP/modulo 2/Scritto_PO2__31_1_20_.pdf"
               }
             }
           }
@@ -157,22 +206,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8931b7c73b007dac",
+  "active": "2edc54c1dbd07a4e",
   "lastOpenFiles": [
-    "Secondo Anno/Basi di Dati/studio per esame/03 - Algebra relazionale.pdf",
-    "Secondo Anno/Basi di Dati/studio per esame/02 - SQL.pdf",
-    "Secondo Anno/Basi di Dati/studio per esame/02 - SQL.pdf.crdownload",
-    "Secondo Anno/Basi di Dati/studio per esame/Test di scrittura del modello concettuale.md",
-    "Secondo Anno/Basi di Dati/studio per esame/Test di scrittura del modello concettuale.pdf",
-    "Secondo Anno/Basi di Dati/studio per esame/01 - Modellazione.pdf",
-    "Secondo Anno/Basi di Dati/esami/2023_02Finale.pdf",
-    "Secondo Anno/Basi di Dati/studio per esame/esame1.py",
-    "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita1-soluzioni.pdf",
-    "Secondo Anno/Analisi dei dati/AD2324-unita1-base.pdf",
-    "Secondo Anno/Analisi dei dati/Analisi di dati.md",
+    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-0404/imbuto2/soluzione.c",
+    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-0404/imbuto2/imbuto2.c",
+    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-0404/imbuto2",
+    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-0404/imbuto2.zip",
+    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-0404/Unconfirmed 717901.crdownload",
+    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-0404",
+    "Secondo Anno/OOP/2023-24/LezioniJava23-24/src/Tutorato/Es2.java~",
+    "Secondo Anno/OOP/2023-24/LezioniJava23-24/src/Tutorato/Es2.java",
+    "Secondo Anno/OOP/2023-24/LezioniJava23-24/src/Tutorato/Point.java~",
+    "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita2-soluzioni.pdf",
     "Secondo Anno/Analisi dei dati/AD2324-unita2-stima.pdf",
+    "Secondo Anno/Analisi dei dati/exercise/Esercizi.md",
+    "Secondo Anno/Basi di Dati/studio per esame/Test di scrittura del modello concettuale.md",
+    "Secondo Anno/Analisi dei dati/Analisi di dati.md",
     "Pasted image 20240402110013.png",
-    "Secondo Anno/Analisi dei dati/AD2324-unita3-stima-intervallare.pdf",
     "Secondo Anno/Sistemi Operativi/modulo 2/Modulo 2.md",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Basi di dati 2/Sicurezza.md",
@@ -190,7 +240,6 @@
     "Secondo Anno/Sistemi Operativi/modulo 1/EXAM.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/Indice.md",
     "Secondo Anno/Algebra Lineare/exercise/pierpaolo.md",
-    "Secondo Anno/Analisi dei dati/exercise/Esercizi.md",
     "Secondo Anno/Basi di Dati/Basi di Dati.md",
     "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
     "Secondo Anno/OOP/modulo 2/PO/README.md",
