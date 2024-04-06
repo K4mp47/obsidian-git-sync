@@ -30,4 +30,4 @@ La differenza fra i due errori quadratici medi  è
 $$
 MSE(T_2)-MSE(T_1) =\theta(0.16 \theta +0.665) 
 $$
-Siccome la differenza dei due errori quadratici medi è positiva per qualsiasi valore ammissibile di $\theta$, concludiamo che lo stimatore $T_1$ è preferibile. 
+Siccome la differenza dei due errori quadratici medi è positiva per qualsiasi valore ammissibile di $\theta$, concludiamo che lo stimatore $T_1$ è preferibile.
