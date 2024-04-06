@@ -26,9 +26,17 @@
                 "file": "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf"
               }
             }
+          },
+          {
+            "id": "70a4ddb1afdeb020",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -94,7 +102,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +118,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,9 +139,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf"
-              }
+              "state": {}
             }
           }
         ],
@@ -156,22 +160,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4e98b1331da3a396",
+  "active": "70a4ddb1afdeb020",
   "lastOpenFiles": [
+    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-bouncing-balls/a.out",
+    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-bouncing-balls/main.c",
+    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-bouncing-balls",
+    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-con-prod/con-pro.c",
+    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-con-prod/a.out",
+    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-con-prod/main.c",
+    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-con-prod",
+    "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf",
     "Secondo Anno/Analisi dei dati/esami/pandoc1f3e1a53f40a.html",
     "Secondo Anno/Analisi dei dati/esami/cristiano-varin-ex2.knit.md",
     "Secondo Anno/Analisi dei dati/esami/pandoc1eec2acd6412.html",
     "Secondo Anno/Analisi dei dati/esami/cristiano-varin-ex1.knit.md",
     "Secondo Anno/Analisi dei dati/esami/pandoc1ecd3118c265.html",
-    "Secondo Anno/Analisi dei dati/esami/cristiano-varin-ex1.Rmd~",
-    "Secondo Anno/Analisi dei dati/esami/pandoc1e7a1c480183.html",
-    "Secondo Anno/Basi di Dati/studio per esame/01 - Modellazione.pdf",
-    "Secondo Anno/Basi di Dati/esami/2023_02Finale.pdf",
-    "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf",
-    "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita2-soluzioni.pdf",
     "Secondo Anno/Analisi dei dati/Analisi di dati.md",
-    "Secondo Anno/Analisi dei dati/Esercizi unità due svolti.pdf",
-    "Secondo Anno/Analisi dei dati/esami/AD2324-formulario.pdf",
     "Secondo Anno/Analisi dei dati/esami/Esami passati.md",
     "Pasted image 20240404175638.png",
     "Pasted image 20240404175600.png",
