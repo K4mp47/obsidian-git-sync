@@ -8,16 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c1d652df13112e54",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Basi di Dati/esami/2023_02Finale.pdf"
-              }
-            }
-          },
-          {
             "id": "8931b7c73b007dac",
             "type": "leaf",
             "state": {
@@ -28,57 +18,17 @@
             }
           },
           {
-            "id": "822e63b527344ba9",
+            "id": "4e98b1331da3a396",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Analisi dei dati/AD2324-unita2-stima.pdf"
-              }
-            }
-          },
-          {
-            "id": "4112e6b0e8468eaa",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Analisi dei dati/AD2324-unita1-base.pdf"
-              }
-            }
-          },
-          {
-            "id": "6a0e694c02beb6c4",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita1-soluzioni.pdf"
-              }
-            }
-          },
-          {
-            "id": "ea9fe6c0455f3b17",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita2-soluzioni.pdf"
-              }
-            }
-          },
-          {
-            "id": "2edc54c1dbd07a4e",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/OOP/modulo 2/Scritto_PO2__31_1_20_.pdf"
+                "file": "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf"
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -144,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 2/Scritto_PO2__31_1_20_.pdf",
+                "file": "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 2/Scritto_PO2__31_1_20_.pdf",
+                "file": "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 2/Scritto_PO2__31_1_20_.pdf"
+                "file": "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf"
               }
             }
           }
@@ -206,22 +156,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2edc54c1dbd07a4e",
+  "active": "4e98b1331da3a396",
   "lastOpenFiles": [
-    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-0404/imbuto2/soluzione.c",
-    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-0404/imbuto2/imbuto2.c",
-    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-0404/imbuto2",
-    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-0404/imbuto2.zip",
-    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-0404/Unconfirmed 717901.crdownload",
-    "Secondo Anno/Sistemi Operativi/modulo 2/quiz-0404",
-    "Secondo Anno/OOP/2023-24/LezioniJava23-24/src/Tutorato/Es2.java~",
-    "Secondo Anno/OOP/2023-24/LezioniJava23-24/src/Tutorato/Es2.java",
-    "Secondo Anno/OOP/2023-24/LezioniJava23-24/src/Tutorato/Point.java~",
+    "Secondo Anno/Basi di Dati/studio per esame/01 - Modellazione.pdf",
+    "Secondo Anno/Basi di Dati/esami/2023_02Finale.pdf",
+    "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf",
     "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita2-soluzioni.pdf",
+    "Secondo Anno/Analisi dei dati/Analisi di dati.md",
+    "Secondo Anno/Analisi dei dati/Esercizi unità due svolti.pdf",
+    "Secondo Anno/Analisi dei dati/esami/AD2324-formulario.pdf",
+    "Secondo Anno/Analisi dei dati/Bibbia.pdf",
     "Secondo Anno/Analisi dei dati/AD2324-unita2-stima.pdf",
+    "Secondo Anno/Analisi dei dati/AD2324-esercizi-unita1-soluzioni.pdf",
+    "Secondo Anno/Analisi dei dati/AD2324-unita1-base.pdf",
+    "Secondo Anno/Analisi dei dati/esami/Esami passati.md",
+    "Secondo Anno/OOP/modulo 2/Scritto_PO2__31_1_20_.pdf",
+    "Pasted image 20240404175638.png",
+    "Pasted image 20240404175600.png",
+    "Pasted image 20240404175227.png",
+    "Pasted image 20240404175207.png",
     "Secondo Anno/Analisi dei dati/exercise/Esercizi.md",
     "Secondo Anno/Basi di Dati/studio per esame/Test di scrittura del modello concettuale.md",
-    "Secondo Anno/Analisi dei dati/Analisi di dati.md",
     "Pasted image 20240402110013.png",
     "Secondo Anno/Sistemi Operativi/modulo 2/Modulo 2.md",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
@@ -231,8 +186,6 @@
     "Pasted image 20240320112111.png",
     "Pasted image 20240320112009.png",
     "Pasted image 20240320111920.png",
-    "Pasted image 20240320111902.png",
-    "Pasted image 20240320110041.png",
     "Secondo Anno/Basi di dati 2/Index.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Directories.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/Memoria.md",
@@ -244,8 +197,6 @@
     "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
     "Secondo Anno/OOP/modulo 2/PO/README.md",
     "Secondo Anno/OOP/modulo 2/PO2/README.md",
-    "Pasted image 20240314095234.png",
-    "Pasted image 20240314095217.png",
     "Secondo Anno/Calcolo/Indice.md",
     "Secondo Anno/Algebra Lineare/Guide.md",
     "Trigger.md",
@@ -253,7 +204,6 @@
     "Secondo Anno/Sistemi Operativi/modulo 2/adrei-work/README.md",
     "Secondo Anno/Sistemi Operativi/modulo 2/OS-playground/README.md",
     "Secondo Anno/Basi di dati 2/Vincoli ed integrità.md",
-    "Secondo Anno/Basi di dati 2/Forma Normale.md",
     "Untitled.canvas"
   ]
 }

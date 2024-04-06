@@ -1,0 +1,33 @@
+---
+title: "Soluzione esercizio 1"
+author: "Cristiano Varin"
+output:
+  html_document: default
+---
+
+[1]  I valori attesi dei due stimatori sono
+$$
+E(T_1)=\frac{7}{10}\theta,\quad E(T_2)=\frac{3}{2}\theta.
+$$
+Quindi, entrambi gli stimatori sono distorti
+$$
+Bias(T_1)=-\frac{3}{10}\theta, \quad Bias(T_2)=\frac{\theta}{2}.
+$$
+
+
+[2]  Le varianze dei due stimatori sono
+$$
+var(T_1)=\frac{21}{100}\theta, \quad var(T_2)=\frac{14}{16}\theta.
+$$
+
+[3] Gli errori quadratici medi dei due stimatori sono
+$$
+MSE(T_1)=\frac{9}{100} \theta^2+ \frac{21}{100}\theta, 
+\quad
+MSE(T_2)=\frac{\theta^2}{4} + \frac{14}{16}\theta. 
+$$
+La differenza fra i due errori quadratici medi  è
+$$
+MSE(T_2)-MSE(T_1) =\theta(0.16 \theta +0.665) 
+$$
+Siccome la differenza dei due errori quadratici medi è positiva per qualsiasi valore ammissibile di $\theta$, concludiamo che lo stimatore $T_1$ è preferibile. 
