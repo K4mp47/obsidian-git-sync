@@ -37,43 +37,48 @@ struct info_r {
 /******* PARTE DA CONSEGNARE ********/
 
 // dichiarazione dei semafori qui
-sem_t mutex;
-sem_t tick;
-sem_t pass;
-
-int value;
+sem_t brd[X][Y], sem[N_BALLS];
 
 void inizializza() {
-  sem_init(&mutex,0,1);
-  sem_init(&tick,0,0);
-  sem_init(&pass,0,0);
+  for(int x = 0; x < X; x++) {
+    for(int y = 0; y < Y; y++) {
+      sem_init(&brd[x][y], 0, 1);
+    }
+  }
+
+  for(int i = 0; i < N_BALLS; i++) {
+    sem_init(sem + i, 0, 0);
+  }
 }
 
 void chiudi() {
+  for(int x = 0; x < N_BALLS; x++) {
+    for(int y = 0; y < N_BALLS; y++) {
+      sem_destroy(&brd[x][y]);
+    }
+  }
+
+  for(int i = 0; i < N_BALLS; i++) {
+    sem_destroy(sem + i);
+  }
 }
 
 void inizia_mossa(int x, int y) {
-  sem_wait(&mutex);
+  sem_wait(&brd[x][y]);
 }
 
 void fine_mossa(int x, int y) {
-  value++;
-  sem_post(&mutex);
-  if(value == N_BALLS) {
-    sem_post(&pass);
-  }
+  sem_post(&brd[x][y]);
 }
 
 void attendi_tick(int id) {
-  sem_wait(&tick);
+  sem_wait(sem + id);
 }
 
 void esegui_tick() {
-  value = 0;
-  for(int i=0;i<N_BALLS;i++) {
-    sem_post(&tick);
+  for(int i = 0; i < N_BALLS; i++) {
+    sem_post(sem + i);
   }
-  sem_wait(&pass);
 }
 
 /******** FINE PARTE DA CONSEGNARE ********/
