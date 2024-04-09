@@ -9,7 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Cristiano Varin" />
+<meta name="author" content="Campagnolo Alberto 897569" />
 
 
 <title>Soluzione esercizio 1</title>
@@ -356,28 +356,29 @@ pre code {
 
 
 <h1 class="title toc-ignore">Soluzione esercizio 1</h1>
-<h4 class="author">Cristiano Varin</h4>
+<h4 class="author">Campagnolo Alberto 897569</h4>
 
 </div>
 
 
-<ul>
-<li>[1] I valori attesi dei due stimatori sono <span class="math display">\[
-E(T_1)=\frac{7}{10}\theta,\quad E(T_2)=\frac{3}{2}\theta.
-\]</span> Quindi, entrambi gli stimatori sono distorti <span class="math display">\[
-Bias(T_1)=-\frac{3}{10}\theta, \quad Bias(T_2)=\frac{\theta}{2}.
-\]</span></li>
-</ul>
-<p>[2] Le varianze dei due stimatori sono <span class="math display">\[
-var(T_1)=\frac{21}{100}\theta, \quad var(T_2)=\frac{14}{16}\theta.
-\]</span></p>
-<p>[3] Gli errori quadratici medi dei due stimatori sono <span class="math display">\[
-MSE(T_1)=\frac{9}{100} \theta^2+ \frac{21}{100}\theta, 
-\quad
-MSE(T_2)=\frac{\theta^2}{4} + \frac{14}{16}\theta. 
-\]</span> La differenza fra i due errori quadratici medi è <span class="math display">\[
-MSE(T_2)-MSE(T_1) =\theta(0.16 \theta +0.665) 
-\]</span> Siccome la differenza dei due errori quadratici medi è positiva per qualsiasi valore ammissibile di <span class="math inline">\(\theta\)</span>, concludiamo che lo stimatore <span class="math inline">\(T_1\)</span> è preferibile.</p>
+<ol style="list-style-type: decimal">
+<li><p>Valore atteso dei due stimatori <span class="math display">\[
+  E(T_1)=\frac{7\theta}{10}, \quad e \quad E(T_2)=\frac{3\theta}{2}
+\]</span></p></li>
+<li><p>Calcolo la distorsione degli stimatori <span class="math display">\[
+  Bias(T_1)=-\frac{3}{10}\theta, \quad e \quad Bias(T_2)=\frac{\theta}{2}
+\]</span></p></li>
+<li><p>Calcolo la varianza <span class="math display">\[
+  Var(T_1)=\frac{21}{100}\theta, \quad e \quad Var(T_2)=\frac{7}{8}\theta
+\]</span></p></li>
+<li><p>Essendo entrambi gli stimatori distorti, si controlla quello con lo scarto quadratico medio minore <span class="math display">\[
+  MSE(T_1)= \frac{21}{100}\theta+\frac{9}{100}\theta^2, \quad MSE(T_2)=\frac{7}{8}\theta+\frac{1}{4}\theta^2
+\]</span> la loro differenza quindi è <span class="math display">\[
+  MSE(T_1)-MSE(T_2) = \theta(\frac{21}{100}-\frac{7}{8}+\frac{9}{100}\theta-\frac{1}{4}\theta)
+\]</span> Che diventa <span class="math display">\[
+  \theta(-0.665-0.16\theta)
+\]</span> Essendo il valore negativo, vuol dire che l’errore di <span class="math inline">\(T_1\)</span> è minore, e quindi preferibile</p></li>
+</ol>
 
 
 
