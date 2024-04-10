@@ -4,73 +4,61 @@
     "type": "split",
     "children": [
       {
-        "id": "95b5f4332320cbc7",
+        "id": "e7bb42b45c7f51d6",
+        "type": "split",
+        "children": [
+          {
+            "id": "fd9ec9f1a0878ebe",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "b7b6843b77aa80d7",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Secondo Anno/Algebra Lineare/Lezioni/A-Lezione 1.pdf"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "b2583826bd0c8f9a",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "d261942955f0c304",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal"
+      },
+      {
+        "id": "ee8628f689ff52cd",
         "type": "tabs",
         "children": [
           {
-            "id": "8931b7c73b007dac",
+            "id": "dc0071e18e7715d7",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Basi di Dati/studio per esame/01 - Modellazione.pdf"
-              }
-            }
-          },
-          {
-            "id": "4e98b1331da3a396",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Basi di Dati/esami/2023_03Finale.pdf"
-              }
-            }
-          },
-          {
-            "id": "70a4ddb1afdeb020",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Analisi dei dati/esami/AD2324-formulario.pdf"
-              }
-            }
-          },
-          {
-            "id": "17990b7be9d1d447",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Analisi dei dati/esami/Esami passati.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "865734c4900ef921",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita2-soluzioni.pdf"
-              }
-            }
-          },
-          {
-            "id": "524e3ec8b4136c0a",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Analisi dei dati/AD2324-unita2-stima.pdf"
+                "file": "Secondo Anno/Algebra Lineare/exercise/Numeri Complessi.pdf"
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -120,8 +108,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 342.01103591918945,
-    "collapsed": true
+    "width": 342.01103591918945
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -137,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Analisi dei dati/AD2324-unita2-stima.pdf",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Analisi dei dati/AD2324-unita2-stima.pdf",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Analisi dei dati/AD2324-unita2-stima.pdf"
+                "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md"
               }
             }
           }
@@ -199,23 +186,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "524e3ec8b4136c0a",
+  "active": "d261942955f0c304",
   "lastOpenFiles": [
-    "Secondo Anno/Analisi dei dati/exercise/AD2324-esercizi-unita2-soluzioni.pdf",
+    "Secondo Anno/Algebra Lineare/Lezioni/A-Lezione 1.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
+    "Secondo Anno/Algebra Lineare/exercise/Numeri Complessi.pdf",
+    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
+    "Secondo Anno/Algebra Lineare/exercise/20210111 Primo appello - Soluzioni.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/20210125 Secondo appello - Soluzioni.pdf",
+    "Secondo Anno/Basi di dati 2/Trigger.md",
+    "Untitled.md",
+    "Untitled 1.md",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio1_num_comples.pdf",
+    "Secondo Anno/Algebra Lineare/Lezioni/B-Figure di Lez.1.pdf",
+    "Secondo Anno/Algebra Lineare/Lezioni",
+    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 7.pdf",
+    "Secondo Anno/Algebra Lineare/Lezione 7.pdf.crdownload",
+    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 6.pdf",
     "Secondo Anno/Analisi dei dati/esami/Esami passati.md",
-    "Secondo Anno/Analisi dei dati/esami/pandocb5002e674e86.html",
     "Secondo Anno/Analisi dei dati/esami/cristiano-varin-ex2.knit.md",
-    "Secondo Anno/Analisi dei dati/esami/pandocb4de7216d492.html",
     "Secondo Anno/Analisi dei dati/esami/alberto-campagnolo-ex1.knit.md",
-    "Secondo Anno/Analisi dei dati/esami/pandocb4b977a21f6e.html",
-    "Secondo Anno/Analisi dei dati/esami/alberto-campagnolo-ex1.html",
-    "Secondo Anno/Analisi dei dati/esami/alberto-campagnolo-ex1.Rmd",
-    "Secondo Anno/Analisi dei dati/esami/campagnolo-ex1.Rmd~",
-    "Secondo Anno/Analisi dei dati/esami/pandocb46a1707afbe.html",
     "Secondo Anno/Analisi dei dati/esami/campagnolo-ex1.knit.md",
-    "Secondo Anno/Analisi dei dati/esami/pandocb43921796498.html",
-    "Secondo Anno/Analisi dei dati/esami/campagnolo-ex1.html",
-    "Secondo Anno/Analisi dei dati/esami/campagnolo-ex1.Rmd",
     "Secondo Anno/Analisi dei dati/esami/cristiano-varin-ex1.knit.md",
     "Secondo Anno/Analisi dei dati/Analisi di dati.md",
     "Pasted image 20240404175638.png",
@@ -226,7 +217,6 @@
     "Secondo Anno/Basi di Dati/studio per esame/Test di scrittura del modello concettuale.md",
     "Pasted image 20240402110013.png",
     "Secondo Anno/Sistemi Operativi/modulo 2/Modulo 2.md",
-    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Basi di dati 2/Sicurezza.md",
     "Pasted image 20240320113029.png",
     "Pasted image 20240320112316.png",
@@ -243,10 +233,6 @@
     "Secondo Anno/Basi di Dati/Basi di Dati.md",
     "Secondo Anno/OOP/modulo 2/Indice modulo 2.md",
     "Secondo Anno/OOP/modulo 2/PO/README.md",
-    "Secondo Anno/OOP/modulo 2/PO2/README.md",
-    "Secondo Anno/Calcolo/Indice.md",
-    "Secondo Anno/Algebra Lineare/Guide.md",
-    "Trigger.md",
     "Untitled.canvas"
   ]
 }
