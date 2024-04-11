@@ -1,7 +1,7 @@
 package tinyjdk;
 
 public class PairMap<K, V> implements Map<K, V> {
-    private List<Pair<K, V>> l = new ArrayList<>();
+    private final List<Pair<K, V>> l = new ArrayList<>();
 
     @Override
     public void put(K k, V v) {
@@ -12,7 +12,7 @@ public class PairMap<K, V> implements Map<K, V> {
     @Override
     public V get(K k) throws KeyNotFoundException {
         for (int i = l.size() - 1; i >= 0 ; --i) {
-            Pair<K, V> p = l.get(i);
+            final Pair<K, V> p = l.get(i);
             if (p.first.equals(k))
                 return p.second;
         }
@@ -21,26 +21,15 @@ public class PairMap<K, V> implements Map<K, V> {
 
     @Override
     public Iterator<Pair<K, V>> iterator() {
-        return new Iterator<>() {
-            private int pos = l.size() -1;
-            private Set<K> history = new HashSet<>();
-            
-            @Override
-            public boolean hasNext() {
-                return pos < l.size();
+        Set<K> history = new HashSet<>();
+        List<Pair<K, V>> r = new ArrayList<>();
+        for (int i = l.size() - 1; i >= 0; --i) {
+            Pair<K, V> p = l.get(i);
+            if (!history.contains(p.first)) {
+                history.add(p.first);
+                r.add(p);
             }
-
-            @Override
-              public Pair<K, V> next() {
-                Pair<K, V> r = l.get(pos--);
-                if (history.contains(r.first)){
-                    if (hasNext()) return next();
-                } else {
-                    history.add(r.first);
-                    return r;
-                }
-                return r;
-            }
-        };
+        }
+        return r.iterator();
     }
 }
