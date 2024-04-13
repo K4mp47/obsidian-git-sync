@@ -3,6 +3,20 @@
 ---
 ___
 ## Numeri Complessi
+
+- per le altre formule di questo genere guardo il punto 7
+$$
+\theta := Arg(z) = 
+\begin{cases}
+\frac{\pi}{2} \qquad \text{se $a=0$, $b > 0$} \\
+\frac{3\pi}{2} \qquad \text{se $a=0$, $b < 0$} \\
+\text{non definito} \qquad \text{se $a=0$, $b = 0$} \\
+\arctan({\frac{b}{a}}) \qquad \text{se $a > 0$, $b \geq 0$} \\
+\arctan({\frac{b}{a}})+2\pi \qquad \text{se $a < 0$, $b < 0$} \\
+\arctan({\frac{b}{a}})+\pi \qquad \text{se $a < 0$, b qualsiasi} \\
+\end{cases}
+$$
+
 ### 1. Determinare parte reale e parte immaginaria del seguente numero complesso $z = \frac{i-4}{2i-3}$
 - Ci accorgiamo che al denominatore abbiamo una parte immaginaria, quindi fattorizziamo
 $$
@@ -65,4 +79,122 @@ $$
 - L'argomento invece consiste in $\theta = arctan(Im(z)/Re(z))$  
 $$
 	\theta = arctan(-\frac{3}{0}) = arctan(0)
+$$
+$$
+z = 3(0-i3) = 3(\cos{\theta} + i\sin{\theta})
+$$
+$$ 
+\begin{cases}
+\cos(\theta) = 0 \\ 
+\sin(\theta) = -3 \\
+\end{cases}
+$$
+- Di conseguenza l'angolo è $\frac{-3}{0}$, ovvero $-90$ gradi.
+### 7. $z = -\sqrt{3}+i$ trovare modulo e argomento
+$$
+z = -\sqrt3 +i
+$$
+$$
+\mid z \mid = \sqrt{\sqrt{3}^2+1} = \sqrt4 = 2
+$$
+$$
+Arg(z) = \frac{1}{-\sqrt3} = \pi + \frac{1}{-\sqrt{3}} = 
+$$
+___
+> qui sotto abbiamo il calcolo dell'argomento di un numero complesso,
+> da imparare per trasformarlo in base alla situazione in cui mi trovo con l'esercizio
+
+
+$$
+\theta = Arg(z) \in (-\pi,\pi] \quad \text{sono quelle che userò sempre}
+$$
+
+$$
+\theta := Arg(z) = 
+\begin{cases}
+\frac{\pi}{2} \qquad \text{se $a=0$, $b > 0$} \\
+-\frac{\pi}{2} \qquad \text{se $a=0$, $b < 0$} \\
+\text{non definito} \qquad \text{se $a=0$, $b = 0$} \\
+\arctan({\frac{b}{a}}) \qquad \text{se $a > 0$, b qualsiasi} \\
+\arctan({\frac{b}{a}})+\pi \qquad \text{se $a < 0$, $b \geq 0$} \\
+\arctan({\frac{b}{a}})-\pi \qquad \text{se $a < 0$, $b < 0$} \\
+\end{cases}
+$$
+
+$$
+\theta = Arg(z) \in [0,2\pi)
+$$
+
+$$
+\theta := Arg(z) = 
+\begin{cases}
+\frac{\pi}{2} \qquad \text{se $a=0$, $b > 0$} \\
+\frac{3\pi}{2} \qquad \text{se $a=0$, $b < 0$} \\
+\text{non definito} \qquad \text{se $a=0$, $b = 0$} \\
+\arctan({\frac{b}{a}}) \qquad \text{se $a > 0$, $b \geq 0$} \\
+\arctan({\frac{b}{a}})+2\pi \qquad \text{se $a < 0$, $b < 0$} \\
+\arctan({\frac{b}{a}})+\pi \qquad \text{se $a < 0$, b qualsiasi} \\
+\end{cases}
+$$
+
+
+___
+### 8. module e argomento di $z = \frac{1+i\sqrt{3}}{1-i}$
+
+- Necessita di essere fattorizzato avendo la parte immaginaria al denominatore
+$$
+z = \frac{1+i\sqrt{3}}{1-i} = \frac{1+i\sqrt{3}}{1-i} \frac{1+i}{1+i} = \frac{(1+i\sqrt{3})(1+i)}{1+i-i+1} = \frac{1+i+i\sqrt{3}-\sqrt{3}}{2}
+$$
+$$
+z = \frac{1-\sqrt{3}+i(1+\sqrt{3})}{2}
+$$
+
+$$
+\mid z \mid = \sqrt{(\frac{1-\sqrt{3}}{2})^2+(\frac{1+\sqrt{3}}{2}})^2 = \sqrt{\frac{1+3-2\sqrt{3}}{4}+\frac{1+3+2\sqrt{3}}{4}} = \sqrt{\frac{8}{4}} = \sqrt{2}
+$$
+
+$$
+Arg(z) = arctan(\frac{1+\sqrt{3}}{2} : \frac{1-\sqrt{3}}{2}) = arctan(\frac{1+\sqrt{3}}{1-\sqrt{3}}) + \pi = \text{circa }1.833 
+$$
+
+### 9. Scrivere in forma trigonometrica il numero $z = -1+\sqrt{3}i$ 
+
+- sapendo che $|z| = 2$ e $\theta = \arctan{-\sqrt3} = \frac{2\pi}{3}$ 
+- La forma trigonometrica di un numero complesso è uguale a: $|z|(cos{(\theta)}+i\:sin{(\theta)})$
+$$
+z = 2(cos(\frac{2\pi}{3})+i\:sin(\frac{2\pi}{3})) = 2(-\frac{1}{2}+i\:\frac{\sqrt3}{2}) = -1+i\sqrt3
+$$
+___
+> Attenzione all'esercizio precedente, forse non è corretto conseguenza di ciò andrebbe corretto: come fa la forma polare ad essere uguale alla forma algebrica??
+___
+### 10. Scrivere in forma trigonometrica il numero $z = 3 + 3i$
+- Sappiamo che $|z| = \sqrt{9+9} = \sqrt{18}$ e $arctan(z) = \frac{\pi}{4}$
+- Guardare punto precedente per la forma trigonometrica
+$$
+z = \sqrt{18}(cos(\frac{\pi}{4})+i\:sin(\frac{\pi}{4})) = \sqrt{18}(\frac{\sqrt2}{2}+i\frac{\sqrt2}{2})
+$$
+
+### 11. Calcolare $z^2$ di $z=-\frac{3}{\sqrt3}+\frac{1}{i}$ 
+$$
+z = -\frac{3}{\sqrt3} + \frac{1}{i} = -\frac{3}{\sqrt3} - i 
+$$
+
+- Troviamo modulo e argomento
+
+$$
+|z| = \sqrt{(-\frac{3}{\sqrt3})^2 + (-1)^2} = \sqrt4 = 2 \qquad Arg(z) = arctan(\frac{-1}{-\frac{3}{\sqrt3}}) = arctan(\frac{\sqrt3}{3})
+$$
+- noto che $a$ nell'argomento è negativo quindi devo aggiungere $\pi$ 
+$$
+Arg(z) = arctan(\frac{\sqrt3}{3})+\pi = \frac{7\pi}{6}
+$$
+- scrivo ora il numero in forma esponenziale
+$$
+	z = 2e^{\frac{7\pi}{6}i}
+$$
+
+- ora posso elevare alla seconda
+
+$$
+z^2 = (2e^{\frac{7\pi}{6}i})^2 = 2^2 * (e^{\frac{7\pi}{6}i})^2 = 4e^{\frac{7\pi}{3}}
 $$
