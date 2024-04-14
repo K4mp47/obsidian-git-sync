@@ -10,7 +10,7 @@
           {
             "id": "b2583826bd0c8f9a",
             "type": "tabs",
-            "dimension": 53.02175664786463,
+            "dimension": 16.116035455278002,
             "children": [
               {
                 "id": "d261942955f0c304",
@@ -41,7 +41,7 @@
           {
             "id": "c5ba50823fe7acb7",
             "type": "tabs",
-            "dimension": 46.97824335213537,
+            "dimension": 83.883964544722,
             "children": [
               {
                 "id": "acd4cefb4ae7d37e",
@@ -72,9 +72,19 @@
                     "file": "Secondo Anno/Algebra Lineare/Algebra Lineare appunti_annotated.pdf"
                   }
                 }
+              },
+              {
+                "id": "896377b3cc1a29e1",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Secondo Anno/Algebra Lineare/Lezioni/Lezione 5.pdf"
+                  }
+                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 3
           }
         ],
         "direction": "horizontal"
@@ -160,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
+                "file": "Secondo Anno/Algebra Lineare/Lezioni/Lezione 5.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
+                "file": "Secondo Anno/Algebra Lineare/Lezioni/Lezione 5.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md"
+                "file": "Secondo Anno/Algebra Lineare/Lezioni/Lezione 5.pdf"
               }
             }
           }
@@ -222,23 +232,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d261942955f0c304",
+  "active": "896377b3cc1a29e1",
   "lastOpenFiles": [
+    "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
+    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 5.pdf",
+    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 4.pdf",
+    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 3.pdf",
+    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 2.pdf",
     "Secondo Anno/Algebra Lineare/exercise/Numeri Complessi.pdf",
     "Secondo Anno/Algebra Lineare/Algebra Lineare appunti_annotated.pdf",
-    "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
     "Secondo Anno/Algebra Lineare/Tavola funzioni goniometriche-2-3.pdf",
     "Secondo Anno/Algebra Lineare/Lezioni/A-Lezione 1.pdf",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Algebra Lineare/Algebra 2_ Linear Algebra, Galois Theory, Representation theory, Group extensions and Schur Multiplier ( PDFDrive ).pdf",
     "Secondo Anno/Algebra Lineare/Esame_ALGEBRA_AAA_soluzioni.pdf",
-    "Secondo Anno/Algebra Lineare/Lezioni/B-Figure di Lez.1.pdf",
-    "Secondo Anno/Algebra Lineare/exercise/20210111 Primo appello - Soluzioni.pdf",
-    "Secondo Anno/Algebra Lineare/exercise/20210125 Secondo appello - Soluzioni.pdf",
     "Secondo Anno/Basi di dati 2/Trigger.md",
     "Untitled.md",
     "Untitled 1.md",
-    "Secondo Anno/Algebra Lineare/exercise/Foglio1_num_comples.pdf",
     "Secondo Anno/Analisi dei dati/esami/Esami passati.md",
     "Secondo Anno/Analisi dei dati/esami/cristiano-varin-ex2.knit.md",
     "Secondo Anno/Analisi dei dati/esami/alberto-campagnolo-ex1.knit.md",

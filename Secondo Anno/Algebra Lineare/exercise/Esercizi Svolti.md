@@ -1,7 +1,6 @@
 ---
 
 ---
-___
 ## Numeri Complessi
 
 - per le altre formule di questo genere guardo il punto 7
@@ -174,7 +173,7 @@ $$
 z = \sqrt{18}(cos(\frac{\pi}{4})+i\:sin(\frac{\pi}{4})) = \sqrt{18}(\frac{\sqrt2}{2}+i\frac{\sqrt2}{2})
 $$
 
-### 11. Calcolare $z^2$ di $z=-\frac{3}{\sqrt3}+\frac{1}{i}$ 
+### 11. Calcolare $z^2,\:z^6,\:z^{22}$ di $z=-\frac{3}{\sqrt3}+\frac{1}{i}$ 
 $$
 z = -\frac{3}{\sqrt3} + \frac{1}{i} = -\frac{3}{\sqrt3} - i 
 $$
@@ -193,8 +192,52 @@ $$
 	z = 2e^{\frac{7\pi}{6}i}
 $$
 
-- ora posso elevare alla seconda
+- ora posso elevare alla seconda, sesta e ventiduesima
 
 $$
-z^2 = (2e^{\frac{7\pi}{6}i})^2 = 2^2 * (e^{\frac{7\pi}{6}i})^2 = 4e^{\frac{7\pi}{3}}
+z^2 = (2e^{\frac{7\pi}{6}i})^2 = 2^2 * (e^{\frac{7\pi}{6}i})^2 = 4e^{\frac{7\pi}{3}i}
 $$
+$$
+z^6 = (2e^{\frac{7\pi}{6}i})^6 = 2^6 * (e^{\frac{7\pi}{6}i})^6 = 64e^{7\pi i}
+$$
+$$
+z^{22} = (2e^{\frac{7\pi}{6}i})^{22} = 2^{22} * (e^{\frac{7\pi}{6}i})^{22} = 2^{22}e^{\frac{77}{3}i}
+$$
+
+> Sappiamo che 22 può essere visto come 11*2
+
+
+
+## Vettori & co.
+> Teoria dei vettori
+
+$\bar{u}+\bar{v} = (u_x+v_x,\:u_y+v_y)$
+$\lambda \bar{u} = (\lambda u_x,\: \lambda u_y)$ 
+
+> La dimensione dello spazio determina quanti vettori generano lo spazio, $R^3 =$ vettori, ecc.
+
+> Introduzione ai Sistemi Lineari
+$$
+\begin{cases}
+2x +y-z=1 \\
+x+2z=0\\
+\end{cases} 
+$$
+
+$x = -2, \: y = 5, \: z = 1$
+
+> Non sempre però si hanno soluzioni
+
+> Caso 1
+
+$$
+\begin{cases}
+x-2y+z = 1\\
+x-4y+4z = 2\\
+x-2y+2z = 3\\
+\end{cases}
+$$
+$x =4, \: y=\frac{5}{2}, \:, z=2$
+
+> Sistema Omogeneo: tutti i termini noti sono nulli, $b_1=b_2=b_3=\:...\:=b_n=0$ 
+
