@@ -241,3 +241,45 @@ $x =4, \: y=\frac{5}{2}, \:, z=2$
 
 > Sistema Omogeneo: tutti i termini noti sono nulli, $b_1=b_2=b_3=\:...\:=b_n=0$ 
 
+## Esami e Tutorati
+---
+### Dato il numero complesso $z = \frac{1}{2}(\sqrt3+i)$ si dica se le affermazioni sono vere
+1. $\bar z = e^{-i\frac{\pi}{6}}$ 
+	1. Dal nostro z ricaviamo il modulo e l'argomento che corrispondono ad $1$ e $\frac{\pi}{6}$ 
+	2. trasformiamo in forma euclidea(se si chiama così, non lo so e non mi interessa)
+	3. Il coniugato corrisponde al numero complesso con la parte immaginaria di senso opposto, quindi il caso è vero
+2. $z  = cos(\frac{\pi}{3})+i sin(\frac{\pi}{3})$
+	1. Impossibile siano uguali dato che $Arg(z)= \frac{\pi}{6} \ne \frac{\pi}{3}$   
+3. $z^2 = \frac{1}{2}(1-i\sqrt3)$
+	1. In questo caso bisogna trasformare il numero nella forma polare, quindi diventa $e^{i\frac{\pi}{3}}$
+	2. Trasformo in $(cos(\frac{\pi}{3}) + i sin(\frac{\pi}{3}))$
+	3. Risolvo e noto che sono diversi, quindi l'affermazione è falsa
+4. $z^3 = i$
+	1. Stessa cosa del punto precedente, dove in questo caso arriviamo ad $1(0+i*1)=i$ e quindi l'affermazione è vera
+
+### Si considerino in $R^4$ il sottospazio $V$ generato dai primi tre vettori della base canonica e il sottospazio $W$ dei vettori $\begin{array}{} x_1\\ x_2\\ x_3\\ x_4\\  \end{array}$  $\in R^4$  che soddisfano le relazioni $\begin{cases} 2x_1+x_3 = 0\\ x_2 +x_4 =0 \\2x_1+x_2+x_3+x_4=0\\ \end{cases}$  Si dica, giustificando la risposta, se esiste un endomorfismo $T$ di $R^4$ tale che $ker\:T=V$ e $Im\:T=W$
+- Osserviamo che la dimensione sia 3 date le 3 equazioni che compongono il sottospazio
+- Notiamo inoltre che $\begin{cases} 2x_1+x_3 = 0\\ x_2 +x_4 =0 \\2x_1+x_2+x_3+x_4=0\\ \end{cases}$  diventa senza problemi $\begin{cases} x_3 = -2x_2\\ x_4 = -x_2 \end{cases}$
+- $x_1,\:x_2$ possono essere viste come le nostre variabili libere, di conseguenza gli alterniamo i valori [1,0]  per poter avere una base di partenza. inoltre in questo modo trovo lo Span di $W$. Per il teorema della dimensione comunque, l'esercizio non ha soluzione, non esiste un endomorfismo $T : R^4 \rightarrow R^4$ tale che le due condizioni di Ker e Im siano vere, infatti $dim\:ker\:T+dim\:Im\:T=3+2=5\ne dim\:R^4 = 4$  
+### Data la matrice $$ \begin{pmatrix}
+1 & 1  & 1 & 0\\
+k & -1 & 0 & k\\
+3 & 1  & 2 & 0\\
+1 & 1  & k & 1-k
+\end{pmatrix}
+$$con $k \in R$, determinare: 1) Il rango di $A_k$ al variare di $k$ 2) Il nucleo e l'immagine di $L_{A_k}$ al variare di $k$, indicando per tali sottospazi la dimensione ed una base 3) I valori di $k$ per cui l'applicazione lineare $L_{A_k}$associata ad $A_k$ è iniettiva, suriettiva, bigettiva 4) Posto $k=1$ sia $E=ker\:L_{A_1}$. Si determini una base del complemento ortogonale $E^{\perp}$ di $E$. (DA FARE QUESTO)
+
+---
+### Simulazione svolta esame 2020/2021 domanda teoria
+1. Siano $v_1,v_2,v_3 \in R^2$. Quale delle seguenti affermazioni è vera? Si giustifichi la risposta
+	1. $v_1,v_2,v_3$ sono linearmente dipendenti se e solo se due di essi sono proporzionali.
+		- Falso. Affinché questa doppia implicazione sia vera, entrambe le implicazioni (diretta e inversa) devono essere vere. Verifichiamole.
+			- Supponiamo che i due vettori proporzionali siano $v_1,v_2$ e siano legati dalla costante di proporzionalità $\lambda$ per cui $v_2 = \lambda v_1$. I tre vettori sono linearmente dipendenti se esistono $\alpha_1,\alpha_2,\alpha_3 \in R$ non tutti nulli tali che  $$\alpha_1v_1+\alpha_2v_2+\alpha_3=0$$
+			- In virtù della proporzionalità tra $v_1$ e $v_2$ è sufficiente utilizzare $\alpha_1 = -\lambda,\alpha_2=1,\alpha_3=0$ per soddisfare l'uguaglianza sopra $$-\lambda v_1+v_2 = 0$$ Non vi è nessuna coppia di vettori proporzionali, basta confutare questa implicazione con un controesempio come $v_1=(-1,3),v_2=(1,2),v_3=(0,5)$ per ottenere $$v_1+v_2-v_3=0$$ confutando così l'implicazione
+	2. $v_1,v_2,v_3$ sono linearmente indipendenti.
+		- Falso. Dato che la dim di $R^2=2$ la cardinalità del sottoinsieme massimale di $R^2$ di vettori linearmente indipendenti è 2, di conseguenza tra i tre vettori ce ne sarà uno sicuramente linearmente dipendente dagli altri due. 
+	3. $v_1,v_2,v_3$ sono linearmente dipendenti. 
+		- _Vero_
+			- Dato dim $R^2=2$ questo implica che tra di loro non sono tutti linearmente indipendenti. Di conseguenza vuol dire che sono linearmente dipendenti!!
+
+---

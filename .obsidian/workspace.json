@@ -10,7 +10,7 @@
           {
             "id": "b2583826bd0c8f9a",
             "type": "tabs",
-            "dimension": 16.116035455278002,
+            "dimension": 70.10221465076661,
             "children": [
               {
                 "id": "d261942955f0c304",
@@ -41,7 +41,7 @@
           {
             "id": "c5ba50823fe7acb7",
             "type": "tabs",
-            "dimension": 83.883964544722,
+            "dimension": 29.89778534923339,
             "children": [
               {
                 "id": "acd4cefb4ae7d37e",
@@ -82,9 +82,19 @@
                     "file": "Secondo Anno/Algebra Lineare/Lezioni/Lezione 5.pdf"
                   }
                 }
+              },
+              {
+                "id": "47c4eee4238a84a3",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Secondo Anno/Algebra Lineare/Lezioni/Lezione 15.pdf"
+                  }
+                }
               }
             ],
-            "currentTab": 3
+            "currentTab": 4
           }
         ],
         "direction": "horizontal"
@@ -102,8 +112,29 @@
                 "file": "Secondo Anno/Algebra Lineare/exercise/Numeri Complessi.pdf"
               }
             }
+          },
+          {
+            "id": "c06f8dc5a06c2a7d",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Algebra Lineare/exercise/20210111 Primo appello - Soluzioni.pdf"
+              }
+            }
+          },
+          {
+            "id": "5806bd8d5dddc731",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Algebra Lineare/exercise/Simulazione_esame_svolta.pdf"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -153,8 +184,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 342.01103591918945,
-    "collapsed": true
+    "width": 342.01103591918945
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -170,7 +200,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/Lezioni/Lezione 5.pdf",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +217,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/Lezioni/Lezione 5.pdf",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +240,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/Lezioni/Lezione 5.pdf"
+                "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md"
               }
             }
           }
@@ -232,20 +262,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "896377b3cc1a29e1",
+  "active": "d261942955f0c304",
   "lastOpenFiles": [
+    "Secondo Anno/Algebra Lineare/exercise/Simulazione_esame_svolta.pdf",
     "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
-    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 5.pdf",
-    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 4.pdf",
-    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 3.pdf",
-    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 2.pdf",
-    "Secondo Anno/Algebra Lineare/exercise/Numeri Complessi.pdf",
-    "Secondo Anno/Algebra Lineare/Algebra Lineare appunti_annotated.pdf",
-    "Secondo Anno/Algebra Lineare/Tavola funzioni goniometriche-2-3.pdf",
-    "Secondo Anno/Algebra Lineare/Lezioni/A-Lezione 1.pdf",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
-    "Secondo Anno/Algebra Lineare/Algebra 2_ Linear Algebra, Galois Theory, Representation theory, Group extensions and Schur Multiplier ( PDFDrive ).pdf",
-    "Secondo Anno/Algebra Lineare/Esame_ALGEBRA_AAA_soluzioni.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/20210111 Primo appello - Soluzioni.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Numeri Complessi.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio7_simul_parz_esame.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio7_simul_parz_esame.pdf.crdownload",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio8_matrici_applin.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio8_matrici_applin.pdf.crdownload",
+    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 15.pdf",
+    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 14.pdf",
+    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 13.pdf",
     "Secondo Anno/Basi di dati 2/Trigger.md",
     "Untitled.md",
     "Untitled 1.md",
