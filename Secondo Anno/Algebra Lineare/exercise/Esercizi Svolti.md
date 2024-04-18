@@ -241,6 +241,41 @@ $x =4, \: y=\frac{5}{2}, \:, z=2$
 
 > Sistema Omogeneo: tutti i termini noti sono nulli, $b_1=b_2=b_3=\:...\:=b_n=0$ 
 
+### Foglio esercizi 2 spazi vettoriali
+
+- Dati i seguenti vettori nello spazio
+$v = (1,-1,-1)\quad e\quad w=(-2,2,0)$ 
+- Calcolare
+	- $v+w$
+		- $z = v+w = (-1,1,-1)$
+	- $v-2w$
+		- $2w = (-4,4,0)\quad e \quad z = v-2w = (5,-5,-1)$ 
+	- $-3v+\frac{1}{2}w$
+		- $v =(-3,3,3)\quad e \quad w = (-1,1,0)\quad e \quad z=(-4,4,3)$
+
+- Verificare se i seguenti vettori di $R^3$ sono linearmente indipendenti o meno
+	- $v=(1,1,0),\: w=(2,0,-1),\: z=(0,2,1)$
+		- Per verificare che sia corretto
+
+$$\begin{cases} 
+x + y = 0 \\
+2x - z = 0 \\
+-y + z = 0 \\
+\end{cases}$$
+$$\begin{cases} 
+x = -z \\
+2(-z) - z = 0 \\
+y = z \\
+\end{cases}$$
+$$\begin{cases} 
+x = 0 \\
+z = 0 \\
+y = 0 \\
+\end{cases}$$
+> I tre vettori sono linearmente indipendenti
+
+- $v=(1,0,1),\: w=(-1,2,0),\: z=(0,3,-1)$
+	- 
 ## Esami e Tutorati
 ---
 ### Dato il numero complesso $z = \frac{1}{2}(\sqrt3+i)$ si dica se le affermazioni sono vere
