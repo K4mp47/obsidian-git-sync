@@ -10,7 +10,7 @@
           {
             "id": "b2583826bd0c8f9a",
             "type": "tabs",
-            "dimension": 82.96422487223168,
+            "dimension": 79.27419354838709,
             "children": [
               {
                 "id": "d261942955f0c304",
@@ -41,7 +41,7 @@
           {
             "id": "c5ba50823fe7acb7",
             "type": "tabs",
-            "dimension": 17.035775127768314,
+            "dimension": 20.7258064516129,
             "children": [
               {
                 "id": "acd4cefb4ae7d37e",
@@ -232,7 +232,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio2_vettori_sp_vett.pdf",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -249,7 +249,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio2_vettori_sp_vett.pdf",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -272,7 +272,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio2_vettori_sp_vett.pdf"
+                "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md"
               }
             }
           }
@@ -294,13 +294,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dc0071e18e7715d7",
+  "active": "d261942955f0c304",
   "lastOpenFiles": [
-    "Secondo Anno/OOP/modulo 2/exercise/Domande Eserciziario.md",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio2_vettori_sp_vett.pdf",
     "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
+    "Secondo Anno/OOP/modulo 2/exercise/Domande Eserciziario.md",
     "Secondo Anno/utilities/utilities/graph.py~",
     "Secondo Anno/utilities/utilities/4913",
-    "Secondo Anno/Algebra Lineare/exercise/Foglio2_vettori_sp_vett.pdf",
     "Secondo Anno/Algebra Lineare/exercise/Numeri Complessi.pdf",
     "Secondo Anno/Algebra Lineare/exercise/20210111 Primo appello - Soluzioni.pdf",
     "Secondo Anno/Algebra Lineare/exercise/Simulazione_esame_svolta.pdf",

@@ -258,24 +258,43 @@ $v = (1,-1,-1)\quad e\quad w=(-2,2,0)$
 		- Per verificare che sia corretto
 
 $$\begin{cases} 
-x + y = 0 \\
-2x - z = 0 \\
+x + 2y = 0 \\
+x + 2z = 0 \\
 -y + z = 0 \\
 \end{cases}$$
 $$\begin{cases} 
-x = -z \\
-2(-z) - z = 0 \\
+x = -2z \\
+-2z + 2z = 0 \\
 y = z \\
 \end{cases}$$
 $$\begin{cases} 
-x = 0 \\
-z = 0 \\
-y = 0 \\
+x = -2z \\
+0 = 0 \\
+y = z \\
 \end{cases}$$
-> I tre vettori sono linearmente indipendenti
+> I tre vettori sono linearmente dipendenti, dato che $y=z$ implica che ci sono infinite soluzioni per il sistema. Proviamo a dimostrare ora che uno dei tre è combinazione lineare degli altri due
 
-- $v=(1,0,1),\: w=(-1,2,0),\: z=(0,3,-1)$
-	- 
+$$z=c_1w+c_2v$$
+$$c_1=-1,c_2=2\begin{cases}2(1)+(1-)(2)=0\\2(1)+(-1)(0) = 2\\2(0)+(-1)(-1) = 1 \end{cases}$$
+> Questo vuol dire che $v(2)+w(-1) = z$  e quindi non sono tutti indipendenti tra loro
+
+- Verificare se i seguenti vettori di $R^3$ sono linearmente dipendenti o indipendenti $$v1=(1,1,2), \quad v2=(0,2,2), \quad v3=(-1,3,2)$$In caso di dipendenza, trovare poi la relazione che permette di scrivere uno dei vettori come combinazione lineare degli altri due
+	- $$\begin{cases}a-c=0\\ a+2b+3c=0\\ 2a+2b+2c=0\end{cases}$$ $$\begin{cases}a=c\\4c+2b=0\end{cases}$$
+	- Con questo, noi sappiano adesso che ci sono infinite soluzioni e di conseguenza non sono tutti indipendenti, ciò vuol dire che uno dei tre vettori può essere rappresentato come combinazione lineare degli altri due vettori
+	- se noi facciamo infatti $2v_2+(-1)v_3$ il risultato sarà esattamente $v_1$.
+- Dato il vettore $v=(1,-1,2)$ trovare altri due vettori di $R^3$ che messi assieme a $v$ diano tre vettori linearmente indipendenti.
+	- Per farlo, dobbiamo prendere due componenti del vettore e usarle per creare due nuovi vettori a nostro piacimento, es, $w=(1,2,0), \quad z=(1,-2,0)$.
+	- Ora per sicurezza controlliamo che siano effettivamente linearmente indipendenti tra di loro tramite il sistema
+$$\begin{cases}a+b+c=0 \qquad\rightarrow b = -c \qquad\rightarrow b = 0\\-a+2b-2c=0 \qquad\rightarrow 4c = 0 \qquad\rightarrow c = 0\\2a=0 \qquad\rightarrow a=0\end{cases}$$
+- Tutti i vettori risultano essere indipendenti tra loro
+
+- Dati i seguenti vettori di $R^3$ $$v_1=(3,1,k),\quad v_2=(-k,1,0), \quad v_3=(2k,-2,k)$$ stabilire per quali valori di $k\in R$ i vettori sono lin. indip. e per quando invece sono dipendenti,  stabilire quanti tra loro sono linearmente indipendenti
+	- Bisogna mettere a sistema i vettori e analizzare come variano al variare di $k$
+$$\begin{cases}3x-ky+2kz=0 \qquad\rightarrow -y-ky+\frac{2}{3}ky=0 \qquad\rightarrow\frac{-3-3k+2ky}{3} = 0 \qquad\rightarrow\\1x+1y-2z=0 \qquad\rightarrow z=\frac{1}{3}y\\ kx+kz=0 \qquad\rightarrow x = -z \qquad\rightarrow x=-\frac{1}{3}y\end{cases}$$
+$$\begin{cases}\frac{-3-3k+2ky}{3} = 0 \qquad\rightarrow y=\frac{3+3k}{2k}\\ z=\frac{1}{3}y\\ x=-\frac{1}{3}y\end{cases}$$
+- ora che abbiamo $y=\frac{3+3k}{2k}$ non rimane che vedere cosa succede al variare di $k$
+	- se $y = 0$ allora $\frac{3+3k}{2k} = 0$ questo vuol dire che $3+3k=0$ e quindi
+- # Da FINIRE È in qualche modo sbagliato
 ## Esami e Tutorati
 ---
 ### Dato il numero complesso $z = \frac{1}{2}(\sqrt3+i)$ si dica se le affermazioni sono vere
