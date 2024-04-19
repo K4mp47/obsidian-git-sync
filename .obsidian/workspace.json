@@ -232,7 +232,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio2_vettori_sp_vett.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -249,7 +249,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio2_vettori_sp_vett.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -272,7 +272,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md"
+                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio2_vettori_sp_vett.pdf"
               }
             }
           }
@@ -294,14 +294,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d261942955f0c304",
+  "active": "dc0071e18e7715d7",
   "lastOpenFiles": [
+    "Secondo Anno/OOP/modulo 2/exercise/Domande Eserciziario.md",
+    "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
+    "Secondo Anno/utilities/utilities/graph.py~",
+    "Secondo Anno/utilities/utilities/4913",
     "Secondo Anno/Algebra Lineare/exercise/Foglio2_vettori_sp_vett.pdf",
     "Secondo Anno/Algebra Lineare/exercise/Numeri Complessi.pdf",
     "Secondo Anno/Algebra Lineare/exercise/20210111 Primo appello - Soluzioni.pdf",
-    "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
     "Secondo Anno/Algebra Lineare/exercise/Simulazione_esame_svolta.pdf",
-    "Secondo Anno/OOP/modulo 2/exercise/Domande Eserciziario.md",
     "Secondo Anno/OOP/modulo 2/exercise/theory/Command.md",
     "Secondo Anno/OOP/modulo 2/exercise/Eserciziario.pdf",
     "Pasted image 20240417121913.png",
@@ -311,10 +313,7 @@
     "Secondo Anno/OOP/modulo 2/exercise/theory/Singleton.md",
     "Secondo Anno/OOP/modulo 2/exercise/theory",
     "Secondo Anno/OOP/modulo 2/exercise/code",
-    "Secondo Anno/OOP/modulo 2/exercise/Eserciziario.pdf.crdownload",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
-    "Secondo Anno/Algebra Lineare/exercise/Foglio7_simul_parz_esame.pdf",
-    "Secondo Anno/Algebra Lineare/exercise/Foglio7_simul_parz_esame.pdf.crdownload",
     "Secondo Anno/Basi di dati 2/Trigger.md",
     "Untitled.md",
     "Untitled 1.md",

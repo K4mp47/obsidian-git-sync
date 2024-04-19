@@ -3,6 +3,7 @@ from tkinter import ttk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import matplotlib.pyplot as plt
 import numpy as np
+from ttkthemes import ThemedTk
 
 
 class GraphApp:
@@ -37,9 +38,9 @@ class GraphApp:
         ttk.Button(self.sidebar_frame, text="Plot", command=self.plot_graph).pack(pady=10)
         ttk.Button(self.sidebar_frame, text="Clear", command=self.clear_graph).pack(pady=10)
         ttk.Separator(self.sidebar_frame, orient=tk.HORIZONTAL).pack(fill=tk.X, pady=10)
-        ttk.Button(self.sidebar_frame, text="Show Legend", command=self.show_function_legend).pack(pady=10)
-
-    def show_function_legend(self):
+        #ttk.Button(self.sidebar_frame, text="Show Legend", command=self.show_function_legend).pack(pady=10)
+        ttk.Button(self.sidebar_frame, text="Exit", command=self.root.quit).pack(pady=10) 
+        #def show_function_legend(self):
         legend_text = (
             "You can input various mathematical expressions for functions.\n\n"
             "Examples:\n"
@@ -53,11 +54,14 @@ class GraphApp:
             "- Fraction: frac(A, B) (e.g., frac(1, x))"
         )
 
-        popup = tk.Toplevel(self.root)
-        popup.title("Function Legend")
-        label = ttk.Label(popup, text=legend_text, wraplength=400, justify=tk.LEFT)
-        label.pack(padx=10, pady=10)
-
+        ttk.Label(self.sidebar_frame, text=legend_text).pack(pady=2)
+        # popup = tk.Toplevel(self.root)
+        # popup.title("Function Legend")
+        # label = ttk.Label(popup, text=legend_text, wraplength=400, justify=tk.LEFT)
+        # label.pack(padx=1, pady=1)
+        # # add exit Button
+        # ttk.Button(popup, text="Close", command=popup.destroy).pack(pady=10)
+        #
     def add_function(self):
         function_text = self.function_entry.get()
         if function_text:
@@ -67,8 +71,11 @@ class GraphApp:
 
     def plot_graph(self):
         self.ax.clear()
-        x = np.linspace(1, 20)
-        self.ax.set_ylim(0, 1000)
+        # set x and y with the same size
+        y = np.linspace(1, 50)
+        x = np.linspace(1, 50)
+        self.ax.set_ylim(0, 50)
+        self.ax.set_xlim(0,50)
         for function_text in self.functions:
             try:
                 function_text = function_text.replace("^", "**")
@@ -78,11 +85,14 @@ class GraphApp:
                 function_text = function_text.replace("tan", "np.tan")
                 function_text = function_text.replace("sqrt", "np.sqrt")
                 function_text = function_text.replace("frac", "Rational")
-
                 print(function_text)
-                y = eval(function_text)
 
-                self.ax.plot(x, y, label=function_text)
+                y = eval(function_text)
+                # check if np. is inside function_text
+                if("np.log" in function_text):
+                    self.ax.scatter(0, y, label=function_text)
+                else:
+                    self.ax.plot(x, y, label=function_text)
             except Exception as e:
                 print(f"Error plotting {function_text}: {e}")
 
@@ -96,6 +106,6 @@ class GraphApp:
 
 
 if __name__ == "__main__":
-    root = tk.Tk()
+    root = ThemedTk(theme="equilux")
     app = GraphApp(root)
     root.mainloop()
