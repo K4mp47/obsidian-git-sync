@@ -243,8 +243,7 @@ $x =4, \: y=\frac{5}{2}, \:, z=2$
 
 ### Foglio esercizi 2 spazi vettoriali
 
-- Dati i seguenti vettori nello spazio
-$v = (1,-1,-1)\quad e\quad w=(-2,2,0)$ 
+## Dati i seguenti vettori nello spazio$v = (1,-1,-1)\quad e\quad w=(-2,2,0)$ 
 - Calcolare
 	- $v+w$
 		- $z = v+w = (-1,1,-1)$
@@ -253,9 +252,9 @@ $v = (1,-1,-1)\quad e\quad w=(-2,2,0)$
 	- $-3v+\frac{1}{2}w$
 		- $v =(-3,3,3)\quad e \quad w = (-1,1,0)\quad e \quad z=(-4,4,3)$
 
-- Verificare se i seguenti vettori di $R^3$ sono linearmente indipendenti o meno
-	- $v=(1,1,0),\: w=(2,0,-1),\: z=(0,2,1)$
-		- Per verificare che sia corretto
+## Verificare se i seguenti vettori di $R^3$ sono linearmente indipendenti o meno
+- $v=(1,1,0),\: w=(2,0,-1),\: z=(0,2,1)$
+	- Per verificare che sia corretto
 
 $$\begin{cases} 
 x + 2y = 0 \\
@@ -278,23 +277,136 @@ $$z=c_1w+c_2v$$
 $$c_1=-1,c_2=2\begin{cases}2(1)+(1-)(2)=0\\2(1)+(-1)(0) = 2\\2(0)+(-1)(-1) = 1 \end{cases}$$
 > Questo vuol dire che $v(2)+w(-1) = z$  e quindi non sono tutti indipendenti tra loro
 
-- Verificare se i seguenti vettori di $R^3$ sono linearmente dipendenti o indipendenti $$v1=(1,1,2), \quad v2=(0,2,2), \quad v3=(-1,3,2)$$In caso di dipendenza, trovare poi la relazione che permette di scrivere uno dei vettori come combinazione lineare degli altri due
-	- $$\begin{cases}a-c=0\\ a+2b+3c=0\\ 2a+2b+2c=0\end{cases}$$ $$\begin{cases}a=c\\4c+2b=0\end{cases}$$
-	- Con questo, noi sappiano adesso che ci sono infinite soluzioni e di conseguenza non sono tutti indipendenti, ciò vuol dire che uno dei tre vettori può essere rappresentato come combinazione lineare degli altri due vettori
-	- se noi facciamo infatti $2v_2+(-1)v_3$ il risultato sarà esattamente $v_1$.
+## Verificare se i seguenti vettori di $R^3$ sono linearmente dipendenti o indipendenti $$v1=(1,1,2), \quad v2=(0,2,2), \quad v3=(-1,3,2)$$In caso di dipendenza, trovare poi la relazione che permette di scrivere uno dei vettori come combinazione lineare degli altri due
+- $$\begin{cases}a-c=0\\ a+2b+3c=0\\ 2a+2b+2c=0\end{cases}$$ $$\begin{cases}a=c\\4c+2b=0\end{cases}$$
+- Con questo, noi sappiano adesso che ci sono infinite soluzioni e di conseguenza non sono tutti indipendenti, ciò vuol dire che uno dei tre vettori può essere rappresentato come combinazione lineare degli altri due vettori
+- se noi facciamo infatti $2v_2+(-1)v_3$ il risultato sarà esattamente $v_1$.
 - Dato il vettore $v=(1,-1,2)$ trovare altri due vettori di $R^3$ che messi assieme a $v$ diano tre vettori linearmente indipendenti.
 	- Per farlo, dobbiamo prendere due componenti del vettore e usarle per creare due nuovi vettori a nostro piacimento, es, $w=(1,2,0), \quad z=(1,-2,0)$.
 	- Ora per sicurezza controlliamo che siano effettivamente linearmente indipendenti tra di loro tramite il sistema
 $$\begin{cases}a+b+c=0 \qquad\rightarrow b = -c \qquad\rightarrow b = 0\\-a+2b-2c=0 \qquad\rightarrow 4c = 0 \qquad\rightarrow c = 0\\2a=0 \qquad\rightarrow a=0\end{cases}$$
 - Tutti i vettori risultano essere indipendenti tra loro
 
-- Dati i seguenti vettori di $R^3$ $$v_1=(3,1,k),\quad v_2=(-k,1,0), \quad v_3=(2k,-2,k)$$ stabilire per quali valori di $k\in R$ i vettori sono lin. indip. e per quando invece sono dipendenti,  stabilire quanti tra loro sono linearmente indipendenti
-	- Bisogna mettere a sistema i vettori e analizzare come variano al variare di $k$
-$$\begin{cases}3x-ky+2kz=0 \qquad\rightarrow -y-ky+\frac{2}{3}ky=0 \qquad\rightarrow\frac{-3-3k+2ky}{3} = 0 \qquad\rightarrow\\1x+1y-2z=0 \qquad\rightarrow z=\frac{1}{3}y\\ kx+kz=0 \qquad\rightarrow x = -z \qquad\rightarrow x=-\frac{1}{3}y\end{cases}$$
-$$\begin{cases}\frac{-3-3k+2ky}{3} = 0 \qquad\rightarrow y=\frac{3+3k}{2k}\\ z=\frac{1}{3}y\\ x=-\frac{1}{3}y\end{cases}$$
-- ora che abbiamo $y=\frac{3+3k}{2k}$ non rimane che vedere cosa succede al variare di $k$
-	- se $y = 0$ allora $\frac{3+3k}{2k} = 0$ questo vuol dire che $3+3k=0$ e quindi
-- # Da FINIRE È in qualche modo sbagliato
+## Dati i seguenti vettori di $R^3$ $$v_1=(3,1,k),\quad v_2=(-k,1,0), \quad v_3=(2k,-2,k)$$ stabilire per quali valori di $k\in R$ i vettori sono lin. indip. e per quando invece sono dipendenti,  stabilire quanti tra loro sono linearmente indipendenti
+
+- Analizziamo il sistema mettendo tutto a zero (ovvero quando sono linearmente indipendenti)
+$$\begin{cases}
+3a-kb+2kc=0\\
+a+b-2c=0\\
+ka+kc=0\\
+\end{cases}
+\rightarrow 3r_2-r_1,3r_3-kr_1
+\begin{cases}
+3a-kb+2kc=0\\
+(3+k)b+(-6-2k)c=0\\
+k^2b+(3k-2k^2c)=0\\
+\end{cases}$$
+$$\text{$k=-3$}\rightarrow\begin{cases}
+3a+3b-6c=0\\
+0=0\\
+9b-27c=0\\
+	\end{cases}\rightarrow\text{2 equazioni = 2 vettori indip.}$$
+$$\text{$k=0$}\rightarrow\begin{cases}
+3a=0\\
+3b-6c=0 \rightarrow b=2c\\
+0=0\\
+\end{cases}\rightarrow \text{1 equazione = 1 vettore indip.}$$
+## Stabilire se il seguente sottoinsieme di $R^2$ è uno sottospazio vettoriale
+- $V={(x,y) \in R^2 : x+y=5}$ 
+- Per le proprietà degli spazi vettoriali sappiamo che il sottospazio deve avere un vettore nullo $(0,0)$ cosa che in questo caso non esiste data la condizione $x+y=5$
+
+## Verificare che i seguenti sottoinsiemi di $R^4$ sono sottospazi vettoriali.
+$S={(x,y,z,w)\in R^4:x+z=0, 3y-w=0}$
+$T={(x,y,z,w)\in R^4:x+z=0, y-w=0}$
+
+- Per farlo mettiamo a sistema le due equazioni, e verifichiamo 
+$$S:\begin{cases}x+z=0\\3y-w=0\end{cases}\rightarrow\begin{cases}x=-z\\3y=w\end{cases}$$
+- S dipende da due elementi generici: $z,w\in R$ 
+$$\begin{pmatrix}-z\\y\\z\\3y\end{pmatrix}$$
+- Verifichiamo ora che siano possibili somma e prodotto per scalare
+$$S_1+S_2:\begin{pmatrix}-z_a\\y_a\\z_a\\3y_a\end{pmatrix}+\begin{pmatrix}-z_b\\y_b\\z_b\\3y_b\end{pmatrix}=\begin{pmatrix}-(z_a+z_b)\\y_a+y_b\\z_a+z_b\\3(y_a+y_b)\end{pmatrix}$$
+$$\lambda S_1:\lambda\begin{pmatrix}-z\\\frac{1}{3}w\\z\\w\end{pmatrix}=\begin{pmatrix}-z\lambda\\\frac{1}{3}w\lambda\\z\lambda\\w\lambda\end{pmatrix}=\begin{cases}-z\lambda=z\lambda\\3\frac{1}{3}w\lambda=w\lambda\end{cases}=\begin{cases}0=0\\0=0\end{cases}$$
+- Sostituiamo i valori trovati nel sistema di equazioni, se i risultati saranno zero allora vuol dire che è valido
+$$S:\begin{cases}x+z=0\\3y-w=0\end{cases}\rightarrow\begin{cases}-(z_a+z_b)+(z_a+z_b)=0\\3(y_a+y_b)-3(y_a+y_b)=0\end{cases}\rightarrow \text{soluzione valida, è un sottospazio}$$
+- Ripetendo il processo anche per $T$ scopriamo che anch'esso è uno sottospazio vettoriale valido
+## Stabilire se ognuno dei seguenti sottoinsiemi di R_2[x] è formato da vettori linearmente indipendenti $\{1,x,x^2\},\{1,x\}$
+$$S=\{1,x,x^2\}\rightarrow\text{si fa il sistema ricordando la regola $as_1+bs_2+cs_3=0$}$$
+- In questo caso l'unico modo per far si che $a1+bx+cx^2=0$ è settare $a=b=c=0$. Se non fosse stato così, i vettori non sarebbero linearmente indipendenti. Stessa cosa vale per $\{1,x\}$.
+- Per esempio $\{x+x^2,1+x+x^2\}$ non è formato da vettori linearmente indipendenti.
+
+## Stabilire se ognuno dei seguenti sottoinsiemi di $R^3$ è formato da vettori linearmente indipendenti e se è un insieme di generatori. Se il sottoinsieme non costituisce una base di $R^3$, completarlo ad una base o estrarre una base
+
+$$S={(1,0,0),(1,1,0),(0,1,1)} =$$
+$$a(1,0,0)+b(1,1,0)+c(0,1,1)=0$$
+- Metto a sistema
+$$\begin{cases}a+b=0\\b+c=0\\c=0\end{cases}\rightarrow\begin{cases}a=0\\b=0\\c=0\end{cases}$$
+- I vettori sono linearmente indipendenti.
+- Ora verifico che siano un insieme generatore
+$$x(1,0,0)+y(1,1,0)+z(0,1,1)=(x+y,y+z,z)$$
+- i vettori coprono tutte le direzioni in $R^3$ e di conseguenza sono insieme generatore di $R^3$
+
+## Esercizio svolto a lezione il 22/04/24
+---
+$$\begin{cases}x-2y-z=0\\
+kx-ky+w=0\\
+y+kz_w=0\end{cases}$$
+
+- Trovare il numero di soluzioni del sistema al variare di $k \in R$.
+
+$$\begin{pmatrix}1&-2&-1&0\\k&-k&0&1\\0&1&k&1\end{pmatrix}$$
+- Mi riporto alla situazione di creamer cerco una sottomatrice quadrata
+
+$$\begin{pmatrix}-1&0\\0&1\end{pmatrix}\rightarrow \text{determinante = $-1$}$$
+- Non va bene il determinante
+$$\begin{pmatrix}1&-1&0\\k&0&1\\0&k&1\end{pmatrix}\rightarrow\text{determinante = $0$}$$
+- Determinante a zero non va bene, deve dipendere da $k$, prendo allora
+
+$$\begin{pmatrix}-2&-1&0\\-k&0&1\\1&k&1\end{pmatrix}\rightarrow\text{determinante = $k-1$}$$
+- $k\neq1$ quindi $A_3$ è non singolare $rg(A)=3$. Nota come *matrice efficace*
+- Ogni colonna eliminata corrisponde al fatto che la variabile perde il suo status e diventa un parametro libero
+- Ogni riga eliminata corrisponde ad un'equazione eliminata perché ridondante
+
+$$\begin{cases}-2y-z=-x\\-ky+w=-ky\\y+kz+w=0\end{cases}$$
+- ⬆ $x$ diventa la colonna dei coefficienti nel sistema
+- Tre equazioni e 3 incognite
+- Applico Cramer
+
+$$y=\frac{\begin{pmatrix}-x&-1&0\\-kx&0&1\\0&k&1\end{pmatrix}}{k-1}=\frac{0}{k-1}=0$$
+$$\begin{cases}-z=-x\\w=-kx\\kz+w=0\end{cases}$$
+- Quindi le soluzioni finali sono $(0,x,-kx)\quad x\in R\:\text{per }k\neq 1$ 
+- Per $k=1$, il rango è 2. La matrice efficace è la matrice di partenza 2x2 $\begin{pmatrix}-1&0\\0&1\end{pmatrix}$ 
+	- Il sistema diventa a due equazioni
+	- $\begin{cases}-z=-x+2y\\w=-kx+ky\end{cases}\quad$ numero soluzioni = $\infty^2$ 
+## Esercizio svolto a lezione il 22/04/24
+--- 
+$T:R^3\rightarrow R^2$
+$T(V_1)= (-1,2)$
+$T(V_2)= (0,4)$
+$T(V_3)= (2,1)$
+
+dove
+
+$V_1=(1,1,1)\quad V_2=(0,1,1)\quad V_3=(1,1,0)$
+
+- Trovare la matrice A associata a T rispetto alle basi canoniche
+- Trovare una base di $Im(T)$ e $Ker(T)$ 
+
+$$\begin{pmatrix}1&0&1\\1&1&1\\1&1&0\end{pmatrix}\rightarrow\text{calcolare se il determinante è $\neq 0$}$$
+- Posso vedere ad occhio che se faccio $V_1-V_2$ trovo già $T(e_1)$ dove $e_1=aV_1+bV_2+cV_3$
+- Anche $V_1-V_3=e_3$ 
+- E anche $V_3-e_1=e_2$ 
+- Quindi di conseguenza 
+	- $T(e_1)=T(V_1)-T(V_2)= (-1,2)-(0,4)=(-1,-2)$
+	- $T(e_3)=T(V_1)-T(V_3)= (-1,2)-(2,1)=(-3,1)$
+	- $T(e_2)=T(V_3)-T(e_1)= (2,1)-(-1,-2)=(3,3)$
+
+- La matrice estrapolata risulta essere
+$$A=\begin{pmatrix}-1&3&-3\\-2&3&1\end{pmatrix}$$
+$$A_2=\begin{pmatrix}-1&3\\-2&3\end{pmatrix}=|A_2|=3\neq0\text{ non singolare quindi rg(A) = 2 = dim Im(T)}$$
+- $dim\:Ker(T)+2=3\text{ quindi dim Ker(T)=1}$  
+$$B_{Im(T)}={(-1,2);(3,3)}$$
+$$\begin{cases}-x+3y-3z=0\\-2x+3y+z=0\end{cases}\rightarrow\begin{cases}-x+3y=3z\\-2x+3y=-z\end{cases}\rightarrow r_1-r_2\rightarrow\begin{cases}x=4z\\y=\frac{7}{3}z\end{cases}$$
+- $z=3\quad B_{ker(T)}={(12,7,3)}$ 
 ## Esami e Tutorati
 ---
 ### Dato il numero complesso $z = \frac{1}{2}(\sqrt3+i)$ si dica se le affermazioni sono vere
@@ -337,3 +449,157 @@ $$con $k \in R$, determinare: 1) Il rango di $A_k$ al variare di $k$ 2) Il nucle
 			- Dato dim $R^2=2$ questo implica che tra di loro non sono tutti linearmente indipendenti. Di conseguenza vuol dire che sono linearmente dipendenti!!
 
 ---
+
+## Foglio 10
+## Calcolare il determinante della matrice $$ \begin{pmatrix}
+-1 & 0  & 1 & 2\\
+2 & 1 & 3 & -1\\
+0 & 1  & 2 & -1\\
+3 & 0  & 1 & -2
+\end{pmatrix}
+$$
+- Uso il metodo di Laplace:
+	- Si sceglie una riga o una colonna da usare (scelgo la seconda colonna perché ha più zeri)
+		- $\sum a_{ij}(-1)^{i+j}Det(matrice\:restante)$     
+	- Se il determinante è $\neq$ 0, allora posso fare il determinante della matrice inversa
+		- Matrice inversa = righe diventano colonne e viceversa
+- Uso il metodo di eliminazione di Gauss
+	- Si prende la matrice triangolare superiore (risolvo mettendo a zero tutta la matrice triangolare inferiore)
+	- determinante = prodotto degli elementi sulla diagonale
+	- *Se scambiamo righe cambia anche il segno!*
+
+## Calcolare $A^{-1}$ e verificare che $AA^{-1}=I$ $$\begin{pmatrix}
+2&1&1\\
+4&1&0\\
+-2&2&1
+\end{pmatrix}$$
+
+$$1(-1)^{1+3} \begin{pmatrix}4&1\\-2&2\end{pmatrix}+1(-1)^{3+3}\begin{pmatrix}2&1\\4&1\end{pmatrix} = 1(8-(-2))+1(2-4)=10-2=8\neq0 $$
+
+- quindi esiste $A^{-1},\: det(A^{-1})=\frac{1}{det(A)}=\frac{1}{8}$ 
+- Calcolo inversa
+$$\begin{pmatrix}
+2&1&1|1&0&0\\
+4&1&0| 0&1&0\\
+-2&2&1| 0&0&1
+\end{pmatrix}$$
+- Uso Gauss fino a quando la matrice di sinistra non diventa la matrice identità
+
+- Prima operazione mettere 4 e -2 a zero: $r_2 = r_2 -2r_1\:e\: r_3=r_3+r_1$
+$$\begin{pmatrix}
+2&1&1|1&0&0\\
+0&-1&-2| -2&1&0\\
+0&3&2| 1&0&1
+\end{pmatrix}$$
+- Alla matrice di destra la trattiamo come fosse una matrice intera, quindi $0-1(-2) = -2$ ecc.
+- Ora $r_3=r_3+3r_2$ 
+
+$$\begin{pmatrix}
+2&1&1|1&0&0\\
+0&-1&-2| -2&1&0\\
+0&0&-4| -5&3&1
+\end{pmatrix}$$
+- Rimane da calcolare 1,1 della prima riga e -2 della seconda che devono essere a 0, $r_1 = r_1+r_2$
+$$\begin{pmatrix}
+2&0&-1|-1&1&0\\
+0&-1&-2| -2&1&0\\
+0&0&-4| -5&3&1
+\end{pmatrix}$$
+- $r_1=r_1-\frac{1}{4}r_3$ 
+$$\begin{pmatrix}
+2&0&0|\frac{1}{4}&\frac{1}{4}&-\frac{1}{4}\\
+0&-1&-2| -2&1&0\\
+0&0&-4| -5&3&1
+\end{pmatrix}$$
+- $r_2=r_2-\frac{1}{2}r_3$ 
+$$\begin{pmatrix}
+2&0&0|\frac{1}{4}&\frac{1}{4}&-\frac{1}{4}\\
+0&-1&0| \frac{1}{2}&-\frac{1}{2}&-\frac{1}{2}\\
+0&0&-4| -5&3&1
+\end{pmatrix}$$
+- Moltiplichiamo le righe per $\frac{1}{2},-1,-\frac{1}{4}$
+$$\begin{pmatrix}
+1&0&0|\frac{1}{8}&\frac{1}{8}&-\frac{1}{8}\\
+0&1&0| -\frac{1}{2}&\frac{1}{2}&\frac{1}{2}\\
+0&0&1| \frac{5}{4}&-\frac{3}{4}&-\frac{1}{4}
+\end{pmatrix}$$
+- a sinistra abbiamo la matrice identità, a destra la matrice inversa
+$$A^{-1}=\begin{pmatrix}
+\frac{1}{8}&\frac{1}{8}&-\frac{1}{8}\\
+-\frac{1}{2}&\frac{1}{2}&\frac{1}{2}\\
+\frac{5}{4}&-\frac{3}{4}&-\frac{1}{4}
+\end{pmatrix} = \frac{1}{8}\begin{pmatrix}
+1&1&-1\\
+-4&4&4\\
+10&-6&-2
+\end{pmatrix}$$$$\text{la matrice è stata moltiplicata solo per una rappresentazione diversa}$$
+## Risolvere usando Cramer
+$$\begin{cases}
+x+7y+3z=6\\
+-x+2z=-7\\
+3x+y+z=2
+\end{cases}$$
+
+- Verifichiamo se possiamo usare Cramer
+
+$$\begin{pmatrix}
+1&7&3\\
+-1&0&2\\
+3&1&1
+\end{pmatrix}$$
+- Verificare che il determinante sia $\neq$ 0
+
+#### Passaggi
+- Specchiamo le prime due colonne
+
+$$\begin{pmatrix}
+1&7&3&1&7&3\\
+-1&0&2&-1&0&2\\
+3&1&1&3&1&1
+\end{pmatrix}$$
+
+- prendo le prime tre diagonali verso destra con segno positivo e le diagonali da destra a sinistra con segno negativo. TUTTO QUESTO VALE SOLO PER MATRICI 3X3
+$$det(A)=1*0*1+7*2*3+3*(-1)*1-1*2*1-7*(-1)*1-3*0*3=$$
+$$42-3-2+7=44\neq0\quad\text{quindi si può usare Cramer}$$
+- Ci serve matrice  e termini noti
+$$x =\begin{pmatrix}
+1&7&3\\
+-1&0&2\\
+3&1&1
+\end{pmatrix}\text{sostituisco colonna 1 con termini noti}=\begin{pmatrix}
+6&7&3\\
+-7&0&2\\
+2&1&1
+\end{pmatrix}$$
+$$\text{faccio il determinante della matrice sopra fratto determinante di A:}=\frac{44}{44}=1$$
+- Faccio la stessa cosa per $y$ e $z$
+$$y=\begin{pmatrix}
+1&6&3\\
+-1&-7&2\\
+3&2&1
+\end{pmatrix}=\frac{88}{44}=2$$
+
+$$z = \begin{pmatrix}
+1&7&6\\
+-1&0&-7\\
+3&1&2
+\end{pmatrix}=\frac{-132}{44}=-3$$
+
+## Si considerino le equazioni $3x-y+z=0,x-2y-3z=0$
+- Si aggiunga una terza equazione in modo da ottenere un sistema con la sola soluzione nulla
+$$\begin{pmatrix}3&-1&1\\1&-2&-3\\?&?&?\end{pmatrix}$$
+- Introduciamo $z=0$
+$$\begin{cases}
+3x-y+z=0\\x-2y-3z=0\\z=0\end{cases}$$
+$$\begin{pmatrix}3&-1&1\\1&-2&-3\\0&0&1\end{pmatrix}$$
+- Con $z=0$ il sistema diventa omogeneo e quindi la soluzione di cui sopra è valida
+-  Con una sola soluzione? $z=1$
+
+$$\begin{cases}
+3x-y+z=0\\x-2y-3z=0\\z=1\end{cases}\rightarrow\begin{cases}
+3x-y=-1\\x-2y=3\\z=1\end{cases}$$
+
+$$\begin{cases}y=1+3x\rightarrow y=-2\\x-2(1+3x)=3\rightarrow x=-1\\z=1\end{cases}$$
+
+# $\uparrow$ 🛑 Questo esercizio è stato fatto durante il tutorato, manca la teoria per poterlo fare
+

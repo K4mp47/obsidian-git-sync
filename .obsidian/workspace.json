@@ -4,163 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "48ff3a044cc005d9",
-        "type": "split",
-        "children": [
-          {
-            "id": "b2583826bd0c8f9a",
-            "type": "tabs",
-            "dimension": 79.27419354838709,
-            "children": [
-              {
-                "id": "d261942955f0c304",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "8c800d8153e396b4",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Secondo Anno/cheatsheet_lat/cheatsheet.md",
-                    "mode": "preview",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "id": "c5ba50823fe7acb7",
-            "type": "tabs",
-            "dimension": 20.7258064516129,
-            "children": [
-              {
-                "id": "acd4cefb4ae7d37e",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Secondo Anno/Algebra Lineare/Lezioni/A-Lezione 1.pdf"
-                  }
-                }
-              },
-              {
-                "id": "d93ccbfab89012fb",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Secondo Anno/Algebra Lineare/Tavola funzioni goniometriche-2-3.pdf"
-                  }
-                }
-              },
-              {
-                "id": "ae5adde9a4076c46",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Secondo Anno/Algebra Lineare/Algebra Lineare appunti_annotated.pdf"
-                  }
-                }
-              },
-              {
-                "id": "896377b3cc1a29e1",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Secondo Anno/Algebra Lineare/Lezioni/Lezione 5.pdf"
-                  }
-                }
-              },
-              {
-                "id": "47c4eee4238a84a3",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Secondo Anno/Algebra Lineare/Lezioni/Lezione 15.pdf"
-                  }
-                }
-              },
-              {
-                "id": "1b0f37db4a820092",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Secondo Anno/OOP/modulo 2/exercise/Eserciziario.pdf"
-                  }
-                }
-              },
-              {
-                "id": "6ec6ee689b3fe0b4",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Secondo Anno/OOP/modulo 2/Effective Java_ Programming Language Guide ( PDFDrive ).pdf"
-                  }
-                }
-              }
-            ],
-            "currentTab": 5
-          }
-        ],
-        "direction": "horizontal"
-      },
-      {
-        "id": "ee8628f689ff52cd",
+        "id": "b2583826bd0c8f9a",
         "type": "tabs",
         "children": [
           {
-            "id": "dc0071e18e7715d7",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio2_vettori_sp_vett.pdf"
-              }
-            }
-          },
-          {
-            "id": "c06f8dc5a06c2a7d",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/20210111 Primo appello - Soluzioni.pdf"
-              }
-            }
-          },
-          {
-            "id": "5806bd8d5dddc731",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Simulazione_esame_svolta.pdf"
-              }
-            }
-          },
-          {
-            "id": "de860c5d05983521",
+            "id": "d261942955f0c304",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 2/exercise/Domande Eserciziario.md",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
                 "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8c800d8153e396b4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/cheatsheet_lat/cheatsheet.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -215,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 695.0110321044922,
+    "width": 388.0110321044922,
     "collapsed": true
   },
   "right": {
@@ -281,7 +147,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 481,
     "collapsed": true
   },
   "left-ribbon": {
@@ -291,29 +157,31 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-full-calendar:Open Full Calendar": false
     }
   },
   "active": "d261942955f0c304",
   "lastOpenFiles": [
-    "Secondo Anno/Algebra Lineare/exercise/Foglio2_vettori_sp_vett.pdf",
+    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
-    "Secondo Anno/OOP/modulo 2/exercise/Domande Eserciziario.md",
-    "Secondo Anno/utilities/utilities/graph.py~",
-    "Secondo Anno/utilities/utilities/4913",
-    "Secondo Anno/Algebra Lineare/exercise/Numeri Complessi.pdf",
+    "Secondo Anno/OOP/modulo 2/Effective Java_ Programming Language Guide ( PDFDrive ).pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio10_determin_inversa.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio3_basi_sottospazi.pdf",
+    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 6.pdf",
+    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 7.pdf",
+    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 5.pdf",
     "Secondo Anno/Algebra Lineare/exercise/20210111 Primo appello - Soluzioni.pdf",
-    "Secondo Anno/Algebra Lineare/exercise/Simulazione_esame_svolta.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/20210125 Secondo appello - Soluzioni.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio2_vettori_sp_vett.pdf",
+    "Secondo Anno/Calendar/2024-04-22 studio algebra.md",
+    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 4.pdf",
+    "Secondo Anno/OOP/modulo 2/exercise/Domande Eserciziario.md",
     "Secondo Anno/OOP/modulo 2/exercise/theory/Command.md",
-    "Secondo Anno/OOP/modulo 2/exercise/Eserciziario.pdf",
     "Pasted image 20240417121913.png",
     "Pasted image 20240417121852.png",
     "Secondo Anno/OOP/modulo 2/exercise/theory/Factory.md",
-    "Secondo Anno/OOP/modulo 2/Effective Java_ Programming Language Guide ( PDFDrive ).pdf",
     "Secondo Anno/OOP/modulo 2/exercise/theory/Singleton.md",
-    "Secondo Anno/OOP/modulo 2/exercise/theory",
-    "Secondo Anno/OOP/modulo 2/exercise/code",
-    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Basi di dati 2/Trigger.md",
     "Untitled.md",
     "Untitled 1.md",
@@ -340,7 +208,6 @@
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/Memoria.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Intro.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/EXAM.md",
-    "Secondo Anno/Sistemi Operativi/modulo 1/Indice.md",
     "Untitled.canvas"
   ]
 }
