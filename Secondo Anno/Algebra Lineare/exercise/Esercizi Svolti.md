@@ -353,19 +353,25 @@ $$T={(1,0,0),(0,1,1),(5,1,1)} =$$
 $$S=a(1,0,0)+b(0,1,1)+c(5,1,1) = 0$$
 $$\begin{cases}a+5c=0\\b+c=0\end{cases}$$
 - In questo caso abbiamo un sistema non esaustivo, di conseguenza non sono tutti indipendenti
-- Se notiamo bene, $(5,1,1)$ può essere visto come combinazione lineare degli altri due vettori, infatti $(5,1,1)=5(1,0,0)+1(0,1,1)$. Di co(1, 0, 0), (1, 1, 0) di conseguenza possiamo toglierlo per rimanere solo con i primi due vettori, ma questi fanno si che $dim(Span T) = 2 < 3$, quindi dobbiamo trovare un terzo vettore per poter creare una base di $R^3$. per poterlo fare dobbiamo possiamo fare il determinante tramite Gauss, così da poter generare tutto lo spazio a tre dimensioni:
+- Se notiamo bene, $(5,1,1)$ può essere visto come combinazione lineare degli altri due vettori, infatti $(5,1,1)=5(1,0,0)+1(0,1,1)$. Di co(1, 0, 0), (1, 1, 0) di conseguenza possiamo toglierlo per rimanere solo con i primi due vettori, ma questi fanno si che $dim(Span T) = 2 < 3$, quindi dobbiamo trovare un terzo vettore per poter creare una base di $R^3$.
+- Calcoliamo il rango della matrice dei due vettori
+$$rg\begin{pmatrix}1&0&0\\0&1&1\end{pmatrix}=2$$
+- Serve ora un terzo vettore anch'esso indipendente dagli altri due, prendiamo per esempio $(0,1,0)$
+- Ora facendo il controllo del rango utilizzando Gauss
+$$rg\begin{pmatrix}1&0&0\\0&1&1\\0&1&0\end{pmatrix}=(scambio\:r_3\:con\:r_2)\:poi\:r_3-r_2=\begin{pmatrix}1&0&0\\0&1&0\\0&0&1\end{pmatrix}=3$$
 
-# Cambiamo metodo per ⬆ da finire l'es
+- Essendo la matrice $3*3$ e il rango $3$ i tre vettori sono linearmente indipendenti tra loro 
+
 - Un altro insieme è costituito da 
 $$U=\{(1,0,0),(5,1,1)\}=$$
 
 - Mettiamo tutto a sistema
 $$\begin{cases}a+5b=0\\b=0\\c=0\end{cases}$$
 - i due vettori sono indipendenti tra loro
-- Per verificare se sono generatori devo fare il controllo della loro combinazione lineare per le incognite
-$$x(1,0,0)+y(5,1,1)=(6x,y,y)$$
-- Coprendo tutte le direzioni dello spazio $R^3$ i due vettori sono generatori
-
+- Essendo solo due non possono generare $R^3$, per cui mi serve un altro vettore
+- Ipotizziamo che esso sia $(0,0,1)$ 
+- Verifichiamo ora con Gauss
+$$\begin{pmatrix}1&0&0\\5&1&1\\0&0&1\end{pmatrix}=r_2-5r_3=\begin{pmatrix}1&0&0\\0&1&1\\0&0&1\end{pmatrix}=3$$
 
 - Un altro insieme è costituito da
 $$V = \{(1,1,0),(0,1,1),(5,1,1),(1,2,1)\}$$
@@ -373,7 +379,31 @@ $$V = \{(1,1,0),(0,1,1),(5,1,1),(1,2,1)\}$$
 $$\begin{cases}a+5c+d=0\\a+b+c+2d=0\\b+c+d=0\end{cases}$$
 - Non è possibile risolvere un sistema a 4 incognite con 3 equazioni, sono dipendenti. Notiamo come $(1,2,1)$ sia combinazione lineare di $(1,1,0)+(0,1,1)$ e quindi possa essere rimosso. Se ora proviamo a fare il sistema
 $$\begin{cases}a+5c=0\\a+b+c=0\\b+c=0\end{cases}\rightarrow \begin{cases}a+5c = 0\\a-c+c=0\\b=-c\end{cases}\rightarrow\begin{cases}c=0\\a=0\\b=0\end{cases}$$
-- I tre vettori risultano linearmente indipendenti, posso usarli come base se sono anche generatori, e con piacere per noi $x(1,1,0)+y(0,1,1)+z(5,1,1)=(x+5z,x+y+z,y+z)$ descrivono tutte le direzioni dello spazio in $R^3$ per cui valgono come base
+- I tre vettori risultano linearmente indipendenti, posso usarli come base se sono anche generatori, e con piacere per noi il rango della matrice è
+$$\begin{pmatrix}1&1&0\\0&1&1\\5&1&1\end{pmatrix}=\begin{pmatrix}1&1&0\\0&1&1\\0&-4&1\end{pmatrix}=\begin{pmatrix}1&1&0\\0&1&1\\0&0&5\end{pmatrix}=3$$
+- I vettori sono generatori dello spazio in $R^3$
+
+- Proviamo con un altro insieme, stavolta però nello spazio $R^4$ 
+$$\{(1,0,0,0),(1,1,0,0),(1,1,1,0),(1,1,1,1)\}$$
+
+- Poniamo tutti e quattro a sistema
+$$\begin{cases}a+b+c+d=0\\b+c+d=0\\c+d=0\\d=0\end{cases}\rightarrow\begin{cases}a=0\\b=0\\c=0\\d=0\end{cases}$$
+
+- I 4 vettori risultano essere linearmente indipendenti. Ora verifichiamo che essi siano un insieme generatore dello spazio $R^4$.
+$$\begin{pmatrix}1&0&0&0\\1&1&0&0\\1&1&1&0\\1&1&1&1\end{pmatrix}=\text{con il metodo di Gauss scambio $r_4,r_1$ e $r_2,r_3$}=4$$
+- I vettori costituiscono una base per $R^4$
+
+- Un altro sottoinsieme di $R^4$ 
+$$\{(1, 0, 0, 0), (0, 1, 1, 1), (1, 1, 1, 0), (1, 1, 1, 1), (0, 3, 0, 0)\}$$
+- Notiamo subito che $v_4$ può essere visto come combinazione lineare dei vettori $v_1,v_2$ e quindi lo scartiamo
+- Ora poniamo il tutto a sistema
+$$\begin{cases}a+c=0\\b+c+3d=0\\b+c=0\\b=0\end{cases}\rightarrow\begin{cases}b=0\\c=0\\d=0\\a=0\end{cases}$$
+
+- I vettori rimasti risultano essere linearmente indipendenti tra di loro. Verifichiamo ora che si tratti di generatori
+
+$$\begin{pmatrix}1&0&0&0\\0&1&1&1\\1&1&1&0\\0&3&0&0\end{pmatrix}=\begin{pmatrix}1&0&0&0\\0&3&0&0\\0&1&1&1\\1&1&1&0\end{pmatrix}=\begin{pmatrix}1&0&0&0\\0&3&0&0\\0&1&1&1\\0&0&0&-1\end{pmatrix}=\begin{pmatrix}1&0&0&0\\0&3&0&0\\0&0&1&1\\0&0&0&-1\end{pmatrix}=4$$
+- I quattro vettori rimasti sono indipendenti tra loro
+
 ## Esercizio svolto a lezione il 22/04/24
 ---
 $$\begin{cases}x-2y-z=0\\
