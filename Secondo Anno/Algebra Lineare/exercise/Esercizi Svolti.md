@@ -324,8 +324,8 @@ $$S:\begin{cases}x+z=0\\3y-w=0\end{cases}\rightarrow\begin{cases}x=-z\\3y=w\end{
 - S dipende da due elementi generici: $z,w\in R$ 
 $$\begin{pmatrix}-z\\y\\z\\3y\end{pmatrix}$$
 - Verifichiamo ora che siano possibili somma e prodotto per scalare
-$$S_1+S_2:\begin{pmatrix}-z_a\\y_a\\z_a\\3y_a\end{pmatrix}+\begin{pmatrix}-z_b\\y_b\\z_b\\3y_b\end{pmatrix}=\begin{pmatrix}-(z_a+z_b)\\y_a+y_b\\z_a+z_b\\3(y_a+y_b)\end{pmatrix}$$
 $$\lambda S_1:\lambda\begin{pmatrix}-z\\\frac{1}{3}w\\z\\w\end{pmatrix}=\begin{pmatrix}-z\lambda\\\frac{1}{3}w\lambda\\z\lambda\\w\lambda\end{pmatrix}=\begin{cases}-z\lambda=z\lambda\\3\frac{1}{3}w\lambda=w\lambda\end{cases}=\begin{cases}0=0\\0=0\end{cases}$$
+$$S=S_1+S_2:\begin{pmatrix}-z_a\\y_a\\z_a\\3y_a\end{pmatrix}+\begin{pmatrix}-z_b\\y_b\\z_b\\3y_b\end{pmatrix}=\begin{pmatrix}-(z_a+z_b)\\y_a+y_b\\z_a+z_b\\3(y_a+y_b)\end{pmatrix}$$
 - Sostituiamo i valori trovati nel sistema di equazioni, se i risultati saranno zero allora vuol dire che è valido
 $$S:\begin{cases}x+z=0\\3y-w=0\end{cases}\rightarrow\begin{cases}-(z_a+z_b)+(z_a+z_b)=0\\3(y_a+y_b)-3(y_a+y_b)=0\end{cases}\rightarrow \text{soluzione valida, è un sottospazio}$$
 - Ripetendo il processo anche per $T$ scopriamo che anch'esso è uno sottospazio vettoriale valido
@@ -345,6 +345,35 @@ $$\begin{cases}a+b=0\\b+c=0\\c=0\end{cases}\rightarrow\begin{cases}a=0\\b=0\\c=0
 $$x(1,0,0)+y(1,1,0)+z(0,1,1)=(x+y,y+z,z)$$
 - i vettori coprono tutte le direzioni in $R^3$ e di conseguenza sono insieme generatore di $R^3$
 
+
+
+- Un altro sottoinsieme è costituito da
+$$T={(1,0,0),(0,1,1),(5,1,1)} =$$
+- Mettiamo a sistema
+$$S=a(1,0,0)+b(0,1,1)+c(5,1,1) = 0$$
+$$\begin{cases}a+5c=0\\b+c=0\end{cases}$$
+- In questo caso abbiamo un sistema non esaustivo, di conseguenza non sono tutti indipendenti
+- Se notiamo bene, $(5,1,1)$ può essere visto come combinazione lineare degli altri due vettori, infatti $(5,1,1)=5(1,0,0)+1(0,1,1)$. Di co(1, 0, 0), (1, 1, 0) di conseguenza possiamo toglierlo per rimanere solo con i primi due vettori, ma questi fanno si che $dim(Span T) = 2 < 3$, quindi dobbiamo trovare un terzo vettore per poter creare una base di $R^3$. per poterlo fare dobbiamo possiamo fare il determinante tramite Gauss, così da poter generare tutto lo spazio a tre dimensioni:
+
+# Cambiamo metodo per ⬆ da finire l'es
+- Un altro insieme è costituito da 
+$$U=\{(1,0,0),(5,1,1)\}=$$
+
+- Mettiamo tutto a sistema
+$$\begin{cases}a+5b=0\\b=0\\c=0\end{cases}$$
+- i due vettori sono indipendenti tra loro
+- Per verificare se sono generatori devo fare il controllo della loro combinazione lineare per le incognite
+$$x(1,0,0)+y(5,1,1)=(6x,y,y)$$
+- Coprendo tutte le direzioni dello spazio $R^3$ i due vettori sono generatori
+
+
+- Un altro insieme è costituito da
+$$V = \{(1,1,0),(0,1,1),(5,1,1),(1,2,1)\}$$
+- Poniamo tutto a sistema
+$$\begin{cases}a+5c+d=0\\a+b+c+2d=0\\b+c+d=0\end{cases}$$
+- Non è possibile risolvere un sistema a 4 incognite con 3 equazioni, sono dipendenti. Notiamo come $(1,2,1)$ sia combinazione lineare di $(1,1,0)+(0,1,1)$ e quindi possa essere rimosso. Se ora proviamo a fare il sistema
+$$\begin{cases}a+5c=0\\a+b+c=0\\b+c=0\end{cases}\rightarrow \begin{cases}a+5c = 0\\a-c+c=0\\b=-c\end{cases}\rightarrow\begin{cases}c=0\\a=0\\b=0\end{cases}$$
+- I tre vettori risultano linearmente indipendenti, posso usarli come base se sono anche generatori, e con piacere per noi $x(1,1,0)+y(0,1,1)+z(5,1,1)=(x+5z,x+y+z,y+z)$ descrivono tutte le direzioni dello spazio in $R^3$ per cui valgono come base
 ## Esercizio svolto a lezione il 22/04/24
 ---
 $$\begin{cases}x-2y-z=0\\
@@ -600,6 +629,3 @@ $$\begin{cases}
 3x-y=-1\\x-2y=3\\z=1\end{cases}$$
 
 $$\begin{cases}y=1+3x\rightarrow y=-2\\x-2(1+3x)=3\rightarrow x=-1\\z=1\end{cases}$$
-
-# $\uparrow$ 🛑 Questo esercizio è stato fatto durante il tutorato, manca la teoria per poterlo fare
-
