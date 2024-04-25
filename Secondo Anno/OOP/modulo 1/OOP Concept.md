@@ -269,3 +269,67 @@ flowchart TD
     end
 ```
 
+## Polymorphism
+It is defined as "the quality or state of existing in or assuming different forms". Such a concept is applied to several different areas, but in computer science, it means that the same symbol might represent different implementation based on a specific execution of a program. The subtype relation enables polymorphism, in fact when our code invockes a method, the static type checker validates that the static type of the expression used as receiver of the invocation contains the invoked method. Instead at runtime our code might receive a subclass of the static type we declared, and such subclass might override the method we are invoking, redefining its implementation and behavior
+
+**Static and Dynamic type**
+
+inside our programs we have two distinct types: static type, declared or inferred by the compiler, and a dynamic type, the concrete type of the expression when the program is running.
+Remember that the dynamic type is always the same type or a subtype of the static type.
+
+One might want to check the dynamic type of an expression, and cast a variable to some given types. Java supports this through
+- `<expression> instanceof <type>`
+- `(<type>) <expression>`
+
+For instance, let's imagine that we want to refuel a Car before starting the race, and race methods receives two vehicles as parameter, than can be car or not. We can add this functionality as follows
+
+```java
+public static int race(Vehicle v1, Vehicle v2, double length) { 
+	v1.fullBrake(); 
+	v2.fullBrake(); 
+	
+	if(v1 instanceof Car){
+		Car c = (Car) v1;
+		c.refuel(new FuelTank( ... ));
+	}
+	
+	if(v2 instanceof Car){
+		Car d = (Car) v2;
+		d.refuel(new FuelTank( ... ));
+	}
+	
+	double distancev1 = 0, distancev2 = 0; 
+	while(distancev1 < length && distancev2 < length) { 
+		v1.accelerate(Math.random()*10.0); 
+		v2.accelerate(Math.random()*10.0); 
+		distancev1 += v1.getSpeed(); 
+		distancev2 += v2.getSpeed(); 
+	} 
+	
+	if(distancev1 >= length) { 
+		if(distancev2 >= length) 
+			return -1; 
+		else 
+			return 1; 
+	} else 
+		return 2; 
+	} 
+}
+```
+
+- 💡Which method would be called if the casting is `Car c = (Car) v1;` and you pass a `Car` subclass? The method `refuel` of `Car` or the overridden by the subclass would be called?
+	- *Spoiler: The subclass's method*
+
+## Interfaces
+It defines a list of public method signatures without providing an implementation for them. Like classes, it is declared in a Java file, it belongs to a package, and it defines a type we can use in our program. For instance, we can define an interface called `Loadable` that contains the methods that allow us to load and unload Trucks.
+
+```java
+package it.unive.dais.po1.vehicles;
+
+public interface Loadable {
+	public void chargeLoad(double amount);
+	public double unload();
+}
+```
+
+Classes can implement interfaces, as much as we want, while they can extend just one class. When a class implements an interface, it needs either to implement either all the method defined in the interface, or few or none of the methods, but then it must be declared as **abstract**.

@@ -120,7 +120,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 386.0124969482422
+    "width": 386.0124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -136,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 1/Object oriented programming (6).pdf",
+                "file": "Secondo Anno/OOP/modulo 1/OOP Concept.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 1/Object oriented programming (6).pdf",
+                "file": "Secondo Anno/OOP/modulo 1/OOP Concept.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 1/Object oriented programming (6).pdf"
+                "file": "Secondo Anno/OOP/modulo 1/OOP Concept.md"
               }
             }
           }
@@ -198,11 +199,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "49c9cf5b0dbc8037",
+  "active": "d7815b2e0106fd64",
   "lastOpenFiles": [
-    "Secondo Anno/OOP/modulo 1/OOP Concept.md",
     "Secondo Anno/OOP/modulo 1/Object oriented programming (6).pdf",
-    "Secondo Anno/Sistemi Operativi/modulo 1/book-co.pdf",
+    "Secondo Anno/OOP/modulo 1/OOP Concept.md",
+    "Secondo Anno/OOP/modulo 1/code/test/casting/Vehicle.class",
+    "Secondo Anno/OOP/modulo 1/code/test/casting/Race.class",
+    "Secondo Anno/OOP/modulo 1/code/test/casting/Main.java",
+    "Secondo Anno/OOP/modulo 1/code/test/casting/Main.class",
+    "Secondo Anno/OOP/modulo 1/code/test/casting/example",
+    "Secondo Anno/OOP/modulo 1/code/test/casting/Car.class",
+    "Secondo Anno/OOP/modulo 1/code/test/example",
+    "Secondo Anno/OOP/modulo 1/code/test/casting",
+    "Secondo Anno/OOP/modulo 1/code/test/Main.class",
     "Secondo Anno/Sistemi Operativi/modulo 1/Indice.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/Memoria.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Gerarchia dei dati.md",
@@ -217,20 +226,12 @@
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Strategie di Memoria e allocazione.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Gestione e Gerarchie della memoria.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Intro.md",
-    "Secondo Anno/Algebra Lineare/exercise/Foglio3_basi_sottospazi.pdf",
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Directories.md",
     "README.md",
     "test.md",
     "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/OOP/modulo 1/Risposte esame OOP.md",
-    "Secondo Anno/OOP/modulo 1/PO.pdf",
-    "Secondo Anno/OOP/modulo 2/Effective Java_ Programming Language Guide ( PDFDrive ).pdf",
-    "Secondo Anno/Algebra Lineare/exercise/Foglio10_determin_inversa.pdf",
-    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 6.pdf",
-    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 7.pdf",
-    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 5.pdf",
-    "Secondo Anno/Algebra Lineare/exercise/20210111 Primo appello - Soluzioni.pdf",
     "Secondo Anno/Calendar/2024-04-22 studio algebra.md",
     "Secondo Anno/OOP/modulo 2/exercise/Domande Eserciziario.md",
     "Secondo Anno/OOP/modulo 2/exercise/theory/Command.md",
