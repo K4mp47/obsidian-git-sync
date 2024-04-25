@@ -333,3 +333,60 @@ public interface Loadable {
 ```
 
 Classes can implement interfaces, as much as we want, while they can extend just one class. When a class implements an interface, it needs either to implement either all the method defined in the interface, or few or none of the methods, but then it must be declared as **abstract**.
+
+Java 8 added support for implementing a part of interfaces. In particular, implementations of methods in interfaces are called default implementations. One can define a method in an interface with the keyword default, and he/she then provides the implementation of the method. If you define a field inside an interface, it will be automatically a static and final, therefore they cannot be assigned. A solution is to use a field with methods getter and setter outside the interface, inside the class that implements the interface.
+
+For example
+```java
+interface Loadable { 
+	double getLoad();
+	void setLoad(double l); 
+	
+	default public void chargeLoad(double amount) { 
+		if(amount>0.0) 
+			this.setLoad(this.getLoad() + amount); 
+	} 
+	
+	default public double unload() { 
+		double value = this.getLoad(); 
+		this.setLoad(0.0); 
+		return value; 
+	}
+}
+```
+
+```java
+public class HorseCat extends Vehicle implements Loadable {
+	private double loadedCharge;
+	public double getLoad() {
+		return loadedCharge;
+	}
+	
+	public void setLoad(double l){
+		this.loadedCharge = l;
+	}
+}
+
+public class Truck extends Car implements Loadable {
+	private double loadedCharge;
+	public double getLoad() {
+		return loadedCharge;
+	}
+	
+	public void setLoad(double l){
+		this.loadedCharge = l;
+	}
+}
+```
+
+That is not the most secure in term of code security, but is the best that we have for now. The methods getter and setter are public, and therefore external code might read and write this field.
+
+An interface can extend other interfaces with the keyboard **extends**.
+
+**Abstract classes or interfaces? The hard choice**
+
+There is no general or fixed rule that can be applied to any context. The experience will show what are the benefits of one choice or the other. However, generally speaking, ***if what we are defining describes a property or some aspects of the class, then this should be an interface. If instead it represent the main entity of the class, then this should be a class*** in order to define not only the functionalities but also the state of the objects.
+
+## Method dispatching
+
+We need to study how we decide what implementation of the method is executed, that is, how the method call is dispatched. This is exactly the goal of this section.
