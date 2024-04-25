@@ -136,3 +136,136 @@ public class Bicycle extends Vehicle {
 	} 
 }
 ```
+
+## Final
+Final is a keyword for declare a class, a field or a method without let someone change it after it's declare. In the case of methods, it doesn't let operation like overriding, while talking about classes it doesn't let a class to be extended. This is usually used in classes just when our class contains the ultimate implementation of the object we want to represent
+
+```java
+// Use of final in Java
+
+final int numero = 10; // field
+
+public final void accelerate(double amount) { ... } // method
+
+public final class Bicycle extends Vehicle { ... } // class
+```
+
+## Aggregation and inheritance
+  
+Inheritance and aggregation are fundamental concepts in object-oriented programming (OOP) used to model relationships between objects in Java. They represent different ways to establish connections between classes. Here's a breakdown of each:
+
+**Inheritance**
+
+- Represents an "is-a" relationship. A subclass inherits attributes and methods from its parent class.
+- Subclass becomes a specialized version of the parent class, extending its functionality.
+- Follows the Liskov Substitution Principle, meaning a subclass object should be interchangeable with a parent class object without affecting program correctness.
+
+**Aggregation**
+
+- Represents a "has-a" relationship. A class contains an object of another class as a member variable.
+- Establishes a looser coupling between objects compared to inheritance.
+- The containing object can access the member object's attributes and methods.
+- Lifetime of the member object is independent of the containing object in most cases (unlike composition, a stronger form of aggregation).
+
+**Choosing Between Inheritance and Aggregation**
+
+- Use inheritance when the subclass truly "is-a" type of the parent class and shares most functionalities.
+- Use aggregation for a "has-a" relationship where the containing object can work independently of the member object.
+
+**They can be used together:**
+
+Inheritance and aggregation can coexist. A subclass can inherit from a parent class and also have member objects of other classes.
+
+Here's an example:
+
+```java
+class Car {
+  public void drive() {
+    // ...
+  }
+}
+
+class Engine {
+  public void start() {
+    // ...
+  }
+}
+
+class SportsCar extends Car { // Inheritance
+  private Engine engine; // Aggregation
+
+  public SportsCar(Engine engine) {
+    this.engine = engine;
+  }
+
+  @Override
+  public void drive() {
+    engine.start(); // Accessing member object's method
+    super.drive(); // Calling inherited method
+  }
+}
+
+```
+
+In this example, `SportsCar` inherits from `Car` and also has an `Engine` object as a member variable. It demonstrates both inheritance ("is-a Car") and aggregation ("has-a Engine").
+
+## Subtyping
+It's the principle of have a class that provides the same components of the super classes, maybe redefining their behavior, and it potentially adds some more components.
+
+**The substitution principle**
+
+It simply states that if a class C1 exposes an interface that is wider than C2, then we can have instances of C1 wherever an instance of C2 is expected. For wider we mean that the interface of C1 defines all the fields and methods of C2, plus something else.
+
+```java
+public class Race { 
+/** 
+* 
+* @param v1 the first vehicle 
+* @param v2 the second vehicle 
+* @param length the length of the race 
+* @return the id of the winner of the race, or -1 
+* 
+*/ 
+
+public static int race(Vehicle v1, Vehicle v2, double length) { 
+	v1.fullBrake(); 
+	v2.fullBrake(); 
+	double distancev1 = 0, distancev2 = 0; 
+	while(distancev1 < length && distancev2 < length) { 
+		v1.accelerate(Math.random()*10.0); 
+		v2.accelerate(Math.random()*10.0); 
+		distancev1 += v1.getSpeed(); 
+		distancev2 += v2.getSpeed(); 
+	} 
+	
+	if(distancev1 >= length) { 
+		if(distancev2 >= length) 
+			return -1; 
+		else 
+			return 1; 
+	} else 
+		return 2; 
+	} 
+}
+```
+
+```java
+Car myCar = new Car(0, new FuelType("diesel", 1.4, 0.01)); Bicycle myBicycle = new Bicycle(10); 
+Truck myTruck = new Truck(0, diesel); 
+myCar.refuel(new FuelTank(diesel, 2)); 
+myTruck.refuel(new FuelTank(diesel, 3)); 
+Race.race(myBicycle, myCar, 100); 
+Race.race(myBicycle, myTruck, 100);
+```
+
+This .race() method is a perfect example of what wider means. As you can see, the methods expect as parameter two vehicles, but when we call it from the `Race` object, we pass it a `Bicycle` and a `Car/Truck`. That is possible for the principle of subtyping and inheritance.
+
+```mermaid 
+flowchart TD
+	subgraph inheritance principle
+    Vehicle --extends--> Car
+    Vehicle --extends--> Bicycle
+    Car --extends--> Truck
+    end
+```
+
