@@ -392,3 +392,17 @@ There is no general or fixed rule that can be applied to any context. The experi
 We need to study how we decide what implementation of the method is executed, that is, how the method call is dispatched. This is exactly the goal of this section.
 
 **Static dispatching**
+
+When we invoke a method, we have an expression like \<receiver\> .<\method_name\>(\<parameter\>). The code we want to execute is attached to the class of the receiver, and therefore we need to decide from which class we want to start the research of the implementation. Obviously, if the class doesn't contain the implementation, we will then look into the superclass, and so on.
+
+If we apply static dispatching, we start by looking for the method implementation from the static type of the receiver. For instance, let's consider again the implementation of Race.race. When we invoke v1.accelerate(), we know that v1's static type is Vehicle, so will always execute the implementation of accelerate in class Vehicle despite the fact that the vehicle passed is a car, truck, bycicle, or horse chart.
+
+That means, shortly, that the static dispatching doesn't support polymorphism; the static type is known at compile time, and it is the same for all the possible executions of the program.
+
+**Dynamic dispatching**
+
+In order to have a support for polymorphism, we need to apply dynamic dispatching.
+this means that we start the search for the code to be executed from its dynamic type.
+Going back to the race example, we execute the implementation of accelerate in class Car. Instead if we pass a Truck, we first look into class Truck, we do not find an implementation, we search into its super class Car, ant there we execute its implementation of method accelerate. If we pass Bicycle, we execute the implementation of accelerate inside Vehicle.
+
+**What if is overloading inside the code?**
