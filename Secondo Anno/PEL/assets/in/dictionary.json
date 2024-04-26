@@ -1,0 +1,17 @@
+{
+  "first key": 5,
+  "second \"key\"": [
+    4.12,
+    2,
+    true
+  ],
+  "third key": "",
+  "fourth key": {
+    "a": 4,
+    "b": [
+      4,
+      null
+    ],
+    "c": []
+  }
+}
