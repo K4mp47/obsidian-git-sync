@@ -390,3 +390,5 @@ There is no general or fixed rule that can be applied to any context. The experi
 ## Method dispatching
 
 We need to study how we decide what implementation of the method is executed, that is, how the method call is dispatched. This is exactly the goal of this section.
+
+**Static dispatching**
