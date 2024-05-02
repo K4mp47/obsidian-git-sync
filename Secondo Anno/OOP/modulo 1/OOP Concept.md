@@ -406,3 +406,100 @@ this means that we start the search for the code to be executed from its dynamic
 Going back to the race example, we execute the implementation of accelerate in class Car. Instead if we pass a Truck, we first look into class Truck, we do not find an implementation, we search into its super class Car, ant there we execute its implementation of method accelerate. If we pass Bicycle, we execute the implementation of accelerate inside Vehicle.
 
 **What if is overloading inside the code?**
+That can increase the complexity of the subtype relations inside the code, making not really clear what implementation should be executed.
+```java
+public class Race { 
+	public static int race(Vehicle v1, Vehicle v2, double length) {...} 
+	public static int race(Car v1, Car v2, double length) {...} 
+	public static int race(Car v1, Vehicle v2, double length) {...} } 
+```
+
+We have now the following invocations. 
+
+```java
+Car c1 = new Car(...), c2 = new Car(...); 
+Bicycle b3 = new Bicycle(...); 
+Vehicle v1 = c1, v2 = c2, v3 = b3; 
+
+Race.race(c1, c2); 
+Race.race(c1, v3); 
+Race.race(v1, b3); 
+Race.race(v1, v2);
+```
+
+The last case compared with the first one looks very odd: we are passing exactly the same runtime value to race, but in one case we execute on implementation, in another we choose a different implementation
+
+Java adopted dynamic dispatching on the receiver, and static dispatching on the parameters. 
+
+Remember, static method are not polymorphic, since when we invoke them we know what implementation we will be executing at runtime.
+
+## Generics
+
+It's one of the coolest part in term of polymorphism. Is the ability of to run many different types passed as arguments. They can be seen as type of parameters.
+
+An example of generics:
+
+```java
+<T> T identity(T value){
+	return value;
+}
+```
+
+This definition is read as follow:
+- `<T>` specifies that the method receives as a parameter a 'type' T
+	- 💡You can write what you want between `<...>`
+- `T` specifies the return type
+- `T value` specifies that the method accept as parameter a T generic type
+
+Even classes can be parameterized on generics when they are declared, and these generics can be used as the static type of fields, parameters, and returned values.
+They are widely used when defining data structures, since these aim at containing any type of object and value. For instance, let's imagine we want to implement a list that allows us to add, get and check if the list contains an element. This list will be parameterized on a generic, that is the type of the object contained in the list.
+
+```java
+public class List<V>{ // <V> specifies the use of a generic V
+	private V[] elements = ...;
+	
+	public void add(V el){ // parameter generic
+		int n = elements.length+1;
+		elements = Arrays.copyOf(elements, n);
+		elements[n-1]=el;
+	}
+	
+	public boolean contains(V el){ // parameter generic
+		for(int i=0; i < elements.length; i++){
+			if(elements[i]==el)
+				return true;
+		}
+		return false;
+	}
+	
+	public V get(int i){ // return a generic
+		return elements[i];
+	}
+}
+```
+
+If now we create an instance of `List`, we need to specify the generics we want to use.
+This is done by declaring them in the new statement, as follow:
+
+```java
+List<Vehicle> v = new List<Vehicle>();
+```
+
+What if we want to parameterize a single method on a generic and not an whole class?
+Java let you do it, with the following structured code
+
+```java
+public class List<V>{
+	...other code...
+	// that method, given a generic value, return
+	// a list containing such value
+	public static <T> List<T> toList(T value){
+		List<T> result = new List<T>();
+		result.add(value);
+		return result;
+	}
+}
+```
+
+↪ As you can see the generic is declared after the various modifiers and before the return type. They can be used as static types of parameters, returned values, and local variables.
+

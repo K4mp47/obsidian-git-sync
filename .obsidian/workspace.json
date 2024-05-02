@@ -61,7 +61,7 @@
             }
           },
           {
-            "id": "5b73056d040e37ab",
+            "id": "d02076d41a2b2231",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 1/OOP Concept.md",
+                "file": "Secondo Anno/OOP/modulo 1/Object oriented programming (6).pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 1/OOP Concept.md",
+                "file": "Secondo Anno/OOP/modulo 1/Object oriented programming (6).pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 1/OOP Concept.md"
+                "file": "Secondo Anno/OOP/modulo 1/Object oriented programming (6).pdf"
               }
             }
           }
@@ -199,20 +199,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d7815b2e0106fd64",
+  "active": "49c9cf5b0dbc8037",
   "lastOpenFiles": [
-    "Secondo Anno/Algebra Lineare/exercise/Foglio3_basi_sottospazi.pdf",
     "Secondo Anno/OOP/modulo 1/OOP Concept.md",
-    "Secondo Anno/PEL/test/test_io.cpp",
-    "Secondo Anno/PEL/test/test.cpp",
-    "Secondo Anno/PEL/test",
-    "Secondo Anno/PEL/src/897569/json.cpp",
-    "Secondo Anno/PEL/src/out.json",
-    "Secondo Anno/PEL/src/json.hpp",
-    "Secondo Anno/PEL/src/json.cpp",
-    "Secondo Anno/PEL/src/json",
-    "Secondo Anno/PEL/src/in.json",
-    "Secondo Anno/PEL/src/897569.tar.gz",
+    "Secondo Anno/OOP/modulo 1/Object oriented programming (6).pdf",
+    "Secondo Anno/Sistemi Operativi/testing/semaforo/Incrocio.java",
+    "Secondo Anno/Sistemi Operativi/testing/semaforo/Incrocio.class",
+    "Secondo Anno/Sistemi Operativi/testing/semaforo/Automobili.class",
+    "Secondo Anno/Sistemi Operativi/testing/semaforo/Automobili.java",
+    "Secondo Anno/Sistemi Operativi/testing/semaforo/Automobili$Stampa.class",
+    "Secondo Anno/Sistemi Operativi/testing/semaforo",
+    "Secondo Anno/Sistemi Operativi/testing/scheduler/Scheduler.class",
+    "Secondo Anno/Sistemi Operativi/testing/scheduler/Main.java",
+    "Secondo Anno/Sistemi Operativi/testing/scheduler/Balancer.class",
     "Secondo Anno/PEL/README.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/Indice.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/Memoria.md",
