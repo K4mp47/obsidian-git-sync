@@ -61,7 +61,7 @@
             }
           },
           {
-            "id": "d02076d41a2b2231",
+            "id": "5b73056d040e37ab",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -120,7 +120,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 386.0124969482422
+    "width": 386.0124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -200,7 +201,7 @@
   },
   "active": "d7815b2e0106fd64",
   "lastOpenFiles": [
-    "Secondo Anno/OOP/modulo 1/Object oriented programming (6).pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio3_basi_sottospazi.pdf",
     "Secondo Anno/OOP/modulo 1/OOP Concept.md",
     "Secondo Anno/PEL/test/test_io.cpp",
     "Secondo Anno/PEL/test/test.cpp",
