@@ -342,6 +342,7 @@ $$a(1,0,0)+b(1,1,0)+c(0,1,1)=0$$
 $$\begin{cases}a+b=0\\b+c=0\\c=0\end{cases}\rightarrow\begin{cases}a=0\\b=0\\c=0\end{cases}$$
 - I vettori sono linearmente indipendenti.
 - Ora verifico che siano un insieme generatore
+💡*metodo errato, da non seguire, guardare esercizio sotto*
 $$x(1,0,0)+y(1,1,0)+z(0,1,1)=(x+y,y+z,z)$$
 - i vettori coprono tutte le direzioni in $R^3$ e di conseguenza sono insieme generatore di $R^3$
 
@@ -403,6 +404,57 @@ $$\begin{cases}a+c=0\\b+c+3d=0\\b+c=0\\b=0\end{cases}\rightarrow\begin{cases}b=0
 
 $$\begin{pmatrix}1&0&0&0\\0&1&1&1\\1&1&1&0\\0&3&0&0\end{pmatrix}=\begin{pmatrix}1&0&0&0\\0&3&0&0\\0&1&1&1\\1&1&1&0\end{pmatrix}=\begin{pmatrix}1&0&0&0\\0&3&0&0\\0&1&1&1\\0&0&0&-1\end{pmatrix}=\begin{pmatrix}1&0&0&0\\0&3&0&0\\0&0&1&1\\0&0&0&-1\end{pmatrix}=4$$
 - I quattro vettori rimasti sono indipendenti tra loro
+
+- Stabilire se i seguenti vettori di $R^4$ sono linearmente indipendenti, se fungono da base e se serve un vettore $v_4$ per completare la base
+
+$$v_1=(1,0,2,-2)\quad v_2=(2,0,2,1)\quad v_3=(1,1,0,1)$$
+- Per stabilire se sono indipendenti li si mette tutti a sistema
+
+$$
+\begin{cases}
+a+2b+c=0\\
+c=0\\
+2a+2b=0\\
+-2a+b+c=0
+\end{cases} \rightarrow
+\begin{cases}
+a=-2b \rightarrow a=0 \\ 
+c=0\\
+2a+2b=0\\
+-2a+b=0 \rightarrow b=0
+\end{cases}
+$$
+- I tre vettori risultano essere indipendenti tra loro, ora verichiamo che possano fungere da base per $R^4$ 
+
+$$\begin{pmatrix}
+1&0&2&-2\\
+2&0&2&1\\
+1&1&0&1\\
+\end{pmatrix}
+\rightarrow
+\begin{pmatrix}
+1&0&2&-2\\
+0&0&-2&5\\
+1&1&0&1\\
+\end{pmatrix}\rightarrow
+\begin{pmatrix}
+1&0&2&-2\\
+0&0&-2&5\\
+1&1&0&1\\
+\end{pmatrix}\rightarrow
+\begin{pmatrix}
+1&0&2&-2\\
+1&1&0&1\\
+0&0&-2&5\\
+\end{pmatrix}\rightarrow
+$$
+$$
+\begin{pmatrix}
+1&0&2&-2\\
+0&1&-2&-1\\
+0&0&-2&5\\
+\end{pmatrix} = 3$$
+- Il rango risulta essere inferiore di quello di $R^4$ di conseguenza non sono generatori, serve $v_4$. Il vettore $v_4=(0,0,0,1)$ sembrerebbe fare al caso nostro, infatti se lo inseriamo nella matrice, il risultato diverrà 4, ed il sistema rimane indipenden
 
 ## Esercizio svolto a lezione il 22/04/24
 ---
