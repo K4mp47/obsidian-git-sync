@@ -1,0 +1,21 @@
+#mainframe {
+  margin-top: 1vh;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+#mainframe > h1 {
+  margin: 0;
+}
+
+body { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin-top: 2vh;
+}
