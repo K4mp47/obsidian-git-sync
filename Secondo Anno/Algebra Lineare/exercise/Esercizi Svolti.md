@@ -332,7 +332,7 @@ $$S:\begin{cases}x+z=0\\3y-w=0\end{cases}\rightarrow\begin{cases}-(z_a+z_b)+(z_a
 ## Stabilire se ognuno dei seguenti sottoinsiemi di R_2[x] è formato da vettori linearmente indipendenti $\{1,x,x^2\},\{1,x\}$
 $$S=\{1,x,x^2\}\rightarrow\text{si fa il sistema ricordando la regola $as_1+bs_2+cs_3=0$}$$
 - In questo caso l'unico modo per far si che $a1+bx+cx^2=0$ è settare $a=b=c=0$. Se non fosse stato così, i vettori non sarebbero linearmente indipendenti. Stessa cosa vale per $\{1,x\}$.
-- Per esempio $\{x+x^2,1+x+x^2\}$ non è formato da vettori linearmente indipendenti.
+- Per esempio $\{x+x^2,2x+2x^2\}$ non è formato da vettori linearmente indipendenti.
 
 ## Stabilire se ognuno dei seguenti sottoinsiemi di $R^3$ è formato da vettori linearmente indipendenti e se è un insieme di generatori. Se il sottoinsieme non costituisce una base di $R^3$, completarlo ad una base o estrarre una base
 
@@ -454,7 +454,36 @@ $$
 0&1&-2&-1\\
 0&0&-2&5\\
 \end{pmatrix} = 3$$
-- Il rango risulta essere inferiore di quello di $R^4$ di conseguenza non sono generatori, serve $v_4$. Il vettore $v_4=(0,0,0,1)$ sembrerebbe fare al caso nostro, infatti se lo inseriamo nella matrice, il risultato diverrà 4, ed il sistema rimane indipenden
+- Il rango risulta essere inferiore di quello di $R^4$ di conseguenza non sono generatori, serve $v_4$. Il vettore $v_4=(0,0,0,1)$ sembrerebbe fare al caso nostro, infatti se lo inseriamo nella matrice, il risultato diverrà 4, ed il sistema rimane indipendente
+
+## Sono dati i vettori di $R^3$ $$v_1=(1,2,1)\quad v_2=(1,0,2) \quad v_3=(1,k,-1)$$ trovare per quali valori di $k$ i tre vettori formano una base di $R^3$ calcolare al suo variare la dimensione del sottospazio $E=Span\{v_1,v_2,v_3\}$ ed $F=Span\{v_2,v_3\}$
+
+- Per verificare che siano indipendenti mi basta porli a sistema e verificare quando tutti e tre danno $0$ 
+$$\begin{cases}a+b+c=0\\2a+kc=0\\a+2b-c=0\end{cases}\rightarrow\begin{cases}a=-b-c\\2a+kc=0\\-b-c+2b-c=0\rightarrow b-2c=0\end{cases} \rightarrow$$ $$\begin{cases}a=-b-c\\-2b-2c+kc=0\rightarrow-2b+(k-2)c=0\\b-2c=0\end{cases}\rightarrow \begin{cases}a=-b-c\\-4c+(k-2)c=0\\b-2c=0\end{cases}$$
+- Arriviamo quindi a $-4c+kc-2c=0 \rightarrow kc-6c=0 \rightarrow k=6$ . Se quindi, $k=6$  $v_3$ diventa combinazione lineare degli altri due.  
+	- Ciò vuol dire che sono lin. indip. se $k\neq6$ 
+- Se $k=6$ $Dim(E)=2$ altrimenti $3$ 
+- Per $F$ dobbiamo verificare il tutto ma solo per $v_2,v_3$
+$$\begin{cases}a+b=0\\kb=0\\2a-b=0\end{cases}=\begin{cases}a=-b\\kb=0\\ b=0\end{cases}$$
+- Questo vuol dire che i due rimangono lin. indip. per ogni valore che $k$ assume
+## Dati i seguenti sistemi lineari omogenei nelle incognite $x,y,z$ determinare in ciascun caso una base del sottospazio di $R^3$ formato dalle soluzioni del sistema
+
+$$S_1=x-y+2z=0 \quad S_2=\begin{cases}x+y-z=0\\x-3y=0\end{cases} \quad S_3=\begin{cases}x+y-z=0\\x-3y=0\\2x+y=0\end{cases}$$
+
+$$S_1=\{\:(x,y,z) \in R^3: \: x-y+2z=0\:\} \rightarrow \text{$s \in S_1$ nella forma } s=\begin{pmatrix}a-2b\\ a\\ b\end{pmatrix}=a\begin{pmatrix}1\\1\\0\end{pmatrix}+b\begin{pmatrix}-2\\0\\1\end{pmatrix}$$
+
+- Siamo arrivati a quella forma ponendo come matrice il sistema e trovandone il rango che nel nostro caso corrisponde ad $1$ ed essendo uno sottospazio di $R^3$ ciò vuol dire che abbiamo $3-1=2$ variabili libere che chiamiamo $a$ e $b$. 
+- sostituiamole ora all'interno dell'equazione che abbiamo $x-a+2b=0 \rightarrow x=a-2b$ di conseguenza sappiamo che $(a-2b,a,b)$ è la forma che dobbiamo trascrivere in una combinazione lineare di due vettori moltiplicati per $a$ e $b$    trovando così $a\begin{pmatrix}1\\1\\0\end{pmatrix}+b\begin{pmatrix}-2\\0\\1\end{pmatrix}$ e trovando la soluzione al nostro esercizio
+## Stabilire per quali valori di $T \in R$ $u=(2,t,0,1)$ appartiene al sottospazio $W$ generatore da $v=(1,0,0,1)$ e $w=(0,1,0,1)$. Calcolare poi la dimensione del sottospazio di $R^4$ generato dai tre al variare di $t \in R$
+
+- Per appartenere al sottospazio vuol dire che $t$ è una combinazione lineare di $v,w$ infatti $2v-w=u$ che ci porta a sapere che $t=-1$. Da qui per calcolare la dimensione del sottospazio vediamo semplicemente che se $t=-1$ è combinazione lineare e di conseguenza la dimensione è $2$ altrimenti è $3$ essendo tutti e tre linearmente indipendenti
+
+## Sia $E$ un sottospazio di $R^4$ formato dalle soluzioni dell'equazione $x+y+z+w=0$ e sia $F=Span\{(1,1,1,-3),(1,-1,1,-1),(1,-1,0,0)\}$. Determinare una base e la dimensione di $E$ e di $F$ e dire se $F$ è sottospazio in $E$ e se $F=E$ 
+
+- Prima cosa da fare prendere l'equazione e come visto nell'esercizio precedente trovare la base 
+- Notiamo subito che il rango è $1$ e quindi ci servono $3$ variabili libere, che sceglieremo come $y,z,w$. di conseguenza avremo come combinazione lineare $(y+z+w,y,z,w)$ ovvero $$y(1,1,0,0)+z(1,0,1,0)+w(1,0,0,1)$$
+- Da qui ora possiamo dedurre che la dimensione del sottospazio $E$ sia $3$.
+- Per rispondere alla seconda e terza domanda, $F\subset E$ è errata essendo entrambe della stessa dimensione, mentre $F=E$ non è comunque possibile, per esempio $(-2,0,-4,2)$ non esiste in $F$ ma in $E$ si 
 
 ## Esercizio svolto a lezione il 22/04/24
 ---
@@ -562,13 +591,7 @@ $$con $k \in R$, determinare: 1) Il rango di $A_k$ al variare di $k$ 2) Il nucle
 ---
 
 ## Foglio 10
-## Calcolare il determinante della matrice $$ \begin{pmatrix}
--1 & 0  & 1 & 2\\
-2 & 1 & 3 & -1\\
-0 & 1  & 2 & -1\\
-3 & 0  & 1 & -2
-\end{pmatrix}
-$$
+## Calcolare il determinante della matrice $$ \begin{pmatrix}-1 & 0  & 1 & 2\\2 & 1 & 3 & -1\\0 & 1  & 2 & -1\\3 & 0  & 1 & -2\end{pmatrix}$$
 - Uso il metodo di Laplace:
 	- Si sceglie una riga o una colonna da usare (scelgo la seconda colonna perché ha più zeri)
 		- $\sum a_{ij}(-1)^{i+j}Det(matrice\:restante)$     
@@ -577,13 +600,8 @@ $$
 - Uso il metodo di eliminazione di Gauss
 	- Si prende la matrice triangolare superiore (risolvo mettendo a zero tutta la matrice triangolare inferiore)
 	- determinante = prodotto degli elementi sulla diagonale
-	- *Se scambiamo righe cambia anche il segno!*
-
-## Calcolare $A^{-1}$ e verificare che $AA^{-1}=I$ $$\begin{pmatrix}
-2&1&1\\
-4&1&0\\
--2&2&1
-\end{pmatrix}$$
+	- **Se scambiamo righe cambia anche il segno!**
+## Calcolare $A^{-1}$ e verificare che $AA^{-1}=I$ $$\begin{pmatrix}2&1&1\\4&1&0\\-2&2&1\end{pmatrix}$$
 
 $$1(-1)^{1+3} \begin{pmatrix}4&1\\-2&2\end{pmatrix}+1(-1)^{3+3}\begin{pmatrix}2&1\\4&1\end{pmatrix} = 1(8-(-2))+1(2-4)=10-2=8\neq0 $$
 

@@ -6,7 +6,7 @@
       {
         "id": "b2583826bd0c8f9a",
         "type": "tabs",
-        "dimension": 90.2439024390244,
+        "dimension": 48.17872753763963,
         "children": [
           {
             "id": "d261942955f0c304",
@@ -27,7 +27,7 @@
               "type": "markdown",
               "state": {
                 "file": "Secondo Anno/cheatsheet_lat/cheatsheet.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -47,7 +47,7 @@
       {
         "id": "e73accfd39aad3f1",
         "type": "tabs",
-        "dimension": 9.75609756097561,
+        "dimension": 51.82127246236037,
         "children": [
           {
             "id": "d7815b2e0106fd64",
@@ -62,12 +62,12 @@
             }
           },
           {
-            "id": "d02076d41a2b2231",
+            "id": "9dffe0b566f04fcd",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio3_basi_sottospazi.pdf"
+                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio4_basi_sottospazi.pdf"
               }
             }
           }
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio4_basi_sottospazi.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio4_basi_sottospazi.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md"
+                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio4_basi_sottospazi.pdf"
               }
             }
           }
@@ -201,11 +201,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "676356614d8bc787",
+  "active": "9dffe0b566f04fcd",
   "lastOpenFiles": [
-    "test.md",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio6_app_lin.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio5_eserc_riassuntivi.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio4_basi_sottospazi.pdf",
     "Secondo Anno/Algebra Lineare/exercise/Esercizi Svolti.md",
+    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Algebra Lineare/exercise/Foglio3_basi_sottospazi.pdf",
+    "test.md",
     "Secondo Anno/OOP/modulo 1/Object oriented programming (6).pdf",
     "Secondo Anno/OOP/modulo 1/OOP Concept.md",
     "Secondo Anno/Sistemi Operativi/testing/semaforo/Incrocio.java",
@@ -214,8 +218,6 @@
     "Secondo Anno/Sistemi Operativi/testing/semaforo/Automobili.java",
     "Secondo Anno/Sistemi Operativi/testing/semaforo/Automobili$Stampa.class",
     "Secondo Anno/Sistemi Operativi/testing/semaforo",
-    "Secondo Anno/Sistemi Operativi/testing/scheduler/Scheduler.class",
-    "Secondo Anno/Sistemi Operativi/testing/scheduler/Main.java",
     "Secondo Anno/PEL/README.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/Indice.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/Memoria.md",
@@ -233,7 +235,6 @@
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Intro.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Directories.md",
     "README.md",
-    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/OOP/modulo 1/Risposte esame OOP.md",
     "Secondo Anno/Calendar/2024-04-22 studio algebra.md",
     "Secondo Anno/OOP/modulo 2/exercise/Domande Eserciziario.md",
