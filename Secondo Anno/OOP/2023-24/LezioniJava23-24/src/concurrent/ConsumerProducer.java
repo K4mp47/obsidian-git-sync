@@ -1,9 +1,7 @@
 package concurrent;
 
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class ConsumerProducer {
 
@@ -19,17 +17,10 @@ public class ConsumerProducer {
             while (true) {
                 int n = rnd.nextInt();
                 synchronized (buff) {   // lock
-                    if(buff.isEmpty()) {
-                        try {
-                            buff.wait();
-                        } catch (InterruptedException e) {
-                            throw new RuntimeException(e);
-                        }
-                    }
-                    int n = buff.remove(0);
+                    buff.add(n);
                     buff.notify();
                     System.out.printf("%s: added %d\n", getName(), n);
-                }                       // unlock
+                } // unlock
             }
         }
     }
@@ -40,7 +31,7 @@ public class ConsumerProducer {
         @Override
         public void run() {
             while (true) {
-                synchronized (buff) {
+                synchronized (buff) {  // lock
                     if (buff.isEmpty()) {
                         try {
                             buff.wait();
@@ -50,20 +41,25 @@ public class ConsumerProducer {
                     }
                     int n = buff.remove(0);
                     System.out.printf("%s: removed %d\n", getName(), n);
-                }
+                } // unlock
             }
         }
     }
 
     public static void main(String[] args) {
-        Thread p = new Producer();
-        Thread c = new Consumer();
-        p.start();
-        c.start();
-
+        List<Thread> threads = new ArrayList<>();
+        for (int i = 0; i < 20; ++i) {
+            Thread t = new Producer();
+            t.start();
+            threads.add(t);
+            t = new Consumer();
+            t.start();
+            threads.add(t);
+        }
         try {
-            p.join();
-            c.join();
-        } catch (InterruptedException e) {}
+            threads.get(0).join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

@@ -4,13 +4,14 @@
   "historyPriority": true,
   "historyLimit": 100,
   "history": [
+    ":question:",
+    ":warning:",
     ":bulb:",
     ":arrow_right_hook:",
     ":arrow_up:",
     ":raised_hand:",
     ":handshake:",
     ":package:",
-    ":stop_sign:",
-    ":warning:"
+    ":stop_sign:"
   ]
 }

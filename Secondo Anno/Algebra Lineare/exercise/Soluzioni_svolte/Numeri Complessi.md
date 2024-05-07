@@ -10,7 +10,11 @@ $$
 \arctan({\frac{b}{a}})+\pi \qquad \text{se $a < 0$, b qualsiasi} \\
 \end{cases}
 $$
+⚠ Sempre bene vedere gli esercizi del foglio 5 estratti dagli esami! All'interno è presente anche il calcolo di radici di un numero complesso
 
+Per calcolare la radice di un numero complesso si arriva alla forma esponenziale $\rho e^{\theta_k}$ per poi risolvere $\theta_k$
+$$\theta_k=\frac{Arg(z)+2k\pi}{n}$$
+dove $n$ è la radice (quarta, cubica, ecc.) e $k$ viene sostituito con $0,1,2 ,...,n-1$ 
 ### 1. Determinare parte reale e parte immaginaria del seguente numero complesso $z = \frac{i-4}{2i-3}$
 - Ci accorgiamo che al denominatore abbiamo una parte immaginaria, quindi fattorizziamo
 $$
@@ -53,7 +57,7 @@ $$
 $$
 	z = -1-i
 $$
-- $Re(z)=-1 \quad\quad Im(z)=-1$  
+- $Re(z)=-1 \quad\quad Im(z)=-i$
 ### 5. Forma algebrica di $z=\overline{(1-i)^3}$ 
 - Scomponiamo la potenza così da avere $i$ al quadrato
 $$

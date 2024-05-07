@@ -1,3 +1,51 @@
+## Esercizio 1
+- Calcolare $\frac{1-i}{1+i}^3$ in forma algebrica e trigonometrica
+Troviamo prima la forma algebrica del numero datoci
+
+$$\frac{1-i}{1+i}=\frac{1-i}{1+i}\frac{1-i}{1-i}=\frac{(1-i)^2}{(1+i)(1-i)}=\frac{1+i^2-2i}{1-i+i-i^2}=\frac{-2i}{1-i^2}=\frac{-2i}{2}=-i$$
+
+Da qui, estraiamo la forma trigonometrica
+$$(-i)^3=(-i)^2(-i)=i=\rho e^{i\theta}$$ ❓Immagino che sia perché $(-i)^2=-1$ per  cui $-1(-i)=i$ 
+
+Inoltre dobbiamo trovare:
+- $\rho=|z|=\sqrt{x^2+y^2}=\sqrt{1}=1$ 
+- $\theta=Arg(z)=arctan(\frac{1}{0})=\text{forma a=0,b>0} = \frac{\pi}{2}$ 
+
+Quindi il nostro numero in forma trigonometrica risulta essere $e^{i\frac{\pi}{2}}$ 
+
+--- 
+## Esercizio 2
+- Dato $z=\frac{1}{\sqrt3}-\frac{1}{i}$ determinare nella forma più comoda $z^22$
+
+Per farlo troviamo prima il numero in forma algebrica
+
+$$z=\frac{1}{\sqrt3}-\frac{1}{i}=\frac{1}{\sqrt3}+i$$
+
+Da qui estraiamo modulo e argomento di $z$.
+
+$\rho=\sqrt{x^2+y^2}=\sqrt{\frac{1}{3}+1}=\sqrt{\frac{4}{3}}=\frac{2}{\sqrt3}$ 
+
+$\theta=arctan(\frac{1}{-\sqrt{3}})=arctan(\sqrt3)=\frac{\pi}{3}$ 
+
+Per cui arriviamo ad avere $z^{22}=(\frac{2}{\sqrt3})^{22}*e^{i\frac{\pi}{3}*22}$ 
+Semplifichiamo ora la parte immaginaria notando che $\frac{22}{3}\pi$ può essere semplificato, avendo $\frac{6}{3}\pi$ come giro completo, possiamo far si che $\frac{22}{3}\pi-\frac{18}{3}\pi=\frac{4}{3}\pi$
+Per trasformarlo nella forma più comoda, troviamo coseno e seno del numero esponenziale e abbiamo finito
+$$\rho^{22}(cos(\frac{4}{3})+isin(\frac{4}{3}))=\rho^{22}(-\frac{1}{2}+i\frac{\sqrt3}{2})$$
+---
+## Esercizio 3
+- Determinare le seguenti radici e rappresentarle sul piano complesso
+$$(\frac{-2}{1-i\sqrt3})^{\frac{1}{4}}$$
+
+troviamo intanto la forma algebrica
+$$z=\frac{-2}{1-i\sqrt3}\frac{1+i\sqrt3}{1+i\sqrt3}=\frac{-2-2i\sqrt3}{1-i^23}=\frac{-1}{2}-\frac{i\sqrt3}{2}$$
+trovo modulo ed argomento
+
+$|z|=\sqrt{\frac{-1}{2}^2+\frac{-i\sqrt3}{2}^2}=\sqrt{\frac{1}{4}+\frac{-i^23}{4}}=\sqrt{\frac{1}{4}+\frac{3}{4}}=\sqrt{1}=1$
+
+$Arg(z)=\frac{\frac{-\sqrt3}{2}}{\frac{-1}{2}}=$  
+❓Non capisco come risolvere questo argomento!!! Devo chiedere una mano
+
+---
 ## Esercizio 7.
 - Stabilire se $W=\{(x,y,z) \in R^3:z=x-y\}$ è un sottospazio vettoriale di $V=R^3$
 

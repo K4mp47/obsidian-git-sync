@@ -1,3 +1,5 @@
+package misc;
+
 public class Zoo {
 
     public static class Animal {
@@ -25,7 +27,7 @@ public class Zoo {
         public void bark() {
             System.out.println("bau!");
         }
-        @Override
+
         public void eat(Animal a) {
             this.weight += a.weight * 2;
         }
