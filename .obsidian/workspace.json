@@ -94,8 +94,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -161,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/Tavola funzioni goniometriche-2-3.pdf",
+                "file": "Secondo Anno/OOP/modulo 1/OOP Concept.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/Tavola funzioni goniometriche-2-3.pdf",
+                "file": "Secondo Anno/OOP/modulo 1/OOP Concept.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +200,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/Tavola funzioni goniometriche-2-3.pdf"
+                "file": "Secondo Anno/OOP/modulo 1/OOP Concept.md"
               }
             }
           }
@@ -223,13 +222,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "baaf2be5b8bde074",
+  "active": "d7815b2e0106fd64",
   "lastOpenFiles": [
+    "Secondo Anno/Algebra Lineare/Tavola funzioni goniometriche-2-3.pdf",
     "Secondo Anno/Algebra Lineare/exercise/Foglio5_eserc_riassuntivi.pdf",
     "Secondo Anno/Algebra Lineare/Lezioni/A-Lezione 1.pdf",
     "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi riassuntivi foglio 5.md",
     "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Numeri Complessi.md",
-    "Secondo Anno/Algebra Lineare/Tavola funzioni goniometriche-2-3.pdf",
     "Secondo Anno/Algebra Lineare/exercise/Foglio4_basi_sottospazi.pdf",
     "Secondo Anno/Extra/fallingSand/index.html",
     "Secondo Anno/OOP/PO2/2019-20/Lezioni/src/it/unive",
