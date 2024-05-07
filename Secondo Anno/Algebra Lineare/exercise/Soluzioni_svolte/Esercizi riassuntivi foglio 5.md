@@ -42,8 +42,14 @@ trovo modulo ed argomento
 
 $|z|=\sqrt{\frac{-1}{2}^2+\frac{-i\sqrt3}{2}^2}=\sqrt{\frac{1}{4}+\frac{-i^23}{4}}=\sqrt{\frac{1}{4}+\frac{3}{4}}=\sqrt{1}=1$
 
-$Arg(z)=\frac{\frac{-\sqrt3}{2}}{\frac{-1}{2}}=$  
-❓Non capisco come risolvere questo argomento!!! Devo chiedere una mano
+$Arg(z)=\frac{\frac{-\sqrt3}{2}}{\frac{-1}{2}}=$  dalla tavola goniometrica risulta essere $\frac{4\pi}{3}$
+Ora dobbiamo analizzare tutte le radici $k=0,1,2,3$
+$$\theta_k=\frac{\frac{4\pi}{3}+2k\pi}{4}$$
+$$z_0=e^{\frac{\pi}{3}}$$
+$$z_1=e^{\frac{\pi}{3}+\frac{\pi}{2}}=e^{\frac{5\pi}{6}}$$
+$$z_2=e^{\frac{\pi}{3}+\pi}=e^{\frac{4\pi}{3}}$$
+$$z_3=e^{\frac{\pi}{3}+\frac{3\pi}{2}}=e^{\frac{11\pi}{6}}$$
+Così abbiamo trovato tutte le radici. Per rappresentarle in un piano complesso basta trovare i rispettivi coseni e seni che formeranno un quadrato con i vertici nelle rette che fa 60 gradi di angolo dal primo vertice rispetto all'asse delle x e 150 rispetto ai vertici posizionati nel primo e terzo quadrante.
 
 ---
 ## Esercizio 7.
@@ -79,3 +85,31 @@ Ciò vuol dire che $0=(x_1+x_2)(y_1+y_2)$.
 Da questa equazione Capiamo che se troviamo due vettori la cui somma delle $x$ e le $y$, susseguita dalla moltiplicazione dei due risultati desse un risultato diverso da $0$ esso non farebbe parte di $R^4$, proprio come nel caso scegliessimo $(1,0,0,0),(0,1,0,0)$.
 
 ---
+## Esercizio 11
+- $V = R^4, U=span\{u_1,u_2,u_3\}, W=span\{w_1,w_2\}$ ove
+$$u_1=(1,1,1,1)\quad u_2=(1,0,1,0)\quad u_3=(2,-3,2,-3)\quad w_1=(1,0,-1,0)\quad w_2=(1,5,1,5)$$
+Determinare dimU, dimW, dim($U\cap W$) e una sua base, una base di U + W e stabilire se V è somma diretta di V e W.
+
+Innanzitutto dobbiamo verificare che le basi siano tutte composte da vettori LI 
+Iniziamo da $W$:
+
+$$W=span((1,0,-1,0),(1,5,1,5))=\begin{cases}a+b=0\\5b=0\\-a+b=0\\\end{cases}\rightarrow a=b=0$$ quindi i vettori sono linearmente indipendenti, e quindi $Dim(W)=2$ 
+
+Ora invece verifichiamo per $U$:
+Notiamo come $u_3$ sia combinazione lineare di $u_1,u_2$ quindi possiamo benissimo toglierlo trovandoci con un'altro spazio di dimensione 2
+
+Ora cerchiamo $U\cap W$:
+$$a\begin{pmatrix}1\\1\\1\\1\end{pmatrix}+b\begin{pmatrix}1\\0\\1\\0\end{pmatrix}=c\begin{pmatrix}1\\0\\-1\\0\end{pmatrix}+d\begin{pmatrix}1\\5\\1\\5\end{pmatrix}$$
+
+$$\begin{cases}a+b=c+d\\a=5d\\a+b=-c+d\end{cases}=\begin{cases}a=c+d-b\\c-b=4d\\c+d=-c+d\end{cases}=\begin{cases}a=5d\\b=-4d\\c=0\end{cases}$$
+
+come risultato abbiamo che $d$ è un parametro libero, di conseguenza la dimensione è $1$, inoltre adesso possiamo scrivere $U \cap W$ come:
+
+$$5d\begin{pmatrix}1\\1\\1\\1\end{pmatrix}-4d\begin{pmatrix}1\\0\\1\\0\end{pmatrix}=\begin{pmatrix}d\\5d\\d\\5d\end{pmatrix}=d\begin{pmatrix}1\\5\\1\\5\end{pmatrix}$$
+Per cui abbiamo trovato anche una sua base
+
+Ora non resta che calcolare $U+W$ e verificare se $R^4$ non sia una somma diretta dei due
+
+$Dim(U+w)=2+2-1=3$
+
+e scartando $w_2$ abbiamo anche una base per questo sottospazio. Infine $V$ non è una somma diretta di $U$ e $W$ perché la loro intersezione non corrisponde al solo vettore  nullo.

@@ -6,20 +6,8 @@
       {
         "id": "b2583826bd0c8f9a",
         "type": "tabs",
-        "dimension": 48.467347845402045,
+        "dimension": 89.29336188436831,
         "children": [
-          {
-            "id": "d261942955f0c304",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi riassuntivi foglio 5.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
           {
             "id": "8c800d8153e396b4",
             "type": "leaf",
@@ -48,7 +36,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Numeri Complessi.md",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Applicazioni lineari.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,12 +53,12 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       },
       {
         "id": "e73accfd39aad3f1",
         "type": "tabs",
-        "dimension": 51.532652154597955,
+        "dimension": 10.706638115631693,
         "children": [
           {
             "id": "d7815b2e0106fd64",
@@ -94,7 +82,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -144,7 +133,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 386.0124969482422
+    "width": 386.0124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -160,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 1/OOP Concept.md",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Applicazioni lineari.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +167,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 1/OOP Concept.md",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Applicazioni lineari.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 1/OOP Concept.md"
+                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Applicazioni lineari.md"
               }
             }
           }
@@ -222,13 +212,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d7815b2e0106fd64",
+  "active": "2df286957c294196",
   "lastOpenFiles": [
     "Secondo Anno/Algebra Lineare/Tavola funzioni goniometriche-2-3.pdf",
-    "Secondo Anno/Algebra Lineare/exercise/Foglio5_eserc_riassuntivi.pdf",
-    "Secondo Anno/Algebra Lineare/Lezioni/A-Lezione 1.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Applicazioni lineari.md",
+    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi Svolti.md",
+    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Vettori, spazi e sottospazi vettoriali.md",
+    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi riassuntivi foglio 5.md",
     "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Numeri Complessi.md",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio5_eserc_riassuntivi.pdf",
+    "Secondo Anno/OOP/modulo 1/OOP Concept.md",
+    "Secondo Anno/Algebra Lineare/Lezioni/A-Lezione 1.pdf",
     "Secondo Anno/Algebra Lineare/exercise/Foglio4_basi_sottospazi.pdf",
     "Secondo Anno/Extra/fallingSand/index.html",
     "Secondo Anno/OOP/PO2/2019-20/Lezioni/src/it/unive",
@@ -236,15 +231,9 @@
     "Secondo Anno/OOP/PO2/2019-20/Lezioni/src/esercizi/ScrittoGiugno2019.java",
     "Secondo Anno/OOP/PO2/2019-20/Lezioni/src/esercizi/ScrittoGennaio2020.java",
     "Secondo Anno/OOP/PO2/2019-20/Lezioni/src/esercizi/ScrittoGennaio2019.java",
-    "Secondo Anno/OOP/PO2/2019-20/Lezioni/src/esercizi/ScittoGennaio2019__Pool.java",
-    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
-    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Vettori, spazi e sottospazi vettoriali.md",
-    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi Svolti.md",
-    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Applicazioni lineari.md",
     "Esercizi riassuntivi foglio 5.md",
     "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Durante Lezione.md",
     "Test.md",
-    "Secondo Anno/OOP/modulo 1/OOP Concept.md",
     "test.md",
     "Secondo Anno/PEL/README.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/Indice.md",
