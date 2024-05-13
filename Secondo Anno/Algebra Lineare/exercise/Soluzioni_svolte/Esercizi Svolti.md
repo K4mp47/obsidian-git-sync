@@ -6,4 +6,6 @@
 - [[Esercizi riassuntivi foglio 5]]
 - [[Applicazioni lineari]] 
 - [[Matrici e applicazioni lineari]]
+- [[Algoritmo di Gauss]]
+- [[Cramer e matrici inverse]]
 - [[Durante Lezione]]

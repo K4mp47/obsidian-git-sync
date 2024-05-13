@@ -176,7 +176,6 @@ $$\begin{cases}x=-z\\y=z\\x+2y=0\end{cases}=\begin{cases}x=0\\y=0\\z=0\end{cases
 Essendo quindi la loro intersezione solo l'elemento nullo, e tutti linearmente indipendenti tra loro, essi formano $R^3$.
 
 ---
-# 🏴
 ## Esercizio 12
 
 - Sia $T:R^3\rightarrow R^3$ tale che
@@ -188,7 +187,7 @@ $$\begin{pmatrix}-1&2-a&1\\1&-1&1\\1&-1&4-a\end{pmatrix}=\begin{pmatrix}-1&2-a&1
 
 E calcolo il determinante: $-1(1-a)(3-a)\neq0$ per $a\neq3,a\neq0$
 quindi per $a\neq3,a\neq0$ la funzione è suriettiva e per via del determinante è anche iniettiva.
->📝Se il determinante estratto in questo modo è diverso da zero ciò vuol dire che i vettori sono indipendenti, di conseguenza generano l'intero spazio, inoltre vuol dire che la matrice è invertibile e di conseguenza il $Ker$ corrisponde al solo elemento nullo
+>📝Se il determinante estratto in questo modo è diverso da zero ciò vuol dire che i vettori sono indipendenti, di conseguenza generano l'intero spazio, inoltre vuol dire che la matrice è invertibile e di conseguenza il $Ker$ corrisponde al solo elemento nullo. Tutto ciò perché rimaniamo nello stesso spazio vettoriale $R^3$.
 
 Ciò implica anche che per $a\neq3,a\neq0,\quad w=(1,1,1)\in ImT$ 
 
