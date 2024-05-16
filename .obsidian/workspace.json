@@ -6,7 +6,7 @@
       {
         "id": "b2583826bd0c8f9a",
         "type": "tabs",
-        "dimension": 59.04183535762483,
+        "dimension": 59.041835357624834,
         "children": [
           {
             "id": "8c800d8153e396b4",
@@ -36,19 +36,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Cramer e matrici inverse.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a2549637da959883",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Vettori, spazi e sottospazi vettoriali.md",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Autovalori ed autovettori.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +48,7 @@
       {
         "id": "e73accfd39aad3f1",
         "type": "tabs",
-        "dimension": 40.958164642375166,
+        "dimension": 40.95816464237517,
         "children": [
           {
             "id": "d7815b2e0106fd64",
@@ -83,9 +71,19 @@
                 "file": "Secondo Anno/Algebra Lineare/exercise/Foglio10_determin_inversa.pdf"
               }
             }
+          },
+          {
+            "id": "288d16fa48c0b54b",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio11_appllin_det.pdf"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -135,8 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 386.0124969482422,
-    "collapsed": true
+    "width": 386.0124969482422
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -152,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Cramer e matrici inverse.md",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Autovalori ed autovettori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Cramer e matrici inverse.md",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Autovalori ed autovettori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Cramer e matrici inverse.md"
+                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Autovalori ed autovettori.md"
               }
             }
           }
@@ -216,24 +213,25 @@
   },
   "active": "76acd162e2d2b7aa",
   "lastOpenFiles": [
-    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 6.pdf",
-    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Cramer e matrici inverse.md",
-    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Vettori, spazi e sottospazi vettoriali.md",
     "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi Svolti.md",
-    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Matrici e applicazioni lineari.md",
+    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Autovalori ed autovettori.md",
     "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Algoritmo di Gauss.md",
-    "Secondo Anno/Algebra Lineare/exercise/Foglio10_determin_inversa.pdf",
-    "Secondo Anno/Algebra Lineare/exercise/Foglio8_matrici_applin.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Studio applicazioni lineari con determinante e teorema orlati.md",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio11_appllin_det.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Cramer e matrici inverse.md",
     "Secondo Anno/OOP/modulo 1/Object oriented programming (6).pdf",
     "Secondo Anno/cheatsheet_lat/cheatsheet.md",
+    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Vettori, spazi e sottospazi vettoriali.md",
+    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 6.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Matrici e applicazioni lineari.md",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio10_determin_inversa.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio8_matrici_applin.pdf",
     "Secondo Anno/Algebra Lineare/exercise/20210111 Primo appello - Soluzioni.pdf",
     "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Durante Lezione.md",
     "Secondo Anno/Algebra Lineare/exercise/Foglio13_correz.simul_parz2_esame.pdf",
     "Secondo Anno/Algebra Lineare/exercise/Foglio13_correz.simul_parz2_esame.pdf.crdownload",
     "Secondo Anno/Algebra Lineare/exercise/Foglio 13_simul_parz2_esame.pdf",
     "Secondo Anno/Algebra Lineare/exercise/Foglio 13_simul_parz2_esame.pdf.crdownload",
-    "Secondo Anno/Algebra Lineare/exercise/Foglio12_autovalori.pdf",
-    "Secondo Anno/Algebra Lineare/exercise/Foglio11_appllin_det.pdf",
     "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Applicazioni lineari.md",
     "Secondo Anno/OOP/modulo 1/OOP Concept.md",
     "Pasted image 20240509112811.png",
@@ -254,7 +252,6 @@
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Modello Working Set.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Segmentazione.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Segmentazione e Paginazione.md",
-    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Multiprogrammazione.md",
     "Pasted image 20240417121913.png",
     "Pasted image 20240417121852.png",
     "Pasted image 20240404175638.png",

@@ -8,4 +8,6 @@
 - [[Matrici e applicazioni lineari]]
 - [[Algoritmo di Gauss]]
 - [[Cramer e matrici inverse]]
+- [[Studio applicazioni lineari con determinante e teorema orlati]]
+- [[Autovalori ed autovettori]]
 - [[Durante Lezione]]
