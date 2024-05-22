@@ -32,14 +32,10 @@ Se sostituiamo il sistema risulta corretto
 ## Esercizio 3
 - Risolvere al variare di $m \in R$ il seguente sistema
 $$\begin{cases}mx+(m-1)y=m+2\\(m+1)x-my=5m+3\end{cases}$$
+- Risolviamo utilizzando il metodo di Rouché Capelli:
+$$\begin{pmatrix}m&m-1\\m+1&-m\end{pmatrix} : \begin{pmatrix}m&m-1&m+2\\m+1&-m&5m+3\end{pmatrix}$$
+$$\begin{pmatrix}m&m-1\\0&2m-\frac{1}{m}\end{pmatrix} : \begin{pmatrix}m&m-1&m+2\\0&2m-\frac{1}{m}&4m-\frac{2}{m}\end{pmatrix}$$
 
-Risolviamo sempre applicando lo stesso metodo:
-$$\begin{pmatrix}m&m-1&|&m+2\\m+1&-m&|&5m+3\end{pmatrix}=II-(I*\frac{m+1}{m})=\begin{pmatrix}m&m-1&|&m+2\\0&-m(\frac{(m-1)(m+1)}{m})&|&5m+3(\frac{(m+2)(m+1)}{m})\end{pmatrix}$$
-
-Per semplicità risolviamo anche i valori interni alla matrice:
-$$-m(\frac{(m-1)(m+1)}{m})=-((m-1)(m+1))=-(m^2-1)=-(m^2)+1$$$$5m+3(\frac{(m+2)(m+1)}{m})=5m+3(\frac{m^2+3m+2}{m})=5m+3m+9+\frac{6}{m}$$
-Quindi ora troviamo $x$ in funzione di $m$ 
-$$m=0 \qquad \begin{pmatrix}0&-1&2\\0&1&9\end{pmatrix}$$
 > # 🏴 da rifare con rouce o come cazzo si scrive
 
 ---

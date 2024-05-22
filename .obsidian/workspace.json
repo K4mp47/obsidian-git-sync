@@ -6,7 +6,6 @@
       {
         "id": "b2583826bd0c8f9a",
         "type": "tabs",
-        "dimension": 59.041835357624834,
         "children": [
           {
             "id": "8c800d8153e396b4",
@@ -36,20 +35,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Autovalori ed autovettori.md",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Applicazioni lineari.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f880d406ce44f06e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Algoritmo di Gauss.md",
                 "mode": "source",
                 "source": false
               }
             }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "e73accfd39aad3f1",
-        "type": "tabs",
-        "dimension": 40.95816464237517,
-        "children": [
+          },
           {
             "id": "d7815b2e0106fd64",
             "type": "leaf",
@@ -63,27 +66,27 @@
             }
           },
           {
-            "id": "fa9d21942084cda9",
+            "id": "609995ff5e451d0d",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio10_determin_inversa.pdf"
+                "file": "Secondo Anno/Algebra Lineare/Tavola funzioni goniometriche-2-3.pdf"
               }
             }
           },
           {
-            "id": "288d16fa48c0b54b",
+            "id": "c28c474b1ad40e90",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio11_appllin_det.pdf"
+                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio5_eserc_riassuntivi.pdf"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -149,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Autovalori ed autovettori.md",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Algoritmo di Gauss.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Autovalori ed autovettori.md",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Algoritmo di Gauss.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Autovalori ed autovettori.md"
+                "file": "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Algoritmo di Gauss.md"
               }
             }
           }
@@ -211,34 +214,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "76acd162e2d2b7aa",
+  "active": "f880d406ce44f06e",
   "lastOpenFiles": [
     "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi Svolti.md",
+    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Cramer e matrici inverse.md",
+    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Durante Lezione.md",
+    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Matrici e applicazioni lineari.md",
+    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Applicazioni lineari.md",
     "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Autovalori ed autovettori.md",
+    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Numeri Complessi.md",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio5_eserc_riassuntivi.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio4_basi_sottospazi.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio3_basi_sottospazi.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio2_vettori_sp_vett.pdf",
+    "Secondo Anno/Algebra Lineare/Esami/Foglio14_sim_compl.pdf",
+    "Secondo Anno/Algebra Lineare/Tavola funzioni goniometriche-2-3.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio1_num_comples.pdf",
     "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Algoritmo di Gauss.md",
     "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Studio applicazioni lineari con determinante e teorema orlati.md",
-    "Secondo Anno/Algebra Lineare/exercise/Foglio11_appllin_det.pdf",
-    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Cramer e matrici inverse.md",
-    "Secondo Anno/OOP/modulo 1/Object oriented programming (6).pdf",
-    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
-    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Vettori, spazi e sottospazi vettoriali.md",
-    "Secondo Anno/Algebra Lineare/Lezioni/Lezione 6.pdf",
-    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Matrici e applicazioni lineari.md",
-    "Secondo Anno/Algebra Lineare/exercise/Foglio10_determin_inversa.pdf",
-    "Secondo Anno/Algebra Lineare/exercise/Foglio8_matrici_applin.pdf",
-    "Secondo Anno/Algebra Lineare/exercise/20210111 Primo appello - Soluzioni.pdf",
-    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Durante Lezione.md",
-    "Secondo Anno/Algebra Lineare/exercise/Foglio13_correz.simul_parz2_esame.pdf",
-    "Secondo Anno/Algebra Lineare/exercise/Foglio13_correz.simul_parz2_esame.pdf.crdownload",
-    "Secondo Anno/Algebra Lineare/exercise/Foglio 13_simul_parz2_esame.pdf",
-    "Secondo Anno/Algebra Lineare/exercise/Foglio 13_simul_parz2_esame.pdf.crdownload",
-    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Applicazioni lineari.md",
     "Secondo Anno/OOP/modulo 1/OOP Concept.md",
+    "Secondo Anno/Algebra Lineare/Esami/Foglio 13_simul_parz2_esame.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio12_autovalori.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Foglio10_determin_inversa.pdf",
+    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Vettori, spazi e sottospazi vettoriali.md",
+    "Secondo Anno/cheatsheet_lat/cheatsheet.md",
     "Pasted image 20240509112811.png",
     "Pasted image 20240509104804.png",
     "Pasted image 20240508115017.png",
     "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi riassuntivi foglio 5.md",
-    "Secondo Anno/Algebra Lineare/exercise/Soluzioni_svolte/Numeri Complessi.md",
     "Esercizi riassuntivi foglio 5.md",
     "Test.md",
     "test.md",
@@ -251,7 +254,6 @@
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Paginazione.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Modello Working Set.md",
     "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Segmentazione.md",
-    "Secondo Anno/Sistemi Operativi/modulo 1/3.1-7/utils/Segmentazione e Paginazione.md",
     "Pasted image 20240417121913.png",
     "Pasted image 20240417121852.png",
     "Pasted image 20240404175638.png",

@@ -33,10 +33,11 @@ function mouseDragged(){ // what happens when you drag inside the canvas
 }
 
 function setup(){ // setting up the canvas to draw on
-  createCanvas(1000, 800);
+  let canvas = createCanvas(800, 600);
+  canvas.parent('main-container');
   colorMode(HSB, 255, 360, 100);
-  cols = width / w;
-  rows = height / w;
+  cols = width / (w);
+  rows = height / (w);
 
   grid = make2DArray(cols, rows);
   for (var i = 0; i < cols; i++){
@@ -47,7 +48,7 @@ function setup(){ // setting up the canvas to draw on
 }
 
 function draw(){ // actual painting of the canvas
-  background(0);
+  background('rgba(5, 5, 5, 1)');
 
   for(let i = 0; i < cols; i++){
     for(let j = 0; j < rows; j++){

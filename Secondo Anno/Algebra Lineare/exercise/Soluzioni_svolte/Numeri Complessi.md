@@ -6,10 +6,19 @@ $$
 \frac{3\pi}{2} \qquad \text{se $a=0$, $b < 0$} \\
 \text{non definito} \qquad \text{se $a=0$, $b = 0$} \\
 \arctan({\frac{b}{a}}) \qquad \text{se $a > 0$, $b \geq 0$} \\
-\arctan({\frac{b}{a}})+2\pi \qquad \text{se $a < 0$, $b < 0$} \\
+\arctan({\frac{b}{a}})+2\pi \qquad \text{se $a > 0$, $b < 0$} \\
 \arctan({\frac{b}{a}})+\pi \qquad \text{se $a < 0$, b qualsiasi} \\
 \end{cases}
 $$
+$$\theta := Arg(z) = 
+\begin{cases}
+\frac{\pi}{2} \qquad \text{se $a=0$, $b > 0$} \\
+-\frac{\pi}{2} \qquad \text{se $a=0$, $b < 0$} \\
+\text{non definito} \qquad \text{se $a=0$, $b = 0$} \\
+\arctan({\frac{b}{a}}) \qquad \text{se $a > 0$, $b$ qualsiasi} \\
+\arctan({\frac{b}{a}})+\pi \qquad \text{se $a < 0$, $b \geq 0$} \\
+\arctan({\frac{b}{a}})-\pi \qquad \text{se $a < 0$, b < 0} \\
+\end{cases}$$
 ⚠ Sempre bene vedere gli esercizi del foglio 5 estratti dagli esami! All'interno è presente anche il calcolo di radici di un numero complesso
 
 Per calcolare la radice di un numero complesso si arriva alla forma esponenziale $\rho e^{\theta_k}$ per poi risolvere $\theta_k$
@@ -162,8 +171,6 @@ $$
 $$
 z = 2(cos(\frac{2\pi}{3})+i\:sin(\frac{2\pi}{3})) = 2(-\frac{1}{2}+i\:\frac{\sqrt3}{2}) = -1+i\sqrt3
 $$
-___
-> Attenzione all'esercizio precedente, forse non è corretto conseguenza di ciò andrebbe corretto: come fa la forma polare ad essere uguale alla forma algebrica??
 ___
 ### 10. Scrivere in forma trigonometrica il numero $z = 3 + 3i$
 - Sappiamo che $|z| = \sqrt{9+9} = \sqrt{18}$ e $arctan(z) = \frac{\pi}{4}$
