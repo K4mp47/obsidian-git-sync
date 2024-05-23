@@ -23,5 +23,4 @@ public class Threads {
         Thread t2 = new Thread(() -> loop("ciccio"));
         t2.start();
     }
-
 }

@@ -35,8 +35,7 @@ $$\begin{cases}mx+(m-1)y=m+2\\(m+1)x-my=5m+3\end{cases}$$
 - Risolviamo utilizzando il metodo di Rouché Capelli:
 $$\begin{pmatrix}m&m-1\\m+1&-m\end{pmatrix} : \begin{pmatrix}m&m-1&m+2\\m+1&-m&5m+3\end{pmatrix}$$
 $$\begin{pmatrix}m&m-1\\0&2m-\frac{1}{m}\end{pmatrix} : \begin{pmatrix}m&m-1&m+2\\0&2m-\frac{1}{m}&4m-\frac{2}{m}\end{pmatrix}$$
-
-> # 🏴 da rifare con rouce o come cazzo si scrive
+- Ora notiamo che per $m\neq \pm \sqrt{\frac{1}{2}}$ il sistema ammette sempre una soluzione. Basta poi vedere cosa succede quando m invece è uguale per trovare la risposta all'esercizio dato
 
 ---
 ## Esercizio 8

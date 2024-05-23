@@ -12,6 +12,14 @@ function make2DArray(cols, rows){
 let hueValue = 1;
 let w = 10;
 
+function reset() {
+  for (var i = 0; i < cols; i++){
+    for (var j = 0; j < rows; j++){
+      grid[i][j] = 0;
+    }
+  }
+}
+
 function mouseDragged(){ // what happens when you drag inside the canvas
   let col = floor(mouseX / w);
   let row = floor(mouseY / w);

@@ -7,6 +7,7 @@ is necessary when using an international layout (like [swiss] german).
 Further Reference and source: ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf
 
 Diagram in markdown: https://support.typora.io/Draw-Diagrams-With-Markdown/
+Better to use: https://mermaid.js.org/intro/
 Example expressions / functions
 ============================
 
@@ -76,6 +77,7 @@ LaTex         |   | LaTex            |   |
 `\angle`      | ∠ | `\measuredangle` | ∡ |
 `\surd`       | √ | `\forall`        | ∀ |
 `\exists`     | ∃ | `\nexists`       | ∄ |
+`\pm`     | $\pm$ | 
 
 #### Relational Symbols
 LaTex             |   | LaTex              |          |
