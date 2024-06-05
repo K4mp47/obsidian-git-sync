@@ -41,7 +41,7 @@ $$\begin{pmatrix}m&m-1\\0&2m-\frac{1}{m}\end{pmatrix} : \begin{pmatrix}m&m-1&m+2
 ## Esercizio 8
 - Si consideri la seguente applicazione lineare $T:R^4\rightarrow R^3$ definita da:
 $$\begin{pmatrix}\alpha&0&1&1\\\alpha-1&-1&0&1\\2\alpha&0&2&1\end{pmatrix}$$
-stabilire per quali valori di $\alpha \in R$ l'applicazione è iniettiva, suriettiva invertibile e con $KerT=1$
+stabilire per quali valori di $\alpha \in R$ l'applicazione è iniettiva, suriettiva, invertibile e con $KerT=1$
 
 Per essere iniettiva vuol dire che non ci devono essere vettori in $R^4$ che hanno soluzione uguale. Per farlo usiamo il calcolo del determinante:
 

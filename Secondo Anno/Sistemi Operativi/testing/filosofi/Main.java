@@ -78,6 +78,7 @@ class Tavola {
     // deposita la bacchetta destra e notifica TUTTI i filosofi
     synchronized void deposita_dx(int index) {
         deposita_sx((index+1)%NFIL); // la dx e' sx del filosofo successivo
+        notifyAll();
     }   
 
     synchronized void raccogli_entrambe(int index) throws InterruptedException {
