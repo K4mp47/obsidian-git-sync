@@ -4,64 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b2583826bd0c8f9a",
+        "id": "343af65106d2adee",
         "type": "tabs",
         "children": [
           {
-            "id": "042af7d82583a611",
+            "id": "e308e813ce76d0e3",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 2/esami/Eserciziario.pdf"
-              }
-            }
-          },
-          {
-            "id": "30038dc357547a7c",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/OOP/modulo 1/exams/exam4/MasterSolution_Studenti.pdf"
-              }
-            }
-          },
-          {
-            "id": "45efa26b75ec1462",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/OOP/modulo 1/exams/exam4/Teoria_TestoEsame.pdf"
-              }
-            }
-          },
-          {
-            "id": "558d353af4a89b9f",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Secondo Anno/OOP/modulo 1/exams/exam4/Programmazione_TestoEsame.pdf"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "f9b1a5519dccc90b",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "49c9cf5b0dbc8037",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Secondo Anno/OOP/OOP Concept.md",
-                "mode": "source",
-                "source": false
+                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio2_vettori_sp_vett.pdf"
               }
             }
           }
@@ -115,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 386.0124969482422,
-    "collapsed": true
+    "width": 386.0124969482422
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -132,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 2/esami/Eserciziario.pdf",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio2_vettori_sp_vett.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 2/esami/Eserciziario.pdf",
+                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio2_vettori_sp_vett.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Secondo Anno/OOP/modulo 2/esami/Eserciziario.pdf"
+                "file": "Secondo Anno/Algebra Lineare/exercise/Foglio2_vettori_sp_vett.pdf"
               }
             }
           }
@@ -194,20 +145,19 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "042af7d82583a611",
+  "active": "e308e813ce76d0e3",
   "lastOpenFiles": [
+    "Secondo Anno/OOP/OOP Concept.md",
+    "Secondo Anno/OOP/modulo 2/esami/codice_test_esame/esame2/SkippableArrayList.java",
+    "Secondo Anno/OOP/modulo 2/esami/codice_test_esame/esame2/Either.java",
+    "Secondo Anno/OOP/modulo 2/esami/codice_test_esame/esame2/Predicate.java",
+    "Secondo Anno/OOP/modulo 2/esami/codice_test_esame/esame2/Skippable.java",
+    "Secondo Anno/OOP/modulo 2/esami/Scritto_PO2__1_6_23_.pdf",
+    "Secondo Anno/OOP/modulo 1/exams/exam4/MasterSolution_Studenti.pdf",
+    "Secondo Anno/OOP/modulo 2/esami/Eserciziario.pdf",
     "Secondo Anno/OOP/modulo 2/esami/codice_test_esame/esame2/BST",
     "Secondo Anno/OOP/modulo 2/esami/codice_test_esame/esame2/BST.cpp",
     "Secondo Anno/OOP/modulo 2/esami/codice_test_esame/esame2/BST.java",
-    "Secondo Anno/OOP/modulo 2/esami/codice_test_esame/esame2/FactorialThread",
-    "Secondo Anno/OOP/modulo 2/esami/codice_test_esame/esame2/FactorialThread.cpp",
-    "Secondo Anno/OOP/OOP Concept.md",
-    "Secondo Anno/OOP/modulo 2/esami/codice_test_esame/esame2/FactorialThread.java",
-    "Secondo Anno/OOP/modulo 2/esami/codice_test_esame/esame1/FactorialThread.java",
-    "Secondo Anno/OOP/modulo 2/esami/codice_test_esame/esame2",
-    "Secondo Anno/OOP/modulo 1/exams/exam4/MasterSolution_Studenti.pdf",
-    "Secondo Anno/OOP/modulo 1/Lecture2_Java.pdf",
-    "Secondo Anno/OOP/modulo 1/Lecture6_Contracts.pdf",
     "Secondo Anno/OOP/modulo 2/esami/codice_test_esame/esame1/esame1/README.md",
     "Secondo Anno/OOP/Preparazione esame.md",
     "Secondo Anno/OOP/modulo 1/exams/exam1/Prova esame_1.md",
