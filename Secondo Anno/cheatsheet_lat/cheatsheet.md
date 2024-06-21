@@ -17,6 +17,20 @@ Input             | Rendered        |
 `$\sqrt{?\frac{\pi}{2}}$` | $\sqrt{\frac{\pi}{2}}$ |
 `$y = a x_1^2 + b x_2 + c$` | $y = a x_1^2 + b x_2 + c$ |
 
+# Title 1
+## Title 2
+### Title 3
+#### Title 4
+##### Title 5
+######  Title 6
+
+- pointed list
+1. numbered list
+
+[[File reference]]
+
+
+
 Special characters / Symbols
 ============================
 ### Latin:

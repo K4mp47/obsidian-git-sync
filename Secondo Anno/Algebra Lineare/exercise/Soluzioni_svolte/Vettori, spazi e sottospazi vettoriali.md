@@ -119,7 +119,7 @@ $$S=S_1+S_2:\begin{pmatrix}-z_a\\y_a\\z_a\\3y_a\end{pmatrix}+\begin{pmatrix}-z_b
 - Sostituiamo i valori trovati nel sistema di equazioni, se i risultati saranno zero allora vuol dire che è valido
 $$S:\begin{cases}x+z=0\\3y-w=0\end{cases}\rightarrow\begin{cases}-(z_a+z_b)+(z_a+z_b)=0\\3(y_a+y_b)-3(y_a+y_b)=0\end{cases}\rightarrow \text{soluzione valida, è un sottospazio}$$
 - Ripetendo il processo anche per $T$ scopriamo che anch'esso è uno sottospazio vettoriale valido
-## Stabilire se ognuno dei seguenti sottoinsiemi di R_2[x] è formato da vettori linearmente indipendenti $\{1,x,x^2\},\{1,x\}$
+## 💢 Stabilire se ognuno dei seguenti sottoinsiemi di R_2[x] è formato da vettori linearmente indipendenti $\{1,x,x^2\},\{1,x\}$
 $$S=\{1,x,x^2\}\rightarrow\text{si fa il sistema ricordando la regola $as_1+bs_2+cs_3=0$}$$
 - In questo caso l'unico modo per far si che $a1+bx+cx^2=0$ è settare $a=b=c=0$. Se non fosse stato così, i vettori non sarebbero linearmente indipendenti. Stessa cosa vale per $\{1,x\}$.
 - Per esempio $\{x+x^2,2x+2x^2\}$ non è formato da vettori linearmente indipendenti.

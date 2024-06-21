@@ -12,3 +12,4 @@ Argomenti trattati:
 - Dipendenza e indipendenza lineare
 - Applicazioni lineari
 - Determinante e inversa di una matrice
+- Matrice ortogonale

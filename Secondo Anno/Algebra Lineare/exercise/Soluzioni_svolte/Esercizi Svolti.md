@@ -11,3 +11,8 @@
 - [[Studio applicazioni lineari con determinante e teorema orlati]]
 - [[Autovalori ed autovettori]]
 - [[Durante Lezione]]
+
+cose da fare prima dell'esame
+- Finire il foglio 11-12
+- Fare le prove d'esame
+- Numeri complessi

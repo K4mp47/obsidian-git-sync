@@ -56,7 +56,7 @@ La prima non risulta funzionare, quindi dobbiamo verificare con la seconda sotto
 $$\begin{pmatrix}1&2&0\\0&-1&1\\-1&-3&1\end{pmatrix}=-\begin{pmatrix}1&2\\-1&-3\end{pmatrix}+\begin{pmatrix}-1\end{pmatrix}=-(-3+2)-1=0$$
 Vuol dire che la matrice in questo caso ha rango $2$!!
 
->📝Fare attenzione ai calcoli con le matrici orlate, e ricordare che funzionano solo se quadrate!
+>📝Fare attenzione ai calcoli con le matrici orlate, e ricordare che funzionano solo se le sottomatrici scelte sono quadrate!
 
 Avendo rango 2 ciò vuol dire che l'applicazione avrà due variabili libere:
 $$A=\begin{pmatrix}1&2&3&0\\0&-1&2&1\\-1&-3&-1&1\end{pmatrix}=\begin{pmatrix}1&2&3&0\\0&-1&2&1\\0&-1&2&1\end{pmatrix}=\begin{pmatrix}1&2&3&0\\0&-1&2&1\\0&0&0&0\end{pmatrix}$$
