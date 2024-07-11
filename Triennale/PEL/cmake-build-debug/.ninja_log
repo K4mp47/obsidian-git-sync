@@ -1,0 +1,18 @@
+# ninja log v5
+0	521	1686319297252006086	CMakeFiles/PEL_project_2023.dir/src/test.cpp.o	fcc06d92bdf2f552
+5977	6138	1686648277780006611	PEL_project_2023_container_test	1a44459bdf498477
+1	757	1686321118324009696	CMakeFiles/PEL_project_2023_streaming_test.dir/test/test_io.cpp.o	4a21e77410b4c7dd
+0	5976	1686648277616006611	CMakeFiles/PEL_project_2023_container_test.dir/src/json.cpp.o	424c73710b917ce3
+1	2892	1686322373516012184	CMakeFiles/PEL_project_2023_streaming_test.dir/src/json.cpp.o	63763016d5da92d7
+0	62	1686664769972039304	build.ninja	12268416bb81442b
+2892	3048	1686322373676012185	PEL_project_2023_streaming_test	8e8c79165368c4cf
+0	1433	1686320101696007681	CMakeFiles/PEL_project_2023_container_test.dir/src/test.cpp.o	8f42fe592ce6052f
+355	417	1686319549936006587	PEL_project_2023	74e4923389899009
+0	354	1686319549876006587	CMakeFiles/PEL_project_2023.dir/src/main.cpp.o	93ce5d686779992b
+14	1822	1686320102088007682	CMakeFiles/PEL_project_2023_streaming_test.dir/src/test_io.cpp.o	29679ca638eaf3c
+0	305	1686319009772005516	CMakeFiles/PEL_project_2023.dir/src/copy_main.cpp.o	e569e991d0a1b414
+1	462	1686573932136005111	CMakeFiles/PEL_project_2023_container_test.dir/test/test.cpp.o	4c8e0b6ed3351d92
+0	2234	1687210564016010570	CMakeFiles/PEL_project_2023_container_test.dir/src/json.cpp.o	424c73710b917ce3
+2234	2393	1687210564176010571	PEL_project_2023_container_test	1a44459bdf498477
+0	1940	1687210624172010690	CMakeFiles/PEL_project_2023_container_test.dir/src/json.cpp.o	424c73710b917ce3
+1940	2016	1687210624252010690	PEL_project_2023_container_test	1a44459bdf498477

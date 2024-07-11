@@ -1,0 +1,3 @@
+SELECT nomecliente
+FROM ordini GROUP BY nomecliente
+HAVING count (distinct codpizza) >=3

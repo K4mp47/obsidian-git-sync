@@ -1,9 +1,0 @@
-digraph BinaryTree {
-1 -> 2 [label="L"];
-2 -> 3 [label="L"];
-3 -> 5 [label="L"];
-3 -> 6 [label="R"];
-1 -> 9 [label="R"];
-9 -> 11 [label="L"];
-9 -> 10 [label="R"];
-}

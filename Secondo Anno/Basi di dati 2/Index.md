@@ -1,7 +1,0 @@
-- [[Normalizzazione]]
-- [[Coperture Canoniche]]
-- [[Decomposizione]] 
-- [[Forma Normale]]
-- [[Vincoli ed integrità]]
-- [[Trigger]]
-- [[Sicurezza]]

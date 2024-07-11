@@ -1,0 +1,45 @@
+
+- Se un processo va in page fault, il gestore della memoria deve
+	- Individuare la pagina
+	- Caricarla in memoria principale
+	- Aggiornare la riga della tabella della pagina corrispondente
+	- Usa il bit di modifica per velocizzare il processo di sostituzione
+#### Strategie di sostituzione
+- Strategia OTTIMA
+	- Ottiene prestazioni ottime, sostituisce la pagina alla quale non verrà fatto riferimento nuovamente più avanti nel futuro
+	- Minimo numero di page fault $\rightarrow$ minimo tempo di attesa
+	- Necessita di conoscere il comportamento futuro del processo
+- Strategia casuale
+	- Semplice e con basso overhead
+	- Non discrimina tra processi ed è veloce
+	- Equa, ogni pagina ha la stessa probabilità di essere selezionata per la sostituzione
+	- Poco usata
+- Strategia FIFO
+	- Sostituisce quella presente nel sistema da più tempo
+	- Un overhead relativamente basso, ma potrebbe sostituire pagine molto utilizzate
+	- Non è conveniente
+	- Da questa Strategia discendono
+		- Strategia Second Change
+			- Esamina il bit di riferimento della pagina più vecchia. Se è off (0) la strategia seleziona la pagina per la sostituzione. Se è on (1) la strategia azzera il bit e sposta la pagina in coda FIFO e si considera come un nuovo arrivo. Assicura che le pagine attive siano quelle con minor probabilità di essere sostituite
+			- ![[Pasted image 20240111190414.png]]
+		- Strategia di Sostituzione ad orologio
+			- Simile a second chance, ma organizza le pagine in una lista circolare invece della lista lineare Puntatore che scorre la lista ad ogni page fault; se bit ref =0 si scorre (simula FIFO)
+			- ![[Pasted image 20240111190423.png]]
+- Strategia LRU(Least Recently Used)
+	- Sostituisce la pagina che da più tempo non è riferita
+	- Comporta un maggiore overhead della FIFO
+- Strategia LFU(Least Frequently Used)
+	- Sostituisce la pagina che è meno intensamente riferita 
+	-  Basato sul euristica che una pagina alla quale non si fa riferimento spesso non è probabile che sia riferita in futuro
+- Strategia NFU(Not Frequently Used)
+	- Sostituisce la pagina che è non è stata recentemente riferita
+- Strategie NRU(Not Recently Used)
+	- Approssima la strategia LRU con un overhead minimo utilizzando il bit di riferimento e il bit di modifica per determinare quale pagina non è stata utilizzata di recente e può essere rapidamente sostituita 
+		- bit di riferimento = 0 se la pagina non è stata riferita, 1 altrimenti (bit di accesso) 
+		- bit di modifica = 0 se la pagina non è stata modificata 1 altrimenti
+	- ![[Pasted image 20240111190130.png]]
+- Strategia Far
+	- Creprocesso
+	- Sostituisce la pagina non referenziata che è più lontana nel g un grafo di accesso che rappresenta il modello dei riferimenti di un rafo di accesso da qualsiasi pagina riferita
+	- Prestazioni ottimali
+	- ![[Pasted image 20240111190728.png]]

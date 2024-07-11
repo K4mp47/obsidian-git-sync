@@ -1,0 +1,4 @@
+/home/albertocampagnolo/Desktop/PEL_project_2023/cmake-build-debug/CMakeFiles/PEL_project_2023_container_test.dir
+/home/albertocampagnolo/Desktop/PEL_project_2023/cmake-build-debug/CMakeFiles/PEL_project_2023_streaming_test.dir
+/home/albertocampagnolo/Desktop/PEL_project_2023/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/albertocampagnolo/Desktop/PEL_project_2023/cmake-build-debug/CMakeFiles/rebuild_cache.dir
