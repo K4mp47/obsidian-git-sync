@@ -113,3 +113,5 @@ process.on('SIGINT', () => {
     });
 });
 ```
+
+Mongoose was built specifically as a MongoDB Object Document Modeler (ODM) for Node applications. One key principle is that you can manage your data model from within your applications. You don't have to mess around directly with databases or external frameworks or relational mappers; you can define your data model in the comfort of your application.
