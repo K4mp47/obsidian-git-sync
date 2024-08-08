@@ -84,7 +84,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -213,19 +213,19 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "c540ca1bed79ec07",
+  "active": "ca71f793da86c0c2",
   "lastOpenFiles": [
-    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es7/RandomIterator.java",
-    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es7/WrapperRandom.java",
-    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es7/WrapperRandom",
-    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es7/Random.java",
-    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es7",
-    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es4/Es7",
-    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es4/Square.java",
-    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es4/Rectangle.java",
-    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es4/RightTriangle.java",
-    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es4/Triangle.java",
-    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es4/Polygon.java",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es8/Color.java",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es8/Equatable.java",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es8/Hair.java",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es8/Person.java",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es8/Artist.java",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es8",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es9/Person.java",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es9/Es8",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es9/Artist.java",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es9",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es8/Es8/Artist.java",
     "Triennale/OOP/modulo 2/java/exercise/theory/Factory.md",
     "Triennale/OOP/modulo 2/esami/Domande Eserciziario.md",
     "Triennale/OOP/modulo 2/java/exercise/theory/Command.md",
