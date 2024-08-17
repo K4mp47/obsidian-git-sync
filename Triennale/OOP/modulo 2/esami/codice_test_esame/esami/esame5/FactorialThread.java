@@ -1,11 +1,11 @@
-package esame5;
+package esami.esame5;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.function.Function;
 
-public class FactorialThread<A,B> extends Thread {
+public class FactorialThread extends Thread {
 
     private final int number;
     private int factorial = 1;
@@ -36,9 +36,9 @@ public class FactorialThread<A,B> extends Thread {
         return result;
     }
 
-    static Collection<FactorialThread> parallelFactorial(Collection<Integer> c) {
+    static List<FactorialThread> parallelFactorial(Iterable<Integer> c) {
 
-        Collection<FactorialThread> threads = new ArrayList<>();
+        List<FactorialThread> threads = new ArrayList<>();
 
         for (Integer x : c) {
             FactorialThread t = new FactorialThread(x);
@@ -49,14 +49,11 @@ public class FactorialThread<A,B> extends Thread {
         return threads;
     }
 
-    static List<?> parallelFactorialTwo(List<?> c) {
+    static Collection<FactorialThread> parallelFactorialTwo(Iterable<Integer> c) {
         return map(c, (x) -> {
-            int factorial = 1;
-            for(int i = 1; i <= (Integer) x; i++) {
-                factorial *= i;
-            }
-
-            return factorial;
+            FactorialThread t = new FactorialThread(x);
+            t.start();
+            return t;   
         });
     }
 
@@ -68,7 +65,7 @@ public class FactorialThread<A,B> extends Thread {
             System.out.println(thread.get());
         }
 
-        List<?> result = parallelFactorialTwo(List.of(1, 2, 3, 4, 5));
+        Collection<FactorialThread> result = parallelFactorialTwo(List.of(1, 2, 3, 4, 5));
         System.out.println(result);
         System.out.println("Threads terminated");
     }

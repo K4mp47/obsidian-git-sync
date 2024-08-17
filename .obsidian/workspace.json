@@ -43,7 +43,17 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__10_1_24_.pdf"
+                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__13_1_23_.pdf"
+              }
+            }
+          },
+          {
+            "id": "9516880af6c2cce2",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/OOP/OOP Concept.pdf"
               }
             }
           }
@@ -114,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__10_1_24_.pdf",
+                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__13_1_23_.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__10_1_24_.pdf",
+                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__13_1_23_.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__10_1_24_.pdf"
+                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__13_1_23_.pdf"
               }
             }
           }
@@ -178,17 +188,18 @@
   },
   "active": "492f9e0fda3b1911",
   "lastOpenFiles": [
-    "Triennale/OOP/modulo 2/esami/codice_test_esame/esame5/FactorialThread.class",
-    "Triennale/OOP/modulo 2/esami/codice_test_esame/esame5/FactorialThread.java",
-    "Triennale/OOP/modulo 2/esami/codice_test_esame/esame5",
-    "Triennale/OOP/modulo 2/esami/codice_test_esame/esami/esame5/FactorialThread.class",
-    "Triennale/OOP/modulo 2/bin/esami/esame5/FactorialThread.class",
-    "Triennale/OOP/modulo 2/bin/esami/esame5",
-    "Triennale/OOP/modulo 2/esami/codice_test_esame/esami/esame5/FactorialThread.java",
+    "Triennale/OOP/modulo 2/esami/Scritto_PO2__13_9_22_.pdf",
+    "Triennale/OOP/modulo 2/esami/Scritto_PO2__13_1_23_.pdf",
+    "Triennale/OOP/modulo 2/esami/Scritto_PO2__10_1_24_.pdf",
     "Triennale/OOP/modulo 2/esami/Scritto_PO2__5_9_23_.pdf",
     "Triennale/OOP/modulo 2/esami/Scritto_PO2__3_6_22_ 1.pdf",
     "Triennale/OOP/modulo 2/esami/Scritto_PO2__3_6_22_.pdf",
-    "Triennale/OOP/modulo 2/esami/codice_test_esame/esami/esame4/matrix.cpp~",
+    "Triennale/OOP/modulo 2/esami/Scritto_PO2__1_7_22_.pdf",
+    "Triennale/OOP/modulo 2/esami/Scritto_PO2__1_6_23_.pdf",
+    "Triennale/OOP/modulo 2/esami/Scritto_PO2__31_1_20_.pdf",
+    "Triennale/OOP/OOP Concept.pdf",
+    "Triennale/OOP/OOP Concept.md",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/esami/esame5/FactorialThread.java",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi Svolti.md",
     "Triennale/TECH WEB/Notes/Notes.md",
     "Triennale/OOP/modulo 2/java/exercise/theory/Factory.md",
@@ -217,7 +228,6 @@
     "Pasted image 20240617200106.png",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Applicazioni lineari.md",
     "Untitled.md",
-    "Triennale/OOP/OOP Concept.md",
     "Pasted image 20240531111031.png",
     "Pasted image 20240531102019.png",
     "Pasted image 20240531101758.png",
