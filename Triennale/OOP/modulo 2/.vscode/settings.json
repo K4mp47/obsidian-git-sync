@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "iterator": "cpp",
+        "ranges": "cpp",
+        "array": "cpp",
+        "atomic": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "memory_resource": "cpp",
+        "optional": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "span": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp"
+    },
+    "jdk.runConfig.vmOptions": "--enable-preview --source 22"
+}
