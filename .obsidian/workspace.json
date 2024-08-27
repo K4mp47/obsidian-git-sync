@@ -38,27 +38,27 @@
             }
           },
           {
-            "id": "492f9e0fda3b1911",
+            "id": "1e17452fc8f46a9f",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__13_1_23_.pdf"
+                "file": "Triennale/Algebra Lineare/Esami/formulario algebra_annotato.pdf"
               }
             }
           },
           {
-            "id": "9516880af6c2cce2",
+            "id": "f005ec8e0702cb8f",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/OOP/OOP Concept.pdf"
+                "file": "Triennale/Algebra Lineare/Formulario.pdf"
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -108,7 +108,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275
+    "width": 374
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -124,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__13_1_23_.pdf",
+                "file": "Triennale/Algebra Lineare/Formulario.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__13_1_23_.pdf",
+                "file": "Triennale/Algebra Lineare/Formulario.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__13_1_23_.pdf"
+                "file": "Triennale/Algebra Lineare/Formulario.pdf"
               }
             }
           }
@@ -186,39 +186,39 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "492f9e0fda3b1911",
+  "active": "f005ec8e0702cb8f",
   "lastOpenFiles": [
-    "Triennale/OOP/modulo 2/esami/Scritto_PO2__13_9_22_.pdf",
-    "Triennale/OOP/modulo 2/esami/Scritto_PO2__13_1_23_.pdf",
-    "Triennale/OOP/modulo 2/esami/Scritto_PO2__10_1_24_.pdf",
-    "Triennale/OOP/modulo 2/esami/Scritto_PO2__5_9_23_.pdf",
-    "Triennale/OOP/modulo 2/esami/Scritto_PO2__3_6_22_ 1.pdf",
-    "Triennale/OOP/modulo 2/esami/Scritto_PO2__3_6_22_.pdf",
-    "Triennale/OOP/modulo 2/esami/Scritto_PO2__1_7_22_.pdf",
-    "Triennale/OOP/modulo 2/esami/Scritto_PO2__1_6_23_.pdf",
-    "Triennale/OOP/modulo 2/esami/Scritto_PO2__31_1_20_.pdf",
-    "Triennale/OOP/OOP Concept.pdf",
-    "Triennale/OOP/OOP Concept.md",
-    "Triennale/OOP/modulo 2/esami/codice_test_esame/esami/esame5/FactorialThread.java",
+    "Triennale/Algebra Lineare/Guide.md",
+    "Triennale/Algebra Lineare/Formulario.pdf",
+    "Triennale/Algebra Lineare/Foglio1_num_comples.pdf",
+    "Triennale/Algebra Lineare/Esame_ALGEBRA_AAA_soluzioni.pdf",
+    "Triennale/Algebra Lineare/algebra_180123_AAA_sol.pdf",
+    "Triennale/Algebra Lineare/ALGEBRA_1606_AAA (2).pdf",
+    "Triennale/Algebra Lineare/Algebra Lineare appunti_annotated.pdf",
+    "Triennale/Algebra Lineare/Esami/Esame_2024_05_27B.pdf",
+    "Triennale/Algebra Lineare/Algebra 2_ Linear Algebra, Galois Theory, Representation theory, Group extensions and Schur Multiplier ( PDFDrive ).pdf",
+    "Triennale/Algebra Lineare/Lezioni/Lezione 20.pdf",
+    "Triennale/Algebra Lineare/Lezioni/Lezione 21.pdf",
+    "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi riassuntivi foglio 5.md",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi Svolti.md",
+    "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Durante Lezione.md",
+    "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Matrici e applicazioni lineari.md",
+    "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Applicazioni lineari.md",
+    "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Vettori, spazi e sottospazi vettoriali.md",
     "Triennale/TECH WEB/Notes/Notes.md",
     "Triennale/OOP/modulo 2/java/exercise/theory/Factory.md",
     "Triennale/OOP/modulo 2/esami/Domande Eserciziario.md",
     "Triennale/OOP/modulo 2/java/exercise/theory/Command.md",
-    "Triennale/Algebra Lineare/Guide.md",
     "Pasted image 20240705184642.png",
     "Pasted image 20240705110305.png",
     "Triennale/Sistemi Operativi/modulo 1/3.1-7/utils/Directories.md",
     "Triennale/TECH WEB/TECH WEB PROJECT.md",
     "Pasted image 20230919150355.png",
     "Untitled 1.md",
-    "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Matrici e applicazioni lineari.md",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Algoritmo di Gauss.md",
-    "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi riassuntivi foglio 5.md",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Autovalori ed autovettori.md",
     "Secondo Anno/Algebra Lineare/theory/Cambio di base.md",
     "Triennale/cheatsheet_lat/cheatsheet.md",
-    "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Vettori, spazi e sottospazi vettoriali.md",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Numeri Complessi.md",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Cramer e matrici inverse.md",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Studio applicazioni lineari con determinante e teorema orlati.md",
@@ -226,7 +226,6 @@
     "Triennale/Sistemi Operativi/modulo 1/3.1-7/Memoria.md",
     "Sto cazzo.md",
     "Pasted image 20240617200106.png",
-    "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Applicazioni lineari.md",
     "Untitled.md",
     "Pasted image 20240531111031.png",
     "Pasted image 20240531102019.png",
