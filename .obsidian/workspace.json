@@ -56,9 +56,19 @@
                 "file": "Triennale/Algebra Lineare/Formulario.pdf"
               }
             }
+          },
+          {
+            "id": "3a982202db289fa6",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Algebra Lineare/Esami/Algebra Lineare e Geometria-1.pdf"
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -108,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 374
+    "width": 374,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -124,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Triennale/Algebra Lineare/Formulario.pdf",
+                "file": "Triennale/Algebra Lineare/Esami/Algebra Lineare e Geometria-1.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Triennale/Algebra Lineare/Formulario.pdf",
+                "file": "Triennale/Algebra Lineare/Esami/Algebra Lineare e Geometria-1.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Triennale/Algebra Lineare/Formulario.pdf"
+                "file": "Triennale/Algebra Lineare/Esami/Algebra Lineare e Geometria-1.pdf"
               }
             }
           }
@@ -186,19 +197,20 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "f005ec8e0702cb8f",
+  "active": "3a982202db289fa6",
   "lastOpenFiles": [
-    "Triennale/Algebra Lineare/Guide.md",
+    "Triennale/Algebra Lineare/Esami/Foglio14_sim_compl.pdf",
+    "Triennale/Algebra Lineare/Esami/formulario algebra_annotato.pdf",
+    "Triennale/Algebra Lineare/Esami/Glossario di algebra.pdf",
     "Triennale/Algebra Lineare/Formulario.pdf",
+    "Triennale/Algebra Lineare/Esami/Algebra Lineare e Geometria-1.pdf",
+    "Triennale/Algebra Lineare/Esami/algebra1.pdf",
+    "Triennale/Algebra Lineare/Guide.md",
     "Triennale/Algebra Lineare/Foglio1_num_comples.pdf",
     "Triennale/Algebra Lineare/Esame_ALGEBRA_AAA_soluzioni.pdf",
     "Triennale/Algebra Lineare/algebra_180123_AAA_sol.pdf",
     "Triennale/Algebra Lineare/ALGEBRA_1606_AAA (2).pdf",
     "Triennale/Algebra Lineare/Algebra Lineare appunti_annotated.pdf",
-    "Triennale/Algebra Lineare/Esami/Esame_2024_05_27B.pdf",
-    "Triennale/Algebra Lineare/Algebra 2_ Linear Algebra, Galois Theory, Representation theory, Group extensions and Schur Multiplier ( PDFDrive ).pdf",
-    "Triennale/Algebra Lineare/Lezioni/Lezione 20.pdf",
-    "Triennale/Algebra Lineare/Lezioni/Lezione 21.pdf",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi riassuntivi foglio 5.md",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi Svolti.md",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Durante Lezione.md",
