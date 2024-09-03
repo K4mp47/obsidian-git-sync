@@ -22,6 +22,6 @@ public class WrapperRandom {
     }
 
     public static boolean nextBoolean() { return random.nextBoolean(); }
-    public static int nextInt() { return instance().nextInt(); }
+    public static int nextInt() { return instance().nextInt(10); }
     public static double nextDouble() { return random.nextDouble(); }
 }

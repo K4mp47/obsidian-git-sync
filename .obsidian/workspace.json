@@ -66,9 +66,19 @@
                 "file": "Triennale/Algebra Lineare/Esami/Algebra Lineare e Geometria-1.pdf"
               }
             }
+          },
+          {
+            "id": "9912b603f32af64a",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__1_7_22_.pdf"
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -118,8 +128,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 374,
-    "collapsed": true
+    "width": 374
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -135,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Triennale/Algebra Lineare/Esami/Algebra Lineare e Geometria-1.pdf",
+                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__1_7_22_.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Triennale/Algebra Lineare/Esami/Algebra Lineare e Geometria-1.pdf",
+                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__1_7_22_.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Triennale/Algebra Lineare/Esami/Algebra Lineare e Geometria-1.pdf"
+                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__1_7_22_.pdf"
               }
             }
           }
@@ -197,20 +206,20 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "3a982202db289fa6",
+  "active": "9912b603f32af64a",
   "lastOpenFiles": [
-    "Triennale/Algebra Lineare/Esami/Foglio14_sim_compl.pdf",
-    "Triennale/Algebra Lineare/Esami/formulario algebra_annotato.pdf",
-    "Triennale/Algebra Lineare/Esami/Glossario di algebra.pdf",
-    "Triennale/Algebra Lineare/Formulario.pdf",
-    "Triennale/Algebra Lineare/Esami/Algebra Lineare e Geometria-1.pdf",
-    "Triennale/Algebra Lineare/Esami/algebra1.pdf",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es7/Random.class",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es1.class",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es1$1.class",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es1$SkippableArrayList.class",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es1$SkippableArrayList$1.class",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es1$Either.class",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es1$Predicate.class",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Es1.java",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/SkippableArrayList.java",
+    "Triennale/OOP/modulo 2/esami/Scritto_PO2__1_6_23_.pdf",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/2a.out",
     "Triennale/Algebra Lineare/Guide.md",
-    "Triennale/Algebra Lineare/Foglio1_num_comples.pdf",
-    "Triennale/Algebra Lineare/Esame_ALGEBRA_AAA_soluzioni.pdf",
-    "Triennale/Algebra Lineare/algebra_180123_AAA_sol.pdf",
-    "Triennale/Algebra Lineare/ALGEBRA_1606_AAA (2).pdf",
-    "Triennale/Algebra Lineare/Algebra Lineare appunti_annotated.pdf",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi riassuntivi foglio 5.md",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi Svolti.md",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Durante Lezione.md",
