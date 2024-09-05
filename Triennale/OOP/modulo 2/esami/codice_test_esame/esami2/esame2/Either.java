@@ -1,4 +1,4 @@
-package esami.esame2;
+package esami2.esame2;
 
 public interface Either<T> {
     T onSuccess(T t);

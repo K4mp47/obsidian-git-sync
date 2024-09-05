@@ -8,72 +8,76 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ca71f793da86c0c2",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/OOP/modulo 2/esami/Eserciziario.pdf"
-              }
-            }
-          },
-          {
-            "id": "c540ca1bed79ec07",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/OOP/modulo 2/esami/Eserciziario.pdf"
-              }
-            }
-          },
-          {
-            "id": "1f6fdd35b05c1397",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/TECH WEB/TAW_2024_project.pdf"
-              }
-            }
-          },
-          {
-            "id": "1e17452fc8f46a9f",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Algebra Lineare/Esami/formulario algebra_annotato.pdf"
-              }
-            }
-          },
-          {
-            "id": "f005ec8e0702cb8f",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Algebra Lineare/Formulario.pdf"
-              }
-            }
-          },
-          {
-            "id": "3a982202db289fa6",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Algebra Lineare/Esami/Algebra Lineare e Geometria-1.pdf"
-              }
-            }
-          },
-          {
             "id": "9912b603f32af64a",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__1_7_22_.pdf"
+                "file": "Triennale/OOP/2024-09-03-Note-12-17.pdf"
+              }
+            }
+          },
+          {
+            "id": "cd0109e14e6f7e0d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Triennale/OOP/modulo 1/exams/2024/Soluzioni teoria.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "814c2a04778405ce",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/OOP/modulo 1/exams/2024/Programmazione_TestoEsame.pdf"
+              }
+            }
+          },
+          {
+            "id": "98753dee3c63551d",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/OOP/modulo 1/exams/2024/MasterSolution (1).pdf"
+              }
+            }
+          },
+          {
+            "id": "6b0e1f81861ef994",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Triennale/OOP/OOP Concept.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1c830be940df4f79",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/OOP/Object oriented programming (6).pdf"
+              }
+            }
+          },
+          {
+            "id": "a80daa21d2673a30",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__25_6_24_.pdf"
               }
             }
           }
@@ -144,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__1_7_22_.pdf",
+                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__25_6_24_.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__1_7_22_.pdf",
+                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__25_6_24_.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__1_7_22_.pdf"
+                "file": "Triennale/OOP/modulo 2/esami/Scritto_PO2__25_6_24_.pdf"
               }
             }
           }
@@ -206,19 +210,30 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "676356614d8bc787",
+  "active": "a80daa21d2673a30",
   "lastOpenFiles": [
-    "Triennale/OOP/modulo 2/esami/Scritto_PO2__25_6_24_.pdf",
-    "Triennale/OOP/modulo 2/esami/Scritto_PO2__25_6_24_.pdf.crdownload",
-    "Triennale/OOP/modulo 1/exams/2024/MasterSolution (2).pdf",
-    "Triennale/OOP/modulo 1/exams/2024/MasterSolution (2).pdf.crdownload",
-    "Triennale/OOP/modulo 1/exams/2024/Teoria_TestoEsame (2).pdf",
-    "Triennale/OOP/modulo 1/exams/2024/Teoria_TestoEsame (2).pdf.crdownload",
-    "Triennale/OOP/modulo 1/exams/2024/Programmazione_TestoEsame (2).pdf",
-    "Triennale/OOP/modulo 1/exams/2024/Programmazione_TestoEsame (2).pdf.crdownload",
-    "Triennale/OOP/modulo 1/exams/2024/MasterSolution (1).pdf",
-    "Triennale/OOP/modulo 1/exams/2024/MasterSolution (1).pdf.crdownload",
-    "Triennale/OOP/modulo 1/exams/2024/Programmazione_TestoEsame (1).pdf",
+    "Triennale/OOP/modulo 2/esami/Scritto_PO2__14_6_24_.pdf",
+    "Triennale/OOP/modulo 2/esami/Scritto_PO2__10_1_24_.pdf",
+    "Triennale/OOP/2024-09-03-Note-12-17.pdf",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/EsTest.java",
+    "Triennale/OOP/OOP Concept.pdf",
+    "Triennale/OOP/Preparazione esame.md",
+    "Triennale/OOP/OOP Concept.md",
+    "Triennale/OOP/Object oriented programming (6).pdf",
+    "Triennale/OOP/modulo 1/exams/2024/Programmazione_TestoEsame.pdf",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Weather/a",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Weather/WeatherValueException.java",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Weather/a.java",
+    "Triennale/OOP/modulo 2/esami/codice_test_esame/Weather/WeatherData.java",
+    "Triennale/OOP/modulo 1/exams/2024/Soluzioni teoria.md",
+    "Pasted image 20240904112418.png",
+    "Triennale/OOP/modulo 1/Risposte esame OOP.md",
+    "README.md",
+    "Sto cazzo.md",
+    "Untitled 1.md",
+    "Untitled 2.md",
+    "Test.md",
+    "Untitled.md",
     "Triennale/Algebra Lineare/Guide.md",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi riassuntivi foglio 5.md",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi Svolti.md",
@@ -235,25 +250,14 @@
     "Triennale/Sistemi Operativi/modulo 1/3.1-7/utils/Directories.md",
     "Triennale/TECH WEB/TECH WEB PROJECT.md",
     "Pasted image 20230919150355.png",
-    "Untitled 1.md",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Algoritmo di Gauss.md",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Autovalori ed autovettori.md",
-    "Secondo Anno/Algebra Lineare/theory/Cambio di base.md",
-    "Triennale/cheatsheet_lat/cheatsheet.md",
-    "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Numeri Complessi.md",
-    "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Cramer e matrici inverse.md",
-    "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Studio applicazioni lineari con determinante e teorema orlati.md",
-    "File reference.md",
-    "Triennale/Sistemi Operativi/modulo 1/3.1-7/Memoria.md",
-    "Sto cazzo.md",
     "Pasted image 20240617200106.png",
-    "Untitled.md",
     "Pasted image 20240531111031.png",
     "Pasted image 20240531102019.png",
     "Pasted image 20240531101758.png",
     "Pasted image 20240509112811.png",
     "Pasted image 20240509104804.png",
-    "Pasted image 20240508115017.png",
     "Untitled.canvas"
   ]
 }

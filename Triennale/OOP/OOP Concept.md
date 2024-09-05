@@ -61,12 +61,17 @@ Java, for a better comprehension of the code, gives at programmers a special com
 - `@version`: to specify the current version of the class
 - `@param <name>`: to document a specific method parameter
 - `@return`: to specify what a method return
+
 - `@requires`: to specify what a method need in input in order to perform correctly
+	- That is for precondition inside Design by Contract
 - `@ensure`: to specify what a method should return
+	-  That is for postcondition inside Design by Contract
+- `@invariant`: to specify what is always true inside the class
+	-  That is for object invariants inside Design by Contract
 
 ## Artifacts
 An artifact is the result of the compilation and build of a program. An artifact usually encapsulates several packages together, it can be downloaded and installed. The idea of such an artifact is that a developer might load it inside his/her Java application, and use our classes as a library. The Java Development Kit for example, provides a utility (jar.exe) that allows to pack together several .class files into a unique jar archive. A jar file is nothing else than a zipped file containing all the .class file obtained by the compilation of our source code, all the resource files, and a manifest file (file with information about the code like the version of the jar, its vendor, Creator ecc.). 
-## Contracts
+## Design by Contracts
 
 A contract in Java is the agreement between user and programmer about what the programmers has the right of receiving in input from the user, and his obligation to providing back the results of the computation as specified by the capsule APIs (e.g., method signature) and the documentation provided. 
 

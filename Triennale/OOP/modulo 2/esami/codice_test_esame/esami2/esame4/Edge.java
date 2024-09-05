@@ -1,4 +1,4 @@
-package esami.esame4;
+package esami2.esame4;
 
 public class Edge implements Comparable<Edge> {
 

@@ -1,4 +1,4 @@
-package esami.esame2;
+package esami2.esame2;
 
 import java.util.ArrayList;
 import java.util.Iterator;
