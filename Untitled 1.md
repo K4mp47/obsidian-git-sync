@@ -1,1 +1,0 @@
-$$\begin{pmatrix}1&0&1\\0&1&-1\\1&1&-2\end{pmatrix}\begin{pmatrix}?&?&?\\?&?&?\\?&?&?\end{pmatrix}=\begin{pmatrix}1&0&0\\0&1&0\\0&0&1\end{pmatrix}$$
