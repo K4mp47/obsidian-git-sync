@@ -1,8 +1,17 @@
 <div class="w-full flex align-center justify-center pt-24">
   <div class="mockup-code w-[80%]">
-    <pre data-prefix="$"><code>npm i daisyui</code></pre>
-    <pre data-prefix=">" class="text-warning"><code>installing...</code></pre>
-    <pre data-prefix=">" class="text-success"><code>Done!</code></pre>
-    <app-button class="ml-5" text="Add Task" (btnClick)="toggleAddTask()"></app-button>
+    <div class="flex w-[95%] justify-between">
+      <div>
+        <pre data-prefix="$"><code>npm i task tracker</code></pre>
+        <pre data-prefix=">" class="text-warning"><code>installing...</code></pre>
+        <pre data-prefix=">" class="text-success"><code>Done!</code></pre>
+      </div>
+      <div>
+        <app-button class="ml-5" text="Add Task" (btnClick)="toggleAddTask()"></app-button>
+      </div>
+    </div>
+    <br>
+    <pre data-prefix="$"><code>task's list</code></pre>
+    <app-tasks></app-tasks>
   </div>
 </div>

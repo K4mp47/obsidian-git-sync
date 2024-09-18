@@ -358,4 +358,183 @@ if an element in `TASK` doesn't follow the interface structure, thanks to `: Tas
 
 ⚠ That's all thanks to the interface file! You can choice to change that interface, but remember to change all the elements inside the `TASK` variable!
 
+---
+#### 4: print the tasks
+
+Inside the task component, should be coded:
+```js
+// tasks.component.ts
+import { Component, OnInit } from '@angular/core';
+import { Task } from '../../Task';
+import { TASKS } from '../../mock-tasks';
+import { CommonModule } from '@angular/common';
+
+@Component({
+	selector: 'app-tasks',
+	standalone: true,
+	imports: [
+		CommonModule
+	],
+	templateUrl: './tasks.component.html',
+	styleUrl: './tasks.component.css'
+})
+
+  
+
+export class TasksComponent implements OnInit {
+	tasks: Task[] = TASKS; 
+	
+	constructor() {} 
+	
+	ngOnInit(): void {}
+
+}
+```
+
+```js
+<!--tasks.component.html-->
+<p *ngFor="let task of tasks">{{ task.text }}</p>
+```
+
+and than if you add `<app-tasks></app-tasks>` to the `app.component.html` you'll see all the tasks printed on screen!!
+
+---
+#### 5: create a service for tasks
+
+Use the following command to create a service inside the angular project:
+```
+$ ng generate service services/task
+```
+
+the file generated should be like this:
+```js
+// task.service.ts
+import { Injectable } from '@angular/core';
+
+@Injectable({
+	providedIn: 'root'
+})
+
+export class TaskService {
+	constructor() { }
+}
+```
+
+and then we will add:
+
+```js
+// task.service.ts
+import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs'
+import { Task } from '../Task';
+import { TASKS } from '../mock-tasks';
+
+@Injectable({
+	providedIn: 'root'
+})
+
+export class TaskService {
+	constructor() { }
+	
+	getTasks(): Observable<Task[]> {
+		return of(TASKS);
+	}
+}
+```
+
+and we will change the `tasks.component.ts` file:
+
+```js
+import { Component, OnInit } from '@angular/core';
+import { Task } from '../../Task';
+import { CommonModule } from '@angular/common';
+import { TaskItemComponent } from '../task-item/task-item.component';
+import { TaskService } from '../../services/task.service';
+
+@Component({
+	selector: 'app-tasks',
+	standalone: true,
+	imports: [
+		CommonModule,
+		TaskItemComponent
+	],
+	templateUrl: './tasks.component.html',
+	styleUrl: './tasks.component.css'
+})
+  
+export class TasksComponent implements OnInit {
+
+	tasks: Task[] = [];
+	
+	constructor(private taskService: TaskService) {}
+	
+	ngOnInit(): void {
+		this.taskService.getTasks().subscribe((tasks) => this.tasks = tasks);
+	}
+}
+```
+
+---
+#### 6: json local server setup
+To simulate properly the work of the frontend we need a backend where save our tasks. So we will use a local json server, running the following command:
+
+```
+npm install -g json-server
+```
+
+⚠ Run with root privileges if necessary
+
+And now change the `package.json` file inside the project adding the `server` to the possible `scripts`:
+
+```js
+{
+	"name": "my-app",
+	"version": "0.0.0",
+	"scripts": {
+		"ng": "ng",
+		"start": "ng serve",
+		"build": "ng build",
+		"watch": "ng build --watch --configuration development",
+		"test": "ng test",
+		"server": "json-server --watch db.json", // <-- this
+		"serve:ssr:my-app": "node dist/my-app/server/server.mjs"
+	},
+	"private": true,
+	"dependencies": {
+// <-- snip code -->
+```
+
+In the root folder, add a `db.json` file to configure the local REST API:
+
+```js
+{
+	"tasks": [
+		{
+			"id": 1,
+			"text": "Doctors Appointment",
+			"day": "May 5th at 2:30pm",
+			"reminder": true
+		},
+		{
+			"id": 2,
+			"text": "Meeting at School",
+			"day": "May 6th at 1:30pm",
+			"reminder": true
+		},
+		{
+			"id": 3,
+			"text": "Food Shopping",
+			"day": "May 7th at 12:30pm",
+			"reminder": false
+		},
+		{
+			"id": 4,
+			"text": "Doctors Appointment",
+			"day": "May 8th at 2:30pm",
+			"reminder": true
+		}
+	]
+}```
+
+Now if you run `npm run server` you should see a rest api working on your local machine!
 
