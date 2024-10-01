@@ -16,8 +16,39 @@
                 "file": "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf"
               }
             }
+          },
+          {
+            "id": "ed02d57ee7f82f31",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Analisi matematica/testo_analisi_battaia.pdf"
+              }
+            }
+          },
+          {
+            "id": "e8b3d5a16edd14af",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Analisi matematica/Esercizi/Es01_AM1_insiemistica.pdf"
+              }
+            }
+          },
+          {
+            "id": "b8343e88073e1170",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Analisi matematica/funzioni_annotated.pdf"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -83,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
+                "file": "Triennale/Analisi matematica/Esercizi/Es01_AM1_insiemistica.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
+                "file": "Triennale/Analisi matematica/Esercizi/Es01_AM1_insiemistica.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf"
+                "file": "Triennale/Analisi matematica/Esercizi/Es01_AM1_insiemistica.pdf"
               }
             }
           }
@@ -145,20 +176,22 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "361be3425c8ce2da",
+  "active": "e8b3d5a16edd14af",
   "lastOpenFiles": [
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Indice.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
+    "Triennale/Analisi matematica/funzioni_annotated.pdf",
+    "Triennale/Analisi matematica/insiemistica_annotated.pdf",
     "Triennale/Analisi matematica/testo_analisi_battaia.pdf",
+    "Triennale/Analisi matematica/Esercizi/Es01_AM1_insiemistica.pdf",
+    "Untitled.md",
+    "Triennale/Analisi matematica/Esercizi/Es02_AM1_funzioni.pdf",
+    "Triennale/Analisi matematica/Esercizi/Es02_AM1_funzioni.pdf.crdownload",
+    "Triennale/Analisi matematica/Esercizi/Es01_AM1_insiemistica.pdf.crdownload",
+    "Triennale/Analisi matematica/Esercizi",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Indice.md",
     "Triennale/Basi di Dati/esami/2023_01.pdf",
     "Triennale/Basi di Dati/esami/2023_02Finale.pdf",
-    "Triennale/Basi di Dati/esami/esame020224.pdf",
-    "Triennale/Basi di Dati/esami/2023_03Finale.pdf",
-    "Triennale/Basi di Dati/esami/IprovaIntermedia (1).pdf",
-    "Triennale/Basi di Dati/esami/IprovaIntermedia (1).pdf.crdownload",
-    "Triennale/Basi di Dati/esami/esame020224.pdf.crdownload",
     "Triennale/TECH WEB/Angular_Crash_Course/Angular Crash Course.md",
-    "Triennale/TECH WEB/Angular_Crash_Course/my-app/db.json",
     "Esercizio per Buso.md",
     "Test.md",
     "Triennale/Analisi matematica/Indice.md",
@@ -181,8 +214,6 @@
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/sucrase/node_modules/minimatch/README.md",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/sucrase/node_modules/commander/Readme.md",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/sucrase/node_modules/commander/CHANGELOG.md",
-    "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/sucrase/node_modules/glob/README.md",
-    "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/sucrase/node_modules/brace-expansion/README.md",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/jasmine-core/images/jasmine_favicon.png",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/jasmine-core/images/jasmine-horizontal.svg",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/jasmine-core/images/jasmine-horizontal.png",
