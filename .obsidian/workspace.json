@@ -18,32 +18,22 @@
             }
           },
           {
-            "id": "ed02d57ee7f82f31",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Analisi matematica/testo_analisi_battaia.pdf"
-              }
-            }
-          },
-          {
             "id": "e8b3d5a16edd14af",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Analisi matematica/Esercizi/Es01_AM1_insiemistica.pdf"
+                "file": "Triennale/Analisi matematica/Esercizi/Es02_AM1_funzioni.pdf"
               }
             }
           },
           {
-            "id": "b8343e88073e1170",
+            "id": "d2628e5d2d9c8a2a",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Analisi matematica/funzioni_annotated.pdf"
+                "file": "Triennale/Basi di Dati/2.ModelliAle.pdf"
               }
             }
           }
@@ -114,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Triennale/Analisi matematica/Esercizi/Es01_AM1_insiemistica.pdf",
+                "file": "Triennale/Basi di Dati/2.ModelliAle.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Triennale/Analisi matematica/Esercizi/Es01_AM1_insiemistica.pdf",
+                "file": "Triennale/Basi di Dati/2.ModelliAle.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Triennale/Analisi matematica/Esercizi/Es01_AM1_insiemistica.pdf"
+                "file": "Triennale/Basi di Dati/2.ModelliAle.pdf"
               }
             }
           }
@@ -176,21 +166,21 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "e8b3d5a16edd14af",
+  "active": "d2628e5d2d9c8a2a",
   "lastOpenFiles": [
-    "Triennale/Analisi matematica/funzioni_annotated.pdf",
-    "Triennale/Analisi matematica/insiemistica_annotated.pdf",
-    "Triennale/Analisi matematica/testo_analisi_battaia.pdf",
-    "Triennale/Analisi matematica/Esercizi/Es01_AM1_insiemistica.pdf",
-    "Untitled.md",
+    "Triennale/Basi di Dati/appunti/BasiDiDati_annotated.pdf",
+    "Triennale/Basi di Dati/appunti/BasiDiDati.xopp~",
+    "Triennale/Basi di Dati/3.Progettazione.pdf",
     "Triennale/Analisi matematica/Esercizi/Es02_AM1_funzioni.pdf",
-    "Triennale/Analisi matematica/Esercizi/Es02_AM1_funzioni.pdf.crdownload",
-    "Triennale/Analisi matematica/Esercizi/Es01_AM1_insiemistica.pdf.crdownload",
-    "Triennale/Analisi matematica/Esercizi",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
+    "Triennale/Basi di Dati/appunti/BasiDiDati.xopp",
+    "Triennale/Analisi matematica/book/testo_analisi_battaia.pdf",
+    "Triennale/Analisi matematica/book",
+    "Triennale/Analisi matematica/appunti/insiemistica_annotated.pdf",
+    "Triennale/Analisi matematica/appunti/insiemistica.xopp",
+    "Triennale/Analisi matematica/appunti/funzioni_annotated.pdf",
+    "Triennale/Analisi matematica/appunti/funzioni.xopp",
+    "Untitled.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Indice.md",
-    "Triennale/Basi di Dati/esami/2023_01.pdf",
-    "Triennale/Basi di Dati/esami/2023_02Finale.pdf",
     "Triennale/TECH WEB/Angular_Crash_Course/Angular Crash Course.md",
     "Esercizio per Buso.md",
     "Test.md",
