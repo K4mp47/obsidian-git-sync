@@ -33,7 +33,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Basi di Dati/2.ModelliAle.pdf"
+                "file": "Triennale/TECH WEB/TAW_2024_project.pdf"
               }
             }
           }
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 374
+    "width": 306.01103591918945
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Triennale/Basi di Dati/2.ModelliAle.pdf",
+                "file": "Triennale/TECH WEB/TAW_2024_project.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Triennale/Basi di Dati/2.ModelliAle.pdf",
+                "file": "Triennale/TECH WEB/TAW_2024_project.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Triennale/Basi di Dati/2.ModelliAle.pdf"
+                "file": "Triennale/TECH WEB/TAW_2024_project.pdf"
               }
             }
           }
@@ -168,17 +168,17 @@
   },
   "active": "d2628e5d2d9c8a2a",
   "lastOpenFiles": [
+    "Triennale/Basi di Dati/studio per esame/02 - SQL.pdf",
+    "Triennale/Basi di Dati/studio per esame/01 - Modellazione.pdf",
+    "Triennale/Basi di Dati/esami/IprovaIntermedia (1).pdf",
+    "Triennale/Basi di Dati/esami/IprovaIntermedia.pdf",
+    "Triennale/Basi di Dati/esami/2023_01.pdf",
+    "Triennale/Basi di Dati/esami/2023_02Finale.pdf",
+    "Triennale/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
+    "Triennale/Basi di Dati/3.Progettazione.pdf",
+    "Triennale/Basi di Dati/2.ModelliAle.pdf",
     "Triennale/Basi di Dati/appunti/BasiDiDati_annotated.pdf",
     "Triennale/Basi di Dati/appunti/BasiDiDati.xopp~",
-    "Triennale/Basi di Dati/3.Progettazione.pdf",
-    "Triennale/Analisi matematica/Esercizi/Es02_AM1_funzioni.pdf",
-    "Triennale/Basi di Dati/appunti/BasiDiDati.xopp",
-    "Triennale/Analisi matematica/book/testo_analisi_battaia.pdf",
-    "Triennale/Analisi matematica/book",
-    "Triennale/Analisi matematica/appunti/insiemistica_annotated.pdf",
-    "Triennale/Analisi matematica/appunti/insiemistica.xopp",
-    "Triennale/Analisi matematica/appunti/funzioni_annotated.pdf",
-    "Triennale/Analisi matematica/appunti/funzioni.xopp",
     "Untitled.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Indice.md",
     "Triennale/TECH WEB/Angular_Crash_Course/Angular Crash Course.md",
