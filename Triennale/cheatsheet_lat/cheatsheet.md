@@ -27,10 +27,6 @@ Input             | Rendered        |
 - pointed list
 1. numbered list
 
-[[File reference]]
-
-
-
 Special characters / Symbols
 ============================
 ### Latin:

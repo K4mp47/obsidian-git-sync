@@ -26,19 +26,25 @@
                 "file": "Triennale/Analisi matematica/Esercizi/Es02_AM1_funzioni.pdf"
               }
             }
-          },
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "eda450fec2c62903",
+        "type": "tabs",
+        "children": [
           {
             "id": "d2628e5d2d9c8a2a",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/TECH WEB/TAW_2024_project.pdf"
+                "file": "Triennale/Analisi matematica/appunti/limiti_annotated.pdf"
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -104,7 +110,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Triennale/TECH WEB/TAW_2024_project.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +126,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Triennale/TECH WEB/TAW_2024_project.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Triennale/TECH WEB/TAW_2024_project.pdf"
+                "file": "Triennale/Analisi matematica/appunti/Limiti di Funzione.md"
               }
             }
           }
@@ -166,19 +170,25 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "d2628e5d2d9c8a2a",
+  "active": "676356614d8bc787",
   "lastOpenFiles": [
+    "Triennale/Analisi matematica/Esercizi/Es03_AM1_trig.pdf",
+    "Triennale/Analisi matematica/Esercizi/Es03_AM1_trig.pdf.crdownload",
+    "Pasted image 20241008123648.png",
+    "Triennale/cheatsheet_lat/cheatsheet.md",
+    "Triennale/Analisi matematica/appunti/Limiti di Funzione.md",
+    "Pasted image 20241008123431.png",
+    "Pasted image 20241008123355.png",
+    "Pasted image 20241008123232.png",
+    "Triennale/Analisi matematica/appunti/limiti_annotated.pdf",
+    "Triennale/Analisi matematica/appunti/funzioni_annotated.pdf",
+    "Triennale/TECH WEB/TAW_2024_project.pdf",
     "Triennale/Basi di Dati/studio per esame/02 - SQL.pdf",
     "Triennale/Basi di Dati/studio per esame/01 - Modellazione.pdf",
     "Triennale/Basi di Dati/esami/IprovaIntermedia (1).pdf",
     "Triennale/Basi di Dati/esami/IprovaIntermedia.pdf",
     "Triennale/Basi di Dati/esami/2023_01.pdf",
     "Triennale/Basi di Dati/esami/2023_02Finale.pdf",
-    "Triennale/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
-    "Triennale/Basi di Dati/3.Progettazione.pdf",
-    "Triennale/Basi di Dati/2.ModelliAle.pdf",
-    "Triennale/Basi di Dati/appunti/BasiDiDati_annotated.pdf",
-    "Triennale/Basi di Dati/appunti/BasiDiDati.xopp~",
     "Untitled.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Indice.md",
     "Triennale/TECH WEB/Angular_Crash_Course/Angular Crash Course.md",
@@ -202,18 +212,12 @@
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/tailwindcss/CHANGELOG.md",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/@angular-devkit/build-angular/node_modules/postcss/README.md",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/sucrase/node_modules/minimatch/README.md",
-    "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/sucrase/node_modules/commander/Readme.md",
-    "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/sucrase/node_modules/commander/CHANGELOG.md",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/jasmine-core/images/jasmine_favicon.png",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/jasmine-core/images/jasmine-horizontal.svg",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/jasmine-core/images/jasmine-horizontal.png",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/ordered-binary/assets/powers-dre.png",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/resolve-url-loader/docs/detailed-problem.svg",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/resolve-url-loader/docs/basic-problem.svg",
-    "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/serve-index/public/icons/page_world.png",
-    "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/serve-index/public/icons/page_word.png",
-    "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/serve-index/public/icons/page_white_zip.png",
-    "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/serve-index/public/icons/page_white_wrench.png",
     "Untitled.canvas"
   ]
 }
