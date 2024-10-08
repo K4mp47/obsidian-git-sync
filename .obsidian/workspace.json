@@ -26,6 +26,26 @@
                 "file": "Triennale/Analisi matematica/Esercizi/Es02_AM1_funzioni.pdf"
               }
             }
+          },
+          {
+            "id": "1e5a92874deb5fcd",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Analisi matematica/moodle_solutions/Foglio2Soluzioni.pdf"
+              }
+            }
+          },
+          {
+            "id": "e1d9cb1aea0cff27",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Analisi matematica/book/testo_analisi_battaia.pdf"
+              }
+            }
           }
         ],
         "currentTab": 1
@@ -43,8 +63,19 @@
                 "file": "Triennale/Analisi matematica/appunti/limiti_annotated.pdf"
               }
             }
+          },
+          {
+            "id": "ce73e6badf443fc1",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Analisi matematica/appunti/funzioni_annotated.pdf"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +125,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.01103591918945
+    "width": 306.01103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -110,6 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Triennale/Analisi matematica/Esercizi/Es02_AM1_funzioni.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,6 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Triennale/Analisi matematica/Esercizi/Es02_AM1_funzioni.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Triennale/Analisi matematica/appunti/Limiti di Funzione.md"
+                "file": "Triennale/Analisi matematica/Esercizi/Es02_AM1_funzioni.pdf"
               }
             }
           }
@@ -170,25 +204,25 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "676356614d8bc787",
+  "active": "e8b3d5a16edd14af",
   "lastOpenFiles": [
+    "Triennale/Analisi matematica/moodle_solutions/Foglio2Soluzioni.pdf",
+    "Triennale/Analisi matematica/Esercizi/Es02_AM1_funzioni.pdf",
+    "Triennale/Analisi matematica/book/testo_analisi_battaia.pdf",
+    "Triennale/Analisi matematica/appunti/funzioni_annotated.pdf",
+    "Triennale/Analisi matematica/moodle_solutions/Foglio1Soluzioni.pdf",
+    "Triennale/Analisi matematica/moodle_solutions/Foglio1Soluzioni.pdf.crdownload",
+    "Triennale/Analisi matematica/moodle_solutions",
+    "Triennale/Analisi matematica/appunti/Limiti di Funzione.md",
     "Triennale/Analisi matematica/Esercizi/Es03_AM1_trig.pdf",
     "Triennale/Analisi matematica/Esercizi/Es03_AM1_trig.pdf.crdownload",
     "Pasted image 20241008123648.png",
     "Triennale/cheatsheet_lat/cheatsheet.md",
-    "Triennale/Analisi matematica/appunti/Limiti di Funzione.md",
     "Pasted image 20241008123431.png",
     "Pasted image 20241008123355.png",
     "Pasted image 20241008123232.png",
     "Triennale/Analisi matematica/appunti/limiti_annotated.pdf",
-    "Triennale/Analisi matematica/appunti/funzioni_annotated.pdf",
     "Triennale/TECH WEB/TAW_2024_project.pdf",
-    "Triennale/Basi di Dati/studio per esame/02 - SQL.pdf",
-    "Triennale/Basi di Dati/studio per esame/01 - Modellazione.pdf",
-    "Triennale/Basi di Dati/esami/IprovaIntermedia (1).pdf",
-    "Triennale/Basi di Dati/esami/IprovaIntermedia.pdf",
-    "Triennale/Basi di Dati/esami/2023_01.pdf",
-    "Triennale/Basi di Dati/esami/2023_02Finale.pdf",
     "Untitled.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Indice.md",
     "Triennale/TECH WEB/Angular_Crash_Course/Angular Crash Course.md",
