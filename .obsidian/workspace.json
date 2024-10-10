@@ -6,6 +6,7 @@
       {
         "id": "739bb12cd298c52a",
         "type": "tabs",
+        "dimension": 14.326647564469914,
         "children": [
           {
             "id": "361be3425c8ce2da",
@@ -21,9 +22,11 @@
             "id": "e8b3d5a16edd14af",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Triennale/Analisi matematica/Esercizi/Es02_AM1_funzioni.pdf"
+                "file": "Triennale/cheatsheet_lat/git commands.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -53,6 +56,7 @@
       {
         "id": "eda450fec2c62903",
         "type": "tabs",
+        "dimension": 85.67335243553008,
         "children": [
           {
             "id": "d2628e5d2d9c8a2a",
@@ -73,9 +77,19 @@
                 "file": "Triennale/Analisi matematica/appunti/funzioni_annotated.pdf"
               }
             }
+          },
+          {
+            "id": "001490c889ffa6e3",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -125,8 +139,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.01103591918945,
-    "collapsed": true
+    "width": 306.01103591918945
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -142,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Triennale/Analisi matematica/Esercizi/Es02_AM1_funzioni.pdf",
+                "file": "Triennale/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +172,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Triennale/Analisi matematica/Esercizi/Es02_AM1_funzioni.pdf",
+                "file": "Triennale/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +195,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Triennale/Analisi matematica/Esercizi/Es02_AM1_funzioni.pdf"
+                "file": "Triennale/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf"
               }
             }
           }
@@ -204,10 +217,12 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "e8b3d5a16edd14af",
+  "active": "001490c889ffa6e3",
   "lastOpenFiles": [
-    "Triennale/Analisi matematica/moodle_solutions/Foglio2Soluzioni.pdf",
+    "Triennale/Basi di Dati/appunti/BasiDiDati.xopp~",
+    "Triennale/cheatsheet_lat/git commands.md",
     "Triennale/Analisi matematica/Esercizi/Es02_AM1_funzioni.pdf",
+    "Triennale/Analisi matematica/moodle_solutions/Foglio2Soluzioni.pdf",
     "Triennale/Analisi matematica/book/testo_analisi_battaia.pdf",
     "Triennale/Analisi matematica/appunti/funzioni_annotated.pdf",
     "Triennale/Analisi matematica/moodle_solutions/Foglio1Soluzioni.pdf",
@@ -222,7 +237,6 @@
     "Pasted image 20241008123355.png",
     "Pasted image 20241008123232.png",
     "Triennale/Analisi matematica/appunti/limiti_annotated.pdf",
-    "Triennale/TECH WEB/TAW_2024_project.pdf",
     "Untitled.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Indice.md",
     "Triennale/TECH WEB/Angular_Crash_Course/Angular Crash Course.md",
@@ -245,7 +259,6 @@
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/tailwindcss/README.md",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/tailwindcss/CHANGELOG.md",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/@angular-devkit/build-angular/node_modules/postcss/README.md",
-    "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/sucrase/node_modules/minimatch/README.md",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/jasmine-core/images/jasmine_favicon.png",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/jasmine-core/images/jasmine-horizontal.svg",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/jasmine-core/images/jasmine-horizontal.png",
