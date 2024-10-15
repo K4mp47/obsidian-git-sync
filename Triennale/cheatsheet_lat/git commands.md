@@ -41,7 +41,7 @@ $ git checkout my-feature-branch
 $ git merge main
 ```
 
-push the feature branch to github
+push the feature branch to github (remain to branch)
 ```
 $ git push origin my-feature-branch
 ```
