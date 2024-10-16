@@ -4,72 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "739bb12cd298c52a",
+        "id": "3a91d2e3f60a72a6",
         "type": "tabs",
-        "dimension": 36.860670194003525,
         "children": [
           {
-            "id": "361be3425c8ce2da",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf"
-              }
-            }
-          },
-          {
-            "id": "03d7cfbb6112fa8e",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Algoritmi & strutture dati/Modulo 1/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf"
-              }
-            }
-          },
-          {
-            "id": "e1d9cb1aea0cff27",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Analisi matematica/book/testo_analisi_battaia.pdf"
-              }
-            }
-          },
-          {
-            "id": "b3515958d8048725",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf"
-              }
-            }
-          },
-          {
-            "id": "ce777cefdadf77b2",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Basi di Dati/2.ModelliAle.pdf"
-              }
-            }
-          },
-          {
-            "id": "8f8a9759df651195",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Basi di Dati/esami/IprovaIntermedia (1).pdf"
-              }
-            }
-          },
-          {
-            "id": "9edbf5a6cafb399a",
+            "id": "098abb66c73aa0db",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -78,46 +17,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
-      },
-      {
-        "id": "eda450fec2c62903",
-        "type": "tabs",
-        "dimension": 63.13932980599647,
-        "children": [
-          {
-            "id": "d2628e5d2d9c8a2a",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Analisi matematica/appunti/limiti_annotated.pdf"
-              }
-            }
-          },
-          {
-            "id": "ce73e6badf443fc1",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Analisi matematica/appunti/funzioni_annotated.pdf"
-              }
-            }
-          },
-          {
-            "id": "1e6bb668834304c6",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Analisi matematica/Esercizi/Es03_AM1_trig.pdf"
-              }
-            }
-          }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -167,7 +67,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.01103591918945
+    "width": 306.01103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -183,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Triennale/Analisi matematica/Esercizi/Es03_AM1_trig.pdf",
+                "file": "Triennale/Basi di Dati/soluzioniModConcettuale.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +101,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Triennale/Analisi matematica/Esercizi/Es03_AM1_trig.pdf",
+                "file": "Triennale/Basi di Dati/soluzioniModConcettuale.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +124,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Triennale/Analisi matematica/Esercizi/Es03_AM1_trig.pdf"
+                "file": "Triennale/Basi di Dati/soluzioniModConcettuale.pdf"
               }
             }
           }
@@ -245,19 +146,20 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "1e6bb668834304c6",
+  "active": "098abb66c73aa0db",
   "lastOpenFiles": [
-    "Triennale/Analisi matematica/Esercizi/Es04_AM1_limiti.pdf",
-    "Triennale/Analisi matematica/Esercizi/Es04_AM1_limiti.pdf.crdownload",
+    "Triennale/Basi di Dati/code/OM.py",
+    "Triennale/Basi di Dati/code",
+    "Esercizio per Buso.md",
+    "Triennale/Analisi matematica/Esercizi/Es03_AM1_trig.pdf",
+    "Triennale/Analisi matematica/moodle_solutions/Foglio3Soluzioni.pdf",
+    "Triennale/Algebra Lineare/Esami/formulario algebra_annotato.pdf",
+    "Triennale/Analisi matematica/appunti/funzioni_annotated.pdf",
+    "Triennale/Analisi matematica/moodle_solutions/Foglio2Soluzioni.pdf",
+    "Triennale/Analisi matematica/tutorato/Foglio3Soluzioni.pdf.crdownload",
+    "Triennale/Analisi matematica/tutorato",
     "Triennale/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
-    "Triennale/Basi di Dati/appunti/BasiDiDati.xopp~",
-    "Triennale/Basi di Dati/soluzioniModConcettuale.pdf",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
-    "Triennale/Algoritmi & strutture dati/algoritmi2.xopp~",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Introduction to Algorithms, Fourth Edition -- Thomas H. Cormen -- 2022 -- MIT Press -- 9780262367509 -.pdf",
-    "Triennale/Basi di Dati/soluzioniModConcettuale.pdf.crdownload",
-    "Triennale/Basi di Dati/3.Progettazione.pdf",
-    "Triennale/Basi di Dati/2.ModelliAle.pdf",
+    "Triennale/Analisi matematica/appunti/limiti_annotated.pdf",
     "Triennale/Basi di Dati/studio per esame/Test di scrittura del modello concettuale.md",
     "Triennale/cheatsheet_lat/git commands.md",
     "Triennale/Analisi matematica/appunti/Limiti di Funzione.md",
@@ -269,7 +171,6 @@
     "Untitled.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Indice.md",
     "Triennale/TECH WEB/Angular_Crash_Course/Angular Crash Course.md",
-    "Esercizio per Buso.md",
     "Test.md",
     "Triennale/Analisi matematica/Indice.md",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/fastparse/README.md",
