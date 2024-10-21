@@ -4,20 +4,83 @@
     "type": "split",
     "children": [
       {
-        "id": "3a91d2e3f60a72a6",
+        "id": "c17f210b2bc060f7",
         "type": "tabs",
         "children": [
           {
-            "id": "098abb66c73aa0db",
+            "id": "78bb06f01fe7750d",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Basi di Dati/soluzioniModConcettuale.pdf"
-              }
+                "file": "Triennale/Analisi matematica/moodle_solutions/Foglio3Soluzioni.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Foglio3Soluzioni"
+            }
+          },
+          {
+            "id": "78e666fa82954b78",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Analisi matematica/Esercizi/Es03_AM1_trig.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Es03_AM1_trig"
+            }
+          },
+          {
+            "id": "94fa1bc69af85cc4",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "latex"
+            }
+          },
+          {
+            "id": "5d9747ebcc4e69ed",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Triennale/Analisi matematica/appunti/tavola-trigonometrica-1024x676.png"
+              },
+              "icon": "lucide-image",
+              "title": "tavola-trigonometrica-1024x676"
+            }
+          },
+          {
+            "id": "47529ada01b3b5f6",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Analisi matematica/Esercizi/Es04_AM1_limiti.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Es04_AM1_limiti"
+            }
+          },
+          {
+            "id": "53e14b7dad4564d4",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Analisi matematica/appunti/limiti_annotated.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "limiti_annotated"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -37,7 +100,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -52,7 +117,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -60,15 +127,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 306.01103591918945,
-    "collapsed": true
+    "width": 306.01103591918945
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -84,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Triennale/Basi di Dati/soluzioniModConcettuale.pdf",
+                "file": "Triennale/Analisi matematica/appunti/limiti_annotated.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,7 +160,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for limiti_annotated"
             }
           },
           {
@@ -101,10 +171,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Triennale/Basi di Dati/soluzioniModConcettuale.pdf",
+                "file": "Triennale/Analisi matematica/appunti/limiti_annotated.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from limiti_annotated"
             }
           },
           {
@@ -115,7 +187,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -124,8 +198,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Triennale/Basi di Dati/soluzioniModConcettuale.pdf"
-              }
+                "file": "Triennale/Analisi matematica/appunti/limiti_annotated.pdf"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of limiti_annotated"
             }
           }
         ],
@@ -146,20 +222,22 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "098abb66c73aa0db",
+  "active": "53e14b7dad4564d4",
   "lastOpenFiles": [
-    "Triennale/Basi di Dati/code/OM.py",
-    "Triennale/Basi di Dati/code",
-    "Esercizio per Buso.md",
-    "Triennale/Analisi matematica/Esercizi/Es03_AM1_trig.pdf",
+    "Triennale/Analisi matematica/Esercizi/Es04_AM1_limiti.pdf",
+    "Triennale/Algoritmi & strutture dati/algoritmi_modulo2_2_annotated.pdf",
+    "Triennale/Analisi matematica/moodle_solutions/Foglio4Soluzioni.pdf",
+    "Triennale/Analisi matematica/moodle_solutions/Foglio4Soluzioni.pdf.crdownload",
+    "Triennale/Analisi matematica/appunti/limiti_annotated.pdf",
     "Triennale/Analisi matematica/moodle_solutions/Foglio3Soluzioni.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
+    "Triennale/Algoritmi & strutture dati/algoritmi2.xopp~",
     "Triennale/Algebra Lineare/Esami/formulario algebra_annotato.pdf",
     "Triennale/Analisi matematica/appunti/funzioni_annotated.pdf",
-    "Triennale/Analisi matematica/moodle_solutions/Foglio2Soluzioni.pdf",
-    "Triennale/Analisi matematica/tutorato/Foglio3Soluzioni.pdf.crdownload",
-    "Triennale/Analisi matematica/tutorato",
-    "Triennale/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
-    "Triennale/Analisi matematica/appunti/limiti_annotated.pdf",
+    "Triennale/Analisi matematica/Esercizi/Es03_AM1_trig.pdf",
+    "Triennale/Analisi matematica/appunti/tavola-trigonometrica-1024x676.png",
+    "Triennale/Algebra Lineare/Guide.md",
+    "Esercizio per Buso.md",
     "Triennale/Basi di Dati/studio per esame/Test di scrittura del modello concettuale.md",
     "Triennale/cheatsheet_lat/git commands.md",
     "Triennale/Analisi matematica/appunti/Limiti di Funzione.md",
@@ -187,13 +265,11 @@
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/tailwindcss/lib/value-parser/README.md",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/tailwindcss/node_modules/glob-parent/README.md",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/tailwindcss/README.md",
-    "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/tailwindcss/CHANGELOG.md",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/jasmine-core/images/jasmine_favicon.png",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/jasmine-core/images/jasmine-horizontal.svg",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/jasmine-core/images/jasmine-horizontal.png",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/ordered-binary/assets/powers-dre.png",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/resolve-url-loader/docs/detailed-problem.svg",
-    "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/resolve-url-loader/docs/basic-problem.svg",
     "Untitled.canvas"
   ]
 }
