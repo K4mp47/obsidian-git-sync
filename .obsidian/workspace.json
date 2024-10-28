@@ -11,12 +11,14 @@
             "id": "78e666fa82954b78",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Triennale/Analisi matematica/Esercizi/Es03_AM1_trig.pdf"
+                "file": "Triennale/Basi di Dati/studio per esame/Algebra Relazionale.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Es03_AM1_trig"
+              "icon": "lucide-file",
+              "title": "Algebra Relazionale"
             }
           },
           {
@@ -93,8 +95,7 @@
               "title": "Dart language"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -236,19 +237,19 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "8b673b3199276d50",
+  "active": "78e666fa82954b78",
   "lastOpenFiles": [
+    "Triennale/Basi di Dati/studio per esame/3.ProgEserciziAle.pdf",
+    "Triennale/Basi di Dati/4.ModelloRelazionaleAle_annotated.pdf",
+    "Triennale/Basi di Dati/2.ModelliAle.pdf",
+    "Triennale/Analisi matematica/Esercizi/Es03_AM1_trig.pdf",
+    "Triennale/Analisi matematica/esami/Esame del 2023-06-8.pdf",
     "Triennale/Analisi matematica/esami/Esame del 2020-01-09.pdf",
     "Triennale/Algoritmi & strutture dati/Modulo 1/20130128 parziale 1.pdf",
     "Triennale/Analisi matematica/esami/Esame del 2020-01-23.pdf",
     "Triennale/Analisi matematica/esami/Esame del 2020-06-16.pdf",
     "Triennale/Analisi matematica/esami/Esame del 2020-06-16.pdf.crdownload",
     "Triennale/Analisi matematica/esami/Esame del 2020-08-31.pdf",
-    "Triennale/Analisi matematica/esami/Esame del 2021-01-12.pdf",
-    "Triennale/Analisi matematica/esami/Esame del 2021-01-26.pdf",
-    "Triennale/Analisi matematica/esami/Esame del 2021-06-18A.pdf",
-    "Triennale/Analisi matematica/esami/Esame del 2021-06-18A.pdf.crdownload",
-    "Triennale/Analisi matematica/esami/Esame del 2021-06-18B.pdf",
     "Triennale/Flutter/Dart language.md",
     "Triennale/Analisi matematica/appunti/proprietà limiti.md",
     "Pasted image 20241024160535.png",

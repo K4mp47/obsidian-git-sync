@@ -34,6 +34,16 @@
 ### **Operatori Derivati**
 
 1. **Giunzione (Join)**: Unisce due relazioni su una condizione specifica di uguaglianza tra attributi comuni (come una chiave esterna).
+	- Studenti(Nome, Cognome, Matricola, Anno, Provincia)
+		Insegnamenti(Codice, Nome, CFU)
+		Frequenta(Matricola, Codice)
+		
+		$Studenti ◃▹ Frequenta ◃▹ Insegnamenti$
+		$\uparrow$ Questa non funziona, Per via di **Nome** presente solo in studenti e insegnamenti, per poter funzionare necessita, per esempio, di essere rinominata:
+		
+		$Studenti ◃▹ Frequenta ◃▹ \rho(Nome\rightarrow NomeIns) Insegnamenti$
+		
+
     
     - Es: R ◃▹ S unisce R e S sulle chiavi comuni.
 2. **Intersezione (∩)**: Restituisce le tuple comuni a entrambe le relazioni.
@@ -42,6 +52,31 @@
 3. **Divisione (÷)**: Usata per rispondere a query che coinvolgono la **quantificazione universale** (del tipo "per tutti").
     
     - Es: Matricole degli studenti che hanno sostenuto tutti gli esami che ha sostenuto un altro studente.
+	Tabella $R$
+	
+	| x     | y     |
+	| ----- | ----- |
+	| $t_1$ | $s_1$ |
+	| $t_2$ | $s_1$ |
+	| $t_1$ | $s_2$ |
+	| $t_3$ | $s_1$ |
+	| $t_3$ | $s_2$ |
+	
+	Tabella $S$
+	
+	| y     |
+	| ----- |
+	| $s_1$ |
+	| $s_2$ |
+	
+	Tabella $T$ = $R ÷ S$
+	
+	| x     |
+	| ----- |
+	| $t_1$ |
+	| $t_3$ |
+	
+	
 
 ### **Funzioni di Aggregazione**
 
@@ -134,4 +169,20 @@ $\pi Nome(\sigma Materia = 'BD'(Studenti ◃▹ Matricola = Candidato Esami))$
 ##### Punto 2:
 $\pi Nome, Voto(\sigma Voto > 26(Studenti ◃▹ Matricola = Candidato Esami))$
 
+---
+Matricola degli studenti che hanno fatto tutti gli esami che ha fatto Anna Rossi (76366)
 
+| Nome    | Cognome | Matricola | Anno | Provincia |
+| ------- | ------- | --------- | ---- | --------- |
+| Paolo   | Verdi   | 71523     | 2005 | VE        |
+| Anna    | Rossi   | 76366     | 2006 | PD        |
+| Giorgio | Zeri    | 71347     | 2005 | VE        |
+| Chiara  | Scuri   | 71346     | 2006 | VE        |
+
+$T(Candidato)$
+
+$S(Matricola)$
+
+$EsAR = \pi Materia(\sigma candidato=76366(Esami)) \rightarrow R(Candidato, Materia)$ 
+
+$ES ÷ ESAR$
