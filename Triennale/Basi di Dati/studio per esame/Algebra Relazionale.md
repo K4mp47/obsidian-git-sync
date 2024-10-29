@@ -186,3 +186,17 @@ $S(Matricola)$
 $EsAR = \pi Materia(\sigma candidato=76366(Esami)) \rightarrow R(Candidato, Materia)$ 
 
 $ES ÷ ESAR$
+
+### Esercizio preso da [[2023_03Finale.pdf]]
+Si considerino i seguenti schemi di relazione (le chiavi primarie sono sottolineate, le chiavi esterne sono date esplicitamente):
+-  Pizze(codPizza, nome, tempoPrep, prezzo) 
+- Ingredienti(codIngrediente, nome, quantità Magazzino, costoBase) 
+- Ricette(codPizza\*, codIngrediente\*, quantità) 
+	- codPizza FK(Pizze) codIngrediente FK(Ingredienti) 
+- Ordini(codOrdine, nomeCliente, indirizzoCliente, oraConsegna, codPizza\*) 
+	- codPizza FK(Pizze) (i) 
+
+Tramite l'algebra relazionale, restituire il nome delle pizze, il nome degli ingredienti e il loro costoBase per le pizze che hanno un prezzo maggiore di 15 euro e un tempo di preparazione inferiore a 20 minuti.
+
+query relazionale:
+$$\pi Pizza.Nome, Ingredienti.nome, Ingredienti.costoBase(\sigma prezzo > 15 \text { and } tempoPrep < 20(Pizze) ◃▹_{codPizza} (Ricette) ◃▹_{codIngredienti} Ingredienti)$$ 
