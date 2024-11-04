@@ -68,27 +68,15 @@
             }
           },
           {
-            "id": "8b673b3199276d50",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Analisi matematica/esami/Esame del 2022-09-05.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Esame del 2022-09-05"
-            }
-          },
-          {
             "id": "68b578672a22dfcb",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Analisi matematica/esami/Esame del 2023-01-09A.pdf"
+                "file": "Triennale/Analisi matematica/esami/Esame del 2022-06-09.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Esame del 2023-01-09A"
+              "title": "Esame del 2022-06-09"
             }
           },
           {
@@ -102,9 +90,45 @@
               "icon": "lucide-file-text",
               "title": "2023_03Finale"
             }
+          },
+          {
+            "id": "9144c9a69863d4ee",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Basi di Dati/soluzioniModConcettuale.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "soluzioniModConcettuale"
+            }
+          },
+          {
+            "id": "8b673b3199276d50",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "latex"
+            }
+          },
+          {
+            "id": "3401913045c310ce",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Basi di Dati/Esercizi/EsercitazioneModConcettuale.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "EsercitazioneModConcettuale"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -246,20 +270,23 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "8b673b3199276d50",
+  "active": "3401913045c310ce",
   "lastOpenFiles": [
-    "Triennale/Analisi matematica/esami/Esame del 2023-01-09A.pdf",
-    "Triennale/Analisi matematica/esami/Esame del 2022-09-05.pdf",
-    "Triennale/Analisi matematica/esami/Esame del 2023-06-8.pdf",
-    "Triennale/Analisi matematica/esami/Esame del 2022-06-09.pdf",
-    "Triennale/Analisi matematica/esami/Esame del 2021-01-12.pdf",
-    "Triennale/Analisi matematica/esami/Esame del 2021-01-26.pdf",
-    "Triennale/Analisi matematica/esami/Esame del 2021-06-18B.pdf",
-    "Triennale/Analisi matematica/esami/Esame del 2022-01-26.pdf",
-    "Triennale/Flutter/Flutter project.md",
+    "Triennale/Basi di Dati/appunti/Book.pdf",
+    "Triennale/Basi di Dati/appunti/Book.pdf.crdownload",
     "Triennale/Basi di Dati/Esercizi/EserciziTraduzione.pdf",
-    "Triennale/Basi di Dati/Esercizi/EsercitazioneModConcettuale.pdf",
     "Triennale/Basi di Dati/Esercizi/soluzioniModConcettuale.pdf",
+    "Triennale/Algoritmi & strutture dati/algoritmi2_annotated.pdf",
+    "Triennale/Basi di Dati/esami/2023_03Finale.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
+    "Triennale/Algoritmi & strutture dati/algoritmi_modulo2_2_annotated.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/20130128 parziale 1.pdf",
+    "Triennale/Algoritmi & strutture dati/code/esercitazione12/tree.png",
+    "Triennale/Algoritmi & strutture dati/code/esercitazione13/tree.png",
+    "Triennale/Algoritmi & strutture dati/code/esercitazione12/Screenshot from 2023-11-22 16-40-21.png",
+    "Triennale/Analisi matematica/esami/Esame del 2022-09-05.pdf",
+    "Triennale/Basi di Dati/soluzioniModConcettuale.pdf",
+    "Triennale/Flutter/Flutter project.md",
     "Triennale/Basi di Dati/studio per esame/Algebra Relazionale.md",
     "Triennale/Analisi matematica/appunti/proprietà limiti.md",
     "Pasted image 20241024160535.png",
@@ -291,9 +318,6 @@
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/tailwindcss/src/postcss-plugins/nesting/README.md",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/tailwindcss/lib/postcss-plugins/nesting/README.md",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/jasmine-core/images/jasmine_favicon.png",
-    "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/jasmine-core/images/jasmine-horizontal.svg",
-    "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/jasmine-core/images/jasmine-horizontal.png",
-    "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/ordered-binary/assets/powers-dre.png",
     "Untitled.canvas"
   ]
 }
