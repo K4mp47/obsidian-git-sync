@@ -200,3 +200,80 @@ Tramite l'algebra relazionale, restituire il nome delle pizze, il nome degli ing
 
 query relazionale:
 $$\pi Pizza.Nome, Ingredienti.nome, Ingredienti.costoBase(\sigma prezzo > 15 \text { and } tempoPrep < 20(Pizze) ◃▹_{codPizza} (Ricette) ◃▹_{codIngredienti} Ingredienti)$$ 
+## Esercizi presi da youtube 
+[youtube](https://youtu.be/y4pn_-NZix8?si=qdLy3qyewybFYMiY)
+
+![[Pasted image 20241107161058.png]]
+##### Query 1
+Elenco prodotti con prezzo maggiore di 50 euro
+- Ho bisogno solo della tabella `Prodotti`, quindi non necessito di fare `JOIN`
+- Condizione che il `Prezzo` deve essere sopra i `50` euro
+	- Dovrò fare una `SELECTION`
+- Non necessito di `PROIECTION` perché non è stato specificato
+
+Guardando dall'immagine so che la risposta è solo una colonna specifica, Ovvero quella 
+
+| CodProdotto | Descrizione | Prezzo | CodReparto |
+| ----------- | ----------- | ------ | ---------- |
+| 5           | Trave       | 56     | 6          |
+
+Per arrivare ad avere questa tabella, la query corrispondente sarà:
+
+$ProdottiCostosi=\sigma Prezzo > 50(Prodotti)$
+
+##### Query 2
+Elenco vendite con un numero identificativo  maggiore o uguale a 4
+- Necessito solo della tabella `Vendite`
+- Condizione che il numero identificativo sia maggiore uguale a 4
+	- `SELECTION` o **restrizione**
+- Non necessito di **proiezione** non essendo specificato cosa vuole 
+
+La query dovrà quindi essere:
+$IdentificativiVendite=\sigma Numero >= 4(Vendite)$
+
+##### Query 3
+Elenco  dei prodotti del reparto Panetteria
+- Necessito delle tabelle `Reparti` e `Prodotti`
+	- Devo fare la `JOIN`
+- Nessuna **condizione**
+- Proiezione solo delle informazione relative al prodotto
+	- Serve fare **Proiezione**
+
+Qui devo prima guardare le relazioni e analizzare gli attributi per poter fare la join:
+
+![[Pasted image 20241107163705.png]]
+
+Vedo che `Prodotti` è legato a reparti tramite `CodReparto` che corrisponderà a `CodReparto` di `Reparto`
+
+La query quindi sarà:
+- Prima faccio al join
+	- $ProdottiReparto=(\sigma NomeReparto = \text{"Panetteria"} (Reparti)) ◃▹_{CodReparto}(Prodotti)$ 
+
+- Poi faccio la proiezione
+	- $ProdottiFinali = \pi_{\text{CodProdotto, Descrizione, Prezzo}}(ProdottiReparto)$
+
+##### Query 4
+Elenco vendite del prodotto Filone
+- Join tra prodotti e vendite
+- nessuna condizione
+- voglio solo i dati delle vendite
+
+query:
+- Prima faccio la join
+	- $VenditePerProdotto=(\sigma Descrizione = \text{"Filone"} (Prodotti)) ◃▹_{CodProdotto}(Vendite)$
+- Poi faccio la proiezione
+	- $VenditeFinale=\pi_{\text{Quantità, Data, Numero}}(VenditePerProdotto)$
+
+
+##### Query 5
+Elenco dei prodotti con descrizione e prezzo del reparto "Cibo Per Cani"
+- Join tra Prodotti e Reparto
+- Nessuna condizione
+- Voglio solo descrizione e prezzo
+
+Il Principio da seguire è sempre lo stesso con la proiezione di solo due colonne
+$ProdottiReparto = (\sigma NomeReparto = \text{"Cibo Per Cani"}(Reparti))◃▹_{\text{CodReparto}}(Prodotti)$ 
+
+Poi proiezione
+
+$ProdottiPerCani = \pi_{\text{Descrizione, Prezzo}}(ProdottiReparto)$ 
