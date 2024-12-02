@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Analisi matematica/esami/2024_06_17_temaB_analisi_matematica_soluzioni.pdf"
+                "file": "Triennale/Analisi matematica/esami/2024_06_17_temaA_analisi_matematica_soluzioni.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "2024_06_17_temaB_analisi_matematica_soluzioni"
+              "title": "2024_06_17_temaA_analisi_matematica_soluzioni"
             }
           },
           {
@@ -86,7 +86,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -228,24 +228,24 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "5c1c36e428c3488e",
+  "active": "78ef1effe094d1db",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Triennale/Analisi matematica/esami/2024_06_17_temaA_analisi_matematica_soluzioni.pdf",
+    "Triennale/Analisi matematica/esami/2024_06_17_temaB_analisi_matematica_soluzioni.pdf",
+    "Triennale/Analisi matematica/esami/2024_06_03_temaB_analisi_matematica_soluzioni.pdf",
+    "Triennale/Analisi matematica/esami/2024_09_05_temaB_analisi_matematica_soluzioni.pdf",
+    "Triennale/Analisi matematica/esami/2024_09_05_temaA_analisi_matematica_soluzioni.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2016_01_20 soluzione.md",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
+    "Triennale/Analisi matematica/esami/2024_01_09_temaA_analisi_matematica.pdf",
     "Triennale/Analisi matematica/Prove di esami.xopp~",
     "Triennale/Analisi matematica/esami/2024_06_03_temaA_analisi_matematica_soluzioni.pdf",
     "Triennale/Basi di Dati/QueryProf/Query Olimpiadi.md",
     "Triennale/Algoritmi & strutture dati/Modulo 2/Funzioni esercizi Backup.md",
     "Triennale/Basi di Dati/QueryProf",
-    "Triennale/Analisi matematica/esami/Esame del 2023-06-8.pdf",
-    "Triennale/Analisi matematica/esami/2024_06_17_temaB_analisi_matematica_soluzioni.pdf",
-    "Triennale/Analisi matematica/esami/2024_09_05_temaB_analisi_matematica_soluzioni.pdf",
-    "Triennale/Analisi matematica/esami/2024_01_09_temaA_analisi_matematica.pdf",
-    "Triennale/Analisi matematica/esami/2024_01_09_temaB_analisi_matematica.pdf",
-    "Triennale/Analisi matematica/esami/2024_01_09_temaA_analisi_matematica.pdf.crdownload",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
-    "Triennale/Algoritmi & strutture dati/algoritmi2_annotated.pdf",
     "Triennale/cheatsheet_lat/cheatsheet.md",
     "Triennale/Basi di Dati/studio per esame/Algebra Relazionale.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2016_01_20 soluzione.md",
     "Triennale/Basi di Dati/esami/esame1/Soluzione Prova 1.md",
     "Pasted image 20241114160312.png",
     "Pasted image 20241107163705.png",
@@ -270,7 +270,6 @@
     "Triennale/Analisi matematica/appunti/Limiti di Funzione.md",
     "Pasted image 20241008123648.png",
     "Pasted image 20241008123431.png",
-    "Untitled.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Indice.md",
     "Triennale/TECH WEB/Angular_Crash_Course/Angular Crash Course.md",
     "Test.md",
