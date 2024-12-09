@@ -34,29 +34,15 @@
             }
           },
           {
-            "id": "3401913045c310ce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Triennale/Basi di Dati/QueryProf/Query Olimpiadi.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Query Olimpiadi"
-            }
-          },
-          {
             "id": "5c1c36e428c3488e",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Analisi matematica/esami/2024_01_09_temaA_analisi_matematica.pdf"
+                "file": "Triennale/Analisi matematica/esami/2024_06_03_temaA_analisi_matematica_soluzioni.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "2024_01_09_temaA_analisi_matematica"
+              "title": "2024_06_03_temaA_analisi_matematica_soluzioni"
             }
           },
           {
@@ -83,6 +69,20 @@
               },
               "icon": "lucide-file-text",
               "title": "latex"
+            }
+          },
+          {
+            "id": "3401913045c310ce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Triennale/Basi di Dati/QueryProf/Query Olimpiadi.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Query Olimpiadi"
             }
           }
         ],
@@ -228,22 +228,24 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "78ef1effe094d1db",
+  "active": "3401913045c310ce",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Triennale/Analisi matematica/esami/2024_06_17_temaA_analisi_matematica_soluzioni.pdf",
-    "Triennale/Analisi matematica/esami/2024_06_17_temaB_analisi_matematica_soluzioni.pdf",
-    "Triennale/Analisi matematica/esami/2024_06_03_temaB_analisi_matematica_soluzioni.pdf",
-    "Triennale/Analisi matematica/esami/2024_09_05_temaB_analisi_matematica_soluzioni.pdf",
-    "Triennale/Analisi matematica/esami/2024_09_05_temaA_analisi_matematica_soluzioni.pdf",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2016_01_20 soluzione.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
-    "Triennale/Analisi matematica/esami/2024_01_09_temaA_analisi_matematica.pdf",
-    "Triennale/Analisi matematica/Prove di esami.xopp~",
+    "Triennale/Basi di Dati/Schemi.md",
     "Triennale/Analisi matematica/esami/2024_06_03_temaA_analisi_matematica_soluzioni.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2016_01_20 soluzione.md",
+    "Triennale/Analisi matematica/esami/2024_06_17_temaA_analisi_matematica_soluzioni.pdf",
+    "Triennale/Basi di Dati/appunti/Book.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
+    "Triennale/Basi di Dati/Indice.md",
     "Triennale/Basi di Dati/QueryProf/Query Olimpiadi.md",
+    "Triennale/Analisi matematica/esami/2024_06_03_temaB_analisi_matematica_soluzioni.pdf",
+    "Triennale/Analisi matematica/esami/Esame del 2022-01-26.pdf",
+    "Triennale/Analisi matematica/esami/Esame del 2022-06-09.pdf",
+    "Triennale/Analisi matematica/esami/Esame del 2022-09-05.pdf",
+    "Triennale/Analisi matematica/esami/Esame del 2023-06-8.pdf",
+    "Triennale/Analisi matematica/esami/Esame del 2020-06-16.pdf",
+    "Untitled.md",
     "Triennale/Algoritmi & strutture dati/Modulo 2/Funzioni esercizi Backup.md",
-    "Triennale/Basi di Dati/QueryProf",
     "Triennale/cheatsheet_lat/cheatsheet.md",
     "Triennale/Basi di Dati/studio per esame/Algebra Relazionale.md",
     "Triennale/Basi di Dati/esami/esame1/Soluzione Prova 1.md",
@@ -273,8 +275,6 @@
     "Triennale/Algoritmi & strutture dati/Modulo 1/Indice.md",
     "Triennale/TECH WEB/Angular_Crash_Course/Angular Crash Course.md",
     "Test.md",
-    "Triennale/Analisi matematica/Indice.md",
-    "Triennale/TECH WEB/Angular_Crash_Course/my-app/node_modules/fastparse/README.md",
     "Untitled.canvas"
   ]
 }

@@ -129,3 +129,20 @@ HAVING COUNT(*) < 4
 
 - Errore se non metto `NATURAL LEFT JOIN`
 - `COUNT` non funziona con `*` non torna chi ha 0 medaglie ma `m.codice` funziona perfettamente per distinguere anche gli zeri
+
+##### Query 7
+```sql
+-- Trovare per ogni nazione che ha vinto almeno una medaglia
+-- l'atleta/i più giovane che ha vinto una medaglia e 
+-- restituire anche l'età di tale atleta/i.
+-- L'età deve essere calcolata rispetto all'anno 
+-- in cui ha vinto la medaglia.
+
+SELECT DISTINCT a.nome, a.cognome, a.nazione, m.anno - a.annonascita
+FROM atleti a NATURAL JOIN medaglie m
+WHERE m.anno - a.annonascita = (
+				SELECT MIN(m1.anno - a1.annonascita)
+				FROM atleti al NATURAL JOIN medaglie ml
+				WHERE a1.nazione = a.nazione
+			);
+```
