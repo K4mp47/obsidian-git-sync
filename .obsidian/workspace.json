@@ -61,18 +61,44 @@
             "id": "01bebd9be71356b0",
             "type": "leaf",
             "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Algoritmi & strutture dati/Modulo 1/20140123 parziale 1.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "20140123 parziale 1"
+            }
+          },
+          {
+            "id": "873d913753e0a07a",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2013_01_28 soluzione.md",
+                "file": "Triennale/Basi di Dati/QueryProf/Query Città.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Prova_parziale 2013_01_28 soluzione"
+              "title": "Query Città"
+            }
+          },
+          {
+            "id": "27b258715fbc1593",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Triennale/Basi di Dati/QueryProf/Query Olimpiadi.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Query Olimpiadi"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -214,23 +240,27 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "01bebd9be71356b0",
+  "active": "873d913753e0a07a",
   "lastOpenFiles": [
-    "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2013_01_28 soluzione.md",
-    "Triennale/Algoritmi & strutture dati/code/python_code/binary_tree",
-    "Triennale/Algoritmi & strutture dati/code/python_code/requirements.txt",
-    "Triennale/Algoritmi & strutture dati/code/python_code/requirements.tx",
-    "Triennale/Algoritmi & strutture dati/code/python_code/main.py",
-    "Triennale/Algoritmi & strutture dati/code/python_code",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/20130128 parziale 1.pdf",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/20230110 parziale 1.pdf",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/20140123 parziale 1.pdf",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Compitino ASD 10-01-23.pdf",
-    "Triennale/Algoritmi & strutture dati/code/esercitazione13/tree.png",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2016_01_20 soluzione.md",
     "Triennale/Basi di Dati/QueryProf/Query Olimpiadi.md",
+    "Triennale/Basi di Dati/QueryProf/Query Città.md",
+    "Triennale/Analisi matematica/esami/2024_06_17_temaA_analisi_matematica_soluzioni.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/20140123 parziale 1.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/20130128 parziale 1.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/20150128 parziale 1.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2016_01_20 soluzione.md",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2015_01_18 soluzione.md",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2016_01_20 soluzione.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2014_01_28 soluzione.md",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2013_01_28 soluzione.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2013_01_28 soluzione.md",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2021_01_18 soluzione.md",
+    "Triennale/Algoritmi & strutture dati/code/python_code/color.py",
+    "Triennale/Basi di Dati/database/citta.custom",
+    "Triennale/Basi di Dati/database/Unconfirmed 770172.crdownload",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
+    "Triennale/Algoritmi & strutture dati/code/esercitazione13/tree.png",
     "Triennale/Algoritmi & strutture dati/code/esercitazione12/Screenshot from 2023-11-22 16-40-21.png",
     "Triennale/Algoritmi & strutture dati/code/esercitazione12/tree.png",
     "Triennale/Basi di Dati/Schemi.md",
@@ -244,9 +274,6 @@
     "Pasted image 20241107163705.png",
     "jaja.md",
     "Pasted image 20241107161058.png",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2014_01_28 soluzione.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2015_01_18 soluzione.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2021_01_18 soluzione.md",
     "Triennale/Basi di Dati/studio per esame/Test di scrittura del modello concettuale.md",
     "Triennale/Flutter/Flutter project.md",
     "Triennale/Analisi matematica/appunti/proprietà limiti.md",
