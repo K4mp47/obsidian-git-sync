@@ -73,5 +73,4 @@ where c.governmentform like '%Monarchy%'
 
 ##### Query 7
 ```sql
-
 ```
