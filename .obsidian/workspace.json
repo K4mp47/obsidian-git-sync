@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8b673b3199276d50",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Analisi matematica/esami/2024_06_17_temaA_analisi_matematica_soluzioni.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "2024_06_17_temaA_analisi_matematica_soluzioni"
-            }
-          },
-          {
-            "id": "5c1c36e428c3488e",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Algoritmi & strutture dati/Modulo 1/20150128 parziale 1.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "20150128 parziale 1"
-            }
-          },
-          {
             "id": "70a71b8420c3db0a",
             "type": "leaf",
             "state": {
@@ -43,6 +19,32 @@
               },
               "icon": "lucide-file",
               "title": "cheatsheet"
+            }
+          },
+          {
+            "id": "27b258715fbc1593",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Triennale/Basi di Dati/QueryProf/Query Città.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Query Città"
+            }
+          },
+          {
+            "id": "5c1c36e428c3488e",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Algoritmi & strutture dati/Modulo 1/Compitino ASD 08-01-24Finale.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Compitino ASD 08-01-24Finale"
             }
           },
           {
@@ -63,38 +65,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Algoritmi & strutture dati/Modulo 1/20140123 parziale 1.pdf"
+                "file": "Triennale/Analisi matematica/esami/Esame del 2020-01-23.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "20140123 parziale 1"
-            }
-          },
-          {
-            "id": "873d913753e0a07a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Triennale/Basi di Dati/QueryProf/Query Città.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Query Città"
-            }
-          },
-          {
-            "id": "27b258715fbc1593",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Triennale/Basi di Dati/QueryProf/Query Città.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Query Città"
+              "title": "Esame del 2020-01-23"
             }
           },
           {
@@ -108,8 +82,33 @@
               "icon": "lucide-file-text",
               "title": "latex"
             }
+          },
+          {
+            "id": "5a6f0e87f042cd07",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Analisi matematica/esami/2024_06_03_temaA_analisi_matematica_soluzioni.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "2024_06_03_temaA_analisi_matematica_soluzioni"
+            }
+          },
+          {
+            "id": "c5549093891e1607",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Analisi matematica/Formulario Calcolo.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Formulario Calcolo"
+            }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -251,24 +250,25 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "8b673b3199276d50",
+  "active": "5a6f0e87f042cd07",
   "lastOpenFiles": [
-    "Triennale/Analisi matematica/esami/2024_01_09_temaA_analisi_matematica.pdf",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/20210118 parziale 1.pdf",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/20160120 parziale 1.pdf",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/20200113 parziale 1.pdf",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/20230110 parziale 1.pdf",
+    "Triennale/Analisi matematica/Formulario Calcolo.pdf",
+    "Triennale/Analisi matematica/esami/2024_06_03_temaA_analisi_matematica_soluzioni.pdf",
     "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
+    "Triennale/Analisi matematica/esami/2024_01_09_temaA_analisi_matematica.pdf",
+    "Triennale/Analisi matematica/esami/Esame del 2020-01-23.pdf",
+    "Triennale/Analisi matematica/esami/Esame del 2023-06-8.pdf",
+    "Triennale/Analisi matematica/esami/2024_09_05_temaA_analisi_matematica_soluzioni.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/20140123 parziale 1.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Compitino ASD 08-01-24Finale.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/20150128 parziale 1.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/20210118 parziale 1.pdf",
+    "Triennale/cheatsheet_lat/cheatsheet.md",
     "Triennale/Basi di Dati/QueryProf/Query Città.md",
+    "Triennale/Algoritmi & strutture dati/Modulo 2/Funzioni esercizi Backup.md",
     "Triennale/Basi di Dati/QueryProf/Query Extra.md",
     "Triennale/Basi di Dati/QueryProf/Query Olimpiadi.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/20140123 parziale 1.pdf",
-    "Triennale/Algoritmi & strutture dati/code/vecchi_esami/prova_2016/test1",
-    "Triennale/Algoritmi & strutture dati/code/vecchi_esami/prova_2016/test1.cpp",
-    "Triennale/Algoritmi & strutture dati/code/vecchi_esami/prova_2016/test",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2015_01_18 soluzione.md",
-    "Triennale/Basi di Dati/database/film.custom",
-    "Triennale/cheatsheet_lat/cheatsheet.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2016_01_20 soluzione.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2014_01_28 soluzione.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2013_01_28 soluzione.md",
@@ -280,7 +280,6 @@
     "Triennale/Basi di Dati/Schemi.md",
     "Triennale/Basi di Dati/Indice.md",
     "Untitled.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 2/Funzioni esercizi Backup.md",
     "Triennale/Basi di Dati/studio per esame/Algebra Relazionale.md",
     "Triennale/Basi di Dati/esami/esame1/Soluzione Prova 1.md",
     "Pasted image 20241114160312.png",
