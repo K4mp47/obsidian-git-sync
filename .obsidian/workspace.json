@@ -89,10 +89,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Analisi matematica/esami/2024_06_03_temaA_analisi_matematica_soluzioni.pdf"
+                "file": "Triennale/Analisi matematica/Formulario Calcolo.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "2024_06_03_temaA_analisi_matematica_soluzioni"
+              "title": "Formulario Calcolo"
             }
           },
           {
@@ -101,14 +101,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Analisi matematica/Formulario Calcolo.pdf"
+                "file": "Triennale/Analisi matematica/esami/2024_01_09_temaA_analisi_matematica.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Formulario Calcolo"
+              "title": "2024_01_09_temaA_analisi_matematica"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -250,19 +250,19 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "5a6f0e87f042cd07",
+  "active": "c5549093891e1607",
   "lastOpenFiles": [
+    "Triennale/Analisi matematica/esami/Esame del 2023-01-09A.pdf",
+    "Triennale/Analisi matematica/Formulario Calcolo_annotated.pdf",
+    "Triennale/Analisi matematica/esami/Esame del 2022-09-05.pdf",
+    "Triennale/Analisi matematica/esami/Esame del 2022-06-09.pdf",
+    "Triennale/Analisi matematica/esami/Esame del 2022-01-26.pdf",
+    "Triennale/Analisi matematica/esami/Esame del 2021-06-18A.pdf",
+    "Triennale/Analisi matematica/esami/Esame del 2021-01-12.pdf",
+    "Triennale/Analisi matematica/esami/Esame del 2020-08-31.pdf",
     "Triennale/Analisi matematica/Formulario Calcolo.pdf",
-    "Triennale/Analisi matematica/esami/2024_06_03_temaA_analisi_matematica_soluzioni.pdf",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
-    "Triennale/Analisi matematica/esami/2024_01_09_temaA_analisi_matematica.pdf",
-    "Triennale/Analisi matematica/esami/Esame del 2020-01-23.pdf",
     "Triennale/Analisi matematica/esami/Esame del 2023-06-8.pdf",
-    "Triennale/Analisi matematica/esami/2024_09_05_temaA_analisi_matematica_soluzioni.pdf",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/20140123 parziale 1.pdf",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Compitino ASD 08-01-24Finale.pdf",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/20150128 parziale 1.pdf",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/20210118 parziale 1.pdf",
+    "Triennale/Analisi matematica/esami/Esame del 2020-01-09.pdf",
     "Triennale/cheatsheet_lat/cheatsheet.md",
     "Triennale/Basi di Dati/QueryProf/Query Città.md",
     "Triennale/Algoritmi & strutture dati/Modulo 2/Funzioni esercizi Backup.md",
