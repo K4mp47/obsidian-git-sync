@@ -4,37 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "c17f210b2bc060f7",
+        "id": "f65f81e1bcb77a05",
         "type": "tabs",
         "children": [
           {
-            "id": "70a71b8420c3db0a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Triennale/cheatsheet_lat/cheatsheet.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "cheatsheet"
-            }
-          },
-          {
-            "id": "5c1c36e428c3488e",
+            "id": "bf161d946e044977",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Algoritmi & strutture dati/Modulo 1/Compitino ASD 08-01-24Finale.pdf"
+                "file": "Triennale/Algoritmi & strutture dati/algoritmi_modulo2_2_annotated.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Compitino ASD 08-01-24Finale"
+              "title": "algoritmi_modulo2_2_annotated"
             }
           },
           {
-            "id": "78ef1effe094d1db",
+            "id": "3bcccaed95258849",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Algoritmi & strutture dati/Modulo 1/20130128 parziale 1.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "20130128 parziale 1"
+            }
+          },
+          {
+            "id": "6cd3f024fe92e12a",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Algoritmi & strutture dati/Modulo 1/20130128 parziale 1.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "20130128 parziale 1"
+            }
+          },
+          {
+            "id": "99c7e939f7f80b75",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -46,7 +56,7 @@
             }
           },
           {
-            "id": "ed4c8566c241d320",
+            "id": "66c09e04c02ae413",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -56,21 +66,9 @@
               "icon": "lucide-file-text",
               "title": "latex"
             }
-          },
-          {
-            "id": "48506dee4a1e386f",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Algoritmi & strutture dati/Modulo 1/20130128 parziale 1.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "20130128 parziale 1"
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -126,7 +124,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288.01103591918945
+    "width": 345
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -212,36 +210,36 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "ed4c8566c241d320",
+  "active": "66c09e04c02ae413",
   "lastOpenFiles": [
-    "Triennale/Algoritmi & strutture dati/code/latex/main.cpp",
-    "Triennale/Algoritmi & strutture dati/code/latex",
     "Triennale/Algoritmi & strutture dati/Modulo 1/20130128 parziale 1.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/20140123 parziale 1.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/20150128 parziale 1.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/20160120 parziale 1.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/20190125 parziale 1.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/20200113 parziale 1.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/20210118 parziale 1.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Compitino ASD 08-01-24Finale.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/20230110 parziale 1.pdf",
+    "Triennale/Algoritmi & strutture dati/algoritmi_modulo2_2_annotated.pdf",
+    "Untitled.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2016_01_20 soluzione.md",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2021_01_18 soluzione.md",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2015_01_18 soluzione.md",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2014_01_28 soluzione.md",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2013_01_28 soluzione.md",
     "Triennale/cheatsheet_lat/cheatsheet.md",
     "Triennale/Basi di Dati/QueryProf/Query Città.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Compitino ASD 08-01-24Finale.pdf",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/20210118 parziale 1.pdf",
-    "Triennale/Analisi matematica/esami/Esame del 2020-01-23.pdf",
-    "Triennale/Analisi matematica/esami/2024_01_09_temaA_analisi_matematica.pdf",
-    "Triennale/Analisi matematica/esami/Esame del 2023-01-09A.pdf",
-    "Triennale/Analisi matematica/Formulario Calcolo_annotated.pdf",
-    "Triennale/Analisi matematica/esami/Esame del 2022-09-05.pdf",
     "Triennale/Algoritmi & strutture dati/Modulo 2/Funzioni esercizi Backup.md",
     "Triennale/Basi di Dati/QueryProf/Query Extra.md",
     "Triennale/Basi di Dati/QueryProf/Query Olimpiadi.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2015_01_18 soluzione.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2016_01_20 soluzione.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2014_01_28 soluzione.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2013_01_28 soluzione.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2021_01_18 soluzione.md",
     "Triennale/Algoritmi & strutture dati/code/esercitazione13/tree.png",
     "Triennale/Algoritmi & strutture dati/code/esercitazione12/Screenshot from 2023-11-22 16-40-21.png",
     "Triennale/Algoritmi & strutture dati/code/esercitazione12/tree.png",
     "Triennale/Basi di Dati/Schemi.md",
     "Triennale/Basi di Dati/Indice.md",
-    "Untitled.md",
     "Triennale/Basi di Dati/studio per esame/Algebra Relazionale.md",
     "Triennale/Basi di Dati/esami/esame1/Soluzione Prova 1.md",
     "Pasted image 20241114160312.png",
