@@ -1,5 +1,5 @@
 ### Definizione Basi di dati
-[[Triennale/Basi di Dati/1.SistemiAle.pdf|1.SistemiAle]]
+[[1.SistemiAle 1.pdf|1.SistemiAle]]
 Una base di dati è un insieme di dati permanenti, gestiti da un elaboratore,  suddivisi in metadati che ne definiscono la struttura,scheda del DB e i dati effettivi conformi alla struttura
 ### Definizione DBMS
 Sistema  centralizzato o distribuito che offre linguaggi per:
