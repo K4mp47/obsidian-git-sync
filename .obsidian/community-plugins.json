@@ -2,5 +2,7 @@
   "obsidian-minimal-settings",
   "obsidian-style-settings",
   "obsidian-html-plugin",
-  "emoji-shortcodes"
+  "emoji-shortcodes",
+  "better-export-pdf",
+  "mermaid-tools"
 ]

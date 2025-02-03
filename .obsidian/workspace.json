@@ -6,7 +6,7 @@
       {
         "id": "4923bf90f1f02cde",
         "type": "tabs",
-        "dimension": 45.8955223880597,
+        "dimension": 50.70967741935484,
         "children": [
           {
             "id": "3313fd116dedcfc5",
@@ -85,6 +85,20 @@
             }
           },
           {
+            "id": "6f795d07e67d8383",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Triennale/Basi di Dati/studio per esame/Algebra Relazionale.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Algebra Relazionale"
+            }
+          },
+          {
             "id": "ec48d1590afe3f5e",
             "type": "leaf",
             "state": {
@@ -97,12 +111,12 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       },
       {
         "id": "d29cdc3e67cc6d99",
         "type": "tabs",
-        "dimension": 54.1044776119403,
+        "dimension": 49.29032258064516,
         "children": [
           {
             "id": "c56cbb28f3e5fad7",
@@ -110,10 +124,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Basi di Dati/studio per esame/02 - SQL.pdf"
+                "file": "Triennale/Basi di Dati/appunti/Book.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "02 - SQL"
+              "title": "Book"
             }
           },
           {
@@ -131,18 +145,6 @@
             }
           },
           {
-            "id": "bf197d1272f7192b",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Basi di Dati/studio per esame/soluzioni modulo 1 esami 2020.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "soluzioni modulo 1 esami 2020"
-            }
-          },
-          {
             "id": "6b1fe330fc8423df",
             "type": "leaf",
             "state": {
@@ -155,15 +157,27 @@
             }
           },
           {
-            "id": "53c8e74609290225",
+            "id": "740088f94a65be05",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Basi di Dati/studio per esame/esami/IprovaIntermedia (2).pdf"
+                "file": "Triennale/TECH WEB/Lessons/12_Express.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "IprovaIntermedia (2)"
+              "title": "12_Express"
+            }
+          },
+          {
+            "id": "bd96fa681d6f3d61",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Basi di Dati/studio per esame/soluzioni modulo 1 esami 2020.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "soluzioni modulo 1 esami 2020"
             }
           }
         ],
@@ -186,7 +200,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -223,8 +238,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 392,
-    "collapsed": true
+    "width": 405
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -274,7 +288,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -286,18 +302,31 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Triennale/Analisi matematica/moodle_solutions/Foglio4Soluzioni.pdf"
+                "file": "Triennale/TECH WEB/Book Shop Report.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Foglio4Soluzioni"
+              "title": "Outline of Book Shop Report"
+            }
+          },
+          {
+            "id": "48840419c72f5b7d",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {},
+              "icon": "trident-custom",
+              "title": "Mermaid Toolbar"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 481,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -307,36 +336,51 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "canvas:Create new canvas": false
+      "canvas:Create new canvas": false,
+      "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "1cc54fa8db98bb76",
+  "active": "740088f94a65be05",
   "lastOpenFiles": [
-    "Triennale/Basi di Dati/studio per esame/JackBrainBoard.pdf",
+    "Triennale/TECH WEB/Lessons/11_MongoDB.pdf",
+    "Triennale/TECH WEB/Lessons/10_NodeJS.pdf",
+    "Triennale/TECH WEB/Lessons/08_JavaScript.pdf",
+    "Triennale/TECH WEB/Lessons/07_Containers.pdf",
+    "Triennale/TECH WEB/Lessons/06_REST.pdf",
+    "Triennale/TECH WEB/Lessons/05_Websocket.pdf",
+    "Triennale/TECH WEB/Lessons/04_JWT.pdf",
+    "Triennale/TECH WEB/Lessons/03_Authentication.pdf",
+    "Triennale/TECH WEB/Lessons/02_Session and Cookies.pdf",
+    "Triennale/TECH WEB/Lessons/01_HTTP.pdf",
+    "Triennale/TECH WEB/Lessons/00_Introduction.pdf",
+    "Triennale/Basi di Dati/studio per esame/QueryProf/Query Olimpiadi.md",
+    "Triennale/TECH WEB/Book Shop Report.md",
+    "Pasted image 20250131185911.png",
+    "Pasted image 20250131185859.png",
+    "Pasted image 20250131185831.png",
+    "Pasted image 20250131185800.png",
+    "Pasted image 20250131185734.png",
+    "Pasted image 20250131185639.png",
+    "Pasted image 20250131185325.png",
+    "Pasted image 20250131185002.png",
+    "Pasted image 20250131174809.png",
+    "Untitled 2.md",
+    "Pasted image 20250131013900.png",
+    "().md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "Triennale/TECH WEB/Notes/Notes.md",
+    "Triennale/TECH WEB/Angular_Crash_Course/my-app/README.md",
+    "Allergeni.md",
     "Triennale/Basi di Dati/Soluzioni/Soluzioni Query.md",
-    "Triennale/Basi di Dati/studio per esame/esami/IprovaIntermedia (2).pdf",
-    "Triennale/Basi di Dati/studio per esame/soluzioni modulo 1 esami 2020.pdf",
-    "Triennale/TECH WEB/TAW_2024_project.pdf",
-    "Triennale/Basi di Dati/studio per esame/esami/esame28012021-21.pdf",
-    "Triennale/Basi di Dati/studio per esame/esami/2023_02Finale.pdf",
-    "Triennale/Basi di Dati/studio per esame/02 - SQL.pdf",
-    "Triennale/Basi di Dati/studio per esame/esami/esame04062024Finale.pdf",
-    "Triennale/Basi di Dati/studio per esame/esami/esame020224.pdf",
-    "Triennale/Basi di Dati/studio per esame/esami/compitino21012020.pdf",
+    "Triennale/Basi di Dati/database/Creazione DB.md",
+    "Triennale/Basi di Dati/studio per esame/Algebra Relazionale.md",
     "Triennale/Basi di Dati/studio per esame/QueryProf/Query Città.md",
     "Triennale/Basi di Dati/studio per esame/QueryProf/Query Extra.md",
-    "Triennale/Basi di Dati/studio per esame/QueryProf/Query Olimpiadi.md",
-    "Triennale/Basi di Dati/database/Creazione DB.md",
     "Triennale/Basi di Dati/Soluzioni/Soluzioni basi relazionali.md",
-    "Pasted image 20250119172818.png",
-    "Pasted image 20250119125324.png",
-    "Allergeni.md",
-    "Pasted image 20250118174658.png",
-    "Pasted image 20250118170054.png",
     "Triennale/Basi di Dati/Untitled.md",
     "Triennale/Basi di Dati/background_pdf/Schemi.md",
     "Triennale/Basi di Dati/background_pdf/Basi di Dati.md",
-    "Triennale/Basi di Dati/studio per esame/Algebra Relazionale.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2016_01_20 soluzione.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2021_01_18 soluzione.md",
@@ -344,19 +388,6 @@
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2014_01_28 soluzione.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2013_01_28 soluzione.md",
     "Triennale/cheatsheet_lat/cheatsheet.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 2/Funzioni esercizi Backup.md",
-    "Triennale/Algoritmi & strutture dati/code/esercitazione13/tree.png",
-    "Triennale/Algoritmi & strutture dati/code/esercitazione12/Screenshot from 2023-11-22 16-40-21.png",
-    "Triennale/Algoritmi & strutture dati/code/esercitazione12/tree.png",
-    "Triennale/Basi di Dati/background_pdf/Indice.md",
-    "Triennale/Basi di Dati/studio per esame/esami/esame1/Soluzione Prova 1.md",
-    "Pasted image 20241114160312.png",
-    "Pasted image 20241107163705.png",
-    "jaja.md",
-    "Pasted image 20241107161058.png",
-    "Triennale/Basi di Dati/studio per esame/Test di scrittura del modello concettuale.md",
-    "Triennale/Flutter/Flutter project.md",
-    "Triennale/Analisi matematica/appunti/proprietà limiti.md",
     "Untitled.canvas"
   ]
 }

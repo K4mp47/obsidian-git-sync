@@ -399,3 +399,75 @@ WITH percentualiISC AS (
 )
 
 ```
+
+```sql
+SELECT v.CittaPart
+FROM Voli v 
+JOIN Aereoporti a ON a.Citta = v.CittaArr AND a.Nazione = 'Italia'
+JOIN Aereoporti a2 ON a2.Citta = v.CittaPart AND a2.Nazione = 'Francia'
+GROUP BY v.CittaPart
+HAVING COUNT (*) > 20
+
+```
+
+ - Produttori(IdProduttore, Nome, Paese, Continente) 
+ - Prodotti(IdProdotto, Nome, Prezzo, IdProduttore*) 
+	 - IdProduttore FK(Produttori)
+
+```sql
+WITH PrezziProdottoPerProduttore (IdProduttore, Nome, Paese, Continente, Totale) AS (
+	SELECT pr.IdProduttore, 
+		   pr.Nome, 
+		   pr.Paese, 
+		   pr.Continente, 
+		   SUM(Prezzo) AS Totale
+	FROM Produttori pr JOIN Prodotti p ON pr.IdProduttore = p.IdProduttore
+	GROUP BY pr.IdProduttore, 
+			 pr.Nome, 
+			 pr.Paese, 
+			 pr.Continente
+)
+
+SELECT ppr.Nome, ppr.Totale
+FROM PrezziProdottoPerProduttore
+WHERE ppr.Totale > (
+			 SELECT AVG(ppr2.Totale)
+			 FROM PrezziProdottoPerProduttore ppr2
+			 WHERE ppr2.Continente = ppr.Continente 
+		 )
+```
+
+ - City(id, name, countrycode*, district, population) 
+	 - countrycode FK(Country) 
+ - Country(code, name, continent, capital*, population) 
+	 - capital FK(City) 
+ - Countrylanguage(countrycode*, language, isofficial, percentage) 
+	 - countrycode FK(Country)
+
+```sql
+SELECT l.language
+FROM Countrylanguage l JOIN Country c ON l.countrycode = c.code
+	AND c.continent = 'Europa'
+WHERE l.percentage > 50 AND l.isofficial = true
+```
+
+```sql
+SELECT c.name
+FROM City c 
+WHERE c.id = (SELECT co.capital
+			  FROM Country co 
+				  JOIN City c2 ON c2.countrycode = co.code
+			  WHERE c2.name = 'Fortaleza'
+			 )
+```
+
+```sql
+SELECT co.name
+FROM Country co 
+WHERE co.continent LIKE '%America%'
+AND (
+	SELECT SUM(c.population)
+	FROM City c
+	WHERE c.countrycode = co.code
+) > co.population * 0.4
+```
