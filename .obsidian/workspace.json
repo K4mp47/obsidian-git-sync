@@ -4,184 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "4923bf90f1f02cde",
+        "id": "04fbc675a860d0ac",
         "type": "tabs",
-        "dimension": 50.70967741935484,
         "children": [
           {
-            "id": "3313fd116dedcfc5",
+            "id": "72dbe0695f52dcc9",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Basi di Dati/studio per esame/esami/IprovaIntermedia.pdf"
+                "file": "Triennale/Analisi matematica/modulo1/Formulario Calcolo.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "IprovaIntermedia"
+              "title": "Formulario Calcolo"
             }
           },
           {
-            "id": "009d70b3fad00e2a",
+            "id": "0131cb4af48efe34",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Basi di Dati/studio per esame/esami/IprovaIntermedia (1).pdf"
+                "file": "Triennale/Analisi matematica/modulo1/Esame del 2020-01-09.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "IprovaIntermedia (1)"
+              "title": "Esame del 2020-01-09"
             }
           },
           {
-            "id": "47845131fb37a615",
+            "id": "049c5a5c33e7fc57",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Basi di Dati/studio per esame/esami/IprovaIntermedia (3).pdf"
+                "file": "Triennale/Analisi dei dati/Bibbia.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "IprovaIntermedia (3)"
-            }
-          },
-          {
-            "id": "e4ea835adbbafad5",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Basi di Dati/Esercizi/EsercitazioneTrasformazione.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "EsercitazioneTrasformazione"
-            }
-          },
-          {
-            "id": "5550ab2573415b6a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Triennale/Basi di Dati/database/Creazione DB.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Creazione DB"
-            }
-          },
-          {
-            "id": "1cc54fa8db98bb76",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Triennale/Basi di Dati/Soluzioni/Soluzioni Query.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Soluzioni Query"
-            }
-          },
-          {
-            "id": "6f795d07e67d8383",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Triennale/Basi di Dati/studio per esame/Algebra Relazionale.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Algebra Relazionale"
-            }
-          },
-          {
-            "id": "ec48d1590afe3f5e",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Basi di Dati/studio per esame/02 - SQL.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "02 - SQL"
+              "title": "Bibbia"
             }
           }
         ],
-        "currentTab": 7
-      },
-      {
-        "id": "d29cdc3e67cc6d99",
-        "type": "tabs",
-        "dimension": 49.29032258064516,
-        "children": [
-          {
-            "id": "c56cbb28f3e5fad7",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Basi di Dati/appunti/Book.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Book"
-            }
-          },
-          {
-            "id": "8e9fc77c32568c76",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Triennale/Basi di Dati/studio per esame/QueryProf/Query Olimpiadi.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Query Olimpiadi"
-            }
-          },
-          {
-            "id": "6b1fe330fc8423df",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Basi di Dati/studio per esame/JackBrainBoard.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "JackBrainBoard"
-            }
-          },
-          {
-            "id": "740088f94a65be05",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/TECH WEB/Lessons/12_Express.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "12_Express"
-            }
-          },
-          {
-            "id": "bd96fa681d6f3d61",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Basi di Dati/studio per esame/soluzioni modulo 1 esami 2020.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "soluzioni modulo 1 esami 2020"
-            }
-          }
-        ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -238,7 +101,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 405
+    "width": 579
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -340,21 +203,26 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "740088f94a65be05",
+  "active": "676356614d8bc787",
   "lastOpenFiles": [
-    "Triennale/TECH WEB/Lessons/11_MongoDB.pdf",
-    "Triennale/TECH WEB/Lessons/10_NodeJS.pdf",
-    "Triennale/TECH WEB/Lessons/08_JavaScript.pdf",
-    "Triennale/TECH WEB/Lessons/07_Containers.pdf",
-    "Triennale/TECH WEB/Lessons/06_REST.pdf",
-    "Triennale/TECH WEB/Lessons/05_Websocket.pdf",
-    "Triennale/TECH WEB/Lessons/04_JWT.pdf",
-    "Triennale/TECH WEB/Lessons/03_Authentication.pdf",
-    "Triennale/TECH WEB/Lessons/02_Session and Cookies.pdf",
-    "Triennale/TECH WEB/Lessons/01_HTTP.pdf",
-    "Triennale/TECH WEB/Lessons/00_Introduction.pdf",
-    "Triennale/Basi di Dati/studio per esame/QueryProf/Query Olimpiadi.md",
+    "Triennale/Analisi dei dati/analisi.xopp~",
+    "Triennale/Analisi dei dati/Analisi di dati.md",
+    "Triennale/Analisi dei dati/Bibbia.pdf",
+    "Triennale/Analisi dei dati/AD2324-lab1.html",
+    "Triennale/Analisi matematica/modulo1/Esame del 2021-01-12.pdf",
+    "Triennale/Analisi matematica/modulo2/esami/esameAM2_2025_09_01.pdf",
+    "Triennale/Analisi matematica/modulo2/esami/esameAM2_2025_09_01.pdf.crdownload",
+    "Triennale/Analisi matematica/modulo2/esami",
+    "Triennale/Analisi matematica/modulo1/Esame del 2020-01-09.pdf",
+    "Triennale/Analisi matematica/modulo1/Formulario Calcolo.pdf",
+    "Triennale/Analisi matematica/modulo1/esami/2024_01_09_temaA_analisi_matematica.pdf",
+    "Triennale/Basi di Dati/Modulo2/Flask/Book extract.md",
+    "Triennale/cheatsheet_lat/Bilancio.md",
+    "Triennale/Basi di Dati/Modulo1/studio per esame/Algebra Relazionale.md",
+    "Triennale/Basi di Dati/Modulo1/Soluzioni/Soluzioni Query.md",
+    "Triennale/Basi di Dati/Modulo1/database/Creazione DB.md",
     "Triennale/TECH WEB/Book Shop Report.md",
+    "Triennale/Basi di Dati/Modulo1/studio per esame/QueryProf/Query Olimpiadi.md",
     "Pasted image 20250131185911.png",
     "Pasted image 20250131185859.png",
     "Pasted image 20250131185831.png",
@@ -372,22 +240,16 @@
     "Triennale/TECH WEB/Notes/Notes.md",
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/README.md",
     "Allergeni.md",
-    "Triennale/Basi di Dati/Soluzioni/Soluzioni Query.md",
-    "Triennale/Basi di Dati/database/Creazione DB.md",
-    "Triennale/Basi di Dati/studio per esame/Algebra Relazionale.md",
-    "Triennale/Basi di Dati/studio per esame/QueryProf/Query Città.md",
-    "Triennale/Basi di Dati/studio per esame/QueryProf/Query Extra.md",
-    "Triennale/Basi di Dati/Soluzioni/Soluzioni basi relazionali.md",
+    "Triennale/Basi di Dati/Modulo1/studio per esame/QueryProf/Query Città.md",
+    "Triennale/Basi di Dati/Modulo1/studio per esame/QueryProf/Query Extra.md",
+    "Triennale/Basi di Dati/Modulo1/Soluzioni/Soluzioni basi relazionali.md",
     "Triennale/Basi di Dati/Untitled.md",
-    "Triennale/Basi di Dati/background_pdf/Schemi.md",
-    "Triennale/Basi di Dati/background_pdf/Basi di Dati.md",
+    "Triennale/Basi di Dati/Modulo1/background_pdf/Schemi.md",
+    "Triennale/Basi di Dati/Modulo1/background_pdf/Basi di Dati.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2016_01_20 soluzione.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2021_01_18 soluzione.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2015_01_18 soluzione.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2014_01_28 soluzione.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2013_01_28 soluzione.md",
-    "Triennale/cheatsheet_lat/cheatsheet.md",
     "Untitled.canvas"
   ]
 }
