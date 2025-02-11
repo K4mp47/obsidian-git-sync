@@ -101,7 +101,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 579
+    "width": 362
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -205,6 +205,10 @@
   },
   "active": "676356614d8bc787",
   "lastOpenFiles": [
+    "Triennale/Algebra Lineare/appunti-algebra-lineare-2025.xopp~",
+    "Triennale/Algebra Lineare/appunti-algebra-lineare-2025.xopp",
+    "Triennale/Analisi matematica/modulo2/appunti-modulo-2.xopp~",
+    "Triennale/Analisi matematica/modulo2/appunti-modulo-2.xopp",
     "Triennale/Analisi dei dati/analisi.xopp~",
     "Triennale/Analisi dei dati/Analisi di dati.md",
     "Triennale/Analisi dei dati/Bibbia.pdf",
@@ -213,9 +217,6 @@
     "Triennale/Analisi matematica/modulo2/esami/esameAM2_2025_09_01.pdf",
     "Triennale/Analisi matematica/modulo2/esami/esameAM2_2025_09_01.pdf.crdownload",
     "Triennale/Analisi matematica/modulo2/esami",
-    "Triennale/Analisi matematica/modulo1/Esame del 2020-01-09.pdf",
-    "Triennale/Analisi matematica/modulo1/Formulario Calcolo.pdf",
-    "Triennale/Analisi matematica/modulo1/esami/2024_01_09_temaA_analisi_matematica.pdf",
     "Triennale/Basi di Dati/Modulo2/Flask/Book extract.md",
     "Triennale/cheatsheet_lat/Bilancio.md",
     "Triennale/Basi di Dati/Modulo1/studio per esame/Algebra Relazionale.md",
