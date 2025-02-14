@@ -23,12 +23,14 @@
             "id": "0131cb4af48efe34",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Triennale/Analisi matematica/modulo1/Esame del 2020-01-09.pdf"
+                "file": "Triennale/Basi di Dati/Modulo2/Coperture Canoniche.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Esame del 2020-01-09"
+              "icon": "lucide-file",
+              "title": "Coperture Canoniche"
             }
           },
           {
@@ -41,6 +43,30 @@
               },
               "icon": "lucide-file-text",
               "title": "Bibbia"
+            }
+          },
+          {
+            "id": "8778806b9b423ee1",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "latex"
+            }
+          },
+          {
+            "id": "d7496237d8139d69",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Analisi dei dati/AD2324-unita1-base.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "AD2324-unita1-base"
             }
           }
         ],
@@ -203,20 +229,21 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "676356614d8bc787",
+  "active": "049c5a5c33e7fc57",
   "lastOpenFiles": [
-    "Triennale/Algebra Lineare/appunti-algebra-lineare-2025.xopp~",
-    "Triennale/Algebra Lineare/appunti-algebra-lineare-2025.xopp",
-    "Triennale/Analisi matematica/modulo2/appunti-modulo-2.xopp~",
-    "Triennale/Analisi matematica/modulo2/appunti-modulo-2.xopp",
-    "Triennale/Analisi dei dati/analisi.xopp~",
-    "Triennale/Analisi dei dati/Analisi di dati.md",
+    "Triennale/Analisi dei dati/script/3cointosses.py",
+    "Triennale/Analisi dei dati/script",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
+    "Triennale/Analisi dei dati/AD2324-unita1-base.pdf",
+    "Triennale/Analisi dei dati/AD2324-unita2-stima.pdf",
     "Triennale/Analisi dei dati/Bibbia.pdf",
-    "Triennale/Analisi dei dati/AD2324-lab1.html",
-    "Triennale/Analisi matematica/modulo1/Esame del 2021-01-12.pdf",
-    "Triennale/Analisi matematica/modulo2/esami/esameAM2_2025_09_01.pdf",
-    "Triennale/Analisi matematica/modulo2/esami/esameAM2_2025_09_01.pdf.crdownload",
-    "Triennale/Analisi matematica/modulo2/esami",
+    "Triennale/Basi di Dati/Modulo2/Coperture Canoniche.md",
+    "Triennale/Basi di Dati/Modulo2/appunti.xopp~",
+    "Triennale/Basi di Dati/Modulo2/slide prof/Normalizzazione1_dipendenze_funzionali.pdf",
+    "Triennale/Basi di Dati/Modulo2/slide prof/forme_normali.pdf",
+    "Triennale/Basi di Dati/Modulo2/slide prof/decomposizione.pdf",
+    "Triennale/Basi di Dati/Modulo2/slide prof/chiavi.pdf",
+    "Triennale/Analisi dei dati/Analisi di dati.md",
     "Triennale/Basi di Dati/Modulo2/Flask/Book extract.md",
     "Triennale/cheatsheet_lat/Bilancio.md",
     "Triennale/Basi di Dati/Modulo1/studio per esame/Algebra Relazionale.md",
@@ -250,7 +277,6 @@
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2016_01_20 soluzione.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2021_01_18 soluzione.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2015_01_18 soluzione.md",
     "Untitled.canvas"
   ]
 }
