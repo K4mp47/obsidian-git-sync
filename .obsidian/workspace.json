@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Analisi matematica/modulo1/Formulario Calcolo.pdf"
+                "file": "Triennale/Algebra Lineare/exercise2/01_algebra_lineare.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Formulario Calcolo"
+              "title": "01_algebra_lineare"
             }
           },
           {
@@ -68,9 +68,35 @@
               "icon": "lucide-file-text",
               "title": "AD2324-unita1-base"
             }
+          },
+          {
+            "id": "dcc835007550b355",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Triennale/Analisi dei dati/Analisi di dati.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Analisi di dati"
+            }
+          },
+          {
+            "id": "cde9e1e4e97d9c41",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Analisi dei dati/AD2324-unita1-base.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "AD2324-unita1-base"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -127,7 +153,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 362
+    "width": 362,
+    "collapsed": true
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -229,21 +256,26 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "049c5a5c33e7fc57",
+  "active": "8778806b9b423ee1",
   "lastOpenFiles": [
+    "Triennale/Analisi dei dati/AD2324-unita1-base.pdf",
+    "Triennale/Analisi dei dati/Bibbia.pdf",
+    "Triennale/Analisi dei dati/Analisi di dati.md",
+    "Triennale/Analisi dei dati/analisi.xopp~",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
+    "Triennale/Algebra Lineare/exercise2/01_algebra_lineare.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2021_01_18 soluzione.md",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2016_01_20 soluzione.md",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2015_01_18 soluzione.md",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2013_01_28 soluzione.md",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2014_01_28 soluzione.md",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2013_01_28 soluzione.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 1/20130128 parziale 1.pdf",
+    "Triennale/Analisi matematica/modulo1/Formulario Calcolo.pdf",
     "Triennale/Analisi dei dati/script/3cointosses.py",
     "Triennale/Analisi dei dati/script",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/latex.pdf",
-    "Triennale/Analisi dei dati/AD2324-unita1-base.pdf",
-    "Triennale/Analisi dei dati/AD2324-unita2-stima.pdf",
-    "Triennale/Analisi dei dati/Bibbia.pdf",
     "Triennale/Basi di Dati/Modulo2/Coperture Canoniche.md",
-    "Triennale/Basi di Dati/Modulo2/appunti.xopp~",
-    "Triennale/Basi di Dati/Modulo2/slide prof/Normalizzazione1_dipendenze_funzionali.pdf",
-    "Triennale/Basi di Dati/Modulo2/slide prof/forme_normali.pdf",
-    "Triennale/Basi di Dati/Modulo2/slide prof/decomposizione.pdf",
-    "Triennale/Basi di Dati/Modulo2/slide prof/chiavi.pdf",
-    "Triennale/Analisi dei dati/Analisi di dati.md",
     "Triennale/Basi di Dati/Modulo2/Flask/Book extract.md",
     "Triennale/cheatsheet_lat/Bilancio.md",
     "Triennale/Basi di Dati/Modulo1/studio per esame/Algebra Relazionale.md",
@@ -271,12 +303,6 @@
     "Triennale/Basi di Dati/Modulo1/studio per esame/QueryProf/Query Città.md",
     "Triennale/Basi di Dati/Modulo1/studio per esame/QueryProf/Query Extra.md",
     "Triennale/Basi di Dati/Modulo1/Soluzioni/Soluzioni basi relazionali.md",
-    "Triennale/Basi di Dati/Untitled.md",
-    "Triennale/Basi di Dati/Modulo1/background_pdf/Schemi.md",
-    "Triennale/Basi di Dati/Modulo1/background_pdf/Basi di Dati.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2016_01_20 soluzione.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2021_01_18 soluzione.md",
     "Untitled.canvas"
   ]
 }
