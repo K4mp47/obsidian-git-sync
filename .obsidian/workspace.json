@@ -54,9 +54,45 @@
               "icon": "lucide-file-text",
               "title": "Dimostrazioni"
             }
+          },
+          {
+            "id": "af63aa2ec22b651f",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Linguaggi per la rete/book/javascript-the-definitive-guide-7th-edition.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "javascript-the-definitive-guide-7th-edition"
+            }
+          },
+          {
+            "id": "d7cfc4ad51e33ffc",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Algebra lineare foglio 2.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Algebra lineare foglio 2"
+            }
+          },
+          {
+            "id": "372b473c344780bf",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Algebra Lineare/exercise2/02_algebra_lineare.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "02_algebra_lineare"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -215,19 +251,24 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "8778806b9b423ee1",
+  "active": "372b473c344780bf",
   "lastOpenFiles": [
-    "Triennale/Algoritmi & strutture dati/latex & demonstration/Dimostrazioni.pdf",
-    "Triennale/Linguaggi per la rete/book/javascript-the-definitive-guide-7th-edition.pdf",
-    "Triennale/Algoritmi & strutture dati/latex & demonstration",
-    "Triennale/Basi di Dati/Modulo2/slide prof/forme_normali.pdf",
+    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Algebra lineare foglio 2.pdf",
+    "Triennale/Algebra Lineare/exercise2/02_algebra_lineare.pdf",
+    "Triennale/Analisi dei dati/Bibbia.pdf",
     "Triennale/Linguaggi per la rete/exams/Esame_2018_04_11.pdf",
-    "Triennale/Linguaggi per la rete/exams/Esame_2018_04_11.pdf.crdownload",
-    "Triennale/Linguaggi per la rete/exams/soluzione_esame_20180411/soluzione_esame_20180411.js",
-    "Triennale/Linguaggi per la rete/exams/soluzione_esame_20180411/soluzione_esame_20180411.html",
-    "Triennale/Linguaggi per la rete/exams/soluzione_esame_20180411",
-    "Triennale/Linguaggi per la rete/exams/soluzione_esame_20180411.zip",
-    "Triennale/Linguaggi per la rete/exams/Unconfirmed 81635.crdownload",
+    "Triennale/Analisi dei dati/AD2324-lab1.knit.md",
+    "Triennale/Analisi dei dati/AD2324-lab1_files/figure-html/unnamed-chunk-14-1.png",
+    "Triennale/Analisi dei dati/AD2324-lab1_files/figure-html/unnamed-chunk-11-1.png",
+    "Triennale/Analisi dei dati/AD2324-lab1_files/figure-html/unnamed-chunk-10-1.png",
+    "Triennale/Analisi dei dati/AD2324-lab1_files/figure-html/unnamed-chunk-1-1.png",
+    "Triennale/Analisi dei dati/AD2324-lab1_files/figure-html",
+    "Triennale/Analisi dei dati/AD2324-lab1_files",
+    "Triennale/Algebra Lineare/exercise2/01_algebra_lineare.pdf",
+    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Algebra lineare foglio 2.pdf.crdownload",
+    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/foglio 1 esercizi - soluzioni.pdf",
+    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/foglio 1 esercizi - soluzioni.pdf.crdownload",
+    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Algebra lineare foglio 1.pdf",
     "Triennale/Linguaggi per la rete/Linguaggi per la rete.md",
     "Triennale/Analisi dei dati/Analisi di dati.md",
     "Triennale/Basi di Dati/Modulo2/Coperture Canoniche.md",
@@ -250,11 +291,7 @@
     "Pasted image 20250131185800.png",
     "Pasted image 20250131185734.png",
     "Pasted image 20250131185639.png",
-    "Pasted image 20250131185325.png",
-    "Pasted image 20250131185002.png",
-    "Pasted image 20250131174809.png",
     "Untitled 2.md",
-    "Pasted image 20250131013900.png",
     "().md",
     "Untitled 1.md",
     "Untitled.md",
@@ -262,7 +299,6 @@
     "Triennale/TECH WEB/Angular_Crash_Course/my-app/README.md",
     "Allergeni.md",
     "Triennale/Basi di Dati/Modulo1/studio per esame/QueryProf/Query Città.md",
-    "Triennale/Basi di Dati/Modulo1/studio per esame/QueryProf/Query Extra.md",
     "Untitled.canvas"
   ]
 }
