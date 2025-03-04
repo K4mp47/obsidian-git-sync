@@ -90,9 +90,21 @@
               "icon": "lucide-file-text",
               "title": "02_algebra_lineare"
             }
+          },
+          {
+            "id": "b1a7be34efeecc12",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Analisi dei dati/AD2324-unita1-base.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "AD2324-unita1-base"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -251,10 +263,17 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "372b473c344780bf",
+  "active": "b1a7be34efeecc12",
   "lastOpenFiles": [
-    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Algebra lineare foglio 2.pdf",
+    "Triennale/Algoritmi & strutture dati/Modulo 2/Algoritmi.autosave.xopp~",
+    "Triennale/Basi di Dati/Modulo2/appunti.xopp~",
+    "Triennale/Analisi dei dati/AD2425-regole-esame.pdf",
+    "Triennale/Analisi dei dati/AD2425-regole-esame.pdf.crdownload",
+    "Triennale/Analisi dei dati/AD2425-formulario.pdf",
+    "Triennale/Analisi dei dati/AD2425-formulario.pdf.crdownload",
+    "Triennale/Analisi dei dati/Analisi di dati.md",
     "Triennale/Algebra Lineare/exercise2/02_algebra_lineare.pdf",
+    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Algebra lineare foglio 2.pdf",
     "Triennale/Analisi dei dati/Bibbia.pdf",
     "Triennale/Linguaggi per la rete/exams/Esame_2018_04_11.pdf",
     "Triennale/Analisi dei dati/AD2324-lab1.knit.md",
@@ -263,14 +282,7 @@
     "Triennale/Analisi dei dati/AD2324-lab1_files/figure-html/unnamed-chunk-10-1.png",
     "Triennale/Analisi dei dati/AD2324-lab1_files/figure-html/unnamed-chunk-1-1.png",
     "Triennale/Analisi dei dati/AD2324-lab1_files/figure-html",
-    "Triennale/Analisi dei dati/AD2324-lab1_files",
-    "Triennale/Algebra Lineare/exercise2/01_algebra_lineare.pdf",
-    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Algebra lineare foglio 2.pdf.crdownload",
-    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/foglio 1 esercizi - soluzioni.pdf",
-    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/foglio 1 esercizi - soluzioni.pdf.crdownload",
-    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Algebra lineare foglio 1.pdf",
     "Triennale/Linguaggi per la rete/Linguaggi per la rete.md",
-    "Triennale/Analisi dei dati/Analisi di dati.md",
     "Triennale/Basi di Dati/Modulo2/Coperture Canoniche.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2021_01_18 soluzione.md",
