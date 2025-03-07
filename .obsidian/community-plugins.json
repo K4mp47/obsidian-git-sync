@@ -4,5 +4,6 @@
   "obsidian-html-plugin",
   "emoji-shortcodes",
   "better-export-pdf",
-  "mermaid-tools"
+  "mermaid-tools",
+  "obsidian-pandoc"
 ]
