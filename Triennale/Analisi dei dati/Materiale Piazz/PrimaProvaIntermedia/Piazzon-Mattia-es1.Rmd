@@ -1,0 +1,59 @@
+---
+title: "Mattia Piazzon - Esercizio 1"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+Questo documento va caricato in Moodle come cognome-nome-esX.Rmd dove X è il numero dell'esercizio (1, 2, 3 o 4).
+
+# Soluzione quesito 1
+I valori attesi sono:
+$$
+E(\hat \theta_1) = \frac{1+6n}{7}\theta
+$$
+$$
+E(\hat \theta_2) = \frac{\theta}{n-5}
+$$
+Quindi i relativi Bias sono:
+$$
+Bias(\hat \theta_1) = \frac{-6\theta+n6\theta}{7}
+$$
+$$
+Bias(\hat \theta_2) = \frac{5\theta}{n-5}
+$$
+Quindi entrambi gli stimatori sono distori per n >= 6.
+
+# Soluzione quesito 2
+Per calcolare l'errore standard mi serve la varianza dei due stimatori.
+$$
+var(\hat\theta_1) = \frac{1\theta}{49} + \frac{36 \theta}{49} = \frac{\theta + n36\theta}{49}
+$$
+
+$$
+var(\hat\theta_2) = \frac{n\theta}{(n-5)^2} 
+$$
+
+Da cui segue che gli errore standard sono:
+$$
+SE(\hat\theta_1) = \sqrt{var(\hat \theta_1)} =\sqrt{\frac{37\theta}{49}}
+$$
+$$
+SE(\hat\theta_2) = \sqrt{var(\hat \theta_2)} = \sqrt{\frac{\theta}{(n-5)^2}}
+$$
+
+# Soluzione quesito 3
+
+Per vedere chi dei due è preferibile, essendo entrambi distori, calcolo il loro MSE
+$$
+MSE(\hat \theta_1) = Bias(\hat\theta_1)^2 + Var(\hat\theta_1)
+$$
+$$
+MSE(\hat \theta_2) = Bias(\hat\theta_2)^2 + Var(\hat\theta_2)
+$$
+Sostituendo con $\theta = 3$ ottengo che lo stimatore con MSE minore, e quindi preferibile è $\hat \theta_1$
+ 
+ 

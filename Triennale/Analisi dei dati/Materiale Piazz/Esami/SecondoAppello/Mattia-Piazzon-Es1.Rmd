@@ -1,0 +1,48 @@
+---
+title: "Mattia Piazzon - Esercizio 1"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# Punto 1
+
+Calcolo il valoro atteso dei due stimatori:
+$$
+E(\hat \theta_1) = \theta \\
+E(\hat \theta_2) = \frac{n\theta}{n -2} \\
+$$
+
+Calcolo ora il loro Bias:
+$$
+Bias(\hat \theta_1) = E(\hat \theta_1) - \theta = 0 \\
+Bias(\hat \theta_2) = E(\hat \theta_2) - \theta = \frac{n\theta}{n -2} - \theta = \frac{2\theta}{n -2} \\
+$$
+
+Quindi lo stimatore $\hat \theta_1$ è non distorto, mentre $\hat \theta_2$ è non distorto per n che tende a infinito.
+
+# Punto 2
+
+Per calcolare il loro errore quadratico medio necessito della loro varianza:
+$$
+Var(\hat \theta_1) = \frac{n^2}{16n^2}Var(X_1) + \frac{9n^2}{16n^2}Var(X_n) = \frac{1}{16}\theta + \frac{9}{16}\theta = \frac{5}{8}\theta \\
+Var(\hat \theta_2) = \frac{1}{(n-2)^2}Var\left(\sum_{i=1}^n X_i\right) = \frac{1}{(n-2)^2}n\theta = \frac{n\theta}{(n-2)^2} \\
+$$
+
+Calcolo i loro MSE:
+$$
+MSE(\hat \theta_1) = Var(\hat \theta_1) = \frac{5}{8}\theta \\
+MSE(\hat \theta_2) = Var(\hat \theta_2) + Bias(\hat \theta_2)^2 = \frac{n\theta}{(n-2)^2} + \left(\frac{2\theta}{n -2}\right)^2 = \frac{n\theta}{(n-2)^2} + \frac{4\theta^2}{(n -2)^2} = \frac{n\theta + 4\theta^2}{(n-2)^2} \\
+$$
+
+# Punto 3
+
+Per valutare la loro consistenza devo valutare due casi, n finito e n non finito.
+
+Per n non finito, qualunque sia $\theta$ è preferibile il secondo stimatore perché è consistente dato che la varianza tende a 0 per n che tende a infinito, mentre il primo stimatore non è consistente.
+
+Per n finito devo valutare i loro MSE per poterli confrontare in base al valore di n. Siccome non ho un valore di $\theta$ per poterli confrontare decido che il secondo stimatore è consistente mentre il primo no perchè la sua varianza è diversa da 0.
+

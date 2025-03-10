@@ -1,0 +1,120 @@
+---
+title: "Mattia Piazzon - Esercizio 3"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# Punto 1
+
+Calcolo l'intervallo di confidenza al 90% per il primo campione:
+```{r}
+n1 <- 115
+media1 <- 3.9
+media1 + c(-1, 1) * qnorm(0.95) * sqrt(media1 / n1)
+```
+
+Calcolo l'intervallo di confidenza al 90% per il secondo campione:
+```{r}
+n2 <- 115
+media2 <- 3.6
+media2 + c(-1, 1) * qnorm(0.95) * sqrt(media2 / n2)
+```
+
+# Punto 2
+
+Si valuti il seguente sistema di ipotesi:
+$$
+H_0: \mu_1 = \mu_2 \quad vs \quad H_1: \mu_1 > \mu_2
+$$
+dove $\mu_1$ indica il numero medio di condotte inappropriate prima dell'adozione del codice etico e $\mu_2$ indica il numero medio di condotte inappropriate dopo l'adozione del codice etico.
+
+Calcolo la statistica Z:
+```{r}
+pooled <- (n1*media1 + n2*media2) / (n1 + n2)
+z <- (media1 - media2) / sqrt(pooled * (1/n1 + 1/n2))
+z
+```
+
+Il p-value è:
+```{r}
+1 - pnorm(z)
+```
+
+Dato che il p-value è maggiore di 0.08 non possiamo rifiutare l'ipotesi nulla.
+
+# Punto 3
+
+Leggo i dati:
+```{r}
+setwd("~/MEGAsync/Universita/II Anno/Analisi dei Dati/Esami/PrimoAppello")
+primo <- read.csv("primo_campione.csv")
+secondo <- read.csv("secondo_campione.csv")
+```
+
+Visualizzo la struttura dei dati:
+```{r}
+head(primo)
+head(secondo)
+```
+
+Trasformo i dati in vettori:
+```{r}
+campione1 <- primo$condotte
+n1 <- length(campione1)
+campione2 <- secondo$condotte
+n2 <- length(campione2)
+head(campione1)
+```
+
+Calcolo l'intervallo di confidenza al 90% per il primo campione:
+```{r}
+mean(campione1) + c(-1,1) * qnorm(0.95) * sqrt(var(campione1)/n1)
+```
+
+Il quale conferma il risultato ottenuto al punto 1.
+
+Calcolo l'intervallo di confidenza al 90% per il secondo campione:
+```{r}
+mean(campione2) + c(-1,1) * qnorm(0.95) * sqrt(var(campione2)/n2)
+```
+
+Il quale conferma il risultato ottenuto al punto 1.
+
+Riprendo il sistema di ipotesi del secondo punto:
+$$
+H_0: \mu_1 = \mu_2 \quad vs \quad H_1: \mu_1 > \mu_2
+$$
+
+e lo risolvo:
+```{r}
+library("BSDA")
+pooled <- (n1*mean(campione1) + n2*mean(campione2)) / (n1 + n2)
+z.test(campione1, campione2, sigma.x=sqrt(pooled), sigma.y=sqrt(pooled), alternative="greater", conf.level=0.92)
+```
+
+Il p-value è maggiore di 0.08 quindi non possiamo rifiutare l'ipotesi nulla, confermando il risultato ottenuto al punto 2.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

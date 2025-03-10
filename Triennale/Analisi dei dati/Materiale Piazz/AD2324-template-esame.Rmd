@@ -1,0 +1,83 @@
+---
+title: "Nome Cognome - Esercizio X"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+Questo documento va caricato in Moodle come cognome-nome-esX.Rmd dove X è il numero dell'esercizio (1, 2, 3 o 4).
+
+# Soluzione quesito 1
+
+scrivere qui la soluzione del primo quesito
+
+# Soluzione quesito 2
+
+scrivere qui la soluzione del secondo quesito
+
+# Soluzione quesito 3
+
+scrivere qui la soluzione del terzo quesito (sempre che ve ne siano tre, altrimenti cancellare questa sezione)
+
+**CANCELLARE LE SEGUENTI RIGHE!**
+
+**Qualche comando LaTeX utile per scrivere le formule** 
+
+Formule nel testo: $\sin(\pi x)$
+
+Formule su righe separate:
+$$
+\sin(\pi x)
+$$
+
+
+Momenti:
+$$
+\mu_k, E(X^k), M_k, m_k, \bar{X}, \bar{x}, \sigma^2, Var(X), S^2
+$$
+Stimatori e stime:
+$$
+\hat \theta,  \hat \mu, \hat \sigma^2, \hat \lambda 
+$$
+$$
+\tilde \theta, \tilde \mu, \tilde \sigma^2, \tilde \lambda
+$$
+Verosimiglianza:
+$$
+L(\theta), \ell(\theta), \ell'(\theta), \ell''(\theta)
+$$
+Frazioni:
+$$
+\frac{1}{\sqrt{2}} X_i, \frac{X_i}{Y_i}
+$$
+
+Sommatorie: 
+$$
+\sum_{i=1}^n X_i, \sum_{i=1}^n \log X_i, \sum_{i=1}^n \sqrt{X_i}, \sum_{i=1}^n \frac{X_i}{Y_i}
+$$
+Integrali:
+$$
+\int_{0}^1 f(x) dx, \int_{a}^{\infty} f(x) dx, \int_{-\infty}^{\infty} f(x) dx
+$$
+
+
+
+**Come scrivere i comandi R**
+
+Il valore dello stimatore è 
+```{r, error = TRUE}
+164.75 / 60
+2 * 3 / log(1.2)
+sin(2 * pi / 20)
+a <- 2 * c(1, 2)
+a
+z <- qnorm(0.95)
+z
+t <- qt(0.95, df = 12)
+t
+```
+
+ 

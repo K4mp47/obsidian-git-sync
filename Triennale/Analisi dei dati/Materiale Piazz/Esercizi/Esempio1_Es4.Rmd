@@ -1,0 +1,107 @@
+---
+title: "Esempio1_Es4"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# TESTO
+
+Il dataset mammiferi.csv contiene i dati relativi al peso del cervello e del corpo di 62 specie di mammiferi. Il peso del cervello è espresso in grammi, mentre il peso del corpo in chilogrammi.
+
+Si risponda ai seguenti quesiti:
+
+1. si costruisca un modello per prevedere il peso del cervello di un mammifero sulla base del peso del suo corpo;
+
+2. si illustri il modello calcolando un intervallo di previsione al 90% per il peso del cervello di un mammifero di (i) 50 chilogrammi e (ii) 100 chilogrammi.
+
+# SOLUZIONE
+
+## Punto 1
+
+Leggiamo e visualizziamo i dati:
+```{r}
+mammiferi <- read.csv("mammiferi.csv")
+head(mammiferi)
+```
+
+Visualizzo i dati tramite grafico:
+```{r}
+plot(cervello ~ corpo, data = mammiferi)
+```
+
+Noto che il grafico non è di facile interpretazione a causa di due valori.
+Stimiamo la retta di regressione:
+```{r}
+mod <- lm(cervello ~ corpo, data = mammiferi)
+summary(mod)
+```
+
+Analizzo i residui:
+```{r}
+library(car)
+par(mfrow = c(1, 2))
+plot(residuals(mod) ~ corpo, data = mammiferi)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod))
+```
+
+L'analisi dei residui mostra che il modello di regressione non è appropriato.
+
+Provo a trasformare le variabili su scala logaritmica:
+```{r}
+par(mfrow = c(2, 2))
+plot(cervello ~ corpo, data = mammiferi)
+plot(log(cervello) ~ corpo, data = mammiferi)
+plot(cervello ~ log(corpo), data = mammiferi)
+plot(log(cervello) ~ log(corpo), data = mammiferi)
+```
+
+Vedo che il quarto grafico è il migliore. Costruisco il modello:
+```{r}
+mod_log <- lm(log(cervello) ~ log(corpo), data = mammiferi)
+summary(mod_log)
+```
+
+Il modello stimato spiega:
+
+ * il 92% della variabilità del peso del cervello dei mammiferi su scala logaritmica;
+ * indica che il logaritmo del peso del corpo è un predittore fortemente significativo del logaritmo del peso del cervello e che la relazione è crescente.
+ 
+Visualizziamo il modello stimato:
+```{r}
+plot(log(cervello) ~ log(corpo), data = mammiferi)
+abline(mod_log, col = "red")
+```
+
+Il grafico suggerisce che la retta di regressione è adeguata per descrivere la relazione tra il logaritmo del peso del cervello e il logaritmo del peso del corpo.
+
+L'analisi dei residui è ora soddisfacente:
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod_log) ~ log(corpo), data = mammiferi)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod_log))
+```
+
+
+## Punto 2
+
+Calcoliamo l'intervallo di previsione al 90% per il peso del cervello di un mammifero di 50 chilogrammi:
+```{r}
+pred <- predict(mod_log, newdata = data.frame(corpo = 50), interval = "prediction", level = 0.90)
+exp(pred)
+```
+
+Se il mammifero pesasse 100 chilogrammi:
+```{r}
+pred <- predict(mod_log, newdata = data.frame(corpo = 100), interval = "prediction", level = 0.90)
+exp(pred)
+```
+
+
+
+

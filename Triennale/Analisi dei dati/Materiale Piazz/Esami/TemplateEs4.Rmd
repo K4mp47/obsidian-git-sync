@@ -1,0 +1,558 @@
+---
+title: "Nome Cognome - Esercizio 4"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# Quiz 1
+
+## Testo
+
+Il dataset mammiferi.csv contiene i dati relativi al peso del cervello e del corpo di 62 specie di mammiferi. Il peso del cervello è espresso in grammi, mentre il peso del corpo in chilogrammi.
+
+Si risponda ai seguenti quesiti:
+
+1. si costruisca un modello per prevedere il peso del cervello di un mammifero sulla base del peso del suo corpo;
+
+2. si illustri il modello calcolando un intervallo di previsione al 90% per il peso del cervello di un mammifero di (i) 50 chilogrammi e (ii) 100 chilogrammi.
+
+## SOLUZIONE
+
+### Punto 1
+
+Leggiamo e visualizziamo i dati:
+```{r}
+mammiferi <- read.csv("mammiferi.csv")
+head(mammiferi)
+```
+
+Visualizzo i dati tramite grafico:
+```{r}
+plot(cervello ~ corpo, data = mammiferi)
+```
+
+Noto che il grafico non è di facile interpretazione a causa di due valori.
+Stimiamo la retta di regressione:
+```{r}
+mod <- lm(cervello ~ corpo, data = mammiferi)
+summary(mod)
+```
+
+Analizzo i residui:
+```{r}
+library(car)
+par(mfrow = c(1, 2))
+plot(residuals(mod) ~ corpo, data = mammiferi)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod))
+```
+
+L'analisi dei residui mostra che il modello di regressione non è appropriato.
+
+Provo a trasformare le variabili su scala logaritmica:
+```{r}
+par(mfrow = c(2, 2))
+plot(cervello ~ corpo, data = mammiferi)
+plot(log(cervello) ~ corpo, data = mammiferi)
+plot(cervello ~ log(corpo), data = mammiferi)
+plot(log(cervello) ~ log(corpo), data = mammiferi)
+```
+
+Vedo che il quarto grafico è il migliore. Costruisco il modello:
+```{r}
+mod_log <- lm(log(cervello) ~ log(corpo), data = mammiferi)
+summary(mod_log)
+```
+
+Il modello stimato spiega:
+
+ * il 92% della variabilità del peso del cervello dei mammiferi su scala logaritmica;
+ * indica che il logaritmo del peso del corpo è un predittore fortemente significativo del logaritmo del peso del cervello e che la relazione è crescente.
+ 
+Visualizziamo il modello stimato:
+```{r}
+plot(log(cervello) ~ log(corpo), data = mammiferi)
+abline(mod_log, col = "red")
+```
+
+Il grafico suggerisce che la retta di regressione è adeguata per descrivere la relazione tra il logaritmo del peso del cervello e il logaritmo del peso del corpo.
+
+L'analisi dei residui è ora soddisfacente:
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod_log) ~ log(corpo), data = mammiferi)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod_log))
+```
+
+
+### Punto 2
+
+Calcoliamo l'intervallo di previsione al 90% per il peso del cervello di un mammifero di 50 chilogrammi:
+```{r}
+pred <- predict(mod_log, newdata = data.frame(corpo = 50), interval = "prediction", level = 0.90)
+exp(pred)
+```
+
+Se il mammifero pesasse 100 chilogrammi:
+```{r}
+pred <- predict(mod_log, newdata = data.frame(corpo = 100), interval = "prediction", level = 0.90)
+exp(pred)
+```
+
+
+# Quiz 2
+
+## Testo
+
+Il dataset diamanti.csv contiene i dati relativi al peso e al prezzo di un campione di 308 diamanti. Il peso è espresso in carati, mentre il prezzo in dollari di Singapore.
+
+Si risponda ai seguenti quesiti:
+
+1. si costruiscano almeno due modelli alternativi per prevedere il prezzo dei diamanti sulla base del loro peso e si spieghi quale dei modelli considerati sia preferibile;
+
+2. si illustri il modello scelto al punto precedente calcolando un intervallo di previsione al 99% per il prezzo di un diamante con un peso (i) di 0.5 carati e (ii) di 1 carato.
+
+## SOLUZIONE
+
+### Punto 1
+
+Leggiamo e visualizziamo i dati:
+```{r}
+diamanti <- read.csv("diamanti.csv")
+head(diamanti)
+```
+
+Visualizzo i dati tramite grafico:
+```{r}
+library(car)
+plot(prezzo ~ peso, data = diamanti)
+```
+
+Noto che il grafico non è di facile interpretazione, creiamo comunque il modello di regressione:
+
+```{r}
+mod <- lm(prezzo ~ peso, data = diamanti)
+summary(mod)
+```
+
+Analizzo i residui:
+
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod) ~ peso, data = diamanti)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod))
+```
+
+Noto dall'analisi dei residui che il modello non è appropriato.
+
+Provo a trasformare le variabili su scala logaritmica:
+
+```{r}
+par(mfrow = c(2, 2))
+plot(prezzo ~ peso, data = diamanti)
+plot(log(prezzo) ~ peso, data = diamanti)
+plot(prezzo ~ log(peso), data = diamanti)
+plot(log(prezzo) ~ log(peso), data = diamanti)
+par(mfrow = c(1, 1))
+```
+
+Noto che il secondo grafico è il più appropriato. Costruisco il modello:
+
+```{r}
+mod_log <- lm(log(prezzo) ~ peso, data = diamanti)
+summary(mod_log)
+```
+
+Analizzo i residui:
+
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod_log) ~ peso, data = diamanti)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod_log))
+par(mfrow = c(1, 1))
+```
+
+Noto che il modello è migliore del precedente vedendo anche il valore del $R^2$ aggiustato, ma dall'analisi dei residui si nota che non è ancora soddisfacente, provo ad aggiungere un termine quadratico:
+
+```{r}
+mod_log_quad <- lm(log(prezzo) ~ peso + I(peso^2), data = diamanti)
+summary(mod_log_quad)
+```
+
+Analizzo i residui:
+
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod_log_quad) ~ peso, data = diamanti)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod_log_quad))
+par(mfrow = c(1, 1))
+```
+
+Noto che ora il modello è soddisfacente, avendo un $R^2$ aggiustato maggiore e un'analisi dei residui soddisfacente, nonostante siano presenti sottostime e sovrastime alle code.
+
+Il modello quadratico spiega il 96% della variabilità del prezzo dei diamanti su scala logaritmica e indica che il peso e il peso al quadrato sono predittori fortemente significativi del prezzo e che la relazione è crescente.
+
+Visualizzo il modello stimato:
+```{r}
+plot(log(prezzo) ~ peso, data = diamanti)
+curve(coef(mod_log_quad)[1] + coef(mod_log_quad)[2] * x + coef(mod_log_quad)[3] * x^2, add = TRUE, col = "red", from = min(diamanti$peso), to = max(diamanti$peso))
+```
+
+### Punto 2
+
+Calcoliamo l'intervallo di previsione al 99% per il prezzo di un diamante di 0.5 carati:
+```{r}
+pred <- predict(mod_log_quad, newdata = data.frame(peso = 0.5), interval = "prediction", level = 0.99)
+exp(pred)
+```
+
+Se il diamante pesasse 1 carato:
+```{r}
+pred <- predict(mod_log_quad, newdata = data.frame(peso = 1), interval = "prediction", level = 0.99)
+exp(pred)
+```
+
+
+# Quiz 3
+
+## Testo
+
+L’efficienza di un programma dipende dalla dimensione dei dati che riceve come input. In generale, dataset di dimensioni più grandi richiedono tempi di elaborazione più elevati, riducendo il numero di processi elaborati in una data unità di tempo. Il dataset efficienza.csv contiene il numero di richieste elaborate per ora per un campione casuale di 29 dataset di varie dimensioni misurate in Gigabyte.
+
+Si risponda ai seguenti quesiti:
+
+1. si costruisca un modello per prevedere quanti processi vengono elaborati in un’ora in funzione della dimensione dei dati ricevuti dal programma;
+
+2. si illustri il modello calcolando un intervallo di previsione al 95% per il numero di processi elaborati in un’ora nel caso di (i) un dataset di dimensione 10 Gigabyte e (ii) nel caso di un dataset di dimensione 15 Gigabyte.
+
+## SOLUZIONE
+
+### Punto 1
+
+Leggiamo e visualizziamo i dati:
+```{r}
+efficienza <- read.csv("efficienza.csv")
+head(efficienza)
+```
+
+Visualizzo i dati tramite grafico:
+```{r}
+library(car)
+plot(processi ~ dimensione, data = efficienza)
+```
+
+Il grafico mostra un andamento decrescente non lineare del numero di processi in funzione della dimensione per la gran parte delle osservazioni a meno di un grappolo di quattro osservazioni con valori del numero di processi elaborati anomalmente grandi.
+
+
+Creo comunque il modello di regressione con termine quadatrico su tutti i dati:
+```{r}
+mod <- lm(processi ~ dimensione + I(dimensione^2), data = efficienza)
+summary(mod)
+```
+
+Provo a rimuovere i dati che si discostano dagli altri:
+```{r}
+outliers <- which(efficienza$processi > 80)
+outliers
+mod2 <- lm(processi ~ dimensione + I(dimensione^2), data = efficienza, subset = -outliers)
+summary(mod2)
+```
+
+Visualizziamo i due modelli stimati:
+```{r}
+plot(processi ~ dimensione, data = efficienza)
+curve(coef(mod)[1] + coef(mod)[2] * x + coef(mod)[3] * x ^ 2, from = min(efficienza$processi), to = max(efficienza$processi), add = TRUE)
+curve(coef(mod2)[1] + coef(mod2)[2] * x + coef(mod2)[3] * x ^ 2, from = min(efficienza$processi), to = max(efficienza$processi), add = TRUE, col = "red")
+```
+
+Il modello stimato togliendo i quattro outliers è significativamente diverso e si adatta meglio alle rimanenti osservazioni a confermare che i punti anomali andavano rimossi.
+
+Analisi dei residui del modello con gli outliers rimossi:
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod2) ~ dimensione[-outliers], data = efficienza)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod2))
+```
+
+L’analisi dei residui è relativamente adeguata tenendo conto delle poche osservazioni.
+
+Il modello stimato sui dati senza gli outliers:
+
+* spiega l’85% della variabilità del numero di processi elaborati;
+
+* conferma la relazione decrescente non lineare fra numero di processi elaborati e dimensione dei datasets.
+
+### Punto 2
+
+Calcoliamo l'intervallo di previsione al 95% per il numero di processi elaborati in un’ora in caso di un dataset di dimensione 10 Gigabyte:
+```{r}
+pred <- predict(mod2, newdata = data.frame(dimensione = 10), interval = "prediction", level = 0.95)
+pred
+```
+
+Se il dataset fosse di dimensione 15 Gigabyte:
+```{r}
+pred <- predict(mod2, newdata = data.frame(dimensione = 15), interval = "prediction", level = 0.95)
+pred
+```
+
+
+
+# Quiz 4
+
+## Testo
+
+Un etologo conduce uno studio per valutare la relazione fra la lunghezza della gestazione (in giorni) e il numero di ore in cui si sogna ("hours of dreaming sleep") in un gruppo di mammiferi. I dati sono contenuti nel file mammiferi.csv.
+
+Si risponda ai seguenti quesiti:
+
+si costruisca e si interpreti un modello per prevedere il numero di ore di sogno in funzione della durata della gestazione;
+
+si illustri il modello calcolando un intervallo di previsione al 93% per il numero di ore sognate da (i) un mammifero che ha una gestazione di 9 mesi e (ii) un mammifero che ha una gestazione di 3 mesi, assumendo che un mese duri 30 giorni.
+
+## Soluzione
+
+### Punto 1
+
+Leggiamo e visualizziamo i dati:
+```{r}
+library(car)
+mammiferi <- read.csv("mammiferi.csv")
+head(mammiferi)
+```
+
+Visualizzo i dati tramite grafico:
+```{r}
+plot(ore_sogno ~ gestazione, data = mammiferi)
+```
+
+Noto che il grafico non è di facile interpretazione e inoltre ci sono dati che si discostano dagli altri.
+
+Creo comunque il modello di regressione:
+```{r}
+mod <- lm(ore_sogno ~ gestazione, data = mammiferi)
+summary(mod)
+```
+
+Analizzo i residui:
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod) ~ gestazione, data = mammiferi)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod))
+```
+
+Facendo l'analisi dei residui noto che il modello non è appropriato.
+
+Elimino i dati che si discostano dagli altri:
+```{r}
+outliers1 <- which(mammiferi$ore_sogno > 6)
+outliers2 <- which(mammiferi$gestazione > 600)
+outliers1 ; outliers2
+mod2 <- lm(ore_sogno ~ gestazione, data = mammiferi, subset = -outliers1)
+summary(mod2)
+```
+
+Analisi dei residui:
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod2) ~ gestazione[-outliers], data = mammiferi)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod2))
+```
+
+Visualizzo il modello stimato:
+```{r}
+plot(ore_sogno ~ gestazione, data = mammiferi)
+abline(mod2, col = "red")
+```
+
+Provo ad aggiungere un termine quadratico:
+```{r}
+mod_q <- lm(ore_sogno ~ gestazione + I(gestazione^2), data = mammiferi)
+summary(mod_q)
+```
+
+Analisi dei residui:
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod_q) ~ gestazione, data = mammiferi)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod_q))
+```
+
+Provo a trasformarlo in scala logaritmica:
+```{r}
+par(mfrow = c(2, 2))
+plot(ore_sogno ~ gestazione, data = mammiferi)
+plot(log(ore_sogno) ~ gestazione, data = mammiferi)
+plot(ore_sogno ~ log(gestazione), data = mammiferi)
+plot(log(ore_sogno) ~ log(gestazione), data = mammiferi)
+par(mfrow = c(1, 1))
+```
+
+Noto che il terzo sembra il più appropriato. Costruisco il modello:
+```{r}
+mod_log <- lm(ore_sogno ~ log(gestazione), data = mammiferi)
+summary(mod_log)
+```
+
+Faccio l'analisi dei residui:
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod_log) ~ log(gestazione), data = mammiferi)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod_log))
+```
+
+Dato R^2 aggiustato e dall'analisi dei residui noto che il modello è migliore.
+
+Provo ad aggiungere un termine quadratico:
+```{r}
+mod_quad <- lm(ore_sogno ~ log(gestazione) + I(log(gestazione)^2), data = mammiferi)
+summary(mod_quad)
+```
+
+Faccio l'analisi dei residui:
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod_quad) ~ log(gestazione), data = mammiferi)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod_quad))
+```
+
+Provo a vedere se migliora aggiungendo un termine cubuco:
+```{r}
+mod_cub <- lm(ore_sogno ~ log(gestazione) + I(log(gestazione)^2) + I(log(gestazione)^3), data = mammiferi)
+summary(mod_cub)
+```
+
+Noto che R^2 aggiugstato è minore quindi mi fermo al modello quadratico.
+
+Visualizzo il modello stimato:
+```{r}
+par(mfrow = c(1, 1))
+plot(ore_sogno ~ log(gestazione), data = mammiferi)
+curve(coef(mod_quad)[1] + coef(mod_quad)[2] * x + coef(mod_quad)[3] * x ^ 2, add = TRUE, col = "red")
+```
+
+Il modello stimato spiega il 52.29% della variabilità dei dati.
+
+### Punto 2
+
+Calcoliamo l'intervallo di previsione al 93% per il numero di ore sognate da un mammifero che ha una gestazione di 9 mesi:
+```{r}
+pred <- predict(mod_quad, newdata = data.frame(gestazione = 9 * 30), interval = "prediction", level = 0.93)
+pred
+```
+
+Se il mammifero avesse una gestazione di 3 mesi:
+```{r}
+pred <- predict(mod_quad, newdata = data.frame(gestazione = 3 * 30), interval = "prediction", level = 0.93)
+pred
+```
+
+
+# Quiz 5
+
+## Testo
+
+
+Viene condotto uno studio per valutare la relazione fra le calorie e la percentuale di grassi in un campione di barrette di cioccolata. I dati sono contenuti nel file cioccolato.csv.
+
+Si risponda ai seguenti quesiti:
+
+si costruisca e si interpreti un modello per prevedere le calorie sulla base della percentuale di grassi;
+
+si illustri il modello calcolando un intervallo di previsione di livello 93% per le calorie di (i) una barretta di cioccolata di 50 grammi che contiene 15 grammi di grasso e (ii) una barretta di cioccolata di 50 grammi che contiene 20 grammi di grassi.
+
+## Soluzione
+
+### Punto 1
+
+Leggiamo e visualizziamo i dati:
+```{r}
+library(car)
+cioccolato <- read.csv("cioccolato.csv")
+head(cioccolato)
+```
+
+Visualizzo i dati tramite grafico:
+```{r}
+plot(calorie ~ grassi, data = cioccolato)
+```
+
+Il grafico non è di facile interpretazione, sembrerebbe non essere lineare.
+
+Creo comunque il modello di regressione:
+```{r}
+mod <- lm(calorie ~ grassi, data = cioccolato)
+summary(mod)
+```
+
+Analizzo i residui:
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod) ~ grassi, data = cioccolato)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod))
+```
+
+L'analisi dei residui mostra che il modello di regressione non è appropriato, sembrebbe che ci sia un andamento non lineare.
+
+
+Tolgo gli outliers:
+```{r}
+outliers <- which(cioccolato$calorie > 600)
+outliers
+mod2 <- lm(calorie ~ grassi, data = cioccolato, subset = -outliers)
+summary(mod2)
+```
+
+Aggiungo un termine quadratico togliendo gli outliers:
+```{r}
+mod_q <- lm(calorie ~ grassi + I(grassi^2), data = cioccolato, subset = -outliers)
+summary(mod_q)
+```
+
+Analizzo i residui:
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod_q) ~ grassi[-outliers], data = cioccolato)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod_q))
+```
+
+Il modello con il termine quadratico spiega il 45.13% della variabilità dei dati e indica che la relazione fra calorie e percentuale di grassi è non lineare.
+
+Visualizzo il modello stimato:
+```{r}
+plot(calorie ~ grassi, data = cioccolato)
+curve(coef(mod_q)[1] + coef(mod_q)[2] * x + coef(mod_q)[3] * x ^ 2, add = TRUE, col = "red")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

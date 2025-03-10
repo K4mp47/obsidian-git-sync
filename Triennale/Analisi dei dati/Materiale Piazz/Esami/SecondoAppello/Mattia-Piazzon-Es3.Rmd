@@ -1,0 +1,120 @@
+---
+title: "Mattia Piazzon - Esercizio 3"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# Punto 1
+
+```{r}
+setwd("~/MEGAsync/Universita/II Anno/Analisi dei Dati/Esami/SecondoAppello")
+library(car)
+library(BSDA)
+```
+
+Calcolo l'intervallo di confidenza al 98% per il primo campione:
+```{r}
+n1 <- 500
+media1 <- 466/n1
+media1 + c(-1, 1) * qnorm(0.99) * sqrt(media1 * (1 - media1) / n1)
+```
+
+Calcolo l'intervallo di confidenza al 98% per il secondo campione:
+```{r}
+n2 <- 500
+media2 <- 487/n2
+media2 + c(-1, 1) * qnorm(0.99) * sqrt(media2 * (1 - media2) / n2)
+```
+
+# Punto 2
+
+Si valuti il seguente sistema di ipotesi:
+$$
+H_0: p_1 = p_2 \quad vs \quad H_1: p_1 < p_2
+$$
+
+dove $p_1$ indica la proporzione di filmati correttamente identificati nel primo campione e $p_2$ indica la proporzione di filmati correttamente identificati nel secondo campione.
+
+Calcolo la statistica Z:
+```{r}
+pooled <- (n1*media1 + n2*media2) / (n1 + n2)
+z <- (media1 - media2) / sqrt(pooled*(1-pooled) * (1/n1 + 1/n2))
+z
+```
+
+Il p-value è:
+```{r}
+pnorm(z)
+```
+
+Il p-value è minore di 0.09 quindi possiamo rifiutiamo l'ipotesi nulla.
+
+# Punto 3
+
+Leggo i dati:
+```{r}
+primo <- read.csv("senza_modifica.csv")
+secondo <- read.csv("con_modifica.csv")
+```
+
+Visualizzo la struttura dei dati:
+```{r}
+head(primo)
+head(secondo)
+```
+
+Calcolo l'intervallo di confidenza al 98% per il primo campione:
+```{r}
+z.test(primo$risultato, sigma.x = sd(primo$risultato) , conf.level=0.98)
+```
+
+Il quale conferma il risultato ottenuto al punto 1.
+
+Calcolo l'intervallo di confidenza al 98% per il secondo campione:
+```{r}
+z.test(secondo$risultato, sigma.x = sd(secondo$risultato) , conf.level=0.98)
+```
+
+Il quale conferma il risultato ottenuto al punto 1.
+
+Riprendo il sistema di ipotesi del secondo punto:
+$$
+H_0: p_1 = p_2 \quad vs \quad H_1: p_1 < p_2
+$$
+
+e lo risolvo:
+```{r}
+pooled <- (n1*mean(primo$risultato) + n2*mean(secondo$risultato)) / (n1 + n2)
+z.test(primo$risultato, secondo$risultato, sigma.x=sqrt(pooled*(1-pooled)), sigma.y=sqrt(pooled*(1-pooled)), alternative="less", conf.level=0.91)
+```
+
+Il p-value è minore di 0.09 quindi possiamo rifiutare l'ipotesi nulla, confermando il risultato ottenuto al punto 2.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

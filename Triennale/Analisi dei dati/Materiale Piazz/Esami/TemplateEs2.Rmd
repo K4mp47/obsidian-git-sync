@@ -1,0 +1,576 @@
+---
+title: "Mattia Piazzon - Esercizio 2"
+output:
+  html_document:
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# Quiz 1
+Dati $X_1 ... X_{261}$ con
+$$
+X \sim
+\begin{cases}
+\frac\theta2, & \text{se }x = -1,\\
+1-\theta, & \text{se }x = 0,\\
+\frac\theta2, & \text{se }x = 1.\\
+\end{cases}
+$$
+
+## Quesito 1: stima di $\theta$ via momenti
+Utilizzando il momento di ordine 1 si ottiene
+$$
+\mu_1 = E(X) = 0
+$$
+Che non permette di stimare $\theta$. Utilizzando il momento di ordine 2 si ottiene
+$$
+\mu_2 = E(X^2) = \theta
+$$
+Che permette di stimare $\theta$ come
+$$
+\begin{cases}
+\mu_2 = M_2 \Rightarrow \hat\theta = \frac1n\sum_{i=1}^n X_i^2
+\end{cases}
+$$
+
+Stima:
+$\hat\theta =$
+```{r, error = TRUE}
+(109 + 103) / 261
+```
+
+
+## Quesito 2: stima di $\theta$ via verosimiglianza
+
+La verosimiglianza per $\theta$ è
+$$
+L(\theta) = \prod_{i=1}^n f(x_i) = \Big(\frac\theta2\Big)^{212} \cdot \big(1 -\theta\big)^{49}
+$$
+La cui log-verosimiglianza è
+$$
+\ell(\theta) = \log L(\theta) = 212\log\frac\theta2 + 49\log(1-\theta)
+$$
+Ponendo la derivata prima uguale a zero si ottiene
+$$
+\ell'(\hat\theta) = 0 \Rightarrow \frac{212}{\hat\theta} - \frac{49}{1-\hat\theta} = 0 \Rightarrow \hat\theta = \frac{212}{212+49}
+$$
+```{r, error = TRUE}
+t <- 212 / (212 + 49)
+t
+```
+Che coincide con la massima verosimiglianza poiche
+$$
+\ell''(\hat\theta) = -\frac{212}{\hat\theta^2} - \frac{49}{(1-\hat\theta)^2} < 0 \quad \forall \hat\theta \in (0,1)
+$$
+
+## Quesito 3: stima di $SE(\hat\theta)$
+
+Utilizzando l'informazione osservata di Fisher:
+$$
+J(\hat\theta) = -\ell''(\hat\theta) = \frac{212}{\hat\theta^2} + \frac{49}{(1-\hat\theta)^2}
+$$
+Calcolandola in $\hat\theta$ si ottiene
+```{r, error = TRUE}
+J <- 212 / t^2 + 49 / (1 - t)^2
+J
+```
+Quindi l'error standard di $\hat\theta$ è
+$$
+\hat{SE}(\hat\theta) = \sqrt{\frac1{J(\hat\theta)}}
+$$
+```{r, error = TRUE}
+sqrt(1 / J)
+```
+
+# Quiz 2
+Dati $X_1 ... X_{261}$ con $X \sim \frac1\theta x^{(1 - \theta) / \theta}$ e $0 < x < 1$ e $\theta > 0$
+
+## Quesito 1: stima di $\theta$ via momenti
+Utilizzando il momento di ordine 1 si ottiene
+$$
+\mu_1 = E(X) = \int_0^1 x \frac1\theta x^{(1 - \theta) / \theta} dx =
+\frac1{1 + \theta}
+$$
+Che permette di stimare $\theta$ come
+$$
+\mu_1 = M_1 \Rightarrow \frac1{1 + \theta} = \bar{X} \Rightarrow \hat\theta = \frac1{\bar{X}} - 1
+$$
+Stima:
+dato the $\bar{X} = \frac1{261} \sum_{i=1}^{261} X_i = \frac{131.4}{261}$ si ha che $\hat\theta = \frac{261}{131.4} - 1$
+```{r, error = TRUE}
+261 / 131.4 - 1
+```
+
+## Quesito 2: stima di $\theta$ via verosimiglianza
+
+La verosimiglianza per $\theta$ è
+$$
+L(\theta) = \prod_{i=1}^n f(x_i) = \prod_{i=1}^n \frac1\theta x_i^{(1 - \theta) / \theta}
+$$
+
+La cui log-verosimiglianza è
+$$
+\ell(\theta) = \log L(\theta) = -n\log\theta + \frac{1 - \theta}{\theta} \sum_{i=1}^n \log x_i = -n\log\theta + \frac1\theta \sum_{i=1}^n \log x_i - \sum_{i=1}^n \log x_i
+$$
+
+Ponendo la derivata prima uguale a zero si ottiene
+$$
+\ell'(\hat\theta) = 0 \Rightarrow -\frac n{\hat\theta} - \frac 1 {\hat\theta^2}\sum_{i=1}^n \log X_i = 0 \Rightarrow \hat\theta = -\frac 1n\sum_{i=1}^n \log X_i
+$$
+Che coincide con la massima verosimiglianza poiche la derivata seconda
+$$
+\ell''(\hat\theta) = \frac n{\hat\theta^2} + \frac 2{\hat\theta^3}\sum_{i=1}^n \log X_i
+$$
+calcolata in $\hat\theta$ è negativa
+
+Stima:
+dato che $\sum_{i=1}^{261} \log X_i = -159.59$ si ha che $\hat\theta = -\frac{-159.59}{261}$
+```{r, error = TRUE}
+t <- - (-159.59) / 261
+t
+```
+
+## Quesito 3: stima di $SE(\hat\theta)$
+
+Utilizzando l'informazione osservata di Fisher:
+$$
+J(\hat\theta) = -\ell''(\hat\theta) = -\frac n{\hat\theta^2} - \frac 2{\hat\theta^3}\sum_{i=1}^n \log X_i
+$$
+Calcolandola in $\hat\theta$ si ottiene
+```{r, error = TRUE}
+J <- -261 / t^2 - 2 / t^3 * (-159.59)
+J
+```
+Quindi l'error standard di $\hat\theta$ è
+$$
+\hat{SE}(\hat\theta) = \sqrt{\frac1{J(\hat\theta)}}
+$$
+```{r, error = TRUE}
+sqrt(1 / J)
+```
+
+# Quiz 3
+Dati $X_1 ... X_{60}$ con $X \sim N(0, \sigma^2)$
+
+## Quesito 1: stima di $\sigma^2$ via momenti
+Utilizzando il momento di ordine 1 si ottiene
+$$
+\mu_1 = E(X) = 0
+$$
+Che non permette di stimare $\sigma^2$. Utilizzando il momento di ordine 2 si ottiene
+$$
+\mu_2 = E(X^2) = Var(X) + E(X)^2 = \sigma^2
+$$
+Che permette di stimare $\sigma^2$ come
+$$
+\begin{cases}
+\mu_2 = M_2 \Rightarrow \hat\sigma^2 = \frac1n\sum_{i=1}^n X_i^2
+\end{cases}
+$$
+Stima:
+dato che $\sum_{i=1}^{60} X_i^2 = 164.83$ si ha che $\hat\sigma^2 = \frac{164.83}{60}$
+```{r, error = TRUE}
+164.83 / 60
+```
+
+## Quesito 2: stima di $\sigma^2$ via verosimiglianza e errore standard
+La verosimiglianza per $\sigma^2$ è
+$$
+L(\sigma^2) = \prod_{i=1}^n f(x_i) = \prod_{i=1}^n \frac1{\sqrt{2\pi\sigma^2}} e^{-\frac{x_i^2}{2\sigma^2}}
+$$
+La cui log-verosimiglianza è
+$$
+\ell(\sigma^2) = \log L(\sigma^2) = \sum_{i=1}^n \log(f(x_i)) = -\frac n2\log(2\pi) - \frac n2\log\sigma^2 - \frac1{2\sigma^2}\sum_{i=1}^n X_i^2
+$$
+Ponendo la derivata prima uguale a zero si ottiene
+$$
+\ell'(\hat\sigma^2) = 0 \Rightarrow -\frac n{2\hat\sigma^2} + \frac1{2\hat\sigma^4}\sum_{i=1}^n X_i^2 = 0 \Rightarrow \hat\sigma^2 = \frac1n\sum_{i=1}^n X_i^2
+$$
+Che coincide con la massima verosimiglianza poiche la derivata seconda
+$$
+\ell''(\hat\sigma^2) = \frac n{2\hat\sigma^4} - \frac1{\hat\sigma^6}\sum_{i=1}^n X_i^2
+$$
+calcolata in $\hat\sigma^2$ è negativa.
+
+Stima:
+dato che $\sum_{i=1}^{60} X_i^2 = 164.83$ si ha che $\hat\sigma^2 = \frac{164.83}{60}$
+```{r, error = TRUE}
+t <- 164.83 / 60
+t
+```
+
+Per stimare l'errore standard di $\hat\sigma^2$ si calcola l'informazione osservata di Fisher
+$$
+J(\hat\sigma^2) = -\ell''(\hat\sigma^2) = -\frac n{2\hat\sigma^4} + \frac1{\hat\sigma^6}\sum_{i=1}^n X_i^2
+$$
+Calcolandola in $\hat\sigma^2$ si ottiene
+```{r, error = TRUE}
+J <- -60 / (2 * t^2) + 1 / t^3 * 164.83
+J
+```
+Quindi l'error standard di $\hat\sigma^2$ è
+$$
+\hat{SE}(\hat\sigma^2) = \sqrt{\frac1{J(\hat\sigma^2)}}
+$$
+```{r, error = TRUE}
+se <- sqrt(1 / J)
+se
+```
+
+## Quesito 3: stima di $\hat\sigma$ via verosimiglianza e errore standard
+Poiche $\hat\sigma = \sqrt{\hat\sigma^2}$ con $g(x) = \sqrt{x}$
+, per invarianza della massima verosimiglianza si ha che
+$$
+\hat\sigma = \sqrt{\frac1n\sum_{i=1}^n X_i^2}
+$$
+che stima $\sigma$ come
+```{r, error = TRUE}
+sqrt(t)
+```
+
+Per stimare l'errore standard di $\hat\sigma$ sappiamo che
+$$
+\hat{SE}(\hat\sigma) \approx g'(\hat\sigma) \hat{SE}(\hat\sigma^2) = \frac1{2\sqrt{\hat\sigma^2}} \hat{SE}(\hat\sigma^2)
+$$
+```{r, error = TRUE}
+se / (2 * sqrt(t))
+```
+
+# Quiz 4
+
+Dati $X_1 ... X_{52}$ con $X \sim \theta(1-\theta)^x$ e $x = 0...$ e $0 < \theta < 1$
+
+## Quesito 1: stima di $\theta$ via verosimiglianza
+
+La verosimiglianza per $\theta$ è
+$$
+L(\theta) = \prod_{i=1}^n f(x_i) = \prod_{i=1}^n \theta(1-\theta)^{x_i}
+$$
+
+La cui log-verosimiglianza è
+$$
+\ell(\theta) = \log L(\theta) = \sum_{i=1}^n \log(f(x_i)) = \sum_{i=1}^n \log(\theta) + x_i\log(1-\theta)
+$$
+
+Ponendo la derivata prima uguale a zero si ottiene
+$$
+\ell'(\hat\theta) = 0 \Rightarrow \frac n{\hat\theta} - \frac1{1-\hat\theta}\sum_{i=1}^n x_i = 0 \Rightarrow \hat\theta = \frac{n}{n + \sum_{i=1}^n x_i}
+$$
+
+Che coincide con la massima verosimiglianza poiche la derivata seconda
+$$
+\ell''(\hat\theta) = -\frac n{\hat\theta^2} - \frac1{(1-\hat\theta)^2}\sum_{i=1}^n x_i
+$$
+è sempre negativa $\forall \hat\theta \in (0,1)$
+
+Stima:
+dato che $\sum_{i=1}^{52} x_i = 31$ si ha che $\hat\theta = \frac{52}{52 + 31}$
+```{r, error = TRUE}
+t <- 52 / (52 + 31)
+t
+```
+
+## Quesito 2: stima di $SE(\hat\theta)$
+
+Utilizzando l'informazione osservata di Fisher:
+$$
+J(\hat\theta) = -\ell''(\hat\theta) = \frac n{\hat\theta^2} + \frac1{(1-\hat\theta)^2}\sum_{i=1}^n x_i
+$$
+
+Calcolandola in $\hat\theta$ si ottiene
+```{r, error = TRUE}
+J <- 52 / t^2 + 31 / (1 - t)^2
+J
+```
+
+Quindi l'error standard di $\hat\theta$ è
+$$
+\hat{SE}(\hat\theta) = \sqrt{\frac1{J(\hat\theta)}}
+$$
+```{r, error = TRUE}
+se <- sqrt(1 / J)
+se
+```
+
+## Quesito 3: stima di $\psi = log(\theta)$ via verosimiglianza e errore standard
+
+Poiche $\psi = log(\theta)$ con $g(x) = log(x)$, per invarianza della massima verosimiglianza si ha che
+$$
+\hat\psi = log(\hat\theta) = log\Big(\frac{n}{n + \sum_{i=1}^n x_i}\Big) = log(n) - log(n + \sum_{i=1}^n x_i)
+$$
+
+Che stima $\psi$ come
+```{r, error = TRUE}
+log(52) - log(52 + 31)
+```
+
+Per stimare l'errore standard di $\hat\psi$ sappiamo che
+$$
+\hat{SE}(\hat\psi) \approx g'(\hat\psi) \hat{SE}(\hat\theta) = \frac1{\hat\theta} \hat{SE}(\hat\theta)
+$$
+
+```{r, error = TRUE}
+se / t
+```
+
+
+# Quiz 5
+
+Sia $X_1, ... ,X_n$ un campione casuale semplice da una distribuzione continua con funzione di densità:
+$$
+f(x;\theta) = \frac{x^7}{7!\theta^8}e^{-x/\theta}, \quad x > 0, \theta > 0
+$$
+
+## Quesito 1: stima di $\theta$ via massima verosimiglianza
+
+La verosimiglianza per $\theta$ è
+$$
+L(\theta) = \prod_{i=1}^n f(x_i) = \prod_{i=1}^n \frac{x_i^7}{7!\theta^8}e^{-x_i/\theta}
+$$
+
+La cui log-verosimiglianza è
+$$
+\ell(\theta) = \log L(\theta) = \sum_{i=1}^n \log(f(x_i)) = \sum_{i=1}^n 7\log(x_i) - 8\log(\theta) - \frac{x_i}{\theta} = 7\sum_{i=1}^n \log(x_i) - 8n\log(\theta) - \frac1{\theta}\sum_{i=1}^n x_i
+$$
+
+La cui funzione punteggio e il suo stimatore di massima verosimiglianza sono:
+$$
+\ell'(\theta) = 0 \Rightarrow -\frac{8n}{\hat\theta} + \frac1{\hat\theta^2}\sum_{i=1}^n x_i = 0 \Rightarrow \hat\theta = \frac1{8n}\sum_{i=1}^n x_i
+$$
+Che coincide con la massima verosimiglianza poiche la derivata seconda
+$$
+\ell''(\hat\theta) = \frac{8n}{\hat\theta^2} - \frac2{\hat\theta^3}\sum_{i=1}^n x_i
+$$
+calcolata in $\hat\theta$ è negativa.
+
+Stima:
+```{r, error = TRUE}
+theta.hat <- 428.59 / (8 * 110)
+theta.hat
+```
+
+## Quesito 2: stima di $SE(\hat\theta)$
+
+Utilizzando l'informazione osservata di Fisher:
+$$
+J(\hat\theta) = -\ell''(\hat\theta) = -\frac{8n}{\hat\theta^2} + \frac2{\hat\theta^3}\sum_{i=1}^n x_i
+$$
+Ottengo quindi:
+```{r, error = TRUE}
+J <- -8 * 110 / theta.hat^2 + 2 / theta.hat^3 * 428.59
+J
+```
+
+Quindi l'error standard di $\hat\theta$ è
+$$
+\hat{SE}(\hat\theta) = \sqrt{\frac1{J(\hat\theta)}}
+$$
+
+```{r, error = TRUE}
+se <- sqrt(1 / J)
+se
+```
+
+## Quesito 3: si calcoli la stima di massima verosimiglianza di $\psi = \theta^{3/2}$ e la stima del suo errore standard. 
+
+Poiche $\psi = \theta^\frac32$ con $g(x) = x^\frac32$, per invarianza della massima verosimiglianza si ha che
+$$
+\hat\psi = g(\hat\theta) = \hat\theta^\frac32
+$$
+che stima $\psi$ come
+```{r, error = TRUE}
+theta.hat^(3/2)
+```
+
+Per stimare l'errore standard di $\hat\psi$ sappiamo che
+$$
+\hat{SE}(\hat\psi) \approx g'(\hat\theta) \hat{SE}(\hat\theta) = \frac32 \hat\theta^{\frac12} \hat{SE}(\hat\theta)
+$$
+quindi
+```{r, error = TRUE}
+3/2 * theta.hat^(1/2) * se
+```
+
+
+# Quiz 6
+
+Sia $X_1, \ldots, X_{201}$ un campione casuale semplice da una variabile casuale continua con funzione di densità
+
+$$f(x; \theta)=\frac{(\theta-1)7^{(\theta-1)}}{x^\theta}, \quad \theta > 2, \; x > 7$$
+
+Sapendo che nel campione sono state osservate le seguenti statistiche:
+$$\sum_{i=1}^{201} x_i = 3386.4, \quad
+\sum_{i=1}^{201} \log(x_i) = 517.15, \quad
+\sum_{i=1}^{201} \frac{1}{x_i} = 17.62, \quad
+\sum_{i=1}^{201} \frac{1}{\sqrt{x_i}} =  57.76$$
+
+si risponda ai seguenti quesiti:
+
+1. si calcoli la stima di $\theta$ con il metodo dei momenti [3 punti];
+2. si calcoli la stima di massima verosimiglianza di $\theta$ [3 punti];
+3. si calcoli una stima dell’errore standard di uno degli stimatori di $\theta$ ottenuti ai punti precedenti [2 punti].
+
+Istruzioni:
+
+1. riportare il momento usato per calcolare lo stimatore e i calcoli necessari per rispondere al quesito;
+2. riportare la log-verosimiglianza, la funzione punteggio e i calcoli necessari per rispondere al quesito;
+3. riportare i calcoli necessari per rispondere al quesito.
+
+
+## Risposta 2
+
+1. Calcolo il primo momento teorico di $X$:
+$$E[X] = \int_{7}^{\infty} x \cdot \frac{(\theta-1)7^{(\theta-1)}}{x^\theta} \, dx = \frac{(\theta-1)7^{(\theta-1)}}{(\theta-2)x^{\theta-2}} \bigg\rvert_{7}^{\infty} = \frac{(\theta-1)7^{(\theta-1)}}{(\theta-2)7^{(\theta-2)}} = \frac{\theta-1}{\theta-2} \cdot 7$$
+Il primo momento campionario è:
+$$M_1 = \bar{X} = \frac{1}{n} \sum_{i=1}^{n} x_i = \frac{3386.4}{201}$$
+    ```{r}
+    (Xbar <- 3386.4/201)
+    ```
+Uguagliando i due momenti si ottiene:
+$$\frac{\theta-1}{\theta-2} \cdot 7 = \bar{X} \Rightarrow 7(\theta-1) = \bar{X}(\theta-2) \Rightarrow \theta(M-7) = 2M-7 \Rightarrow \theta = \frac{2\bar{X} - 7}{\bar{X} - 7}$$
+    ```{r}
+    (theta_mom <- (2*Xbar - 7)/(Xbar - 7))
+    ```
+2. Calcolo la verosimiglianza:
+$$L(\hat{\theta}) = \prod_{i=1}^{n} \frac{(\theta-1)7^{(\theta-1)}}{x_i^\theta} = (\theta-1)^n \frac{7^{\theta n}}{7^{n}} \prod_{i=1}^{n} x_i^{-\theta}$$
+Da cui si ottengo la log-verosimiglianza:
+$$\ell(\hat{\theta})=n\log(\theta-1) + n\theta\log(7) - n\log(7) - \theta\sum_{i=1}^{n}\log(x_i)$$
+Per minimizzarla calcolo la derivata rispetto a $\theta$ e la pongo a zero:
+$$\ell'(\hat{\theta}) = \frac{n}{\theta-1} + n\log(7) - \sum_{i=1}^{n}\log(x_i) = 0$$
+Che risulta in uno stimatore:
+$$\hat{\theta} = 1 + \frac{n}{\sum_{i=1}^{n}\log(x_i) - n\log(7)}$$
+    ```{r}
+    (theta_ll <- 1 + 201/(517.15 - 201*log(7)))
+    ```
+3. Calcolo l'errore standard dello stimatore di massima verosimiglianza utilizzando l'informazione di Fisher:
+$$I(\theta) = -E\left[\ell''(\theta)\right] = -E\left[-\frac{n}{(\theta-1)^2}\right] = \frac{n}{(\theta-1)^2} > 0$$
+L'errore standard è quindi:
+$$SE(\hat{\theta}) = \sqrt{\frac{1}{I(\hat{\theta})}} = \sqrt{\frac{(\hat{\theta}-1)^2}{n}}$$
+    ```{r}
+    (SE_theta_ll <- sqrt((theta_ll - 1)^2/201))
+    ```
+
+
+# Quiz 7
+
+Sia $X_1,…,X_n$ un campione casuale semplice da una distribuzione discreta con funzione di probabiltà:
+
+
+con θ∈(0,1). Sapendo che un campione casuale semplice di dimensione 253 ha dato 96 volte il valore 5, 26 volte il valore 6 e 131 volte il valore 7, si risponda ai seguenti quesiti:
+
+si calcoli la stima con il metodo dei momenti di θ
+ [3 punti];
+
+si calcoli la stima di massima verosimiglianza di θ
+ [3 punti];
+
+si calcoli una stima dell’errore standard della stima di massima verosimiglianza di θ
+ [2 punti].
+
+# Punto 1
+
+Calcolo il momento di ordine 1:
+$$
+\mu_1 = E[X] = \frac{5\theta}{2} + 3(1-\theta) + \frac{7}{2} = \frac{5\theta}{2} + 3 - 3\theta + \frac{7}{2} = \frac{13}{2} - \frac{\theta}{2}
+$$
+
+Il momento campionario di ordine 1 è:
+$$
+M_1 = \bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i = \frac{96 \cdot 5 + 26 \cdot 6 + 131 \cdot 7}{253}
+$$
+
+Uguagliando i due momenti si ottiene:
+$$
+\frac{13}{2} - \frac{\theta}{2} = \frac{96 \cdot 5 + 26 \cdot 6 + 131 \cdot 7}{253} \Rightarrow \theta = 13 - 2\bar{X}
+$$
+
+Quindi la stima di $\theta$ è:
+```{r}
+theta_m <- 13 - 2 * (96 * 5 + 26 * 6 + 131 * 7) / 253
+theta_m
+```
+
+# Punto 2
+
+La verosimiglianza per $\theta$ è
+$$
+L(\theta) = \prod_{i=1}^n f(x_i) = \Big(\frac\theta2\Big)^{96} \cdot \Big(\frac{1 -\theta}{2}\Big)^{26} \cdot \Big(\frac{1}{2}\Big)^{131}
+$$
+
+La log-verosimiglianza è:
+$$
+ell(\theta) = \log L(\theta) = 96 \log\Big(\frac\theta2\Big) + 26 \log\Big(\frac{1 -\theta}{2}\Big) + 131 \log\Big(\frac{1}{2}\Big)
+$$
+
+Ponendo la derivata prima uguale a zero si ottiene:
+$$
+\ell'(\hat\theta) = 0 \Rightarrow \frac{96}{\hat\theta} - \frac{26}{1-\hat\theta} = 0 \Rightarrow \hat\theta = \frac{96}{96+26}
+$$
+
+Quindi la stima di $\theta$ è:
+```{r}
+theta_l <- 96 / (96 + 26)
+theta_l
+```
+
+Che corrisponde alla massima verosimiglianza poiche la derivata seconda:
+$$
+\ell''(\hat\theta) = -\frac{96}{\hat\theta^2} - \frac{26}{(1-\hat\theta)^2} < 0 \quad \forall \hat\theta \in (0,1)
+$$
+
+
+# Punto 3
+
+Calcolo la stima dell'errore standard di $\hat\theta$ utilizzando l'informazione di Fisher:
+$$
+J(\hat\theta) = -\ell''(\hat\theta) = \frac{96}{\hat\theta^2} + \frac{26}{(1-\hat\theta)^2}
+$$
+
+Calcolandola in $\hat\theta$ si ottiene:
+```{r}
+J <- 96 / theta_l^2 + 26 / (1 - theta_l)^2
+J
+```
+
+Quindi l'errore standard di $\hat\theta$ è:
+$$
+\hat{SE}(\hat\theta) = \sqrt{\frac1{J(\hat\theta)}}
+$$
+```{r}
+se <- sqrt(1 / J)
+se
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

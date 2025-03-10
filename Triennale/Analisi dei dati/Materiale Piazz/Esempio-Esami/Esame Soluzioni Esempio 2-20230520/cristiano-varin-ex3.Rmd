@@ -1,0 +1,52 @@
+---
+title: "Soluzione esercizio 3"
+author: "Cristiano Varin"
+output:
+  html_document: default
+---
+
+[1] Costruiamo la tabella delle frequenze osservate: 
+```{r, error = TRUE}
+tab.oss <- as.table(matrix(c(9, 18, 15, 10, 20, 10), nrow = 2))
+tab.oss
+```
+Le frequenze marginali sono:
+```{r, error = TRUE}
+righe <- rowSums(tab.oss)
+righe
+colonne <- colSums(tab.oss)
+colonne
+totale <- sum(tab.oss)
+totale
+```
+Da cui ricaviamo le frequenze attese:
+```{r, error = TRUE}
+tab.att <- matrix(nrow = 2, ncol = 3)
+for (i in 1:2)
+  for (j in 1:3)
+    tab.att[i, j] <- righe[i] * colonne[j] / totale
+tab.att 
+```
+
+[2] Il valore della statistica test d'indipendenza $\chi^2$ è 6.931 con un corrispondente p-value pari a 0.031:
+```{r, error = TRUE}
+summary(tab.oss)
+```
+Il p-value indica debole evidenza contro l'ipotesi nulla per cui concludiamo che vi è qualche forma di dipendenza fra genere e livello di competenza. Confrontando le frequenze osservate con le frequente attese osserviamo che vi sono più uomini dell'atteso nella categoria top manager e più donne dell'atteso nella categoria manager di base a suggerire una possibile discriminazione di genere.
+
+[3] La proporzione di donne fra i top manager è p=0.333. Consideriamo il sistema d'ipotesi 
+
+$H_0: p = 0.5$ contro $H_A: p\neq 0.5$
+
+La statistica test Z assume il valore
+
+```{r, error = TRUE}
+z <- (0.333 - 0.5) / sqrt(0.5 * 0.5 / 30) 
+z
+```
+
+La statistica Z rifiuta l'ipotesi nulla al livello del 10\% per z > 1.645 o z < -1.645 visto che
+```{r, error = TRUE}
+qnorm(0.95)
+```
+Quindi, l'ipotesi nulla  è rifiutata al livello del 10\% e concludiamo che vi è una differenza significativa di genere fra i top managers.

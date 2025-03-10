@@ -1,0 +1,49 @@
+---
+title: "Soluzione esercizio 3"
+author: "Cristiano Varin"
+output:
+  html_document: default
+---
+
+[1] Indichiamo con p la probabilità di preferire l'abbonamento allo sconto. Dobbiamo valutare il sistema d'ipotesi
+
+$H_0: p = 0.5$ contro $H_A: p \neq 0.5$
+
+Possiamo valutare le ipotesi calcolando un intervallo di confidenza con un livello di confidenza approssimativamente del 95\% per $p$ usando la statistica Z:
+
+```{r, error = TRUE}
+phat <- 90 / 200
+phat
+phat + c(-1, 1) * qnorm(0.975) * sqrt(phat * (1 - phat) / 200)
+```
+
+Siccome l'intervallo di confidenza include il valore 0.5 non possiamo rifiutare l'ipotesi nulla al livello di significatività del 5\%.
+
+[2] Indichiamo con $p_1$ la probabilità di preferire l'abbonamento allo sconto al tempo della prima rilevazione e con $p_2$ la stessa probabilità dopo mezzo anno. Dobbiamo valutare il sistema d'ipotesi
+
+$H_0: p_1= p_2$ contro $H_A: p_1 < p_2$.
+
+Possiamo valutare le ipotesi con la statistica Z usando la proporzione "pooled":
+```{r, error = TRUE}
+p1hat <- 90 / 200
+p1hat
+p2hat <- 145 / 250
+p2hat
+pooled <- (90 + 145) / (450)
+pooled
+```
+
+Il valore osservato della statistica Z è
+
+```{r, error = TRUE}
+z <- (p1hat - p2hat) / sqrt(pooled * (1 - pooled) * (1 / 200 + 1 / 250)) 
+z
+```
+
+Il p-value è 
+```{r}
+pnorm(z)
+```
+Il p-value indica che il test è significativo, quindi rifiutiamo l'ipotesi nulla e concludiamo che ora i clienti preferiscono maggiormente l'abbonamento.
+
+ 

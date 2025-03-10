@@ -1,0 +1,296 @@
+---
+title: "Mattia Piazzon - Esempio 1"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# Esercizio 1
+
+## Punto 1
+
+Calcolo i valori attesi dei due stimatori e i loro Bias:
+$$
+E(T_1) = \frac{7}{10}\theta \\
+E(T_2) = \frac{6}{4}\theta \\
+Bias(T_1) = E(T_1) - \theta = \frac{7}{10}\theta - \theta = -\frac{3}{10}\theta \\
+Bias(T_2) = E(T_2) - \theta = \frac{6}{4}\theta - \theta = \frac{1}{2}\theta 
+$$
+
+Quindi entrambi gli stimatori sono distorti. 
+
+## Punto 2
+
+Calcolo la varianza dei due stimatori:
+$$
+Var(T_1) = Var\big(\frac{2X_1+X_2/2+X_3}{5}\big) = \frac{4}{25}Var(X_1) + \frac{1}{100}Var(X_2) + \frac{1}{25}Var(X_3) = \frac{21}{100}\theta \\
+Var(T_2) = Var\big(\frac{X_1+2X_2+3X_3}{4}\big) = \frac{1}{16}Var(X_1) + \frac{4}{16}Var(X_2) + \frac{9}{16}Var(X_3) = \frac{14}{16}\theta \\
+$$
+
+## Punto 3
+
+Per decidere quali dei due stimatori è preferibile, essendo entrambi gli stimatori distorti devo calcolare il loro MSE:
+$$
+MSE(T_1) = Var(T_1) + Bias(T_1)^2 = \frac{21}{100}\theta + \big(-\frac{3}{10}\theta\big)^2 = \frac{21}{100}\theta + \frac{9}{100}\theta^2 \\
+MSE(T_2) = Var(T_2) + Bias(T_2)^2 = \frac{14}{16}\theta + \big(\frac{1}{2}\theta\big)^2 = \frac{14}{16}\theta + \frac{1}{4}\theta^2 \\
+$$
+La differenza tra i due MSE è:
+$$
+MSE(T_2) - MSE(T_1) = \frac{21}{100}\theta + \frac{9}{100}\theta^2 - \frac{14}{16}\theta - \frac{1}{4}\theta^2 = -0.665\theta - 0.16\theta^2 \quad <0 \\
+$$
+
+Quindi il secondo stimatore è preferibile al primo perchè ha un errore quadratico medio minore.
+
+# Esercizio 2
+
+## Punto 1
+
+Calcolo la stima con il metodo dei momenti:
+$$
+\mu_1 = E(X^1) = -\frac{\theta}{2} + \frac{\theta}{2} = 0 \\
+\mu_2 = E(X^2) = \frac{\theta}{2} + \frac{\theta}{2} = \theta \\
+$$
+
+Dato che con il momento di ordine 1 il vaore atteso è 0, uso quello di ordine 2.
+Quindi la stima dei metodi dei momenti è:
+$$
+\hat{\theta} = \mu_2 = \bar{X^2} = \frac{1}{n}\sum_{i=1}^{n}X_i^2 = \frac{1}{261}\sum_{i=1}^{261}X_i^2 \\
+$$
+
+Che con i dati forniti è:
+```{r}
+(109+103)/261
+```
+
+## Punto 2
+
+Calcolo la stima con il metodo della massima verosimiglianza:
+$$
+L(\theta) = \big(\frac{\theta}{2}\big)^{212}(1-\theta)^{49} \\
+\ell(\theta) = 212log(\frac{\theta}{2}) + 49log(1-\theta) 
+$$
+
+La funzione punteggio è:
+$$
+\ell'(\theta) = \frac{212}{\theta} - \frac{49}{1-\theta}\\
+$$
+
+Risolvendo l'equazione trovo il punto critico:
+$$
+\hat \theta = 212/261 = 0.813 \\
+$$
+
+Che coincide con la stima di massima verosimiglianza:
+$$
+\ell''(\theta) = -\frac{212}{\theta^2} - \frac{49}{(1-\theta)^2} < 0 \\
+$$
+
+## Punto 3
+
+L'informazione osservata è:
+```{r}
+j <- 212/(0.813)^2 + 49/(1-0.813)^2
+j
+```
+
+Quindi l'errore stimato di $\hat \theta$ è:
+```{r}
+1/sqrt(j)
+```
+
+
+# Esercizio 3
+
+## Testo
+
+L’installazione di un software su un computer richiede un ammontare di tempo casuale. Un tecnico informatico installa il software in un laboratorio composto da 24 computer con un tempo medio di installazione per singolo computer di 4.5 minuti con deviazione standard di 2.7 minuti. Assumendo che il tempo di installazione sia normalmente distribuito si risponda ai seguenti quesiti:
+
+1. Si calcoli un intervallo di confidenza al 95% per il tempo medio di installazione del software su un singolo computer. Sulla base dei calcoli effettuati possiamo ritenere corretta l’affermazione che "il tempo di installazione del software su un singolo computer è approssimativamete pari a 5 minuti"? [3 punti]
+
+2. Dopo sei mesi viene rilasciata una nuova versione del software che viene installata in un secondo laboratorio che consiste di 18 computer dello stesso modello dei computer del primo laboratorio. Il tempo medio per installare il software su un singolo computer è pari a 3.7 minuti con una deviazione standard di 2 minuti. Il tempo di installazione della nuova versione software è davvero più veloce di quello della precedente versione del software? Si risponda alla domanda ad un livello di significatività del 1% [3 punti];
+
+3. Rispondere ai quesiti dei punti precedenti utillizzando i dati completi sui tempi di installazione delle due versioni del software contenuti nei file vecchia_versione.csv e nuova_versione.csv [2 punti].
+
+## Punto 1
+
+Calcolo l'intervallo di confidenza al 95% per il tempo medio di installazione del software su un singolo computer:
+```{r}
+n <- 24
+media <- 4.5
+sd <- 2.7
+alpha <- 0.05
+t <- qt(1-alpha/2, n-1)
+media + c(-1,1)*t*sd/sqrt(n)
+```
+L'intervalllo di confidenza è $[3.35, 5.64]$. Quindi possiamo ritenere corretta l'affermazione che il tempo di installazione del software su un singolo computer è approssimativamente pari a 5 minuti.
+
+## Punto 2
+
+Il secondo quesito richiede di valutare il seguente sistema d'ipotesi:
+$$
+H_0: \mu_v = \mu_n \quad \text{vs} \quad H_1: \mu_v > \mu_n
+$$
+dove $\mu_v$ indica la media del tempo di installazione della vecchia versione del software e $\mu_n$ indica la media del tempo di installazione della nuova versione del software. Procediamo con il calcolo della statistica T:
+```{r}
+t <- (4.5 - 3.7) / sqrt(2.7^2 / 24 + 2^2 / 18)
+t
+```
+Sotto l’ipotesi nulla, secondo la formula di Satterthwaite la statistica T ha una distribuzione approssimativamente T di Student i seguenti gradi di libertà:
+```{r}
+gradi <- (2.7^2 / 24 + 2^2 / 18)^2 / ((2.7^2 / 24)^2 / 23 + (2^2 / 18)^2 / 17)
+gradi
+```
+Il corrispondente p-value è:
+```{r}
+1 - pt(t, df = gradi)
+```
+Siccome il p-value è superiore a 0.01 concludiamo che non possiamo rifiutare l’ipotesi nulla al livello di significatività del 1%.
+
+## Punto 3
+
+Leggiamo i dati completi:
+```{r}
+vecchia <- read.csv("vecchia_versione.csv")
+nuova <- read.csv("nuova_versione.csv")
+head(vecchia)
+head(nuova)
+```
+I dati sono tutti contenuti in una sola colonna:
+```{r}
+vecchi <- vecchia$x
+nuovi <- nuova$x
+```
+
+Verifichiamo la normalità dei dati:
+```{r}
+library("car")
+## divido lo schermo in due colonne e una riga
+par(mfrow = c(1, 2))
+qqPlot(vecchi)
+qqPlot(nuovi)
+## riporto il grafico alla configurazione standard
+par(mfrow = c(1, 1))
+```
+I grafici suggeriscono che i dati sono normalmente distribuiti. Posso quindi usare la statistica T.
+
+Risposta al primo quesito:
+```{r}
+t.test(vecchi)
+```
+Il calcolo conferma il risultato ottenuto al punto 1.
+
+Risposta al secondo quesito:
+```{r}
+t.test(vecchi, nuovi, alternative = "greater")
+```
+Il p-value è superiore a 0.01, quindi non possiamo rifiutare l'ipotesi nulla al livello di significatività del 1%, il risultato conferma il risultato ottenuto al punto 2.
+
+# Esercizio 4
+
+## Testo
+
+Il dataset mammiferi.csv contiene i dati relativi al peso del cervello e del corpo di 62 specie di mammiferi. Il peso del cervello è espresso in grammi, mentre il peso del corpo in chilogrammi.
+
+Si risponda ai seguenti quesiti:
+
+1. si costruisca un modello per prevedere il peso del cervello di un mammifero sulla base del peso del suo corpo;
+
+1. si illustri il modello calcolando un intervallo di previsione al 90% per il peso del cervello di un mammifero di (i) 50 chilogrammi e (ii) 100 chilogrammi.
+
+## Punto 1
+
+Carico i dati e visualizzo le prime righe:
+```{r}
+mammiferi <- read.csv("mammiferi.csv")
+head(mammiferi)
+```
+
+Disegno il grafico:
+```{r}
+library(car)
+plot(cervello ~ corpo, data = mammiferi)
+```
+
+Il grafico visualizzato non è di facile interpretazione. Creo il modello della retta di regressione:
+```{r}
+mod <- lm(cervello ~ corpo, data = mammiferi)
+summary(mod)
+```
+Analizzo i residui:
+```{r}
+library(car)
+par(mfrow = c(1, 2))
+plot(residuals(mod) ~ corpo, data = mammiferi)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod))
+par(mfrow = c(1, 1))
+```
+Dai residui si nota che il modello non è adeguato, provo a trasformarlo in scala logaritmica:
+```{r}
+#divido finestra 2 righe e 2 colonne
+par(mfrow = c(2, 2))
+plot(cervello ~ corpo, data = mammiferi)
+plot(log(cervello) ~ corpo, data = mammiferi)
+plot(cervello ~ log(corpo), data = mammiferi)
+plot(log(cervello) ~ log(corpo), data = mammiferi)
+par(mfrow = c(1, 1))
+```
+
+Il quarto grafico sembrerebbe il modello migliore tra i quattro. Creo il modello:
+```{r}
+mod <- lm(log(cervello) ~ log(corpo), data = mammiferi)
+summary(mod)
+```
+Analizzo i residui:
+```{r}
+library(car)
+par(mfrow = c(1, 2))
+plot(residuals(mod) ~ log(corpo), data = mammiferi)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod))
+par(mfrow = c(1, 1))
+```
+Dall'analisi dei residui noto che il modello è adeguato.
+
+Visualizzo il grafico con la retta di regressione:
+```{r}
+plot(log(cervello) ~ log(corpo), data = mammiferi)
+abline(mod, col = "red")
+```
+
+Il modello spiega:
+
+ * il 92% della variabilità del peso del cervello dei mammiferi su scala logaritmica;
+ 
+ * indica che il logaritmo del peso del corpo è un predittore fortemente significativo del logaritmo del peso del cervello e che la relazione è crescente.
+ 
+ 
+## Punto 2
+
+Calcolo l'intervallo di previsione al 90% per il peso del cervello di un mammifero di 50 chilogrammi:
+```{r}
+pr <- predict(mod, newdata = data.frame(corpo = 50), interval = "prediction", level = 0.9)
+exp(pr)
+```
+
+Calcolo l'intervallo di previsione al 90% per il peso del cervello di un mammifero di 100 chilogrammi:
+```{r}
+pr <- predict(mod, newdata = data.frame(corpo = 100), interval = "prediction", level = 0.9)
+exp(pr)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+---
+title: "Mattia Piazzon - Esercizio 2"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# Punto 1
+
+Stima di $\theta$ con il metodo dei momenti:
+$$
+\mu_1 = E(X) = \int_{10}^{\infty} x f(x|\theta)dx = \int_{10}^{\infty} \frac{x(\theta - 1)10^{(\theta-1)}}{x^{\theta}}dx = \frac{(\theta - 1) 10^{2\theta-1}}{\theta}
+$$
+
+Quindi la stima con il metodo dei momenti vale:
+$$
+\mu_1 = M_1 \Rightarrow \hat\theta = \frac{(\theta - 1) 10^{2\theta-1}}{\theta}
+$$
+Stima:
+```{r, error = TRUE}
+theta <- 248 / 10
+(theta - 1) * 10^(2*theta - 1) / theta
+```
+
+# Punto 2
+
+Stima di $\theta$ con il metodo della massima verosimiglianza:
+La log-verosimiglianza è:
+$$
+\ell(\theta) = \log L(\theta) = \sum_{i=1}^{248} \log f(x_i) = \sum_{i=1}^{248} \log\Big(\frac{(\theta - 1)10^{(\theta-1)}}{x_i^{\theta}}\Big) = 248\log(\theta - 1) + 248(\theta - 1)\log(10) - \theta\sum_{i=1}^{248}\log(x_i)
+$$
+
+Derivando rispetto a $\theta$ si ottiene:
+$$
+\ell'(\hat\theta) = 0 \Rightarrow \frac{248}{\hat\theta - 1} + 248\log(10) - \sum_{i=1}^{248}\log(x_i) = 0 \Rightarrow \hat\theta = \frac{248}{\sum_{i=1}^{248}\log(x_i)}
+$$
+
+Sapendo che $\sum_{i=1}^{248}\log(x_i) = 734.25$ si ottiene:
+```{r, error = TRUE}
+theta.hat <- 248 / 734.25
+theta.hat
+```
+
+Che coincide con la massima verosimiglianza poichè la sua derivata seconda:
+$$
+\ell''(\hat\theta) = \frac{248}{(\hat\theta -1)^2}\sum_{i=1}^{248}\log(x_i)
+$$
+
+che è minore di 0 calcolata in theta.
+
+# Punto 3
+
+Calcolo l'errore standard dello stimatore ottenuto con la massima verosimiglianza:
+$$
+J(\hat\theta) = -\ell''(\hat\theta) =  - \frac{248}{(\hat\theta -1)^2}\sum_{i=1}^{248}\log(x_i)
+$$
+Quindi l'error standard di $\hat\theta$ è
+$$
+\hat{SE}(\hat\theta) = \sqrt{\frac1{J(\hat\theta)}}
+$$
+```{r}
+se
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

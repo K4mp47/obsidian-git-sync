@@ -1,0 +1,52 @@
+---
+title: "Mattia Piazzon - Esempio 3"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# Esercizio 1
+
+Sia $X_1,…,X_n$ un campione casuale semplice da una variabile casuale con funzione di densità:
+$$
+f(x|\theta) = 2\theta^2x^{-3}, \quad x>\theta, \quad \theta>0
+$$
+Si consideri lo stimatore $\hat \theta = \bar X/2$ per $\theta$.
+
+## Quesito 1: distorsione
+
+Calcolo valore atteso:
+$$
+E(\hat \theta) = E(\bar X/2) = 1/2 E(\bar X) = 1/2 E(X) = 1/2 \int_{\theta}^{\infty} 2\theta^2x^{-2}dx = \theta
+$$
+Quindi lo stimatore è non distorto, il suo Bias è pari a 0.
+
+## Quesito 2: Standard Error
+
+Per calcolare l'errore standard serve prima la varianza:
+$$
+Var(\hat \theta) = Var(\bar X/2) = 1/4 Var(\bar X) = \frac{1}{4n} Var(X) = 1/4 \int_{\theta}^{\infty} 2\theta^2x^{-2}dx = \theta^2
+$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

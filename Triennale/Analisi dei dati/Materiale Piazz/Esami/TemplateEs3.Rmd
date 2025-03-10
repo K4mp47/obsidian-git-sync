@@ -1,0 +1,550 @@
+---
+title: "Mattia Piazzon - Esercizio 2"
+output:
+  html_document:
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# Quiz 1
+
+## Testo
+
+L’installazione di un software su un computer richiede un ammontare di tempo casuale. Un tecnico informatico installa il software in un laboratorio composto da 24 computer con un tempo medio di installazione per singolo computer di 4.5 minuti con deviazione standard di 2.7 minuti. Assumendo che il tempo di installazione sia normalmente distribuito si risponda ai seguenti quesiti:
+
+1. Si calcoli un intervallo di confidenza al 95% per il tempo medio di installazione del software su un singolo computer. Sulla base dei calcoli effettuati possiamo ritenere corretta l’affermazione che "il tempo di installazione del software su un singolo computer è approssimativamete pari a 5 minuti"? [3 punti]
+
+2. Dopo sei mesi viene rilasciata una nuova versione del software che viene installata in un secondo laboratorio che consiste di 18 computer dello stesso modello dei computer del primo laboratorio. Il tempo medio per installare il software su un singolo computer è pari a 3.7 minuti con una deviazione standard di 2 minuti. Il tempo di installazione della nuova versione software è davvero più veloce di quello della precedente versione del software? Si risponda alla domanda ad un livello di significatività del 1% [3 punti];
+
+3. Rispondere ai quesiti dei punti precedenti utillizzando i dati completi sui tempi di installazione delle due versioni del software contenuti nei file vecchia_versione.csv e nuova_versione.csv [2 punti].
+
+## Soluzione
+
+### Punto 1
+Vista l'assunzione di normalità e dato che il numero di campioni non è abbastanza grande possiamo usare la statistica T per calcolare l'intervallo di confidenza al 95%.
+```{r}
+4.5 + c(-1, 1) * qt(0.975, df = 23) * 2.7 / sqrt(24)
+```
+L'intervallo di confidenza al 95% è (3.68, 5.32). L'affermazione che il tempo di installazione del software su un singolo computer è approssimativamete pari a 5 minuti è corretta.
+
+### Punto 2
+Il secondo quesito richiede di valutare il seguente sistema d'ipotesi:
+$$
+H_0: \mu_v = \mu_n \quad \text{vs} \quad H_1: \mu_v > \mu_n
+$$
+dove $\mu_v$ indica la media del tempo di installazione della vecchia versione del software e $\mu_n$ indica la media del tempo di installazione della nuova versione del software. Procediamo con il calcolo della statistica T:
+```{r}
+t <- (4.5 - 3.7) / sqrt(2.7^2 / 24 + 2^2 / 18)
+t
+```
+Sotto l’ipotesi nulla, secondo la formula di Satterthwaite la statistica T ha una distribuzione approssimativamente T di Student i seguenti gradi di libertà:
+```{r}
+gradi <- (2.7^2 / 24 + 2^2 / 18)^2 / ((2.7^2 / 24)^2 / 23 + (2^2 / 18)^2 / 17)
+gradi
+```
+Il corrispondente p-value è:
+```{r}
+1 - pt(t, df = gradi)
+```
+Siccome il p-value è superiore a 0.01 concludiamo che non possiamo rifiutare l’ipotesi nulla al livello di significatività del 1%.
+
+### Punto 3
+Leggiamo i dati completi:
+```{r}
+vecchia <- read.csv("vecchia_versione.csv")
+nuova <- read.csv("nuova_versione.csv")
+```
+I dati sono tutti contenuti in una sola colonna:
+```{r}
+head(vecchia)
+head(nuova)
+```
+Per semplicità salviamo i due vettori di dati in due variabili:
+```{r}
+vecchi <- vecchia$x
+nuovi <- nuova$x
+```
+Verifichiamo la normalità dei dati:
+```{r}
+library("car")
+## divido lo schermo in due colonne e una riga
+par(mfrow = c(1, 2))
+qqPlot(vecchi)
+qqPlot(nuovi)
+## riporto il grafico alla configurazione standard
+par(mfrow = c(1, 1))
+```
+I grafici suggeriscono che i dati sono normalmente distribuiti.
+Risposta al primo quesito:
+```{r}
+t.test(vecchi)
+```
+Il calcolo conferma il risultato ottenuto al punto 1.
+
+Risposta al secondo quesito:
+```{r}
+t.test(vecchi, nuovi, alternative = "greater")
+```
+Il p-value è superiore a 0.01, quindi non possiamo rifiutare l'ipotesi nulla al livello di significatività del 1%, il risultato conferma il risultato ottenuto al punto 2.
+
+# Quiz 2
+
+## Testo
+
+In 60 giornate ci sono state 150 interruzioni alle trasmissioni di un’emittente radiofonica. Al fine di migliorare il servizio, l’emittente ha acquistato una nuova antenna. In 54 giorni successivi all’entrata in funzione della nuova antenna ci sono state 116 interruzioni alle trasmissioni.
+
+Supponendo che il numero di interruzioni segua una distribuzione di Poisson, si risponda ai seguenti quesiti:
+
+1. possiamo ritenere che il numero medio di interruzioni giornaliere prima dell’acquisto della nuova antenna fosse significativamente superiore a 2? Si risponda al quesito ad un livello di significatività del 3% [3 punti];
+
+2. possiamo affermare che l’acquisto della nuova antenna abbia portato ad una riduzione del numero medio di interruzioni giornaliere? Si risponda al quesito ad un livello di significatività del 6% [3 punti].
+
+3. Rispondere ai quesiti dei punti precedenti utillizzando i dati completi sulle interruzioni alle trasmissioni nei due campioni contenuti nei file vecchia_antenna.csv e nuova_antenna.csv [2 punti].
+
+## Soluzione
+
+### Punto 1
+
+Per rispondere al quesito 1, abbiamo le seguenti ipotesi:
+$$
+H_0: \lambda = 2 \quad vs \quad H_1: \lambda > 2
+$$
+dove con $\lambda$ indichiamo il numero medio di interruzioni giornaliere.
+
+Per risolvere il problema usiamo la statistica Z avendo una dimensione di campionaria abbastanza grande. La statistica Z è data da:
+```{r}
+n1 <- 60
+media <- 150/n1
+z = sqrt(n1)*(media-2)/sqrt(2)
+z
+```
+Il p-value è:
+```{r}
+1-pnorm(z)
+```
+Il p-value è significativo quindi ci permette di rigettare l'ipotesi nulla per un livello di significatività del 3%.
+Potevo anche fare:
+```{r}
+qnorm(0.97)
+```
+e vedere se z è maggiore di 1.88, in questo caso è maggiore quindi rigetto l'ipotesi nulla.
+
+### Punto 2
+
+Valuto il seguente sistema di ipotesi:
+$$
+H_0: \lambda_1 = \lambda_2 \quad vs \quad H_1: \lambda_1 > \lambda_2
+$$
+dove con $\lambda_1$ e $\lambda_2$ indichiamo il numero medio di interruzioni giornaliere prima e dopo l'acquisto della nuova antenna.
+
+Valutiamo ancora tramite statistica Z:
+```{r}
+n2 <- 54
+media2 <- 116/n2
+z2 = (media-media2)/sqrt(media/n1+media2/n2)
+z2
+```
+In questo caso z vale 1.23, analizziamo ora il p-value con significatività del 6%:
+```{r}
+1-pnorm(z2)
+```
+Il p-value è maggiore di 0.06 quindi non possiamo rigettare l'ipotesi nulla.
+
+Potevo anche fare:
+```{r}
+qnorm(0.94)
+```
+e vedere se z è maggiore di 1.55, in questo caso è minore quindi non rigetto l'ipotesi nulla.
+
+### Punto 3
+
+Leggo i dati:
+```{r}
+vecchia_antenna <- read.csv("vecchia_antenna.csv")
+nuova_antenna <- read.csv("nuova_antenna.csv")
+```
+
+Visualizzo la struttura dei dati:
+```{r}
+head(vecchia_antenna)
+head(nuova_antenna)
+```
+
+Riprendo il sistema di ipotesi del primo punto:
+$$
+H_0: \lambda = 2 \quad vs \quad H_1: \lambda > 2
+$$
+e lo risolvo:
+```{r}
+library("BSDA")
+z.test(vecchia_antenna$interruzioni, mu = 2, sigma.x = sqrt(2), alternative = "greater", conf.level = 0.97)
+```
+che conferma il risultato precedente, avendo un p-value minore di 0.03, e quindi rigetto l'ipotesi nulla.
+
+Riprendo il sistema di ipotesi del secondo punto:
+$$
+H_0: \lambda_1 = \lambda_2 \quad vs \quad H_1: \lambda_1 > \lambda_2
+$$
+e lo risolvo:
+```{r}
+mean_pooled <- mean(c(vecchia_antenna$interruzioni, nuova_antenna$interruzioni))
+z.test(vecchia_antenna$interruzioni, nuova_antenna$interruzioni, sigma.x = sqrt(mean_pooled), sigma.y = sqrt(mean_pooled), alternative = "greater", conf.level = 0.94)
+```
+che conferma il risultato precedente, avendo un p-value maggiore di 0.06, e quindi non posso rifiutare l'ipotesi nulla.
+
+
+# Quiz 3
+
+## Testo
+
+L’azienda di elettronica di consumo Simsang vuole valutare due diverse strategie per promuovere le vendite di un nuovo televisore. La prima strategia consiste nel vendere la televisione con in omaggio un abbonamento di tre anni ad un servizio di streaming di serie TV e film. La seconda strategia, invece, consiste nel vendere il televisore con uno sconto. Per valutare quale delle due strategie sia più gradita, viene intervistato un campione casuale di 200 clienti. Il numero di clienti che dichiarano di preferire il televisore con lo sconto è stato 110.
+
+Si risponda ai seguenti quesiti:
+
+1. si valuti se vi sia differenza nel livello di gradimento verso le due strategie di promozione al livello di significatività del 5% calcolando un opportuno intervallo di confidenza [3 punti];
+
+2. dopo mezzo anno viene intervistato un secondo campione casuale di 250 clienti. Il numero di clienti in questo secondo campione che dichiara di preferire il televisore con lo sconto è 105. Questo risultato indica che i clienti ora preferiscono maggiormente l’abbonamento di quanto non lo preferissero prima? [3 punti]
+
+3. Rispondere ai quesiti dei punti precedenti utillizzando i dati completi sulle preferenze dichiarate dai clienti nei due campioni contenuti nei file primo_campione.csv e secondo_campione.csv [2 punti].
+
+## Soluzione
+
+### Punto 1
+
+Per rispondere il quesito 1, valutiamo il seguente sistema di ipotesi:
+$$
+H_0: p_1 = 0.5 \quad vs \quad H_1: p_1 \neq 0.5
+$$
+dove $p_1$ indica la proporzione di clienti che preferiscono il televisore con l'abbonamento.
+
+Per risolvere il problema calcoliamo l'intervallo di confidenza al 95%:
+```{r}
+p1 <- 90/200
+p1 + c(-1, 1) * qnorm(0.975) * sqrt(p1 * (1 - p1) / 200)
+```
+
+L'intervallo di confidenza al 95% è (0.38, 0.51). Siccome il valore 0.5 è contenuto nell'intervallo possiamo concludere che non vi è differenza significativa tra le due strategie di promozione.
+
+### Punto 2
+
+Valutiamo il seguente sistema di ipotesi:
+$$
+H_0: p_1 = p_2 \quad vs \quad H_1: p_1 < p_2
+$$
+
+dove $p_1$ indica la proporzione di clienti che preferiscono il televisore con l'abbonamento nel primo campione e $p_2$ indica la proporzione di clienti che preferiscono il televisore con l'abbonamento nel secondo campione.
+
+Per risolvere il problema calcoliamo la statistica Z:
+```{r}
+p2 <- 145/250
+pooled <- (200*p1 + 250*p2) / (200 + 250)
+z <- (p1 - p2) / sqrt(pooled * (1 - pooled) * (1/200 + 1/250))
+z
+```
+
+Il p-value è:
+```{r}
+pnorm(z)
+```
+
+Il p-value è minore di 0.05 quindi possiamo rifiutare l'ipotesi nulla.
+
+### Punto 3
+
+Leggiamo i dati:
+```{r}
+primo <- read.csv("primo_campione.csv")
+secondo <- read.csv("secondo_campione.csv")
+```
+
+Visualizziamo la struttura dei dati:
+```{r}
+head(primo)
+head(secondo)
+```
+
+Noto che sono delle proporzioni, li trasformo in vettori di successi, ovvero se preferiscono l'abbonamento:
+```{r}
+campione1 <- (primo$x == "streaming")
+n <- length(campione1)
+campione2 <- (secondo$x == "streaming")
+m <- length(campione2)
+```
+
+Riprendiamo il sistema di ipotesi del primo punto:
+$$
+H_0: p_1 = 0.5 \quad vs \quad H_1: p_1 \neq 0.5
+$$
+
+e lo risolviamo:
+essendo una proporzione davo prima calcolare la sua deviazione standard che fa 0.5:
+```{r}
+z.test(campione1, mu=0.5, sigma.x=0.5, alternative="two.sided", conf.level=0.95)
+```
+
+Notiamo che dall'intervallo di confidenza ottenuto non possiamo rifiutare l'ipotesi nulla poichè contiene il valore 0.5. Questo conferma il risultato ottenuto al punto 1.
+
+Riprendiamo il sistema di ipotesi del secondo punto:
+$$
+H_0: p_1 = p_2 \quad vs \quad H_1: p_1 < p_2
+$$
+
+e lo risolviamo:
+```{r}
+pooled <- (n*mean(campione1) + m*mean(campione2)) / (n + m)
+z.test(campione1, campione2, sigma.x=sqrt(pooled*(1-pooled)), sigma.y=sqrt(pooled*(1-pooled)), alternative="less", conf.level=0.95)
+```
+
+Il p-value è minore di 0.05 quindi possiamo rifiutare l'ipotesi nulla, confermando il risultato ottenuto al punto 2.
+
+
+
+# Quiz 4
+
+## Testo
+
+Una multinazionale ha deciso di adottare un nuovo codice etico al fine di contrastare le condotte inappropiate verso le proprie dipendenti. Prima di adottare il nuovo codice etico un campione casuale di 115 dipendenti donne è stato intervistato. Ad ognuna delle donne intervistate è stato chiesto di indicare il numero di condotte inappropiate che ha subito nel mese precedente all’intervista. Nello studio campionario è stato trovato un numero medio di 3.9 condotte inappropriate.
+
+Sei mesi dopo l’adozione del codice etico lo studio campionario è stato replicato intervistando un secondo campione casuale di 115 dipendenti donne. In questo secondo studio è stato trovato un numero medio di 3.6 condotte inappropriate.
+
+Si risponda ai seguenti quesiti:
+
+1. si calcolino gli intervalli di confidenza di livello 90% per il numero medio di condotte inappropriate prima e dopo l’adozione del nuovo codice etico [3 punti];
+
+2. si valuti se vi sia stata riduzione significativa del numero di condotte inappropriate successivamente all’adozione del nuovo codice etico ad un livello di significatività del 8% [3 punti];
+
+3. Rispondere ai quesiti dei punti precedenti utillizzando i dati completi dei due studi campionari contenuti nei file primo_campione.csv e secondo_campione.csv [2 punti].
+
+
+
+## Soluzione
+
+### Punto 1
+
+Calcolo l'intervallo di confidenza al 90% per il primo campione:
+```{r}
+n1 <- 115
+media1 <- 3.9
+media1 + c(-1, 1) * qnorm(0.95) * sqrt(media1 / n1)
+```
+
+Calcolo l'intervallo di confidenza al 90% per il secondo campione:
+```{r}
+n2 <- 115
+media2 <- 3.6
+media2 + c(-1, 1) * qnorm(0.95) * sqrt(media2 / n2)
+```
+
+### Punto 2
+
+Si valuti il seguente sistema di ipotesi:
+$$
+H_0: \mu_1 = \mu_2 \quad vs \quad H_1: \mu_1 > \mu_2
+$$
+dove $\mu_1$ indica il numero medio di condotte inappropriate prima dell'adozione del codice etico e $\mu_2$ indica il numero medio di condotte inappropriate dopo l'adozione del codice etico.
+
+Calcolo la statistica Z:
+```{r}
+pooled <- (n1*media1 + n2*media2) / (n1 + n2)
+z <- (media1 - media2) / sqrt(pooled * (1/n1 + 1/n2))
+z
+```
+
+Il p-value è:
+```{r}
+1 - pnorm(z)
+```
+
+Dato che il p-value è maggiore di 0.08 non possiamo rifiutare l'ipotesi nulla.
+
+### Punto 3
+
+Leggo i dati:
+```{r}
+setwd("~/MEGAsync/Universita/II Anno/Analisi dei Dati/Esami/PrimoAppello")
+primo <- read.csv("primo_campione.csv")
+secondo <- read.csv("secondo_campione.csv")
+```
+
+Visualizzo la struttura dei dati:
+```{r}
+head(primo)
+head(secondo)
+```
+
+Trasformo i dati in vettori:
+```{r}
+campione1 <- primo$condotte
+n1 <- length(campione1)
+campione2 <- secondo$condotte
+n2 <- length(campione2)
+head(campione1)
+```
+
+Calcolo l'intervallo di confidenza al 90% per il primo campione:
+```{r}
+mean(campione1) + c(-1,1) * qnorm(0.95) * sqrt(var(campione1)/n1)
+```
+
+Il quale conferma il risultato ottenuto al punto 1.
+
+Calcolo l'intervallo di confidenza al 90% per il secondo campione:
+```{r}
+mean(campione2) + c(-1,1) * qnorm(0.95) * sqrt(var(campione2)/n2)
+```
+
+Il quale conferma il risultato ottenuto al punto 1.
+
+Riprendo il sistema di ipotesi del secondo punto:
+$$
+H_0: \mu_1 = \mu_2 \quad vs \quad H_1: \mu_1 > \mu_2
+$$
+
+e lo risolvo:
+```{r}
+library("BSDA")
+pooled <- (n1*mean(campione1) + n2*mean(campione2)) / (n1 + n2)
+z.test(campione1, campione2, sigma.x=sqrt(pooled), sigma.y=sqrt(pooled), alternative="greater", conf.level=0.92)
+```
+
+Il p-value è maggiore di 0.08 quindi non possiamo rifiutare l'ipotesi nulla, confermando il risultato ottenuto al punto 2.
+
+
+# Quiz 5
+
+## Testo
+
+Un’azienda sviluppa un software per il riconoscimento automatico dei pedoni da installare nelle autovetture. Il software viene testato su un campione di 500 filmati alcuni dei quali contengono dei pedoni. Il software individua correttamente la presenza di pedoni in 466 filmati del campione.
+
+Dopo alcune settimane, l’azienda vuole valutare una modifica del software che dovrebbe migliorarne l’accuratezza. Ripetendo l’esperimento in un nuovo campione di 500 filmati, si trova che il software con la modifica individua correttamente la presenza di pedoni in 487 filmati.
+
+Si risponda ai seguenti quesiti:
+
+si calcolino gli intervalli di confidenza di livello 98% per la proporzione di volte che il software individua correttamente la presenza di pedoni con o senza la modifica [3 punti];
+
+si valuti se si può ritenere che la modifica abbia effettivamente migliorato l’accuratezza del software ad un livello di significatività del 9% [3 punti];
+
+si risponda ai quesiti dei punti precedenti utillizzando i dati completi dei due studi campionari contenuti nei file senza_modifica.csv e con_modifica.csv. In questi due file un risultato pari ad 1 indica che i pedoni sono stati correttamente individuati, mentre un risultato pari a 0 indica che i pedoni non sono stati correttamente individuati [2 punti].
+
+## Soluzione
+
+### Punto 1
+
+Calcolo l'intervallo di confidenza al 98% per il primo campione:
+```{r}
+n1 <- 500
+media1 <- 466/n1
+media1 + c(-1, 1) * qnorm(0.99) * sqrt(media1 * (1 - media1) / n1)
+```
+
+Calcolo l'intervallo di confidenza al 98% per il secondo campione:
+```{r}
+n2 <- 500
+media2 <- 487/n2
+media2 + c(-1, 1) * qnorm(0.99) * sqrt(media2 * (1 - media2) / n2)
+```
+
+### Punto 2
+
+Si valuti il seguente sistema di ipotesi:
+$$
+H_0: p_1 = p_2 \quad vs \quad H_1: p_1 < p_2
+$$
+
+dove $p_1$ indica la proporzione di filmati correttamente identificati nel primo campione e $p_2$ indica la proporzione di filmati correttamente identificati nel secondo campione.
+
+Calcolo la statistica Z:
+```{r}
+pooled <- (n1*media1 + n2*media2) / (n1 + n2)
+z <- (media1 - media2) / sqrt(pooled * (1/n1 + 1/n2))
+z
+```
+
+Il p-value è:
+```{r}
+pnorm(z)
+```
+
+Il p-value vale 0.24 che è maggiore di 0.09 quindi non possiamo rifiutare l'ipotesi nulla.
+
+### Punto 3
+
+Leggo i dati:
+```{r}
+primo <- read.csv("senza_modifica.csv")
+secondo <- read.csv("con_modifica.csv")
+```
+
+Visualizzo la struttura dei dati:
+```{r}
+head(primo)
+head(secondo)
+```
+
+Trasformo i dati in vettori:
+```{r}
+campione1 <- (primo$x == "1")
+n1 <- length(campione1)
+campione2 <- (secondo$x == "1")
+n2 <- length(campione2)
+head(campione1)
+head(campione2)
+```
+
+Calcolo l'intervallo di confidenza al 98% per il primo campione:
+```{r}
+z.test(campione1, conf.level=0.98)
+```
+
+Il quale conferma il risultato ottenuto al punto 1.
+
+Calcolo l'intervallo di confidenza al 98% per il secondo campione:
+```{r}
+z.test(campione2, conf.level=0.98)
+```
+
+Il quale conferma il risultato ottenuto al punto 1.
+
+Riprendo il sistema di ipotesi del secondo punto:
+$$
+H_0: p_1 = p_2 \quad vs \quad H_1: p_1 < p_2
+$$
+
+e lo risolvo:
+```{r}
+pooled <- (n1*mean(campione1) + n2*mean(campione2)) / (n1 + n2)
+z.test(campione1, campione2, sigma.x=sqrt(pooled*(1-pooled)), sigma.y=sqrt(pooled*(1-pooled)), alternative="less", conf.level=0.91)
+```
+
+Il p-value è maggiore di 0.09 quindi non possiamo rifiutare l'ipotesi nulla, confermando il risultato ottenuto al punto 2.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

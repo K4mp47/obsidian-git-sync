@@ -1,0 +1,97 @@
+---
+title: "Mattia Piazzon - Esercizio 2"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# Punto 1
+
+Calcolo il momento di ordine 1:
+$$
+\mu_1 = E[X] = \frac{5\theta}{2} + 3(1-\theta) + \frac{7}{2} = \frac{5\theta}{2} + 3 - 3\theta + \frac{7}{2} = \frac{13}{2} - \frac{\theta}{2}
+$$
+
+Il momento campionario di ordine 1 è:
+$$
+M_1 = \bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i = \frac{96 \cdot 5 + 26 \cdot 6 + 131 \cdot 7}{253}
+$$
+
+Uguagliando i due momenti si ottiene:
+$$
+\frac{13}{2} - \frac{\theta}{2} = \frac{96 \cdot 5 + 26 \cdot 6 + 131 \cdot 7}{253} \Rightarrow \theta = 13 - 2\bar{X}
+$$
+
+Quindi la stima di $\theta$ è:
+```{r}
+theta_m <- 13 - 2 * (96 * 5 + 26 * 6 + 131 * 7) / 253
+theta_m
+```
+
+# Punto 2
+
+La verosimiglianza per $\theta$ è
+$$
+L(\theta) = \prod_{i=1}^n f(x_i) = \Big(\frac\theta2\Big)^{96} \cdot \Big(\frac{1 -\theta}{2}\Big)^{26} \cdot \Big(\frac{1}{2}\Big)^{131}
+$$
+
+La log-verosimiglianza è:
+$$
+\ell(\theta) = \log L(\theta) = 96 \log\Big(\frac\theta2\Big) + 26 \log\Big(\frac{1 -\theta}{2}\Big) + 131 \log\Big(\frac{1}{2}\Big)
+$$
+
+Ponendo la derivata prima uguale a zero si ottiene:
+$$
+\ell'(\hat\theta) = 0 \Rightarrow \frac{96}{\hat\theta} - \frac{26}{1-\hat\theta} = 0 \Rightarrow \hat\theta = \frac{96}{96+26}
+$$
+Quindi la stima di $\theta$ è:
+```{r}
+theta_l <- 96 / (96 + 26)
+theta_l
+```
+
+
+Che corrisponde alla massima verosimiglianza poiche la derivata seconda:
+$$
+\ell''(\hat\theta) = -\frac{96}{\hat\theta^2} - \frac{26}{(1-\hat\theta)^2} < 0 \quad \forall \hat\theta \in (0,1)
+$$
+
+# Punto 3
+
+Calcolo la stima dell'errore standard di $\hat\theta$ utilizzando l'informazione di Fisher:
+$$
+J(\hat\theta) = -\ell''(\hat\theta) = \frac{96}{\hat\theta^2} + \frac{26}{(1-\hat\theta)^2}
+$$
+
+Calcolandola in $\hat\theta$ si ottiene:
+```{r}
+J <- 96 / theta_l^2 + 26 / (1 - theta_l)^2
+J
+```
+
+Quindi l'errore standard di $\hat\theta$ è:
+$$
+\hat{SE}(\hat\theta) = \sqrt{\frac1{J(\hat\theta)}}
+$$
+```{r}
+se <- sqrt(1 / J)
+se
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

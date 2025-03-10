@@ -1,0 +1,138 @@
+---
+title: "Esempio1_Es4"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# TESTO
+
+L’efficienza di un programma dipende dalla dimensione dei dati che riceve come input. In generale, dataset di dimensioni più grandi richiedono tempi di elaborazione più elevati, riducendo il numero di processi elaborati in una data unità di tempo. Il dataset efficienza.csv contiene il numero di richieste elaborate per ora per un campione casuale di 29 dataset di varie dimensioni misurate in Gigabyte.
+
+Si risponda ai seguenti quesiti:
+
+si costruisca un modello per prevedere quanti processi vengono elaborati in un’ora in funzione della dimensione dei dati ricevuti dal programma;
+
+si illustri il modello calcolando un intervallo di previsione al 95% per il numero di processi elaborati in un’ora nel caso di (i) un dataset di dimensione 10 Gigabyte e (ii) nel caso di un dataset di dimensione 15 Gigabyte.
+
+# SOLUZIONE
+
+## Punto 1
+
+Leggiamo e visualizziamo i dati:
+```{r}
+efficienza <- read.csv("efficienza.csv")
+head(efficienza)
+```
+
+Visualizzo i dati tramite grafico:
+```{r}
+plot(processi ~ dimensione, data = efficienza)
+```
+
+Noto dal grafico che non è di facile interpretazione e che inoltre ci sono dati che potrebbero sfasare la stima del modello.
+
+Stimiamo la retta di regressione:
+```{r}
+mod <- lm(processi ~ dimensione, data = efficienza)
+summary(mod)
+```
+
+Analisi dei residui:
+```{r}
+library(car)
+par(mfrow = c(1, 2))
+plot(residuals(mod) ~ dimensione, data = efficienza)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod))
+```
+
+Dall'analisi dei residui noto che il modello di regressione non è appropriato. Inoltre il modello porta a stime del numero di processi negativo. Provo a trasformare le variabili su scala logaritmica, eliminando anche i dati che potrebbero sfasare la stima del modello.
+
+Trovo le osservazioni anomale:
+```{r}
+outliers <- which(efficienza$processi > 80)
+outliers
+```
+
+Sembra essere un modello quadratico, lo stimo con le osservazioni anomale:
+```{r}
+mod <- lm(processi ~ dimensione + I(dimensione^2), data = efficienza)
+summary(mod)
+```
+
+Ora lo stimo senza le osservazioni anomale:
+```{r}
+mod2 <- lm(processi ~ dimensione + I(dimensione^2), data = efficienza, subset = -outliers)
+summary(mod2)
+```
+
+Analisi dei residui:
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod2) ~ dimensione[-outliers], data = efficienza)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod2))
+```
+
+Dalle analisi dei risidui noto che il modello di regressione è appropriato.
+
+Visualizzo i due modelli stimati:
+```{r}
+plot(processi ~ dimensione, data = efficienza)
+curve(coef(mod)[1] + coef(mod)[2] * x + coef(mod)[3] * x^2, from = min(efficienza$dimensione), to = max(efficienza$dimensione), add = TRUE)
+
+curve(coef(mod2)[1] + coef(mod2)[2] * x + coef(mod2)[3] * x^2, from = min(efficienza$dimensione), to = max(efficienza$dimensione), add = TRUE, col = "red")
+```
+
+
+Il modello spiega 85% della variabilità del numero di processi elaborati in un'ora.
+
+## Punto 2
+
+Calcolo l'intervallo di previsione al 95% per il numero di processi elaborati in un'ora nel caso di un dataset di dimensione 10 Gigabyte:
+```{r}
+pr <- predict(mod2, newdata = data.frame(dimensione = 10), interval = "prediction", level = 0.95)
+pr
+```
+
+Calcolo l'intervallo di previsione al 95% per il numero di processi elaborati in un'ora nel caso di un dataset di dimensione 15 Gigabyte:
+```{r}
+pr <- predict(mod2, newdata = data.frame(dimensione = 15), interval = "prediction", level = 0.95)
+pr
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

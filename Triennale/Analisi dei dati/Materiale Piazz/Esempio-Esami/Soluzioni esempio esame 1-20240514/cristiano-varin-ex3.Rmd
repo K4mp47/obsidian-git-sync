@@ -1,0 +1,75 @@
+---
+title: "Soluzione esercizio 3"
+author: "Cristiano Varin"
+output:
+  html_document: default
+---
+
+[1] Vista l'assunzione di normalità, possiamo calcolare un'intervallo di confidenza per il tempo di installazione con livello 95\% con la statistica T:
+
+```{r, error = TRUE}
+4.5 + c(-1, 1) * qt(0.975, df = 23) * 2.7 / sqrt(24)
+```
+
+Siccome un tempo di installazione di 5 minuti è compreso nell'intervallo di confidenza al 95\%, \emph{non} possiamo concludere che l'affermazione \emph{non} sia corretta ad un livello di significatiità del 5\%.
+
+[2] Dobbiamo valutare il sistema d'ipotesi
+
+$H_0: \mu_v = \mu_n$ contro $H_A: \mu_v > \mu_n$
+
+dove $\mu_v$ e $\mu_n$ sono i tempo medi di installazione del software su un singolo computer con la vecchia e il nuova versione del software. Possiamo valutare le ipotesi con la statistica T con valore osservato
+
+```{r, error = TRUE}
+t <- (4.5 - 3.7) / sqrt(2.7 ^ 2 / 24 + 2 ^ 2 /18) 
+t
+```
+
+Sotto l'ipotesi nulla, secondo la formula di Satterthwaite la  statistica T ha una distribuzione approssimativamente T di Student con 
+```{r}
+gradi <- (2.7 ^ 2 / 24 + 2 ^ 2 / 18) ^ 2 / ( 2.7 ^ 4 / (24 ^ 2 * 23) + 2 ^ 4 / (18 ^ 2 * 17))
+gradi
+```
+gradi di libertà. Il corrispondente p-value è
+```{r, error = TRUE}
+1 - pt(t, df = gradi)
+```
+Siccome il p-value è superiore a 0.01 concludiamo che non possiamo rifiutare l'ipotesi nulla al livello di significatività del 1\%.
+
+[3] Leggiamo i dati completi: 
+```{r, error = TRUE}
+dati_vecchi <- read.csv("vecchia_versione.csv")
+dati_nuovi <- read.csv("nuova_versione.csv")
+```
+I dati sono contenuti in due dataframes ciascuna di una singola colonna:
+```{r}
+dati_vecchi
+dati_nuovi
+```
+Per semplicità salviamo i due vettori di dati in due oggetti distinti:
+```{r}
+vecchi <- dati_vecchi$x
+nuovi <- dati_nuovi$x
+```
+
+Verifichiamo la normalità dei dati:
+```{r, error = TRUE}
+library("car")
+qqPlot(vecchi)
+qqPlot(nuovi)
+```
+
+I grafici quantile-quantile sono del tutto soddisfacenti percui riteniamo l'assunzione di normalità soddisfatta. 
+
+Risposta al primo quesito:
+```{r, error = TRUE}
+t.test(vecchi)
+```
+Il calcolo conferma il risultato ottenuto al punto [1].
+
+Risposta al secondo quesito:
+```{r, error = TRUE}
+t.test(vecchi, nuovi, alternative = "greater")
+```
+Il calcolo conferma il risultato ottenuto al punto [2].
+
+ 

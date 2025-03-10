@@ -1,0 +1,54 @@
+---
+title: "Soluzione esercizio 2"
+author: "Cristiano Varin"
+output:
+  html_document: default
+---
+
+[1] Il valore atteso di X è 
+$$
+E(X) = 1 / (1+\theta).
+$$
+Quindi, lo stimatore con il metodo dei momenti di theta  è  
+$$
+\hat \theta = (1 - \bar{X}) / \bar{X}
+$$
+e la corrispondente stima vale
+```{r, error = TRUE}
+(1 - 131.4 / 261) / (131.4 / 261)
+```
+
+[2] La log-verosimiglianza è 
+
+$$
+\ell(\theta) = -261 \log \theta + \frac{1 - \theta}{\theta} \sum_{i=1}^{261} \log X_i.
+$$
+La funzione punteggio è 
+
+$$
+\ell'(\theta) = -\frac{261}{\theta} - \frac{1}{\theta^2}\sum_{i=1}^{261} \log X_i.
+$$
+
+Risolvendo l'equazione di verosimiglianza si trova la stima di massima verosimiglianza pari a
+$$
+\hat \theta=-\frac{1}{261}\sum_{i=1}^{261} \log X_i
+$$
+
+che è lo stimatore di massima verosimiglianza in quanto la derivata seconda della log-verosimiglianza 
+$$
+\ell^{''}(\theta)=\frac{261}{\theta^2}+\frac{2}{\theta^3}  \sum_{i=1}^{261} \log X_i
+$$
+è negativa quando calcolata in $\hat \theta$. Con i dati osservati otteniamo la stima di massima verosimiglianza:
+```{r, error = TRUE}
+-(-159.59) / 261
+```
+
+[3] L'informazione osservata è
+```{r, error = TRUE}
+j <- -261 / 0.61^2 - 2 / 0.61^3 * (-159.59)
+j
+```
+Quindi, l'errore standard stimato dello stimatore di massima verosimiglianza è approssimativamente pari a 
+```{r, error = TRUE}
+1 / sqrt(j)
+```

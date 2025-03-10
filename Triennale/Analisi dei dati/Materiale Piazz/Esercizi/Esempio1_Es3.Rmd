@@ -1,0 +1,96 @@
+---
+title: "Esempio1_es3"
+author: "Mattia Piazzon"
+date: "2024-05-14"
+output: html_document
+---
+
+# Esercizio 3
+## Testo
+L’installazione di un software su un computer richiede un ammontare di tempo casuale. Un tecnico informatico installa il software in un laboratorio composto da 24 computer con un tempo medio di installazione per singolo computer di 4.5 minuti con deviazione standard di 2.7 minuti. Assumendo che il tempo di installazione sia normalmente distribuito si risponda ai seguenti quesiti:
+
+1. Si calcoli un intervallo di confidenza al 95% per il tempo medio di installazione del software su un singolo computer. Sulla base dei calcoli effettuati possiamo ritenere corretta l’affermazione che "il tempo di installazione del software su un singolo computer è approssimativamete pari a 5 minuti"? [3 punti]
+
+2. Dopo sei mesi viene rilasciata una nuova versione del software che viene installata in un secondo laboratorio che consiste di 18 computer dello stesso modello dei computer del primo laboratorio. Il tempo medio per installare il software su un singolo computer è pari a 3.7 minuti con una deviazione standard di 2 minuti. Il tempo di installazione della nuova versione software è davvero più veloce di quello della precedente versione del software? Si risponda alla domanda ad un livello di significatività del 1% [3 punti];
+
+3. Rispondere ai quesiti dei punti precedenti utillizzando i dati completi sui tempi di installazione delle due versioni del software contenuti nei file vecchia_versione.csv e nuova_versione.csv [2 punti].
+
+## Soluzione
+### 1
+Vista l'assunzione di normalità e dato che il numero di campioni non è abbastanza grande possiamo usare la statistica T per calcolare l'intervallo di confidenza al 95%.
+```{r}
+4.5 + c(-1, 1) * qt(0.975, df = 23) * 2.7 / sqrt(24)
+```
+L'intervallo di confidenza al 95% è (3.68, 5.32). L'affermazione che il tempo di installazione del software su un singolo computer è approssimativamete pari a 5 minuti è corretta.
+
+### 2
+Il secondo quesito richiede di valutare il seguente sistema d'ipotesi:
+$$
+H_0: \mu_v = \mu_n \quad \text{vs} \quad H_1: \mu_v > \mu_n
+$$
+dove $\mu_v$ indica la media del tempo di installazione della vecchia versione del software e $\mu_n$ indica la media del tempo di installazione della nuova versione del software. Procediamo con il calcolo della statistica T:
+```{r}
+t <- (4.5 - 3.7) / sqrt(2.7^2 / 24 + 2^2 / 18)
+t
+```
+Sotto l’ipotesi nulla, secondo la formula di Satterthwaite la statistica T ha una distribuzione approssimativamente T di Student i seguenti gradi di libertà:
+```{r}
+gradi <- (2.7^2 / 24 + 2^2 / 18)^2 / ((2.7^2 / 24)^2 / 23 + (2^2 / 18)^2 / 17)
+gradi
+```
+Il corrispondente p-value è:
+```{r}
+1 - pt(t, df = gradi)
+```
+Siccome il p-value è superiore a 0.01 concludiamo che non possiamo rifiutare l’ipotesi nulla al livello di significatività del 1%.
+
+### 3
+Leggiamo i dati completi:
+```{r}
+vecchia <- read.csv("vecchia_versione.csv")
+nuova <- read.csv("nuova_versione.csv")
+```
+I dati sono tutti contenuti in una sola colonna:
+```{r}
+head(vecchia)
+head(nuova)
+```
+Per semplicità salviamo i due vettori di dati in due variabili:
+```{r}
+vecchi <- vecchia$x
+nuovi <- nuova$x
+```
+Verifichiamo la normalità dei dati:
+```{r}
+library("car")
+## divido lo schermo in due colonne e una riga
+par(mfrow = c(1, 2))
+qqPlot(vecchi)
+qqPlot(nuovi)
+## riporto il grafico alla configurazione standard
+par(mfrow = c(1, 1))
+```
+I grafici suggeriscono che i dati sono normalmente distribuiti.
+Risposta al primo quesito:
+```{r}
+t.test(vecchi)
+```
+Il calcolo conferma il risultato ottenuto al punto 1.
+
+Risposta al secondo quesito:
+```{r}
+t.test(vecchi, nuovi, alternative = "greater")
+```
+Il p-value è superiore a 0.01, quindi non possiamo rifiutare l'ipotesi nulla al livello di significatività del 1%, il risultato conferma il risultato ottenuto al punto 2.
+
+
+
+
+
+
+
+
+
+
+
+

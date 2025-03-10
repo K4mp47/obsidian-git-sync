@@ -1,0 +1,126 @@
+---
+title: "Mattia Piazzon - Esercizio 4"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# Punto 1
+
+Leggiamo e visualizziamo i dati:
+```{r}
+setwd("~/MEGAsync/Universita/II Anno/Analisi dei Dati/Esami/PrimoAppello")
+library(car)
+mammiferi <- read.csv("mammiferi.csv")
+head(mammiferi)
+```
+
+Visualizzo i dati tramite grafico:
+```{r}
+plot(ore_sogno ~ gestazione, data = mammiferi)
+```
+
+Noto che il grafico non è di facile interpretazione e inoltre ci sono dati che si discostano dagli altri.
+
+Creo comunque il modello di regressione:
+```{r}
+mod <- lm(ore_sogno ~ gestazione, data = mammiferi)
+summary(mod)
+```
+
+Analizzo i residui:
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod) ~ gestazione, data = mammiferi)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod))
+```
+
+Facendo l'analisi dei residui noto che il modello non è appropriato.
+
+Provo a trasformarlo in scala logaritmica:
+```{r}
+par(mfrow = c(2, 2))
+plot(ore_sogno ~ gestazione, data = mammiferi)
+plot(log(ore_sogno) ~ gestazione, data = mammiferi)
+plot(ore_sogno ~ log(gestazione), data = mammiferi)
+plot(log(ore_sogno) ~ log(gestazione), data = mammiferi)
+par(mfrow = c(1, 1))
+```
+
+Noto che il terzo sembra il più appropriato. Costruisco il modello:
+```{r}
+mod_log <- lm(ore_sogno ~ log(gestazione), data = mammiferi)
+summary(mod_log)
+```
+
+Faccio l'analisi dei residui:
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod_log) ~ log(gestazione), data = mammiferi)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod_log))
+```
+
+Dato R^2 aggiustato e dall'analisi dei residui noto che il modello è migliore, nonostante ci sia una sottostima alla coda.
+
+Provo ad aggiungere un termine quadratico:
+```{r}
+mod_quad <- lm(ore_sogno ~ log(gestazione) + I(log(gestazione)^2), data = mammiferi)
+summary(mod_quad)
+```
+
+Faccio l'analisi dei residui:
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod_quad) ~ log(gestazione), data = mammiferi)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod_quad))
+```
+
+Provo a vedere se migliora aggiungendo un termine cubuco:
+```{r}
+mod_cub <- lm(ore_sogno ~ log(gestazione) + I(log(gestazione)^2) + I(log(gestazione)^3), data = mammiferi)
+summary(mod_cub)
+```
+
+Noto che R^2 aggiustato è minore quindi mi fermo al modello quadratico.
+
+Visualizzo il modello stimato:
+```{r}
+par(mfrow = c(1, 1))
+plot(ore_sogno ~ log(gestazione), data = mammiferi)
+curve(coef(mod_quad)[1] + coef(mod_quad)[2] * x + coef(mod_quad)[3] * x ^ 2, add = TRUE, col = "red")
+```
+
+Il modello stimato spiega il 52.29% della variabilità dei dati.
+
+
+# Punto 2
+
+Calcoliamo l'intervallo di previsione al 93% per il numero di ore sognate da un mammifero che ha una gestazione di 9 mesi:
+```{r}
+pred <- predict(mod_quad, newdata = data.frame(gestazione = 9 * 30), interval = "prediction", level = 0.93)
+exp(pred)
+```
+
+Se il mammifero avesse una gestazione di 3 mesi:
+```{r}
+pred <- predict(mod_quad, newdata = data.frame(gestazione = 3 * 30), interval = "prediction", level = 0.93)
+exp(pred)
+```
+
+
+
+
+
+
+
+
+
+
+
+

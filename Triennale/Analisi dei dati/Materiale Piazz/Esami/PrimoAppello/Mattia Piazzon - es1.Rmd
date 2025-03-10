@@ -1,0 +1,62 @@
+---
+title: "Mattia Piazzon - Esercizio 1"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# Punto 1
+
+Calcolo il valore atteso dello stimatore:
+$$
+E(\hat \theta) = E(\bar X) = E(X) = \int_{0}^{\theta} x f(x|\theta)dx = \int_{0}^{\theta} 17x^{17}\theta^{-17}dx = \frac{17}{18}\theta \\
+$$
+
+Calcolo la sua distorsione:
+$$
+Bias(\hat \theta) = E(\hat \theta) - \theta = \frac{17}{18}\theta - \theta = -\frac{1}{18}\theta
+$$
+
+Quindi lo stimatore è distorto.
+
+# Punto 2
+
+Calcolo l'errore standard dello stimatore:
+$$
+Var(X) = E(X^2) - E(X)^2 = \int_{0}^{\theta} x^2 f(x|\theta)dx - \big(\frac{17}{18}\theta\big)^2 = \frac{17}{19}\theta^2 - \big (\frac{17}{18}\theta \big)^2
+$$
+
+Quindi la varianza dello stimatore è:
+$$
+Var(\hat \theta) = Var(\bar X) = \frac{1}{232}Var(X) = \frac{1}{232} \big( \frac{17}{19}\theta^2 - \big (\frac{17}{18}\theta \big)^2 \big)
+$$
+
+E il suo errore standard:
+$$
+SE(\hat \theta) = \sqrt{Var(\hat \theta)} = \sqrt{\frac{1}{232} \big( \frac{17}{19}\theta^2 - \big (\frac{17}{18}\theta \big)^2 \big)}
+$$
+
+# Punto 3
+
+$\hat \theta$ è uno stimatore consistente di $\theta$ poiché $Bias(\hat \theta) \to 0$ e $Var(\hat \theta) \to 0$ per $n \to \infty$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

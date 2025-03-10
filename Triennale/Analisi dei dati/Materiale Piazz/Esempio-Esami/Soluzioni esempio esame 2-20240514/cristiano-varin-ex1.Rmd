@@ -1,0 +1,31 @@
+---
+title: "Soluzione esercizio 1"
+author: "Cristiano Varin"
+output:
+  html_document: default
+---
+
+[1]   Il valore atteso di  $X_1$ è 
+$$
+E(X_1)=\frac{\theta-1}{2}.
+$$
+Quindi, il valor atteso di $\hat \theta$ è
+$$
+E(\hat \theta)= 2 \text E(X_1) +1 = \theta,
+$$
+ovvero $\hat \theta$ è non distorto.
+
+[2] Abbiamo che
+$$
+E(X_1^2)=\frac{\theta+1}{2},
+$$
+quindi 
+$$
+var(X_1)=\frac{\theta+1}{2} - \frac{(\theta-1)^2}{4}=\frac{-\theta^2+4\theta + 1}{4},
+$$
+da cui segue che l'error standard di $\hat \theta$ è 
+$$
+SE(\hat \theta)=\sqrt{ \frac{4}{n} \text{var}(X_1)}= \sqrt{\frac{-\theta^2+4\theta + 1}{n}}
+$$
+[3] Lo stimatore è consistente perché non è distorto e il suo errore standard converge a zero al crescere di $n$.
+ 

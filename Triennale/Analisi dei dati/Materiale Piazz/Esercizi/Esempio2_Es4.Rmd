@@ -1,0 +1,139 @@
+---
+title: "Esempio2_Es4"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# TESTO
+
+Il dataset diamanti.csv contiene i dati relativi al peso e al prezzo di un campione di 308 diamanti. Il peso è espresso in carati, mentre il prezzo in dollari di Singapore.
+
+Si risponda ai seguenti quesiti:
+
+1. si costruiscano almeno due modelli alternativi per prevedere il prezzo dei diamanti sulla base del loro peso e si spieghi quale dei modelli considerati sia preferibile;
+
+2. si illustri il modello scelto al punto precedente calcolando un intervallo di previsione al 99% per il prezzo di un diamante con un peso (i) di 0.5 carati e (ii) di 1 carato.
+
+# SOLUZIONE
+
+## Punto 1
+
+Leggiamo e visualizziamo i dati:
+```{r}
+diamanti <- read.csv("diamanti.csv")
+head(diamanti)
+```
+
+Visualizzo i dati tramite grafico:
+```{r}
+plot(prezzo ~ peso, data = diamanti)
+```
+
+Notiamo che il grafico non è di facile interpretazione.
+
+Creo modello di regressione lineare:
+```{r}
+mod <- lm(prezzo ~ peso, data = diamanti)
+summary(mod)
+```
+
+Analisi dei residui:
+```{r}
+library(car)
+par(mfrow = c(1, 2))
+plot(residuals(mod) ~ peso, data = diamanti)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod))
+```
+
+Dall'analisi dei residui noto che il modello di regressione non è apporpriato. Inoltre il modello porta a stime del prezzo negative.
+
+Provo a trasformare le variabili su scala logaritmica:
+```{r}
+par(mfrow = c(2, 2))
+plot(prezzo ~ peso, data = diamanti)
+plot(log(prezzo) ~ peso, data = diamanti)
+plot(prezzo ~ log(peso), data = diamanti)
+plot(log(prezzo) ~ log(peso), data = diamanti)
+```
+
+Tra i quattro grafici, il secondo sembra essere il più promettente. Provo a stimare il modello di regressione lineare con le variabili trasformate:
+```{r}
+mod_log <- lm(log(prezzo) ~ peso, data = diamanti)
+summary(mod_log)
+```
+
+Analisi dei residui:
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod_log) ~ peso, data = diamanti)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod_log))
+```
+
+Dall'analisi dei residui noto che il modello di regressione non è appropriato, sembra non essere lineare.
+
+Aggiungo un termine quadratico al modello:
+```{r}
+mod_quad <- lm(log(prezzo) ~ peso + I(peso^2), data = diamanti)
+summary(mod_quad)
+```
+
+Il modello al quadratro ha un valore di $R^2$ aggiustato maggiore rispetto al modello lineare. Sembra essere quindi migliore.
+
+Analisi dei residui:
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod_quad) ~ peso, data = diamanti)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod_quad))
+```
+
+Dall'analisi dei residui noto che il modello è appropriato anche se ho delle sottostime e sovrastime alle code.
+
+Il modello quadratico spiega il 96% della variabilità del prezzo dei diamanti su scala logaritmica.
+
+Visualizziamo il modello stimato:
+```{r}
+par(mfrow = c(1, 1))
+plot(log(prezzo) ~ peso, data = diamanti)
+curve(coef(mod_quad)[1] + coef(mod_quad)[2] * x + coef(mod_quad)[3] * x^2, from = min(diamanti$peso), to = max(diamanti$peso), add = TRUE, col = "red")
+```
+
+## Punto 2
+
+Calcoliamo l'intervallo di previsione al 99% per il prezzo di un diamante con peso di 0.5 carati:
+```{r}
+pred <- predict(mod_quad, newdata = data.frame(peso = 0.5), interval = "prediction", level = 0.99)
+exp(pred)
+```
+
+Calcoliamo l'intervallo di previsione al 99% per il prezzo di un diamante con peso di 1 carato:
+```{r}
+pred <- predict(mod_quad, newdata = data.frame(peso = 1), interval = "prediction", level = 0.99)
+exp(pred)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

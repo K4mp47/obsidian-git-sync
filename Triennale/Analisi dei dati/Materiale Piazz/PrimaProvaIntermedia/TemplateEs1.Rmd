@@ -1,0 +1,269 @@
+---
+title: "Mattia Piazzon - Esercizio 1"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# Quiz 1
+Dati $X_1, X_2, X_3$ con $X \sim Pois(\theta)$
+
+E gli stimatori:
+$T_1 = \frac{2X_1 + X_2/2 + X_3}{5}, \quad T_2 = \frac{X_1 + 2X_2 + 3X_3}{4}$
+
+## Quesito 1: distorsione (distorta)
+$$
+E(T_1) = \frac{7}{10} \theta
+$$
+
+$$
+Bias(T_1) = E(T_1)-E(X) = -\frac{3}{10} \theta
+$$
+
+Dato che $Bias(T_1) \neq 0, T_1$ è distorto
+
+$$
+E(T_2) = \frac3 2 \theta
+$$
+
+$$
+Bias(T_2) = E(T_2)-E(X) = \frac\theta2
+$$
+
+Dato che $Bias(T_2) \neq 0, \quad T_2$ è distorto
+
+## Quesito 2: varianza
+$$
+Var(T_1) = \frac{21}{100}\theta \\
+Var(T_2) = \frac{14}{16}\theta
+$$
+
+## Quesito 3: preferenza di stimatore
+$$
+MSE(T_1) = Bias(T_1)^2 + Var(T_1) = \frac{9}{100}\theta^2 + \frac{21}{100}\theta
+$$$$
+MSE(T_2) = Bias(T_2)^2 + Var(T_2) = \frac{1}{4}\theta^2 + \frac{7}{8}\theta
+$$$$
+MSE(T_1) - MSE(T_2) = -\frac{16}{100}\theta^2 - \frac{80.5}{100}\theta
+$$
+
+Dato che $MSE(T_1) < MSE(T_2), \quad T_1$ è preferibile
+
+
+# Quiz 2
+
+Dati $X_1 ... X_n$ con
+$$
+X \sim
+\begin{cases}
+\frac12, & \text{se }x = -1,\\
+\frac{1-\theta}2, & \text{se }x = 0,\\
+\frac\theta2, & \text{se }x = 1.\\
+\end{cases}
+$$
+con $\theta \in [0,1]$.
+
+E lo stimatore $T = 2\bar{X} + 1$
+
+
+## Quesito 1: distorsione (non distorto)
+$$
+E(\bar{X}) = E(X) = \frac{\theta - 1}2 \\
+E(T) = 2E(\bar{X}) + 1 = \theta \\
+Bias(T) = E(T)-E(X) = 0
+$$
+
+Dato che $Bias(T_1) = 0, T$ è non distorto.
+
+## Quesito 2: Errore standard
+$$
+E(X^2) = \frac{\theta + 1}2 \\
+Var(\bar{X}) = \frac1n Var(X) = \frac1n \big(E(X^2) - E(X)^2 \big) = \frac1n \frac{-\theta^2 + 4\theta + 1}4 \\
+SE(T) = \sqrt{Var(T)} = \sqrt{4Var(\bar{X})} = \sqrt{\frac{-\theta^2 + 4\theta + 1}{n}}
+$$
+
+## Quesito 3: Consistenza
+
+T è consistente poiche $Bias(T) = 0$ e $Var(T) \to 0$ per $n \to \infty$
+
+# Quiz 3
+Dati $X_1 ... X_n$ con $X \sim 2\theta^2x^{-3}$ con $x \ge \theta$ e $\theta > 0$
+E lo stimatore $T = \bar{X}/2$
+
+## Quesito 1: distorsione (non distorto)
+$$
+E(T) = \frac12E(\bar{X}) = \frac12 \int_{\theta}^{\infty} 2\theta^2x^{-2}dx = \theta \\
+Bias(T) = E(T)-E(X) = 0
+$$
+
+Dato che $Bias(T) = 0, T$ è non distorto
+
+## Quesito 2: Errore standard
+Dato che
+$$
+E(X^2) = \int_{\theta}^{\infty} 2\theta^2x^{-1}dx = \infty
+$$
+la varianza di T non esiste e quindi $SE(T) = \infty$
+
+## Quesito 3: Consistenza
+T non è consistente poiche $SE(T) = \infty$
+
+
+# Quiz 4
+
+Dati $X_1 ... X_n$ con $X \sim \frac{2(\theta - x)}\theta^2$ con $0 < x < \theta$ e $\theta > 0$
+e lo stimatore $T = 3\bar{X}$
+
+## Quesito 1: distorsione (non distorto)
+$$
+E(T) = 3E(\bar{X}) = 3E(X) = 3\int_{0}^{\theta} x\frac{2(\theta - x)}{\theta^2}dx = 3 \big(\frac13 \theta\big) = \theta \\
+Bias(T) = E(T)-E(X) = 0
+$$
+
+Dato che $Bias(T) = 0, T$ è non distorto
+
+## Quesito 2: Errore quadratico medio
+
+Dato che $Bias(T) = 0, MSE(T) = Var(T) = \frac9nVar(X)$
+
+$$
+E(X^2) = \int_{0}^{\theta} x^2\frac{2(\theta - x)}{\theta^2}dx = \frac16 \theta^2 \\
+Var(X) = E(X^2) - E(X)^2 = \frac16 \theta^2 - \frac19 \theta^2 = \frac{1}{18}\theta^2 \\
+MSE(T) = \frac9nVar(X) = \frac{1}{2n}\theta^2
+$$
+
+## Quesito 3: Consistenza
+
+T è consistente poiche $Bias(T) = 0$ e $Var(T) \to 0$ per $n \to \infty$
+
+
+
+
+# Quiz 5
+
+Dati $X_1 ... X_n$ un campione casuale semplice da una variabile casuale di Poisson con parametro $\theta > 0$. Si considerino i seguenti due stimatori di θ:
+$$
+\hat \theta_1 = \frac{1}{4}X_1 + \frac{3}{4}X_n \\
+\hat \theta_2 = \frac{1}{n-3} \sum_{i=1}^n X_i, \quad n >= 4\\
+$$
+Calcolare la distorsione dei due stimatori, l'errore standard e dire quale dei due sia preferibile quando $\theta = 5$.
+
+
+## Quesito 1: distorsione
+
+Calcolo valore atteso e bias:
+$$
+E(\hat \theta_1) = \frac{1}{4}E(X_1) + \frac{3}{4}E(X_n) = \frac{1}{4}\theta + \frac{3}{4}\theta = \theta \\
+Bias(\hat \theta_1) = E(\hat \theta_1) - \theta = 0\\
+$$
+$$
+E(\hat \theta_2) = \frac{1}{n-3}E\big(\sum_{i=1}^n X_i\big) = \frac{1}{n-3}n\theta \\
+Bias(\hat \theta_2) = E(\hat \theta_2) - \theta = \frac{1}{n-3}n\theta - \theta = \frac{3\theta}{n-3}\\
+$$
+Quindi $\hat \theta_1$ è non distorto e $\hat \theta_2$ è non distorto per $n \to \infty$
+
+## Quesito 2: Errore standard
+Trovo prima la varianza:
+$$
+Var(\hat \theta_1) = \frac{1}{16}Var(X_1) + \frac{9}{16}Var(X_n) = \frac{1}{16}\theta + \frac{9}{16}\theta = \frac{5}{8}\theta \\
+Var(\hat \theta_2) = \frac{1}{(n-3)^2}Var\big(\sum_{i=1}^n X_i\big) = \frac{1}{(n-3)^2}n\theta = \frac{n\theta}{(n-3)^2}\\
+$$
+Trovo ora lo Standard Error:
+$$
+SE(\hat \theta_1) = \sqrt{Var(\hat \theta_1)} = \sqrt{\frac{5}{8}\theta} \\
+SE(\hat \theta_2) = \sqrt{Var(\hat \theta_2)} = \sqrt{\frac{n\theta}{(n-3)^2}}\\
+$$
+Per poter confrontare i due stimatori è necessario calcolare il loro MSE:
+$$
+MSE(\hat \theta_1) = Var(\hat \theta_1) = \frac{5}{8}\theta \\
+MSE(\hat \theta_2) = Var(\hat \theta_2) + Bias(\hat \theta_2)^2 = \frac{n\theta}{(n-3)^2} + \frac{9\theta^2}{(n-3)^2} = \frac{n\theta + 9\theta^2}{(n-3)^2} \\
+$$
+## Quesito 3: Preferenza di stimatore
+
+Per poterli confrontare devo considerare due casi, n non finito e n finito:
+
+Per $n$ che diverge è preferibile, qualunque sia $\theta$, il secondo stimatore perché è consistente a differenza del primo stimatore.
+
+Per $n$ finito, la scelta dello stimatore dipende dal confronto degli errori quadratici medi. Possiamo calcolare il valore di $n$ per cui è preferibile il primo stimatore risolvendo una equazione del secondo ordine oppure valutare gli errori quadratici medi per enumerazione:
+```{r}
+theta <- 5
+MSE1 <- (5)/(8) * theta
+MSE1
+MSE2 <- function(n) (9 * theta ^ 2 + n * theta) / ((n - 3) ^ 2)
+MSE2(4 : 20)
+```
+Eseguendo i calcoli ottengo che MSE1 = 3.125, devo quindi trovare per quali $n$ MSE2 è minore di 3.125. Eseguendo i calcoli ottengo che per $n \geq 13$ il secondo stimatore è preferibile, mentre fino ad $n=12$ il primo stimatore è preferibile.
+
+
+
+# Notes
+
+**CANCELLARE LE SEGUENTI RIGHE!**
+
+**Qualche comando LaTeX utile per scrivere le formule** 
+
+Formule nel testo: $\sin(\pi x)$
+
+Formule su righe separate:
+$$
+\sin(\pi x)
+$$
+
+
+Momenti:
+$$
+\mu_k, E(X^k), M_k, m_k, \bar{X}, \bar{x}, \sigma^2, Var(X), S^2
+$$
+Stimatori e stime:
+$$
+\hat \theta,  \hat \mu, \hat \sigma^2, \hat \lambda 
+$$
+$$
+\tilde \theta, \tilde \mu, \tilde \sigma^2, \tilde \lambda
+$$
+Verosimiglianza:
+$$
+L(\theta), \ell(\theta), \ell'(\theta), \ell''(\theta)
+$$
+Frazioni:
+$$
+\frac{1}{\sqrt{2}} X_i, \frac{X_i}{Y_i}
+$$
+
+Sommatorie: 
+$$
+\sum_{i=1}^n X_i, \sum_{i=1}^n \log X_i, \sum_{i=1}^n \sqrt{X_i}, \sum_{i=1}^n \frac{X_i}{Y_i}
+$$
+Integrali:
+$$
+\int_{0}^1 f(x) dx, \int_{a}^{\infty} f(x) dx, \int_{-\infty}^{\infty} f(x) dx
+$$
+
+
+
+**Come scrivere i comandi R**
+
+Il valore dello stimatore è 
+```{r, error = TRUE}
+164.75 / 60
+2 * 3 / log(1.2)
+sin(2 * pi / 20)
+a <- 2 * c(1, 2)
+a
+z <- qnorm(0.95)
+z
+t <- qt(0.95, df = 12)
+t
+```
+
+
+**Integrali**
+ $$
+ \int x^n dx = \frac{x^{n+1}}{n+1}
+ $$
+ $$
+ \int e^{kx} dx = \frac{e^{kx}}{k}
+ $$

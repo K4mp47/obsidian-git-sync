@@ -1,0 +1,57 @@
+---
+title: "Mattia Piazzon - Esercizio 2"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+Questo documento va caricato in Moodle come cognome-nome-esX.Rmd dove X è il numero dell'esercizio (1, 2, 3 o 4).
+
+# Soluzione quesito 1
+Calcolo la log-verosimiglianza
+$$
+\ell(\theta) = 5 \sum_{i=1}^n \log X_i - n(log(5!)+6log(\theta))-\frac{1}{\theta}\sum_{i=1}^nX_i
+$$
+Calcolo la funzione punteggio:
+$$
+\ell'(\theta) = -n \frac{6}{\theta} + \frac{1}{\theta^2} \sum_{i=1}^n X_i
+$$
+Dalla quale ricavo la stima eguagliandola a 0
+
+$$
+\ell'(\theta) = 0 \Rightarrow \hat\theta = 2.4208
+$$
+Sostituiendo $n$ con 111 e $\sum_{i=1}^n X_i$ con 275.12
+Che coincide con la massima verosimiglianza poiche
+
+$$
+ell''(\theta) = \frac{666}{\theta^2}+\frac{275.12 * 2\theta}{\theta^4}
+$$
+Che dovrebbe essere sempre < 0 calcolata in $\theta$
+
+# Soluzione quesito 2
+stima di $SE(\hat\theta)$ utilizzando l'informazione osservata:
+
+$$
+J(\theta) = -\ell''(\theta) = \frac{666}{\theta^2}+\frac{275.12 * 2\theta}{\theta^4}
+$$
+Calcolandola in $\hat\theta$ si ottiene
+```{r, error = TRUE}
+J <- 666 / 2.4208^2 + 49 / (1 - 2.4208)^2
+J
+```
+
+Quindi l'error standard di $\hat\theta$ è
+$$
+\hat{SE}(\hat\theta) = \sqrt{\frac1{J(\hat\theta)}}
+$$
+```{r, error = TRUE}
+sqrt(1 / J)
+```
+
+# Soluzione quesito 3
+Per proprità dell'invarianza della massima verosimiglianza
+

@@ -1,0 +1,65 @@
+---
+title: "Soluzione esercizio 3"
+author: "Cristiano Varin"
+output:
+  html_document: default
+---
+
+[1] Dobbiamo valutare il sistema di ipotesi
+
+$H_0: \lambda = 2$ contro $H_A: \lambda > 2,$
+ 
+dove $\lambda$ è il numero atteso di interruzioni. Possiamo valutare le ipotesi con una statistica Z approssimata. Il valore osservato della statistica Z è
+```{r, error = TRUE}
+mean1 <- 150 / 60
+z <- (mean1 - 2) / sqrt(2 / 60)
+z
+```
+Il p-value è
+```{r, error = TRUE}
+1 - pnorm(z)
+```
+Il valore del p-value ci porta a rifiutare l'ipotesi nulla e concludere che il numero di interruzioni sia significativamente superiore a 2 ad un livello di significatività del 3\%. 
+
+[2] Dobbiamo valutare il sistema d'ipotesi 
+
+$H_0: \lambda_1 = \lambda_2$ contro $H_1: \lambda_1 > \lambda_2,$
+
+dove $\lambda_1$ è il numero atteso di interruzioni con la vecchia antenna e $\lambda_1$ è il numero atteso di interruzioni con la nuova antenna.
+
+Possiamo valutare le ipotesi con la statistica Z approssimata con valore osservato
+```{r, error = TRUE}
+mean2 <- 116 / 54
+mean_pooled <- (150 + 116) / (60 + 54)
+z <- (mean1 - mean2) / sqrt(mean_pooled * (1 / 60 + 1 / 54))
+z
+```
+Il p-value è 
+```{r, error = TRUE}
+1 - pnorm(z)
+```
+e non ci permette di rifiutare l'ipotesi nulla ad un livello di significatività del 6\% ovvero di escludere che in realtà la nuova antenna non abbia portato alcun miglioramento sul numero di interruzioni. 
+
+[3] Leggiamo i dati:
+```{r, error = TRUE}
+vecchia <- read.csv("vecchia_antenna.csv")
+nuova <- read.csv("nuova_antenna.csv")
+```
+Vediamo la struttura dei dati:
+```{r}
+head(vecchia)
+head(nuova)
+```
+Risposta al primo quesito:
+```{r, error = TRUE}
+library("BSDA")
+z.test(vecchia$interruzioni, mu = 2, sigma.x = sqrt(2), alternative = "greater")
+```
+Il calcolo conferma il risultato ottenuto al punto [1].
+
+Risposta al secondo quesito:
+```{r, error = TRUE}
+mean_pooled <- mean(c(vecchia$interruzioni, nuova$interruzioni))
+z.test(vecchia$interruzioni, nuova$interruzioni, sigma.x = sqrt(mean_pooled), sigma.y = sqrt(mean_pooled), alternative = "greater")
+```
+Il calcolo conferma il risultato ottenuto al punto [2].

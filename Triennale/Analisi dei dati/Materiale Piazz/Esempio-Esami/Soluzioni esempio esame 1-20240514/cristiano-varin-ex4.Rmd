@@ -1,0 +1,85 @@
+---
+title: "Soluzione esercizio 4"
+author: "Cristiano Varin"
+output:
+  html_document: default
+---
+
+Leggiamo i dati:
+```{r}
+mammiferi <- read.csv("mammiferi.csv")
+```
+
+Visualizziamo i dati:
+```{r}
+plot(cervello ~ corpo, data = mammiferi)
+```
+
+Il grafico non è di facile interpretazione a causa di due osservazioni anomale che corrispondono alle due specie di elefanti.
+
+Stimiamo la retta di regressione:
+```{r}
+mod <- lm(cervello ~ corpo, data = mammiferi)
+summary(mod)
+```
+
+Analisi dei residui:
+```{r, message = FALSE}
+library(car)
+par(mfrow = c(1, 2))
+plot(residuals(mod) ~ corpo, data = mammiferi)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod))
+```
+L'analisi dei residui, e in particolare il grafico quantile-quantile, indica che il modello non è adeguato.
+
+Proviamo a trasformare le variabili su scala logaritmica:
+```{r}
+par(mfrow = c(2, 2))
+plot(cervello ~ corpo, data = mammiferi)
+plot(log(cervello) ~ corpo, data = mammiferi)
+plot(cervello ~ log(corpo), data = mammiferi)
+plot(log(cervello) ~ log(corpo), data = mammiferi)
+```
+
+I grafici suggeriscono di trasformare entrambe le variabili.
+
+Stimiamo la retta di regressione con le variabili trasformate:
+```{r}
+mod <- lm(log(cervello) ~ log(corpo), data = mammiferi)
+summary(mod)
+```
+
+Il modello stimato:
+
+* spiega il 92\% della variabilità del peso del cervello dei mammiferi su scala logaritmica;
+
+* indica che il logaritmo del peso del corpo è un predittore fortemente significativo del logaritmo del peso del cervello e che la relazione è crescente.
+
+Visualizziamo il modello stimato: 
+```{r}
+plot(log(cervello) ~ log(corpo), data = mammiferi)
+abline(mod, col = "red")
+```
+
+Il grafico suggerisce che la retta di regressione è adeguata per descrivere la relazione fra il logaritmo del peso del cervello e il logaritmo del peso del corpo.
+
+L'analisi dei residui ora è soddisfacente:
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod) ~ log(corpo), data = mammiferi)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod))
+```
+
+Calcoliamo l'intervallo di previsione al 90% per il peso del cervello di un mammifero di 50 kg:
+```{r}
+pr <- predict(mod, newdata = data.frame(corpo = 50), interval = "prediction", level = 0.9)
+exp(pr)
+```
+
+Se il mammifero invece pesasse 100 kg allora il peso del cervello previsto dal modello sarebbe: 
+```{r}
+pr <- predict(mod, newdata = data.frame(corpo = 100), interval = "prediction", level = 0.9)
+exp(pr)
+```

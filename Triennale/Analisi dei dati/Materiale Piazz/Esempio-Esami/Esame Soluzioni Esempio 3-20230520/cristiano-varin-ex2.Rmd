@@ -1,0 +1,49 @@
+---
+title: "Soluzione esercizio 2"
+author: "Cristiano Varin"
+output:
+  html_document: default
+---
+
+[1] La log-verosimiglianza per $\sigma^2$ è
+$$
+\ell(\sigma^2)=-\frac{60}{2} \log \sigma^2 - \frac{1}{2\sigma^2}\sum_{i=1}^{60}   X_i^2,
+$$
+con corrispondente funzione punteggio  
+$$
+\ell'(\sigma^2)=-\frac{60}{2\sigma^2} + \frac{1}{2 \sigma^4} \sum_{i=1}^{60} X_i^2.
+$$
+La soluzione dell'equazione di verosimiglianza è 
+$$
+\hat \sigma^2 = \frac{1}{60}\sum_{i=1}^{60} X_i^2
+$$ 
+e corrisponde allo stimatore di massima verosimiglianza poiché la derivata seconda della log-verosimiglianza
+$$
+\ell^{''}(\sigma^2)=\frac{60}{2\sigma^4}-\frac{1}{\sigma^6} \sum_{i=1}^{60} X_i^2
+$$
+è negativa in $\hat \sigma^2.$
+
+Quindi, la stima di massima verosimiglianza di $\sigma^2$ è
+```{r, error = TRUE}
+164.83 / 60
+```
+
+[2] L'errore standard di $\sigma^2$ stimato è approssimativamente pari a
+```{r, error = TRUE}
+j <- -60 / (2 * 2.75 ^ 2) + 1 /(2.75 ^ 3) * 164.83
+1 / sqrt(j)
+```
+
+[3] Per la proprietà dell'invarianza, la stima di $\sigma$ \`e semplicemente 
+```{r, error = TRUE}
+sqrt(2.75)
+```
+
+Usando i risultati sulle transformazioni abbiamo che l'errore standard di $\hat \sigma$ è approssimativamente pari a
+$$
+SE(\hat \sigma) = \frac{1}{2 \sqrt{\hat \sigma^2}} SE(\hat \sigma^2).
+$$
+Con i dati osservati otteniamo 
+```{r, error = TRUE}
+0.5 / (2 * sqrt(2.75))
+```

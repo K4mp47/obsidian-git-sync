@@ -1,0 +1,261 @@
+---
+title: "U4_Es6"
+author: "Mattia Piazzon"
+date: "2024-05-14"
+output: html_document
+---
+
+# Esercizio 1
+
+## Testo
+Un'azienda vuole provare due tecniche per promuovere il loro nuovo telivisore.
+La prima consiste nel vendere la televisione con in omaggio un abbonamento di tre anni ad un servizio di streaming di serie TV. La seconda invece consiste nel vendere la televisione con uno sconto. Per valutare quali delle due strategie sia più gradita viene intervistato un campione casuale di 200 clienti. Il numero di clienti che dichiarano di preferire il telivisore con lo sconto è 110.
+
+(a) Si calcoli un intervallo di confidenza al 90% per la probabilità di preferire l’offerta della televisione con l’abbonamento al servizio di streaming piuttosto che la televisione con lo sconto.
+
+(b) Si verifichi se vi sia una differenza nel livello di gradimento verso le due strategie di promozione al livello di significatività del 5%.
+
+(c) Dopo mezzo anno viene intervistato un secondo campione casuale di 250 clienti. Il
+numero di clienti in questo secondo campione che dichiara di preferire il televisore con
+lo sconto è 105. Questo risultato conferma che i clienti ora preferiscono maggiormente
+l’abbonamento di quanto non lo preferissero prima?
+
+## Soluzione
+
+(a)
+
+Essendo limitati a due scelte, risolvo tramite uso di proporzioni, avendo un intervallo di confidenza al 90%:
+```{r}
+n = 200
+p.hat = 90 / n
+alpha = 0.1
+z = qnorm(1 - alpha / 2)
+se = sqrt(p.hat * (1 - p.hat) / n)
+p.hat + c(-1,1) * z * se
+```
+Ottengo quindi l'intervallo 0.39 0.51.
+
+(b)
+
+Per verificare se vi sia una differenza nel livello di gradimento verso le due strategie di promozione al livello di significatività del 5%, posso utilizzare un test Z per proporzioni valutando la seguente ipotesi:
+$$
+H_0: p_1 = 0.5 \quad \text{vs} \quad H_1: p_1 \neq 0.5
+$$
+dove $p_1$ è la proporzione di clienti che preferiscono la televisione con lo sconto. L'ipotesi nulla dice che non c'è differenza tra le due strategie di promozione. Calcolo la statistica Z:
+```{r}
+p1 = 90 / 200
+z = sqrt(n) * (p1 - 0.5) / sqrt(0.5 * (1 - 0.5))
+z
+```
+
+
+
+# Esercizio 6
+
+## Testo
+
+I dati contenuti nel file monet.csv riguardano il prezzo di vendita in milioni di dollari di diversi dipinti di Claude Monet. Oltre al prezzo di vendita (price) e l'identificativo numerico del dipinto (id), sono disponibili informazioni circa le dimensioni del dipinto (height e width in pollici), se il dipinto è firmato da Monet o meno (singned) e la casa d'aste in cui il dipinto è stato venduto (house con le tre case identificate da diversi numeri).
+
+## Domande
+
+a)  Si valuti la normalità dei prezzi di vendita dei dipinti.
+b)  Si valuti la normalità dei prezzi di vendita dei dipinti distinti a seconda se siano firmati o meno da Monet.
+c)  Si rivalutino i due punti precedenti dopo aver trasformato i dati su scala logaritmica.
+
+## Soluzione
+
+### a
+
+Leggiamo i dati e visualizziamo il loro contenuto:
+
+```{r}
+monet <- read.csv("monet.csv")
+```
+
+Carichiamo la libreria car:
+
+```{r}
+library("car")
+```
+
+Vediamo il grafico quantile-quantile dei prezzi dei dipinti:
+
+```{r}
+qqPlot(monet$price, ylab = "quantili empirici", xlab = "quantili teorici", main = "Prezzi dipinti di Monet")
+```
+
+Il grafico mostra che i prezzi dei dipinti non sono normalmente distribuiti.
+
+### b
+
+Dividiamo i prezzi dei dipinti in due gruppi: quelli firmati da Monet e quelli non firmati:
+
+```{r}
+x <- with(monet, price[signed == 1])
+y <- with(monet, price[signed == 0])
+```
+
+Visualizziamo i grafici quantile-quantile dei due gruppi:
+
+```{r}
+## il seguente comando divide la finestra grafica in una riga e due colonne in modo da poter disegnare i due grafici appaiati.
+par(mfrow = c(1, 2))
+qqPlot(x, ylab = "quantili empirici", xlab = "quantili teorici", main = "Prezzi dipinti firmati")
+qqPlot(y, ylab = "quantili empirici", xlab = "quantili teorici", main = "Prezzi dipinti non firmati")
+## ritorniamo ad una finestra grafica non divisa, ovvero formata da una riga e una colonna
+par(mfrow = c(1, 1))
+```
+
+Anche i grafici quantile-quantile dei prezzi distinti a seconda della presenza della firma mostrano un'andamento fortemente non normale.
+
+### c
+
+Ripetiamo i grafici precedenti su scala logaritmica. Grafico di tutti i prezzi di vendita:
+
+```{r}
+qqPlot(log(monet$price), ylab = "quantili empirici", xlab = "quantili teorici", main = "log-prezzi dipinti di Monet")
+```
+
+La trasformazione logaritmica rende i prezzi dei dipinti più normalmente distribuiti. Grafici dei prezzi distinti a seconda della presenza della firma:
+
+```{r}
+par(mfrow = c(1, 2))
+qqPlot(log(x), ylab = "quantili empirici", xlab = "quantili teorici", main = "log-prezzi dipinti firmati")
+qqPlot(log(y), ylab = "quantili empirici", xlab = "quantili teorici", main = "log-prezzi dipinti non firmati")
+par(mfrow = c(1, 1))
+```
+
+Il grafico relativo ai dipinti non firmati ci permette di concludere che non possiamo escludere che i prezzi su scala logaritmica siano normalmente distribuiti, mentre per i dipinti firmati gli andamenti sulle due code, e in particolare su quella di sinistra, non sono del tutto soddisfacenti.
+
+# Esercizio 5
+
+## Domande
+
+a)  Si valuti se il prezzo di vendita dei dipinti firmati da Claude Monet sia significativamente più alto del prezzo di vendita dei dipinti attribuiti a Claude Monet seppur non firmati dal pittore.
+b)  Si valuti se la proporzione di dipinti firmati che sono stati battuti dalla prima casa d'aste (house == 1) sia diversa da quella dei dipinti firmati che sono stati battuti dalla seconda casa d'aste (house == 2).
+
+## Soluzione
+
+### a
+
+Sulla base dei risultati dell'esercizio precedente procediamo con l'analisi dei dati sulla scala logaritmica e valutiamo il sistema d'ipotesi: $$
+H_0: \mu_x = \mu_y \quad \text{vs} \quad H_1: \mu_x > \mu_y
+$$ dove $\mu_x$ indica la media del logaritmo del prezzo dei dipinti firmati da Monet e $\mu_y$ indica la media del logaritmo del prezzo dei dipinti non firmati da Monet ma comunque attribuiti a Monet.
+
+```{r}
+monet <-read.csv("monet.csv")
+```
+
+Estraiamo la variabile binaria che indica se un dipinto sia firmato o meno:
+
+```{r}
+firmato <- as.factor(monet$signed)
+levels(firmato) <- c("No", "Si")
+head(firmato)
+```
+
+Visualizziamo le distribuzioni delle due variabili:
+
+```{r}
+boxplot(log(monet$price) ~ firmato, xlab = "Firmato?", ylab = "Prezzo [logaritmo]", col = c("steelblue", "darkorange"))
+```
+
+Il grafico mostra che i prezzi di vendita (su scala logaritmica) sono più alti per i dipinti firmati. Valutiamo ora il sistema d'ipotesi per vedere se la differenza osservata è statisticamente significativa. Per prima cosa costruiamo i vettori che contengono i prezzi su scala logaritmica distinti a seconda della firma:
+
+```{r}
+x <- log(monet$price[firmato == "Si"])
+y <- log(monet$price[firmato == "No"])
+```
+
+Procediamo con un test di tipo Z:
+
+```{r}
+library("BSDA")
+z.test(x, y, sigma.x = sd(x), sigma.y = sd(y), alternative = "greater")
+```
+
+Il valore osservato dalla statistica Z è z = 5.99 che corrisponde ad un livello di significatività osservato pressochè nullo ad indicare un'evidenza molto forte contro l'ipotesi nulla.
+
+### b
+
+Il secondo quesito richiede di valutare il sistema d'ipotesi: 
+$$
+H_0: p_x = p_y \quad \text{vs} \quad H_1: p_x \neq p_y
+$$ dove $p_x$ e $p_y$ indicano le proporzioni di dipinti firmati che sono stati battuti rispettivamente dalla prima e dalla seconda casa d'aste. Costruiamo le variabili binarie corrispondenti alle due case d'aste:
+
+```{r}
+x <- with(monet, signed[house == 1])
+y <- with(monet, signed[house == 2])
+```
+
+Le proporzioni camponarie dei dipinti firmati battuti dalle due case d'aste sono:
+
+```{r}
+mean(x)
+mean(y)
+```
+
+Valutiamo il sistema di ipotesi con test Z:
+
+```{r}
+sd.x <- sqrt(mean(x) * (1 - mean(x)))
+sd.y <- sqrt(mean(y) * (1 - mean(y)))
+z.test(x,y, sigma.x = sd.x, sigma.y = sd.y)
+```
+
+Il valore osservato della statistica Z è z = -0.78 che corrisponde ad un livello di significatività osservato pari a 0.44. Non possiamo quindi rifiutare l'ipotesi nulla.
+
+
+
+# Esercizio 7
+
+## Soluzione
+Verifico la seguente ipotesi: 
+$$
+H_0: \lambda = 10 \quad \text{vs} \quad H_1: \lambda \neq 10
+$$
+dove $\lambda$ è il parametro della distribuzione di poisson e rappresenta il numero di errori giornalieri.
+Calcolo la statistica Z dato che la dimensione campionaria è grande, n = 32, e che essendo una distribuzione di Poisson la varianza è nota e uguale alla media.
+$$
+Z = \frac{\sqrt{n}(\bar{X} - \lambda)}{\sqrt{\lambda}} = \frac{\sqrt{32}(11.69 - 10)}{\sqrt{10}} = 3.02
+$$
+Ora vedo se con significatività $\alpha = 0.05$ posso rigettare l'ipotesi nulla:
+```{r}
+qnorm(0.95)
+```
+Ottengo che 3.02 > 1.64, quindi posso rigettare l'ipotesi nulla.
+
+Ora vedo se dopo il corso di aggiornamento il numero di errori giornalieri è diminuito. Verifico la seguente ipotesi:
+$$
+H_0: \lambda_p = \lambda_d \quad \text{vs} \quad H_1: \lambda_p < \lambda_d
+$$
+dove $\lambda_p$ è il numero di errori prima del corso e $\lambda_d$ è il numero di errori dopo il corso.
+
+Calcolo la statistica Z, sapendo per $H_0$ che D = 0:
+```{r}
+z = (11.69 - 10.54) / sqrt((11.69/32) + (10.54/37))
+z
+```
+Ora vedo se con significatività $\alpha = 0.01$ posso rigettare l'ipotesi nulla:
+```{r}
+qnorm(0.99)
+```
+Ottengo che 1.43 < 2.33, quindi non posso rigettare l'ipotesi nulla.
+
+Potevo anche calcolare il p-value:
+```{r}
+pnorm(z)
+```
+Ottengo che il p-value è 0.923, quindi  >= 0.1 quindi non posso rigettare l'ipotesi nulla, che conferma il risultato precedente.
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+---
+title: "Soluzione esercizio 3"
+author: "Cristiano Varin"
+output:
+  html_document: default
+---
+
+[1] Vista l'assunzione di normalità, possiamo calcolare un'intervallo di confidenza per il tempo di installazione con livello 95\% con la statistica T:
+
+```{r, error = TRUE}
+4.6 + c(-1, 1) * qt(0.95, df = 23) * 2.1 / sqrt(24)
+```
+
+Siccome un tempo di installazione di 5 minuti è compreso nell'intervallo di confidenza al 95\%, possiamo concludere che l'affermazione è corretta ad un livello di significatiità del 5\%.
+
+[2] Dobbiamo valutare il sistema d'ipotesi
+
+$H_0: \mu_v = \mu_n$ contro $H_A: \mu_v > \mu_n$
+
+dove $\mu_v$ e $\mu_n$ sono i tempo medi di installazione del software su un singolo computer con la vecchia e il nuova versione del software. Possiamo valutare le ipotesi con la statistica T con valore osservato
+
+```{r, error = TRUE}
+t <- (4.6 - 4.1) / sqrt(2.1 ^ 2 / 24 + 1.9 ^ 2 /18) 
+t
+```
+
+Sotto l'ipotesi nulla, secondo la formula di Satterthwaite la  statistica T ha una distribuzione approssimativamente T di Student con 
+```{r}
+gradi <- (2.1 ^ 2 / 24 + 1.9 ^ 2 / 18) ^ 2 / ( 2.1 ^ 4 / (24 ^ 2 * 23) + 1.9 ^ 4 / (18 ^ 2 * 17))
+gradi
+```
+gradi di libertà. Il corrispondente p-value è
+```{r, error = TRUE}
+1 - pt(t, df = gradi)
+```
+Siccome il p-value è superiore a 0.01 concludiamo che non possiamo rifiutare l'ipotesi nulla al livello di significatività del 1\%.
+ 
+
+
+ 

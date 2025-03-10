@@ -1,0 +1,101 @@
+---
+title: "Soluzione esercizio 4"
+author: "Cristiano Varin"
+output:
+  html_document: default
+---
+
+Leggiamo i dati:
+```{r}
+diamanti <- read.csv("diamanti.csv")
+```
+
+Visualizziamo i dati:
+```{r}
+plot(prezzo ~ peso, data = diamanti)
+```
+
+Il grafico mostra una relazione crescente non lineare fra prezzo e peso. Si nota anche un aumento della dispersione dei prezzi al crescere del peso. 
+
+
+Stimiamo la retta di regressione:
+```{r}
+mod <- lm(prezzo ~ peso, data = diamanti)
+summary(mod)
+```
+
+Analisi dei residui:
+```{r, message = FALSE}
+library(car)
+par(mfrow = c(1, 2))
+plot(residuals(mod) ~ peso, data = diamanti)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod))
+```
+L'analisi dei residui indica che il modello non è adeguato. 
+
+Inoltre, il modello porta a stime del prezzo negative:
+```{r}
+summary(fitted(mod))
+```
+
+Per evitare previsioni negative, stimiamo il modello di regressione su scala logaritmica:
+```{r}
+mod <- lm(log(prezzo) ~ peso, data = diamanti)
+summary(mod)
+```
+
+Analisi dei residui:
+```{r, message = FALSE}
+library(car)
+par(mfrow = c(1, 2))
+plot(residuals(mod) ~ peso, data = diamanti)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod))
+```
+L'analisi dei residui indica che il modello non è adeguato e suggerisce una relazione non lineare fra il logaritmo del prezzo e il peso dei diamanti.
+
+Aggiungiamo un effetto quadratico: 
+```{r}
+mod2 <- update(mod, . ~ . + I(peso ^ 2))
+summary(mod2)
+```
+
+Il modello quadratico ha un valore dell'indice $R^2$ aggiustato più alto del modello lineare. Proviamo il modello cubico:
+```{r}
+mod3 <- update(mod2, . ~ . + I(peso ^ 3))
+summary(mod3)
+```
+
+Non vi è miglioramento nel passare al modello cubico. 
+
+L'analisi dei residui del modello quadratico:
+```{r}
+library(car)
+par(mfrow = c(1, 2))
+plot(residuals(mod2) ~ peso, data = diamanti)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod2))
+```
+
+Il residui del modello quadratico sono decisamente migliorati rispetto al modello lineare anche se il grafico quantile-quantile non è del tutto soddisfacente sulle code. 
+
+Il modello quadratico spiega il 96\% della variabilità del prezzo su scala logaritmica. 
+
+Visualizziamo il modello stimato:
+```{r}
+plot(log(prezzo) ~ peso, data = diamanti)
+curve(coef(mod2)[1] + coef(mod2)[2] * x + coef(mod2)[3] * x^2, from = min(diamanti$peso), to = max(diamanti$peso), add = TRUE, col = "red")
+```
+
+Calcoliamo l'intervallo di previsione al 99% per il prezzo di un diamante di 0.5 carati:
+```{r}
+pr <- predict(mod2, newdata = data.frame(peso = 0.5), interval = "prediction", level = 0.99)
+exp(pr)
+```
+
+Se la pietra pesasse 1 carato allora il prezzo previsto dal modello sarebbe: 
+```{r}
+pr <- predict(mod2, newdata = data.frame(peso = 1), interval = "prediction", level = 0.99)
+exp(pr)
+```

@@ -1,0 +1,27 @@
+---
+title: "Soluzione esercizio 1"
+author: "Cristiano Varin"
+output:
+  html_document: default
+---
+[1]  Il valore atteso di $X_1$ è
+$$
+E(X_1)=\int_{\theta}^\infty 2 \theta^2 x^{-2} \; d x = 2\theta
+$$
+Quindi lo stimatore $\hat \theta$ è non distorto poiché
+$$
+E(\hat \theta)=E(\bar{X} / 2)=E(X_1/2)=\theta.
+$$
+[2] La varianza dello stimatore è pari a
+$$
+var(\hat \theta) = \frac{1}{4n} var(X_1).
+$$
+Dobbiamo valutare $var(X_1)$:
+\begin{align*}
+var(X_1)&=E(X_1^2)-E(X_1)^2 \\
+&= E(X_1^2)-4\theta^2\\
+&=\int_{\theta}^\infty 2 \theta^2 x^{-1} \; d x - 4\theta^2
+\end{align*}
+Siccome l'integrale è divergente,  la varianza non è finita e quindi l'errore standard di $\hat \theta$ non esiste finito.
+
+[3] Siccome la varianza non è finita, lo stimatore non è consistente. 

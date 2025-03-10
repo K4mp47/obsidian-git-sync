@@ -1,0 +1,73 @@
+---
+title: "Soluzione esercizio 4"
+author: "Cristiano Varin"
+output:
+  html_document: default
+---
+
+Leggiamo i dati:
+```{r, error = TRUE}
+efficienza <- read.csv("efficienza.csv")
+```
+
+Visualizziamo i dati: 
+```{r, error = TRUE}
+plot(processi ~ dimensione, data = efficienza)
+```
+
+Il grafico mostra un andamento decrescente non lineare del numero di processi in funzione della dimensione per la gran parte delle osservazioni a meno di un grappolo di quattro osservazioni con valori del numero di processi elaborati anomalmente grandi. 
+
+Le osservazioni anomale sono:
+```{r, error = TRUE}
+outliers <- which(efficienza$processi > 80)
+outliers
+```
+
+Stimiamo un modello quadratico su tutti i dati:
+```{r, error = TRUE}
+mod <- lm(processi ~ dimensione + I(dimensione ^ 2), data = efficienza)
+summary(mod)
+```
+
+e poi togliendo i dati anomali:
+```{r, error = TRUE}
+mod2 <- lm(processi ~ dimensione + I(dimensione ^ 2), data = efficienza,
+           subset = -outliers)
+summary(mod2)
+```
+
+Visualizziamo i due modelli stimati:
+```{r, error = TRUE}
+plot(processi ~ dimensione, data = efficienza)
+curve(coef(mod)[1] + coef(mod)[2] * x + coef(mod)[3] * x ^ 2, from = min(efficienza$processi), to = max(efficienza$processi), add = TRUE)
+curve(coef(mod2)[1] + coef(mod2)[2] * x + coef(mod2)[3] * x ^ 2, from = min(efficienza$processi), to = max(efficienza$processi), add = TRUE, col = "red")
+```
+
+Il modello stimato togliendo i quattro outliers è significativamente diverso e si adatta meglio alle rimanenti osservazioni a confermare che i punti anomali andavano rimossi. 
+
+Analisi dei residui del modello con gli outliers rimossi:
+```{r, error = TRUE, message = FALSE}
+library(car)
+par(mfrow = c(1, 2))
+plot(residuals(mod2) ~ dimensione[-outliers], data = efficienza)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod2))
+```
+L'analisi dei residui è relativamente adeguata tenendo conto delle poche osservazioni. 
+
+Il modello stimato sui dati senza gli outliers: 
+
+* spiega l'85\% della variabilità del numero di processi elaborati;
+
+* conferma la relazione decrescente non lineare fra numero di processi elaborati e dimensione dei datasets. 
+ 
+ 
+Calcoliamo l'intervallo di previsione al 95% per il numero di processi elaborati con un dataset di dimensione 10 Gigabyte:
+```{r, error = TRUE}
+predict(mod2, newdata = data.frame(dimensione = 10), interval = "prediction")
+```
+
+Se invece la dimensione fosse pari a 15 Gigabyte allora il numero di processi elaborati previsto dal modello scende a: 
+```{r, error = TRUE}
+predict(mod2, newdata = data.frame(dimensione = 15), interval = "prediction")
+```

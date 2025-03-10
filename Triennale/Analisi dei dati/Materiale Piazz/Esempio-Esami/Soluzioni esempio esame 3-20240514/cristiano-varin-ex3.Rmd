@@ -1,0 +1,73 @@
+---
+title: "Soluzione esercizio 3"
+author: "Cristiano Varin"
+output:
+  html_document: default
+---
+
+[1] Indichiamo con p la probabilità di preferire l'abbonamento allo sconto. L'intervallo di confidenza richiesto è
+```{r, error = TRUE}
+phat <- 90 / 200
+phat
+phat + c(-1, 1) * qnorm(0.975) * sqrt(phat * (1 - phat) / 200)
+```
+Siccome l'intervallo di confidenza contiene il valore $p=0.5$ concludiamo che non vi è una differenza significativa fra le due strategie di promozione ad un livello di significatività del 5\%.
+
+[2] Indichiamo con $p_1$ la probabilità di preferire l'abbonamento allo sconto al tempo della prima rilevazione e con $p_2$ la stessa probabilità dopo mezzo anno. Dobbiamo valutare il sistema d'ipotesi
+
+$H_0: p_1= p_2$ contro $H_A: p_1 < p_2$.
+
+Possiamo valutare le ipotesi con la statistica Z usando la proporzione "pooled":
+```{r, error = TRUE}
+p1hat <- 90 / 200
+p1hat
+p2hat <- 145 / 250
+p2hat
+pooled <- (90 + 145) / (450)
+pooled
+```
+
+Il valore osservato della statistica Z è
+
+```{r, error = TRUE}
+z <- (p1hat - p2hat) / sqrt(pooled * (1 - pooled) * (1 / 200 + 1 / 250)) 
+z
+```
+
+Il p-value è 
+```{r}
+pnorm(z)
+```
+Il p-value indica che il test è significativo, quindi rifiutiamo l'ipotesi nulla e concludiamo che ora i clienti preferiscono maggiormente l'abbonamento.
+
+[3] Leggiamo i dati:
+```{r, error = TRUE}
+campione1 <- read.csv("primo_campione.csv")
+campione2 <- read.csv("secondo_campione.csv")
+```
+Vediamo la struttura dei dati: 
+```{r, error = TRUE}
+head(campione1)
+head(campione2)
+```
+Creiamo due vettori che indicano se vi sia preferenza per l'abbonamento:
+```{r, error = TRUE}
+campione1 <- (campione1$x == "streaming")
+head(campione1)
+campione2 <- (campione2$x == "streaming")
+head(campione2)
+```
+Risposta al primo quesito:
+```{r, error = TRUE}
+library("BSDA")
+z.test(campione1, mu = 0.5, sigma.x = 0.5)
+```
+Il calcolo conferma il risultato ottenuto al punto [1].
+
+Risposta al secondo quesito:
+```{r, error = TRUE}
+sigma <- sqrt(pooled * (1 - pooled))
+z.test(campione1, campione2, sigma.x = sigma, sigma.y = sigma, alternative = "less")
+```
+Il calcolo conferma il risultato ottenuto al punto [2].
+ 

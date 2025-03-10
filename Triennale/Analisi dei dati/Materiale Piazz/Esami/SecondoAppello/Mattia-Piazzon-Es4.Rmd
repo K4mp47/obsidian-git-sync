@@ -1,0 +1,82 @@
+---
+title: "Mattia Piazzon - Esercizio 4"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# Punto 1
+
+Leggiamo e visualizziamo i dati:
+```{r}
+setwd("~/MEGAsync/Universita/II Anno/Analisi dei Dati/Esami/SecondoAppello")
+library(car)
+cioccolato <- read.csv("cioccolato.csv")
+head(cioccolato)
+```
+
+Visualizzo i dati tramite grafico:
+```{r}
+plot(calorie ~ grassi, data = cioccolato)
+```
+
+Il grafico non è di facile interpretazione, sembrerebbe non essere lineare.
+
+Creo comunque il modello di regressione:
+```{r}
+mod <- lm(calorie ~ grassi, data = cioccolato)
+summary(mod)
+```
+
+Analizzo i residui:
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod) ~ grassi, data = cioccolato)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod))
+```
+
+L'analisi dei residui mostra che il modello di regressione non è appropriato, i residui non sono omoschedastici attorno ad h=0 e non senguono l'andamento normale nel qq-plot. Sembrebbe che ci sia un andamento non lineare.
+
+Provo ad aggiungere un termine quadratico:
+```{r}
+mod_q <- lm(calorie ~ grassi + I(grassi^2), data = cioccolato)
+summary(mod_q)
+```
+
+Analizzo i residui:
+```{r}
+par(mfrow = c(1, 2))
+plot(residuals(mod_q) ~ grassi, data = cioccolato)
+abline(h = 0, col = "red")
+qqPlot(residuals(mod_q))
+```
+
+L'analisi dei residui mostra che il modello è migliore, i residui sul grafico sono distribuiti in modo omogeneo attorno ad h=0 e il Q-Q plot mostra che i residui sono distribuiti in modo normale ad eccezione di un residuo nella coda destra. Inoltre noto che il coefficiente quadratico appena aggiunto è significativo.
+
+Visualizzo il modello stimato:
+```{r}
+plot(calorie ~ grassi, data = cioccolato)
+curve(coef(mod_q)[1] + coef(mod_q)[2] * x + coef(mod_q)[3] * x ^ 2, add = TRUE, col = "red")
+```
+
+Il modello stimato spiega il 45.13% della variabilità dei dati e indica che la relazione fra calorie e percentuale di grassi è non lineare.
+
+# Punto 2
+
+Calcoliamo l'intervallo di previsione al 93% per le calorie di una barretta di cioccolata di 50 grammi che contiene 15 grammi di grassi:
+```{r}
+pre <- predict(mod_q, newdata = data.frame(grassi = 15), interval = "prediction", level = 0.93)
+pre
+```
+
+Se la barretta di cioccolata contenesse 20 grammi di grassi:
+```{r}
+pre <- predict(mod_q, newdata = data.frame(grassi = 20), interval = "prediction", level = 0.93)
+pre
+```
+
+
