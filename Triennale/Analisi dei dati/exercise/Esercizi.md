@@ -42,4 +42,54 @@ $$E(T_2)=\frac{3}{2}\lambda$$
 basta studiare dentro le parentesi quadre per capire se è maggiore di zero
 $\lambda > -\frac{0.665}{0.16}$ verrà sempre positiva perché lambda è maggiore di zero, quindi è meglio $T_1$, perché $T_2$ avrà sempre un errore quadratico medio maggiore
 
-4. 
+![alt text](image.png)
+
+## Soluzione esercizio sopra
+
+$$
+E(T_1) = \frac{2}{5}E(X_1)+\frac{1}{10}E(X_2)+\frac{1}{5}E(X_3) = \frac{7}{10}\theta
+$$
+$$
+E(T_2) = \frac{1}{4}E(X_1)+\frac{1}{2}E(X_2)+\frac{1}{4}E(X_3) = \frac{3}{2}\theta
+$$
+$$
+Bias(T_1) = E(T_1) - \theta = \frac{7}{10}\theta - \theta = \frac{3}{10}\theta
+$$
+> lo stimatore è distorto
+
+$$
+Bias(T_2) = E(T_2) - \theta = \frac{3}{2}\theta - \theta = \frac{1}{2}\theta
+$$
+
+> lo stimatore è distorto
+
+$$
+Var(T_1) = \frac{2^2}{5^2}Var(X_1)+\frac{1}{10^2}Var(X_2)+\frac{1}{5^2}Var(X_3) = \frac{21}{100}\theta
+$$
+
+$$
+Var(T_2) = \frac{1}{4^2}Var(X_1)+\frac{2^2}{4^2}Var(X_1)+\frac{3^2}{4^2}Var(X_1) = 
+\frac{14}{16}\theta
+$$
+
+> entrambi gli stimatori sono distorti, devo utilizzare $MSE$
+
+$$
+MSE(T_1) = Bias^2(T_1) + Var(T_1) = \frac{9}{100}\theta^2 + \frac{21}{100}\theta
+$$
+
+$$
+MSE(T_2) = Bias^2(T_2) + Var(T_2) = \frac{\theta^2}{4} + \frac{14}{16}\theta
+$$
+
+$$
+MSE(T_2)-MSE(T_1) = \frac{\theta^2}{4} - \frac{9}{100}\theta^2 + \frac{14}{16}\theta - \frac{21}{100}\theta
+$$
+
+
+$$$$
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)

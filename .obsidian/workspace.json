@@ -6,6 +6,7 @@
       {
         "id": "04fbc675a860d0ac",
         "type": "tabs",
+        "dimension": 72.41379310344827,
         "children": [
           {
             "id": "049c5a5c33e7fc57",
@@ -32,18 +33,6 @@
             }
           },
           {
-            "id": "6a5aeffacaef9c09",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Algebra Lineare/exercise2/01_algebra_lineare.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "01_algebra_lineare"
-            }
-          },
-          {
             "id": "c035e1d96420f3ce",
             "type": "leaf",
             "state": {
@@ -59,14 +48,24 @@
             "id": "f8dbb1d6a36e0ebd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Triennale/Linguaggi per la rete/book/Capitolo 3 - Types, Values, and Variables.md",
-                "mode": "source",
-                "source": false
+                "file": "Triennale/Analisi dei dati/AD2425-formulario.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Capitolo 3 - Types, Values, and Variables"
+              "icon": "lucide-file-text",
+              "title": "AD2425-formulario"
+            }
+          },
+          {
+            "id": "6a5aeffacaef9c09",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Analisi dei dati/Materiale Piazz/Esercizi/AD2324-esercizi-unita1-soluzioni.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "AD2324-esercizi-unita1-soluzioni"
             }
           },
           {
@@ -80,13 +79,38 @@
               "icon": "lucide-file-text",
               "title": "AD2324-unita1-base"
             }
+          },
+          {
+            "id": "7532eec22d25d367",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Analisi dei dati/AD2425-formulario.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "AD2425-formulario"
+            }
+          },
+          {
+            "id": "a158b370188fc377",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Basi di Dati/Modulo2/slide prof/trigger.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "trigger"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       },
       {
         "id": "0a1996ce5bd1e1cb",
         "type": "tabs",
+        "dimension": 27.586206896551722,
         "children": [
           {
             "id": "af63aa2ec22b651f",
@@ -101,8 +125,33 @@
               "icon": "lucide-file",
               "title": "Capitolo 15 - JavaScript in Web Browsers"
             }
+          },
+          {
+            "id": "729868dfed828640",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Basi di Dati/vecchio progetto/progetto.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "progetto"
+            }
+          },
+          {
+            "id": "8fac9e42027d7841",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Basi di Dati/studio per esame/eserciziPizzeQuery.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "eserciziPizzeQuery"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -261,9 +310,29 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "af63aa2ec22b651f",
+  "active": "6a5aeffacaef9c09",
   "lastOpenFiles": [
-    "Triennale/Linguaggi per la rete/book/javascript-the-definitive-guide-7th-edition.pdf",
+    "Triennale/Analisi dei dati/exercise/image-5.png",
+    "Triennale/Analisi dei dati/exercise/image-4.png",
+    "Triennale/Analisi dei dati/exercise/image-3.png",
+    "Triennale/Analisi dei dati/exercise/image-2.png",
+    "Triennale/Analisi dei dati/exercise/image-1.png",
+    "Triennale/Analisi dei dati/exercise/image.png",
+    "Triennale/Analisi dei dati/exercise/cristiano-varin-ex2.Rmd",
+    "Triennale/Analisi dei dati/exercise/Unconfirmed 792082.crdownload",
+    "Triennale/Analisi dei dati/AD2324-esercizi-unita1-soluzioni.pdf",
+    "Triennale/Analisi dei dati/Materiale Piazz/Esercizi/AD2324-esercizi-unita1-soluzioni.pdf",
+    "Triennale/Analisi dei dati/exercise/cristiano-varin-ex1.Rmd",
+    "Triennale/Analisi dei dati/exercise/Unconfirmed 738267.crdownload",
+    "Triennale/Analisi dei dati/AD2425-formulario.pdf",
+    "Triennale/Analisi dei dati/esami/AD2425-template-esame-originale.Rmd",
+    "Triennale/Analisi dei dati/AD2425-template-esame-originale.Rmd",
+    "Triennale/Analisi dei dati/AD2425-template-esame.Rmd",
+    "Triennale/Linguaggi per la rete/book/Capitolo 3 - Types, Values, and Variables.md",
+    "Triennale/Basi di Dati/Modulo2/Esempi di trigger.md",
+    "Triennale/Basi di Dati/Modulo2/Flask/Book extract.md",
+    "Triennale/Basi di Dati/Modulo2/Trigger.md",
+    "Triennale/Analisi dei dati/Analisi di dati.md",
     "Triennale/Linguaggi per la rete/book/Capitolo 15 - JavaScript in Web Browsers.md",
     "Triennale/Linguaggi per la rete/book/Capitolo 9 - Classes.md",
     "Triennale/Linguaggi per la rete/book/Capitolo 8 - Functions.md",
@@ -271,18 +340,7 @@
     "Triennale/Linguaggi per la rete/book/Capitolo 6 - Objects.md",
     "Triennale/Linguaggi per la rete/book/Capitolo 7 - Arrays.md",
     "Triennale/Linguaggi per la rete/book/Capitolo 5 - Statements.md",
-    "Triennale/Linguaggi per la rete/exercise/ereditarietà-a-istanze/test.js",
-    "Triennale/Linguaggi per la rete/exercise/ereditarietà-a-istanze/index.html",
-    "Triennale/Linguaggi per la rete/exercise/ereditarietà-a-istanze",
-    "Triennale/Linguaggi per la rete/exercise/ereditarietà a istanze/test.js",
-    "Triennale/Linguaggi per la rete/exercise/ereditarietà a istanze/index.html",
-    "Triennale/Linguaggi per la rete/exercise/ereditarietà a istanze",
-    "Triennale/Linguaggi per la rete/exercise/ereditarietà a istanze.zip",
-    "Triennale/Linguaggi per la rete/exercise/Unconfirmed 306825.crdownload",
-    "Triennale/Linguaggi per la rete/book/Capitolo 3 - Types, Values, and Variables.md",
     "Triennale/Linguaggi per la rete/book/Capitolo 4 - Expressions and Operators.md",
-    "Triennale/Algoritmi & strutture dati/latex & demonstration/latex.pdf",
-    "Triennale/Analisi dei dati/Analisi di dati.md",
     "Triennale/Analisi dei dati/AD2324-lab1.knit.md",
     "Triennale/Analisi dei dati/AD2324-lab1_files/figure-html/unnamed-chunk-14-1.png",
     "Triennale/Analisi dei dati/AD2324-lab1_files/figure-html/unnamed-chunk-11-1.png",
@@ -296,18 +354,10 @@
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2015_01_18 soluzione.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2013_01_28 soluzione.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2014_01_28 soluzione.md",
-    "Triennale/Basi di Dati/Modulo2/Flask/Book extract.md",
     "Triennale/cheatsheet_lat/Bilancio.md",
     "Triennale/Basi di Dati/Modulo1/studio per esame/Algebra Relazionale.md",
     "Triennale/Basi di Dati/Modulo1/Soluzioni/Soluzioni Query.md",
-    "Triennale/Basi di Dati/Modulo1/database/Creazione DB.md",
-    "Triennale/TECH WEB/Book Shop Report.md",
     "Pasted image 20250131185911.png",
-    "Pasted image 20250131185859.png",
-    "Pasted image 20250131185831.png",
-    "Pasted image 20250131185800.png",
-    "Pasted image 20250131185734.png",
-    "Pasted image 20250131185639.png",
     "Untitled.canvas"
   ]
 }

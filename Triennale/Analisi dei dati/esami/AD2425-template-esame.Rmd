@@ -1,0 +1,112 @@
+---
+title: "Nome Cognome - Esercizio X"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+Questo documento va caricato in Moodle come cognome-nome-esX.Rmd dove X è il numero dell'esercizio (1, 2, 3 o 4).
+
+# Soluzione quesito 1
+
+$$
+E(T_1) = \sum_{i=1}^n E(X_i) = \frac{2X_1 + X_2/2 + X_3}{5} 
+= \frac{2\theta + \theta/2 + \theta}{5} 
+= \frac{4\theta + \theta + 2\theta}{10}   
+= \frac{7}{10}\theta \\
+
+E(T_2) = \sum_{i=1}^n E(X_i) = \frac{X_1 +2X_2 + 3X_3}{4} 
+= \frac{\theta + 2\theta + 3\theta}{4} 
+= \frac{\theta + 2\theta + 3\theta}{4}   
+= \frac{3}{2}\theta \\
+
+$$
+
+# Soluzione quesito 2
+
+
+Sia $X_1, \ldots, X_{261}$ un campione casuale semplice da una distribuzione discreta con funzione di probabilità:
+$$
+Pr(X = x; \theta) = 
+\begin{cases} 
+\theta/2 & \text{se } x = -1 \\
+1 - \theta & \text{se } x = 0 \\
+\theta/2 & \text{se } x = 1 
+\end{cases}
+$$
+
+Nel campione osserviamo:
+$$
+n_{-1} = 109, \quad n_0 = 49, \quad n_1 = 103
+$$
+
+Stimatore con il metodo dei momenti:
+
+Il valore atteso $E[X]$ è:
+$$
+E[X] = -1 \cdot \frac{\theta}{2} + 0 \cdot (1 - \theta) + 1 \cdot \frac{\theta}{2} = 0
+$$
+
+La media campionaria $\bar{X}$ è:
+$$
+\bar{X} = \frac{1}{261} \sum_{i=1}^{261} X_i = \frac{1}{261} (109 \cdot (-1) + 49 \cdot 0 + 103 \cdot 1) = \frac{103 - 109}{261} = -\frac{6}{261}
+$$
+
+Ponendo $\bar{X} = 0$, otteniamo:
+$$
+0 = -\frac{\theta}{2} + \frac{\theta}{2} \implies \theta = 0
+$$
+
+#### Stima di massima verosimiglianza di $\theta$
+
+La funzione di verosimiglianza è:
+$$
+L(\theta) = \left( \frac{\theta}{2} \right)^{109} (1 - \theta)^{49} \left( \frac{\theta}{2} \right)^{103}
+$$
+
+Il logaritmo della funzione di verosimiglianza è:
+$$
+\ell(\theta) = 109 \log \left( \frac{\theta}{2} \right) + 49 \log (1 - \theta) + 103 \log \left( \frac{\theta}{2} \right)
+$$
+
+Derivando rispetto a $\theta$ e ponendo la derivata uguale a zero:
+$$
+\frac{d\ell(\theta)}{d\theta} = \frac{109}{\theta} + \frac{103}{\theta} - \frac{49}{1 - \theta} = 0
+$$
+
+$$
+\frac{212}{\theta} = \frac{49}{1 - \theta}
+$$
+
+$$
+212 (1 - \theta) = 49 \theta
+$$
+
+$$
+212 - 212 \theta = 49 \theta
+$$
+
+$$
+212 = 261 \theta
+$$
+
+$$
+\theta = \frac{212}{261} = \frac{4}{5}
+$$
+
+#### Stima dell'errore standard della stima di massima verosimiglianza di $\theta$
+
+L'errore standard della stima di massima verosimiglianza è dato da:
+$$
+\text{SE}(\hat{\theta}) = \sqrt{\frac{\hat{\theta}(1 - \hat{\theta})}{n}}
+$$
+
+Dove $\hat{\theta} = \frac{4}{5}$ e $n = 261$:
+$$
+\text{SE}(\hat{\theta}) = \sqrt{\frac{\frac{4}{5} \left(1 - \frac{4}{5}\right)}{261}} = \sqrt{\frac{\frac{4}{5} \cdot \frac{1}{5}}{261}} = \sqrt{\frac{\frac{4}{25}}{261}} = \sqrt{\frac{4}{6525}} = \frac{2}{\sqrt{6525}}
+$$
+
+\end{document}
