@@ -6,7 +6,7 @@
       {
         "id": "04fbc675a860d0ac",
         "type": "tabs",
-        "dimension": 72.41379310344827,
+        "dimension": 71.27139364303179,
         "children": [
           {
             "id": "049c5a5c33e7fc57",
@@ -62,10 +62,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Analisi dei dati/Materiale Piazz/Esercizi/AD2324-esercizi-unita1-soluzioni.pdf"
+                "file": "Triennale/Analisi dei dati/exercise/AD2324-esercizi-unita2-soluzioni.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "AD2324-esercizi-unita1-soluzioni"
+              "title": "AD2324-esercizi-unita2-soluzioni"
             }
           },
           {
@@ -110,7 +110,7 @@
       {
         "id": "0a1996ce5bd1e1cb",
         "type": "tabs",
-        "dimension": 27.586206896551722,
+        "dimension": 28.728606356968218,
         "children": [
           {
             "id": "af63aa2ec22b651f",
@@ -130,12 +130,14 @@
             "id": "729868dfed828640",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Triennale/Basi di Dati/vecchio progetto/progetto.pdf"
+                "file": "Triennale/cheatsheet_lat/cheatsheet.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "progetto"
+              "icon": "lucide-file",
+              "title": "cheatsheet"
             }
           },
           {
@@ -312,6 +314,10 @@
   },
   "active": "6a5aeffacaef9c09",
   "lastOpenFiles": [
+    "Triennale/Analisi matematica/modulo1/Formulario Calcolo.pdf",
+    "Triennale/Analisi dei dati/exercise/AD2324-esercizi-unita2-soluzioni.pdf",
+    "Triennale/Analisi dei dati/Materiale Piazz/Esercizi/AD2324-esercizi-unita1-soluzioni.pdf",
+    "Triennale/Basi di Dati/vecchio progetto/progetto.pdf",
     "Triennale/Analisi dei dati/exercise/image-5.png",
     "Triennale/Analisi dei dati/exercise/image-4.png",
     "Triennale/Analisi dei dati/exercise/image-3.png",
@@ -321,13 +327,10 @@
     "Triennale/Analisi dei dati/exercise/cristiano-varin-ex2.Rmd",
     "Triennale/Analisi dei dati/exercise/Unconfirmed 792082.crdownload",
     "Triennale/Analisi dei dati/AD2324-esercizi-unita1-soluzioni.pdf",
-    "Triennale/Analisi dei dati/Materiale Piazz/Esercizi/AD2324-esercizi-unita1-soluzioni.pdf",
     "Triennale/Analisi dei dati/exercise/cristiano-varin-ex1.Rmd",
     "Triennale/Analisi dei dati/exercise/Unconfirmed 738267.crdownload",
     "Triennale/Analisi dei dati/AD2425-formulario.pdf",
     "Triennale/Analisi dei dati/esami/AD2425-template-esame-originale.Rmd",
-    "Triennale/Analisi dei dati/AD2425-template-esame-originale.Rmd",
-    "Triennale/Analisi dei dati/AD2425-template-esame.Rmd",
     "Triennale/Linguaggi per la rete/book/Capitolo 3 - Types, Values, and Variables.md",
     "Triennale/Basi di Dati/Modulo2/Esempi di trigger.md",
     "Triennale/Basi di Dati/Modulo2/Flask/Book extract.md",
@@ -357,7 +360,6 @@
     "Triennale/cheatsheet_lat/Bilancio.md",
     "Triennale/Basi di Dati/Modulo1/studio per esame/Algebra Relazionale.md",
     "Triennale/Basi di Dati/Modulo1/Soluzioni/Soluzioni Query.md",
-    "Pasted image 20250131185911.png",
     "Untitled.canvas"
   ]
 }

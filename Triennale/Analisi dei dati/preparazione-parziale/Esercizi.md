@@ -86,10 +86,48 @@ $$
 MSE(T_2)-MSE(T_1) = \frac{\theta^2}{4} - \frac{9}{100}\theta^2 + \frac{14}{16}\theta - \frac{21}{100}\theta
 $$
 
-
-$$$$
 ![alt text](image-1.png)
+
+## Soluzione esercizio sopra
+
+> Si chiede di calcolare la stima con metodo dei momenti e massima verosimiglianza.
+
+> Si chiede inoltre la stima dell'errore standard della stima di massima verosimiglianza di $\theta$
+
+**Nota bene** 
+---
+> L'esercizio richiede la stima, non lo stimatore. Si sta cercando un vero e proprio valore!!
+
+$$
+\text{Stima con metodo dei momenti}:
+
+$$
+
 ![alt text](image-2.png)
+
+## Soluzione esercizio sopra
+
+> Il primo punto chiede di calcolare la distorsione dello stimatore, per cui dobbiamo trovare media e varianza dello stimatore
+$$
+T = 2\bar X + 1\\
+E(T) = 1 + 2 \sum_{i=1}^n E(X_i) = \\ 2(-1\frac{1}{2} + \frac{1-\theta}{2}0 + 1\frac{\theta}{2}) +1 = \\ 2 (-\frac{1}{2} + \frac{\theta}{2}) + 1 = \\  = 1-1+ \theta = \theta
+$$
+
+> il nostro stimatore quindi non è distorto
+
+>Calcoliamo ora invece l'errore standard del nostro stimatore
+
+$$
+SE(T) = \sqrt{Var(T)} = \sqrt{Var(2\bar X + 1)} = \text{cerco VAR} \\
+VAR(T) = Var(2\bar X + 1) = 4 Var(\bar X + 1) - E[X]^2 = \text{VAR(1) = 0 quindi:} \\
+Var(T) = 4(1/2 *1 + 0 + \frac{\theta}{2} * 1 - E[X]^2) = 4(\frac{1+\theta}{2} - (\frac{\theta-1}{2})^2) = \\ 4(\frac{1+\theta}{2}-\frac{\theta^2 + 1 -2\theta}{4}) = \\
+4(\frac{2+2\theta - \theta^2 - 1 +2\theta}{4n}) = \frac{1 - \theta^2 +4\theta}{n}\\
+\text{arrivati a questo punto calcoliamo l'SE:} \\
+\sqrt(\frac{1 - \theta^2 +4\theta}{n}) = \text{errore standard stimatore}
+$$
+
+> Sottollineo che lo stimatore è consistente asintoticamente
+
 ![alt text](image-3.png)
 ![alt text](image-4.png)
 ![alt text](image-5.png)
