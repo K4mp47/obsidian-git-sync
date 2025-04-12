@@ -1,0 +1,107 @@
+---
+title: "Nome Cognome - Esercizio X"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# Soluzione quesito 1
+
+$f(x;\alpha) = \frac{1}{\alpha^2} \exp(-\frac{x}{\alpha^2}),x>0,\alpha > 0$
+
+> Calcolare $\hat \alpha$ con il metodo dei momenti
+
+$$
+\hat \alpha = \sqrt{\frac{\bar x}{2}}
+$$
+
+> Calcolare la log verosimiglianza
+
+$$
+L(\alpha) = -2n \log \alpha - \frac{1}{\alpha^2} \sum_{i=1}^n x_i
+$$
+
+> Derivata log verosimiglianza
+
+$$
+\frac{dL}{d\alpha} = -\frac{2n}{\alpha} + \frac{2}{\alpha^3} \sum_{i=1}^n x_i
+$$
+
+> Derivata seconda log verosimiglianza
+
+$$
+\frac{d^2L}{d\alpha^2} = \frac{2n}{\alpha^2} - \frac{6}{\alpha^4} \sum_{i=1}^n x_i
+$$
+
+> Calcolare $\hat \alpha$ con il metodo della massima verosimiglianza
+
+$$
+\frac{dL}{d\alpha} = 0 \Rightarrow \hat \alpha = \sqrt{\frac{\sum_{i=1}^n x_i}{n}}
+$$
+
+## Soluzione quesito 2
+
+Sia X1, . . . , Xn un campione casuale semplice da una variabile casuale normale di media 0 e varianza $σ^2 > 0$. (a) Si ottenga lo stimatore di $σ^2 > 0$ con il metodo dei momenti. (b) Si ottenga lo stimatore di $σ^2 > 0$ con il metodo della massima verosimiglianza.
+
+**CANCELLARE LE SEGUENTI RIGHE!**
+
+**Qualche comando LaTeX utile per scrivere le formule** 
+
+Formule nel testo: $\sin(\pi x)$
+
+Formule su righe separate:
+$$
+\sin(\pi x)
+$$
+
+
+Momenti:
+$$
+\mu_k, E(X^k), M_k, m_k, \bar{X}, \bar{x}, \sigma^2, Var(X), S^2
+$$
+Stimatori e stime:
+$$
+\hat \theta,  \hat \mu, \hat \sigma^2, \hat \lambda 
+$$
+$$
+\tilde \theta, \tilde \mu, \tilde \sigma^2, \tilde \lambda
+$$
+Verosimiglianza:
+$$
+L(\theta), \ell(\theta), \ell'(\theta), \ell''(\theta)
+$$
+Frazioni:
+$$
+\frac{1}{\sqrt{2}} X_i, \frac{X_i}{Y_i}
+$$
+
+Sommatorie: 
+$$
+\sum_{i=1}^n X_i, \sum_{i=1}^n \log X_i, \sum_{i=1}^n \sqrt{X_i}, \sum_{i=1}^n \frac{X_i}{Y_i}
+$$
+Integrali:
+$$
+\int_{0}^1 f(x) dx, \int_{a}^{\infty} f(x) dx, \int_{-\infty}^{\infty} f(x) dx
+$$
+
+
+
+**Come scrivere i comandi R**
+
+Il valore dello stimatore è 
+```{r, error = TRUE}
+164.75 / 60
+2 * 3 / log(1.2)
+sin(2 * pi / 20)
+a <- 2 * c(1, 2)
+a
+z <- qnorm(0.95)
+z
+t <- qt(0.95, df = 12)
+t
+```
+
+ 

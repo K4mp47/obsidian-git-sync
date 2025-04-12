@@ -1,0 +1,286 @@
+---
+title: "Nome Cognome - Esercizio X"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# Soluzione quesito 1
+
+Stimatore con metodo dei momenti di $\sigma^2$ da un campione casuale semplice da una variabile casuale normale con media 1 e varianza $\sigma^2$
+
+$$
+\hat \sigma^2 = \frac{1}{n}\sum_{i=1}^n X_i^2 + 1
+$$
+
+Stimatore con metodo di verosimiglianza
+
+estraggo la funzione della variabile casuale normale e faccio la log
+
+Per risolvere il problema della stima con il metodo di massima verosimiglianza in una distribuzione normale, consideriamo la funzione di verosimiglianza per un campione casuale semplice \(X_1, X_2, \ldots, X_n\):
+
+$$
+L(\sigma^2) = \prod_{i=1}^{n} \frac{1}{\sqrt{2\pi \sigma^2}} \exp\left(-\frac{(X_i - 1)^2}{2\sigma^2}\right)
+$$
+
+La log-verosimiglianza è data da:
+
+$$
+\ell(\sigma^2) = -\frac{n}{2} \log(2\pi) - \frac{n}{2} \log(\sigma^2) - \frac{1}{2\sigma^2} \sum_{i=1}^{n} (X_i - 1)^2
+$$
+
+Derivando rispetto a $\sigma^2$ e uguagliando a zero per trovare il massimo:
+
+$$
+\frac{\partial \ell}{\partial \sigma^2} = -\frac{n}{2\sigma^2} + \frac{1}{2(\sigma^2)^2} \sum_{i=1}^{n} (X_i - 1)^2 = 0
+$$
+
+Risolvendo l'equazione, otteniamo lo stimatore di massima verosimiglianza:
+
+$$
+\hat{\sigma}^2 = \frac{1}{n} \sum_{i=1}^{n} (X_i - 1)^2
+$$
+
+Risolvendo la derivata seconda notiamo che lo stimatore risulta essere sempre negativo confermando che è un punto di massimo e quindi uno stimatore valido.
+
+## Soluzione quesito 2
+
+Stimatore con il metodo dei momenti
+
+$$
+E[X] = \bar X = \frac{2\alpha}{\alpha - 1} \\
+\hat\alpha = \frac{\bar X}{\bar X - 2}
+$$
+
+Stimatore con il metodo della log verosimiglianza
+
+$$
+L(\alpha) = \prod_{i=1}^n \frac{\alpha}{x_i} \frac{2}{\alpha}^\alpha
+$$
+
+con $x > 2, \alpha > 1$ estraiamo la log verosimiglianza
+
+$$
+l(\alpha) = \sum log (\frac{\alpha}{x_i} \frac{2}{\alpha}^\alpha) = \\
+n\log(\alpha) + n\alpha\log(2) - (\alpha + 1) \sum \log(x_i) 
+$$
+
+estraggo la funzione punteggio ora per poi porla uguale a zero
+
+$$
+l'(\alpha) = \frac{n}{\alpha} + n\log(2) -\sum log(x_i) = 0 \\
+-\frac{n}{\alpha} =  + n\log(2) -\sum log(x_i) =\\  \\
+-\frac{1}{\alpha} = \frac{n\log(2) -\sum log(x_i)}{n} \\ diventa\\
+\hat \alpha = \frac{n}{\sum \log(x_i) - n\log(2)}
+$$
+
+devo ora controllare la **consistenza** dei due precedenti stimatori.
+Lo stimatore con il metodo dei momenti grazie alla **legge dei grandi numeri**, mentre per lo stimatore della massima verosimiglianza per definizione, fatta durante il corso, è **consistente**
+
+## Soluzione quesito 3
+
+$$
+E[X] = \int_{1}^{\infty} (\theta + 1)x^{-(\theta+2)} \quad se \quad x>1,\theta>0 \\
+E[X] = \frac{\theta+1}{\theta} \\
+\theta E[X] = \theta + 1 \\ 
+\theta E[X] -\theta = + 1 \\
+\theta (E[X] - 1)= 1 \\
+\theta = \frac{1}{E[X] - 1} \\ \quad
+\hat \theta = \frac{1}{\bar X - 1} 
+$$
+
+Ora devo trovare lo stimatore con la log verosimiglianza
+
+$$
+L(\theta) = \prod_{i=1}^n (\theta + 1)x^{-(\theta+2)} \\
+l(\theta) = \sum log (\theta + 1)x^{-(\theta+2)} \\
+l'(\theta) = \frac{n}{\theta + 1} - \sum \log(x_i) \\
+$$
+
+pongo uguale a zero
+
+$$
+\frac{n}{\sum \log(x_i)}-1 = \hat \theta
+$$
+
+Sapendo poi che il campione è di grandezza cento e che: $\\$ 
+$\sum x_i = 158.39$ e $\sum \log(x_i) = 32.71$ $\\$
+Stimiamo adesso i due stimatori:
+
+$$
+stimatore1=\frac{1}{158.39/100 - 1} = 1.71\\ \quad
+stimatore2=\frac{100}{32.71 - 1} = 2.06
+$$
+
+## Soluzione quesito 4
+
+$$
+\int_0^\infty x \frac{1}{\theta^2} e^{-\frac{x}{\theta^2}} dx = \theta^2 \cdot 1 = \theta^2
+$$
+
+quindi con il metodo dei momenti lo stimatore risulta essere
+
+$$
+E[X] = \theta^2 \rightarrow \hat \theta = \sqrt{\bar X}
+$$
+
+
+## Soluzione quesito 5
+
+Campione di 10 elementi, calcolo stimatore con metodo dei momenti e log verosimiglianza
+
+$$
+E[X] = 0 * \frac{2\theta}{3} + 1 * \frac{\theta}{3} + 2 * \frac{2(1-\theta)}{3} + 3*\frac{1-\theta}{3} = \frac{7-6\theta}{3} \\
+E[X] = \bar X = \frac{7-6\theta}{3} \\
+\hat \theta = \frac{7-3\bar X}{6}
+$$
+
+Ed ora l'altro stimatore
+
+$$
+L(θ) = (0 * \frac{2\theta}{3})^2 + (1 * \frac{\theta}{3})^3 + 2 * )^3 + (3*\frac{1-\theta}{3})^2, \\
+l(\theta) = 5\log(\theta) + 5\log(1-\theta) \\
+l'(\theta) = \frac{5}{\theta} - \frac{5}{1-\theta} = 0 \\ \quad
+\hat \theta = \frac{1}{2} 
+$$
+
+## Soluzione quesito 6
+
+Campione casuale semplice da una variabile casuale normale di media 0 e varianza $\sigma^2$
+
+1. stimatore con metodo della massima verosimiglianza
+
+$$
+L(\sigma^2) = \prod_{i=1}^n \frac{1}{\sqrt{2\pi \sigma^2}} \exp\left(-\frac{X_i^2}{2\sigma^2}\right) \\
+l(\sigma^2) = -\frac{n}{2} \log(2\pi\sigma^2) - \frac{1}{2\sigma^2} \sum_{i=1}^{n} X_i^2 \\
+l'(\sigma^2) = -\frac{n}{2\sigma^2} + \frac{1}{2(\sigma^2)^2} \sum_{i=1}^{n} X_i^2 = 0\\
+\hat \sigma^2 = \frac{1}{n} \sum_{i=1}^{n} X_i^2
+$$
+
+trovato ora lo stimatore di massima verosimiglianza dobbiamo trovare l'errore standard dello stimatore usando sia l'informazione osservata che l'informazione attesa
+
+$$
+J(\sigma^2) = -l''(\sigma^2) = - \frac{n}{2\sigma^4} + \frac{1}{\sigma^6} \sum_{i=1}^{n} X_i^2 \\
+{SE}(\hat \sigma^2) = J(\hat \sigma^2)^{-\frac{1}{2}} \\
+{SE}(\hat \sigma^2) = \frac{1}{\sqrt{-\frac{n}{2\sigma^4} + \frac{1}{\sigma^6} \sum_{i=1}^{n} X_i^2}}\\
+\hat {SE(\hat \sigma^2)} = \hat\sigma^2 \sqrt{\frac{2}{n}}
+\\
+I(\sigma^2) = E[-l''(\sigma^2)] = J(\sigma^2) = \sigma^2 \sqrt{\frac{2}{n}}
+$$
+
+In questo modo troviamo lo stimatore dell'$SE(\hat \sigma^2)$ 
+
+il problema ora fornisce un campione di dimensione 60 e $\sum_{i=1}^{60} X_i^2$ è $164.83$ per cui possiamo calcolare lo stimatore
+
+$$
+\hat \sigma^2 = \frac{164.83}{60} = 2.75 \\
+\hat {SE(\hat \sigma^2)} = 2.75 \sqrt{\frac{2}{60}} = 0.502079
+$$
+
+## Soluzione quesito 7
+
+È chiesto di trovare lo stimatore di $\sigma$ con la massima verosimiglianza dall'esercizio precedente
+
+Per via dell'invariante, troviamo subito che $\sigma = \sqrt{\sigma^2}$ per cui
+
+$$
+
+\hat \sigma = \sqrt{\frac{1}{n} \sum_{i=1}^{n} X_i ^2}
+$$
+
+## Soluzione quesito 8
+
+(a) Il valore atteso di X è nullo
+
+$$
+E(X) = −1 ( θ/2 ) + 0(1 − θ) + 1 ( θ/2 ) = 0
+$$ 
+
+Consideriamo, quindi, il momento di ordine due 
+
+$$
+E(X2) = (−1)^2 ( θ/2 ) + 0(1 − θ) + (1)^2 ( θ/2 ) = θ
+$$
+
+quindi abbiamo che
+
+$$
+E[X^2] = \theta \rightarrow \hat \theta = \bar X^2 = \frac{1}{n} \sum_{i=1}^n X_i^2
+$$
+
+(b) La funzione di verosimiglianza è, considerando che
+In un campione di dimensione n = 261 è stato osservato 109 volte il valore −1, 49 volte il valore 0 e 103 volte il valore 1.
+
+$$
+L(\theta) = \prod Pr(X = x;\theta) = \\
+\prod_{i=1}^n \theta/2 \quad se \quad x = -1 \\
+\prod_{i=1}^n 1 - \theta \quad se \quad x = 0 \\
+\prod_{i=1}^n \theta/2 \quad se \quad x = 1
+$$
+
+produttoria totale
+
+$$
+L(\theta) = \theta/2^{109} (1-\theta)^{49} \theta/2^{103} = \\
+\theta/2^{212} (1-\theta)^{49}
+$$
+
+estraiamo la funzione punteggio
+
+$$
+l(\theta) = 212\log(\theta) + 49\log(1-\theta) \\
+l'(\theta) = \frac{212}{\theta} - \frac{49}{1-\theta} = 0.81
+$$
+
+$$
+\hat{SE}(\hat \theta) = J(\theta)^{-\frac{1}{2}}= -l''(\theta) = \frac{1}{\sqrt{\frac{212}{0.81^2} + \frac{49}{(1-0.81)^2}}} = 0.024
+$$
+
+## Soluzione quesito 9
+
+chiede di ottenere uno stimatore con il metodo dei momenti di $\theta$ dalla funzione di densità $f(x;\theta)=\frac{\pi}{2}\sin(\pi(x-\theta))$ con $x \in[\theta, \theta+1]$
+
+con il metodo dei momenti dobbiamo trovare il valore atteso di $X$
+
+$$
+E[X] = \int_{\theta}^{\theta+1} x \frac{\pi}{2}\sin(\pi(x-\theta)) dx = \frac{\pi}{2} \int_{\theta}^{\theta+1} x \sin(\pi(x-\theta)) dx = \\
+\frac{\pi}{2} \int_{\theta}^{\theta+1} x \sin(\pi x) dx = \frac{\pi}{2} \left[ -\frac{x}{\pi} \cos(\pi x) \right]_{\theta}^{\theta+1} = \\
+\frac{\pi}{2} \left[ -\frac{\theta+1}{\pi} \cos(\pi(\theta+1)) + \frac{\theta}{\pi} \cos(\pi\theta) \right] = \\
+\frac{\pi}{2} \left[ -\frac{\theta+1}{\pi} (-1)^{\theta+1} + \frac{\theta}{\pi} (-1)^\theta \right] = \\
+\frac{\pi}{2} \left[ \frac{\theta+1}{\pi} (-1)^\theta + \frac{\theta}{\pi} (-1)^\theta \right] = \\
+\frac{\pi}{2} \left[ \frac{\theta+1+\theta}{\pi} (-1)^\theta \right] = \\
+\frac{\pi}{2} \left[ \frac{2\theta+1}{\pi} (-1)^\theta \right] = \\
+\frac{2\theta+1}{2} (-1)^\theta = \\
+\theta + \frac{1}{2} (-1)^\theta
+$$
+## Soluzione quesito 10
+
+Calcolare con il metodo dei momenti al momento 1 e successivi non è possibile
+
+Essendo l'integrale divergente, per cui lo facciamo per il momento di poplazione di momento -1
+
+$$
+E[X^{-1}] = \int_0^\infty x^{-1} \frac{\theta}{x^2} dx = \theta \int_0^\infty x^{-3} dx = \frac{1}{2\theta}
+$$
+
+Pongo uguale a $\bar X^{-1} = \frac{1}{n} \sum_{i=1}^n X_i^{-1}$
+
+$$
+\frac{1}{2\theta} = \frac{1}{n} \sum_{i=1}^n X_i^{-1} \rightarrow \hat \theta = \frac{1}{2\bar X^{-1}}
+$$
+
+trovando lo stimatore del metodo dei momenti
+
+Ora calcoliamo lo stimatore con il metodo della massima verosimiglianza
+
+$$
+L(\theta) = \prod_{i=1}^n \frac{\theta}{x_i^2} = \theta^n \prod_{i=1}^n x_i^{-2} \\
+l(\theta) = n\log(\theta) - \sum \log(x_i^2) = \\
+n\log(\theta) - 2\sum \log(x_i) \\
+l'(\theta) = \frac{n}{\theta} = 0 \\
+$$
+
+e vediamo come $\frac{2}{\theta} > 0$ quindi $\hat \theta = min X_i$ essendo che $\theta$ non cresce oltre la $x$ osservata

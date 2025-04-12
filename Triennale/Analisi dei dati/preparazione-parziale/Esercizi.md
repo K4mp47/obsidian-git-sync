@@ -129,5 +129,60 @@ $$
 > Sottollineo che lo stimatore è consistente asintoticamente
 
 ![alt text](image-3.png)
+
+## Soluzione esercizio sopra
+
+> Si calcoli inizialmente $\theta$ con il metodo dei momenti
+
+$$
+\text{come primo passo troviamo $E[X]$ risolvendo l'integrale * x}
+E[X] = \int_{-1}^{1} x f(x) dx = \\ \int x\frac{1}{\theta}x^{\frac{1-\theta}{\theta}}  = \\ \frac{1}{\theta} \int x^{1+\frac{1-\theta}{\theta}} dx = \\ \frac{1}{\theta} \int x^{\frac{1}{\theta}} dx = \\
+\frac{1}{\frac{1}{\theta}+1} = \frac{1}{\frac{1+\theta}{\theta}}
+\\
+\frac{1}{\theta} \frac{1}{\frac{1+\theta}{\theta}} = \frac{1}{1+\theta} \\
+\theta = \frac{1-E[X]}{E[X]} = \\
+\hat \theta = \frac{1-\bar X}{\bar X} \\
+\text{estraendo i dati dal testo troviamo che la stima si trova con:} \\
+(1-\frac{131.4}{261})\frac{261}{131.4}\\
+$$
+
+> Si calcola ora la stima con massima verosimiglianza
+
+
+## Test di Codeium
+
+Si consideri un campione casuale semplice (X1,X2,X3)
+ da una variabile di Poisson con media θ>0.
+ Si considerino i due stimatori di θ
+:
+$T1=2X1+X2/2+X35eT2=X1+2X2+3X34.$
+
+Si risponda ai seguenti quesiti:
+
+si calcoli la distorsione dei due stimatori [3 punti];
+
+$$
+Bias(T_1) = E(T_1) - \theta = \frac{7}{10}\theta - \theta = \frac{3}{10}\theta
+
+Bias(T_2) = E(T_2) - \theta = \frac{3}{2}\theta - \theta = \frac{1}{2}\theta
+$$
+
+si calcoli la varianza dei due stimatori [3 punti];
+
+$$
+
+Var(T_1) = \frac{2^2}{5^2}Var(X_1)+\frac{1}{10^2}Var(X_2)+\frac{1}{5^2}Var(X_3) = \frac{21}{100}\theta
+$$
+$$
+Var(T_2) = \frac{1}{4^2}Var(X_1)+\frac{2^2}{4^2}Var(X_1)+\frac{3^2}{4^2}Var(X_1) = 
+\frac{14}{16}\theta
+$$
+
+
+si dica quale dei due stimatori è preferibile [2 punti].
+
+
+## FIne test precedente
+
 ![alt text](image-4.png)
 ![alt text](image-5.png)

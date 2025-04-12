@@ -4,24 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "04fbc675a860d0ac",
+        "id": "f3eb82b9720ced06",
         "type": "tabs",
-        "dimension": 71.27139364303179,
         "children": [
           {
-            "id": "049c5a5c33e7fc57",
+            "id": "5132a07862988d09",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Analisi dei dati/Bibbia.pdf"
+                "file": "Triennale/Algebra Lineare/Lezioni/Lezione 19.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Bibbia"
+              "title": "Lezione 19"
             }
           },
           {
-            "id": "8778806b9b423ee1",
+            "id": "ea6283a76287bd74",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -33,123 +32,27 @@
             }
           },
           {
-            "id": "c035e1d96420f3ce",
+            "id": "a22122ea318590a2",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Linguaggi per la rete/book/javascript-the-definitive-guide-7th-edition.pdf"
+                "file": "Triennale/Analisi dei dati/Materiale Piazz/Esercizi/AD2324-esercizi-unita4-soluzioni.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "javascript-the-definitive-guide-7th-edition"
+              "title": "AD2324-esercizi-unita4-soluzioni"
             }
           },
           {
-            "id": "f8dbb1d6a36e0ebd",
+            "id": "66459f8e1ef3bfa9",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Analisi dei dati/AD2425-formulario.pdf"
+                "file": "Triennale/Analisi dei dati/AD2324-unita4-test.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "AD2425-formulario"
-            }
-          },
-          {
-            "id": "6a5aeffacaef9c09",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Analisi dei dati/exercise/AD2324-esercizi-unita2-soluzioni.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "AD2324-esercizi-unita2-soluzioni"
-            }
-          },
-          {
-            "id": "b1a7be34efeecc12",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Analisi dei dati/AD2324-unita1-base.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "AD2324-unita1-base"
-            }
-          },
-          {
-            "id": "7532eec22d25d367",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Analisi dei dati/AD2425-formulario.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "AD2425-formulario"
-            }
-          },
-          {
-            "id": "a158b370188fc377",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Basi di Dati/Modulo2/slide prof/trigger.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "trigger"
-            }
-          }
-        ],
-        "currentTab": 4
-      },
-      {
-        "id": "0a1996ce5bd1e1cb",
-        "type": "tabs",
-        "dimension": 28.728606356968218,
-        "children": [
-          {
-            "id": "af63aa2ec22b651f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Triennale/Linguaggi per la rete/book/Capitolo 15 - JavaScript in Web Browsers.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Capitolo 15 - JavaScript in Web Browsers"
-            }
-          },
-          {
-            "id": "729868dfed828640",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Triennale/cheatsheet_lat/cheatsheet.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "cheatsheet"
-            }
-          },
-          {
-            "id": "8fac9e42027d7841",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Basi di Dati/studio per esame/eserciziPizzeQuery.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "eserciziPizzeQuery"
+              "title": "AD2324-unita4-test"
             }
           }
         ],
@@ -312,25 +215,27 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "6a5aeffacaef9c09",
+  "active": "ea6283a76287bd74",
   "lastOpenFiles": [
-    "Triennale/Analisi matematica/modulo1/Formulario Calcolo.pdf",
-    "Triennale/Analisi dei dati/exercise/AD2324-esercizi-unita2-soluzioni.pdf",
-    "Triennale/Analisi dei dati/Materiale Piazz/Esercizi/AD2324-esercizi-unita1-soluzioni.pdf",
-    "Triennale/Basi di Dati/vecchio progetto/progetto.pdf",
+    "Triennale/Algebra Lineare/Lezioni/Lezione 19.pdf",
+    "Triennale/Algebra Lineare/Lezioni/Lezione 18.pdf",
+    "Triennale/Analisi dei dati/AD2324-unita4-test.pdf",
+    "Triennale/Analisi dei dati/analisi.xopp~",
+    "Triennale/Analisi dei dati/AD2324-unita3-stima-intervallare.pdf",
+    "Triennale/Analisi dei dati/AD2324-unita2-stima.pdf",
+    "Triennale/Algebra Lineare/Lezioni/Lezione 17.pdf",
+    "Triennale/Algebra Lineare/Lezioni/Lezione 16.pdf",
+    "Triennale/Algebra Lineare/Lezioni/Lezione 15.pdf",
+    "Triennale/Algebra Lineare/Lezioni/Lezione 14.pdf",
+    "Triennale/Algebra Lineare/Lezioni/Lezione 13.pdf",
+    "Triennale/Basi di Dati/Modulo2/postgres/Triggers & Query.md",
+    "Triennale/cheatsheet_lat/cheatsheet.md",
     "Triennale/Analisi dei dati/exercise/image-5.png",
     "Triennale/Analisi dei dati/exercise/image-4.png",
     "Triennale/Analisi dei dati/exercise/image-3.png",
     "Triennale/Analisi dei dati/exercise/image-2.png",
     "Triennale/Analisi dei dati/exercise/image-1.png",
     "Triennale/Analisi dei dati/exercise/image.png",
-    "Triennale/Analisi dei dati/exercise/cristiano-varin-ex2.Rmd",
-    "Triennale/Analisi dei dati/exercise/Unconfirmed 792082.crdownload",
-    "Triennale/Analisi dei dati/AD2324-esercizi-unita1-soluzioni.pdf",
-    "Triennale/Analisi dei dati/exercise/cristiano-varin-ex1.Rmd",
-    "Triennale/Analisi dei dati/exercise/Unconfirmed 738267.crdownload",
-    "Triennale/Analisi dei dati/AD2425-formulario.pdf",
-    "Triennale/Analisi dei dati/esami/AD2425-template-esame-originale.Rmd",
     "Triennale/Linguaggi per la rete/book/Capitolo 3 - Types, Values, and Variables.md",
     "Triennale/Basi di Dati/Modulo2/Esempi di trigger.md",
     "Triennale/Basi di Dati/Modulo2/Flask/Book extract.md",
@@ -358,8 +263,6 @@
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2013_01_28 soluzione.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2014_01_28 soluzione.md",
     "Triennale/cheatsheet_lat/Bilancio.md",
-    "Triennale/Basi di Dati/Modulo1/studio per esame/Algebra Relazionale.md",
-    "Triennale/Basi di Dati/Modulo1/Soluzioni/Soluzioni Query.md",
     "Untitled.canvas"
   ]
 }

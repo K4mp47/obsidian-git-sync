@@ -1,0 +1,48 @@
+---
+title: "Soluzione esercizio 2"
+author: "Cristiano Varin"
+output:
+  html_document: default
+---
+
+[1] Il valore atteso di X è nullo, quindi lo stimatore con il metodo dei momenti è calcolato con il momento di ordine due
+$$
+E(X_1^2)=\theta
+$$
+Quindi, la stima con il metodo dei momenti è 
+$$
+\hat \theta=\frac{\sum_{i=1}^{261} X_i^2}{261}.
+$$ 
+Con i dati a disposizione otteniamo la stima:
+```{r, error = TRUE}
+(109 + 103) / 261
+```
+
+[2] La funzione di log-verosimiglianza per $\theta$ è, a meno di termini costanti, pari a 
+$$
+\ell(\theta) = (109 + 103) \log \theta + 49 \log (1 - \theta).
+$$
+La corrispondente funzione punteggio è
+$$
+\ell'(\theta) = \frac{109 + 103}{\theta} - \frac{49}{1 - \theta}.
+$$
+Risolvendo l'equazione di verosimiglianza troviamo il punto critico 
+$$
+\hat \theta=\frac{109 + 103}{109 + 103 + 49},
+$$
+che coincide con la stima di massima verosimiglianza poiché 
+$$
+\ell^{''}(\theta)=-\frac{109 + 103}{\theta^2} - \frac{49}{(1 - \theta)^2} <0, 
+$$
+per qualsiasi valore di $\theta$. La stima di massima verosimiglianza è uguale alla stima con il metodo dei momenti.
+ 
+[3] L'informazione osservata è 
+```{r, error = TRUE}
+j <- (109 + 103) / (0.81 ^ 2) + 49 / (1 - 0.81) ^ 2
+j
+```
+Quindi, l'errore standard stimato di $\hat \theta$  è approssimativamente pari a 
+```{r, error = TRUE}
+1 / sqrt(j)
+```
+  

@@ -1,0 +1,66 @@
+---
+title: "Alberto Campagnolo - Esercizio 2"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+# Soluzione quesito 1
+
+Metodo dei momenti per trovare lo stimatore di \theta:
+
+$$
+E[x] = \int_{0}^1 x(6\theta + 1)x^{6\theta} dx \\
+= \int_{0}^1 (6\theta + 1)x^{6\theta + 1} dx \\
+= \frac{6\theta + 1}{6\theta + 2} \\
+$$
+
+quindi
+
+$$
+\frac{2\bar X - 1}{6-6\bar X} = \theta
+
+$$
+
+Troviamo una stima sapendo che $\bar X = 180.0/220$
+
+```{r
+2 * 180.0 / 220 - 1 / (6 - 6 * 180.0 / 220)
+
+[1] 0.719697
+```
+
+## Soluzione quesito 2
+
+Stimatore e stima massima verosimiglianza
+
+$$
+L(\theta) = \prod (6\theta + 1) x^{6\theta} \\
+l(L(\theta)) = log \sum (6\theta + 1) x^{6\theta} \\
+l'(L(\theta)) = \frac{n}{6\theta + 1} + 6\sum log(x) \\
+$$
+
+Sostituiamo ora i valori restanti:
+
+$$
+\frac{220}{6\theta + 1 } + 6(−47.26) = \\
+\theta = \frac{220-283.56}{283.56*6}
+$$
+
+Non credo che il risultato sotto sia corretto, devo aver sbagliato i calcoli
+```{r, error = TRUE}
+220-283.56/(283.56*6)
+[1] 219.8333
+```
+
+## Soluzione quesito 3
+
+$$
+SE(\hat\theta) = \sqrt(0.00273)
+$$
+
+Estratto dalla formula per cui 
+$SE(\hat\theta)= I(\theta)^{-\frac{1}{2}}$ circa
