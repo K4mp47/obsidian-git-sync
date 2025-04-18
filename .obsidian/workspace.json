@@ -37,26 +37,38 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Analisi dei dati/Materiale Piazz/Esercizi/AD2324-esercizi-unita4-soluzioni.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "AD2324-esercizi-unita4-soluzioni"
-            }
-          },
-          {
-            "id": "66459f8e1ef3bfa9",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
                 "file": "Triennale/Analisi dei dati/AD2324-unita4-test.pdf"
               },
               "icon": "lucide-file-text",
               "title": "AD2324-unita4-test"
             }
+          },
+          {
+            "id": "684c7d2cbbbd2ff6",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Algebra Lineare/exercise2/05_algebra_lineare.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "05_algebra_lineare"
+            }
+          },
+          {
+            "id": "7b4a33404390d3ae",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Algebra lineare foglio 5 soluzioni.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Algebra lineare foglio 5 soluzioni"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -215,19 +227,19 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "ea6283a76287bd74",
+  "active": "7b4a33404390d3ae",
   "lastOpenFiles": [
+    "Triennale/Algebra Lineare/exercise2/05_algebra_lineare.pdf",
+    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Algebra lineare foglio 5 soluzioni.pdf",
     "Triennale/Algebra Lineare/Lezioni/Lezione 19.pdf",
-    "Triennale/Algebra Lineare/Lezioni/Lezione 18.pdf",
+    "Triennale/Algoritmi & strutture dati/latex & demonstration/latex.pdf",
     "Triennale/Analisi dei dati/AD2324-unita4-test.pdf",
-    "Triennale/Analisi dei dati/analisi.xopp~",
-    "Triennale/Analisi dei dati/AD2324-unita3-stima-intervallare.pdf",
-    "Triennale/Analisi dei dati/AD2324-unita2-stima.pdf",
-    "Triennale/Algebra Lineare/Lezioni/Lezione 17.pdf",
-    "Triennale/Algebra Lineare/Lezioni/Lezione 16.pdf",
-    "Triennale/Algebra Lineare/Lezioni/Lezione 15.pdf",
-    "Triennale/Algebra Lineare/Lezioni/Lezione 14.pdf",
-    "Triennale/Algebra Lineare/Lezioni/Lezione 13.pdf",
+    "Triennale/Analisi dei dati/Materiale Piazz/Esercizi/AD2324-esercizi-unita4-soluzioni.pdf",
+    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Algebra lineare foglio 4.pdf",
+    "Triennale/Algebra Lineare/exercise2/04_algebra_lineare.pdf",
+    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Algebra lineare foglio 5 soluzioni.pdf.crdownload",
+    "Triennale/Algebra Lineare/exercise2/05_algebra_lineare.pdf.crdownload",
+    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Algebra lineare foglio 4.pdf.crdownload",
     "Triennale/Basi di Dati/Modulo2/postgres/Triggers & Query.md",
     "Triennale/cheatsheet_lat/cheatsheet.md",
     "Triennale/Analisi dei dati/exercise/image-5.png",
