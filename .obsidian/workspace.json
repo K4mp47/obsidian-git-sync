@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Algebra Lineare/Lezioni/Lezione 19.pdf"
+                "file": "Triennale/Algebra Lineare/Lezioni/Lezione 20.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Lezione 19"
+              "title": "Lezione 20"
             }
           },
           {
@@ -32,43 +32,43 @@
             }
           },
           {
-            "id": "a22122ea318590a2",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Analisi dei dati/AD2324-unita4-test.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "AD2324-unita4-test"
-            }
-          },
-          {
             "id": "684c7d2cbbbd2ff6",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Algebra Lineare/exercise2/05_algebra_lineare.pdf"
+                "file": "Triennale/Algebra Lineare/exercise2/08_algebra_lineare.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "05_algebra_lineare"
+              "title": "08_algebra_lineare"
             }
           },
           {
-            "id": "7b4a33404390d3ae",
+            "id": "72ceac52fd0d61a4",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Algebra lineare foglio 5 soluzioni.pdf"
+                "file": "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Foglio 8 soluzioni.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Algebra lineare foglio 5 soluzioni"
+              "title": "Foglio 8 soluzioni"
+            }
+          },
+          {
+            "id": "9e66244f1e253aec",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -227,19 +227,22 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "7b4a33404390d3ae",
+  "active": "684c7d2cbbbd2ff6",
   "lastOpenFiles": [
-    "Triennale/Algebra Lineare/exercise2/05_algebra_lineare.pdf",
-    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Algebra lineare foglio 5 soluzioni.pdf",
-    "Triennale/Algebra Lineare/Lezioni/Lezione 19.pdf",
+    "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Numeri Complessi.md",
+    "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi Svolti.md",
+    "Triennale/Algebra Lineare/exercise/Numeri Complessi.pdf",
+    "Triennale/Algebra Lineare/Guide.md",
+    "Triennale/Algebra Lineare/exercise2/08_algebra_lineare.pdf",
+    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Foglio 8 soluzioni.pdf",
+    "Triennale/Algebra Lineare/Lezioni/Lezione 20.pdf",
     "Triennale/Algoritmi & strutture dati/latex & demonstration/latex.pdf",
-    "Triennale/Analisi dei dati/AD2324-unita4-test.pdf",
-    "Triennale/Analisi dei dati/Materiale Piazz/Esercizi/AD2324-esercizi-unita4-soluzioni.pdf",
-    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Algebra lineare foglio 4.pdf",
-    "Triennale/Algebra Lineare/exercise2/04_algebra_lineare.pdf",
-    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Algebra lineare foglio 5 soluzioni.pdf.crdownload",
-    "Triennale/Algebra Lineare/exercise2/05_algebra_lineare.pdf.crdownload",
-    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Algebra lineare foglio 4.pdf.crdownload",
+    "Triennale/Algebra Lineare/Lezioni/Lezione 19.pdf",
+    "Triennale/Linguaggi per la rete/exams/Esame_2014_05_20.pdf",
+    "Triennale/Linguaggi per la rete/exams/Esame_2018_04_11.pdf",
+    "Triennale/Linguaggi per la rete/book/Capitolo 15 - JavaScript in Web Browsers.md",
+    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Foglio 7 soluzioni.pdf",
+    "Triennale/Algebra Lineare/exercise2/07_algebra_lineare.pdf",
     "Triennale/Basi di Dati/Modulo2/postgres/Triggers & Query.md",
     "Triennale/cheatsheet_lat/cheatsheet.md",
     "Triennale/Analisi dei dati/exercise/image-5.png",
@@ -253,7 +256,6 @@
     "Triennale/Basi di Dati/Modulo2/Flask/Book extract.md",
     "Triennale/Basi di Dati/Modulo2/Trigger.md",
     "Triennale/Analisi dei dati/Analisi di dati.md",
-    "Triennale/Linguaggi per la rete/book/Capitolo 15 - JavaScript in Web Browsers.md",
     "Triennale/Linguaggi per la rete/book/Capitolo 9 - Classes.md",
     "Triennale/Linguaggi per la rete/book/Capitolo 8 - Functions.md",
     "Triennale/Linguaggi per la rete/book/Index.md",
@@ -273,8 +275,6 @@
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2016_01_20 soluzione.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2015_01_18 soluzione.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2013_01_28 soluzione.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2014_01_28 soluzione.md",
-    "Triennale/cheatsheet_lat/Bilancio.md",
     "Untitled.canvas"
   ]
 }

@@ -1,0 +1,262 @@
+---
+title: "Lab 5: Verifica d'ipotesi"
+subtitle: "Analisi dei Dati 2024-25"
+author: "Cristiano Varin"
+output:
+  html_document: 
+    df_print: paged
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE)
+```  
+
+ 
+In questo documento vediamo come utilizzare le funzioni `z.test` e `t.test` per il loro scopo principale, ovvero risolvere problemi di verifica delle ipotesi su medie e proporzioni. Utilizzeremo lo stesso dataset relativo al mercato immobiliare di una metropoli americana proveniente dal libro Jank (2011) che abbiamo già incontrato nei laboratori precedenti:
+```{r }
+case <- read.csv("HousePrices.csv")
+```
+
+
+# Verifica delle ipotesi basata sulla statistica Z
+## Ipotesi sulla media
+Supponiamo che vogliamo verificare l'ipotesi che il prezzo medio di vendita dell'immobile sia superiore a 125 000 dollari, ovvero  il sistema d'ipotesi
+$$
+\text H_0: \mu \leq 125 000 \quad \text{contro} \quad \text H_A: \mu > 125 000. 
+$$
+Valuteremo il sistema d'ipotesi con la funzione `z.test` che fa parte del pacchetto opzionale **BSDA** che, quindi, deve essere preventivamente caricato:
+```{r message = FALSE}
+library("BSDA")
+```
+Nella funzione `z.test` possiamo indicare il valore $\mu_0$ ipotizzato sotto l'ipotesi nulla con l'argomento `mu` che assume di default il valore zero. L'ipotesi alternativa invece viene specificata dall'argomento `alternative`  che può essere pari a `two-sided` per un test a due code, `greater` per un test ad una coda destra e `less` per un test ad una coda sinistra. La scelta di default per `alternative` è `two-sided`. Nel caso in questione dobbiamo, quindi, digitare:
+```{r }
+z.test(case$Price, mu = 125000, sigma.x = sd(case$Price), alternative = "greater")
+```
+Il livello di significatività osservato del test calcolato da `z.test` indica una debole evidenza contro l'ipotesi nulla.  Notate che la funzione `z.test` in questo caso produce anche un intervallo di confidenza aperto a destra con un livello di confidenza del 95%.
+
+Verifichiamo i conti fatti da `z.test`: 
+```{r }
+x <- case$Price
+z <- sqrt(length(x)) * (mean(x) - 125000) / sd(x) 
+z
+pval <- 1 - pnorm(z)
+pval
+```
+
+
+## Ipotesi sulla differenza di due medie
+
+Supponiamo ora di essere interessati a valutare se vi sia una differenza significativa fra 1) il prezzo medio degli immobili $X$ con i muri fatti di mattoni e 2) il prezzo medio degli immobili $Y$ con i muri *non* fatti di mattoni, ovvero  il sistema d'ipotesi:
+$$
+\text H_0: \mu_X=\mu_Y \quad \text{contro} \quad \text H_A: \mu_X\neq\mu_Y.
+$$
+Possiamo calcolare l'intervallo per la differenza delle medie sempre che la funzione `z.test` digitando:
+```{r }
+x <- with(case, Price[Brick == "Yes"])
+y <- with(case, Price[Brick == "No"])
+z.test(x = x, y = y, sigma.x = sd(x), sigma.y = sd(y))
+```
+Il livello di significatività osservato indica molto chiaramente che possiamo rifiutare l'ipotesi nulla.   
+
+Verifica:
+```{r }
+z <- (mean(x) - mean(y)) / sqrt(var(x) / length(x) + var(y) / length(y))
+z
+pval <- 2 * (1 - pnorm(abs(z)))
+pval
+```
+
+
+Se, invece, siamo interessati a valutare se gli immobili con i mattoni siano significativamente più costosi degli immobili senza mattoni, ovvero  il sistema d'ipotesi:
+$$
+\text H_0: \mu_X=\mu_Y \quad \text{contro} \quad \text H_A: \mu_X > \mu_Y,
+$$ 
+allora dobbiamo digitare:
+```{r }
+z.test(x = x, y = y, sigma.x = sd(x), sigma.y = sd(y), alternative = "greater")
+```
+In realtà non serviva chiamare nuovamente la funzione `z.test` perché sapevamo che avremmo ottenuto un livello di significatività osservato pari alla metà di quello del test bilaterale calcolato in precedenza. 
+
+Infine, supponiamo che sia stato stimato da precedenti studi sul mercato immobiliare che la differenza attesa del valore di un immobile con i muri in mattone rispetto ad un immobile con i muri non in mattone sia pari a 20 000 dollari. Vogliamo valutare se il prezzo di vendita  degli immobili con i muri in mattoni superi la differenza che ci aspettiamo, ovvero il sistema d'ipotesi:
+$$
+\text H_0: \mu_X-\mu_Y= 20 \,000\, \$ \quad \text{contro} \quad \text H_A: \mu_X - \mu_Y > 20 \,000 \, \$. 
+$$
+Possiamo valutare questa ipotesi con la funzione `z.test` indicando la differenza attesa sotto l'ipotesi nulla nell'argomento `mu`:
+```{r }
+z.test(x = x, y = y, sigma.x = sd(x), sigma.y = sd(y), alternative = "greater", mu = 20000)
+```
+Il livello di significatività osservato indica che non possiamo rifiutare l'ipotesi nulla che la differenza di prezzo sia al più 20 000 dollari. 
+
+
+## Ipotesi su una proporzione
+Valutiamo l'ipotesi che la proporzione di immobili con più di tre stanze da letto sia al più pari al 30%, ovvero il sistema d'ipotesi:
+$$
+\text H_0: p=0.3 \quad \text{contro} \quad \text H_A: p < 0.3. 
+$$
+Come avevamo già fatto nel caso dell'intervallo di confidenza dobbiamo costruirci la variabile indicatore delle abitazioni con più di tre stanze da letto:
+```{r }
+x <- (case$Bedrooms > 3)
+```
+Ora possiamo chiamare la funzione `z.test` indicato la deviazione standard calcolata sotto l'ipotesi nulla pari a $\sqrt{0.3(1-0.3)}:$
+```{r }
+z.test(x = x, mu = 0.3, sigma.x = sqrt(0.3 * 0.7), alternative = "less")
+```
+Il livello di significatività osservato indica una situazione dubbia in cui non vi è comunque sufficiente evidenza empirica per rifiutare l'ipotesi nulla.  
+
+Verifica:
+```{r }
+p <- mean(x)
+z <- sqrt(nrow(case)) * (mean(x) - 0.3) / sqrt(0.3 * 0.7)
+z
+pval <- pnorm(z)
+pval
+```
+
+
+## Ipotesi sulla differenza di due proporzioni
+Verifichiamo se vi *sia* una differenza significativa fra 1) la proporzione di immobili $X$ con più di tre stanze da letto e muri in mattone e 2) la proporzione di immobili $Y$ con più di tre stanze da letto ma muri *non* fatti di  mattoni, ovvero il sistema d'ipotesi:
+$$
+\text H_0: p_X=p_Y \quad \text{contro} \quad \text H_A: p_X \neq p_Y.
+$$
+Come abbiamo già visto nel caso degli intervalli di confidenza, dobbiamo costruire le due variabili binarie oggetto della verifica delle ipotesi:
+```{r }
+x <- with(case, Bedrooms[Brick == "Yes"] > 3)
+y <- with(case, Bedrooms[Brick == "No"] > 3)
+```
+Il secondo passaggio consiste nel calcolare la stima della deviazione standard *pooled*:
+```{r }
+## proporzione complessiva
+p <- (sum(x) + sum(y)) / nrow(case)
+## deviazione standard 'pooled'
+sd.p <- sqrt(p * (1 - p))
+```
+Infine, chiamiamo la funzione `z.test`:
+```{r }
+z.test(x = x, y = y, sigma.x = sd.p, sigma.y = sd.p)
+``` 
+Il livello di significatività osservato del test indica chiaramente che non possiamo rifiutare l'ipotesi nulla.
+
+Verifica:
+```{r }
+m <- length(x)
+n <- length(y)
+z <- (mean(x) - mean(y)) / (sd.p  * sqrt(1 / m + 1 / n))
+z
+pval <- 2 * (1 - pnorm(abs(z)))
+pval
+```
+
+# Verifica delle ipotesi sulla media basate sulla statistica T
+## Ipotesi sulla media
+Nel caso di piccoli campioni da popolazioni normali, le verifiche delle ipotesi sulla media andranno effettuate con la statistica test T implementata nella funzione `t.test`. 
+
+Supponiamo di voler verificare l'ipotesi che il prezzo medio degli immobili che hanno i muri in mattoni e più di tre stanze da letto sia maggiore di  150 000 dollari, ovvero il sistema d'ipotesi:
+$$
+\text H_0: \mu = 150\, 000 \, \$ \quad \text{contro} \quad \text H_A: \mu > 150\, 000 \, \$. 
+$$
+Ci sono solo undici abitazioni che  hanno i muri in mattoni e più di tre stanze da letto e, quindi, assumendo che i prezzi di queste undici abitazioni siano normalmente distribuite, usiamo la statistica test T:
+```{r }
+x <- with(case, Price[(Bedrooms > 3) & (Brick == "Yes")])
+x
+t.test(x, mu = 150000, alternative = "greater")
+```
+Il livello di significatività osservato indica una chiara evidenza contro l'ipotesi nulla.  
+
+Verifica:
+```{r }
+t <- sqrt(length(x)) * (mean(x) - 150000) / sd(x)
+t
+pval <- 1 - pt(t, df = length(x) - 1)
+pval
+```
+
+Nel caso di verifiche d'ipotesi sulla media basate su campioni di grandi dimensioni abbiamo utilizzato la statistica test Z. Se i dati sono normalmente distribuiti sarebbe più corretto utilizzare la statistica test T ma otterremo risultati molto simili visto che al crescere della dimensione campionaria crescono i gradi di libertà e quindi la distribuzione T di Student converge alla distribuzione normale standard. A titolo d'esempio, riprendiamo la verifica dell'ipotesi che il prezzo medio di vendita dell'immobile sia superiore a 125 000 dollari e confrontiamo i risultati che avevamo già ottenuto con la statistica test Z con i risultati che otteniamo con la statistica test T:
+```{r }
+z.test(case$Price, mu = 125000, sigma.x = sd(case$Price), alternative = "greater")
+t.test(case$Price, mu = 125000, alternative = "greater")
+```
+In questo caso, i livelli di significatività osservati che otteniamo con le due statistiche differiscono solo in terza cifra decimale (0.011 con la statistica test Z e 0.012 con la statistica test T) e portano alle stesse conclusioni. 
+
+## Ipotesi sulla differenza di due medie
+Valutiamo ora l'ipotesi che vi sia una qualche differenza fra 1) il prezzo medio di vendita degli immobili $X$ con  più di tre stanze da letto e muri fatti di mattoni  e 2) il prezzo medio di vendita degli immobili $Y$ con più di tre stanze da letto ma muri *non*  fatti di mattoni, ovvero il sistema d'ipotesi
+$$
+\text H_0: \mu_X=\mu_Y \quad \text{contro} \quad \text H_A: \mu_X\neq \mu_Y.
+$$
+Verifichiamo le ipotesi prima assumendo che le varianze dei due gruppi siano uguali e poi rimuovendo questa assunzione. Se le varianze sono uguali, allora dobbiamo digitare:
+```{r }
+x <- with(case, Price[(Bedrooms > 3) & (Brick == "Yes")])
+y <- with(case, Price[(Bedrooms > 3) & (Brick == "No")]) 
+t.test(x, y, var.equal = TRUE)
+```
+Il livello di significatività osservato ci porta a concludere che possiamo rifiutare l'ipotesi nulla in modo molto netto. 
+
+Verifica:
+```{r }
+## varianza "pooled"
+n <- length(x)
+m <- length(y)
+S2p <- ((n - 1) * var(x) + (m - 1) * var(y)) / (n + m - 2)
+t <- (mean(x) - mean(y)) / sqrt(S2p * (1 / n + 1 / m))
+t
+pval <- 2 * (1 - pt(t, df = n + m - 2))
+pval
+```
+Senza l'assunzione che le varianze siano uguali otteniamo:
+```{r }
+t.test(x, y)
+```
+In questo caso, la conclusione non varia rispetto alla verifica delle ipotesi svolta assumendo che le varianze siano uguali: il livello di significatività osservato indica un'evidenza molto forte contro l'ipotesi nulla.  
+
+Verifica:
+```{r }
+## gradi di liberta' approssimati secondo Satterthwaite 
+nu <- (var(x) / n + var(y) / m) ^ 2 / (var(x) ^ 2 / (n ^ 2 * (n - 1)) + 
+var(y) ^ 2 / (m ^ 2 * (m - 1)))
+nu
+t <- (mean(x) - mean(y)) / sqrt(var(x) / n + var(y) / m)
+t
+pval <- 2 * (1 - pt(t, df = nu))
+pval
+```
+
+## Ipotesi sulla differenza di due medie con dati appaiati
+
+Per valutare se sia davvero conveniente acquistare i libri su **Amazon.com** piuttosto che in comuni librerie, valutiamo il prezzo di vendita in dollari americani di un campione casuale di 15 manuali universitari (Levine et al. 2010^[Levine, Krehbiel & Berenson (2010). Statistica. Pearson.]). I dati sono contenuti nel file **libri-di-testo.csv**:
+```{r}
+libri <- read.csv("libri-di-testo.csv")
+libri
+```
+Vogliamo valutare il sistema d'ipotesi 
+$$
+\text H_0: \mu_{L}=\mu_{A} \quad \text{contro} \quad \text H_A: \mu_L > \mu_A,
+$$
+dove $\mu_L$ e $\mu_A$ sono il prezzo medio di vendita in Libreria e su Amazon. Possiamo svolgere la verifica d'ipotesi direttamente sulle differenze dei prezzi
+$$
+\text H_0: \mu_{D}=0 \quad \text{contro} \quad \text H_A: \mu_D > 0.
+$$
+
+Assumendo la normalità delle differenze dei prezzi (da verificare), procediamo con un test T: 
+```{r}
+with(libri, t.test(Libreria - Amazon, alternative = "greater"))
+```
+Verifichiamo il risultato
+```{r}
+t <- with(libri, sqrt(15) * mean(Libreria - Amazon) / sd (Libreria - Amazon))
+t
+1 - pt(t, df = 14)
+```
+Il livello di significatività osservato è molto basso ad indicare un netto rifiuto dell’ipotesi nulla. Possiamo, ragionevolmente, ritenere che il prezzo medio di vendita dei libri di testo sia significativamente più basso su Amazon.
+
+Avremmo potuto ottenere lo stesso risultato senza calcolare le differenze dei prezzi utilizzando l’opzione ``paired = TRUE``:
+```{r}
+with(libri, t.test(Libreria, Amazon, alternative = "greater", paired = TRUE))
+```
+
+# Nota
+In questo laboratorio non è stata mai verificata la normalità dei dati prima dell'utilizzo dei test T. Un corretto utilizzo del test T richiede, invece, una preliminare verifica della normalità delle osservazioni per esempio tramite i grafici quantile-quantile presentati nel laboratorio precedente sugli intervalli di confidenza.  
+  
+ 
+
