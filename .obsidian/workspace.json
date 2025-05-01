@@ -25,22 +25,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Algoritmi & strutture dati/latex & demonstration/latex.pdf"
+                "file": "Triennale/Algebra Lineare/exercise2/10_algebra_lineare.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "latex"
-            }
-          },
-          {
-            "id": "684c7d2cbbbd2ff6",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Algebra Lineare/exercise2/08_algebra_lineare.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "08_algebra_lineare"
+              "title": "10_algebra_lineare"
             }
           },
           {
@@ -49,10 +37,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Foglio 8 soluzioni.pdf"
+                "file": "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Foglio 9 soluzioni.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Foglio 8 soluzioni"
+              "title": "Foglio 9 soluzioni"
             }
           },
           {
@@ -66,9 +54,47 @@
               "icon": "lucide-book-up",
               "title": "Release Notes 1.8.10"
             }
+          },
+          {
+            "id": "684c7d2cbbbd2ff6",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Basi di Dati/Modulo2/esercizi/dipendenze funzionali/Es_dipendenze_funzionali.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Es_dipendenze_funzionali"
+            }
+          },
+          {
+            "id": "26e55643c45a9a69",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Triennale/Basi di Dati/Modulo2/esercizi/dipendenze funzionali/Soluzioni esercizi.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Soluzioni esercizi"
+            }
+          },
+          {
+            "id": "45b13d1f96fa6f7d",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Basi di Dati/Modulo2/slide prof/forme_normali.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "forme_normali"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -125,7 +151,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 362
+    "width": 406.0110321044922
   },
   "right": {
     "id": "9cf4d1525f8d4e32",
@@ -227,22 +253,25 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "684c7d2cbbbd2ff6",
+  "active": "ea6283a76287bd74",
   "lastOpenFiles": [
-    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/10_algebra_lineare.pdf",
-    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/10_algebra_lineare.pdf.crdownload",
-    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Foglio 9 soluzioni.pdf",
-    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Foglio 9 soluzioni.pdf.crdownload",
     "Triennale/Algebra Lineare/exercise2/09_algebra_lineare.pdf",
-    "Triennale/Algebra Lineare/exercise2/09_algebra_lineare.pdf.crdownload",
-    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Foglio 8 soluzioni.pdf",
-    "Triennale/Algebra Lineare/exercise2/08_algebra_lineare.pdf",
+    "Triennale/Algebra Lineare/exercise2/11_algebra_lineare.pdf",
+    "Triennale/Algebra Lineare/exercise2/11_algebra_lineare.pdf.crdownload",
+    "Triennale/Algebra Lineare/exercise2/10_algebra_lineare.pdf",
+    "Triennale/Algebra Lineare/exercise2/10_algebra_lineare.pdf.crdownload",
     "Triennale/Algoritmi & strutture dati/latex & demonstration/latex.pdf",
+    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Foglio 9 soluzioni.pdf",
+    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Foglio 8 soluzioni.pdf",
+    "Triennale/Basi di Dati/Modulo2/esercizi/dipendenze funzionali/Soluzioni esercizi.md",
+    "Triennale/Basi di Dati/Modulo2/esercizi/dipendenze funzionali/Es_dipendenze_funzionali.pdf",
+    "Triennale/Basi di Dati/Modulo2/slide prof/forme_normali.pdf",
+    "Triennale/Basi di Dati/Modulo2/Coperture Canoniche.md",
+    "Triennale/Basi di Dati/progetto2025/progetto.pdf",
+    "Triennale/Basi di Dati/Modulo2/Vincoli ed integrità.md",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Numeri Complessi.md",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi Svolti.md",
-    "Triennale/Algebra Lineare/exercise/Numeri Complessi.pdf",
     "Triennale/Algebra Lineare/Guide.md",
-    "Triennale/Algebra Lineare/Lezioni/Lezione 20.pdf",
     "Triennale/Linguaggi per la rete/book/Capitolo 15 - JavaScript in Web Browsers.md",
     "Triennale/Basi di Dati/Modulo2/postgres/Triggers & Query.md",
     "Triennale/cheatsheet_lat/cheatsheet.md",
@@ -270,11 +299,8 @@
     "Triennale/Analisi dei dati/AD2324-lab1_files/figure-html/unnamed-chunk-10-1.png",
     "Triennale/Analisi dei dati/AD2324-lab1_files/figure-html/unnamed-chunk-1-1.png",
     "Triennale/Linguaggi per la rete/Linguaggi per la rete.md",
-    "Triennale/Basi di Dati/Modulo2/Coperture Canoniche.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
     "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2021_01_18 soluzione.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2016_01_20 soluzione.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2015_01_18 soluzione.md",
     "Untitled.canvas"
   ]
 }
