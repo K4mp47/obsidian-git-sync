@@ -6,95 +6,68 @@
       {
         "id": "f3eb82b9720ced06",
         "type": "tabs",
+        "dimension": 50,
         "children": [
-          {
-            "id": "5132a07862988d09",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Algebra Lineare/Lezioni/Lezione 20.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Lezione 20"
-            }
-          },
-          {
-            "id": "ea6283a76287bd74",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Algebra Lineare/exercise2/10_algebra_lineare.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "10_algebra_lineare"
-            }
-          },
-          {
-            "id": "72ceac52fd0d61a4",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Foglio 9 soluzioni.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Foglio 9 soluzioni"
-            }
-          },
-          {
-            "id": "9e66244f1e253aec",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.10"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.10"
-            }
-          },
-          {
-            "id": "684c7d2cbbbd2ff6",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Triennale/Basi di Dati/Modulo2/esercizi/dipendenze funzionali/Es_dipendenze_funzionali.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Es_dipendenze_funzionali"
-            }
-          },
-          {
-            "id": "26e55643c45a9a69",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Triennale/Basi di Dati/Modulo2/esercizi/dipendenze funzionali/Soluzioni esercizi.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Soluzioni esercizi"
-            }
-          },
           {
             "id": "45b13d1f96fa6f7d",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Triennale/Basi di Dati/Modulo2/slide prof/forme_normali.pdf"
+                "file": "Triennale/Basi di Dati/Modulo2/esercizi/Trigger/Trigger exercises bd_unive (49).md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "forme_normali"
+              "icon": "lucide-file",
+              "title": "Trigger exercises bd_unive (49)"
+            }
+          },
+          {
+            "id": "91d2375f289cfa09",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Triennale/cheatsheet_lat/cheatsheet.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "cheatsheet"
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "138a1b3bf39921db",
+        "type": "tabs",
+        "dimension": 50,
+        "children": [
+          {
+            "id": "b5bad6d0c810f15a",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Basi di Dati/Modulo2/notebooklmdb/bd_unive (49).pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "bd_unive (49)"
+            }
+          },
+          {
+            "id": "3942581700538a58",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Triennale/Basi di Dati/Modulo2/notebooklmdb/bd_unive (53).pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "bd_unive (53)"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -253,28 +226,32 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "ea6283a76287bd74",
+  "active": "b5bad6d0c810f15a",
   "lastOpenFiles": [
-    "Triennale/Algebra Lineare/exercise2/09_algebra_lineare.pdf",
-    "Triennale/Algebra Lineare/exercise2/11_algebra_lineare.pdf",
-    "Triennale/Algebra Lineare/exercise2/11_algebra_lineare.pdf.crdownload",
-    "Triennale/Algebra Lineare/exercise2/10_algebra_lineare.pdf",
-    "Triennale/Algebra Lineare/exercise2/10_algebra_lineare.pdf.crdownload",
-    "Triennale/Algoritmi & strutture dati/latex & demonstration/latex.pdf",
-    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Foglio 9 soluzioni.pdf",
-    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Foglio 8 soluzioni.pdf",
+    "Triennale/Basi di Dati/Modulo2/notebooklmdb/bd_unive (53).pdf",
+    "Triennale/Basi di Dati/Modulo2/notebooklmdb/bd_unive (56).pdf",
+    "Triennale/Basi di Dati/Modulo2/notebooklmdb/bd_unive (51).pdf",
+    "Triennale/Basi di Dati/Modulo2/notebooklmdb/bd_unive (49).pdf",
+    "Triennale/Basi di Dati/Modulo2/esercizi/Trigger/Trigger exercises bd_unive (49).md",
     "Triennale/Basi di Dati/Modulo2/esercizi/dipendenze funzionali/Soluzioni esercizi.md",
+    "Triennale/Basi di Dati/Modulo2/esercizi/Trigger",
+    "Triennale/Basi di Dati/Modulo2/esercizi/bd_unive (39) (1).pdf",
     "Triennale/Basi di Dati/Modulo2/esercizi/dipendenze funzionali/Es_dipendenze_funzionali.pdf",
-    "Triennale/Basi di Dati/Modulo2/slide prof/forme_normali.pdf",
+    "Triennale/Basi di Dati/Modulo2/esercizi/bd_unive (56).pdf",
+    "Triennale/Algebra Lineare/exercise2/soluzioni-tutorato/Foglio 9 soluzioni.pdf",
+    "Triennale/Algebra Lineare/exercise2/02_riepilogo_algebra_lineare.pdf",
+    "Triennale/Algebra Lineare/Lezioni/Lezione 20.pdf",
+    "Triennale/cheatsheet_lat/cheatsheet.md",
+    "Triennale/cheatsheet_lat/git commands.md",
+    "Triennale/Basi di Dati/Modulo2/Forma Normale.md",
+    "Triennale/Basi di Dati/Modulo2/Sicurezza.md",
     "Triennale/Basi di Dati/Modulo2/Coperture Canoniche.md",
-    "Triennale/Basi di Dati/progetto2025/progetto.pdf",
     "Triennale/Basi di Dati/Modulo2/Vincoli ed integrità.md",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Numeri Complessi.md",
     "Triennale/Algebra Lineare/exercise/Soluzioni_svolte/Esercizi Svolti.md",
     "Triennale/Algebra Lineare/Guide.md",
     "Triennale/Linguaggi per la rete/book/Capitolo 15 - JavaScript in Web Browsers.md",
     "Triennale/Basi di Dati/Modulo2/postgres/Triggers & Query.md",
-    "Triennale/cheatsheet_lat/cheatsheet.md",
     "Triennale/Analisi dei dati/exercise/image-5.png",
     "Triennale/Analisi dei dati/exercise/image-4.png",
     "Triennale/Analisi dei dati/exercise/image-3.png",
@@ -293,14 +270,10 @@
     "Triennale/Linguaggi per la rete/book/Capitolo 7 - Arrays.md",
     "Triennale/Linguaggi per la rete/book/Capitolo 5 - Statements.md",
     "Triennale/Linguaggi per la rete/book/Capitolo 4 - Expressions and Operators.md",
-    "Triennale/Analisi dei dati/AD2324-lab1.knit.md",
     "Triennale/Analisi dei dati/AD2324-lab1_files/figure-html/unnamed-chunk-14-1.png",
     "Triennale/Analisi dei dati/AD2324-lab1_files/figure-html/unnamed-chunk-11-1.png",
     "Triennale/Analisi dei dati/AD2324-lab1_files/figure-html/unnamed-chunk-10-1.png",
     "Triennale/Analisi dei dati/AD2324-lab1_files/figure-html/unnamed-chunk-1-1.png",
-    "Triennale/Linguaggi per la rete/Linguaggi per la rete.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2023_01_10 soluzione.md",
-    "Triennale/Algoritmi & strutture dati/Modulo 1/Prova_parziale 2021_01_18 soluzione.md",
     "Untitled.canvas"
   ]
 }
